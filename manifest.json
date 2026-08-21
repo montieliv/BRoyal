@@ -1,0 +1,22 @@
+{
+  "name": "BLACK ROYAL — Quantitative Sports Intelligence",
+  "short_name": "BLACK ROYAL",
+  "description": "Terminal cuantitativa de inteligencia deportiva y estrategias de alto win rate.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07090E",
+  "theme_color": "#07090E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -9,9 +9,21 @@ html_template = f"""<!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>BLACK ROYAL — Terminal Cuantitativa & Estrategias de Alto Win Rate</title>
   
+  <!-- iOS PWA & Mobile Optimization -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BLACK ROYAL">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#07090E">
+  
+  <!-- App Icons -->
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="manifest.json">
+
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -157,7 +169,7 @@ html_template = f"""<!DOCTYPE html>
         <h1 class="text-xl md:text-2xl font-black text-white tracking-tight flex items-center gap-2">
           <span>Estrategias Cuantitativas de Alto Rendimiento</span>
           <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded bg-accent-emerald/15 text-accent-emerald border border-accent-emerald/30">
-            20 AGOSTO 2026
+            21 AGOSTO 2026
           </span>
         </h1>
         <p class="text-xs md:text-sm text-slate-400 mt-1">
@@ -188,7 +200,7 @@ html_template = f"""<!DOCTYPE html>
         <div id="strategySelectorContainer" class="flex flex-wrap items-center gap-1.5 bg-graphite-900 p-1.5 rounded-xl border border-graphite-700/80 font-mono text-xs shadow-inner">
           <button onclick="switchStrategyTab('modo_a_simples')" id="btnStrat-modo_a_simples" class="px-4 py-2 rounded-lg font-bold transition flex items-center space-x-2 bg-accent-emerald text-black shadow cursor-pointer">
             <i class="fa-solid fa-trophy"></i>
-            <span>Modo A: Simples (75% Win Rate)</span>
+            <span>Modo A: Simples (76% Win Rate)</span>
           </button>
           
           <button onclick="switchStrategyTab('modo_b_sistema')" id="btnStrat-modo_b_sistema" class="px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer">
@@ -198,7 +210,7 @@ html_template = f"""<!DOCTYPE html>
 
           <button onclick="switchStrategyTab('modo_c_banker')" id="btnStrat-modo_c_banker" class="px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer">
             <i class="fa-solid fa-bolt text-accent-amber"></i>
-            <span>Modo C: Doble Banker (2.18x)</span>
+            <span>Modo C: Doble Banker (2.04x)</span>
           </button>
         </div>
       </div>
@@ -227,15 +239,15 @@ html_template = f"""<!DOCTYPE html>
           <div class="flex flex-wrap items-center gap-2.5 text-xs font-mono">
             <div class="bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-center">
               <span class="text-[10px] text-slate-400 block">TASA DE ÉXITO</span>
-              <span id="activeStrategyWinRate" class="text-accent-emerald font-extrabold text-base">75.0%</span>
+              <span id="activeStrategyWinRate" class="text-accent-emerald font-extrabold text-base">76.5%</span>
             </div>
             <div class="bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-center">
               <span class="text-[10px] text-slate-400 block" id="activeStrategyMetricLabel">CUOTA MEDIA</span>
-              <span id="activeStrategyOdds" class="text-accent-amber font-extrabold text-sm">1.68x</span>
+              <span id="activeStrategyOdds" class="text-accent-amber font-extrabold text-sm">1.66x</span>
             </div>
             <div class="bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-center">
               <span class="text-[10px] text-slate-400 block">VALUE EDGE</span>
-              <span id="activeStrategyEv" class="text-accent-cyan font-bold text-sm">+20.5%</span>
+              <span id="activeStrategyEv" class="text-accent-cyan font-bold text-sm">+22.4%</span>
             </div>
             <div class="bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-center hidden sm:block">
               <span class="text-[10px] text-slate-400 block">RIESGO GLOBAL</span>
@@ -269,11 +281,11 @@ html_template = f"""<!DOCTYPE html>
           <div class="flex items-center space-x-4 text-xs">
             <div>
               <span class="text-slate-400 text-[11px] block text-right" id="calcLabel1">Retorno Esperado (Pleno):</span>
-              <span id="calcTotalReturn" class="text-white font-extrabold text-sm">$488.00</span>
+              <span id="calcTotalReturn" class="text-white font-extrabold text-sm">$498.00</span>
             </div>
             <div>
               <span class="text-slate-400 text-[11px] block text-right" id="calcLabel2">Ganancia Neta Estimada:</span>
-              <span id="calcNetProfit" class="text-accent-emerald font-black text-sm">+$188.00</span>
+              <span id="calcNetProfit" class="text-accent-emerald font-black text-sm">+$198.00</span>
             </div>
           </div>
         </div>
@@ -332,7 +344,7 @@ html_template = f"""<!DOCTYPE html>
               <span id="realLifeScenarioTitle">¿Cómo se cobra en la vida real?</span>
             </div>
             <span id="realLifeSuccessBadge" class="text-[10px] px-2.5 py-0.5 rounded bg-accent-emerald/10 text-accent-emerald border border-accent-emerald/30 font-bold">
-              75% - 85% WIN RATE
+              76% - 86% WIN RATE
             </span>
           </div>
 
@@ -349,7 +361,7 @@ html_template = f"""<!DOCTYPE html>
               </span>
               <div>
                 <span class="text-[10px] text-slate-400 block font-medium">EJEMPLO DE LIQUIDACIÓN REAL:</span>
-                <span id="realLifePayoutText" class="text-white text-xs font-bold">Si aciertas 2 de 3: Cobras ~$323.00 (Ganancia asegurada).</span>
+                <span id="realLifePayoutText" class="text-white text-xs font-bold">Si aciertas 2 de 3: Cobras ~$330.00 (Ganancia asegurada).</span>
               </div>
             </div>
             <div class="text-right">
@@ -401,7 +413,7 @@ html_template = f"""<!DOCTYPE html>
 
       if (stratKey === 'modo_a_simples') {{
         badgeEl.className = 'px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider font-mono bg-accent-emerald text-black';
-        badgeEl.innerText = 'MODO A: MÁXIMO WIN RATE (75%)';
+        badgeEl.innerText = 'MODO A: MÁXIMO WIN RATE (76.5%)';
         glowEl.className = 'absolute top-0 right-0 w-80 h-80 bg-accent-emerald/5 rounded-full blur-3xl pointer-events-none';
         document.getElementById('activeStrategyMetricLabel').innerText = 'CUOTA PROMEDIO';
         document.getElementById('activeStrategyOdds').innerText = `${{strat.avgOdds.toFixed(2)}}x`;
@@ -430,7 +442,6 @@ html_template = f"""<!DOCTYPE html>
       container.innerHTML = '';
 
       if (stratKey === 'modo_b_sistema' && strat.combinations) {{
-        // For Mode B, display 3 picks and sub-combinations
         strat.picks.forEach((pick, idx) => {{
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
@@ -457,7 +468,6 @@ html_template = f"""<!DOCTYPE html>
           container.appendChild(card);
         }});
       }} else {{
-        // Standard Picks render for Mode A & Mode C
         strat.picks.forEach((pick, idx) => {{
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
@@ -556,11 +566,10 @@ html_template = f"""<!DOCTYPE html>
       const multEl = document.getElementById('realLifeMultiplierText');
 
       if (currentStrategyKey === 'modo_a_simples') {{
-        // $stake on each of the 3 matches (Total investment: 3 * stake)
         const totalStake = stake * 3;
-        const returnAll = stake * 1.58 + stake * 1.65 + stake * 1.65; // ~4.88 * stake
+        const returnAll = stake * 1.55 + stake * 1.75 + stake * 1.68; // ~4.98 * stake
         const profitAll = returnAll - totalStake;
-        const returnTwo = stake * 1.65 + stake * 1.58; // 3.23 * stake (assuming 2 hit)
+        const returnTwo = stake * 1.68 + stake * 1.55; // 3.23 * stake (assuming 2 hit)
 
         document.getElementById('calcLabel1').innerText = `Retorno (3/3 Aciertos - Inversión $${{totalStake.toFixed(0)}}):`;
         document.getElementById('calcLabel2').innerText = 'Ganancia Neta (3/3):';
@@ -570,13 +579,12 @@ html_template = f"""<!DOCTYPE html>
         if (payoutEl) {{
           payoutEl.innerText = `Con $${{stake.toFixed(0)}} en cada partido (Total $${{totalStake.toFixed(0)}}): Acierto 2/3 = $${{returnTwo.toFixed(2)}} (+$${{(returnTwo-totalStake).toFixed(2)}}) | Acierto 3/3 = $${{returnAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}}).`;
         }}
-        if (multEl) multEl.innerText = '75% WIN RATE';
+        if (multEl) multEl.innerText = '76.5% WIN RATE';
       }} else if (currentStrategyKey === 'modo_b_sistema') {{
-        // Total stake divided by 4 lines ($stake/4 per bet)
         const perBet = stake / 4;
-        const retDoble1 = perBet * 2.61;
-        const retDoble3 = perBet * 2.97;
-        const retAll = perBet * (2.61 + 2.84 + 2.97 + 4.70);
+        const retDoble1 = perBet * 2.60;
+        const retDoble3 = perBet * 2.85;
+        const retAll = perBet * (2.60 + 2.63 + 2.85 + 4.42);
         const profitAll = retAll - stake;
 
         document.getElementById('calcLabel1').innerText = `Retorno Pleno (3/3 - Inversión $${{stake.toFixed(0)}}):`;
@@ -589,7 +597,7 @@ html_template = f"""<!DOCTYPE html>
         }}
         if (multEl) multEl.innerText = 'SEGURO 1 FALLO';
       }} else if (currentStrategyKey === 'modo_c_banker') {{
-        const totalReturn = stake * 2.18;
+        const totalReturn = stake * 2.04;
         const netProfit = totalReturn - stake;
 
         document.getElementById('calcLabel1').innerText = `Retorno Duplicador (Inversión $${{stake.toFixed(0)}}):`;
@@ -600,7 +608,7 @@ html_template = f"""<!DOCTYPE html>
         if (payoutEl) {{
           payoutEl.innerText = `Con una apuesta de $${{stake.toFixed(2)}} cobras $${{totalReturn.toFixed(2)}} (+$${{netProfit.toFixed(2)}} de ganancia neta duplicando capital).`;
         }}
-        if (multEl) multEl.innerText = '2.18x DUPLICADOR';
+        if (multEl) multEl.innerText = '2.04x DUPLICADOR';
       }}
     }}
 
@@ -686,4 +694,4 @@ html_template = f"""<!DOCTYPE html>
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html_template)
 
-print("✅ Benito/index.html updated with Modo A, Modo B, and Modo C + Real-Life Practical Slips!")
+print("✅ Benito/index.html updated with complete iOS PWA capabilities and August 21 strategies!")

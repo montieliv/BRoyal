@@ -1,0 +1,39 @@
+name: BLACK ROYAL — Daily Sports Intelligence Pipeline
+
+on:
+  schedule:
+    # Runs every day at 14:00 UTC (08:00 AM CDMX)
+    - cron: '0 14 * * *'
+  workflow_dispatch: # Allows 1-tap manual run from GitHub Mobile App on iPhone!
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install Pillow
+
+      - name: Execute Daily Sports Pipeline
+        run: |
+          python3 sports.py
+
+      - name: Commit and Push Updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(daily): automated intelligence update [skip ci]" && git push)
