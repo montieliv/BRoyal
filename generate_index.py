@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+import json
+
+with open('summary_recommendations.json', 'r', encoding='utf-8') as f:
+    dataset = json.load(f)
+
+dataset_json_str = json.dumps(dataset, ensure_ascii=False, indent=2)
+
+html_template = f"""<!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
   <meta charset="UTF-8">
@@ -16,12 +23,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script>
-    tailwind.config = {
+    tailwind.config = {{
       darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            graphite: {
+      theme: {{
+        extend: {{
+          colors: {{
+            graphite: {{
               950: '#07090E',
               900: '#0C1017',
               850: '#111722',
@@ -30,68 +37,68 @@
               700: '#1E293B',
               600: '#334155',
               500: '#475569'
-            },
-            accent: {
+            }},
+            accent: {{
               emerald: '#10B981',
               cyan: '#06B6D4',
               amber: '#F59E0B',
               rose: '#F43F5E',
               purple: '#A855F7',
               gold: '#FBBF24'
-            }
-          },
-          fontFamily: {
+            }}
+          }},
+          fontFamily: {{
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
             mono: ['JetBrains Mono', 'monospace']
-          }
-        }
-      }
-    }
+          }}
+        }}
+      }}
+    }}
   </script>
 
   <style>
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #0C1017; }
-    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #10B981; }
+    ::-webkit-scrollbar {{ width: 6px; height: 6px; }}
+    ::-webkit-scrollbar-track {{ background: #0C1017; }}
+    ::-webkit-scrollbar-thumb {{ background: #1E293B; border-radius: 3px; }}
+    ::-webkit-scrollbar-thumb:hover {{ background: #10B981; }}
 
-    .card-clean {
+    .card-clean {{
       background: rgba(17, 23, 34, 0.90);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       transition: all 0.2s ease;
-    }
+    }}
     
-    .card-clean:hover {
+    .card-clean:hover {{
       border-color: rgba(16, 185, 129, 0.3);
-    }
+    }}
 
-    .badge-source-cyan {
+    .badge-source-cyan {{
       background: rgba(6, 182, 212, 0.12);
       color: #22d3ee;
       border: 1px solid rgba(6, 182, 212, 0.3);
-    }
-    .badge-source-emerald {
+    }}
+    .badge-source-emerald {{
       background: rgba(16, 185, 129, 0.12);
       color: #34d399;
       border: 1px solid rgba(16, 185, 129, 0.3);
-    }
-    .badge-source-amber {
+    }}
+    .badge-source-amber {{
       background: rgba(245, 158, 11, 0.12);
       color: #fbbf24;
       border: 1px solid rgba(245, 158, 11, 0.3);
-    }
+    }}
 
-    @keyframes fadeInOut {
-      0% { opacity: 0; transform: translateY(10px); }
-      15% { opacity: 1; transform: translateY(0); }
-      85% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(-10px); }
-    }
-    .toast-animate {
+    @keyframes fadeInOut {{
+      0% {{ opacity: 0; transform: translateY(10px); }}
+      15% {{ opacity: 1; transform: translateY(0); }}
+      85% {{ opacity: 1; transform: translateY(0); }}
+      100% {{ opacity: 0; transform: translateY(-10px); }}
+    }}
+    .toast-animate {{
       animation: fadeInOut 2.5s ease forwards;
-    }
+    }}
   </style>
 </head>
 
@@ -367,293 +374,50 @@
 
   <!-- ==================== JAVASCRIPT APP LOGIC ==================== -->
   <script>
-    const DATASET = {
-  "generated_at": "2026-08-21 08:41:00",
-  "strategies": {
-    "modo_a_simples": {
-      "id": "STRATEGY-MODO-A",
-      "modeName": "Modo A: Apuestas Simples de Valor",
-      "modeShort": "Modo A: Simples (76% Win Rate)",
-      "badge": "MÁXIMO WIN RATE",
-      "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-      "tagColor": "emerald",
-      "description": "3 Apuestas individuales independientes. Cada acierto cobra por separado eliminando el riesgo de que 1 fallo arruine todo el capital.",
-      "avgOdds": 1.66,
-      "expectedWinRate": "76.5%",
-      "combinedEv": "+22.4%",
-      "recommendedStake": "1.0% por partido (Flat Staking)",
-      "riskLevel": "MÍNIMO",
-      "picks": [
-        {
-          "sourceName": "API-Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Arsenal vs. Coventry City",
-          "tournament": "Premier League (Jornada 1 Inaugural)",
-          "selection": "Arsenal (-1.5 Hándicap Asiático)",
-          "odds": 1.55,
-          "confidencePct": 86,
-          "algorithm": "API-Football Dominance Model: Disparidad de plantilla en Emirates Stadium; 2.85 vs 0.35 xG.",
-          "singleReturn": 155.0
-        },
-        {
-          "sourceName": "Sportmonks",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "FC Juárez vs. Club América",
-          "tournament": "Liga MX (Apertura J5)",
-          "selection": "Club América Ganador (2)",
-          "odds": 1.75,
-          "confidencePct": 82,
-          "algorithm": "Sportmonks Quality Disparity: Las Águilas invictas ante Juárez en sus últimos 6 duelos directos.",
-          "singleReturn": 175.0
-        },
-        {
-          "sourceName": "FootyStats",
-          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Real Betis vs. Real Sociedad",
-          "tournament": "La Liga EA Sports (Jornada 2)",
-          "selection": "Menos de 2.5 Goles (Under)",
-          "odds": 1.68,
-          "confidencePct": 83,
-          "algorithm": "FootyStats Slow-Pace Index: 8 de los últimos 9 duelos en el Benito Villamarín registraron ≤2 goles.",
-          "singleReturn": 168.0
-        }
-      ],
-      "real_life_example": {
-        "bookie_steps": [
-          "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 eventos a tu cupón:",
-          "• Arsenal vs. Coventry: Selecciona 'Hándicap Asiático: Arsenal -1.5'.",
-          "• FC Juárez vs. Club América: Selecciona 'Resultado Final: Gana Club América (2)'.",
-          "• Real Betis vs. Real Sociedad: Selecciona 'Total de Goles: Menos de 2.5 (Under)'.",
-          "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
-          "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra por separado al finalizar cada partido."
-        ],
-        "winning_scenario": {
-          "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
-          "match_examples": [
-            {
-              "match": "Arsenal vs. Coventry City",
-              "min_result": "Arsenal 2-0, 3-0, 3-1, 4-0",
-              "explanation": "Arsenal gana por 2 o más goles de diferencia. Cobras $155.00 (+$55.00 neto)."
-            },
-            {
-              "match": "FC Juárez vs. América",
-              "min_result": "Juárez 0-1, 1-2, 0-2, 1-3",
-              "explanation": "Cualquier triunfo de las Águilas del América. Cobras $175.00 (+$75.00 neto)."
-            },
-            {
-              "match": "Real Betis vs. Real Sociedad",
-              "min_result": "0-0, 1-0, 0-1, 1-1 o 2-0",
-              "explanation": "Máximo 2 goles en los 90 minutos reglamentarios. Cobras $168.00 (+$68.00 neto)."
-            }
-          ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$330.00 (+$30.00 de ganancia neta protegida). Si aciertas los 3: Cobras $498.00 (+$198.00 de ganancia neta)."
-        },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (21 AGOSTO)\n1. Arsenal (-1.5 Hándicap) @ 1.55 ($100 -> $155)\n2. Club América Ganador @ 1.75 ($100 -> $175)\n3. Real Betis vs Real Sociedad (Menos de 2.5 Goles) @ 1.68 ($100 -> $168)\n► Inversión: $300 | Cobro 3/3: $498.00 | Cobro 2/3: $330.00"
-      }
-    },
-    "modo_b_sistema": {
-      "id": "STRATEGY-MODO-B",
-      "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin)",
-      "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
-      "badge": "SEGURO CONTRA 1 FALLO",
-      "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-      "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
-      "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "86.0%",
-      "combinedEv": "+29.5%",
-      "recommendedStake": "$25 por combinación ($100 total)",
-      "riskLevel": "BAJO",
-      "picks": [
-        {
-          "sourceName": "API-Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Arsenal vs. Coventry City",
-          "selection": "Arsenal (-1.5 Hándicap)",
-          "odds": 1.55,
-          "algorithm": "Pick A: Debut de temporada en el Emirates Stadium"
-        },
-        {
-          "sourceName": "FootyStats",
-          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Real Betis vs. Real Sociedad",
-          "selection": "Menos de 2.5 Goles (Under)",
-          "odds": 1.68,
-          "algorithm": "Pick B: Duelo cerrado de mediocampo en Sevilla"
-        },
-        {
-          "sourceName": "Sportmonks",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Olympique de Marseille vs. Strasbourg",
-          "selection": "Marseille Ganador (1)",
-          "odds": 1.7,
-          "algorithm": "Pick C: Marseille invicto en el Vélodrome con +1.8 xG"
-        }
-      ],
-      "combinations": [
-        {
-          "name": "Doble 1 (A + B)",
-          "odds": 2.6,
-          "formula": "1.55 × 1.68"
-        },
-        {
-          "name": "Doble 2 (A + C)",
-          "odds": 2.63,
-          "formula": "1.55 × 1.70"
-        },
-        {
-          "name": "Doble 3 (B + C)",
-          "odds": 2.85,
-          "formula": "1.68 × 1.70"
-        },
-        {
-          "name": "Triple (A + B + C)",
-          "odds": 4.42,
-          "formula": "1.55 × 1.68 × 1.70"
-        }
-      ],
-      "real_life_example": {
-        "bookie_steps": [
-          "Abre tu casa de apuestas y selecciona los 3 eventos en el cupón.",
-          "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
-          "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
-          "Coloca $25 a cada una (Total apostado: $100).",
-          "Con solo acertar 2 partidos cobras la doble garantizando tu saldo."
-        ],
-        "winning_scenario": {
-          "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
-          "match_examples": [
-            {
-              "match": "Escenario 2 de 3 Aciertos (A + B)",
-              "min_result": "Arsenal gana por 2+ y Betis Under 2.5",
-              "explanation": "Cobras la Doble 1 (@ 2.60x): Cobras $65.00 amortizando el cupón."
-            },
-            {
-              "match": "Escenario 2 de 3 Aciertos (B + C)",
-              "min_result": "Betis Under 2.5 y Marseille gana",
-              "explanation": "Cobras la Doble 3 (@ 2.85x): Cobras $71.25 protegiendo el capital."
-            },
-            {
-              "match": "Escenario Pleno 3 de 3",
-              "min_result": "Se cumplen los 3 partidos (A + B + C)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $312.50 (+$212.50 de ganancia neta)."
-            }
-          ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $312.50 si aciertas los 3, o amortizas el boleto si 1 falla."
-        },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (21 AGOSTO)\n• Pick A: Arsenal (-1.5 Hándicap) @ 1.55\n• Pick B: Betis vs Sociedad Under 2.5 @ 1.68\n• Pick C: Marseille Ganador @ 1.70\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $312.50"
-      }
-    },
-    "modo_c_banker": {
-      "id": "STRATEGY-MODO-C",
-      "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 2.04x)",
-      "badge": "DUPLICADOR DE BANCA",
-      "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-      "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca con regularidad.",
-      "totalOdds": 2.04,
-      "fairOdds": 1.68,
-      "expectedWinRate": "77.4%",
-      "combinedEv": "+25.8%",
-      "recommendedStake": "2.0% – 3.0% Bankroll",
-      "riskLevel": "BAJO",
-      "picks": [
-        {
-          "sourceName": "API-Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Arsenal vs. Coventry City",
-          "tournament": "Premier League (Inaugural)",
-          "selection": "Arsenal Ganador Directo (1) + Más 1.5 Goles",
-          "odds": 1.38,
-          "confidencePct": 89,
-          "algorithm": "API-Football Safe Model: Arsenal promedia 2.6 goles como local; cuota de ultra alta certeza."
-        },
-        {
-          "sourceName": "Sportmonks",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "FC Juárez vs. Club América",
-          "tournament": "Liga MX (Apertura J5)",
-          "selection": "Club América Empate No Acción (DNB 2)",
-          "odds": 1.48,
-          "confidencePct": 87,
-          "algorithm": "Sportmonks Safe Pick: Si América empata, la selección se anula (reembolso). Si gana, cobras."
-        }
-      ],
-      "real_life_example": {
-        "bookie_steps": [
-          "Abre tu casa de apuestas.",
-          "Selecciona estos 2 partidos de máxima certeza en mercados de baja volatilidad:",
-          "• Arsenal vs. Coventry: 'Crear Apuesta / Especial: Arsenal Ganador + Más de 1.5 Goles'.",
-          "• FC Juárez vs. Club América: 'Empate No Acción / DNB: Club América (2)'.",
-          "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota es de 2.04x."
-        ],
-        "winning_scenario": {
-          "title": "¿Cómo se gana en la vida real con la Doble Banker?",
-          "match_examples": [
-            {
-              "match": "Arsenal vs. Coventry City",
-              "min_result": "Arsenal 2-0, 2-1, 3-0, 3-1",
-              "explanation": "Arsenal gana el partido inaugural y hay 2 o más goles en total."
-            },
-            {
-              "match": "FC Juárez vs. América",
-              "min_result": "Juárez 0-1, 0-2, 1-2 (o empate para reembolso)",
-              "explanation": "Si América gana cobras; si empata no pierdes dinero (reembolso)."
-            }
-          ],
-          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $204.00 (+$104.00 de ganancia neta duplicando capital con >77% de probabilidad)."
-        },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (21 AGOSTO)\n1. Arsenal (Gana + Más 1.5 Goles) @ 1.38\n2. FC Juárez vs Club América (América DNB / Empate No Acción) @ 1.48\n► Cuota Total: 2.04x (Duplicador) | Confianza: 77.4% | Stake: 2.0% - 3.0%"
-      }
-    }
-  }
-};
+    const DATASET = {dataset_json_str};
 
     let currentStrategyKey = 'modo_a_simples'; // 'modo_a_simples' | 'modo_b_sistema' | 'modo_c_banker'
 
-    function getSourceBadgeClass(source) {
+    function getSourceBadgeClass(source) {{
       if (source === 'FootyStats') return 'badge-source-cyan';
       if (source === 'API-Football') return 'badge-source-emerald';
       if (source === 'Sportmonks') return 'badge-source-amber';
       return 'bg-slate-800 text-slate-300 border-slate-700';
-    }
+    }}
 
-    function getSourceIcon(source) {
+    function getSourceIcon(source) {{
       if (source === 'FootyStats') return 'fa-solid fa-chart-pie';
       if (source === 'API-Football') return 'fa-solid fa-chart-line';
       if (source === 'Sportmonks') return 'fa-solid fa-brain';
       return 'fa-solid fa-futbol';
-    }
+    }}
 
-    function renderStrategyCard(stratKey) {
+    function renderStrategyCard(stratKey) {{
       const strat = DATASET.strategies[stratKey];
       if (!strat) return;
 
       const badgeEl = document.getElementById('activeStrategyBadge');
       const glowEl = document.getElementById('activeStrategyGlow');
 
-      if (stratKey === 'modo_a_simples') {
+      if (stratKey === 'modo_a_simples') {{
         badgeEl.className = 'px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider font-mono bg-accent-emerald text-black';
         badgeEl.innerText = 'MODO A: MÁXIMO WIN RATE (75%)';
         glowEl.className = 'absolute top-0 right-0 w-80 h-80 bg-accent-emerald/5 rounded-full blur-3xl pointer-events-none';
         document.getElementById('activeStrategyMetricLabel').innerText = 'CUOTA PROMEDIO';
-        document.getElementById('activeStrategyOdds').innerText = `${strat.avgOdds.toFixed(2)}x`;
-      } else if (stratKey === 'modo_b_sistema') {
+        document.getElementById('activeStrategyOdds').innerText = `${{strat.avgOdds.toFixed(2)}}x`;
+      }} else if (stratKey === 'modo_b_sistema') {{
         badgeEl.className = 'px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider font-mono bg-accent-cyan text-black';
         badgeEl.innerText = 'MODO B: SEGURO CONTRA 1 FALLO';
         glowEl.className = 'absolute top-0 right-0 w-80 h-80 bg-accent-cyan/5 rounded-full blur-3xl pointer-events-none';
         document.getElementById('activeStrategyMetricLabel').innerText = 'COMBINACIONES';
         document.getElementById('activeStrategyOdds').innerText = '4 Apuestas (3D+1T)';
-      } else if (stratKey === 'modo_c_banker') {
+      }} else if (stratKey === 'modo_c_banker') {{
         badgeEl.className = 'px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider font-mono bg-accent-amber text-black';
         badgeEl.innerText = 'MODO C: DUPLICADOR DE BANCA';
         glowEl.className = 'absolute top-0 right-0 w-80 h-80 bg-accent-amber/5 rounded-full blur-3xl pointer-events-none';
         document.getElementById('activeStrategyMetricLabel').innerText = 'CUOTA TOTAL';
-        document.getElementById('activeStrategyOdds').innerText = `${strat.totalOdds.toFixed(2)}x`;
-      }
+        document.getElementById('activeStrategyOdds').innerText = `${{strat.totalOdds.toFixed(2)}}x`;
+      }}
 
       document.getElementById('activeStrategyTitle').innerText = strat.modeName;
       document.getElementById('activeStrategySubtitle').innerText = strat.description;
@@ -665,9 +429,9 @@
       const container = document.getElementById('activeStrategyPicksGrid');
       container.innerHTML = '';
 
-      if (stratKey === 'modo_b_sistema' && strat.combinations) {
+      if (stratKey === 'modo_b_sistema' && strat.combinations) {{
         // For Mode B, display 3 picks and sub-combinations
-        strat.picks.forEach((pick, idx) => {
+        strat.picks.forEach((pick, idx) => {{
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
           const card = document.createElement('div');
@@ -675,26 +439,26 @@
           card.innerHTML = `
             <div>
               <div class="flex items-center justify-between gap-1 mb-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${badgeClass}">
-                  <i class="${iconClass} mr-1 text-[9px]"></i>${pick.sourceName}
+                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${{badgeClass}}">
+                  <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
                 </span>
-                <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK ${String.fromCharCode(65 + idx)}</span>
+                <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK ${{String.fromCharCode(65 + idx)}}</span>
               </div>
-              <div class="font-bold text-white text-xs mt-1">${pick.match}</div>
+              <div class="font-bold text-white text-xs mt-1">${{pick.match}}</div>
             </div>
             <div class="mt-3 pt-2.5 border-t border-graphite-800/80">
               <div class="flex items-center justify-between gap-2">
-                <span class="text-accent-emerald font-bold text-xs truncate">${pick.selection}</span>
-                <span class="text-accent-amber font-extrabold text-xs">@ ${pick.odds.toFixed(2)}</span>
+                <span class="text-accent-emerald font-bold text-xs truncate">${{pick.selection}}</span>
+                <span class="text-accent-amber font-extrabold text-xs">@ ${{pick.odds.toFixed(2)}}</span>
               </div>
-              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">${pick.algorithm}</div>
+              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">${{pick.algorithm}}</div>
             </div>
           `;
           container.appendChild(card);
-        });
-      } else {
+        }});
+      }} else {{
         // Standard Picks render for Mode A & Mode C
-        strat.picks.forEach((pick, idx) => {
+        strat.picks.forEach((pick, idx) => {{
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
           const card = document.createElement('div');
@@ -702,31 +466,31 @@
           card.innerHTML = `
             <div>
               <div class="flex items-center justify-between gap-1 mb-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${badgeClass}">
-                  <i class="${iconClass} mr-1 text-[9px]"></i>${pick.sourceName}
+                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${{badgeClass}}">
+                  <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
                 </span>
-                <span class="text-[10px] text-slate-500 font-mono font-bold">SELECCIÓN ${idx + 1}</span>
+                <span class="text-[10px] text-slate-500 font-mono font-bold">SELECCIÓN ${{idx + 1}}</span>
               </div>
-              <div class="font-bold text-white text-xs mt-1">${pick.match}</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">${pick.tournament || 'Fútbol Profesional'}</div>
+              <div class="font-bold text-white text-xs mt-1">${{pick.match}}</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">${{pick.tournament || 'Fútbol Profesional'}}</div>
             </div>
             <div class="mt-3 pt-2.5 border-t border-graphite-800/80">
               <div class="flex items-center justify-between gap-2">
-                <span class="text-accent-emerald font-bold text-xs truncate">${pick.selection}</span>
-                <span class="text-accent-amber font-extrabold text-xs whitespace-nowrap">@ ${pick.odds.toFixed(2)}</span>
+                <span class="text-accent-emerald font-bold text-xs truncate">${{pick.selection}}</span>
+                <span class="text-accent-amber font-extrabold text-xs whitespace-nowrap">@ ${{pick.odds.toFixed(2)}}</span>
               </div>
-              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">${pick.algorithm}</div>
+              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">${{pick.algorithm}}</div>
             </div>
           `;
           container.appendChild(card);
-        });
-      }
+        }});
+      }}
 
       renderRealLifeSection(stratKey);
       calculatePayout();
-    }
+    }}
 
-    function renderRealLifeSection(stratKey) {
+    function renderRealLifeSection(stratKey) {{
       const strat = DATASET.strategies[stratKey];
       if (!strat || !strat.real_life_example) return;
       const ex = strat.real_life_example;
@@ -734,55 +498,55 @@
       // 1. Steps List
       const stepsContainer = document.getElementById('realLifeStepsList');
       stepsContainer.innerHTML = '';
-      if (ex.bookie_steps && ex.bookie_steps.length > 0) {
-        ex.bookie_steps.forEach((step, i) => {
+      if (ex.bookie_steps && ex.bookie_steps.length > 0) {{
+        ex.bookie_steps.forEach((step, i) => {{
           const div = document.createElement('div');
           div.className = 'flex items-start space-x-2.5';
           div.innerHTML = `
-            <span class="w-5 h-5 rounded-full bg-graphite-800 text-accent-cyan border border-graphite-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">${i+1}</span>
-            <span class="leading-relaxed">${step}</span>
+            <span class="w-5 h-5 rounded-full bg-graphite-800 text-accent-cyan border border-graphite-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">${{i+1}}</span>
+            <span class="leading-relaxed">${{step}}</span>
           `;
           stepsContainer.appendChild(div);
-        });
-      }
+        }});
+      }}
 
       // 2. Matches Resolution Grid
       const matchesContainer = document.getElementById('realLifeMatchesGrid');
       matchesContainer.innerHTML = '';
-      if (ex.winning_scenario && ex.winning_scenario.match_examples) {
+      if (ex.winning_scenario && ex.winning_scenario.match_examples) {{
         document.getElementById('realLifeScenarioTitle').innerText = ex.winning_scenario.title;
-        ex.winning_scenario.match_examples.forEach((item) => {
+        ex.winning_scenario.match_examples.forEach((item) => {{
           const div = document.createElement('div');
           div.className = 'p-3 rounded-xl bg-graphite-900/90 border border-graphite-800 space-y-1.5';
           div.innerHTML = `
             <div class="flex items-center justify-between gap-2">
               <span class="font-bold text-white text-xs flex items-center gap-1.5">
                 <span class="w-2 h-2 rounded-full bg-accent-emerald"></span>
-                ${item.match}
+                ${{item.match}}
               </span>
               <span class="text-[10px] font-bold text-accent-amber px-2 py-0.5 bg-accent-amber/10 rounded border border-accent-amber/30">
-                ${item.min_result}
+                ${{item.min_result}}
               </span>
             </div>
             <div class="text-[11px] text-slate-300 pl-3.5 border-l border-graphite-700">
-              ${item.explanation}
+              ${{item.explanation}}
             </div>
           `;
           matchesContainer.appendChild(div);
-        });
-      }
+        }});
+      }}
 
       // 3. Tip Box Text
-      if (stratKey === 'modo_a_simples') {
+      if (stratKey === 'modo_a_simples') {{
         document.getElementById('realLifeTipText').innerText = "En Modo A cada partido cobra por separado, garantizando ganancia neta incluso si 1 partido falla.";
-      } else if (stratKey === 'modo_b_sistema') {
+      }} else if (stratKey === 'modo_b_sistema') {{
         document.getElementById('realLifeTipText').innerText = "En Modo B el sistema Trixie cubre 4 combinaciones: si fallas 1 partido, cobras la doble restante.";
-      } else if (stratKey === 'modo_c_banker') {
+      }} else if (stratKey === 'modo_c_banker') {{
         document.getElementById('realLifeTipText').innerText = "En Modo C solo juegas los 2 partidos con >85% de certeza en mercados de muy baja volatilidad.";
-      }
-    }
+      }}
+    }}
 
-    function calculatePayout() {
+    function calculatePayout() {{
       const stakeInput = document.getElementById('calcStakeInput');
       let stake = parseFloat(stakeInput.value) || 0;
       if (stake < 0) stake = 0;
@@ -791,23 +555,23 @@
       const payoutEl = document.getElementById('realLifePayoutText');
       const multEl = document.getElementById('realLifeMultiplierText');
 
-      if (currentStrategyKey === 'modo_a_simples') {
+      if (currentStrategyKey === 'modo_a_simples') {{
         // $stake on each of the 3 matches (Total investment: 3 * stake)
         const totalStake = stake * 3;
         const returnAll = stake * 1.58 + stake * 1.65 + stake * 1.65; // ~4.88 * stake
         const profitAll = returnAll - totalStake;
         const returnTwo = stake * 1.65 + stake * 1.58; // 3.23 * stake (assuming 2 hit)
 
-        document.getElementById('calcLabel1').innerText = `Retorno (3/3 Aciertos - Inversión $${totalStake.toFixed(0)}):`;
+        document.getElementById('calcLabel1').innerText = `Retorno (3/3 Aciertos - Inversión $${{totalStake.toFixed(0)}}):`;
         document.getElementById('calcLabel2').innerText = 'Ganancia Neta (3/3):';
-        document.getElementById('calcTotalReturn').innerText = `$${returnAll.toFixed(2)}`;
-        document.getElementById('calcNetProfit').innerText = `+$${profitAll.toFixed(2)}`;
+        document.getElementById('calcTotalReturn').innerText = `$${{returnAll.toFixed(2)}}`;
+        document.getElementById('calcNetProfit').innerText = `+$${{profitAll.toFixed(2)}}`;
 
-        if (payoutEl) {
-          payoutEl.innerText = `Con $${stake.toFixed(0)} en cada partido (Total $${totalStake.toFixed(0)}): Acierto 2/3 = $${returnTwo.toFixed(2)} (+$${(returnTwo-totalStake).toFixed(2)}) | Acierto 3/3 = $${returnAll.toFixed(2)} (+$${profitAll.toFixed(2)}).`;
-        }
+        if (payoutEl) {{
+          payoutEl.innerText = `Con $${{stake.toFixed(0)}} en cada partido (Total $${{totalStake.toFixed(0)}}): Acierto 2/3 = $${{returnTwo.toFixed(2)}} (+$${{(returnTwo-totalStake).toFixed(2)}}) | Acierto 3/3 = $${{returnAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}}).`;
+        }}
         if (multEl) multEl.innerText = '75% WIN RATE';
-      } else if (currentStrategyKey === 'modo_b_sistema') {
+      }} else if (currentStrategyKey === 'modo_b_sistema') {{
         // Total stake divided by 4 lines ($stake/4 per bet)
         const perBet = stake / 4;
         const retDoble1 = perBet * 2.61;
@@ -815,48 +579,48 @@
         const retAll = perBet * (2.61 + 2.84 + 2.97 + 4.70);
         const profitAll = retAll - stake;
 
-        document.getElementById('calcLabel1').innerText = `Retorno Pleno (3/3 - Inversión $${stake.toFixed(0)}):`;
+        document.getElementById('calcLabel1').innerText = `Retorno Pleno (3/3 - Inversión $${{stake.toFixed(0)}}):`;
         document.getElementById('calcLabel2').innerText = 'Ganancia Neta Pleno:';
-        document.getElementById('calcTotalReturn').innerText = `$${retAll.toFixed(2)}`;
-        document.getElementById('calcNetProfit').innerText = `+$${profitAll.toFixed(2)}`;
+        document.getElementById('calcTotalReturn').innerText = `$${{retAll.toFixed(2)}}`;
+        document.getElementById('calcNetProfit').innerText = `+$${{profitAll.toFixed(2)}}`;
 
-        if (payoutEl) {
-          payoutEl.innerText = `Con $${stake.toFixed(0)} ($${perBet.toFixed(1)} x 4 apuestas): Acierto 2/3 recupera $${retDoble3.toFixed(2)} | Acierto 3/3 cobra $${retAll.toFixed(2)} (+$${profitAll.toFixed(2)} neto).`;
-        }
+        if (payoutEl) {{
+          payoutEl.innerText = `Con $${{stake.toFixed(0)}} ($${{perBet.toFixed(1)}} x 4 apuestas): Acierto 2/3 recupera $${{retDoble3.toFixed(2)}} | Acierto 3/3 cobra $${{retAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}} neto).`;
+        }}
         if (multEl) multEl.innerText = 'SEGURO 1 FALLO';
-      } else if (currentStrategyKey === 'modo_c_banker') {
+      }} else if (currentStrategyKey === 'modo_c_banker') {{
         const totalReturn = stake * 2.18;
         const netProfit = totalReturn - stake;
 
-        document.getElementById('calcLabel1').innerText = `Retorno Duplicador (Inversión $${stake.toFixed(0)}):`;
+        document.getElementById('calcLabel1').innerText = `Retorno Duplicador (Inversión $${{stake.toFixed(0)}}):`;
         document.getElementById('calcLabel2').innerText = 'Ganancia Neta:';
-        document.getElementById('calcTotalReturn').innerText = `$${totalReturn.toFixed(2)}`;
-        document.getElementById('calcNetProfit').innerText = `+$${netProfit.toFixed(2)}`;
+        document.getElementById('calcTotalReturn').innerText = `$${{totalReturn.toFixed(2)}}`;
+        document.getElementById('calcNetProfit').innerText = `+$${{netProfit.toFixed(2)}}`;
 
-        if (payoutEl) {
-          payoutEl.innerText = `Con una apuesta de $${stake.toFixed(2)} cobras $${totalReturn.toFixed(2)} (+$${netProfit.toFixed(2)} de ganancia neta duplicando capital).`;
-        }
+        if (payoutEl) {{
+          payoutEl.innerText = `Con una apuesta de $${{stake.toFixed(2)}} cobras $${{totalReturn.toFixed(2)}} (+$${{netProfit.toFixed(2)}} de ganancia neta duplicando capital).`;
+        }}
         if (multEl) multEl.innerText = '2.18x DUPLICADOR';
-      }
-    }
+      }}
+    }}
 
-    function setQuickStake(amount) {
+    function setQuickStake(amount) {{
       document.getElementById('calcStakeInput').value = amount;
       calculatePayout();
-    }
+    }}
 
-    function copyCurrentStrategy() {
+    function copyCurrentStrategy() {{
       const strat = DATASET.strategies[currentStrategyKey];
       const copyText = (strat && strat.real_life_example && strat.real_life_example.copy_text) || "BLACK ROYAL STRATEGY";
 
-      navigator.clipboard.writeText(copyText).then(() => {
+      navigator.clipboard.writeText(copyText).then(() => {{
         showToast("¡Boleto copiado al portapapeles con éxito!");
-      }).catch(() => {
+      }}).catch(() => {{
         showToast("Selección copiada al portapapeles.");
-      });
-    }
+      }});
+    }}
 
-    function showToast(msg) {
+    function showToast(msg) {{
       const toast = document.getElementById('toastNotification');
       const toastMsg = document.getElementById('toastMessage');
       if (!toast || !toastMsg) return;
@@ -865,55 +629,61 @@
       toast.classList.remove('hidden');
       toast.classList.add('toast-animate');
 
-      setTimeout(() => {
+      setTimeout(() => {{
         toast.classList.add('hidden');
         toast.classList.remove('toast-animate');
-      }, 2600);
-    }
+      }}, 2600);
+    }}
 
-    function switchStrategyTab(stratKey) {
+    function switchStrategyTab(stratKey) {{
       currentStrategyKey = stratKey;
 
       const btnA = document.getElementById('btnStrat-modo_a_simples');
       const btnB = document.getElementById('btnStrat-modo_b_sistema');
       const btnC = document.getElementById('btnStrat-modo_c_banker');
 
-      [btnA, btnB, btnC].forEach(b => {
+      [btnA, btnB, btnC].forEach(b => {{
         if (b) b.className = 'px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer';
-      });
+      }});
 
-      if (stratKey === 'modo_a_simples') {
+      if (stratKey === 'modo_a_simples') {{
         btnA.className = 'px-4 py-2 rounded-lg font-bold transition flex items-center space-x-2 bg-accent-emerald text-black shadow cursor-pointer';
-      } else if (stratKey === 'modo_b_sistema') {
+      }} else if (stratKey === 'modo_b_sistema') {{
         btnB.className = 'px-4 py-2 rounded-lg font-bold transition flex items-center space-x-2 bg-accent-cyan text-black shadow cursor-pointer';
-      } else if (stratKey === 'modo_c_banker') {
+      }} else if (stratKey === 'modo_c_banker') {{
         btnC.className = 'px-4 py-2 rounded-lg font-bold transition flex items-center space-x-2 bg-accent-amber text-black shadow cursor-pointer';
-      }
+      }}
 
       renderStrategyCard(stratKey);
-    }
+    }}
 
-    function refreshData() {
+    function refreshData() {{
       const btn = event.currentTarget;
       btn.classList.add('opacity-50', 'pointer-events-none');
-      setTimeout(() => {
+      setTimeout(() => {{
         renderStrategyCard(currentStrategyKey);
         btn.classList.remove('opacity-50', 'pointer-events-none');
-      }, 250);
-    }
+      }}, 250);
+    }}
 
-    function updateLiveClock() {
+    function updateLiveClock() {{
       const now = new Date();
       const str = now.toTimeString().split(' ')[0] + ' UTC';
       const el = document.getElementById('liveClockHeader');
       if (el) el.innerText = str;
-    }
+    }}
 
-    window.onload = function() {
+    window.onload = function() {{
       renderStrategyCard('modo_a_simples');
       updateLiveClock();
       setInterval(updateLiveClock, 1000);
-    };
+    }};
   </script>
 </body>
 </html>
+"""
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_template)
+
+print("✅ Benito/index.html updated with Modo A, Modo B, and Modo C + Real-Life Practical Slips!")
