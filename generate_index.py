@@ -25,6 +25,11 @@ html_template = f"""<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>BLACK ROYAL — Terminal Cuantitativa & Estrategias de Alto Win Rate</title>
   
+  <!-- Anti-Cache for iOS PWA / Home Screen Bookmark -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
   <!-- iOS PWA & Mobile Optimization -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -164,8 +169,8 @@ html_template = f"""<!DOCTYPE html>
           <span class="text-slate-400 text-[11px]">TASA DE ÉXITO MODELADA:</span>
           <span class="text-accent-emerald font-bold">75% – 85%</span>
         </div>
-        <button onclick="refreshData()" class="px-3 py-1.5 bg-graphite-800 hover:bg-graphite-700 text-slate-200 text-xs font-mono rounded-lg border border-graphite-600 transition flex items-center space-x-1.5 cursor-pointer">
-          <i class="fa-solid fa-rotate text-accent-emerald"></i>
+        <button id="btnRefreshRemote" onclick="forceRemoteRefresh()" title="Sincronizar y forzar actualización remota" class="px-3.5 py-1.5 bg-accent-emerald text-black hover:bg-emerald-400 font-bold text-xs font-mono rounded-lg shadow-lg flex items-center space-x-1.5 transition cursor-pointer active:scale-95">
+          <i id="refreshIcon" class="fa-solid fa-rotate text-xs"></i>
           <span>Actualizar</span>
         </button>
       </div>
@@ -181,7 +186,7 @@ html_template = f"""<!DOCTYPE html>
       <div>
         <h1 class="text-xl md:text-2xl font-black text-white tracking-tight flex items-center gap-2">
           <span>Estrategias Cuantitativas de Alto Rendimiento</span>
-          <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded bg-accent-emerald/15 text-accent-emerald border border-accent-emerald/30">
+          <span id="displayDateBadge" class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded bg-accent-emerald/15 text-accent-emerald border border-accent-emerald/30">
             {display_date}
           </span>
         </h1>
@@ -697,14 +702,120 @@ html_template = f"""<!DOCTYPE html>
       renderStrategyCard(stratKey);
     }}
 
-    function refreshData() {{
-      const btn = event.currentTarget;
-      btn.classList.add('opacity-50', 'pointer-events-none');
+    function showToast(message, isSuccess = true) {{
+      const toast = document.getElementById('toastContainer');
+      const toastMsg = document.getElementById('toastMessage');
+      const toastContent = document.getElementById('toastContent');
+      if (!toast || !toastMsg) return;
+      toastMsg.innerText = message;
+      if (isSuccess) {{
+        toastContent.className = 'bg-graphite-900/95 border border-accent-emerald/50 text-accent-emerald px-4 py-2.5 rounded-xl shadow-2xl backdrop-blur-md text-xs font-mono font-bold flex items-center space-x-2';
+      }} else {{
+        toastContent.className = 'bg-graphite-900/95 border border-accent-amber/50 text-accent-amber px-4 py-2.5 rounded-xl shadow-2xl backdrop-blur-md text-xs font-mono font-bold flex items-center space-x-2';
+      }}
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
       setTimeout(() => {{
-        renderStrategyCard(currentStrategyKey);
-        btn.classList.remove('opacity-50', 'pointer-events-none');
-      }}, 250);
+        toast.classList.add('opacity-0', 'translate-y-4');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }}, 3200);
     }}
+
+    async function forceRemoteRefresh() {{
+      const icons = document.querySelectorAll('.fa-rotate');
+      icons.forEach(ic => ic.classList.add('fa-spin'));
+      showToast('🔄 Conectando y descargando versión remota...');
+
+      // 1. Clear any local CacheStorage (Service Worker / PWA caches)
+      if ('caches' in window) {{
+        try {{
+          const cacheKeys = await caches.keys();
+          await Promise.all(cacheKeys.map(key => caches.delete(key)));
+        }} catch (e) {{
+          console.warn('Cache clear error:', e);
+        }}
+      }}
+
+      // 2. Fetch fresh summary_recommendations.json with cache-buster timestamp
+      try {{
+        const timestamp = Date.now();
+        const res = await fetch('summary_recommendations.json?nocache=' + timestamp, {{
+          cache: 'no-store',
+          headers: {{
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+          }}
+        }});
+
+        if (res.ok) {{
+          const fresh = await res.json();
+          if (fresh && fresh.strategies) {{
+            window.RAW_DATASET = fresh;
+            
+            // Update display date in header if changed
+            if (fresh.generated_at) {{
+              const dtStr = fresh.generated_at.split(' ')[0];
+              const parts = dtStr.split('-');
+              if (parts.length === 3) {{
+                const months = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
+                const day = parseInt(parts[2], 10);
+                const month = months[parseInt(parts[1], 10) - 1];
+                const year = parts[0];
+                const dateBadge = document.getElementById('displayDateBadge');
+                if (dateBadge) dateBadge.innerText = day + ' ' + month + ' ' + year;
+              }}
+            }}
+
+            renderStrategyCard(currentStrategyKey);
+            showToast('✅ ¡Datos y estrategias actualizadas con éxito!');
+            icons.forEach(ic => ic.classList.remove('fa-spin'));
+            return;
+          }}
+        }}
+      }} catch (err) {{
+        console.warn('Direct fetch error, executing hard reload...', err);
+      }}
+
+      // 3. Fallback: Hard reload with cache buster query param
+      setTimeout(() => {{
+        const url = new URL(window.location.href);
+        url.searchParams.set('v', Date.now());
+        window.location.href = url.toString();
+      }}, 500);
+    }}
+
+    async function silentCheckForUpdates() {{
+      try {{
+        const timestamp = Date.now();
+        const res = await fetch('summary_recommendations.json?check=' + timestamp, {{
+          cache: 'no-store',
+          headers: {{ 'Cache-Control': 'no-cache' }}
+        }});
+        if (res.ok) {{
+          const fresh = await res.json();
+          if (fresh && fresh.generated_at && window.RAW_DATASET && fresh.generated_at !== window.RAW_DATASET.generated_at) {{
+            window.RAW_DATASET = fresh;
+            renderStrategyCard(currentStrategyKey);
+            showToast('✨ Nueva jornada detectada y actualizada automáticamente');
+          }}
+        }}
+      }} catch (e) {{
+        // ignore background error
+      }}
+    }}
+
+    // Auto-update when user switches back to the app on iPhone / Mobile
+    document.addEventListener('visibilitychange', () => {{
+      if (document.visibilityState === 'visible') {{
+        silentCheckForUpdates();
+      }}
+    }});
+    window.addEventListener('pageshow', (e) => {{
+      if (e.persisted) {{
+        silentCheckForUpdates();
+      }}
+    }});
 
     function updateLiveClock() {{
       const now = new Date();
@@ -719,6 +830,20 @@ html_template = f"""<!DOCTYPE html>
       setInterval(updateLiveClock, 1000);
     }};
   </script>
+
+  <!-- Floating Mobile Quick Refresh FAB for iPhone / PWA Shortcut -->
+  <button onclick="forceRemoteRefresh()" title="Actualizar datos en vivo" class="sm:hidden fixed bottom-5 right-5 z-50 bg-accent-emerald text-black p-4 rounded-full shadow-2xl border-2 border-white/20 active:scale-90 transition flex items-center justify-center cursor-pointer">
+    <i class="fa-solid fa-rotate text-lg"></i>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 transform translate-y-4">
+    <div id="toastContent" class="bg-graphite-900/95 border border-accent-emerald/50 text-accent-emerald px-4 py-2.5 rounded-xl shadow-2xl backdrop-blur-md text-xs font-mono font-bold flex items-center space-x-2">
+      <i class="fa-solid fa-circle-check"></i>
+      <span id="toastMessage">Datos actualizados</span>
+    </div>
+  </div>
+
 </body>
 </html>
 """
