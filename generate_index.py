@@ -1,9 +1,22 @@
 import json
+import os
+import datetime
 
-with open('summary_recommendations.json', 'r', encoding='utf-8') as f:
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+SUMMARY_FILE = os.path.join(CURRENT_DIR, 'summary_recommendations.json')
+
+with open(SUMMARY_FILE, 'r', encoding='utf-8') as f:
     dataset = json.load(f)
 
 dataset_json_str = json.dumps(dataset, ensure_ascii=False, indent=2)
+
+gen_at = dataset.get("generated_at", "")
+try:
+    dt = datetime.datetime.strptime(gen_at.split()[0], "%Y-%m-%d")
+    months = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
+    display_date = f"{dt.day} {months[dt.month - 1]} {dt.year}"
+except Exception:
+    display_date = "SÁBADO 22 AGOSTO 2026"
 
 html_template = f"""<!DOCTYPE html>
 <html lang="es" class="dark">
@@ -169,7 +182,7 @@ html_template = f"""<!DOCTYPE html>
         <h1 class="text-xl md:text-2xl font-black text-white tracking-tight flex items-center gap-2">
           <span>Estrategias Cuantitativas de Alto Rendimiento</span>
           <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded bg-accent-emerald/15 text-accent-emerald border border-accent-emerald/30">
-            21 AGOSTO 2026
+            {display_date}
           </span>
         </h1>
         <p class="text-xs md:text-sm text-slate-400 mt-1">
@@ -200,17 +213,17 @@ html_template = f"""<!DOCTYPE html>
         <div id="strategySelectorContainer" class="flex flex-wrap items-center gap-1.5 bg-graphite-900 p-1.5 rounded-xl border border-graphite-700/80 font-mono text-xs shadow-inner">
           <button onclick="switchStrategyTab('modo_a_simples')" id="btnStrat-modo_a_simples" class="px-4 py-2 rounded-lg font-bold transition flex items-center space-x-2 bg-accent-emerald text-black shadow cursor-pointer">
             <i class="fa-solid fa-trophy"></i>
-            <span>Modo A: Simples (76% Win Rate)</span>
+            <span>{dataset.get('strategies', {}).get('modo_a_simples', {}).get('modeShort', 'Modo A: Simples (78% Win Rate)')}</span>
           </button>
           
           <button onclick="switchStrategyTab('modo_b_sistema')" id="btnStrat-modo_b_sistema" class="px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer">
             <i class="fa-solid fa-shield-halved text-accent-cyan"></i>
-            <span>Modo B: Sistema 2/3 (Seguro 1 Fallo)</span>
+            <span>{dataset.get('strategies', {}).get('modo_b_sistema', {}).get('modeShort', 'Modo B: Sistema 2/3 (Seguro 1 Fallo)')}</span>
           </button>
 
           <button onclick="switchStrategyTab('modo_c_banker')" id="btnStrat-modo_c_banker" class="px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer">
             <i class="fa-solid fa-bolt text-accent-amber"></i>
-            <span>Modo C: Doble Banker (2.04x)</span>
+            <span>{dataset.get('strategies', {}).get('modo_c_banker', {}).get('modeShort', 'Modo C: Doble Banker (Duplicador @ 2.09x)')}</span>
           </button>
         </div>
       </div>
@@ -562,29 +575,47 @@ html_template = f"""<!DOCTYPE html>
       if (stake < 0) stake = 0;
 
       const strat = DATASET.strategies[currentStrategyKey];
+      if (!strat) return;
       const payoutEl = document.getElementById('realLifePayoutText');
       const multEl = document.getElementById('realLifeMultiplierText');
 
       if (currentStrategyKey === 'modo_a_simples') {{
-        const totalStake = stake * 3;
-        const returnAll = stake * 1.55 + stake * 1.75 + stake * 1.68; // ~4.98 * stake
+        const picks = strat.picks || [];
+        const numPicks = picks.length || 3;
+        const totalStake = stake * numPicks;
+        let returnAll = 0;
+        let returnTopTwo = 0;
+        picks.forEach((p, idx) => {{
+          const o = parseFloat(p.odds) || 1.6;
+          const ret = stake * o;
+          returnAll += ret;
+          if (idx < 2) returnTopTwo += ret;
+        }});
         const profitAll = returnAll - totalStake;
-        const returnTwo = stake * 1.68 + stake * 1.55; // 3.23 * stake (assuming 2 hit)
 
-        document.getElementById('calcLabel1').innerText = `Retorno (3/3 Aciertos - Inversión $${{totalStake.toFixed(0)}}):`;
-        document.getElementById('calcLabel2').innerText = 'Ganancia Neta (3/3):';
-        document.getElementById('calcTotalReturn').innerText = `$${{returnAll.toFixed(2)}}`;
-        document.getElementById('calcNetProfit').innerText = `+$${{profitAll.toFixed(2)}}`;
+        document.getElementById('calcLabel1').innerText = 'Retorno (' + numPicks + '/' + numPicks + ' Aciertos - Inversión $' + totalStake.toFixed(0) + '):';
+        document.getElementById('calcLabel2').innerText = 'Ganancia Neta (' + numPicks + '/' + numPicks + '):';
+        document.getElementById('calcTotalReturn').innerText = '$' + returnAll.toFixed(2);
+        document.getElementById('calcNetProfit').innerText = '+$' + profitAll.toFixed(2);
 
         if (payoutEl) {{
-          payoutEl.innerText = `Con $${{stake.toFixed(0)}} en cada partido (Total $${{totalStake.toFixed(0)}}): Acierto 2/3 = $${{returnTwo.toFixed(2)}} (+$${{(returnTwo-totalStake).toFixed(2)}}) | Acierto 3/3 = $${{returnAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}}).`;
+          payoutEl.innerText = `Con $${{stake.toFixed(0)}} en cada partido (Total $${{totalStake.toFixed(0)}}): Acierto 2/3 = $${{returnTopTwo.toFixed(2)}} (+$${{(returnTopTwo-totalStake).toFixed(2)}}) | Acierto 3/3 = $${{returnAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}}).`;
         }}
-        if (multEl) multEl.innerText = '76.5% WIN RATE';
+        if (multEl) multEl.innerText = `${{strat.expectedWinRate || '78%'}} WIN RATE`;
       }} else if (currentStrategyKey === 'modo_b_sistema') {{
         const perBet = stake / 4;
-        const retDoble1 = perBet * 2.60;
-        const retDoble3 = perBet * 2.85;
-        const retAll = perBet * (2.60 + 2.63 + 2.85 + 4.42);
+        let retAll = 0;
+        let retSingleDoble = 0;
+        if (strat.combinations && strat.combinations.length > 0) {{
+          strat.combinations.forEach((c, idx) => {{
+            const ret = perBet * (parseFloat(c.odds) || 2.6);
+            retAll += ret;
+            if (idx === 0) retSingleDoble = ret;
+          }});
+        }} else {{
+          retAll = perBet * (2.56 + 2.61 + 2.67 + 4.22);
+          retSingleDoble = perBet * 2.56;
+        }}
         const profitAll = retAll - stake;
 
         document.getElementById('calcLabel1').innerText = `Retorno Pleno (3/3 - Inversión $${{stake.toFixed(0)}}):`;
@@ -593,11 +624,12 @@ html_template = f"""<!DOCTYPE html>
         document.getElementById('calcNetProfit').innerText = `+$${{profitAll.toFixed(2)}}`;
 
         if (payoutEl) {{
-          payoutEl.innerText = `Con $${{stake.toFixed(0)}} ($${{perBet.toFixed(1)}} x 4 apuestas): Acierto 2/3 recupera $${{retDoble3.toFixed(2)}} | Acierto 3/3 cobra $${{retAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}} neto).`;
+          payoutEl.innerText = `Con $${{stake.toFixed(0)}} ($${{perBet.toFixed(1)}} x 4 apuestas): Acierto 2/3 recupera ~$${{retSingleDoble.toFixed(2)}} | Acierto 3/3 cobra $${{retAll.toFixed(2)}} (+$${{profitAll.toFixed(2)}} neto).`;
         }}
         if (multEl) multEl.innerText = 'SEGURO 1 FALLO';
       }} else if (currentStrategyKey === 'modo_c_banker') {{
-        const totalReturn = stake * 2.04;
+        const totalOdds = parseFloat(strat.totalOdds) || 2.09;
+        const totalReturn = stake * totalOdds;
         const netProfit = totalReturn - stake;
 
         document.getElementById('calcLabel1').innerText = `Retorno Duplicador (Inversión $${{stake.toFixed(0)}}):`;
@@ -608,7 +640,7 @@ html_template = f"""<!DOCTYPE html>
         if (payoutEl) {{
           payoutEl.innerText = `Con una apuesta de $${{stake.toFixed(2)}} cobras $${{totalReturn.toFixed(2)}} (+$${{netProfit.toFixed(2)}} de ganancia neta duplicando capital).`;
         }}
-        if (multEl) multEl.innerText = '2.04x DUPLICADOR';
+        if (multEl) multEl.innerText = `${{totalOdds.toFixed(2)}}x DUPLICADOR`;
       }}
     }}
 
@@ -694,4 +726,4 @@ html_template = f"""<!DOCTYPE html>
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html_template)
 
-print("✅ Benito/index.html updated with complete iOS PWA capabilities and August 21 strategies!")
+print(f"✅ Benito/index.html updated with complete iOS PWA capabilities and {display_date} strategies!")

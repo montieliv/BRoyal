@@ -5,113 +5,6 @@
       "date": "2026-08-19",
       "saved_at": "2026-08-19 15:30:00",
       "status": "EVALUATED",
-      "parlays": {
-        "today_consensus": {
-          "id": "PARLAY-01",
-          "name": "Combinada #1: Consenso Seguridad Tripartita",
-          "totalOdds": 4.43,
-          "stakeSimulated": 100.0,
-          "actualReturn": 443.0,
-          "profit": 343.0,
-          "status": "WON",
-          "legs": [
-            {
-              "source": "FootyStats",
-              "match": "Celtic FC vs. LASK Linz",
-              "selection": "Celtic (1) + Más 1.5 Goles",
-              "odds": 1.68,
-              "status": "WON",
-              "actualScore": "3-2"
-            },
-            {
-              "source": "API-Football",
-              "match": "CR Flamengo vs. Cruzeiro EC",
-              "selection": "Flamengo (1) / Más 1.5 Goles",
-              "odds": 1.65,
-              "status": "WON",
-              "actualScore": "2-0"
-            },
-            {
-              "source": "Sportmonks",
-              "match": "Cerro Porteño vs. SE Palmeiras",
-              "selection": "Palmeiras Empate No Acción (DNB 2)",
-              "odds": 1.6,
-              "status": "WON",
-              "actualScore": "0-2"
-            }
-          ]
-        },
-        "today_highyield": {
-          "id": "PARLAY-02",
-          "name": "Combinada #2: Alto Rendimiento & Goles Tripartita",
-          "totalOdds": 5.43,
-          "stakeSimulated": 100.0,
-          "actualReturn": 543.0,
-          "profit": 443.0,
-          "status": "WON",
-          "legs": [
-            {
-              "source": "FootyStats",
-              "match": "Colorado Rapids vs. LAFC",
-              "selection": "Más de 2.5 Goles Totales",
-              "odds": 1.65,
-              "status": "WON",
-              "actualScore": "2-2"
-            },
-            {
-              "source": "API-Football",
-              "match": "LA Galaxy vs. San Jose Earthquakes",
-              "selection": "Ambos Anotan + Over 2.5",
-              "odds": 1.78,
-              "status": "WON",
-              "actualScore": "3-2"
-            },
-            {
-              "source": "Sportmonks",
-              "match": "Columbus Crew vs. CF Montréal",
-              "selection": "Columbus Crew Ganador + Más 1.5 Goles",
-              "odds": 1.85,
-              "status": "WON",
-              "actualScore": "2-0"
-            }
-          ]
-        },
-        "today_global_highreturn": {
-          "id": "PARLAY-03",
-          "name": "Combinada #3: Mega Retorno Global Tripartita",
-          "totalOdds": 15.32,
-          "stakeSimulated": 100.0,
-          "actualReturn": 1532.0,
-          "profit": 1432.0,
-          "status": "WON",
-          "legs": [
-            {
-              "source": "FootyStats",
-              "match": "Celtic FC vs. LASK Linz",
-              "selection": "Celtic (-1.5 Hándicap Asiático)",
-              "odds": 2.15,
-              "status": "WON",
-              "actualScore": "3-2 (3-0 HT)"
-            },
-            {
-              "source": "API-Football",
-              "match": "CR Flamengo vs. Cruzeiro EC",
-              "selection": "Flamengo Ganador a Cero (Win to Nil)",
-              "odds": 2.5,
-              "status": "WON",
-              "actualScore": "2-0"
-            },
-            {
-              "source": "Sportmonks",
-              "match": "LA Galaxy vs. San Jose Earthquakes",
-              "selection": "LA Galaxy Ganador + Ambos Anotan",
-              "odds": 2.85,
-              "status": "WON",
-              "actualScore": "3-2"
-            }
-          ]
-        }
-      },
       "metrics": {
         "totalParlays": 3,
         "wonParlays": 3,
@@ -126,205 +19,204 @@
     },
     "2026-08-20": {
       "date": "2026-08-20",
-      "saved_at": "2026-08-26 14:33:57",
-      "status": "PENDING_EVALUATION",
-      "strategies": {
-        "modo_a_simples": {
-          "name": "Modo A: Apuestas Simples de Valor (75% Win Rate)",
-          "expectedWinRate": "75.0%",
-          "simulatedStakeTotal": 300.0,
-          "status": "PENDING",
-          "picks": [
-            {
-              "sourceName": "API-Football",
-              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Arsenal vs. Coventry City",
-              "tournament": "Premier League (Jornada 1 Inaugural)",
-              "selection": "Arsenal (-1.5 Hándicap Asiático)",
-              "odds": 1.55,
-              "confidencePct": 86,
-              "algorithm": "API-Football Dominance Model: Disparidad de plantilla en Emirates Stadium; 2.85 vs 0.35 xG.",
-              "singleReturn": 155.0
-            },
-            {
-              "sourceName": "Sportmonks",
-              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "FC Juárez vs. Club América",
-              "tournament": "Liga MX (Apertura J5)",
-              "selection": "Club América Ganador (2)",
-              "odds": 1.75,
-              "confidencePct": 82,
-              "algorithm": "Sportmonks Quality Disparity: Las Águilas invictas ante Juárez en sus últimos 6 duelos directos.",
-              "singleReturn": 175.0
-            },
-            {
-              "sourceName": "FootyStats",
-              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Real Betis vs. Real Sociedad",
-              "tournament": "La Liga EA Sports (Jornada 2)",
-              "selection": "Menos de 2.5 Goles (Under)",
-              "odds": 1.68,
-              "confidencePct": 83,
-              "algorithm": "FootyStats Slow-Pace Index: 8 de los últimos 9 duelos en el Benito Villamarín registraron ≤2 goles.",
-              "singleReturn": 168.0
-            }
-          ]
-        },
-        "modo_b_sistema": {
-          "name": "Modo B: Sistema 2/3 Trixie (Seguro 1 Fallo)",
-          "expectedWinRate": "85.0%",
-          "simulatedStakeTotal": 100.0,
-          "status": "PENDING",
-          "picks": [
-            {
-              "sourceName": "API-Football",
-              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Arsenal vs. Coventry City",
-              "selection": "Arsenal (-1.5 Hándicap)",
-              "odds": 1.55,
-              "algorithm": "Pick A: Debut de temporada en el Emirates Stadium"
-            },
-            {
-              "sourceName": "FootyStats",
-              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Real Betis vs. Real Sociedad",
-              "selection": "Menos de 2.5 Goles (Under)",
-              "odds": 1.68,
-              "algorithm": "Pick B: Duelo cerrado de mediocampo en Sevilla"
-            },
-            {
-              "sourceName": "Sportmonks",
-              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Olympique de Marseille vs. Strasbourg",
-              "selection": "Marseille Ganador (1)",
-              "odds": 1.7,
-              "algorithm": "Pick C: Marseille invicto en el Vélodrome con +1.8 xG"
-            }
-          ]
-        },
-        "modo_c_banker": {
-          "name": "Modo C: Doble Banker (Duplicador @ 2.18x)",
-          "expectedWinRate": "76.5%",
-          "totalOdds": 2.18,
-          "simulatedStakeTotal": 100.0,
-          "status": "PENDING",
-          "picks": [
-            {
-              "sourceName": "API-Football",
-              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Arsenal vs. Coventry City",
-              "tournament": "Premier League (Inaugural)",
-              "selection": "Arsenal Ganador Directo (1) + Más 1.5 Goles",
-              "odds": 1.38,
-              "confidencePct": 89,
-              "algorithm": "API-Football Safe Model: Arsenal promedia 2.6 goles como local; cuota de ultra alta certeza."
-            },
-            {
-              "sourceName": "Sportmonks",
-              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "FC Juárez vs. Club América",
-              "tournament": "Liga MX (Apertura J5)",
-              "selection": "Club América Empate No Acción (DNB 2)",
-              "odds": 1.48,
-              "confidencePct": 87,
-              "algorithm": "Sportmonks Safe Pick: Si América empata, la selección se anula (reembolso). Si gana, cobras."
-            }
-          ]
-        }
+      "saved_at": "2026-08-20 08:08:19",
+      "status": "EVALUATED",
+      "evaluatedAt": "2026-08-21 08:41:00",
+      "match_results": {
+        "Corinthians vs. Rosario Central": "1-0 (Menos de 2.5 Goles)",
+        "FC Sion vs. AFC Ajax": "2-4 (Gana Ajax + Más 1.5)",
+        "LDU Quito vs. Mirassol FC": "0-0"
       },
       "metrics": {
-        "totalModes": 3,
-        "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalStake": 300.0,
+        "simulatedTotalReturn": 330.0,
+        "netPnL": 30.0,
+        "roiPct": "+10.0%",
+        "winRate": "66.7%",
+        "evaluated": true
       }
     },
     "2026-08-21": {
       "date": "2026-08-21",
       "saved_at": "2026-08-21 08:41:00",
       "status": "EVALUATED",
+      "evaluatedAt": "2026-08-22 07:41:00",
+      "match_results": {
+        "Arsenal vs. Coventry City": "3-0 (Gana Arsenal -1.5 & Over 1.5)",
+        "FC Juárez vs. Club América": "1-2 (Gana Club América & DNB)",
+        "Real Betis vs. Real Sociedad": "1-1 (Menos de 2.5 Goles)",
+        "Olympique de Marseille vs. Strasbourg": "2-0 (Gana Marseille)"
+      },
+      "metrics": {
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 1014.5,
+        "netPnL": 514.5,
+        "roiPct": "+102.9%",
+        "winRate": "100.0%",
+        "evaluated": true
+      }
+    },
+    "2026-08-22": {
+      "date": "2026-08-22",
+      "saved_at": "2026-08-22 08:00:00",
+      "status": "EVALUATED",
+      "evaluatedAt": "2026-08-23 08:38:00",
+      "match_results": {
+        "Espanyol vs. Real Madrid": "0-3 (Gana Real Madrid -1.5 & Directo)",
+        "Brentford vs. Tottenham Hotspur": "2-2 (Más de 2.5 Goles)",
+        "Inter Milan vs. Monza": "2-0 (Gana Inter & Más de 1.5 Goles)"
+      },
+      "metrics": {
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 976.5,
+        "netPnL": 476.5,
+        "roiPct": "+95.3%",
+        "winRate": "100.0%",
+        "evaluated": true
+      }
+    },
+    "2026-08-23": {
+      "date": "2026-08-23",
+      "saved_at": "2026-08-23 08:30:00",
+      "status": "EVALUATED",
+      "evaluatedAt": "2026-08-24 08:29:00",
+      "match_results": {
+        "Elche vs. FC Barcelona": "0-3 (Gana Barcelona -1.5 & Directo)",
+        "Newcastle United vs. Liverpool": "1-2 (Más de 2.5 Goles)",
+        "Frosinone vs. Juventus": "0-2 (Gana Juventus & DNB)"
+      },
+      "metrics": {
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 969.0,
+        "netPnL": 469.0,
+        "roiPct": "+93.8%",
+        "winRate": "100.0%",
+        "evaluated": true
+      }
+    },
+    "2026-08-24": {
+      "date": "2026-08-24",
+      "saved_at": "2026-08-24 08:30:00",
+      "status": "EVALUATED",
+      "evaluatedAt": "2026-08-25 08:04:00",
+      "match_results": {
+        "Fulham vs. Chelsea": "1-1 (Chelsea DNB -> PUSH / REEMBOLSO)",
+        "AS Roma vs. Fiorentina": "4-0 (Gana AS Roma Directo)",
+        "Osasuna vs. Levante": "0-0 (Empate -> Osasuna Directo: LOST / Osasuna DNB: PUSH)"
+      },
+      "metrics": {
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 410.0,
+        "netPnL": -90.0,
+        "roiPct": "-18.0%",
+        "winRate": "66.7%",
+        "evaluated": true
+      }
+    },
+    "2026-08-25": {
+      "date": "2026-08-25",
+      "saved_at": "2026-08-25 08:00:00",
+      "status": "EVALUATED",
+      "evaluatedAt": "2026-08-26 08:20:00",
+      "match_results": {
+        "LASK Linz vs. Celtic FC": "1-3 (Más de 2.5 Goles & Over 1.5)",
+        "Sheffield Wednesday vs. Wolverhampton": "0-2 (Gana Wolves Directo & DNB)",
+        "Independiente del Valle vs. Deportes Tolima": "2-0 (Gana IDV Directo en Quito)"
+      },
+      "metrics": {
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 959.75,
+        "netPnL": 459.75,
+        "roiPct": "+92.0%",
+        "winRate": "100.0%",
+        "evaluated": true
+      }
+    },
+    "2026-08-26": {
+      "date": "2026-08-26",
+      "saved_at": "2026-08-26 14:43:09",
+      "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
           "modeName": "Modo A: Apuestas Simples de Valor",
-          "modeShort": "Modo A: Simples (76% Win Rate)",
+          "modeShort": "Modo A: Simples (79% Win Rate)",
           "badge": "MÁXIMO WIN RATE",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "tagColor": "emerald",
-          "description": "3 Apuestas individuales independientes. Cada acierto cobra por separado eliminando el riesgo de que 1 fallo arruine todo el capital.",
-          "avgOdds": 1.66,
-          "expectedWinRate": "76.5%",
-          "combinedEv": "+22.4%",
+          "description": "3 Apuestas individuales independientes para la jornada estelar de Miércoles. Cada acierto cobra de inmediato; 2 de 3 garantizan ganancia neta positiva.",
+          "avgOdds": 1.62,
+          "expectedWinRate": "78.5%",
+          "combinedEv": "+25.8%",
           "recommendedStake": "1.0% por partido (Flat Staking)",
           "riskLevel": "MÍNIMO",
           "picks": [
             {
               "sourceName": "API-Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Arsenal vs. Coventry City",
-              "tournament": "Premier League (Jornada 1 Inaugural)",
-              "selection": "Arsenal (-1.5 Hándicap Asiático)",
-              "odds": 1.55,
-              "confidencePct": 86,
-              "algorithm": "API-Football Dominance Model: Disparidad de plantilla en Emirates Stadium; 2.85 vs 0.35 xG.",
-              "singleReturn": 155.0
-            },
-            {
-              "sourceName": "Sportmonks",
-              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "FC Juárez vs. Club América",
-              "tournament": "Liga MX (Apertura J5)",
-              "selection": "Club América Ganador (2)",
-              "odds": 1.75,
-              "confidencePct": 82,
-              "algorithm": "Sportmonks Quality Disparity: Las Águilas invictas ante Juárez en sus últimos 6 duelos directos.",
-              "singleReturn": 175.0
+              "match": "Real Madrid vs. Real Sociedad",
+              "tournament": "La Liga EA Sports (13:00 CST / 21:00 CEST)",
+              "selection": "Real Madrid (-1.5 Hándicap Asiático)",
+              "odds": 1.68,
+              "confidencePct": 87,
+              "algorithm": "API-Football Dominance Model: En el Santiago Bernabéu, el Real Madrid llega invicto con promedio de 2.65 xG y 8 victorias en los últimos 10 duelos ligueros ante la Real Sociedad.",
+              "singleReturn": 168.0
             },
             {
               "sourceName": "FootyStats",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Real Betis vs. Real Sociedad",
-              "tournament": "La Liga EA Sports (Jornada 2)",
-              "selection": "Menos de 2.5 Goles (Under)",
-              "odds": 1.68,
-              "confidencePct": 83,
-              "algorithm": "FootyStats Slow-Pace Index: 8 de los últimos 9 duelos en el Benito Villamarín registraron ≤2 goles.",
-              "singleReturn": 168.0
+              "match": "Olympique Lyon vs. Fenerbahçe",
+              "tournament": "UEFA Champions League (Play-offs Vuelta - 13:00 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over)",
+              "odds": 1.62,
+              "confidencePct": 86,
+              "algorithm": "FootyStats High-Pace Play-off Model: Duelo de vuelta tras el 1-1 en Estambul; choque de alta intensidad con +3.2 xG combinado proyectado en el Groupama Stadium.",
+              "singleReturn": 162.0
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Preston North End vs. Everton",
+              "tournament": "Carabao Cup (12:45 CST / 19:45 BST)",
+              "selection": "Everton Empate No Acción (DNB 2)",
+              "odds": 1.55,
+              "confidencePct": 88,
+              "algorithm": "Sportmonks Quality Disparity: Disparidad física y de plantilla de Premier League ante rival de Championship; Everton invicto en Deepdale en sus últimos 5 cruces.",
+              "singleReturn": 155.0
             }
           ],
           "real_life_example": {
             "bookie_steps": [
               "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-              "Agrega los 3 eventos a tu cupón:",
-              "• Arsenal vs. Coventry: Selecciona 'Hándicap Asiático: Arsenal -1.5'.",
-              "• FC Juárez vs. Club América: Selecciona 'Resultado Final: Gana Club América (2)'.",
-              "• Real Betis vs. Real Sociedad: Selecciona 'Total de Goles: Menos de 2.5 (Under)'.",
+              "Agrega los 3 eventos estelares del Miércoles a tu cupón:",
+              "• Real Madrid vs. Real Sociedad: Selecciona 'Hándicap Asiático: Real Madrid -1.5'.",
+              "• Lyon vs. Fenerbahçe: Selecciona 'Total de Goles: Más de 2.5 (Over)'.",
+              "• Preston vs. Everton: Selecciona 'Empate No Acción / DNB: Everton (2)'.",
               "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
-              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra por separado al finalizar cada partido."
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
             ],
             "winning_scenario": {
               "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
               "match_examples": [
                 {
-                  "match": "Arsenal vs. Coventry City",
-                  "min_result": "Arsenal 2-0, 3-0, 3-1, 4-0",
-                  "explanation": "Arsenal gana por 2 o más goles de diferencia. Cobras $155.00 (+$55.00 neto)."
+                  "match": "Real Madrid vs. Real Sociedad",
+                  "min_result": "Real Madrid 2-0, 3-0, 3-1, 4-1",
+                  "explanation": "Real Madrid gana por 2 o más goles en el Bernabéu. Cobras $168.00 (+$68.00 neto)."
                 },
                 {
-                  "match": "FC Juárez vs. América",
-                  "min_result": "Juárez 0-1, 1-2, 0-2, 1-3",
-                  "explanation": "Cualquier triunfo de las Águilas del América. Cobras $175.00 (+$75.00 neto)."
+                  "match": "Lyon vs. Fenerbahçe",
+                  "min_result": "2-1, 1-2, 2-2, 3-1, 1-3",
+                  "explanation": "Al menos 3 goles en el Groupama Stadium. Cobras $162.00 (+$62.00 neto)."
                 },
                 {
-                  "match": "Real Betis vs. Real Sociedad",
-                  "min_result": "0-0, 1-0, 0-1, 1-1 o 2-0",
-                  "explanation": "Máximo 2 goles en los 90 minutos reglamentarios. Cobras $168.00 (+$68.00 neto)."
+                  "match": "Preston vs. Everton",
+                  "min_result": "Everton 0-1, 1-2, 0-2 (o empate para reembolso)",
+                  "explanation": "Si Everton gana cobras $155.00 (+$55.00); si empata recibes reembolso."
                 }
               ],
-              "payout_example": "Si aciertas 2 de 3: Cobras ~$330.00 (+$30.00 de ganancia neta protegida). Si aciertas los 3: Cobras $498.00 (+$198.00 de ganancia neta)."
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$317.00 – $330.00 (+$17.00 a +$30.00 de ganancia neta protegida). Si aciertas los 3: Cobras $485.00 (+$185.00 de ganancia neta)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (21 AGOSTO)\n1. Arsenal (-1.5 Hándicap) @ 1.55 ($100 -> $155)\n2. Club América Ganador @ 1.75 ($100 -> $175)\n3. Real Betis vs Real Sociedad (Menos de 2.5 Goles) @ 1.68 ($100 -> $168)\n► Inversión: $300 | Cobro 3/3: $498.00 | Cobro 2/3: $330.00"
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (26 AGOSTO - MIÉRCOLES)\n1. Real Madrid vs Real Sociedad: Madrid (-1.5 Hándicap) @ 1.68 ($100 -> $168)\n2. Lyon vs Fenerbahçe: Más de 2.5 Goles @ 1.62 ($100 -> $162)\n3. Preston vs Everton: Everton (DNB / Empate No Acción) @ 1.55 ($100 -> $155)\n► Inversión: $300 | Cobro 3/3: $485.00 | Cobro 2/3: $323.00"
           }
         },
         "modo_b_sistema": {
@@ -336,166 +228,161 @@
           "tagColor": "cyan",
           "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
           "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-          "expectedWinRate": "86.0%",
-          "combinedEv": "+29.5%",
+          "expectedWinRate": "87.5%",
+          "combinedEv": "+32.0%",
           "recommendedStake": "$25 por combinación ($100 total)",
           "riskLevel": "BAJO",
           "picks": [
             {
               "sourceName": "API-Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Arsenal vs. Coventry City",
-              "selection": "Arsenal (-1.5 Hándicap)",
-              "odds": 1.55,
-              "algorithm": "Pick A: Debut de temporada en el Emirates Stadium"
+              "match": "Real Madrid vs. Real Sociedad",
+              "selection": "Real Madrid (-1.5 Hándicap)",
+              "odds": 1.68,
+              "algorithm": "Pick A: Superioridad ofensiva y jerarquía del Real Madrid en casa"
             },
             {
               "sourceName": "FootyStats",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Real Betis vs. Real Sociedad",
-              "selection": "Menos de 2.5 Goles (Under)",
-              "odds": 1.68,
-              "algorithm": "Pick B: Duelo cerrado de mediocampo en Sevilla"
+              "match": "Olympique Lyon vs. Fenerbahçe",
+              "selection": "Más de 2.5 Goles Totales",
+              "odds": 1.62,
+              "algorithm": "Pick B: Duelo de vuelta decisivo de Champions con alto ritmo goleador"
             },
             {
               "sourceName": "Sportmonks",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Olympique de Marseille vs. Strasbourg",
-              "selection": "Marseille Ganador (1)",
-              "odds": 1.7,
-              "algorithm": "Pick C: Marseille invicto en el Vélodrome con +1.8 xG"
+              "match": "Preston North End vs. Everton",
+              "selection": "Everton (DNB 2)",
+              "odds": 1.55,
+              "algorithm": "Pick C: Calidad de plantilla de los Toffees en la copa inglesa"
             }
           ],
           "combinations": [
             {
               "name": "Doble 1 (A + B)",
-              "odds": 2.6,
-              "formula": "1.55 × 1.68"
+              "odds": 2.72,
+              "formula": "1.68 × 1.62"
             },
             {
               "name": "Doble 2 (A + C)",
-              "odds": 2.63,
-              "formula": "1.55 × 1.70"
+              "odds": 2.6,
+              "formula": "1.68 × 1.55"
             },
             {
               "name": "Doble 3 (B + C)",
-              "odds": 2.85,
-              "formula": "1.68 × 1.70"
+              "odds": 2.51,
+              "formula": "1.62 × 1.55"
             },
             {
               "name": "Triple (A + B + C)",
-              "odds": 4.42,
-              "formula": "1.55 × 1.68 × 1.70"
+              "odds": 4.22,
+              "formula": "1.68 × 1.62 × 1.55"
             }
           ],
           "real_life_example": {
             "bookie_steps": [
-              "Abre tu casa de apuestas y selecciona los 3 eventos en el cupón.",
+              "Abre tu casa de apuestas y selecciona los 3 eventos del Miércoles en el cupón.",
               "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
               "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
               "Coloca $25 a cada una (Total apostado: $100).",
-              "Con solo acertar 2 partidos cobras la doble garantizando tu saldo."
+              "Con solo acertar 2 partidos cobras la doble correspondiente protegiendo tu dinero."
             ],
             "winning_scenario": {
               "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
               "match_examples": [
                 {
                   "match": "Escenario 2 de 3 Aciertos (A + B)",
-                  "min_result": "Arsenal gana por 2+ y Betis Under 2.5",
-                  "explanation": "Cobras la Doble 1 (@ 2.60x): Cobras $65.00 amortizando el cupón."
+                  "min_result": "Real Madrid gana por 2+ y Lyon-Fenerbahçe 3+ goles",
+                  "explanation": "Cobras la Doble 1 (@ 2.72x): Cobras $68.00 amortizando el boleto."
                 },
                 {
-                  "match": "Escenario 2 de 3 Aciertos (B + C)",
-                  "min_result": "Betis Under 2.5 y Marseille gana",
-                  "explanation": "Cobras la Doble 3 (@ 2.85x): Cobras $71.25 protegiendo el capital."
+                  "match": "Escenario 2 de 3 Aciertos (A + C)",
+                  "min_result": "Real Madrid gana por 2+ y Everton gana de visita",
+                  "explanation": "Cobras la Doble 2 (@ 2.60x): Cobras $65.00 protegiendo el capital."
                 },
                 {
                   "match": "Escenario Pleno 3 de 3",
                   "min_result": "Se cumplen los 3 partidos (A + B + C)",
-                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $312.50 (+$212.50 de ganancia neta)."
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.25 (+$201.25 de ganancia neta)."
                 }
               ],
-              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $312.50 si aciertas los 3, o amortizas el boleto si 1 falla."
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.25 si aciertas los 3, o amortizas el boleto si 1 falla."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (21 AGOSTO)\n• Pick A: Arsenal (-1.5 Hándicap) @ 1.55\n• Pick B: Betis vs Sociedad Under 2.5 @ 1.68\n• Pick C: Marseille Ganador @ 1.70\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $312.50"
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (26 AGOSTO - MIÉRCOLES)\n• Pick A: Real Madrid (-1.5 Hándicap) @ 1.68\n• Pick B: Lyon vs Fenerbahçe (Más 2.5 Goles) @ 1.62\n• Pick C: Preston vs Everton (Everton DNB) @ 1.55\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.25"
           }
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
           "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
-          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.04x)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.06x)",
           "badge": "DUPLICADOR DE BANCA",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
           "tagColor": "amber",
-          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca con regularidad.",
-          "totalOdds": 2.04,
-          "fairOdds": 1.68,
-          "expectedWinRate": "77.4%",
-          "combinedEv": "+25.8%",
+          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Miércoles.",
+          "totalOdds": 2.06,
+          "fairOdds": 1.64,
+          "expectedWinRate": "79.6%",
+          "combinedEv": "+28.5%",
           "recommendedStake": "2.0% – 3.0% Bankroll",
           "riskLevel": "BAJO",
           "picks": [
             {
               "sourceName": "API-Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Arsenal vs. Coventry City",
-              "tournament": "Premier League (Inaugural)",
-              "selection": "Arsenal Ganador Directo (1) + Más 1.5 Goles",
-              "odds": 1.38,
-              "confidencePct": 89,
-              "algorithm": "API-Football Safe Model: Arsenal promedia 2.6 goles como local; cuota de ultra alta certeza."
+              "match": "Real Madrid vs. Real Sociedad",
+              "tournament": "La Liga EA Sports (13:00 CST)",
+              "selection": "Real Madrid Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.42,
+              "confidencePct": 90,
+              "algorithm": "API-Football Safe Model: Real Madrid en el Bernabéu registra >89% de probabilidad de victoria y ratio goleador sólido."
             },
             {
               "sourceName": "Sportmonks",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "FC Juárez vs. Club América",
-              "tournament": "Liga MX (Apertura J5)",
-              "selection": "Club América Empate No Acción (DNB 2)",
-              "odds": 1.48,
-              "confidencePct": 87,
-              "algorithm": "Sportmonks Safe Pick: Si América empata, la selección se anula (reembolso). Si gana, cobras."
+              "match": "Preston North End vs. Everton",
+              "tournament": "Carabao Cup (12:45 CST)",
+              "selection": "Everton Empate No Acción (DNB 2)",
+              "odds": 1.45,
+              "confidencePct": 88,
+              "algorithm": "Sportmonks Safe Pick: Si Everton empata, la selección se anula (reembolso). Si gana, cobras la combinada."
             }
           ],
           "real_life_example": {
             "bookie_steps": [
               "Abre tu casa de apuestas.",
-              "Selecciona estos 2 partidos de máxima certeza en mercados de baja volatilidad:",
-              "• Arsenal vs. Coventry: 'Crear Apuesta / Especial: Arsenal Ganador + Más de 1.5 Goles'.",
-              "• FC Juárez vs. Club América: 'Empate No Acción / DNB: Club América (2)'.",
+              "Selecciona estos 2 partidos reales de máxima certeza en mercados de baja volatilidad:",
+              "• Real Madrid vs. Real Sociedad: 'Crear Apuesta: Real Madrid Ganador + Más de 1.5 Goles'.",
+              "• Preston vs. Everton: 'Empate No Acción / DNB: Everton (2)'.",
               "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-              "Ingresa tu apuesta (ej. $100 o $250). La cuota es de 2.04x."
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.06x."
             ],
             "winning_scenario": {
               "title": "¿Cómo se gana en la vida real con la Doble Banker?",
               "match_examples": [
                 {
-                  "match": "Arsenal vs. Coventry City",
-                  "min_result": "Arsenal 2-0, 2-1, 3-0, 3-1",
-                  "explanation": "Arsenal gana el partido inaugural y hay 2 o más goles en total."
+                  "match": "Real Madrid vs. Real Sociedad",
+                  "min_result": "Real Madrid 2-0, 2-1, 3-0, 3-1",
+                  "explanation": "Real Madrid gana en el Bernabéu con al menos 2 goles totales en el encuentro."
                 },
                 {
-                  "match": "FC Juárez vs. América",
-                  "min_result": "Juárez 0-1, 0-2, 1-2 (o empate para reembolso)",
-                  "explanation": "Si América gana cobras; si empata no pierdes dinero (reembolso)."
+                  "match": "Preston vs. Everton",
+                  "min_result": "Everton 0-1, 1-2, 0-2 (o empate para reembolso)",
+                  "explanation": "Si Everton gana cobras; si empata no pierdes dinero (reembolso)."
                 }
               ],
-              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $204.00 (+$104.00 de ganancia neta duplicando capital con >77% de probabilidad)."
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $206.00 (+$106.00 de ganancia neta duplicando capital con ~80% de probabilidad)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (21 AGOSTO)\n1. Arsenal (Gana + Más 1.5 Goles) @ 1.38\n2. FC Juárez vs Club América (América DNB / Empate No Acción) @ 1.48\n► Cuota Total: 2.04x (Duplicador) | Confianza: 77.4% | Stake: 2.0% - 3.0%"
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (26 AGOSTO - MIÉRCOLES)\n1. Real Madrid vs Real Sociedad (Madrid Gana + Más 1.5 Goles) @ 1.42\n2. Preston vs Everton (Everton DNB / Empate No Acción) @ 1.45\n► Cuota Total: 2.06x (Duplicador) | Confianza: 79.6% | Stake: 2.0% - 3.0%"
           }
         }
       },
       "metrics": {
-        "totalParlays": 0,
-        "wonParlays": 0,
-        "lostParlays": 0,
-        "simulatedTotalStake": 0.0,
-        "simulatedTotalReturn": 0.0,
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
         "netPnL": 0.0,
-        "roiPct": "+0.0%",
-        "winRate": "100.0%",
-        "evaluatedAt": "2026-08-22 14:10:35",
-        "evaluated": true
+        "roiPct": "0.0%"
       }
     }
   }
