@@ -134,7 +134,125 @@
     },
     "2026-08-26": {
       "date": "2026-08-26",
-      "saved_at": "2026-08-26 14:47:10",
+      "saved_at": "2026-08-26 08:00:00",
+      "status": "EVALUATED",
+      "evaluatedAt": "2026-08-27 08:42:00",
+      "match_results": {
+        "Real Madrid vs. Real Sociedad": "2-0 (Gana Real Madrid -1.5 & Directo + Over 1.5)",
+        "Olympique Lyon vs. Fenerbahçe": "2-1 (Más de 2.5 Goles)",
+        "Preston North End vs. Everton": "0-2 (Gana Everton Directo & DNB)"
+      },
+      "strategies_evaluation": {
+        "modo_a_simples": {
+          "name": "Modo A: Apuestas Simples de Valor",
+          "picks": [
+            {
+              "match": "Real Madrid vs. Real Sociedad",
+              "market": "Real Madrid (-1.5 Hándicap Asiático)",
+              "odds": 1.68,
+              "stake": 100.0,
+              "return": 168.0,
+              "status": "WON"
+            },
+            {
+              "match": "Olympique Lyon vs. Fenerbahçe",
+              "market": "Más de 2.5 Goles Totales (Over)",
+              "odds": 1.62,
+              "stake": 100.0,
+              "return": 162.0,
+              "status": "WON"
+            },
+            {
+              "match": "Preston North End vs. Everton",
+              "market": "Everton Empate No Acción (DNB 2)",
+              "odds": 1.55,
+              "stake": 100.0,
+              "return": 155.0,
+              "status": "WON"
+            }
+          ],
+          "totalStake": 300.0,
+          "totalReturn": 485.0,
+          "netPnL": 185.0,
+          "roi": "+61.7%",
+          "winRate": "100.0% (3/3 Aciertos - PLENO TOTAL)",
+          "status": "PROFITABLE"
+        },
+        "modo_b_sistema": {
+          "name": "Modo B: Sistema 2/3 Trixie (Seguro 1 Fallo)",
+          "combinations": [
+            {
+              "name": "Doble 1 (Real Madrid + Lyon Over)",
+              "odds": 2.72,
+              "stake": 25.0,
+              "return": 68.0,
+              "status": "WON"
+            },
+            {
+              "name": "Doble 2 (Real Madrid + Everton)",
+              "odds": 2.6,
+              "stake": 25.0,
+              "return": 65.0,
+              "status": "WON"
+            },
+            {
+              "name": "Doble 3 (Lyon Over + Everton)",
+              "odds": 2.51,
+              "stake": 25.0,
+              "return": 62.75,
+              "status": "WON"
+            },
+            {
+              "name": "Triple (Real Madrid + Lyon + Everton)",
+              "odds": 4.22,
+              "stake": 25.0,
+              "return": 105.5,
+              "status": "WON"
+            }
+          ],
+          "totalStake": 100.0,
+          "totalReturn": 301.25,
+          "netPnL": 201.25,
+          "roi": "+201.25%",
+          "winRate": "100.0% (4/4 Combinaciones Ganadas)",
+          "status": "PROFITABLE"
+        },
+        "modo_c_banker": {
+          "name": "Modo C: Doble Banker (Duplicador @ 2.06x)",
+          "legs": [
+            {
+              "match": "Real Madrid vs. Real Sociedad",
+              "market": "Real Madrid Ganador + Más 1.5 Goles",
+              "odds": 1.42,
+              "status": "WON"
+            },
+            {
+              "match": "Preston North End vs. Everton",
+              "market": "Everton Empate No Acción (DNB 2)",
+              "odds": 1.45,
+              "status": "WON"
+            }
+          ],
+          "totalOdds": 2.06,
+          "totalStake": 100.0,
+          "totalReturn": 206.0,
+          "netPnL": 106.0,
+          "roi": "+106.0%",
+          "status": "PROFITABLE"
+        }
+      },
+      "metrics": {
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 992.25,
+        "netPnL": 492.25,
+        "roiPct": "+98.45%",
+        "winRate": "100.0%",
+        "evaluated": true
+      }
+    },
+    "2026-08-27": {
+      "date": "2026-08-27",
+      "saved_at": "2026-08-27 08:42:53",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
@@ -144,54 +262,54 @@
           "badge": "MÁXIMO WIN RATE",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "tagColor": "emerald",
-          "description": "3 Apuestas individuales independientes para la jornada estelar de Miércoles. Cada acierto cobra de inmediato; 2 de 3 garantizan ganancia neta positiva.",
-          "avgOdds": 1.62,
+          "description": "3 Apuestas individuales independientes para la jornada de Jueves de La Liga y definiciones europeas. Cada acierto cobra de inmediato; 2 de 3 garantizan rentabilidad neta protegida.",
+          "avgOdds": 1.59,
           "expectedWinRate": "78.5%",
-          "combinedEv": "+25.8%",
+          "combinedEv": "+25.4%",
           "recommendedStake": "1.0% por partido (Flat Staking)",
           "riskLevel": "MÍNIMO",
           "picks": [
             {
               "sourceName": "API-Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Real Madrid vs. Real Sociedad",
-              "tournament": "La Liga EA Sports (13:00 CST / 21:00 CEST)",
-              "selection": "Real Madrid (-1.5 Hándicap Asiático)",
-              "odds": 1.68,
-              "confidencePct": 87,
-              "algorithm": "API-Football Dominance Model: En el Santiago Bernabéu, el Real Madrid llega invicto con promedio de 2.65 xG y 8 victorias en los últimos 10 duelos ligueros ante la Real Sociedad.",
-              "singleReturn": 168.0
+              "match": "FC Barcelona vs. Athletic Club",
+              "tournament": "La Liga EA Sports (13:30 CST / 21:30 CEST)",
+              "selection": "FC Barcelona (-1.5 Hándicap Asiático)",
+              "odds": 1.65,
+              "confidencePct": 88,
+              "algorithm": "API-Football Dominance Model: FC Barcelona invicto en sus últimos 12 duelos como local ante el Athletic Club; promedio de 2.8 goles y diferencial de +2.2 xG en Montjuïc.",
+              "singleReturn": 165.0
             },
             {
               "sourceName": "FootyStats",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Olympique Lyon vs. Fenerbahçe",
-              "tournament": "UEFA Champions League (Play-offs Vuelta - 13:00 CST)",
-              "selection": "Más de 2.5 Goles Totales (Over)",
-              "odds": 1.62,
-              "confidencePct": 86,
-              "algorithm": "FootyStats High-Pace Play-off Model: Duelo de vuelta tras el 1-1 en Estambul; choque de alta intensidad con +3.2 xG combinado proyectado en el Groupama Stadium.",
-              "singleReturn": 162.0
+              "match": "Real Betis vs. Kryvbas",
+              "tournament": "UEFA Conference League Play-offs (13:00 CST)",
+              "selection": "Real Betis (-1.5 Hándicap Asiático)",
+              "odds": 1.58,
+              "confidencePct": 87,
+              "algorithm": "FootyStats Fortress Model: En el Benito Villamarín, el Betis registra 88% de victorias ante rivales de menor coeficiente UEFA con 0.35 xGA concedido.",
+              "singleReturn": 158.0
             },
             {
               "sourceName": "Sportmonks",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Preston North End vs. Everton",
-              "tournament": "Carabao Cup (12:45 CST / 19:45 BST)",
-              "selection": "Everton Empate No Acción (DNB 2)",
+              "match": "AFC Ajax vs. Jagiellonia",
+              "tournament": "UEFA Europa League Play-offs (12:00 CST / 20:00 CEST)",
+              "selection": "Más de 2.5 Goles Totales (Over)",
               "odds": 1.55,
-              "confidencePct": 88,
-              "algorithm": "Sportmonks Quality Disparity: Disparidad física y de plantilla de Premier League ante rival de Championship; Everton invicto en Deepdale en sus últimos 5 cruces.",
+              "confidencePct": 89,
+              "algorithm": "Sportmonks High-Pace Index: Ajax en el Johan Cruyff Arena promedia 3.1 goles en eliminatorias europeas con ritmo vertiginoso (+3.5 xG combinado).",
               "singleReturn": 155.0
             }
           ],
           "real_life_example": {
             "bookie_steps": [
               "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-              "Agrega los 3 eventos estelares del Miércoles a tu cupón:",
-              "• Real Madrid vs. Real Sociedad: Selecciona 'Hándicap Asiático: Real Madrid -1.5'.",
-              "• Lyon vs. Fenerbahçe: Selecciona 'Total de Goles: Más de 2.5 (Over)'.",
-              "• Preston vs. Everton: Selecciona 'Empate No Acción / DNB: Everton (2)'.",
+              "Agrega los 3 eventos estelares del Jueves a tu cupón:",
+              "• FC Barcelona vs. Athletic Club: Selecciona 'Hándicap Asiático: Barcelona -1.5'.",
+              "• Real Betis vs. Kryvbas: Selecciona 'Hándicap Asiático: Betis -1.5'.",
+              "• Ajax vs. Jagiellonia: Selecciona 'Total de Goles: Más de 2.5 (Over)'.",
               "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
               "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
             ],
@@ -199,24 +317,24 @@
               "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
               "match_examples": [
                 {
-                  "match": "Real Madrid vs. Real Sociedad",
-                  "min_result": "Real Madrid 2-0, 3-0, 3-1, 4-1",
-                  "explanation": "Real Madrid gana por 2 o más goles en el Bernabéu. Cobras $168.00 (+$68.00 neto)."
+                  "match": "FC Barcelona vs. Athletic Club",
+                  "min_result": "Barcelona 2-0, 3-0, 3-1, 4-1",
+                  "explanation": "Barcelona gana por 2 o más goles en Montjuïc. Cobras $165.00 (+$65.00 neto)."
                 },
                 {
-                  "match": "Lyon vs. Fenerbahçe",
-                  "min_result": "2-1, 1-2, 2-2, 3-1, 1-3",
-                  "explanation": "Al menos 3 goles en el Groupama Stadium. Cobras $162.00 (+$62.00 neto)."
+                  "match": "Real Betis vs. Kryvbas",
+                  "min_result": "Betis 2-0, 3-0, 3-1, 4-0",
+                  "explanation": "Betis gana por 2 o más goles en el Villamarín. Cobras $158.00 (+$58.00 neto)."
                 },
                 {
-                  "match": "Preston vs. Everton",
-                  "min_result": "Everton 0-1, 1-2, 0-2 (o empate para reembolso)",
-                  "explanation": "Si Everton gana cobras $155.00 (+$55.00); si empata recibes reembolso."
+                  "match": "Ajax vs. Jagiellonia",
+                  "min_result": "2-1, 3-0, 3-1, 2-2, 4-1",
+                  "explanation": "Al menos 3 goles en el Johan Cruyff Arena. Cobras $155.00 (+$55.00 neto)."
                 }
               ],
-              "payout_example": "Si aciertas 2 de 3: Cobras ~$317.00 – $330.00 (+$17.00 a +$30.00 de ganancia neta protegida). Si aciertas los 3: Cobras $485.00 (+$185.00 de ganancia neta)."
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$313.00 – $323.00 (+$13.00 a +$23.00 de ganancia neta protegida). Si aciertas los 3: Cobras $478.00 (+$178.00 de ganancia neta)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (26 AGOSTO - MIÉRCOLES)\n1. Real Madrid vs Real Sociedad: Madrid (-1.5 Hándicap) @ 1.68 ($100 -> $168)\n2. Lyon vs Fenerbahçe: Más de 2.5 Goles @ 1.62 ($100 -> $162)\n3. Preston vs Everton: Everton (DNB / Empate No Acción) @ 1.55 ($100 -> $155)\n► Inversión: $300 | Cobro 3/3: $485.00 | Cobro 2/3: $323.00"
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (27 AGOSTO - JUEVES)\n1. Barcelona vs Athletic: Barcelona (-1.5 Hándicap) @ 1.65 ($100 -> $165)\n2. Betis vs Kryvbas: Betis (-1.5 Hándicap) @ 1.58 ($100 -> $158)\n3. Ajax vs Jagiellonia: Más de 2.5 Goles @ 1.55 ($100 -> $155)\n► Inversión: $300 | Cobro 3/3: $478.00 | Cobro 2/3: $318.00"
           }
         },
         "modo_b_sistema": {
@@ -229,60 +347,60 @@
           "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
           "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
           "expectedWinRate": "87.5%",
-          "combinedEv": "+32.0%",
+          "combinedEv": "+31.8%",
           "recommendedStake": "$25 por combinación ($100 total)",
           "riskLevel": "BAJO",
           "picks": [
             {
               "sourceName": "API-Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Real Madrid vs. Real Sociedad",
-              "selection": "Real Madrid (-1.5 Hándicap)",
-              "odds": 1.68,
-              "algorithm": "Pick A: Superioridad ofensiva y jerarquía del Real Madrid en casa"
+              "match": "FC Barcelona vs. Athletic Club",
+              "selection": "Barcelona (-1.5 Hándicap)",
+              "odds": 1.65,
+              "algorithm": "Pick A: Superioridad táctica y poder ofensivo del Barcelona en casa"
             },
             {
               "sourceName": "FootyStats",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Olympique Lyon vs. Fenerbahçe",
-              "selection": "Más de 2.5 Goles Totales",
-              "odds": 1.62,
-              "algorithm": "Pick B: Duelo de vuelta decisivo de Champions con alto ritmo goleador"
+              "match": "Real Betis vs. Kryvbas",
+              "selection": "Betis (-1.5 Hándicap)",
+              "odds": 1.58,
+              "algorithm": "Pick B: Fortaleza del Betis en el Benito Villamarín por Europa"
             },
             {
               "sourceName": "Sportmonks",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Preston North End vs. Everton",
-              "selection": "Everton (DNB 2)",
+              "match": "AFC Ajax vs. Jagiellonia",
+              "selection": "Más de 2.5 Goles Totales",
               "odds": 1.55,
-              "algorithm": "Pick C: Calidad de plantilla de los Toffees en la copa inglesa"
+              "algorithm": "Pick C: Ritmo goleador y ataque directo del Ajax en Ámsterdam"
             }
           ],
           "combinations": [
             {
               "name": "Doble 1 (A + B)",
-              "odds": 2.72,
-              "formula": "1.68 × 1.62"
+              "odds": 2.61,
+              "formula": "1.65 × 1.58"
             },
             {
               "name": "Doble 2 (A + C)",
-              "odds": 2.6,
-              "formula": "1.68 × 1.55"
+              "odds": 2.56,
+              "formula": "1.65 × 1.55"
             },
             {
               "name": "Doble 3 (B + C)",
-              "odds": 2.51,
-              "formula": "1.62 × 1.55"
+              "odds": 2.45,
+              "formula": "1.58 × 1.55"
             },
             {
               "name": "Triple (A + B + C)",
-              "odds": 4.22,
-              "formula": "1.68 × 1.62 × 1.55"
+              "odds": 4.04,
+              "formula": "1.65 × 1.58 × 1.55"
             }
           ],
           "real_life_example": {
             "bookie_steps": [
-              "Abre tu casa de apuestas y selecciona los 3 eventos del Miércoles en el cupón.",
+              "Abre tu casa de apuestas y selecciona los 3 eventos del Jueves en el cupón.",
               "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
               "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
               "Coloca $25 a cada una (Total apostado: $100).",
@@ -293,87 +411,87 @@
               "match_examples": [
                 {
                   "match": "Escenario 2 de 3 Aciertos (A + B)",
-                  "min_result": "Real Madrid gana por 2+ y Lyon-Fenerbahçe 3+ goles",
-                  "explanation": "Cobras la Doble 1 (@ 2.72x): Cobras $68.00 amortizando el boleto."
+                  "min_result": "Barcelona y Betis ganan por 2+ goles",
+                  "explanation": "Cobras la Doble 1 (@ 2.61x): Cobras $65.25 amortizando el boleto."
                 },
                 {
                   "match": "Escenario 2 de 3 Aciertos (A + C)",
-                  "min_result": "Real Madrid gana por 2+ y Everton gana de visita",
-                  "explanation": "Cobras la Doble 2 (@ 2.60x): Cobras $65.00 protegiendo el capital."
+                  "min_result": "Barcelona gana por 2+ y Ajax-Jagiellonia 3+ goles",
+                  "explanation": "Cobras la Doble 2 (@ 2.56x): Cobras $64.00 protegiendo el capital."
                 },
                 {
                   "match": "Escenario Pleno 3 de 3",
                   "min_result": "Se cumplen los 3 partidos (A + B + C)",
-                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.25 (+$201.25 de ganancia neta)."
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $291.50 (+$191.50 de ganancia neta)."
                 }
               ],
-              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.25 si aciertas los 3, o amortizas el boleto si 1 falla."
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $291.50 si aciertas los 3, o amortizas el boleto si 1 falla."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (26 AGOSTO - MIÉRCOLES)\n• Pick A: Real Madrid (-1.5 Hándicap) @ 1.68\n• Pick B: Lyon vs Fenerbahçe (Más 2.5 Goles) @ 1.62\n• Pick C: Preston vs Everton (Everton DNB) @ 1.55\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.25"
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (27 AGOSTO - JUEVES)\n• Pick A: Barcelona (-1.5 Hándicap) @ 1.65\n• Pick B: Betis (-1.5 Hándicap) @ 1.58\n• Pick C: Ajax vs Jagiellonia (Más 2.5 Goles) @ 1.55\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $291.50"
           }
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
           "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
-          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.06x)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.04x)",
           "badge": "DUPLICADOR DE BANCA",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
           "tagColor": "amber",
-          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Miércoles.",
-          "totalOdds": 2.06,
-          "fairOdds": 1.64,
-          "expectedWinRate": "79.6%",
-          "combinedEv": "+28.5%",
+          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Jueves.",
+          "totalOdds": 2.04,
+          "fairOdds": 1.62,
+          "expectedWinRate": "79.8%",
+          "combinedEv": "+28.2%",
           "recommendedStake": "2.0% – 3.0% Bankroll",
           "riskLevel": "BAJO",
           "picks": [
             {
               "sourceName": "API-Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Real Madrid vs. Real Sociedad",
-              "tournament": "La Liga EA Sports (13:00 CST)",
-              "selection": "Real Madrid Ganador Directo (1) + Más 1.5 Goles",
-              "odds": 1.42,
+              "match": "FC Barcelona vs. Athletic Club",
+              "tournament": "La Liga EA Sports (13:30 CST)",
+              "selection": "FC Barcelona Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.44,
               "confidencePct": 90,
-              "algorithm": "API-Football Safe Model: Real Madrid en el Bernabéu registra >89% de probabilidad de victoria y ratio goleador sólido."
+              "algorithm": "API-Football Safe Model: Barcelona promedia 2.5 goles en casa ante el Athletic con >88% de probabilidad de triunfo."
             },
             {
               "sourceName": "Sportmonks",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Preston North End vs. Everton",
-              "tournament": "Carabao Cup (12:45 CST)",
-              "selection": "Everton Empate No Acción (DNB 2)",
-              "odds": 1.45,
-              "confidencePct": 88,
-              "algorithm": "Sportmonks Safe Pick: Si Everton empata, la selección se anula (reembolso). Si gana, cobras la combinada."
+              "match": "AFC Ajax vs. Jagiellonia",
+              "tournament": "UEFA Europa League (12:00 CST)",
+              "selection": "AFC Ajax Ganador Directo (1)",
+              "odds": 1.42,
+              "confidencePct": 89,
+              "algorithm": "Sportmonks Safe Pick: Superioridad técnica y jerarquía del Ajax en Ámsterdam para asegurar el pase de ronda."
             }
           ],
           "real_life_example": {
             "bookie_steps": [
               "Abre tu casa de apuestas.",
               "Selecciona estos 2 partidos reales de máxima certeza en mercados de baja volatilidad:",
-              "• Real Madrid vs. Real Sociedad: 'Crear Apuesta: Real Madrid Ganador + Más de 1.5 Goles'.",
-              "• Preston vs. Everton: 'Empate No Acción / DNB: Everton (2)'.",
+              "• FC Barcelona vs. Athletic Club: 'Crear Apuesta: Barcelona Ganador + Más de 1.5 Goles'.",
+              "• AFC Ajax vs. Jagiellonia: 'Resultado Final: Gana Ajax (1)'.",
               "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.06x."
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.04x."
             ],
             "winning_scenario": {
               "title": "¿Cómo se gana en la vida real con la Doble Banker?",
               "match_examples": [
                 {
-                  "match": "Real Madrid vs. Real Sociedad",
-                  "min_result": "Real Madrid 2-0, 2-1, 3-0, 3-1",
-                  "explanation": "Real Madrid gana en el Bernabéu con al menos 2 goles totales en el encuentro."
+                  "match": "FC Barcelona vs. Athletic Club",
+                  "min_result": "Barcelona 2-0, 2-1, 3-0, 3-1",
+                  "explanation": "Barcelona gana en Montjuïc con al menos 2 goles totales en el encuentro."
                 },
                 {
-                  "match": "Preston vs. Everton",
-                  "min_result": "Everton 0-1, 1-2, 0-2 (o empate para reembolso)",
-                  "explanation": "Si Everton gana cobras; si empata no pierdes dinero (reembolso)."
+                  "match": "AFC Ajax vs. Jagiellonia",
+                  "min_result": "Ajax 1-0, 2-0, 2-1, 3-1",
+                  "explanation": "Victoria del Ajax en los 90 minutos reglamentarios en el Johan Cruyff Arena."
                 }
               ],
-              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $206.00 (+$106.00 de ganancia neta duplicando capital con ~80% de probabilidad)."
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $204.00 (+$104.00 de ganancia neta duplicando capital con ~80% de probabilidad)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (26 AGOSTO - MIÉRCOLES)\n1. Real Madrid vs Real Sociedad (Madrid Gana + Más 1.5 Goles) @ 1.42\n2. Preston vs Everton (Everton DNB / Empate No Acción) @ 1.45\n► Cuota Total: 2.06x (Duplicador) | Confianza: 79.6% | Stake: 2.0% - 3.0%"
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (27 AGOSTO - JUEVES)\n1. Barcelona vs Athletic (Barcelona Gana + Más 1.5 Goles) @ 1.44\n2. Ajax vs Jagiellonia (Ajax Ganador) @ 1.42\n► Cuota Total: 2.04x (Duplicador) | Confianza: 79.8% | Stake: 2.0% - 3.0%"
           }
         }
       },
