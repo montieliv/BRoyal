@@ -162,11 +162,17 @@ def step_4_display_summary():
     if os.path.exists(fetch_script):
         subprocess.run([sys.executable, fetch_script], check=True, cwd=CURRENT_DIR)
 
+def step_0_verify_fixtures():
+    verify_script = os.path.join(CURRENT_DIR, "verify_fixtures.py")
+    if os.path.exists(verify_script):
+        subprocess.run([sys.executable, verify_script], check=True, cwd=CURRENT_DIR)
+
 def main():
     print("\n" + "="*85)
     print(" 👑 BLACK ROYAL — COMANDO MAESTRO 'sports' (CICLO AUTÓNOMO COMPLETO)")
     print("="*85)
     
+    run_step("0. Verificación Estricta de Partidos y Fechas de Hoy", step_0_verify_fixtures)
     run_step("1. Auditoría y Liquidación de Escenarios Previos", step_1_audit_yesterday)
     run_step("2. Reconstrucción y Sincronización de index.html", step_2_build_and_sync_html)
     run_step("3. Respaldo y Archivo del Nuevo Escenario para Mañana", step_3_archive_new_scenario)

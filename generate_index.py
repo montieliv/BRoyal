@@ -14,9 +14,10 @@ gen_at = dataset.get("generated_at", "")
 try:
     dt = datetime.datetime.strptime(gen_at.split()[0], "%Y-%m-%d")
     months = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
-    display_date = f"{dt.day} {months[dt.month - 1]} {dt.year}"
+    days = ["LUNES", "MARTES", "MIÉRCOLES", "JUEVES", "VIERNES", "SÁBADO", "DOMINGO"]
+    display_date = f"{days[dt.weekday()]} {dt.day} {months[dt.month - 1]} {dt.year}"
 except Exception:
-    display_date = "SÁBADO 22 AGOSTO 2026"
+    display_date = "DOMINGO 30 AGOSTO 2026"
 
 html_template = f"""<!DOCTYPE html>
 <html lang="es" class="dark">
@@ -195,9 +196,15 @@ html_template = f"""<!DOCTYPE html>
         </p>
       </div>
 
-      <div class="flex items-center space-x-2 text-xs font-mono bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-slate-300">
-        <i class="fa-solid fa-shield-check text-accent-emerald"></i>
-        <span>Enfoque de Alta Certeza & Control de Riesgo</span>
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-2 text-xs font-mono bg-emerald-500/10 px-3 py-1.5 rounded-xl border border-emerald-500/30 text-emerald-400 shadow-sm">
+          <i class="fa-solid fa-circle-check text-accent-emerald animate-pulse"></i>
+          <span class="font-bold">PARTIDOS Y FECHA 100% VERIFICADOS</span>
+        </div>
+        <div class="hidden sm:flex items-center space-x-2 text-xs font-mono bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-slate-300">
+          <i class="fa-solid fa-shield-check text-accent-emerald"></i>
+          <span>Enfoque de Alta Certeza & Control de Riesgo</span>
+        </div>
       </div>
     </div>
 

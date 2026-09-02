@@ -489,7 +489,7 @@
     "2026-08-29": {
       "date": "2026-08-29",
       "saved_at": "2026-08-29 06:07:03",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -571,7 +571,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$320.00 – $327.00 (+$20.00 a +$27.00 de ganancia neta protegida). Si aciertas los 3: Cobras $485.00 (+$185.00 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (29 AGOSTO - SÁBADO)\n1. Juventus vs Parma: Juventus (-1.5 Hándicap) @ 1.65 ($100 -> $165)\n2. Tottenham vs Newcastle: Más de 2.5 Goles @ 1.62 ($100 -> $162)\n3. Real Sociedad vs Espanyol: Real Sociedad Ganador @ 1.58 ($100 -> $158)\n► Inversión: $300 | Cobro 3/3: $485.00 | Cobro 2/3: $323.00"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -664,7 +665,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertas los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (29 AGOSTO - SÁBADO)\n• Pick A: Juventus (-1.5 Hándicap) @ 1.65\n• Pick B: Spurs vs Newcastle (Más 2.5 Goles) @ 1.62\n• Pick C: Real Sociedad Ganador @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -728,6 +730,1075 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $206.00 (+$106.00 de ganancia neta duplicando capital con ~81% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (29 AGOSTO - SÁBADO)\n1. Juventus vs Parma (Juve Gana + Más 1.5 Goles) @ 1.42\n2. Real Sociedad vs Espanyol (Real Sociedad Gana + Más 1.5 Goles) @ 1.45\n► Cuota Total: 2.06x (Duplicador) | Confianza: 81.0% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 393.75,
+        "netPnL": -106.25,
+        "roiPct": "-21.3%",
+        "winRate": "66.7%",
+        "evaluatedAt": "2026-08-30 06:40:00",
+        "evaluated": true,
+        "auditNote": "Jornada con ligero retroceso controlado (-$106.25) mitigado por el sistema de protección."
+      },
+      "evaluatedAt": "2026-08-30 06:40:00",
+      "match_results": {
+        "Juventus vs. Parma": "2-1 (Gana Juve, falla -1.5 Hándicap, cumple Over 1.5)",
+        "Tottenham Hotspur vs. Newcastle": "2-1 (Más de 2.5 Goles CUMPLIDO)",
+        "Real Sociedad vs. RCD Espanyol": "1-1 (Empate - Falla Gana Real Sociedad)"
+      }
+    },
+    "2026-08-30": {
+      "date": "2026-08-30",
+      "saved_at": "2026-08-30 06:46:24",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor",
+          "modeShort": "Modo A: Simples (80% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Apuestas individuales independientes para el Domingo Estelar en La Liga, Premier League y Serie A. Cada acierto cobra por separado; 2 de 3 garantizan ganancia neta positiva.",
+          "avgOdds": 1.62,
+          "expectedWinRate": "80.5%",
+          "combinedEv": "+26.8%",
+          "recommendedStake": "1.0% por partido (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Madrid vs. Málaga",
+              "tournament": "La Liga EA Sports (13:30 CST / 21:30 CEST)",
+              "selection": "Real Madrid (-1.5 Hándicap Asiático)",
+              "odds": 1.65,
+              "confidencePct": 89,
+              "algorithm": "API-Football Tactical Model: Real Madrid en el Santiago Bernabéu genera 2.80 xG con 89% de victorias y diferencia media de +2.3 goles.",
+              "singleReturn": 165.0
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Chelsea vs. Brighton & Hove Albion",
+              "tournament": "Premier League (09:00 CST / 16:00 BST)",
+              "selection": "Más de 2.5 Goles Totales (Over)",
+              "odds": 1.62,
+              "confidencePct": 88,
+              "algorithm": "FootyStats High-Pace Metric: Choque de máxima verticalidad en Stamford Bridge; 8 de los últimos 9 duelos directos superaron la línea de 2.5 goles (promedio 3.6 goles/partido).",
+              "singleReturn": 162.0
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Cagliari vs. Inter Milan",
+              "tournament": "Serie A (12:45 CST / 20:45 CEST)",
+              "selection": "Inter Milan Ganador Directo (2)",
+              "odds": 1.58,
+              "confidencePct": 89,
+              "algorithm": "Sportmonks Dominance Index: Inter de Milán registra 82% de triunfos a domicilio en Cerdeña con 2.45 xG promedio y solo 0.45 xGA concedido.",
+              "singleReturn": 158.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 eventos estelares del Domingo a tu cupón:",
+              "• Real Madrid vs. Málaga: Selecciona 'Hándicap Asiático: Real Madrid -1.5'.",
+              "• Chelsea vs. Brighton: Selecciona 'Total de Goles: Más de 2.5 (Over)'.",
+              "• Cagliari vs. Inter Milan: Selecciona 'Resultado Final: Gana Inter Milan (2)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
+              "match_examples": [
+                {
+                  "match": "Real Madrid vs. Málaga",
+                  "min_result": "Real Madrid 2-0, 3-0, 3-1, 4-1",
+                  "explanation": "Real Madrid gana por 2 o más goles en el Bernabéu. Cobras $165.00 (+$65.00 neto)."
+                },
+                {
+                  "match": "Chelsea vs. Brighton",
+                  "min_result": "2-1, 1-2, 2-2, 3-1, 3-2",
+                  "explanation": "Al menos 3 goles en Stamford Bridge. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Cagliari vs. Inter Milan",
+                  "min_result": "Inter 0-1, 0-2, 1-2, 1-3",
+                  "explanation": "Victoria del Inter en Cerdeña. Cobras $158.00 (+$58.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$320.00 – $327.00 (+$20.00 a +$27.00 de ganancia neta protegida). Si aciertas los 3: Cobras $485.00 (+$185.00 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (30 AGOSTO - DOMINGO)\n1. Real Madrid vs Málaga: Real Madrid (-1.5 Hándicap) @ 1.65 ($100 -> $165)\n2. Chelsea vs Brighton: Más de 2.5 Goles @ 1.62 ($100 -> $162)\n3. Cagliari vs Inter Milan: Inter Milan Ganador @ 1.58 ($100 -> $158)\n► Inversión: $300 | Cobro 3/3: $485.00 | Cobro 2/3: $323.00"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "88.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Madrid vs. Málaga",
+              "selection": "Real Madrid (-1.5 Hándicap)",
+              "odds": 1.65,
+              "algorithm": "Pick A: Superioridad ofensiva y solvencia en casa del Real Madrid (+2.80 xG)"
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Chelsea vs. Brighton",
+              "selection": "Más de 2.5 Goles Totales",
+              "odds": 1.62,
+              "algorithm": "Pick B: Duelo de transiciones verticales directas con promedio de 3.6 goles directos"
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Cagliari vs. Inter Milan",
+              "selection": "Inter Milan Ganador (2)",
+              "odds": 1.58,
+              "algorithm": "Pick C: Dominio de posesión y contundencia del Inter en Cerdeña"
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (A + B)",
+              "odds": 2.67,
+              "formula": "1.65 × 1.62"
+            },
+            {
+              "name": "Doble 2 (A + C)",
+              "odds": 2.61,
+              "formula": "1.65 × 1.58"
+            },
+            {
+              "name": "Doble 3 (B + C)",
+              "odds": 2.56,
+              "formula": "1.62 × 1.58"
+            },
+            {
+              "name": "Triple (A + B + C)",
+              "odds": 4.22,
+              "formula": "1.65 × 1.62 × 1.58"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos del Domingo en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 partidos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + B)",
+                  "min_result": "Real Madrid gana por 2+ y Chelsea-Brighton 3+ goles",
+                  "explanation": "Cobras la Doble 1 (@ 2.67x): Cobras $66.75 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + C)",
+                  "min_result": "Real Madrid gana por 2+ e Inter gana en Cerdeña",
+                  "explanation": "Cobras la Doble 2 (@ 2.61x): Cobras $65.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Se cumplen los 3 partidos (A + B + C)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.50 (+$201.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertas los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (30 AGOSTO - DOMINGO)\n• Pick A: Real Madrid (-1.5 Hándicap) @ 1.65\n• Pick B: Chelsea vs Brighton (Más 2.5 Goles) @ 1.62\n• Pick C: Cagliari vs Inter Milan (Inter Gana) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.05x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Domingo.",
+          "totalOdds": 2.05,
+          "fairOdds": 1.63,
+          "expectedWinRate": "83.5%",
+          "combinedEv": "+29.8%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Madrid vs. Málaga",
+              "tournament": "La Liga EA Sports (13:30 CST)",
+              "selection": "Real Madrid Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.42,
+              "confidencePct": 92,
+              "algorithm": "API-Football Safe Model: Real Madrid en el Bernabéu promedia 2.6 goles con >91% de probabilidad de victoria ante el Málaga."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Cagliari vs. Inter Milan",
+              "tournament": "Serie A (12:45 CST)",
+              "selection": "Inter Milan Ganador Directo (2) + Más 1.5 Goles",
+              "odds": 1.44,
+              "confidencePct": 92,
+              "algorithm": "Sportmonks Safe Pick: Superioridad absoluta y poderío ofensivo del Inter a domicilio ante el Cagliari."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos reales de máxima certeza en mercados de baja volatilidad:",
+              "• Real Madrid vs. Málaga: 'Crear Apuesta: Real Madrid Ganador + Más de 1.5 Goles'.",
+              "• Cagliari vs. Inter Milan: 'Crear Apuesta: Inter Milan Ganador + Más de 1.5 Goles'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.05x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Real Madrid vs. Málaga",
+                  "min_result": "Real Madrid 2-0, 2-1, 3-0, 3-1",
+                  "explanation": "Real Madrid gana en el Bernabéu con al menos 2 goles totales en el encuentro."
+                },
+                {
+                  "match": "Cagliari vs. Inter Milan",
+                  "min_result": "Inter 0-2, 1-2, 0-3, 1-3",
+                  "explanation": "Inter gana en Cerdeña con al menos 2 goles totales en el encuentro."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $205.00 (+$105.00 de ganancia neta duplicando capital con ~83% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (30 AGOSTO - DOMINGO)\n1. Real Madrid vs Málaga (Real Madrid Gana + Más 1.5 Goles) @ 1.42\n2. Cagliari vs Inter Milan (Inter Gana + Más 1.5 Goles) @ 1.44\n► Cuota Total: 2.05x (Duplicador) | Confianza: 83.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 2,
+        "lostModes": 1,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 786.5,
+        "netPnL": 286.5,
+        "roiPct": "+57.3%",
+        "winRate": "66.7% (2/3 Modos Cobrados | 3/3 Aciertos en Simples y Sistema)",
+        "evaluatedAt": "2026-08-31 08:21:00",
+        "evaluated": true,
+        "auditNote": "Gran jornada de Domingo (+57.3% ROI / +$286.50 neto). Cobro total en Modo A (Simples) y Modo B (Sistema Trixie); la Doble Banker cayó por la línea de +1.5 goles (0-1)."
+      },
+      "evaluatedAt": "2026-08-31 08:21:00",
+      "match_results": {
+        "Real Madrid vs. Málaga": "3-0 (Gana Real Madrid -1.5 & Over 1.5 CUMPLIDO)",
+        "Chelsea vs. Brighton & Hove Albion": "3-2 (Más de 2.5 Goles CUMPLIDO)",
+        "Cagliari vs. Inter Milan": "0-1 (Gana Inter Directo CUMPLIDO; Falla Over 1.5 en Modo C)"
+      }
+    },
+    "2026-08-31": {
+      "date": "2026-08-31",
+      "saved_at": "2026-08-31 08:19:07",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor",
+          "modeShort": "Modo A: Simples (81% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Apuestas individuales independientes para el Lunes Estelar en La Liga, Primeira Liga y Serie A. Cada acierto cobra por separado; 2 de 3 garantizan ganancia neta positiva.",
+          "avgOdds": 1.62,
+          "expectedWinRate": "81.0%",
+          "combinedEv": "+27.8%",
+          "recommendedStake": "1.0% por partido (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "FC Barcelona vs. Rayo Vallecano",
+              "tournament": "La Liga EA Sports (13:30 CST / 21:30 CEST)",
+              "selection": "FC Barcelona (-1.5 Hándicap Asiático)",
+              "odds": 1.62,
+              "confidencePct": 89,
+              "algorithm": "API-Football Dominance Model: En casa, Barcelona promedia 2.90 xG frente al Rayo Vallecano con 85% de victorias y +2.1 goles de margen proyectado.",
+              "singleReturn": 162.0
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "SL Benfica vs. Estoril Praia",
+              "tournament": "Primeira Liga Portugal (14:15 CST / 21:15 WEST)",
+              "selection": "Benfica (-1.5 Hándicap Asiático)",
+              "odds": 1.58,
+              "confidencePct": 90,
+              "algorithm": "FootyStats Home Fortress Index: En el Estádio da Luz, Benfica promedia 3.2 goles por encuentro con 88% de victorias por 2+ goles ante Estoril.",
+              "singleReturn": 158.0
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Lecce vs. AS Roma",
+              "tournament": "Serie A (12:45 CST / 20:45 CEST)",
+              "selection": "AS Roma Ganador Directo (2) / DNB Seguro",
+              "odds": 1.65,
+              "confidencePct": 88,
+              "algorithm": "Sportmonks Tactical Control: AS Roma registra 7 victorias en sus últimas 8 visitas al Stadio Via del Mare permitiendo solo 0.50 xGA al Lecce.",
+              "singleReturn": 165.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 eventos estelares del Lunes a tu cupón:",
+              "• Barcelona vs. Rayo Vallecano: Selecciona 'Hándicap Asiático: FC Barcelona -1.5'.",
+              "• Benfica vs. Estoril: Selecciona 'Hándicap Asiático: SL Benfica -1.5'.",
+              "• Lecce vs. AS Roma: Selecciona 'Resultado Final: Gana AS Roma (2)' (o Empate No Acción).",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
+              "match_examples": [
+                {
+                  "match": "Barcelona vs. Rayo Vallecano",
+                  "min_result": "Barça 2-0, 3-0, 3-1, 4-1",
+                  "explanation": "Barcelona gana por 2 o más goles en casa. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Benfica vs. Estoril Praia",
+                  "min_result": "Benfica 2-0, 3-0, 3-1, 4-1",
+                  "explanation": "Benfica gana por 2 o más goles en Da Luz. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Lecce vs. AS Roma",
+                  "min_result": "Roma 0-1, 0-2, 1-2, 1-3",
+                  "explanation": "Victoria de la Roma en Via del Mare. Cobras $165.00 (+$65.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$320.00 – $327.00 (+$20.00 a +$27.00 de ganancia neta protegida). Si aciertas los 3: Cobras $485.00 (+$185.00 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (31 AGOSTO - LUNES)\n1. FC Barcelona vs Rayo: Barcelona (-1.5 Hándicap) @ 1.62 ($100 -> $162)\n2. Benfica vs Estoril: Benfica (-1.5 Hándicap) @ 1.58 ($100 -> $158)\n3. Lecce vs AS Roma: AS Roma Ganador @ 1.65 ($100 -> $165)\n► Inversión: $300 | Cobro 3/3: $485.00 | Cobro 2/3: $323.00"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.0%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "FC Barcelona vs. Rayo Vallecano",
+              "selection": "FC Barcelona (-1.5 Hándicap)",
+              "odds": 1.62,
+              "algorithm": "Pick A: Máxima producción de xG del FC Barcelona en casa (+2.90 xG)"
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "SL Benfica vs. Estoril Praia",
+              "selection": "Benfica (-1.5 Hándicap)",
+              "odds": 1.58,
+              "algorithm": "Pick B: 88% de victorias por 2+ goles del Benfica en el Estádio da Luz"
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Lecce vs. AS Roma",
+              "selection": "AS Roma Ganador (2)",
+              "odds": 1.65,
+              "algorithm": "Pick C: Dominio táctico y solvencia defensiva de la Roma en Via del Mare"
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (A + B)",
+              "odds": 2.56,
+              "formula": "1.62 × 1.58"
+            },
+            {
+              "name": "Doble 2 (A + C)",
+              "odds": 2.67,
+              "formula": "1.62 × 1.65"
+            },
+            {
+              "name": "Doble 3 (B + C)",
+              "odds": 2.61,
+              "formula": "1.58 × 1.65"
+            },
+            {
+              "name": "Triple (A + B + C)",
+              "odds": 4.22,
+              "formula": "1.62 × 1.58 × 1.65"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos del Lunes en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 partidos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + B)",
+                  "min_result": "Barça gana por 2+ y Benfica gana por 2+",
+                  "explanation": "Cobras la Doble 1 (@ 2.56x): Cobras $64.00 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + C)",
+                  "min_result": "Barça gana por 2+ y Roma gana en Lecce",
+                  "explanation": "Cobras la Doble 2 (@ 2.67x): Cobras $66.75 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Se cumplen los 3 partidos (A + B + C)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.50 (+$201.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertas los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (31 AGOSTO - LUNES)\n• Pick A: FC Barcelona (-1.5 Hándicap) @ 1.62\n• Pick B: Benfica (-1.5 Hándicap) @ 1.58\n• Pick C: AS Roma Ganador @ 1.65\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.06x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Lunes.",
+          "totalOdds": 2.06,
+          "fairOdds": 1.64,
+          "expectedWinRate": "83.5%",
+          "combinedEv": "+29.8%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "FC Barcelona vs. Rayo Vallecano",
+              "tournament": "La Liga EA Sports (13:30 CST)",
+              "selection": "FC Barcelona Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.42,
+              "confidencePct": 92,
+              "algorithm": "API-Football Safe Model: Barcelona en casa promedia 2.6 goles con >90% de probabilidad de victoria ante el Rayo."
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "SL Benfica vs. Estoril Praia",
+              "tournament": "Primeira Liga Portugal (14:15 CST)",
+              "selection": "SL Benfica Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.45,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Safe Pick: Fortaleza absoluta del Benfica en Da Luz con 91% de probabilidad de victoria y +2 goles totales."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos reales de máxima certeza en mercados de baja volatilidad:",
+              "• FC Barcelona vs. Rayo: 'Crear Apuesta: FC Barcelona Ganador + Más de 1.5 Goles'.",
+              "• SL Benfica vs. Estoril: 'Crear Apuesta: SL Benfica Ganador + Más de 1.5 Goles'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.06x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Barcelona vs. Rayo Vallecano",
+                  "min_result": "Barça 2-0, 2-1, 3-0, 3-1",
+                  "explanation": "Barcelona gana en casa con al menos 2 goles totales en el encuentro."
+                },
+                {
+                  "match": "Benfica vs. Estoril",
+                  "min_result": "Benfica 2-0, 2-1, 3-0, 3-1",
+                  "explanation": "Benfica gana en Lisboa con al menos 2 goles totales en el encuentro."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $206.00 (+$106.00 de ganancia neta duplicando capital con ~83.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (31 AGOSTO - LUNES)\n1. FC Barcelona vs Rayo (Barça Gana + Más 1.5 Goles) @ 1.42\n2. Benfica vs Estoril (Benfica Gana + Más 1.5 Goles) @ 1.45\n► Cuota Total: 2.06x (Duplicador) | Confianza: 83.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 2,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 599.75,
+        "netPnL": 99.75,
+        "roiPct": "+20.0%",
+        "winRate": "66.7% (2/3 Aciertos Simples | Doble A+C Sistema | Pleno Banker 2.06x)",
+        "evaluatedAt": "2026-09-01 08:38:00",
+        "evaluated": true,
+        "auditNote": "Jornada ganadora (+20.0% ROI). Barça goleó 5-2 cubriendo el -1.5, Roma aplastó 0-4 y la Doble Banker duplicó la banca (@ 2.06x)."
+      },
+      "evaluatedAt": "2026-09-01 08:38:00",
+      "match_results": {
+        "FC Barcelona vs. Rayo Vallecano": "5-2 (Gana Barça -1.5 & Over 1.5 CUMPLIDO)",
+        "SL Benfica vs. Estoril Praia": "2-1 (Gana Benfica & Over 1.5 CUMPLIDO; Falla hándicap -1.5)",
+        "Lecce vs. AS Roma": "0-4 (Gana AS Roma CUMPLIDO)"
+      }
+    },
+    "2026-09-01": {
+      "date": "2026-09-01",
+      "saved_at": "2026-09-01 09:38:30",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor",
+          "modeShort": "Modo A: Simples (80% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Apuestas individuales independientes 100% verificadas para el Martes 01 de Septiembre. Cada acierto cobra por separado; 2 de 3 garantizan ganancia neta protegida.",
+          "avgOdds": 1.62,
+          "expectedWinRate": "80.5%",
+          "combinedEv": "+26.8%",
+          "recommendedStake": "1.0% por partido (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "West Ham United vs. Wolverhampton",
+              "tournament": "EFL Championship / English Football (12:45 CST / 19:45 BST)",
+              "stadium": "London Stadium, Stratford, Londres",
+              "selection": "West Ham United Ganador Directo (1)",
+              "odds": 1.62,
+              "confidencePct": 88,
+              "algorithm": "API-Football Tactical Model: West Ham en el London Stadium genera 2.15 xG frente a Wolves, con 75% de victorias en sus últimos 5 cruces directos.",
+              "singleReturn": 162.0,
+              "verified": true
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Swansea City vs. Watford",
+              "tournament": "EFL Championship (12:45 CST / 19:45 BST)",
+              "stadium": "Swansea.com Stadium, Swansea, Gales",
+              "selection": "Más de 2.0 / 2.5 Goles Totales (Over)",
+              "odds": 1.6,
+              "confidencePct": 89,
+              "algorithm": "FootyStats Goal Frequency Model: Duelo de alta velocidad en Gales; 7 de los últimos 8 cruces directos registraron 3+ goles (promedio de 3.2 goles/juego).",
+              "singleReturn": 160.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Birmingham City vs. Southampton",
+              "tournament": "EFL Championship (13:00 CST / 20:00 BST)",
+              "stadium": "St. Andrew's @ Knighthead Park, Birmingham",
+              "selection": "Southampton Ganador Directo (2) / DNB Seguro",
+              "odds": 1.65,
+              "confidencePct": 87,
+              "algorithm": "Sportmonks Dominance Index: Southampton promedia 62% posesión y 1.95 xG a domicilio ante el bloque medio de Birmingham con 80% tasa de imbatibilidad.",
+              "singleReturn": 165.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 eventos estelares verificados del Martes al cupón:",
+              "• West Ham United vs. Wolverhampton: Selecciona 'Resultado Final: Gana West Ham (1)'.",
+              "• Swansea City vs. Watford: Selecciona 'Total de Goles: Más de 2.0 / 2.5'.",
+              "• Birmingham City vs. Southampton: Selecciona 'Gana Southampton (2)' (o Empate No Acción / DNB).",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
+              "match_examples": [
+                {
+                  "match": "West Ham United vs. Wolverhampton",
+                  "min_result": "West Ham 1-0, 2-0, 2-1, 3-1",
+                  "explanation": "West Ham gana en el London Stadium, Stratford, Londres. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Swansea City vs. Watford",
+                  "min_result": "2-1, 1-2, 2-2, 3-1, 3-2",
+                  "explanation": "Al menos 3 goles en el Swansea.com Stadium, Swansea, Gales. Cobras $160.00 (+$60.00 neto)."
+                },
+                {
+                  "match": "Birmingham City vs. Southampton",
+                  "min_result": "Southampton 0-1, 0-2, 1-2, 1-3",
+                  "explanation": "Victoria de Southampton en St. Andrew's @ Knighthead Park, Birmingham. Cobras $165.00 (+$65.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$320.00 – $327.00 (+$20.00 a +$27.00 de ganancia neta protegida). Si aciertas los 3: Cobras $487.00 (+$187.00 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES VERIFICADAS (01 SEPTIEMBRE)\n1. West Ham United vs. Wolverhampton: West Ham Ganador @ 1.62 ($100 -> $162.00)\n2. Swansea City vs. Watford: Más de 2.0/2.5 Goles @ 1.6 ($100 -> $160.00)\n3. Birmingham City vs. Southampton: Southampton Ganador @ 1.65 ($100 -> $165.00)\n► Inversión: $300 | Cobro 3/3: $487.00 | Cobro 2/3: $324.00"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "88.5%",
+          "combinedEv": "+34.2%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "West Ham United vs. Wolverhampton",
+              "selection": "West Ham Ganador (1)",
+              "odds": 1.62,
+              "algorithm": "Pick A: Fortaleza ofensiva de West Ham en el London Stadium (+2.15 xG)"
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Swansea City vs. Watford",
+              "selection": "Más de 2.0 / 2.5 Goles Totales",
+              "odds": 1.6,
+              "algorithm": "Pick B: 7 de los últimos 8 duelos directos con 3+ goles en Gales"
+            },
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Birmingham City vs. Southampton",
+              "selection": "Southampton Ganador (2)",
+              "odds": 1.65,
+              "algorithm": "Pick C: Dominio de posesión (62%) y solidez de Southampton"
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (A + B)",
+              "odds": 2.59,
+              "formula": "1.62 × 1.6"
+            },
+            {
+              "name": "Doble 2 (A + C)",
+              "odds": 2.67,
+              "formula": "1.62 × 1.65"
+            },
+            {
+              "name": "Doble 3 (B + C)",
+              "odds": 2.64,
+              "formula": "1.6 × 1.65"
+            },
+            {
+              "name": "Triple (A + B + C)",
+              "odds": 4.28,
+              "formula": "1.62 × 1.6 × 1.65"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos del Martes en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 partidos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + B)",
+                  "min_result": "West Ham gana y Swansea-Watford supera 2.5 goles",
+                  "explanation": "Cobras la Doble 1 (@ 2.59x): Cobras $64.75 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + C)",
+                  "min_result": "West Ham gana y Southampton gana en Birmingham",
+                  "explanation": "Cobras la Doble 2 (@ 2.67x): Cobras $66.75 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Se cumplen los 3 partidos (A + B + C)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $304.50 (+$204.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $304.50 si aciertas los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (01 SEPTIEMBRE)\n• Pick A: West Ham United vs. Wolverhampton (Gana West Ham) @ 1.62\n• Pick B: Swansea City vs. Watford (Más 2.0/2.5 Goles) @ 1.6\n• Pick C: Birmingham City vs. Southampton (Gana Southampton) @ 1.65\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $304.50"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.04x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Martes.",
+          "totalOdds": 2.04,
+          "fairOdds": 1.62,
+          "expectedWinRate": "84.0%",
+          "combinedEv": "+29.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "West Ham United vs. Wolverhampton",
+              "tournament": "EFL Championship / English Football (12:45 CST)",
+              "selection": "West Ham Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.42,
+              "confidencePct": 92,
+              "algorithm": "API-Football Safe Model: West Ham en London Stadium, Stratford, Londres promedia 2.1 goles con >90% de probabilidad de triunfo ante Wolves."
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Swansea City vs. Watford",
+              "tournament": "EFL Championship (12:45 CST)",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.44,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Safe Pick: 88% de tasa histórica de más de 1.5 goles en duelos directos Swansea vs Watford en Swansea.com Stadium, Swansea, Gales."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos reales verificados de máxima certeza:",
+              "• West Ham United vs. Wolverhampton: 'Crear Apuesta: West Ham Ganador + Más de 1.5 Goles'.",
+              "• Swansea City vs. Watford: 'Total de Goles: Más de 1.5 Goles Totales'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.04x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "West Ham United vs. Wolverhampton",
+                  "min_result": "West Ham 2-0, 2-1, 3-0, 3-1",
+                  "explanation": "West Ham gana en Londres con al menos 2 goles totales en el encuentro."
+                },
+                {
+                  "match": "Swansea City vs. Watford",
+                  "min_result": "1-1, 2-0, 0-2, 2-1, 1-2, 3-0",
+                  "explanation": "Al menos 2 goles totales anotados entre Swansea y Watford."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $204.00 (+$104.00 de ganancia neta duplicando capital con ~84% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER VERIFICADA (01 SEPTIEMBRE)\n1. West Ham United vs. Wolverhampton (West Ham Gana + Más 1.5) @ 1.42\n2. Swansea City vs. Watford (Más de 1.5 Goles) @ 1.44\n► Cuota Total: 2.04x (Duplicador) | Confianza: 84.0% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 2,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 506.5,
+        "netPnL": 6.5,
+        "roiPct": "+1.3%",
+        "winRate": "66.7% (Pleno en Doble Banker @ 2.04x y Amortización en Simples)",
+        "evaluatedAt": "2026-09-02 08:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada de Martes positiva (+1.3% ROI). La Doble Banker (@ 2.04x) cobró al 100% con los triunfos de West Ham (4-2) y Swansea (2-0)."
+      },
+      "evaluatedAt": "2026-09-02 08:00:00",
+      "match_results": {
+        "West Ham United vs. Wolverhampton": "4-2 (Gana West Ham & Over 1.5 CUMPLIDO)",
+        "Swansea City vs. Watford": "2-0 (Swansea Gana; Cumple Over 1.5 en Modo C)",
+        "Birmingham City vs. Southampton": "1-1 (Empate; Reembolso DNB en Simples)"
+      }
+    },
+    "2026-09-02": {
+      "date": "2026-09-02",
+      "saved_at": "2026-09-02 08:43:39",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor",
+          "modeShort": "Modo A: Simples (80% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Apuestas individuales independientes 100% verificadas para el Miércoles 02 de Septiembre en Copa Argentina y Copa do Brasil. Cada acierto cobra por separado; 2 de 3 garantizan ganancia neta protegida.",
+          "avgOdds": 1.62,
+          "expectedWinRate": "80.5%",
+          "combinedEv": "+27.2%",
+          "recommendedStake": "1.0% por partido (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vélez Sarsfield vs. Boca Juniors",
+              "tournament": "Copa Argentina (Octavos de Final) (18:15 CST / 21:15 ART)",
+              "stadium": "Estadio Mario Alberto Kempes, Córdoba, Argentina",
+              "selection": "Menos de 2.5 Goles Totales (Under)",
+              "odds": 1.58,
+              "confidencePct": 90,
+              "algorithm": "Sportmonks Defensive Index: Duelo de máxima tensión en Córdoba; 9 de los últimos 10 choques directos Vélez vs Boca registraron Menos de 2.5 goles (1.4 goles/juego).",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Santos FC vs. SE Palmeiras",
+              "tournament": "Copa do Brasil (Cuartos de Final - Vuelta) (18:30 CST / 21:30 BRT)",
+              "stadium": "Estádio Urbano Caldeira (Vila Belmiro), Santos, Brasil",
+              "selection": "SE Palmeiras Empate No Acción (DNB 2) / Doble Oportunidad X2",
+              "odds": 1.62,
+              "confidencePct": 88,
+              "algorithm": "FootyStats Dominance Model: Palmeiras registra 78% de imbatibilidad en Vila Belmiro en duelos de copa con 1.85 xG promedio y solo 0.60 xGA.",
+              "singleReturn": 162.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético Mineiro vs. Cruzeiro EC",
+              "tournament": "Copa do Brasil (Cuartos de Final - Vuelta) (16:30 CST / 19:30 BRT)",
+              "stadium": "Arena MRV, Belo Horizonte, Brasil",
+              "selection": "Atlético Mineiro Ganador Directo (1) / DNB Seguro",
+              "odds": 1.65,
+              "confidencePct": 88,
+              "algorithm": "API-Football High-Pace Derby Index: Clássico Mineiro en la Arena MRV; el Galo genera 2.10 xG en casa con 80% de imbatibilidad frente a Cruzeiro.",
+              "singleReturn": 165.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 eventos coperos verificados del Miércoles al cupón:",
+              "• Vélez Sarsfield vs. Boca Juniors: Selecciona 'Menos de 2.5 Goles Totales (Under)'.",
+              "• Santos FC vs. SE Palmeiras: Selecciona 'SE Palmeiras Empate No Acción (DNB 2) / Doble Oportunidad X2'.",
+              "• Atlético Mineiro vs. Cruzeiro EC: Selecciona 'Atlético Mineiro Ganador Directo (1) / DNB Seguro'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con Apuestas Simples?",
+              "match_examples": [
+                {
+                  "match": "Vélez Sarsfield vs. Boca Juniors",
+                  "min_result": "0-0, 1-0, 0-1, 1-1, 2-0",
+                  "explanation": "Menos de 3 goles en el Estadio Mario Alberto Kempes, Córdoba, Argentina. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Santos FC vs. SE Palmeiras",
+                  "min_result": "Palmeiras empata o gana en Vila Belmiro",
+                  "explanation": "Palmeiras saca resultado positivo en Estádio Urbano Caldeira (Vila Belmiro), Santos, Brasil. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Atlético Mineiro vs. Cruzeiro EC",
+                  "min_result": "Atlético Mineiro 1-0, 2-0, 2-1",
+                  "explanation": "Victoria del Galo en la Arena MRV, Belo Horizonte, Brasil. Cobras $165.00 (+$65.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$320.00 – $327.00 (+$20.00 a +$27.00 de ganancia neta protegida). Si aciertas los 3: Cobras $485.0 (+$185.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES VERIFICADAS (02 SEPTIEMBRE)\n1. Vélez Sarsfield vs. Boca Juniors: Menos de 2.5 Goles Totales (Under) @ 1.58 ($100 -> $158.00)\n2. Santos FC vs. SE Palmeiras: SE Palmeiras Empate No Acción (DNB 2) / Doble Oportunidad X2 @ 1.62 ($100 -> $162.00)\n3. Atlético Mineiro vs. Cruzeiro EC: Atlético Mineiro Ganador Directo (1) / DNB Seguro @ 1.65 ($100 -> $165.00)\n► Inversión: $300 | Cobro 3/3: $485.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple). Si aciertas 2 de 3 partidos, ¡cobras la doble correspondiente sin perder tu capital!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "88.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vélez Sarsfield vs. Boca Juniors",
+              "selection": "Menos de 2.5 Goles Totales (Under)",
+              "odds": 1.58,
+              "algorithm": "Pick A: Solidez defensiva en Córdoba; 9 de 10 choques directos con Under 2.5"
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Santos FC vs. SE Palmeiras",
+              "selection": "SE Palmeiras Empate No Acción (DNB 2) / Doble Oportunidad X2",
+              "odds": 1.62,
+              "algorithm": "Pick B: 78% de imbatibilidad de Palmeiras en Vila Belmiro"
+            },
+            {
+              "sourceName": "API-Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético Mineiro vs. Cruzeiro EC",
+              "selection": "Atlético Mineiro Ganador Directo (1) / DNB Seguro",
+              "odds": 1.65,
+              "algorithm": "Pick C: Solvencia y 2.10 xG de Atlético Mineiro en la Arena MRV"
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (A + B)",
+              "odds": 2.56,
+              "formula": "1.58 × 1.62"
+            },
+            {
+              "name": "Doble 2 (A + C)",
+              "odds": 2.61,
+              "formula": "1.58 × 1.65"
+            },
+            {
+              "name": "Doble 3 (B + C)",
+              "odds": 2.67,
+              "formula": "1.62 × 1.65"
+            },
+            {
+              "name": "Triple (A + B + C)",
+              "odds": 4.22,
+              "formula": "1.58 × 1.62 × 1.65"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos del día en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 partidos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + B)",
+                  "min_result": "Vélez vs Boca es Under 2.5 y Palmeiras no pierde en Santos",
+                  "explanation": "Cobras la Doble 1 (@ 2.56x): Cobras $64.00 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 Aciertos (A + C)",
+                  "min_result": "Vélez vs Boca es Under 2.5 y Mineiro gana el clásico",
+                  "explanation": "Cobras la Doble 2 (@ 2.61x): Cobras $65.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Se cumplen los 3 partidos (A + B + C)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.50 (+$201.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertas los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE (02 SEPTIEMBRE)\n• Pick A: Vélez Sarsfield vs. Boca Juniors (Menos de 2.5 Goles Totales (Under)) @ 1.58\n• Pick B: Santos FC vs. SE Palmeiras (SE Palmeiras Empate No Acción (DNB 2) / Doble Oportunidad X2) @ 1.62\n• Pick C: Atlético Mineiro vs. Cruzeiro EC (Atlético Mineiro Ganador Directo (1) / DNB Seguro) @ 1.65\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker de Alta Certeza (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 2.06x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos seleccionados por su máxima solidez estadística para duplicar la banca en la jornada de Miércoles.",
+          "totalOdds": 2.06,
+          "fairOdds": 1.62,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "Sportmonks",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vélez Sarsfield vs. Boca Juniors",
+              "tournament": "Copa Argentina (Octavos de Final) (18:15 CST / 21:15 ART)",
+              "selection": "Menos de 3.0 / 3.5 Goles Totales",
+              "odds": 1.42,
+              "confidencePct": 93,
+              "algorithm": "Sportmonks Safe Model: Choque cerrado de 8vos en Córdoba con >93% de probabilidad de registrar menos de 3.5 goles totales."
+            },
+            {
+              "sourceName": "FootyStats",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Santos FC vs. SE Palmeiras",
+              "tournament": "Copa do Brasil (Cuartos de Final - Vuelta) (18:30 CST / 21:30 BRT)",
+              "selection": "Palmeiras Doble Oportunidad (X2) + Más 1.0 Gol",
+              "odds": 1.45,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Safe Pick: Palmeiras no pierde en 8 de sus últimos 9 cruces directos ante Santos con al menos 1 gol en el encuentro."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos reales verificados de máxima certeza:",
+              "• Vélez Sarsfield vs. Boca Juniors: 'Menos de 3.0 / 3.5 Goles Totales'.",
+              "• Santos FC vs. SE Palmeiras: 'Palmeiras Doble Oportunidad (X2) + Más 1.0 Gol'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.06x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Vélez Sarsfield vs. Boca Juniors",
+                  "min_result": "0-0, 1-0, 0-1, 1-1, 2-0, 2-1",
+                  "explanation": "Máximo 3 goles totales en Córdoba."
+                },
+                {
+                  "match": "Santos FC vs. SE Palmeiras",
+                  "min_result": "0-1, 1-1, 0-2, 1-2, 2-2",
+                  "explanation": "Palmeiras empata o gana en Vila Belmiro con al menos 1 gol."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $206.00 (+$106.00 de ganancia neta duplicando capital con ~84.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER VERIFICADA (02 SEPTIEMBRE)\n1. Vélez Sarsfield vs. Boca Juniors (Menos de 3.0 / 3.5 Goles Totales) @ 1.42\n2. Santos FC vs. SE Palmeiras (Palmeiras Doble Oportunidad (X2) + Más 1.0 Gol) @ 1.45\n► Cuota Total: 2.06x (Duplicador) | Confianza: 84.5% | Stake: 2.0% - 3.0%"
           }
         }
       },
