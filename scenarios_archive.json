@@ -2094,7 +2094,7 @@
     },
     "2026-09-04": {
       "date": "2026-09-04",
-      "saved_at": "2026-09-04 08:20:08",
+      "saved_at": "2026-09-04 16:06:13",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
@@ -2104,7 +2104,7 @@
           "badge": "MÁXIMO WIN RATE",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "tagColor": "emerald",
-          "description": "3 Apuestas individuales independientes 100% verificadas para el Viernes 04 de Septiembre en Portugal, MLS y Argentina. Cada acierto cobra por separado; 2 de 3 garantizan ganancia neta protegida.",
+          "description": "3 Apuestas individuales independientes 100% verificadas para el Viernes 04 de Septiembre. Cada acierto cobra por separado; 2 de 3 garantizan ganancia neta protegida.",
           "avgOdds": 1.6,
           "expectedWinRate": "80.5%",
           "combinedEv": "+27.2%",
@@ -2113,6 +2113,7 @@
           "picks": [
             {
               "sourceName": "API-Football",
+              "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
               "match": "FC Porto vs. Moreirense",
               "tournament": "Liga Portugal (Jornada de Viernes) (14:15 CST / 21:15 WEST)",
@@ -2126,6 +2127,7 @@
             },
             {
               "sourceName": "FootyStats",
+              "sport": "Football",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
               "match": "New York City FC vs. Nashville SC",
               "tournament": "Major League Soccer (MLS Friday) (17:30 CST / 19:30 EDT)",
@@ -2139,6 +2141,7 @@
             },
             {
               "sourceName": "Sportmonks",
+              "sport": "Football",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
               "match": "Belgrano vs. Huracán",
               "tournament": "Liga Profesional Argentina (Fecha 8) (17:00 CST / 19:00 ART)",
@@ -2166,8 +2169,8 @@
               "match_examples": [
                 {
                   "match": "FC Porto vs. Moreirense",
-                  "min_result": "FC Porto 2-0, 3-0, 3-1, 4-1",
-                  "explanation": "Porto gana por 2 o más goles en el Estádio do Dragão, Oporto, Portugal. Cobras $162.00 (+$62.00 neto)."
+                  "min_result": "Victoria sólida de Porto",
+                  "explanation": "Porto gana en el Estádio do Dragão, Oporto, Portugal. Cobras $162.00 (+$62.00 neto)."
                 },
                 {
                   "match": "New York City FC vs. Nashville SC",
@@ -2201,6 +2204,7 @@
           "picks": [
             {
               "sourceName": "API-Football",
+              "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
               "match": "FC Porto vs. Moreirense",
               "selection": "FC Porto (-1.5 Hándicap Asiático)",
@@ -2209,6 +2213,7 @@
             },
             {
               "sourceName": "FootyStats",
+              "sport": "Football",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
               "match": "New York City FC vs. Nashville SC",
               "selection": "Más de 2.0 / 2.5 Goles Totales (Over)",
@@ -2217,6 +2222,7 @@
             },
             {
               "sourceName": "Sportmonks",
+              "sport": "Football",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
               "match": "Belgrano vs. Huracán",
               "selection": "Menos de 2.5 Goles Totales (Under)",
@@ -2295,6 +2301,7 @@
           "picks": [
             {
               "sourceName": "API-Football",
+              "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
               "match": "FC Porto vs. Moreirense",
               "tournament": "Liga Portugal (Jornada de Viernes) (14:15 CST / 21:15 WEST)",
@@ -2305,6 +2312,7 @@
             },
             {
               "sourceName": "FootyStats",
+              "sport": "Football",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
               "match": "New York City FC vs. Nashville SC",
               "tournament": "Major League Soccer (MLS Friday) (17:30 CST / 19:30 EDT)",

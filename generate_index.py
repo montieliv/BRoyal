@@ -19,6 +19,22 @@ try:
 except Exception:
     display_date = "DOMINGO 30 AGOSTO 2026"
 
+is_hybrid = dataset.get("hybrid_mode", False)
+if is_hybrid:
+    hybrid_badge_html = """
+        <div class="flex items-center space-x-2 text-xs font-mono bg-purple-500/15 px-3 py-1.5 rounded-xl border border-purple-500/30 text-purple-300 shadow-sm">
+          <i class="fa-solid fa-bolt text-accent-purple animate-pulse"></i>
+          <span class="font-bold">⚡ MODO HÍBRIDO MULTIDEPORTE</span>
+        </div>
+    """
+else:
+    hybrid_badge_html = """
+        <div class="hidden sm:flex items-center space-x-2 text-xs font-mono bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-slate-300">
+          <i class="fa-solid fa-shield-check text-accent-emerald"></i>
+          <span>Enfoque de Alta Certeza & Control de Riesgo</span>
+        </div>
+    """
+
 html_template = f"""<!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
@@ -201,10 +217,7 @@ html_template = f"""<!DOCTYPE html>
           <i class="fa-solid fa-circle-check text-accent-emerald animate-pulse"></i>
           <span class="font-bold">PARTIDOS Y FECHA 100% VERIFICADOS</span>
         </div>
-        <div class="hidden sm:flex items-center space-x-2 text-xs font-mono bg-graphite-900 px-3 py-1.5 rounded-xl border border-graphite-700/80 text-slate-300">
-          <i class="fa-solid fa-shield-check text-accent-emerald"></i>
-          <span>Enfoque de Alta Certeza & Control de Riesgo</span>
-        </div>
+        {hybrid_badge_html}
       </div>
     </div>
 
@@ -429,6 +442,22 @@ html_template = f"""<!DOCTYPE html>
       return 'fa-solid fa-futbol';
     }}
 
+    function getSportBadge(sport) {{
+      if (sport === 'Tennis' || sport === 'Tenis') {{
+        return '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-lime-500/15 text-lime-400 border border-lime-500/30"><i class="fa-solid fa-baseball mr-1 text-[9px]"></i>TENIS</span>';
+      }}
+      if (sport === 'Basketball' || sport === 'NBA') {{
+        return '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-amber-500/15 text-amber-400 border border-amber-500/30"><i class="fa-solid fa-basketball mr-1 text-[9px]"></i>NBA</span>';
+      }}
+      if (sport === 'Baseball' || sport === 'MLB') {{
+        return '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-sky-500/15 text-sky-400 border border-sky-500/30"><i class="fa-solid fa-baseball-bat-ball mr-1 text-[9px]"></i>MLB</span>';
+      }}
+      if (sport === 'NFL' || sport === 'American Football') {{
+        return '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-purple-500/15 text-purple-400 border border-purple-500/30"><i class="fa-solid fa-football mr-1 text-[9px]"></i>NFL</span>';
+      }}
+      return '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"><i class="fa-solid fa-futbol mr-1 text-[9px]"></i>FÚTBOL</span>';
+    }}
+
     function renderStrategyCard(stratKey) {{
       const strat = DATASET.strategies[stratKey];
       if (!strat) return;
@@ -470,14 +499,18 @@ html_template = f"""<!DOCTYPE html>
         strat.picks.forEach((pick, idx) => {{
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
+          const sportBadge = getSportBadge(pick.sport);
           const card = document.createElement('div');
           card.className = 'bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-graphite-700 transition shadow-sm';
           card.innerHTML = `
             <div>
-              <div class="flex items-center justify-between gap-1 mb-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${{badgeClass}}">
-                  <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
-                </span>
+              <div class="flex items-center justify-between gap-1 mb-2 flex-wrap">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${{badgeClass}}">
+                    <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
+                  </span>
+                  ${{sportBadge}}
+                </div>
                 <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK ${{String.fromCharCode(65 + idx)}}</span>
               </div>
               <div class="font-bold text-white text-xs mt-1">${{pick.match}}</div>
@@ -496,14 +529,18 @@ html_template = f"""<!DOCTYPE html>
         strat.picks.forEach((pick, idx) => {{
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
+          const sportBadge = getSportBadge(pick.sport);
           const card = document.createElement('div');
           card.className = 'bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-graphite-700 transition shadow-sm';
           card.innerHTML = `
             <div>
-              <div class="flex items-center justify-between gap-1 mb-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${{badgeClass}}">
-                  <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
-                </span>
+              <div class="flex items-center justify-between gap-1 mb-2 flex-wrap">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${{badgeClass}}">
+                    <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
+                  </span>
+                  ${{sportBadge}}
+                </div>
                 <span class="text-[10px] text-slate-500 font-mono font-bold">SELECCIÓN ${{idx + 1}}</span>
               </div>
               <div class="font-bold text-white text-xs mt-1">${{pick.match}}</div>
