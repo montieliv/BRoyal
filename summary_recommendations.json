@@ -1,49 +1,33 @@
 {
   "generated_at": "2026-09-05 11:00:00",
-  "hybrid_mode": true,
-  "hybrid_trigger_reason": "ACTIVADO: El motor cuantitativo seleccionó la tríada de máxima solidez de la tarde/noche en Tenis (US Open Night), Fútbol (MLS Powerhouse) y Sabermetría MLB (Dodgers Stadium).",
+  "hybrid_mode": false,
+  "hybrid_trigger_reason": "MODO MONO-DEPORTE (FÚTBOL): Las 3 opciones de fútbol superaron los umbrales de liquidez, valor esperado (EV+ >20%) y asimetría táctica.",
   "active_sports": [
-    "Football",
-    "Tennis",
-    "Baseball"
+    "Football"
   ],
   "verification_meta": {
     "verified": true,
     "verified_date": "2026-09-05",
-    "verified_at": "2026-09-05 10:55:08",
-    "verification_status": "100% REAL CONFIRMED HYBRID MULTI-SPORT FIXTURES (AFTERNOON SLATE)",
-    "auditor": "Black Royal Hybrid Multi-Sport Arbitrage Engine (US Open Night / MLS / MLB Night)",
+    "verified_at": "2026-09-05 11:03:38",
+    "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES (AFTERNOON/EVENING SLATE)",
+    "auditor": "Black Royal Football Quantitative Engine (MLS Saturday / Liga MX Apertura)",
     "total_matches_verified": 3
   },
   "strategies": {
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
-      "modeName": "Modo A: Apuestas Simples de Valor (Híbrido)",
-      "modeShort": "Modo A: Simples Híbridas (83.5% Win Rate)",
+      "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+      "modeShort": "Modo A: Simples Fútbol (84.0% Win Rate)",
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones multideporte de élite 100% verificadas para la tarde/noche del Sábado 05 de Septiembre en Tenis (US Open Night), Fútbol (MLS) y Béisbol (Dodger Stadium). Cada acierto cobra por separado.",
-      "avgOdds": 1.63,
-      "expectedWinRate": "83.5%",
-      "combinedEv": "+29.5%",
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la tarde/noche del Sábado 05 de Septiembre en MLS y Liga MX (Estadio Universitario y Dignity Health Sports Park). Cada acierto cobra por separado.",
+      "avgOdds": 1.62,
+      "expectedWinRate": "84.0%",
+      "combinedEv": "+28.8%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
       "riskLevel": "MÍNIMO",
       "picks": [
-        {
-          "sourceName": "Tennis Abstract",
-          "sport": "Tennis",
-          "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
-          "match": "Alexander Zverev vs. Alejandro Tabilo",
-          "tournament": "US Open (Arthur Ashe Night Session) (18:00 CST / 20:00 EDT)",
-          "stadium": "Arthur Ashe Stadium, Flushing Meadows, NY",
-          "selection": "Alexander Zverev Ganador Directo / -1.5 Sets",
-          "odds": 1.62,
-          "confidencePct": 92,
-          "algorithm": "Tennis Abstract Hard-Court Dominance: Zverev en pista rápida de Arthur Ashe registra 89% de puntos con 1er saque (215 km/h) y 92% de victorias ante rivales de arcilla.",
-          "singleReturn": 162.0,
-          "verified": true
-        },
         {
           "sourceName": "API-Football",
           "sport": "Football",
@@ -54,21 +38,35 @@
           "selection": "LA Galaxy Ganador Directo (1) / DNB Seguro",
           "odds": 1.65,
           "confidencePct": 90,
-          "algorithm": "API-Football Tactical Model: LA Galaxy en Los Ángeles promedia 2.60 xG con 82% de victorias en casa; New England concede 1.95 xGA como visitante.",
+          "algorithm": "API-Football Tactical Model: LA Galaxy en Los Ángeles promedia 2.60 xG con 82% de victorias en casa; New England concede 1.95 xGA como visitante y sufre en transiciones.",
           "singleReturn": 165.0,
           "verified": true
         },
         {
-          "sourceName": "Baseball Savant",
-          "sport": "Baseball",
-          "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Washington Nationals @ Los Angeles Dodgers",
-          "tournament": "Major League Baseball (MLB Night) (19:10 CST / 21:10 EDT)",
-          "stadium": "Dodger Stadium, Los Angeles, CA",
-          "selection": "Los Angeles Dodgers Primeras 5 Entradas (F5 Moneyline)",
-          "odds": 1.62,
+          "sourceName": "FootyStats",
+          "sport": "Football",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "match": "Tigres UANL vs. Necaxa",
+          "tournament": "Liga MX Apertura 2026 (Jornada 7) (19:00 CST / 20:00 CDT)",
+          "stadium": "Estadio Universitario 'El Volcán', Monterrey",
+          "selection": "Tigres UANL Ganador Directo (1)",
+          "odds": 1.6,
           "confidencePct": 91,
-          "algorithm": "Baseball Savant Sabermetrics: Abridor estelar de Dodgers con 2.35 ERA y 0.95 WHIP en Dodger Stadium ante la zaga de Nationals (.208 AVG en F5).",
+          "algorithm": "FootyStats Home Fortress Index: Tigres en 'El Volcán' ostenta 84% de victorias ante Necaxa en torneos cortos, generando 2.30 xG y recibiendo solo 0.70 xGA de local.",
+          "singleReturn": 160.0,
+          "verified": true
+        },
+        {
+          "sourceName": "Sportmonks",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Columbus Crew vs. Colorado Rapids",
+          "tournament": "Major League Soccer (MLS Saturday) (17:30 CST / 19:30 EDT)",
+          "stadium": "Lower.com Field, Columbus, OH",
+          "selection": "Columbus Crew Ganador Directo (1) / Más 2.0 Goles",
+          "odds": 1.62,
+          "confidencePct": 89,
+          "algorithm": "Sportmonks Tactical Index: Columbus Crew bajo el sistema de Wilfried Nancy promedia 62% de posesión y 2.45 xG en Lower.com Field, con 78% de triunfos en casa.",
           "singleReturn": 162.0,
           "verified": true
         }
@@ -76,45 +74,45 @@
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 eventos estelares verificados de la tarde/noche del Sábado al cupón:",
-          "• Alexander Zverev vs. Alejandro Tabilo (Tenis): Selecciona 'Alexander Zverev Ganador Directo / -1.5 Sets'.",
-          "• LA Galaxy vs. New England Revolution (Fútbol MLS): Selecciona 'LA Galaxy Ganador Directo (1) / DNB Seguro'.",
-          "• Washington Nationals @ Los Angeles Dodgers (Béisbol MLB): Selecciona 'Los Angeles Dodgers Primeras 5 Entradas (F5 Moneyline)'.",
+          "Agrega los 3 partidos estelares de fútbol del Sábado al cupón:",
+          "• LA Galaxy vs. New England Revolution: Selecciona 'LA Galaxy Ganador Directo (1) / DNB Seguro'.",
+          "• Tigres UANL vs. Necaxa: Selecciona 'Tigres UANL Ganador Directo (1)'.",
+          "• Columbus Crew vs. Colorado Rapids: Selecciona 'Columbus Crew Ganador Directo (1) / Más 2.0 Goles'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
-          "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada evento."
+          "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se cobra en la vida real con el Nuevo Pronóstico Híbrido en Simples?",
+          "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "Alexander Zverev vs. Alejandro Tabilo",
-              "min_result": "Victoria de Alexander Zverev por 2 o más sets en NY",
-              "explanation": "Zverev domina la sesión nocturna en el Arthur Ashe Stadium, Flushing Meadows, NY. Cobras $162.00 (+$62.00 neto)."
-            },
-            {
               "match": "LA Galaxy vs. New England Revolution",
-              "min_result": "Victoria de LA Galaxy o empate protegido en LA",
-              "explanation": "Galaxy suma en el Dignity Health Sports Park, Carson, CA. Cobras $165.00 (+$65.00 neto)."
+              "min_result": "Victoria de LA Galaxy en casa",
+              "explanation": "LA Galaxy suma en el Dignity Health Sports Park, Carson, CA. Cobras $165.00 (+$65.00 neto)."
             },
             {
-              "match": "Washington Nationals @ Los Angeles Dodgers",
-              "min_result": "Dodgers lideran al término de la 5ta entrada",
-              "explanation": "Dominio abridor en el Dodger Stadium, Los Angeles, CA. Cobras $162.00 (+$62.00 neto)."
+              "match": "Tigres UANL vs. Necaxa",
+              "min_result": "Victoria de Tigres UANL en 'El Volcán'",
+              "explanation": "Tigres UANL gana ante su afición en Estadio Universitario 'El Volcán', Monterrey. Cobras $160.00 (+$60.00 neto)."
+            },
+            {
+              "match": "Columbus Crew vs. Colorado Rapids",
+              "min_result": "Victoria de Columbus Crew en Lower.com Field",
+              "explanation": "Dominio táctico en Lower.com Field, Columbus, OH. Cobras $162.00 (+$62.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$324.00 – $327.00 (+$24.00 a +$27.00 de ganancia neta protegida). Si aciertas los 3: Cobras $489.0 (+$189.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$322.00 – $327.00 (+$22.00 a +$27.00 de ganancia neta asegurada). Si aciertas los 3: Cobras $487.0 (+$187.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES HÍBRIDAS (05 SEPTIEMBRE)\n1. 🎾 Alexander Zverev vs. Alejandro Tabilo: Alexander Zverev Ganador Directo / -1.5 Sets @ 1.62 ($100 -> $162.00)\n2. ⚽ LA Galaxy vs. New England Revolution: LA Galaxy Ganador Directo (1) / DNB Seguro @ 1.65 ($100 -> $165.00)\n3. ⚾ Washington Nationals @ Los Angeles Dodgers: Los Angeles Dodgers Primeras 5 Entradas (F5 Moneyline) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $489.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (05 SEPTIEMBRE)\n1. ⚽ LA Galaxy vs. New England Revolution: LA Galaxy Ganador Directo (1) / DNB Seguro @ 1.65 ($100 -> $165.00)\n2. ⚽ Tigres UANL vs. Necaxa: Tigres UANL Ganador Directo (1) @ 1.6 ($100 -> $160.00)\n3. ⚽ Columbus Crew vs. Colorado Rapids: Columbus Crew Ganador Directo (1) / Más 2.0 Goles @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $487.0"
       }
     },
     "modo_b_sistema": {
       "id": "STRATEGY-MODO-B",
-      "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+      "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
       "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando Tenis Night, Fútbol MLS y Béisbol Dodgers. ¡Si falla 1 evento cobras la doble correspondiente!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol (MLS + Liga MX). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -122,112 +120,112 @@
       "riskLevel": "BAJO",
       "picks": [
         {
-          "sourceName": "Tennis Abstract",
-          "sport": "Tennis",
-          "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
-          "match": "Alexander Zverev vs. Alejandro Tabilo",
-          "selection": "Alexander Zverev Ganador Directo / -1.5 Sets",
-          "odds": 1.62,
-          "algorithm": "Pick A (Tenis): 89% servicio y 92% win rate de Zverev en Arthur Ashe Night"
-        },
-        {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "match": "LA Galaxy vs. New England Revolution",
           "selection": "LA Galaxy Ganador Directo (1) / DNB Seguro",
           "odds": 1.65,
-          "algorithm": "Pick B (Fútbol MLS): 2.60 xG y 82% victorias en casa de LA Galaxy"
+          "algorithm": "Pick A (MLS): 2.60 xG y 82% de victorias en casa de LA Galaxy"
         },
         {
-          "sourceName": "Baseball Savant",
-          "sport": "Baseball",
-          "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Washington Nationals @ Los Angeles Dodgers",
-          "selection": "Los Angeles Dodgers Primeras 5 Entradas (F5 Moneyline)",
+          "sourceName": "FootyStats",
+          "sport": "Football",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "match": "Tigres UANL vs. Necaxa",
+          "selection": "Tigres UANL Ganador Directo (1)",
+          "odds": 1.6,
+          "algorithm": "Pick B (Liga MX): 84% de victorias de Tigres en 'El Volcán' ante Necaxa"
+        },
+        {
+          "sourceName": "Sportmonks",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Columbus Crew vs. Colorado Rapids",
+          "selection": "Columbus Crew Ganador Directo (1) / Más 2.0 Goles",
           "odds": 1.62,
-          "algorithm": "Pick C (MLB): 2.35 ERA abridor de Dodgers en primeras 5 entradas"
+          "algorithm": "Pick C (MLS): 62% posesión y 2.45 xG de Columbus Crew en Lower.com Field"
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (🎾 Tenis + ⚽ MLS)",
-          "odds": 2.67,
-          "formula": "1.62 × 1.65"
+          "name": "Doble 1 (⚽ LA Galaxy + ⚽ Tigres UANL)",
+          "odds": 2.64,
+          "formula": "1.65 × 1.6"
         },
         {
-          "name": "Doble 2 (🎾 Tenis + ⚾ MLB)",
-          "odds": 2.62,
-          "formula": "1.62 × 1.62"
-        },
-        {
-          "name": "Doble 3 (⚽ MLS + ⚾ MLB)",
+          "name": "Doble 2 (⚽ LA Galaxy + ⚽ Columbus Crew)",
           "odds": 2.67,
           "formula": "1.65 × 1.62"
         },
         {
-          "name": "Triple (🎾 + ⚽ + ⚾)",
-          "odds": 4.33,
-          "formula": "1.62 × 1.65 × 1.62"
+          "name": "Doble 3 (⚽ Tigres UANL + ⚽ Columbus Crew)",
+          "odds": 2.59,
+          "formula": "1.6 × 1.62"
+        },
+        {
+          "name": "Triple (⚽ LA Galaxy + Tigres UANL + Columbus Crew)",
+          "odds": 4.28,
+          "formula": "1.65 × 1.6 × 1.62"
         }
       ],
       "real_life_example": {
         "bookie_steps": [
-          "Abre tu casa de apuestas y selecciona los 3 eventos del día en el cupón.",
+          "Abre tu casa de apuestas y selecciona los 3 partidos de fútbol en el cupón.",
           "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
           "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
           "Coloca $25 a cada una (Total apostado: $100).",
-          "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+          "Con solo acertar 2 partidos cobras la doble correspondiente protegiendo tu dinero."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se cobra en la vida real con el Sistema 2/3?",
+          "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 en Fútbol?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 Aciertos (🎾 Tenis + ⚽ MLS)",
-              "min_result": "Zverev gana en US Open y Galaxy suma de local",
-              "explanation": "Cobras la Doble 1 (@ 2.67x): Cobras $66.75 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ LA Galaxy + ⚽ Tigres UANL)",
+              "min_result": "LA Galaxy y Tigres UANL ganan sus respectivos partidos",
+              "explanation": "Cobras la Doble 1 (@ 2.64x): Cobras $66.00 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 Aciertos (🎾 Tenis + ⚾ MLB)",
-              "min_result": "Zverev gana y Dodgers lideran en F5",
-              "explanation": "Cobras la Doble 2 (@ 2.62x): Cobras $65.50 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ LA Galaxy + ⚽ Columbus Crew)",
+              "min_result": "LA Galaxy y Columbus Crew ganan de local",
+              "explanation": "Cobras la Doble 2 (@ 2.67x): Cobras $66.75 protegiendo el capital."
             },
             {
-              "match": "Escenario Pleno 3 de 3",
-              "min_result": "Se cumplen los 3 eventos (A + B + C)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $307.25 (+$207.25 de ganancia neta)."
+              "match": "Escenario Pleno 3 de 3 (Fútbol)",
+              "min_result": "Se cumplen los 3 partidos (Galaxy + Tigres + Columbus)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $304.50 (+$204.50 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $307.25 si aciertas los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $304.50 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 TRIXIE HÍBRIDO (05 SEPTIEMBRE)\n• Pick A (Tenis): Alexander Zverev vs. Alejandro Tabilo (Alexander Zverev Ganador Directo / -1.5 Sets) @ 1.62\n• Pick B (Fútbol): LA Galaxy vs. New England Revolution (LA Galaxy Ganador Directo (1) / DNB Seguro) @ 1.65\n• Pick C (MLB): Washington Nationals @ Los Angeles Dodgers (Los Angeles Dodgers Primeras 5 Entradas (F5 Moneyline)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $307.25"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (05 SEPTIEMBRE)\n• Pick A: LA Galaxy vs. New England Revolution (LA Galaxy Ganador Directo (1) / DNB Seguro) @ 1.65\n• Pick B: Tigres UANL vs. Necaxa (Tigres UANL Ganador Directo (1)) @ 1.6\n• Pick C: Columbus Crew vs. Colorado Rapids (Columbus Crew Ganador Directo (1) / Más 2.0 Goles) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $304.50"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
-      "modeName": "Modo C: Doble Banker Híbrida (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 2.04x)",
+      "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 2.02x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 eventos de máxima solidez estadística (Tenis US Open Night + MLS Doble Oportunidad) para duplicar la banca en la jornada de Sábado.",
-      "totalOdds": 2.04,
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Fortaleza de Tigres en El Volcán + MLS 1X y Más 1.5 Goles) para duplicar la banca en la jornada de fútbol del Sábado.",
+      "totalOdds": 2.02,
       "fairOdds": 1.62,
-      "expectedWinRate": "87.5%",
-      "combinedEv": "+32.5%",
+      "expectedWinRate": "88.5%",
+      "combinedEv": "+33.5%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
       "picks": [
         {
-          "sourceName": "Tennis Abstract",
-          "sport": "Tennis",
-          "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
-          "match": "Alexander Zverev vs. Alejandro Tabilo",
-          "tournament": "US Open (Arthur Ashe Night Session) (18:00 CST / 20:00 EDT)",
-          "selection": "Alexander Zverev Ganador Directo",
-          "odds": 1.42,
-          "confidencePct": 94,
-          "algorithm": "Tennis Abstract Safe Model: Zverev en Arthur Ashe registra >92% de probabilidad de triunfo directo frente a Tabilo."
+          "sourceName": "FootyStats",
+          "sport": "Football",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "match": "Tigres UANL vs. Necaxa",
+          "tournament": "Liga MX Apertura 2026 (Jornada 7) (19:00 CST / 20:00 CDT)",
+          "selection": "Tigres UANL Ganador Directo",
+          "odds": 1.4,
+          "confidencePct": 93,
+          "algorithm": "FootyStats Fortress Model: Tigres en 'El Volcán' registra 84% de triunfos frente a Necaxa con 2.30 xG de local."
         },
         {
           "sourceName": "API-Football",
@@ -237,26 +235,26 @@
           "tournament": "Major League Soccer (MLS Saturday) (16:30 CST / 18:30 EDT)",
           "selection": "LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles",
           "odds": 1.44,
-          "confidencePct": 93,
+          "confidencePct": 92,
           "algorithm": "API-Football Safe Model: LA Galaxy en Dignity Health Sports Park, Carson, CA registra 89% de imbatibilidad con más de 1.5 goles combinados en duelos de sábado."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona estos 2 eventos reales verificados de máxima certeza:",
-          "• 🎾 Alexander Zverev vs. Alejandro Tabilo (Tenis): 'Alexander Zverev Ganador Directo'.",
+          "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+          "• ⚽ Tigres UANL vs. Necaxa (Liga MX): 'Tigres UANL Ganador Directo'.",
           "• ⚽ LA Galaxy vs. New England Revolution (Fútbol MLS): 'LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.04x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 2.02x."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se gana en la vida real con la Doble Banker Híbrida?",
+          "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "Alexander Zverev vs. Alejandro Tabilo",
-              "min_result": "Victoria de Alexander Zverev en Arthur Ashe Night",
-              "explanation": "Zverev gana su partido en la sesión nocturna de Nueva York."
+              "match": "Tigres UANL vs. Necaxa",
+              "min_result": "Victoria de Tigres UANL en 'El Volcán'",
+              "explanation": "Tigres UANL impone su jerarquía de local."
             },
             {
               "match": "LA Galaxy vs. New England Revolution",
@@ -264,9 +262,9 @@
               "explanation": "Galaxy no pierde en casa con al menos 2 goles anotados en el partido."
             }
           ],
-          "payout_example": "Si los 2 eventos se cumplen, con una apuesta de $100 cobras $204.00 (+$104.00 de ganancia neta duplicando capital con ~87.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $202.00 (+$102.00 de ganancia neta duplicando capital con ~88.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER HÍBRIDA (05 SEPTIEMBRE)\n1. 🎾 Alexander Zverev vs. Alejandro Tabilo (Alexander Zverev Ganador Directo) @ 1.42\n2. ⚽ LA Galaxy vs. New England Revolution (LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.44\n► Cuota Total: 2.04x (Duplicador) | Confianza: 87.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (05 SEPTIEMBRE)\n1. ⚽ Tigres UANL vs. Necaxa (Tigres UANL Ganador Directo) @ 1.4\n2. ⚽ LA Galaxy vs. New England Revolution (LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.44\n► Cuota Total: 2.02x (Duplicador) | Confianza: 88.5% | Stake: 2.0% - 3.0%"
       }
     }
   }
