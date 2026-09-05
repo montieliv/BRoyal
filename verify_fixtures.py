@@ -152,11 +152,23 @@ def audit_previous_scenarios():
     if "2026-09-04" in archive.get("snapshots", {}):
         snap = archive["snapshots"]["2026-09-04"]
         snap["status"] = "EVALUATED"
-        snap["evaluatedAt"] = "2026-09-05 08:00:00"
+        snap["evaluatedAt"] = "2026-09-05 10:45:00"
         snap["match_results"] = {
-            "FC Porto vs. Moreirense": "1-1 (Empate; Falla Hándicap Porto -1.5)",
-            "New York City FC vs. Nashville SC": "Pendiente / En curso",
-            "Belgrano vs. Huracán": "Pendiente / En curso"
+            "FC Porto vs. Moreirense": "1-1 (Empate; Falla Hándicap -1.5)",
+            "Belgrano vs. Huracán": "0-0 (0 Goles; CUMPLIDO Menos de 2.5 Goles @ 1.58)",
+            "New York City FC vs. Nashville SC": "0-0 (0 Goles; Falla Over 2.0/2.5 Goles)"
+        }
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 1,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 158.0,
+            "netPnL": -342.0,
+            "roiPct": "-68.4%",
+            "winRate": "33.3% (Acierto en Simples con Belgrano Under 2.5 amortizando sesión)",
+            "evaluatedAt": "2026-09-05 10:45:00",
+            "evaluated": True,
+            "auditNote": "Jornada de Viernes con baja anotación en MLS (0-0) y empate de Porto (1-1). Se cobró la simple de Belgrano vs Huracán ($158.00) amortizando parte de la banca."
         }
         with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
             json.dump(archive, f, ensure_ascii=False, indent=2)
