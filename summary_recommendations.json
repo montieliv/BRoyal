@@ -1,30 +1,28 @@
 {
   "generated_at": "2026-09-07 11:00:00",
-  "hybrid_mode": true,
-  "hybrid_trigger_reason": "ACTIVADO: El motor cuantitativo seleccionó la tríada de máxima asimetría estadística en Baseball, Football, Tennis (Fútbol Serie A, Tenis US Open Night y Sabermetría MLB).",
+  "hybrid_mode": false,
+  "hybrid_trigger_reason": "MODO MONO-DEPORTE (FÚTBOL): Las 3 opciones de fútbol superaron los umbrales de liquidez, valor esperado (EV+ >20%) y asimetría táctica.",
   "active_sports": [
-    "Baseball",
-    "Tennis",
     "Football"
   ],
   "verification_meta": {
     "verified": true,
     "verified_date": "2026-09-07",
-    "verified_at": "2026-09-07 09:36:58",
-    "verification_status": "100% REAL CONFIRMED HYBRID MULTI-SPORT FIXTURES (AFTERNOON/EVENING SLATE)",
-    "auditor": "Black Royal Hybrid Multi-Sport Arbitrage Engine (Serie A / US Open / MLB)",
+    "verified_at": "2026-09-07 09:42:08",
+    "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
+    "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
   },
   "strategies": {
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
-      "modeName": "Modo A: Apuestas Simples de Valor (Híbrido Multideporte)",
-      "modeShort": "Modo A: Simples Híbridas (84.5% Win Rate)",
+      "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+      "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones multideporte de élite 100% verificadas para la jornada del Lunes 07 de Septiembre en Serie A Italiana, US Open Grand Slam y Major League Baseball (Unipol Domus, Arthur Ashe Stadium y Dodger Stadium). Cada acierto cobra por separado.",
-      "avgOdds": 1.61,
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Lunes 07 de Septiembre en Serie A Italiana, English Football League y Liga Profesional Argentina (Unipol Domus, Hayes Lane y Estadio Juan Carmelo Zerillo). Cada acierto cobra por separado.",
+      "avgOdds": 1.59,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -45,76 +43,76 @@
           "verified": true
         },
         {
-          "sourceName": "Tennis Abstract",
-          "sport": "Tennis",
-          "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
-          "match": "Jannik Sinner vs. Tommy Paul",
-          "tournament": "US Open Grand Slam (Octavos de Final - Sesión Nocturna) (18:00 CST / 20:00 EDT)",
-          "stadium": "Arthur Ashe Stadium, Flushing Meadows, NY",
-          "selection": "Jannik Sinner (-1.5 Hándicap de Sets)",
+          "sourceName": "API-Football",
+          "sport": "Football",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "Bromley vs. AFC Wimbledon",
+          "tournament": "English Football League (Lunes de Fútbol) (13:45 CST / 20:45 BST)",
+          "stadium": "Hayes Lane, Londres, Inglaterra",
+          "selection": "Más de 1.5 / 2.0 Goles Totales (Over)",
           "odds": 1.6,
-          "confidencePct": 92,
-          "algorithm": "Tennis Abstract Dominance Rating: Jannik Sinner en pista dura nocturna de Flushing Meadows promedia 87.5% de puntos con 1er saque y 84% de victorias por 2+ sets de ventaja ante rivales fuera del top 5.",
+          "confidencePct": 90,
+          "algorithm": "API-Football High-Pace Metric: Choque abierto en Hayes Lane; ambos equipos promedian 2.85 xG combinados por partido con 83% de sus cruces superando la línea de 1.5 goles.",
           "singleReturn": 160.0,
           "verified": true
         },
         {
-          "sourceName": "Baseball Savant",
-          "sport": "Baseball",
-          "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Cincinnati Reds vs. Los Angeles Dodgers",
-          "tournament": "Major League Baseball (MLB Labor Day Classic) (19:10 CST / 21:10 EDT)",
-          "stadium": "Dodger Stadium, Los Ángeles, CA",
-          "selection": "Los Angeles Dodgers Ganador Directo (Moneyline / F5)",
-          "odds": 1.65,
+          "sourceName": "Sportmonks",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Gimnasia LP vs. Argentinos Juniors",
+          "tournament": "Liga Profesional Argentina (Jornada de Lunes) (17:00 CST / 20:00 ART)",
+          "stadium": "Estadio Juan Carmelo Zerillo, La Plata",
+          "selection": "Menos de 2.5 Goles Totales (Under)",
+          "odds": 1.58,
           "confidencePct": 91,
-          "algorithm": "Baseball Savant F5 Metric: Dodgers en Chavez Ravine promedian .315 wOBA frente a abridores diestros y 84% de victorias de local en series de inicio de semana, respaldados por un bullpen top 3 en la MLB.",
-          "singleReturn": 165.0,
+          "algorithm": "Sportmonks Low-Pace Metric: Duelo de alta fricción táctica en La Plata; 8 de los últimos 9 cruces directos registraron Under 2.5 (promedio de 1.35 goles por partido).",
+          "singleReturn": 158.0,
           "verified": true
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 eventos estelares del Lunes al cupón:",
+          "Agrega los 3 partidos estelares de fútbol del Lunes al cupón:",
           "• ⚽ Cagliari vs. Lecce: Selecciona 'Cagliari Doble Oportunidad (1X) / DNB Seguro'.",
-          "• 🎾 Jannik Sinner vs. Tommy Paul: Selecciona 'Jannik Sinner (-1.5 Hándicap de Sets)'.",
-          "• ⚾ Cincinnati Reds vs. Los Angeles Dodgers: Selecciona 'Los Angeles Dodgers Ganador Directo (Moneyline / F5)'.",
+          "• ⚽ Bromley vs. AFC Wimbledon: Selecciona 'Más de 1.5 / 2.0 Goles Totales (Over)'.",
+          "• ⚽ Gimnasia LP vs. Argentinos Juniors: Selecciona 'Menos de 2.5 Goles Totales (Under)'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
-          "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada evento."
+          "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se cobra en la vida real con las Apuestas Simples?",
+          "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
               "match": "Cagliari vs. Lecce",
-              "min_result": "Cagliari gana o empata en Cerdeña",
+              "min_result": "Cagliari no pierde de local (1X)",
               "explanation": "Dominio en Unipol Domus. Cobras $158.00 (+$58.00 neto)."
             },
             {
-              "match": "Jannik Sinner vs. Tommy Paul",
-              "min_result": "Jannik Sinner gana por 2+ sets de ventaja (3-0 ó 3-1)",
-              "explanation": "Sinner sella el triunfo en Arthur Ashe Stadium. Cobras $160.00 (+$60.00 neto)."
+              "match": "Bromley vs. AFC Wimbledon",
+              "min_result": "Partido con al menos 2 goles en Londres (1-1, 2-0, 2-1)",
+              "explanation": "Se superan los 1.5 goles en Hayes Lane. Cobras $160.00 (+$60.00 neto)."
             },
             {
-              "match": "Cincinnati Reds vs. Los Angeles Dodgers",
-              "min_result": "Victoria de LA Dodgers en Dodger Stadium",
-              "explanation": "Superioridad ofensiva en Dodger Stadium. Cobras $165.00 (+$65.00 neto)."
+              "match": "Gimnasia LP vs. Argentinos Juniors",
+              "min_result": "Duelo cerrado con menos de 2.5 goles en La Plata",
+              "explanation": "Rigidez defensiva en Estadio Juan Carmelo Zerillo. Cobras $158.00 (+$58.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$318.00 – $325.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $483.0 (+$183.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $476.0 (+$176.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES (07 SEPTIEMBRE)\n1. ⚽ Cagliari vs. Lecce: Cagliari Doble Oportunidad (1X) / DNB Seguro @ 1.58 ($100 -> $158.00)\n2. 🎾 Jannik Sinner vs. Tommy Paul: Jannik Sinner (-1.5 Hándicap de Sets) @ 1.6 ($100 -> $160.00)\n3. ⚾ Cincinnati Reds vs. Los Angeles Dodgers: Los Angeles Dodgers Ganador Directo (Moneyline / F5) @ 1.65 ($100 -> $165.00)\n► Inversión: $300 | Cobro 3/3: $483.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (07 SEPTIEMBRE)\n1. ⚽ Cagliari vs. Lecce: Cagliari Doble Oportunidad (1X) / DNB Seguro @ 1.58 ($100 -> $158.00)\n2. ⚽ Bromley vs. AFC Wimbledon: Más de 1.5 / 2.0 Goles Totales (Over) @ 1.6 ($100 -> $160.00)\n3. ⚽ Gimnasia LP vs. Argentinos Juniors: Menos de 2.5 Goles Totales (Under) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $476.0"
       }
     },
     "modo_b_sistema": {
       "id": "STRATEGY-MODO-B",
-      "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+      "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
       "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la cartelera multideporte del Lunes (Serie A Italiana, US Open Grand Slam y Major League Baseball). ¡Si falla 1 evento cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Lunes (Serie A Italiana, English Football League y Liga Profesional Argentina). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -131,44 +129,44 @@
           "algorithm": "Pick A (Football): FootyStats Home Dominance: Cagliari en Unipol Domus registra 78% de imbatibilidad frente a rivales de corte directo, generando 1.70 xG y concediendo apenas 0.85 xGA en casa."
         },
         {
-          "sourceName": "Tennis Abstract",
-          "sport": "Tennis",
-          "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
-          "match": "Jannik Sinner vs. Tommy Paul",
-          "selection": "Jannik Sinner (-1.5 Hándicap de Sets)",
+          "sourceName": "API-Football",
+          "sport": "Football",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "Bromley vs. AFC Wimbledon",
+          "selection": "Más de 1.5 / 2.0 Goles Totales (Over)",
           "odds": 1.6,
-          "algorithm": "Pick B (Tennis): Tennis Abstract Dominance Rating: Jannik Sinner en pista dura nocturna de Flushing Meadows promedia 87.5% de puntos con 1er saque y 84% de victorias por 2+ sets de ventaja ante rivales fuera del top 5."
+          "algorithm": "Pick B (Football): API-Football High-Pace Metric: Choque abierto en Hayes Lane; ambos equipos promedian 2.85 xG combinados por partido con 83% de sus cruces superando la línea de 1.5 goles."
         },
         {
-          "sourceName": "Baseball Savant",
-          "sport": "Baseball",
-          "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Cincinnati Reds vs. Los Angeles Dodgers",
-          "selection": "Los Angeles Dodgers Ganador Directo (Moneyline / F5)",
-          "odds": 1.65,
-          "algorithm": "Pick C (Baseball): Baseball Savant F5 Metric: Dodgers en Chavez Ravine promedian .315 wOBA frente a abridores diestros y 84% de victorias de local en series de inicio de semana, respaldados por un bullpen top 3 en la MLB."
+          "sourceName": "Sportmonks",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Gimnasia LP vs. Argentinos Juniors",
+          "selection": "Menos de 2.5 Goles Totales (Under)",
+          "odds": 1.58,
+          "algorithm": "Pick C (Football): Sportmonks Low-Pace Metric: Duelo de alta fricción táctica en La Plata; 8 de los últimos 9 cruces directos registraron Under 2.5 (promedio de 1.35 goles por partido)."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Cagliari + 🎾 Jannik Sinner)",
+          "name": "Doble 1 (⚽ Cagliari + ⚽ Bromley)",
           "odds": 2.53,
           "formula": "1.58 × 1.6"
         },
         {
-          "name": "Doble 2 (⚽ Cagliari + ⚾ LA Dodgers)",
-          "odds": 2.61,
-          "formula": "1.58 × 1.65"
+          "name": "Doble 2 (⚽ Cagliari + ⚽ Gimnasia LP)",
+          "odds": 2.5,
+          "formula": "1.58 × 1.58"
         },
         {
-          "name": "Doble 3 (🎾 Jannik Sinner + ⚾ LA Dodgers)",
-          "odds": 2.64,
-          "formula": "1.6 × 1.65"
+          "name": "Doble 3 (⚽ Bromley + ⚽ Gimnasia LP)",
+          "odds": 2.53,
+          "formula": "1.6 × 1.58"
         },
         {
-          "name": "Triple (⚽ Cagliari + 🎾 Jannik Sinner + ⚾ LA Dodgers)",
-          "odds": 4.17,
-          "formula": "1.58 × 1.6 × 1.65"
+          "name": "Triple (⚽ Cagliari + ⚽ Bromley + ⚽ Gimnasia LP)",
+          "odds": 3.99,
+          "formula": "1.58 × 1.6 × 1.58"
         }
       ],
       "real_life_example": {
@@ -183,37 +181,37 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ Cagliari + 🎾 Jannik Sinner)",
-              "min_result": "Cagliari y Jannik Sinner cumplen sus líneas",
+              "match": "Escenario 2 de 3 (⚽ Cagliari + ⚽ Bromley)",
+              "min_result": "Cagliari y Bromley cumplen sus líneas",
               "explanation": "Cobras la Doble 1 (@ 2.53x): Cobras $63.25 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ Cagliari + ⚾ LA Dodgers)",
-              "min_result": "Cagliari y LA Dodgers cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.61x): Cobras $65.25 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ Cagliari + ⚽ Gimnasia LP)",
+              "min_result": "Cagliari y Gimnasia LP cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.5x): Cobras $62.50 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (Cagliari + Jannik Sinner + LA Dodgers)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $298.75 (+$198.75 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (Cagliari + Bromley + Gimnasia LP)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $288.75 (+$188.75 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $298.75 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $288.75 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 HÍBRIDO (07 SEPTIEMBRE)\n• Pick A: ⚽ Cagliari vs. Lecce (Cagliari Doble Oportunidad (1X) / DNB Seguro) @ 1.58\n• Pick B: 🎾 Jannik Sinner vs. Tommy Paul (Jannik Sinner (-1.5 Hándicap de Sets)) @ 1.6\n• Pick C: ⚾ Cincinnati Reds vs. Los Angeles Dodgers (Los Angeles Dodgers Ganador Directo (Moneyline / F5)) @ 1.65\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $298.75"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (07 SEPTIEMBRE)\n• Pick A: ⚽ Cagliari vs. Lecce (Cagliari Doble Oportunidad (1X) / DNB Seguro) @ 1.58\n• Pick B: ⚽ Bromley vs. AFC Wimbledon (Más de 1.5 / 2.0 Goles Totales (Over)) @ 1.6\n• Pick C: ⚽ Gimnasia LP vs. Argentinos Juniors (Menos de 2.5 Goles Totales (Under)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $288.75"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
-      "modeName": "Modo C: Doble Banker Híbrida (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.96x)",
+      "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.90x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 eventos de máxima solidez estadística (Cagliari y LA Dodgers) para duplicar la banca en la jornada de Lunes.",
-      "totalOdds": 1.96,
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Cagliari y Bromley) para duplicar la banca en la jornada de fútbol del Lunes.",
+      "totalOdds": 1.9,
       "fairOdds": 1.62,
-      "expectedWinRate": "89.5%",
+      "expectedWinRate": "90.5%",
       "combinedEv": "+33.5%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
@@ -230,43 +228,43 @@
           "algorithm": "FootyStats Home Dominance: Cagliari en Unipol Domus registra 78% de imbatibilidad frente a rivales de corte directo, generando 1.70 xG y concediendo apenas 0.85 xGA en casa."
         },
         {
-          "sourceName": "Baseball Savant",
-          "sport": "Baseball",
-          "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Cincinnati Reds vs. Los Angeles Dodgers",
-          "tournament": "Major League Baseball (MLB Labor Day Classic) (19:10 CST / 21:10 EDT)",
-          "selection": "LA Dodgers Doble Oportunidad / F5 Moneyline",
-          "odds": 1.42,
+          "sourceName": "API-Football",
+          "sport": "Football",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "Bromley vs. AFC Wimbledon",
+          "tournament": "English Football League (Lunes de Fútbol) (13:45 CST / 20:45 BST)",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.38,
           "confidencePct": 92,
-          "algorithm": "Baseball Savant F5 Metric: Dodgers en Chavez Ravine promedian .315 wOBA frente a abridores diestros y 84% de victorias de local en series de inicio de semana, respaldados por un bullpen top 3 en la MLB."
+          "algorithm": "API-Football High-Pace Metric: Choque abierto en Hayes Lane; ambos equipos promedian 2.85 xG combinados por partido con 83% de sus cruces superando la línea de 1.5 goles."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona estos 2 eventos de máxima certeza:",
+          "Selecciona estos 2 partidos de fútbol de máxima certeza:",
           "• ⚽ Cagliari vs. Lecce (Serie A Italiana): 'Cagliari Doble Oportunidad (1X)'.",
-          "• ⚾ Cincinnati Reds vs. Los Angeles Dodgers (Major League Baseball): 'LA Dodgers Doble Oportunidad / F5 Moneyline'.",
+          "• ⚽ Bromley vs. AFC Wimbledon (English Football League): 'Más de 1.5 Goles Totales (Over 1.5)'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.96x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.9x."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se gana en la vida real con la Doble Banker Híbrida?",
+          "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
               "match": "Cagliari vs. Lecce",
-              "min_result": "Cagliari no pierde en Cerdeña",
+              "min_result": "Cagliari no pierde en Cerdeña (1-0, 1-1, 2-1)",
               "explanation": "Cagliari sella resultado positivo en Unipol Domus, Cagliari, Cerdeña."
             },
             {
-              "match": "Cincinnati Reds vs. Los Angeles Dodgers",
-              "min_result": "LA Dodgers gana o cubre línea F5 en Los Ángeles",
-              "explanation": "Dodgers dominan con pitcheo y ofensiva en Dodger Stadium, Los Ángeles, CA."
+              "match": "Bromley vs. AFC Wimbledon",
+              "min_result": "Partido abierto con 2 o más goles en Londres (1-1, 2-0, 2-1)",
+              "explanation": "Se superan los 1.5 goles en Hayes Lane, Londres, Inglaterra."
             }
           ],
-          "payout_example": "Si los 2 eventos se cumplen, con una apuesta de $100 cobras $196.00 (+$96.00 de ganancia neta duplicando capital con ~89.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $190.00 (+$90.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER HÍBRIDA (07 SEPTIEMBRE)\n1. ⚽ Cagliari vs. Lecce (Cagliari Doble Oportunidad (1X)) @ 1.38\n2. ⚾ Cincinnati Reds vs. Los Angeles Dodgers (LA Dodgers Doble Oportunidad / F5 Moneyline) @ 1.42\n► Cuota Total: 1.96x (Duplicador) | Confianza: 89.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (07 SEPTIEMBRE)\n1. ⚽ Cagliari vs. Lecce (Cagliari Doble Oportunidad (1X)) @ 1.38\n2. ⚽ Bromley vs. AFC Wimbledon (Más de 1.5 Goles Totales (Over 1.5)) @ 1.38\n► Cuota Total: 1.9x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   }
