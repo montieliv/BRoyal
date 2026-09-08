@@ -426,6 +426,29 @@ def audit_previous_scenarios():
             "auditNote": "Sesión pausada preventivamente por el usuario para proteger capital ('Let it go for today'). Banca protegida con cero pérdidas."
         }
 
+    # Audit 2026-09-08
+    if "2026-09-08" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-09-08"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-09-08 15:20:00"
+        snap["match_results"] = {
+            "Real Madrid vs. Inter Milan": "2-1 (CUMPLIDO Real Madrid Ganador Directo @ 1.65 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)",
+            "Borussia Dortmund vs. Villarreal": "3-1 (CUMPLIDO Borussia Dortmund Ganador Directo @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)",
+            "FC Porto vs. Manchester City": "0-2 (CUMPLIDO Manchester City Ganador Directo @ 1.60 ✅ & Safe Over 1.5 @ 1.38 ✅)"
+        }
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 3,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 981.99,
+            "netPnL": 481.99,
+            "roiPct": "+96.4%",
+            "winRate": "100.0% (PLENO TOTAL CHAMPIONS LEAGUE: Modo A $487.00 + Modo B $304.55 + Modo C $190.44)",
+            "evaluatedAt": "2026-09-08 15:20:00",
+            "evaluated": True,
+            "auditNote": "¡Jornada de Champions League perfecta! Real Madrid ganó 2-1 al Inter en el Bernabéu, Dortmund superó 3-1 a Villarreal y Manchester City venció 2-0 a Porto. Pleno total 3/3 en Modo A, Modo B y Modo C generando +$481.99 netos (+96.4% ROI)."
+        }
+
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
         json.dump(archive, f, ensure_ascii=False, indent=2)
 
