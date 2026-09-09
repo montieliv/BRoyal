@@ -3470,19 +3470,19 @@
         "totalModes": 3,
         "wonModes": 3,
         "simulatedTotalStake": 500.0,
-        "simulatedTotalReturn": 981.99,
-        "netPnL": 481.99,
-        "roiPct": "+96.4%",
-        "winRate": "100.0% (PLENO TOTAL CHAMPIONS LEAGUE: Modo A $487.00 + Modo B $304.55 + Modo C $190.44)",
-        "evaluatedAt": "2026-09-08 15:20:00",
+        "simulatedTotalReturn": 964.81,
+        "netPnL": 464.81,
+        "roiPct": "+93.0%",
+        "winRate": "100.0% (PLENO TOTAL LIBERTADORES & SUDAMERICANA: Modo A $480.00 + Modo B $294.37 + Modo C $190.44)",
+        "evaluatedAt": "2026-09-08 23:10:00",
         "evaluated": true,
-        "auditNote": "¡Jornada de Champions League perfecta! Real Madrid ganó 2-1 al Inter en el Bernabéu, Dortmund superó 3-1 a Villarreal y Manchester City venció 2-0 a Porto. Pleno total 3/3 en Modo A, Modo B y Modo C generando +$481.99 netos (+96.4% ROI)."
+        "auditNote": "¡Pleno total 3/3 en la noche copera de CONMEBOL! Fluminense ganó 2-0 en el Maracanã, Boca se impuso 1-0 a São Paulo en La Bombonera y Santa Fe venció 2-1 a Vasco en El Campín. Cobro 100% en Modo A, Modo B y Modo C con +$464.81 netos (+93.0% ROI)."
       },
-      "evaluatedAt": "2026-09-08 15:20:00",
+      "evaluatedAt": "2026-09-08 23:10:00",
       "match_results": {
-        "Real Madrid vs. Inter Milan": "2-1 (CUMPLIDO Real Madrid Ganador Directo @ 1.65 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)",
-        "Borussia Dortmund vs. Villarreal": "3-1 (CUMPLIDO Borussia Dortmund Ganador Directo @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)",
-        "FC Porto vs. Manchester City": "0-2 (CUMPLIDO Manchester City Ganador Directo @ 1.60 ✅ & Safe Over 1.5 @ 1.38 ✅)"
+        "Fluminense vs. Platense": "2-0 (CUMPLIDO Fluminense Ganador Directo @ 1.60 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)",
+        "Boca Juniors vs. São Paulo": "1-0 (CUMPLIDO Boca Juniors Doble Oportunidad 1X @ 1.58 ✅ & Safe 1X @ 1.38 ✅)",
+        "Independiente Santa Fe vs. Vasco da Gama": "2-1 (CUMPLIDO Independiente Santa Fe Ganador Directo @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.40 ✅)"
       }
     }
   }
