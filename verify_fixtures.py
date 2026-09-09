@@ -430,23 +430,23 @@ def audit_previous_scenarios():
     if "2026-09-08" in archive.get("snapshots", {}):
         snap = archive["snapshots"]["2026-09-08"]
         snap["status"] = "EVALUATED"
-        snap["evaluatedAt"] = "2026-09-08 23:10:00"
+        snap["evaluatedAt"] = "2026-09-08 23:12:00"
         snap["match_results"] = {
             "Fluminense vs. Platense": "2-0 (CUMPLIDO Fluminense Ganador Directo @ 1.60 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)",
             "Boca Juniors vs. São Paulo": "1-0 (CUMPLIDO Boca Juniors Doble Oportunidad 1X @ 1.58 ✅ & Safe 1X @ 1.38 ✅)",
-            "Independiente Santa Fe vs. Vasco da Gama": "2-1 (CUMPLIDO Independiente Santa Fe Ganador Directo @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.40 ✅)"
+            "Independiente Santa Fe vs. Vasco da Gama": "0-0 (Empate; Falla Directo Santa Fe ❌ / CUMPLIDO Safe 1X @ 1.40 ✅)"
         }
         snap["metrics"] = {
             "totalModes": 3,
-            "wonModes": 3,
+            "wonModes": 2,
             "simulatedTotalStake": 500.0,
-            "simulatedTotalReturn": 964.81,
-            "netPnL": 464.81,
-            "roiPct": "+93.0%",
-            "winRate": "100.0% (PLENO TOTAL LIBERTADORES & SUDAMERICANA: Modo A $480.00 + Modo B $294.37 + Modo C $190.44)",
-            "evaluatedAt": "2026-09-08 23:10:00",
+            "simulatedTotalReturn": 571.64,
+            "netPnL": 71.64,
+            "roiPct": "+14.3%",
+            "winRate": "66.7% (2 de 3 Aciertos en Simples: Modo A +$18.00 neto + Modo B Doble 1 $63.20 + Modo C Pleno $190.44)",
+            "evaluatedAt": "2026-09-08 23:12:00",
             "evaluated": True,
-            "auditNote": "¡Pleno total 3/3 en la noche copera de CONMEBOL! Fluminense ganó 2-0 en el Maracanã, Boca se impuso 1-0 a São Paulo en La Bombonera y Santa Fe venció 2-1 a Vasco en El Campín. Cobro 100% en Modo A, Modo B y Modo C con +$464.81 netos (+93.0% ROI)."
+            "auditNote": "Jornada positiva con gestión de riesgo: Fluminense (2-0) y Boca (1-0) ganaron sus pronósticos. El empate 0-0 de Santa Fe fue amortizado por Modo A (+$18 netos), cobro de Doble 1 en Trixie ($63.20) y Pleno en Doble Banker (+$90.44 netos). Sesión en ganancia neta final de +$71.64 (+14.3% ROI)."
         }
 
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
