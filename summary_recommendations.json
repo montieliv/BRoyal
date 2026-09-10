@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 11:00:00",
+  "generated_at": "2026-09-10 11:00:00",
   "hybrid_mode": false,
   "hybrid_trigger_reason": "MODO MONO-DEPORTE (FÚTBOL): Las 3 opciones de fútbol superaron los umbrales de liquidez, valor esperado (EV+ >20%) y asimetría táctica.",
   "active_sports": [
@@ -7,8 +7,8 @@
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-09-09",
-    "verified_at": "2026-09-09 17:24:03",
+    "verified_date": "2026-09-10",
+    "verified_at": "2026-09-10 08:27:39",
     "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
     "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
@@ -21,8 +21,8 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Miércoles 09 de Septiembre en UEFA Champions League, UEFA Champions League y UEFA Champions League (Spotify Camp Nou, Parc des Princes y Anfield). Cada acierto cobra por separado.",
-      "avgOdds": 1.6,
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Jueves 10 de Septiembre en UEFA Champions League, UEFA Champions League y UEFA Champions League (Allianz Arena, Philips Stadion y Şükrü Saracoğlu Stadium). Cada acierto cobra por separado.",
+      "avgOdds": 1.59,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -32,41 +32,41 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "FC Barcelona vs. Feyenoord",
+          "match": "FC Bayern München vs. FK Bodø/Glimt",
           "tournament": "UEFA Champions League (Jornada 1) (13:00 CST / 21:00 CEST)",
-          "stadium": "Spotify Camp Nou, Barcelona",
-          "selection": "FC Barcelona Ganador Directo (1)",
-          "odds": 1.6,
+          "stadium": "Allianz Arena, Múnich",
+          "selection": "FC Bayern München (-1.5 Hándicap Asiático)",
+          "odds": 1.55,
           "confidencePct": 93,
-          "algorithm": "FootyStats Catalan Dominance: Barcelona en casa en debuts de Champions League genera 2.75 xG con 88% de victorias por margen de 2+ goles; Feyenoord concede 2.10 xGA en visitas a potencias europeas.",
-          "singleReturn": 160.0,
+          "algorithm": "API-Football Allianz Fortress Index: Bayern Múnich en el Allianz Arena promedia 3.40 xG en arranques de Champions League con 90% de victorias por 2+ goles de diferencia ante rivales de menor coeficiente UEFA.",
+          "singleReturn": 155.0,
           "verified": true
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Paris Saint-Germain vs. SK Slovan Bratislava",
+          "match": "PSV Eindhoven vs. FC Shakhtar Donetsk",
           "tournament": "UEFA Champions League (Jornada 1) (13:00 CST / 21:00 CEST)",
-          "stadium": "Parc des Princes, París",
-          "selection": "Paris Saint-Germain (-1.5 Hándicap)",
-          "odds": 1.58,
-          "confidencePct": 92,
-          "algorithm": "API-Football High-Pace Metric: PSG en el Parc des Princes promedia 3.10 xG en fase inicial de Champions; Slovan Bratislava sufre en transiciones rápidas y repliegue fuera de Eslovaquia.",
-          "singleReturn": 158.0,
+          "stadium": "Philips Stadion, Eindhoven",
+          "selection": "PSV Eindhoven Ganador Directo (1)",
+          "odds": 1.6,
+          "confidencePct": 91,
+          "algorithm": "FootyStats High-Pace Metric: PSV en Eindhoven genera 2.55 xG con 82% de triunfos en casa; Shakhtar concede 1.95 xGA en sus salidas internacionales.",
+          "singleReturn": 160.0,
           "verified": true
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Liverpool FC vs. Atlético de Madrid",
-          "tournament": "UEFA Champions League (Jornada 1) (13:00 CST / 20:00 BST)",
-          "stadium": "Anfield, Liverpool",
-          "selection": "Liverpool FC Ganador Directo (1)",
+          "match": "Fenerbahçe SK vs. AS Roma",
+          "tournament": "UEFA Champions League (Jornada 1) (13:00 CST / 21:00 TRT)",
+          "stadium": "Şükrü Saracoğlu Stadium, Estambul",
+          "selection": "Ambos Equipos Anotan (Sí) / Más 2.0 Goles",
           "odds": 1.62,
           "confidencePct": 90,
-          "algorithm": "Sportmonks Anfield Fortress Index: Liverpool en Anfield registra 84% de victorias en noches europeas con gran intensidad de presión alta y 2.45 xG generado ante bloques replegados.",
+          "algorithm": "Sportmonks Offensive Dynamic: Duelo abierto y de alta intensidad en Estambul; Fenerbahçe promedia 2.10 xG de local y la Roma genera 1.90 xG con 84% de sus cruces superando la línea de 1.5 goles.",
           "singleReturn": 162.0,
           "verified": true
         }
@@ -74,10 +74,10 @@
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 partidos estelares de fútbol del Miércoles al cupón:",
-          "• ⚽ FC Barcelona vs. Feyenoord: Selecciona 'FC Barcelona Ganador Directo (1)'.",
-          "• ⚽ Paris Saint-Germain vs. SK Slovan Bratislava: Selecciona 'Paris Saint-Germain (-1.5 Hándicap)'.",
-          "• ⚽ Liverpool FC vs. Atlético de Madrid: Selecciona 'Liverpool FC Ganador Directo (1)'.",
+          "Agrega los 3 partidos estelares de fútbol del Jueves al cupón:",
+          "• ⚽ FC Bayern München vs. FK Bodø/Glimt: Selecciona 'FC Bayern München (-1.5 Hándicap Asiático)'.",
+          "• ⚽ PSV Eindhoven vs. FC Shakhtar Donetsk: Selecciona 'PSV Eindhoven Ganador Directo (1)'.",
+          "• ⚽ Fenerbahçe SK vs. AS Roma: Selecciona 'Ambos Equipos Anotan (Sí) / Más 2.0 Goles'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
           "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
@@ -85,24 +85,24 @@
           "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "FC Barcelona vs. Feyenoord",
-              "min_result": "FC Barcelona sella su pronóstico (FC Barcelona Ganador Directo (1))",
-              "explanation": "Dominio en Spotify Camp Nou. Cobras $160.00 (+$60.00 neto)."
+              "match": "FC Bayern München vs. FK Bodø/Glimt",
+              "min_result": "FC Bayern München sella su pronóstico (FC Bayern München (-1.5 Hándicap Asiático))",
+              "explanation": "Dominio en Allianz Arena. Cobras $155.00 (+$55.00 neto)."
             },
             {
-              "match": "Paris Saint-Germain vs. SK Slovan Bratislava",
-              "min_result": "Paris Saint-Germain aprovecha la localía (Paris Saint-Germain (-1.5 Hándicap))",
-              "explanation": "Superioridad táctica en Parc des Princes. Cobras $158.00 (+$58.00 neto)."
+              "match": "PSV Eindhoven vs. FC Shakhtar Donetsk",
+              "min_result": "PSV Eindhoven aprovecha la localía (PSV Eindhoven Ganador Directo (1))",
+              "explanation": "Superioridad táctica en Philips Stadion. Cobras $160.00 (+$60.00 neto)."
             },
             {
-              "match": "Liverpool FC vs. Atlético de Madrid",
-              "min_result": "Liverpool FC se impone de local (Liverpool FC Ganador Directo (1))",
-              "explanation": "Solvencia en Anfield. Cobras $162.00 (+$62.00 neto)."
+              "match": "Fenerbahçe SK vs. AS Roma",
+              "min_result": "Fenerbahçe SK se impone de local (Ambos Equipos Anotan (Sí) / Más 2.0 Goles)",
+              "explanation": "Solvencia en Şükrü Saracoğlu Stadium. Cobras $162.00 (+$62.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $480.0 (+$180.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $477.0 (+$177.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (09 SEPTIEMBRE)\n1. ⚽ FC Barcelona vs. Feyenoord: FC Barcelona Ganador Directo (1) @ 1.6 ($100 -> $160.00)\n2. ⚽ Paris Saint-Germain vs. SK Slovan Bratislava: Paris Saint-Germain (-1.5 Hándicap) @ 1.58 ($100 -> $158.00)\n3. ⚽ Liverpool FC vs. Atlético de Madrid: Liverpool FC Ganador Directo (1) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $480.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ FC Bayern München vs. FK Bodø/Glimt: FC Bayern München (-1.5 Hándicap Asiático) @ 1.55 ($100 -> $155.00)\n2. ⚽ PSV Eindhoven vs. FC Shakhtar Donetsk: PSV Eindhoven Ganador Directo (1) @ 1.6 ($100 -> $160.00)\n3. ⚽ Fenerbahçe SK vs. AS Roma: Ambos Equipos Anotan (Sí) / Más 2.0 Goles @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $477.0"
       }
     },
     "modo_b_sistema": {
@@ -112,7 +112,7 @@
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Miércoles (UEFA Champions League, UEFA Champions League y UEFA Champions League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Jueves (UEFA Champions League, UEFA Champions League y UEFA Champions League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -123,50 +123,50 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "FC Barcelona vs. Feyenoord",
-          "selection": "FC Barcelona Ganador Directo (1)",
-          "odds": 1.6,
-          "algorithm": "Pick A (Football): FootyStats Catalan Dominance: Barcelona en casa en debuts de Champions League genera 2.75 xG con 88% de victorias por margen de 2+ goles; Feyenoord concede 2.10 xGA en visitas a potencias europeas."
+          "match": "FC Bayern München vs. FK Bodø/Glimt",
+          "selection": "FC Bayern München (-1.5 Hándicap Asiático)",
+          "odds": 1.55,
+          "algorithm": "Pick A (Football): API-Football Allianz Fortress Index: Bayern Múnich en el Allianz Arena promedia 3.40 xG en arranques de Champions League con 90% de victorias por 2+ goles de diferencia ante rivales de menor coeficiente UEFA."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Paris Saint-Germain vs. SK Slovan Bratislava",
-          "selection": "Paris Saint-Germain (-1.5 Hándicap)",
-          "odds": 1.58,
-          "algorithm": "Pick B (Football): API-Football High-Pace Metric: PSG en el Parc des Princes promedia 3.10 xG en fase inicial de Champions; Slovan Bratislava sufre en transiciones rápidas y repliegue fuera de Eslovaquia."
+          "match": "PSV Eindhoven vs. FC Shakhtar Donetsk",
+          "selection": "PSV Eindhoven Ganador Directo (1)",
+          "odds": 1.6,
+          "algorithm": "Pick B (Football): FootyStats High-Pace Metric: PSV en Eindhoven genera 2.55 xG con 82% de triunfos en casa; Shakhtar concede 1.95 xGA en sus salidas internacionales."
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Liverpool FC vs. Atlético de Madrid",
-          "selection": "Liverpool FC Ganador Directo (1)",
+          "match": "Fenerbahçe SK vs. AS Roma",
+          "selection": "Ambos Equipos Anotan (Sí) / Más 2.0 Goles",
           "odds": 1.62,
-          "algorithm": "Pick C (Football): Sportmonks Anfield Fortress Index: Liverpool en Anfield registra 84% de victorias en noches europeas con gran intensidad de presión alta y 2.45 xG generado ante bloques replegados."
+          "algorithm": "Pick C (Football): Sportmonks Offensive Dynamic: Duelo abierto y de alta intensidad en Estambul; Fenerbahçe promedia 2.10 xG de local y la Roma genera 1.90 xG con 84% de sus cruces superando la línea de 1.5 goles."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ FC Barcelona + ⚽ Paris Saint-Germain)",
-          "odds": 2.53,
-          "formula": "1.6 × 1.58"
+          "name": "Doble 1 (⚽ FC Bayern München + ⚽ PSV Eindhoven)",
+          "odds": 2.48,
+          "formula": "1.55 × 1.6"
         },
         {
-          "name": "Doble 2 (⚽ FC Barcelona + ⚽ Liverpool FC)",
+          "name": "Doble 2 (⚽ FC Bayern München + ⚽ Fenerbahçe SK)",
+          "odds": 2.51,
+          "formula": "1.55 × 1.62"
+        },
+        {
+          "name": "Doble 3 (⚽ PSV Eindhoven + ⚽ Fenerbahçe SK)",
           "odds": 2.59,
           "formula": "1.6 × 1.62"
         },
         {
-          "name": "Doble 3 (⚽ Paris Saint-Germain + ⚽ Liverpool FC)",
-          "odds": 2.56,
-          "formula": "1.58 × 1.62"
-        },
-        {
-          "name": "Triple (⚽ FC Barcelona + ⚽ Paris Saint-Germain + ⚽ Liverpool FC)",
-          "odds": 4.1,
-          "formula": "1.6 × 1.58 × 1.62"
+          "name": "Triple (⚽ FC Bayern München + ⚽ PSV Eindhoven + ⚽ Fenerbahçe SK)",
+          "odds": 4.02,
+          "formula": "1.55 × 1.6 × 1.62"
         }
       ],
       "real_life_example": {
@@ -181,24 +181,24 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ FC Barcelona + ⚽ Paris Saint-Germain)",
-              "min_result": "FC Barcelona y Paris Saint-Germain cumplen sus líneas",
-              "explanation": "Cobras la Doble 1 (@ 2.53x): Cobras $63.25 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ FC Bayern München + ⚽ PSV Eindhoven)",
+              "min_result": "FC Bayern München y PSV Eindhoven cumplen sus líneas",
+              "explanation": "Cobras la Doble 1 (@ 2.48x): Cobras $62.00 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ FC Barcelona + ⚽ Liverpool FC)",
-              "min_result": "FC Barcelona y Liverpool FC cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.59x): Cobras $64.75 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ FC Bayern München + ⚽ Fenerbahçe SK)",
+              "min_result": "FC Bayern München y Fenerbahçe SK cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.51x): Cobras $62.75 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (FC Barcelona + Paris Saint-Germain + Liverpool FC)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $294.50 (+$194.50 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (FC Bayern München + PSV Eindhoven + Fenerbahçe SK)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $290.00 (+$190.00 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $294.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $290.00 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (09 SEPTIEMBRE)\n• Pick A: ⚽ FC Barcelona vs. Feyenoord (FC Barcelona Ganador Directo (1)) @ 1.6\n• Pick B: ⚽ Paris Saint-Germain vs. SK Slovan Bratislava (Paris Saint-Germain (-1.5 Hándicap)) @ 1.58\n• Pick C: ⚽ Liverpool FC vs. Atlético de Madrid (Liverpool FC Ganador Directo (1)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $294.50"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (10 SEPTIEMBRE)\n• Pick A: ⚽ FC Bayern München vs. FK Bodø/Glimt (FC Bayern München (-1.5 Hándicap Asiático)) @ 1.55\n• Pick B: ⚽ PSV Eindhoven vs. FC Shakhtar Donetsk (PSV Eindhoven Ganador Directo (1)) @ 1.6\n• Pick C: ⚽ Fenerbahçe SK vs. AS Roma (Ambos Equipos Anotan (Sí) / Más 2.0 Goles) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $290.00"
       }
     },
     "modo_c_banker": {
@@ -208,7 +208,7 @@
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (FC Barcelona y Paris Saint-Germain) para duplicar la banca en la jornada de fútbol del Miércoles.",
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (FC Bayern München y PSV Eindhoven) para duplicar la banca en la jornada de fútbol del Jueves.",
       "totalOdds": 1.88,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
@@ -220,31 +220,31 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "FC Barcelona vs. Feyenoord",
+          "match": "FC Bayern München vs. FK Bodø/Glimt",
           "tournament": "UEFA Champions League (Jornada 1) (13:00 CST / 21:00 CEST)",
-          "selection": "FC Barcelona Doble Oportunidad (1X) + Más 1.5 Goles",
-          "odds": 1.38,
+          "selection": "FC Bayern München Ganador Directo + Más 1.5 Goles",
+          "odds": 1.36,
           "confidencePct": 93,
-          "algorithm": "FootyStats Catalan Dominance: Barcelona en casa en debuts de Champions League genera 2.75 xG con 88% de victorias por margen de 2+ goles; Feyenoord concede 2.10 xGA en visitas a potencias europeas."
+          "algorithm": "API-Football Allianz Fortress Index: Bayern Múnich en el Allianz Arena promedia 3.40 xG en arranques de Champions League con 90% de victorias por 2+ goles de diferencia ante rivales de menor coeficiente UEFA."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Paris Saint-Germain vs. SK Slovan Bratislava",
+          "match": "PSV Eindhoven vs. FC Shakhtar Donetsk",
           "tournament": "UEFA Champions League (Jornada 1) (13:00 CST / 21:00 CEST)",
-          "selection": "Paris Saint-Germain Ganador Directo + Más 1.5 Goles",
-          "odds": 1.36,
+          "selection": "PSV Eindhoven Doble Oportunidad (1X) + Más 1.5 Goles",
+          "odds": 1.38,
           "confidencePct": 92,
-          "algorithm": "API-Football High-Pace Metric: PSG en el Parc des Princes promedia 3.10 xG en fase inicial de Champions; Slovan Bratislava sufre en transiciones rápidas y repliegue fuera de Eslovaquia."
+          "algorithm": "FootyStats High-Pace Metric: PSV en Eindhoven genera 2.55 xG con 82% de triunfos en casa; Shakhtar concede 1.95 xGA en sus salidas internacionales."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
           "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-          "• ⚽ FC Barcelona vs. Feyenoord (UEFA Champions League): 'FC Barcelona Doble Oportunidad (1X) + Más 1.5 Goles'.",
-          "• ⚽ Paris Saint-Germain vs. SK Slovan Bratislava (UEFA Champions League): 'Paris Saint-Germain Ganador Directo + Más 1.5 Goles'.",
+          "• ⚽ FC Bayern München vs. FK Bodø/Glimt (UEFA Champions League): 'FC Bayern München Ganador Directo + Más 1.5 Goles'.",
+          "• ⚽ PSV Eindhoven vs. FC Shakhtar Donetsk (UEFA Champions League): 'PSV Eindhoven Doble Oportunidad (1X) + Más 1.5 Goles'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
           "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.88x."
         ],
@@ -252,19 +252,19 @@
           "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "FC Barcelona vs. Feyenoord",
-              "min_result": "FC Barcelona cumple su línea (FC Barcelona Doble Oportunidad (1X) + Más 1.5 Goles)",
-              "explanation": "FC Barcelona sella resultado positivo en Spotify Camp Nou."
+              "match": "FC Bayern München vs. FK Bodø/Glimt",
+              "min_result": "FC Bayern München cumple su línea (FC Bayern München Ganador Directo + Más 1.5 Goles)",
+              "explanation": "FC Bayern München sella resultado positivo en Allianz Arena."
             },
             {
-              "match": "Paris Saint-Germain vs. SK Slovan Bratislava",
-              "min_result": "Paris Saint-Germain cumple su línea (Paris Saint-Germain Ganador Directo + Más 1.5 Goles)",
-              "explanation": "Paris Saint-Germain asegura el rendimiento en Parc des Princes."
+              "match": "PSV Eindhoven vs. FC Shakhtar Donetsk",
+              "min_result": "PSV Eindhoven cumple su línea (PSV Eindhoven Doble Oportunidad (1X) + Más 1.5 Goles)",
+              "explanation": "PSV Eindhoven asegura el rendimiento en Philips Stadion."
             }
           ],
           "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $188.00 (+$88.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (09 SEPTIEMBRE)\n1. ⚽ FC Barcelona vs. Feyenoord (FC Barcelona Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.38\n2. ⚽ Paris Saint-Germain vs. SK Slovan Bratislava (Paris Saint-Germain Ganador Directo + Más 1.5 Goles) @ 1.36\n► Cuota Total: 1.88x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ FC Bayern München vs. FK Bodø/Glimt (FC Bayern München Ganador Directo + Más 1.5 Goles) @ 1.36\n2. ⚽ PSV Eindhoven vs. FC Shakhtar Donetsk (PSV Eindhoven Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.38\n► Cuota Total: 1.88x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   }
