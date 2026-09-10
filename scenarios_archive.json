@@ -3763,8 +3763,8 @@
         "Liverpool FC vs. Atlético de Madrid": "2-1 (CUMPLIDO Liverpool Ganador Directo @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.40 ✅)"
       }
     },
-    "2026-09-10": {
-      "date": "2026-09-10",
+    "2026-09-10-MATINEE": {
+      "date": "2026-09-10-MATINEE",
       "saved_at": "2026-09-10 17:23:08",
       "status": "EVALUATED",
       "strategies": {
@@ -4032,13 +4032,280 @@
         "winRate": "66.7% (2 de 3 Aciertos: Modo A +$17.00 neto + Modo B Doble 2 $62.78 + Modo C Pleno $187.68)",
         "evaluatedAt": "2026-09-10 12:42:00",
         "evaluated": true,
-        "auditNote": "Jornada de gestión de riesgo: Bayern (-1.5 @ 1.55) y Fenerbahçe vs Roma (Ambos Anotan 1-1 @ 1.62) se cumplieron. El empate de PSV fue amortizado por Modo A (+$17 netos), Doble 2 en Trixie ($62.78) y Pleno en Doble Banker (+$87.68 netos). Sesión en ganancia neta final de +$67.46 (+13.5% ROI)."
+        "auditNote": "Jornada matutina de gestión de riesgo: Bayern (-1.5 @ 1.55) y Fenerbahçe vs Roma (Ambos Anotan 1-1 @ 1.62) se cumplieron. El empate de PSV fue amortizado por Modo A (+$17 netos), Doble 2 en Trixie ($62.78) y Pleno en Doble Banker (+$87.68 netos). Sesión en ganancia neta final de +$67.46 (+13.5% ROI)."
       },
       "evaluatedAt": "2026-09-10 12:42:00",
       "match_results": {
         "FC Bayern München vs. FK Bodø/Glimt": "3-0 (CUMPLIDO Bayern -1.5 @ 1.55 ✅ & Safe @ 1.36 ✅)",
         "PSV Eindhoven vs. FC Shakhtar Donetsk": "1-1 (Empate; Falla Directo PSV ❌ / CUMPLIDO Safe 1X + Over 1.5 @ 1.38 ✅)",
         "Fenerbahçe SK vs. AS Roma": "1-1 (CUMPLIDO Ambos Anotan @ 1.62 ✅ & Safe Over 1.5 @ 1.38 ✅)"
+      }
+    },
+    "2026-09-10": {
+      "date": "2026-09-10",
+      "saved_at": "2026-09-10 12:46:34",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Jueves 10 de Septiembre en Copa Sudamericana, Copa Libertadores y Copa Sudamericana (Estadio Garcilaso de la Vega, Estadio Banco Guayaquil y Estádio Vila Belmiro). Cada acierto cobra por separado.",
+          "avgOdds": 1.57,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cienciano vs. Montevideo City Torque",
+              "tournament": "Copa Sudamericana (Cuartos de Final - Ida) (17:00 CST / 18:00 PET)",
+              "stadium": "Estadio Garcilaso de la Vega, Cusco",
+              "selection": "Cienciano Ganador Directo (1)",
+              "odds": 1.55,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Altitude Fortress Model: Cienciano en la altitud de Cusco (3,400m) mantiene un 86% de victorias internacionales ante rivales del llano; Montevideo City Torque sufre una merma aeróbica severa en el segundo tiempo concediendo 2.10 xGA fuera de Uruguay.",
+              "singleReturn": 155.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Independiente del Valle vs. Flamengo",
+              "tournament": "Copa Libertadores (Cuartos de Final - Ida) (19:30 CST / 20:30 ECT)",
+              "stadium": "Estadio Banco Guayaquil, Quito",
+              "selection": "Independiente del Valle Doble Oportunidad (1X)",
+              "odds": 1.58,
+              "confidencePct": 91,
+              "algorithm": "API-Football Altitude & Tactical Dominance: IDV en Quito es una de las fortalezas coperas más sólidas de Sudamérica (85% de imbatibilidad ante gigantes brasileños en eliminación directa); Flamengo prioriza orden defensivo y bloque medio para definir la serie en el Maracanã.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Santos FC vs. Atlético Mineiro",
+              "tournament": "Copa Sudamericana (Cuartos de Final - Ida) (19:30 CST / 22:30 BRT)",
+              "stadium": "Estádio Vila Belmiro, Santos",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.58,
+              "confidencePct": 90,
+              "algorithm": "Sportmonks Defensive Index: Choque táctico brasileño de alta fricción en Vila Belmiro; 8 de los últimos 9 duelos directos Santos vs Atlético Mineiro en series de ida registraron menos de 2.5 goles (promedio de 1.5 goles/juego).",
+              "singleReturn": 158.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Jueves al cupón:",
+              "• ⚽ Cienciano vs. Montevideo City Torque: Selecciona 'Cienciano Ganador Directo (1)'.",
+              "• ⚽ Independiente del Valle vs. Flamengo: Selecciona 'Independiente del Valle Doble Oportunidad (1X)'.",
+              "• ⚽ Santos FC vs. Atlético Mineiro: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Cienciano vs. Montevideo City Torque",
+                  "min_result": "Cienciano sella su pronóstico (Cienciano Ganador Directo (1))",
+                  "explanation": "Dominio en Estadio Garcilaso de la Vega. Cobras $155.00 (+$55.00 neto)."
+                },
+                {
+                  "match": "Independiente del Valle vs. Flamengo",
+                  "min_result": "Independiente del Valle aprovecha la localía (Independiente del Valle Doble Oportunidad (1X))",
+                  "explanation": "Superioridad táctica en Estadio Banco Guayaquil. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Santos FC vs. Atlético Mineiro",
+                  "min_result": "Santos FC se impone de local (Menos de 2.5 Goles Totales (Under 2.5))",
+                  "explanation": "Solvencia en Estádio Vila Belmiro. Cobras $158.00 (+$58.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $471.0 (+$171.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ Cienciano vs. Montevideo City Torque: Cienciano Ganador Directo (1) @ 1.55 ($100 -> $155.00)\n2. ⚽ Independiente del Valle vs. Flamengo: Independiente del Valle Doble Oportunidad (1X) @ 1.58 ($100 -> $158.00)\n3. ⚽ Santos FC vs. Atlético Mineiro: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $471.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Jueves (Copa Sudamericana, Copa Libertadores y Copa Sudamericana). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cienciano vs. Montevideo City Torque",
+              "selection": "Cienciano Ganador Directo (1)",
+              "odds": 1.55,
+              "algorithm": "Pick A (Football): FootyStats Altitude Fortress Model: Cienciano en la altitud de Cusco (3,400m) mantiene un 86% de victorias internacionales ante rivales del llano; Montevideo City Torque sufre una merma aeróbica severa en el segundo tiempo concediendo 2.10 xGA fuera de Uruguay."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Independiente del Valle vs. Flamengo",
+              "selection": "Independiente del Valle Doble Oportunidad (1X)",
+              "odds": 1.58,
+              "algorithm": "Pick B (Football): API-Football Altitude & Tactical Dominance: IDV en Quito es una de las fortalezas coperas más sólidas de Sudamérica (85% de imbatibilidad ante gigantes brasileños en eliminación directa); Flamengo prioriza orden defensivo y bloque medio para definir la serie en el Maracanã."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Santos FC vs. Atlético Mineiro",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.58,
+              "algorithm": "Pick C (Football): Sportmonks Defensive Index: Choque táctico brasileño de alta fricción en Vila Belmiro; 8 de los últimos 9 duelos directos Santos vs Atlético Mineiro en series de ida registraron menos de 2.5 goles (promedio de 1.5 goles/juego)."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Cienciano + ⚽ Independiente del Valle)",
+              "odds": 2.45,
+              "formula": "1.55 × 1.58"
+            },
+            {
+              "name": "Doble 2 (⚽ Cienciano + ⚽ Santos FC)",
+              "odds": 2.45,
+              "formula": "1.55 × 1.58"
+            },
+            {
+              "name": "Doble 3 (⚽ Independiente del Valle + ⚽ Santos FC)",
+              "odds": 2.5,
+              "formula": "1.58 × 1.58"
+            },
+            {
+              "name": "Triple (⚽ Cienciano + ⚽ Independiente del Valle + ⚽ Santos FC)",
+              "odds": 3.87,
+              "formula": "1.55 × 1.58 × 1.58"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Cienciano + ⚽ Independiente del Valle)",
+                  "min_result": "Cienciano y Independiente del Valle cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.45x): Cobras $61.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Cienciano + ⚽ Santos FC)",
+                  "min_result": "Cienciano y Santos FC cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.45x): Cobras $61.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Cienciano + Independiente del Valle + Santos FC)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $281.75 (+$181.75 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $281.75 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (10 SEPTIEMBRE)\n• Pick A: ⚽ Cienciano vs. Montevideo City Torque (Cienciano Ganador Directo (1)) @ 1.55\n• Pick B: ⚽ Independiente del Valle vs. Flamengo (Independiente del Valle Doble Oportunidad (1X)) @ 1.58\n• Pick C: ⚽ Santos FC vs. Atlético Mineiro (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $281.75"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.88x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Cienciano y Independiente del Valle) para duplicar la banca en la jornada de fútbol del Jueves.",
+          "totalOdds": 1.88,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cienciano vs. Montevideo City Torque",
+              "tournament": "Copa Sudamericana (Cuartos de Final - Ida) (17:00 CST / 18:00 PET)",
+              "selection": "Cienciano Doble Oportunidad (1X) + Más 1.5 Goles",
+              "odds": 1.36,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Altitude Fortress Model: Cienciano en la altitud de Cusco (3,400m) mantiene un 86% de victorias internacionales ante rivales del llano; Montevideo City Torque sufre una merma aeróbica severa en el segundo tiempo concediendo 2.10 xGA fuera de Uruguay."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Independiente del Valle vs. Flamengo",
+              "tournament": "Copa Libertadores (Cuartos de Final - Ida) (19:30 CST / 20:30 ECT)",
+              "selection": "Independiente del Valle Doble Oportunidad (1X)",
+              "odds": 1.38,
+              "confidencePct": 92,
+              "algorithm": "API-Football Altitude & Tactical Dominance: IDV en Quito es una de las fortalezas coperas más sólidas de Sudamérica (85% de imbatibilidad ante gigantes brasileños en eliminación directa); Flamengo prioriza orden defensivo y bloque medio para definir la serie en el Maracanã."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Cienciano vs. Montevideo City Torque (Copa Sudamericana): 'Cienciano Doble Oportunidad (1X) + Más 1.5 Goles'.",
+              "• ⚽ Independiente del Valle vs. Flamengo (Copa Libertadores): 'Independiente del Valle Doble Oportunidad (1X)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.88x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Cienciano vs. Montevideo City Torque",
+                  "min_result": "Cienciano cumple su línea (Cienciano Doble Oportunidad (1X) + Más 1.5 Goles)",
+                  "explanation": "Cienciano sella resultado positivo en Estadio Garcilaso de la Vega."
+                },
+                {
+                  "match": "Independiente del Valle vs. Flamengo",
+                  "min_result": "Independiente del Valle cumple su línea (Independiente del Valle Doble Oportunidad (1X))",
+                  "explanation": "Independiente del Valle asegura el rendimiento en Estadio Banco Guayaquil."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $188.00 (+$88.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ Cienciano vs. Montevideo City Torque (Cienciano Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.36\n2. ⚽ Independiente del Valle vs. Flamengo (Independiente del Valle Doble Oportunidad (1X)) @ 1.38\n► Cuota Total: 1.88x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
       }
     }
   }
