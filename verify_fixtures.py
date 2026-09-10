@@ -596,6 +596,29 @@ def audit_previous_scenarios():
             "auditNote": "¡Segundo pleno consecutivo de Champions League! Barcelona goleó 3-0, PSG aplastó 4-1 y Liverpool venció 2-1 en Anfield. Pleno total 3/3 en Modo A, Modo B y Modo C generando +$462.56 netos (+92.5% ROI)."
         }
 
+    # Audit 2026-09-10
+    if "2026-09-10" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-09-10"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-09-10 12:42:00"
+        snap["match_results"] = {
+            "FC Bayern München vs. FK Bodø/Glimt": "3-0 (CUMPLIDO Bayern -1.5 @ 1.55 ✅ & Safe @ 1.36 ✅)",
+            "PSV Eindhoven vs. FC Shakhtar Donetsk": "1-1 (Empate; Falla Directo PSV ❌ / CUMPLIDO Safe 1X + Over 1.5 @ 1.38 ✅)",
+            "Fenerbahçe SK vs. AS Roma": "1-1 (CUMPLIDO Ambos Anotan @ 1.62 ✅ & Safe Over 1.5 @ 1.38 ✅)"
+        }
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 2,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 567.46,
+            "netPnL": 67.46,
+            "roiPct": "+13.5%",
+            "winRate": "66.7% (2 de 3 Aciertos: Modo A +$17.00 neto + Modo B Doble 2 $62.78 + Modo C Pleno $187.68)",
+            "evaluatedAt": "2026-09-10 12:42:00",
+            "evaluated": True,
+            "auditNote": "Jornada de gestión de riesgo: Bayern (-1.5 @ 1.55) y Fenerbahçe vs Roma (Ambos Anotan 1-1 @ 1.62) se cumplieron. El empate de PSV fue amortizado por Modo A (+$17 netos), Doble 2 en Trixie ($62.78) y Pleno en Doble Banker (+$87.68 netos). Sesión en ganancia neta final de +$67.46 (+13.5% ROI)."
+        }
+
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
         json.dump(archive, f, ensure_ascii=False, indent=2)
 
