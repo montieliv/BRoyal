@@ -4044,7 +4044,7 @@
     "2026-09-10": {
       "date": "2026-09-10",
       "saved_at": "2026-09-10 12:50:06",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -4135,7 +4135,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $475.0 (+$175.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ FC Bayern München vs. FK Bodø/Glimt: FC Bayern München (-1.5 Hándicap Asiático) @ 1.55 ($100 -> $155.00)\n2. ⚽ Manchester United vs. Sabah FK: Manchester United (-1.5 Hándicap Asiático) @ 1.58 ($100 -> $158.00)\n3. ⚽ Slavia Praga vs. RC Lens: Más de 2.0 / 2.5 Goles Totales (Over) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $475.0"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -4231,7 +4232,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $287.25 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (10 SEPTIEMBRE)\n• Pick A: ⚽ FC Bayern München vs. FK Bodø/Glimt (FC Bayern München (-1.5 Hándicap Asiático)) @ 1.55\n• Pick B: ⚽ Manchester United vs. Sabah FK (Manchester United (-1.5 Hándicap Asiático)) @ 1.58\n• Pick C: ⚽ Slavia Praga vs. RC Lens (Más de 2.0 / 2.5 Goles Totales (Over)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $287.25"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -4297,6 +4299,277 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $185.00 (+$85.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ FC Bayern München vs. FK Bodø/Glimt (FC Bayern München Ganador Directo + Más 1.5 Goles) @ 1.36\n2. ⚽ Manchester United vs. Sabah FK (Manchester United Ganador Directo + Más 1.5 Goles) @ 1.36\n► Cuota Total: 1.85x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 962.5,
+        "netPnL": 462.5,
+        "roiPct": "+92.5%",
+        "winRate": "100.0%",
+        "evaluatedAt": "2026-09-11 17:24:17",
+        "evaluated": true
+      }
+    },
+    "2026-09-11": {
+      "date": "2026-09-11",
+      "saved_at": "2026-09-11 17:24:17",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Viernes 11 de Septiembre en Liga MX Apertura 2026, Leagues Cup 2026 y Brasileirão Série A (Estadio Ciudad de los Deportes, Shell Energy Stadium y Estádio Nilton Santos). Cada acierto cobra por separado.",
+          "avgOdds": 1.63,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cruz Azul vs. Santos Laguna",
+              "tournament": "Liga MX Apertura 2026 (Jornada 7) (17:00 CST / 18:00 CDT)",
+              "stadium": "Estadio Ciudad de los Deportes, CDMX",
+              "selection": "Cruz Azul Ganador Directo (1)",
+              "odds": 1.62,
+              "confidencePct": 91,
+              "algorithm": "FootyStats Dominance Model: Cruz Azul en la Ciudad de México promedia 2.15 xG con 80% de victorias de local; Santos Laguna concede 1.90 xGA como visitante y no gana en la capital desde hace 6 visitas.",
+              "singleReturn": 162.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Toluca FC vs. C.F. Monterrey",
+              "tournament": "Leagues Cup 2026 (Gran Final) (18:00 CST / 19:00 CDT)",
+              "stadium": "Shell Energy Stadium, Houston, TX",
+              "selection": "Más de 2.0 / 2.5 Goles Totales (Over)",
+              "odds": 1.65,
+              "confidencePct": 92,
+              "algorithm": "API-Football High-Pace Metric: Gran final de poderío ofensivo en Houston; Toluca promedia 2.30 xG por partido en el torneo y Monterrey genera 2.10 xG con 85% de sus duelos superando la línea de 2.0 goles.",
+              "singleReturn": 165.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Botafogo vs. Palmeiras",
+              "tournament": "Brasileirão Série A (Jornada Dominical) (15:30 CST / 18:30 BRT)",
+              "stadium": "Estádio Nilton Santos, Río de Janeiro",
+              "selection": "Botafogo Doble Oportunidad (1X) / DNB Seguro",
+              "odds": 1.62,
+              "confidencePct": 90,
+              "algorithm": "Sportmonks Tactical Index: Botafogo en el Estádio Nilton Santos registra 83% de imbatibilidad de local en la Série A, concediendo apenas 0.80 xGA y superando tácticamente a rivales directos en Río.",
+              "singleReturn": 162.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Viernes al cupón:",
+              "• ⚽ Cruz Azul vs. Santos Laguna: Selecciona 'Cruz Azul Ganador Directo (1)'.",
+              "• ⚽ Toluca FC vs. C.F. Monterrey: Selecciona 'Más de 2.0 / 2.5 Goles Totales (Over)'.",
+              "• ⚽ Botafogo vs. Palmeiras: Selecciona 'Botafogo Doble Oportunidad (1X) / DNB Seguro'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Cruz Azul vs. Santos Laguna",
+                  "min_result": "Cruz Azul sella su pronóstico (Cruz Azul Ganador Directo (1))",
+                  "explanation": "Dominio en Estadio Ciudad de los Deportes. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Toluca FC vs. C.F. Monterrey",
+                  "min_result": "Toluca FC aprovecha la localía (Más de 2.0 / 2.5 Goles Totales (Over))",
+                  "explanation": "Superioridad táctica en Shell Energy Stadium. Cobras $165.00 (+$65.00 neto)."
+                },
+                {
+                  "match": "Botafogo vs. Palmeiras",
+                  "min_result": "Botafogo se impone de local (Botafogo Doble Oportunidad (1X) / DNB Seguro)",
+                  "explanation": "Solvencia en Estádio Nilton Santos. Cobras $162.00 (+$62.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $489.0 (+$189.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (11 SEPTIEMBRE)\n1. ⚽ Cruz Azul vs. Santos Laguna: Cruz Azul Ganador Directo (1) @ 1.62 ($100 -> $162.00)\n2. ⚽ Toluca FC vs. C.F. Monterrey: Más de 2.0 / 2.5 Goles Totales (Over) @ 1.65 ($100 -> $165.00)\n3. ⚽ Botafogo vs. Palmeiras: Botafogo Doble Oportunidad (1X) / DNB Seguro @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $489.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Viernes (Liga MX Apertura 2026, Leagues Cup 2026 y Brasileirão Série A). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cruz Azul vs. Santos Laguna",
+              "selection": "Cruz Azul Ganador Directo (1)",
+              "odds": 1.62,
+              "algorithm": "Pick A (Football): FootyStats Dominance Model: Cruz Azul en la Ciudad de México promedia 2.15 xG con 80% de victorias de local; Santos Laguna concede 1.90 xGA como visitante y no gana en la capital desde hace 6 visitas."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Toluca FC vs. C.F. Monterrey",
+              "selection": "Más de 2.0 / 2.5 Goles Totales (Over)",
+              "odds": 1.65,
+              "algorithm": "Pick B (Football): API-Football High-Pace Metric: Gran final de poderío ofensivo en Houston; Toluca promedia 2.30 xG por partido en el torneo y Monterrey genera 2.10 xG con 85% de sus duelos superando la línea de 2.0 goles."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Botafogo vs. Palmeiras",
+              "selection": "Botafogo Doble Oportunidad (1X) / DNB Seguro",
+              "odds": 1.62,
+              "algorithm": "Pick C (Football): Sportmonks Tactical Index: Botafogo en el Estádio Nilton Santos registra 83% de imbatibilidad de local en la Série A, concediendo apenas 0.80 xGA y superando tácticamente a rivales directos en Río."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Cruz Azul + ⚽ Toluca FC)",
+              "odds": 2.67,
+              "formula": "1.62 × 1.65"
+            },
+            {
+              "name": "Doble 2 (⚽ Cruz Azul + ⚽ Botafogo)",
+              "odds": 2.62,
+              "formula": "1.62 × 1.62"
+            },
+            {
+              "name": "Doble 3 (⚽ Toluca FC + ⚽ Botafogo)",
+              "odds": 2.67,
+              "formula": "1.65 × 1.62"
+            },
+            {
+              "name": "Triple (⚽ Cruz Azul + ⚽ Toluca FC + ⚽ Botafogo)",
+              "odds": 4.33,
+              "formula": "1.62 × 1.65 × 1.62"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Cruz Azul + ⚽ Toluca FC)",
+                  "min_result": "Cruz Azul y Toluca FC cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.67x): Cobras $66.75 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Cruz Azul + ⚽ Botafogo)",
+                  "min_result": "Cruz Azul y Botafogo cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.62x): Cobras $65.50 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Cruz Azul + Toluca FC + Botafogo)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $307.25 (+$207.25 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $307.25 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (11 SEPTIEMBRE)\n• Pick A: ⚽ Cruz Azul vs. Santos Laguna (Cruz Azul Ganador Directo (1)) @ 1.62\n• Pick B: ⚽ Toluca FC vs. C.F. Monterrey (Más de 2.0 / 2.5 Goles Totales (Over)) @ 1.65\n• Pick C: ⚽ Botafogo vs. Palmeiras (Botafogo Doble Oportunidad (1X) / DNB Seguro) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $307.25"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.93x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Cruz Azul y Toluca FC) para duplicar la banca en la jornada de fútbol del Viernes.",
+          "totalOdds": 1.93,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cruz Azul vs. Santos Laguna",
+              "tournament": "Liga MX Apertura 2026 (Jornada 7) (17:00 CST / 18:00 CDT)",
+              "selection": "Cruz Azul Doble Oportunidad (1X) + Más 1.5 Goles",
+              "odds": 1.4,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Dominance Model: Cruz Azul en la Ciudad de México promedia 2.15 xG con 80% de victorias de local; Santos Laguna concede 1.90 xGA como visitante y no gana en la capital desde hace 6 visitas."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Toluca FC vs. C.F. Monterrey",
+              "tournament": "Leagues Cup 2026 (Gran Final) (18:00 CST / 19:00 CDT)",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.38,
+              "confidencePct": 92,
+              "algorithm": "API-Football High-Pace Metric: Gran final de poderío ofensivo en Houston; Toluca promedia 2.30 xG por partido en el torneo y Monterrey genera 2.10 xG con 85% de sus duelos superando la línea de 2.0 goles."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Cruz Azul vs. Santos Laguna (Liga MX Apertura 2026): 'Cruz Azul Doble Oportunidad (1X) + Más 1.5 Goles'.",
+              "• ⚽ Toluca FC vs. C.F. Monterrey (Leagues Cup 2026): 'Más de 1.5 Goles Totales (Over 1.5)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.93x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Cruz Azul vs. Santos Laguna",
+                  "min_result": "Cruz Azul cumple su línea (Cruz Azul Doble Oportunidad (1X) + Más 1.5 Goles)",
+                  "explanation": "Cruz Azul sella resultado positivo en Estadio Ciudad de los Deportes."
+                },
+                {
+                  "match": "Toluca FC vs. C.F. Monterrey",
+                  "min_result": "Toluca FC cumple su línea (Más de 1.5 Goles Totales (Over 1.5))",
+                  "explanation": "Toluca FC asegura el rendimiento en Shell Energy Stadium."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $193.00 (+$93.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (11 SEPTIEMBRE)\n1. ⚽ Cruz Azul vs. Santos Laguna (Cruz Azul Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.4\n2. ⚽ Toluca FC vs. C.F. Monterrey (Más de 1.5 Goles Totales (Over 1.5)) @ 1.38\n► Cuota Total: 1.93x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
           }
         }
       },
