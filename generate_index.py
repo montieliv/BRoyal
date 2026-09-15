@@ -416,15 +416,9 @@ html_template = f"""<!DOCTYPE html>
 
   </main>
 
-  <!-- TOAST NOTIFICATION CONTAINER -->
-  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 hidden bg-graphite-900 border border-accent-emerald text-white px-4 py-2.5 rounded-xl shadow-2xl font-mono text-xs flex items-center space-x-2">
-    <i class="fa-solid fa-circle-check text-accent-emerald text-sm"></i>
-    <span id="toastMessage">¡Boleto copiado al portapapeles!</span>
-  </div>
-
   <!-- ==================== JAVASCRIPT APP LOGIC ==================== -->
   <script>
-    const DATASET = {dataset_json_str};
+    let DATASET = {dataset_json_str};
 
     let currentStrategyKey = 'modo_a_simples'; // 'modo_a_simples' | 'modo_b_sistema' | 'modo_c_banker'
 
@@ -709,21 +703,6 @@ html_template = f"""<!DOCTYPE html>
       }});
     }}
 
-    function showToast(msg) {{
-      const toast = document.getElementById('toastNotification');
-      const toastMsg = document.getElementById('toastMessage');
-      if (!toast || !toastMsg) return;
-
-      toastMsg.innerText = msg;
-      toast.classList.remove('hidden');
-      toast.classList.add('toast-animate');
-
-      setTimeout(() => {{
-        toast.classList.add('hidden');
-        toast.classList.remove('toast-animate');
-      }}, 2600);
-    }}
-
     function switchStrategyTab(stratKey) {{
       currentStrategyKey = stratKey;
 
@@ -795,6 +774,7 @@ html_template = f"""<!DOCTYPE html>
         if (res.ok) {{
           const fresh = await res.json();
           if (fresh && fresh.strategies) {{
+            DATASET = fresh;
             window.RAW_DATASET = fresh;
             
             // Update display date in header if changed
@@ -839,6 +819,7 @@ html_template = f"""<!DOCTYPE html>
         if (res.ok) {{
           const fresh = await res.json();
           if (fresh && fresh.generated_at && window.RAW_DATASET && fresh.generated_at !== window.RAW_DATASET.generated_at) {{
+            DATASET = fresh;
             window.RAW_DATASET = fresh;
             renderStrategyCard(currentStrategyKey);
             showToast('✨ Nueva jornada detectada y actualizada automáticamente');
@@ -869,6 +850,7 @@ html_template = f"""<!DOCTYPE html>
     }}
 
     window.onload = function() {{
+      window.RAW_DATASET = DATASET;
       renderStrategyCard('modo_a_simples');
       updateLiveClock();
       setInterval(updateLiveClock, 1000);
