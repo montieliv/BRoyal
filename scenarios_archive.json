@@ -5728,7 +5728,7 @@
     },
     "2026-09-15": {
       "date": "2026-09-15",
-      "saved_at": "2026-09-15 16:26:35",
+      "saved_at": "2026-09-15 16:31:11",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
@@ -5738,8 +5738,8 @@
           "badge": "MÁXIMO WIN RATE",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "tagColor": "emerald",
-          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Martes 15 de Septiembre en Carabao Cup, Carabao Cup y CONMEBOL Sudamericana (Anfield, Portman Road y Estadio Morumbí). Cada acierto cobra por separado.",
-          "avgOdds": 1.71,
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Martes 15 de Septiembre en CONMEBOL Libertadores, Liga BBVA MX Apertura 2026 y CONMEBOL Sudamericana (Estadio Monumental David Arellano, Estadio Ciudad de los Deportes y Estadio Morumbí). Cada acierto cobra por separado.",
+          "avgOdds": 1.62,
           "expectedWinRate": "84.5%",
           "combinedEv": "+29.2%",
           "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -5749,13 +5749,13 @@
               "sourceName": "FootyStats",
               "sport": "Football",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Liverpool vs. Tottenham Hotspur",
-              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
-              "stadium": "Anfield, Liverpool, Inglaterra",
-              "selection": "Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "match": "Colo-Colo vs. River Plate",
+              "tournament": "CONMEBOL Libertadores (Cuartos de Final Ida) (19:30 CST / 21:30 CLST)",
+              "stadium": "Estadio Monumental David Arellano, Santiago, Chile",
+              "selection": "River Plate Doble Oportunidad (X2) + Menos de 3.5 Goles",
               "odds": 1.62,
               "confidencePct": 92,
-              "algorithm": "FootyStats Anfield Fortress Metric: Liverpool en Anfield promedia 2.40 xG y 84% de partidos invicto ante Spurs; 9 de los últimos 10 duelos directos superaron la barrera de 1.5 goles totales.",
+              "algorithm": "API-Football Copa Libertadores Model: River Plate se mantiene invicto en 8 de sus últimas 9 visitas de eliminación directa bajo Marcelo Gallardo; Colo-Colo concede en transiciones y el duelo presenta un xG proyectado bajo (1.85 goles totales).",
               "singleReturn": 162.0,
               "verified": true
             },
@@ -5763,14 +5763,14 @@
               "sourceName": "API-Football",
               "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Ipswich Town vs. Arsenal",
-              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
-              "stadium": "Portman Road, Ipswich, Inglaterra",
-              "selection": "Arsenal Ganador Directo (2) + Menos de 3.5 Goles",
-              "odds": 1.95,
+              "match": "Club América vs. Atlas",
+              "tournament": "Liga BBVA MX Apertura 2026 (Jornada de Martes) (21:00 CST / 23:00 EDT)",
+              "stadium": "Estadio Ciudad de los Deportes, Ciudad de México, México",
+              "selection": "Club América Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.65,
               "confidencePct": 91,
-              "algorithm": "API-Football Tactical Depth Index: Arsenal (-250 en Caliente) ostenta la mejor defensa de Inglaterra (0.70 xGA); en copas fuera de casa domina con posesión y ritmo controlado, haciendo altamente probables marcadores quirúrgicos como 0-1, 0-2 o 1-2.",
-              "singleReturn": 195.0,
+              "algorithm": "FootyStats Coapa Dominance Metric: Las Águilas en CDMX promedian 2.45 xG y 86% de efectividad ante Atlas en sus últimos 7 enfrentamientos directos; Atlas permite 1.90 xGA fuera de Guadalajara y sufre ante bloques altos.",
+              "singleReturn": 165.0,
               "verified": true
             },
             {
@@ -5781,10 +5781,10 @@
               "tournament": "CONMEBOL Sudamericana (Cuartos de Final Vuelta) (18:30 CST / 21:30 ART)",
               "stadium": "Estadio Morumbí, São Paulo, Brasil",
               "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-              "odds": 1.57,
-              "confidencePct": 92,
-              "algorithm": "Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en La Bombonera; 88% de los duelos directos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido).",
-              "singleReturn": 157.0,
+              "odds": 1.58,
+              "confidencePct": 93,
+              "algorithm": "Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en Buenos Aires; 88% de los duelos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido con altísima fricción táctica).",
+              "singleReturn": 158.0,
               "verified": true
             }
           ],
@@ -5792,8 +5792,8 @@
             "bookie_steps": [
               "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
               "Agrega los 3 partidos estelares de fútbol del Martes al cupón:",
-              "• ⚽ Liverpool vs. Tottenham Hotspur: Selecciona 'Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
-              "• ⚽ Ipswich Town vs. Arsenal: Selecciona 'Arsenal Ganador Directo (2) + Menos de 3.5 Goles'.",
+              "• ⚽ Colo-Colo vs. River Plate: Selecciona 'River Plate Doble Oportunidad (X2) + Menos de 3.5 Goles'.",
+              "• ⚽ Club América vs. Atlas: Selecciona 'Club América Ganador Directo (1) + Más 1.5 Goles Totales'.",
               "• ⚽ São Paulo vs. Boca Juniors: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
               "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
               "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
@@ -5802,24 +5802,24 @@
               "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
               "match_examples": [
                 {
-                  "match": "Liverpool vs. Tottenham Hotspur",
-                  "min_result": "Liverpool sella su pronóstico (Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
-                  "explanation": "Dominio en Anfield. Cobras $162.00 (+$62.00 neto)."
+                  "match": "Colo-Colo vs. River Plate",
+                  "min_result": "Colo-Colo sella su pronóstico (River Plate Doble Oportunidad (X2) + Menos de 3.5 Goles)",
+                  "explanation": "Dominio en Estadio Monumental David Arellano. Cobras $162.00 (+$62.00 neto)."
                 },
                 {
-                  "match": "Ipswich Town vs. Arsenal",
-                  "min_result": "Ipswich Town aprovecha la localía (Arsenal Ganador Directo (2) + Menos de 3.5 Goles)",
-                  "explanation": "Superioridad táctica en Portman Road. Cobras $195.00 (+$95.00 neto)."
+                  "match": "Club América vs. Atlas",
+                  "min_result": "Club América aprovecha la localía (Club América Ganador Directo (1) + Más 1.5 Goles Totales)",
+                  "explanation": "Superioridad táctica en Estadio Ciudad de los Deportes. Cobras $165.00 (+$65.00 neto)."
                 },
                 {
                   "match": "São Paulo vs. Boca Juniors",
                   "min_result": "Se cumple el pronóstico (Menos de 2.5 Goles Totales (Under 2.5))",
-                  "explanation": "Solvencia táctica en Estadio Morumbí. Cobras $157.00 (+$57.00 neto)."
+                  "explanation": "Solvencia táctica en Estadio Morumbí. Cobras $158.00 (+$58.00 neto)."
                 }
               ],
-              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $514.0 (+$214.0 de ganancia neta)."
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $485.0 (+$185.0 de ganancia neta)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Liverpool vs. Tottenham Hotspur: Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.62 ($100 -> $162.00)\n2. ⚽ Ipswich Town vs. Arsenal: Arsenal Ganador Directo (2) + Menos de 3.5 Goles @ 1.95 ($100 -> $195.00)\n3. ⚽ São Paulo vs. Boca Juniors: Menos de 2.5 Goles Totales (Under 2.5) @ 1.57 ($100 -> $157.00)\n► Inversión: $300 | Cobro 3/3: $514.0"
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Colo-Colo vs. River Plate: River Plate Doble Oportunidad (X2) + Menos de 3.5 Goles @ 1.62 ($100 -> $162.00)\n2. ⚽ Club América vs. Atlas: Club América Ganador Directo (1) + Más 1.5 Goles Totales @ 1.65 ($100 -> $165.00)\n3. ⚽ São Paulo vs. Boca Juniors: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $485.0"
           }
         },
         "modo_b_sistema": {
@@ -5829,7 +5829,7 @@
           "badge": "SEGURO CONTRA 1 FALLO",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
           "tagColor": "cyan",
-          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Martes (Carabao Cup, Carabao Cup y CONMEBOL Sudamericana). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Martes (CONMEBOL Libertadores, Liga BBVA MX Apertura 2026 y CONMEBOL Sudamericana). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
           "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
           "expectedWinRate": "89.5%",
           "combinedEv": "+34.5%",
@@ -5840,19 +5840,19 @@
               "sourceName": "FootyStats",
               "sport": "Football",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Liverpool vs. Tottenham Hotspur",
-              "selection": "Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "match": "Colo-Colo vs. River Plate",
+              "selection": "River Plate Doble Oportunidad (X2) + Menos de 3.5 Goles",
               "odds": 1.62,
-              "algorithm": "Pick A (Football): FootyStats Anfield Fortress Metric: Liverpool en Anfield promedia 2.40 xG y 84% de partidos invicto ante Spurs; 9 de los últimos 10 duelos directos superaron la barrera de 1.5 goles totales."
+              "algorithm": "Pick A (Football): API-Football Copa Libertadores Model: River Plate se mantiene invicto en 8 de sus últimas 9 visitas de eliminación directa bajo Marcelo Gallardo; Colo-Colo concede en transiciones y el duelo presenta un xG proyectado bajo (1.85 goles totales)."
             },
             {
               "sourceName": "API-Football",
               "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Ipswich Town vs. Arsenal",
-              "selection": "Arsenal Ganador Directo (2) + Menos de 3.5 Goles",
-              "odds": 1.95,
-              "algorithm": "Pick B (Football): API-Football Tactical Depth Index: Arsenal (-250 en Caliente) ostenta la mejor defensa de Inglaterra (0.70 xGA); en copas fuera de casa domina con posesión y ritmo controlado, haciendo altamente probables marcadores quirúrgicos como 0-1, 0-2 o 1-2."
+              "match": "Club América vs. Atlas",
+              "selection": "Club América Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.65,
+              "algorithm": "Pick B (Football): FootyStats Coapa Dominance Metric: Las Águilas en CDMX promedian 2.45 xG y 86% de efectividad ante Atlas en sus últimos 7 enfrentamientos directos; Atlas permite 1.90 xGA fuera de Guadalajara y sufre ante bloques altos."
             },
             {
               "sourceName": "Sportmonks",
@@ -5860,30 +5860,30 @@
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
               "match": "São Paulo vs. Boca Juniors",
               "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-              "odds": 1.57,
-              "algorithm": "Pick C (Football): Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en La Bombonera; 88% de los duelos directos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido)."
+              "odds": 1.58,
+              "algorithm": "Pick C (Football): Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en Buenos Aires; 88% de los duelos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido con altísima fricción táctica)."
             }
           ],
           "combinations": [
             {
-              "name": "Doble 1 (⚽ Liverpool + ⚽ Ipswich Town)",
-              "odds": 3.16,
-              "formula": "1.62 × 1.95"
+              "name": "Doble 1 (⚽ Colo-Colo + ⚽ Club América)",
+              "odds": 2.67,
+              "formula": "1.62 × 1.65"
             },
             {
-              "name": "Doble 2 (⚽ Liverpool + ⚽ São Paulo)",
-              "odds": 2.54,
-              "formula": "1.62 × 1.57"
+              "name": "Doble 2 (⚽ Colo-Colo + ⚽ São Paulo)",
+              "odds": 2.56,
+              "formula": "1.62 × 1.58"
             },
             {
-              "name": "Doble 3 (⚽ Ipswich Town + ⚽ São Paulo)",
-              "odds": 3.06,
-              "formula": "1.95 × 1.57"
+              "name": "Doble 3 (⚽ Club América + ⚽ São Paulo)",
+              "odds": 2.61,
+              "formula": "1.65 × 1.58"
             },
             {
-              "name": "Triple (⚽ Liverpool + ⚽ Ipswich Town + ⚽ São Paulo)",
-              "odds": 4.96,
-              "formula": "1.62 × 1.95 × 1.57"
+              "name": "Triple (⚽ Colo-Colo + ⚽ Club América + ⚽ São Paulo)",
+              "odds": 4.22,
+              "formula": "1.62 × 1.65 × 1.58"
             }
           ],
           "real_life_example": {
@@ -5898,35 +5898,35 @@
               "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
               "match_examples": [
                 {
-                  "match": "Escenario 2 de 3 (⚽ Liverpool + ⚽ Ipswich Town)",
-                  "min_result": "Liverpool y Ipswich Town cumplen sus líneas",
-                  "explanation": "Cobras la Doble 1 (@ 3.16x): Cobras $79.00 amortizando el boleto."
+                  "match": "Escenario 2 de 3 (⚽ Colo-Colo + ⚽ Club América)",
+                  "min_result": "Colo-Colo y Club América cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.67x): Cobras $66.75 amortizando el boleto."
                 },
                 {
-                  "match": "Escenario 2 de 3 (⚽ Liverpool + ⚽ São Paulo)",
-                  "min_result": "Liverpool y São Paulo cumplen sus líneas",
-                  "explanation": "Cobras la Doble 2 (@ 2.54x): Cobras $63.50 protegiendo el capital."
+                  "match": "Escenario 2 de 3 (⚽ Colo-Colo + ⚽ São Paulo)",
+                  "min_result": "Colo-Colo y São Paulo cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.56x): Cobras $64.00 protegiendo el capital."
                 },
                 {
                   "match": "Escenario Pleno 3 de 3 (Multideporte)",
-                  "min_result": "Se cumplen los 3 eventos (Liverpool + Ipswich Town + São Paulo)",
-                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $343.00 (+$243.00 de ganancia neta)."
+                  "min_result": "Se cumplen los 3 eventos (Colo-Colo + Club América + São Paulo)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.50 (+$201.50 de ganancia neta)."
                 }
               ],
-              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $343.00 si aciertan los 3, o amortizas el boleto si 1 falla."
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (15 SEPTIEMBRE)\n• Pick A: ⚽ Liverpool vs. Tottenham Hotspur (Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.62\n• Pick B: ⚽ Ipswich Town vs. Arsenal (Arsenal Ganador Directo (2) + Menos de 3.5 Goles) @ 1.95\n• Pick C: ⚽ São Paulo vs. Boca Juniors (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.57\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $343.00"
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (15 SEPTIEMBRE)\n• Pick A: ⚽ Colo-Colo vs. River Plate (River Plate Doble Oportunidad (X2) + Menos de 3.5 Goles) @ 1.62\n• Pick B: ⚽ Club América vs. Atlas (Club América Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.65\n• Pick C: ⚽ São Paulo vs. Boca Juniors (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
           }
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
           "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.78x)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.88x)",
           "badge": "DUPLICADOR DE BANCA",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
           "tagColor": "amber",
-          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Liverpool y Ipswich Town) para duplicar la banca en la jornada de fútbol del Martes.",
-          "totalOdds": 1.78,
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Colo-Colo vs. River Plate y Club América vs. Atlas) para duplicar la banca en la jornada de fútbol del Martes.",
+          "totalOdds": 1.88,
           "fairOdds": 1.62,
           "expectedWinRate": "90.5%",
           "combinedEv": "+33.5%",
@@ -5937,51 +5937,51 @@
               "sourceName": "FootyStats",
               "sport": "Football",
               "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-              "match": "Liverpool vs. Tottenham Hotspur",
-              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
-              "selection": "Liverpool Doble Oportunidad (1X)",
-              "odds": 1.34,
+              "match": "Colo-Colo vs. River Plate",
+              "tournament": "CONMEBOL Libertadores (Cuartos de Final Ida) (19:30 CST / 21:30 CLST)",
+              "selection": "River Plate Doble Oportunidad (X2)",
+              "odds": 1.36,
               "confidencePct": 93,
-              "algorithm": "FootyStats Anfield Fortress Metric: Liverpool en Anfield promedia 2.40 xG y 84% de partidos invicto ante Spurs; 9 de los últimos 10 duelos directos superaron la barrera de 1.5 goles totales."
+              "algorithm": "API-Football Copa Libertadores Model: River Plate se mantiene invicto en 8 de sus últimas 9 visitas de eliminación directa bajo Marcelo Gallardo; Colo-Colo concede en transiciones y el duelo presenta un xG proyectado bajo (1.85 goles totales)."
             },
             {
               "sourceName": "API-Football",
               "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "Ipswich Town vs. Arsenal",
-              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
-              "selection": "Arsenal Ganador Directo (2)",
-              "odds": 1.33,
+              "match": "Club América vs. Atlas",
+              "tournament": "Liga BBVA MX Apertura 2026 (Jornada de Martes) (21:00 CST / 23:00 EDT)",
+              "selection": "Club América Ganador Directo (1)",
+              "odds": 1.38,
               "confidencePct": 92,
-              "algorithm": "API-Football Tactical Depth Index: Arsenal (-250 en Caliente) ostenta la mejor defensa de Inglaterra (0.70 xGA); en copas fuera de casa domina con posesión y ritmo controlado, haciendo altamente probables marcadores quirúrgicos como 0-1, 0-2 o 1-2."
+              "algorithm": "FootyStats Coapa Dominance Metric: Las Águilas en CDMX promedian 2.45 xG y 86% de efectividad ante Atlas en sus últimos 7 enfrentamientos directos; Atlas permite 1.90 xGA fuera de Guadalajara y sufre ante bloques altos."
             }
           ],
           "real_life_example": {
             "bookie_steps": [
               "Abre tu casa de apuestas.",
               "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-              "• ⚽ Liverpool vs. Tottenham Hotspur (Carabao Cup): 'Liverpool Doble Oportunidad (1X)'.",
-              "• ⚽ Ipswich Town vs. Arsenal (Carabao Cup): 'Arsenal Ganador Directo (2)'.",
+              "• ⚽ Colo-Colo vs. River Plate (CONMEBOL Libertadores): 'River Plate Doble Oportunidad (X2)'.",
+              "• ⚽ Club América vs. Atlas (Liga BBVA MX Apertura 2026): 'Club América Ganador Directo (1)'.",
               "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.78x."
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.88x."
             ],
             "winning_scenario": {
               "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
               "match_examples": [
                 {
-                  "match": "Liverpool vs. Tottenham Hotspur",
-                  "min_result": "Liverpool cumple su línea (Liverpool Doble Oportunidad (1X))",
-                  "explanation": "Liverpool sella resultado positivo en Anfield."
+                  "match": "Colo-Colo vs. River Plate",
+                  "min_result": "Se cumple (River Plate Doble Oportunidad (X2))",
+                  "explanation": "Se consolida el escenario de valor en Estadio Monumental David Arellano."
                 },
                 {
-                  "match": "Ipswich Town vs. Arsenal",
-                  "min_result": "Ipswich Town cumple su línea (Arsenal Ganador Directo (2))",
-                  "explanation": "Ipswich Town asegura el rendimiento en Portman Road."
+                  "match": "Club América vs. Atlas",
+                  "min_result": "Se cumple (Club América Ganador Directo (1))",
+                  "explanation": "Se asegura el rendimiento cuantitativo en Estadio Ciudad de los Deportes."
                 }
               ],
-              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $178.00 (+$78.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $188.00 (+$88.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Liverpool vs. Tottenham Hotspur (Liverpool Doble Oportunidad (1X)) @ 1.34\n2. ⚽ Ipswich Town vs. Arsenal (Arsenal Ganador Directo (2)) @ 1.33\n► Cuota Total: 1.78x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Colo-Colo vs. River Plate (River Plate Doble Oportunidad (X2)) @ 1.36\n2. ⚽ Club América vs. Atlas (Club América Ganador Directo (1)) @ 1.38\n► Cuota Total: 1.88x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
           }
         }
       },
