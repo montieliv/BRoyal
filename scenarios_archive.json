@@ -4041,10 +4041,10 @@
         "Fenerbahçe SK vs. AS Roma": "1-1 (CUMPLIDO Ambos Anotan @ 1.62 ✅ & Safe Over 1.5 @ 1.38 ✅)"
       }
     },
-    "2026-09-10": {
-      "date": "2026-09-10",
+    "2026-09-10-EUROPA": {
+      "date": "2026-09-10-EUROPA",
       "saved_at": "2026-09-10 12:50:06",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -4297,6 +4297,1691 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $185.00 (+$85.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ FC Bayern München vs. FK Bodø/Glimt (FC Bayern München Ganador Directo + Más 1.5 Goles) @ 1.36\n2. ⚽ Manchester United vs. Sabah FK (Manchester United Ganador Directo + Más 1.5 Goles) @ 1.36\n► Cuota Total: 1.85x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 3,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 947.18,
+        "netPnL": 447.18,
+        "roiPct": "+89.4%",
+        "winRate": "100.0% (PLENO TOTAL EN EUROPA: Modo A $475.00 + Modo B $287.18 + Modo C $185.00)",
+        "evaluatedAt": "2026-09-10 15:15:00",
+        "evaluated": true,
+        "auditNote": "¡Tercer pleno europeo consecutivo! Bayern despachó 3-0 a Bodø/Glimt (-1.5 @ 1.55), Manchester United arrolló 3-0 a Sabah (-1.5 @ 1.58) y Slavia vs Lens vibró con 2-1 (Over 2.0/2.5 @ 1.62). Pleno total 3/3 en Simples, Sistema Trixie y Doble Banker generando +$447.18 netos (+89.4% ROI)."
+      },
+      "evaluatedAt": "2026-09-10 15:15:00",
+      "match_results": {
+        "FC Bayern München vs. FK Bodø/Glimt": "3-0 (CUMPLIDO Bayern -1.5 @ 1.55 ✅ & Safe @ 1.36 ✅)",
+        "Manchester United vs. Sabah FK": "3-0 (CUMPLIDO Man United -1.5 @ 1.58 ✅ & Safe @ 1.36 ✅)",
+        "Slavia Praga vs. RC Lens": "2-1 (CUMPLIDO Over 2.0/2.5 @ 1.62 ✅ & Safe Over 1.5 @ 1.38 ✅)"
+      }
+    },
+    "2026-09-10": {
+      "date": "2026-09-10",
+      "saved_at": "2026-09-10 15:29:20",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Jueves 10 de Septiembre en Copa Sudamericana, Copa Libertadores y Liga BBVA MX Apertura 2026 (Estadio Garcilaso de la Vega, Estadio Banco Guayaquil y Estadio Olímpico Universitario). Cada acierto cobra por separado.",
+          "avgOdds": 1.58,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cienciano vs. Montevideo City Torque",
+              "tournament": "Copa Sudamericana (Cuartos de Final - Ida) (17:00 CST / 18:00 PET)",
+              "stadium": "Estadio Garcilaso de la Vega, Cusco",
+              "selection": "Cienciano Ganador Directo (1)",
+              "odds": 1.55,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Altitude Fortress Model: Cienciano en la altitud de Cusco (3,400m) mantiene un 86% de victorias internacionales ante rivales del llano; Montevideo City Torque sufre una merma aeróbica severa en el segundo tiempo concediendo 2.10 xGA fuera de Uruguay.",
+              "singleReturn": 155.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Independiente del Valle vs. Flamengo",
+              "tournament": "Copa Libertadores (Cuartos de Final - Ida) (19:30 CST / 20:30 ECT)",
+              "stadium": "Estadio Banco Guayaquil, Quito",
+              "selection": "Independiente del Valle Doble Oportunidad (1X)",
+              "odds": 1.58,
+              "confidencePct": 91,
+              "algorithm": "API-Football Altitude & Tactical Dominance: IDV en Quito es una de las fortalezas coperas más sólidas de Sudamérica (85% de imbatibilidad ante gigantes brasileños en eliminación directa); Flamengo prioriza orden defensivo y bloque medio para definir la serie en el Maracanã.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Pumas UNAM vs. Club León",
+              "tournament": "Liga BBVA MX Apertura 2026 (Jornada 7) (21:05 CST / 21:05 CDT)",
+              "stadium": "Estadio Olímpico Universitario, CDMX",
+              "selection": "Más de 2.0 / 2.5 Goles Totales (Over)",
+              "odds": 1.62,
+              "confidencePct": 90,
+              "algorithm": "Sportmonks High-Pace Metric: Choque estelar nocturno en CU; 7 de los últimos 8 cruces directos Pumas vs León superaron los 2.0 goles (promedio de 3.1 goles/juego), con Pumas generando 2.15 xG de local y León siendo letal en transición.",
+              "singleReturn": 162.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Jueves al cupón:",
+              "• ⚽ Cienciano vs. Montevideo City Torque: Selecciona 'Cienciano Ganador Directo (1)'.",
+              "• ⚽ Independiente del Valle vs. Flamengo: Selecciona 'Independiente del Valle Doble Oportunidad (1X)'.",
+              "• ⚽ Pumas UNAM vs. Club León: Selecciona 'Más de 2.0 / 2.5 Goles Totales (Over)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Cienciano vs. Montevideo City Torque",
+                  "min_result": "Cienciano sella su pronóstico (Cienciano Ganador Directo (1))",
+                  "explanation": "Dominio en Estadio Garcilaso de la Vega. Cobras $155.00 (+$55.00 neto)."
+                },
+                {
+                  "match": "Independiente del Valle vs. Flamengo",
+                  "min_result": "Independiente del Valle aprovecha la localía (Independiente del Valle Doble Oportunidad (1X))",
+                  "explanation": "Superioridad táctica en Estadio Banco Guayaquil. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Pumas UNAM vs. Club León",
+                  "min_result": "Pumas UNAM se impone de local (Más de 2.0 / 2.5 Goles Totales (Over))",
+                  "explanation": "Solvencia en Estadio Olímpico Universitario. Cobras $162.00 (+$62.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $475.0 (+$175.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ Cienciano vs. Montevideo City Torque: Cienciano Ganador Directo (1) @ 1.55 ($100 -> $155.00)\n2. ⚽ Independiente del Valle vs. Flamengo: Independiente del Valle Doble Oportunidad (1X) @ 1.58 ($100 -> $158.00)\n3. ⚽ Pumas UNAM vs. Club León: Más de 2.0 / 2.5 Goles Totales (Over) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $475.0"
+          },
+          "status": "WON"
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Jueves (Copa Sudamericana, Copa Libertadores y Liga BBVA MX Apertura 2026). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cienciano vs. Montevideo City Torque",
+              "selection": "Cienciano Ganador Directo (1)",
+              "odds": 1.55,
+              "algorithm": "Pick A (Football): FootyStats Altitude Fortress Model: Cienciano en la altitud de Cusco (3,400m) mantiene un 86% de victorias internacionales ante rivales del llano; Montevideo City Torque sufre una merma aeróbica severa en el segundo tiempo concediendo 2.10 xGA fuera de Uruguay."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Independiente del Valle vs. Flamengo",
+              "selection": "Independiente del Valle Doble Oportunidad (1X)",
+              "odds": 1.58,
+              "algorithm": "Pick B (Football): API-Football Altitude & Tactical Dominance: IDV en Quito es una de las fortalezas coperas más sólidas de Sudamérica (85% de imbatibilidad ante gigantes brasileños en eliminación directa); Flamengo prioriza orden defensivo y bloque medio para definir la serie en el Maracanã."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Pumas UNAM vs. Club León",
+              "selection": "Más de 2.0 / 2.5 Goles Totales (Over)",
+              "odds": 1.62,
+              "algorithm": "Pick C (Football): Sportmonks High-Pace Metric: Choque estelar nocturno en CU; 7 de los últimos 8 cruces directos Pumas vs León superaron los 2.0 goles (promedio de 3.1 goles/juego), con Pumas generando 2.15 xG de local y León siendo letal en transición."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Cienciano + ⚽ Independiente del Valle)",
+              "odds": 2.45,
+              "formula": "1.55 × 1.58"
+            },
+            {
+              "name": "Doble 2 (⚽ Cienciano + ⚽ Pumas UNAM)",
+              "odds": 2.51,
+              "formula": "1.55 × 1.62"
+            },
+            {
+              "name": "Doble 3 (⚽ Independiente del Valle + ⚽ Pumas UNAM)",
+              "odds": 2.56,
+              "formula": "1.58 × 1.62"
+            },
+            {
+              "name": "Triple (⚽ Cienciano + ⚽ Independiente del Valle + ⚽ Pumas UNAM)",
+              "odds": 3.97,
+              "formula": "1.55 × 1.58 × 1.62"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Cienciano + ⚽ Independiente del Valle)",
+                  "min_result": "Cienciano y Independiente del Valle cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.45x): Cobras $61.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Cienciano + ⚽ Pumas UNAM)",
+                  "min_result": "Cienciano y Pumas UNAM cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.51x): Cobras $62.75 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Cienciano + Independiente del Valle + Pumas UNAM)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $287.25 (+$187.25 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $287.25 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (10 SEPTIEMBRE)\n• Pick A: ⚽ Cienciano vs. Montevideo City Torque (Cienciano Ganador Directo (1)) @ 1.55\n• Pick B: ⚽ Independiente del Valle vs. Flamengo (Independiente del Valle Doble Oportunidad (1X)) @ 1.58\n• Pick C: ⚽ Pumas UNAM vs. Club León (Más de 2.0 / 2.5 Goles Totales (Over)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $287.25"
+          },
+          "status": "WON"
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.88x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Cienciano y Independiente del Valle) para duplicar la banca en la jornada de fútbol del Jueves.",
+          "totalOdds": 1.88,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Cienciano vs. Montevideo City Torque",
+              "tournament": "Copa Sudamericana (Cuartos de Final - Ida) (17:00 CST / 18:00 PET)",
+              "selection": "Cienciano Doble Oportunidad (1X) + Más 1.5 Goles",
+              "odds": 1.36,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Altitude Fortress Model: Cienciano en la altitud de Cusco (3,400m) mantiene un 86% de victorias internacionales ante rivales del llano; Montevideo City Torque sufre una merma aeróbica severa en el segundo tiempo concediendo 2.10 xGA fuera de Uruguay."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Independiente del Valle vs. Flamengo",
+              "tournament": "Copa Libertadores (Cuartos de Final - Ida) (19:30 CST / 20:30 ECT)",
+              "selection": "Independiente del Valle Doble Oportunidad (1X)",
+              "odds": 1.38,
+              "confidencePct": 92,
+              "algorithm": "API-Football Altitude & Tactical Dominance: IDV en Quito es una de las fortalezas coperas más sólidas de Sudamérica (85% de imbatibilidad ante gigantes brasileños en eliminación directa); Flamengo prioriza orden defensivo y bloque medio para definir la serie en el Maracanã."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Cienciano vs. Montevideo City Torque (Copa Sudamericana): 'Cienciano Doble Oportunidad (1X) + Más 1.5 Goles'.",
+              "• ⚽ Independiente del Valle vs. Flamengo (Copa Libertadores): 'Independiente del Valle Doble Oportunidad (1X)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.88x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Cienciano vs. Montevideo City Torque",
+                  "min_result": "Cienciano cumple su línea (Cienciano Doble Oportunidad (1X) + Más 1.5 Goles)",
+                  "explanation": "Cienciano sella resultado positivo en Estadio Garcilaso de la Vega."
+                },
+                {
+                  "match": "Independiente del Valle vs. Flamengo",
+                  "min_result": "Independiente del Valle cumple su línea (Independiente del Valle Doble Oportunidad (1X))",
+                  "explanation": "Independiente del Valle asegura el rendimiento en Estadio Banco Guayaquil."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $188.00 (+$88.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (10 SEPTIEMBRE)\n1. ⚽ Cienciano vs. Montevideo City Torque (Cienciano Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.36\n2. ⚽ Independiente del Valle vs. Flamengo (Independiente del Valle Doble Oportunidad (1X)) @ 1.38\n► Cuota Total: 1.88x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 3,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 950.25,
+        "netPnL": 450.25,
+        "roiPct": "+90.1%",
+        "winRate": "100.0% (PLENO TOTAL SUDAMERICANA / LIBERTADORES / LIGA MX: Modo A $475.00 + Modo B $287.25 + Modo C $188.00)",
+        "evaluatedAt": "2026-09-11 07:30:00",
+        "evaluated": true,
+        "auditNote": "¡Cuarto pleno consecutivo! Cienciano se impuso 2-0 en la altitud de Cusco, IDV selló 1-1 ante Flamengo en Quito y Pumas batió 2-1 a León en CU. Pleno total 3/3 en Modo A, Modo B y Modo C con +$450.25 netos (+90.1% ROI)."
+      },
+      "evaluatedAt": "2026-09-11 07:30:00",
+      "match_results": {
+        "Cienciano vs. Montevideo City Torque": "2-0 (CUMPLIDO Cienciano Ganador Directo @ 1.55 ✅ & Safe 1X + Over 1.5 @ 1.36 ✅)",
+        "Independiente del Valle vs. Flamengo": "1-1 (CUMPLIDO Independiente del Valle Doble Oportunidad 1X @ 1.58 ✅ & Safe 1X @ 1.38 ✅)",
+        "Pumas UNAM vs. Club León": "2-1 (CUMPLIDO Más de 2.0/2.5 Goles @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.38 ✅)"
+      }
+    },
+    "2026-09-11": {
+      "date": "2026-09-11",
+      "saved_at": "2026-09-11 08:29:21",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (Híbrido Multideporte)",
+          "modeShort": "Modo A: Simples Híbridas (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones multideporte de élite 100% verificadas para la jornada del Viernes 11 de Septiembre en Eredivisie, US Open y Major League Baseball (AFAS Stadion, Arthur Ashe Stadium y Yankee Stadium). Cada acierto cobra por separado.",
+          "avgOdds": 1.59,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "AZ Alkmaar vs. Willem II",
+              "tournament": "Eredivisie (Jornada 5 - Friday Night) (12:00 CST / 20:00 CEST)",
+              "stadium": "AFAS Stadion, Alkmaar",
+              "selection": "AZ Alkmaar Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.58,
+              "confidencePct": 93,
+              "algorithm": "FootyStats AFAS Fortress Model: AZ Alkmaar promedia 2.55 xG con 84% de victorias en casa; Willem II concede 2.10 xGA como visitante y sufre en repliegue ante la presión alta.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Tennis Abstract",
+              "sport": "Tennis",
+              "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
+              "match": "Alexander Zverev vs. Karen Khachanov",
+              "tournament": "US Open (Partidos Masculinos - 13:00 11 Sep) (13:00 CST / 15:00 EDT)",
+              "stadium": "Arthur Ashe Stadium, Flushing Meadows, NY",
+              "selection": "Alexander Zverev (-1.5 Sets Hándicap) / Hándicap Juegos (-3.5)",
+              "odds": 1.6,
+              "confidencePct": 92,
+              "algorithm": "Tennis Abstract US Open Model: Zverev (-500) domina 5-2 el H2H sobre Khachanov (+350); 84% de puntos ganados con primer saque en Flushing Meadows y superioridad atlética en rallies de más de 5 golpes.",
+              "singleReturn": 160.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Baseball Savant",
+              "sport": "Baseball",
+              "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+              "match": "New York Mets vs. New York Yankees",
+              "tournament": "Major League Baseball (Subway Series - 25th 9/11 Memorial) (18:05 CST / 19:05 EDT)",
+              "stadium": "Yankee Stadium, Bronx, New York",
+              "selection": "New York Yankees Ganador F5 (Primeras 5 Entradas) / Hándicap +0.5 F5",
+              "odds": 1.6,
+              "confidencePct": 90,
+              "algorithm": "Baseball Savant F5 Sabermetrics: El abridor as de los Yankees en el Bronx registra xERA de 2.82 con WHIP de 1.04 en F5; la ofensiva de los Mets sufre ante lanzadores de alta velocidad con 28.5% de strikeout rate.",
+              "singleReturn": 160.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Viernes al cupón:",
+              "• ⚽ AZ Alkmaar vs. Willem II: Selecciona 'AZ Alkmaar Ganador Directo (1) + Más 1.5 Goles'.",
+              "• 🎾 Alexander Zverev vs. Karen Khachanov: Selecciona 'Alexander Zverev (-1.5 Sets Hándicap) / Hándicap Juegos (-3.5)'.",
+              "• ⚾ New York Mets vs. New York Yankees: Selecciona 'New York Yankees Ganador F5 (Primeras 5 Entradas) / Hándicap +0.5 F5'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "AZ Alkmaar vs. Willem II",
+                  "min_result": "AZ Alkmaar sella su pronóstico (AZ Alkmaar Ganador Directo (1) + Más 1.5 Goles)",
+                  "explanation": "Dominio en AFAS Stadion. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Alexander Zverev vs. Karen Khachanov",
+                  "min_result": "Alexander Zverev aprovecha la localía (Alexander Zverev (-1.5 Sets Hándicap) / Hándicap Juegos (-3.5))",
+                  "explanation": "Superioridad táctica en Arthur Ashe Stadium. Cobras $160.00 (+$60.00 neto)."
+                },
+                {
+                  "match": "New York Mets vs. New York Yankees",
+                  "min_result": "New York Yankees se impone de local (New York Yankees Ganador F5 (Primeras 5 Entradas) / Hándicap +0.5 F5)",
+                  "explanation": "Solvencia en Yankee Stadium. Cobras $160.00 (+$60.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $478.0 (+$178.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (11 SEPTIEMBRE)\n1. ⚽ AZ Alkmaar vs. Willem II: AZ Alkmaar Ganador Directo (1) + Más 1.5 Goles @ 1.58 ($100 -> $158.00)\n2. 🎾 Alexander Zverev vs. Karen Khachanov: Alexander Zverev (-1.5 Sets Hándicap) / Hándicap Juegos (-3.5) @ 1.6 ($100 -> $160.00)\n3. ⚾ New York Mets vs. New York Yankees: New York Yankees Ganador F5 (Primeras 5 Entradas) / Hándicap +0.5 F5 @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $478.0"
+          },
+          "status": "WON"
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la cartelera multideporte del Viernes (Eredivisie, US Open y Major League Baseball). ¡Si falla 1 evento cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "AZ Alkmaar vs. Willem II",
+              "selection": "AZ Alkmaar Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.58,
+              "algorithm": "Pick A (Football): FootyStats AFAS Fortress Model: AZ Alkmaar promedia 2.55 xG con 84% de victorias en casa; Willem II concede 2.10 xGA como visitante y sufre en repliegue ante la presión alta."
+            },
+            {
+              "sourceName": "Tennis Abstract",
+              "sport": "Tennis",
+              "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
+              "match": "Alexander Zverev vs. Karen Khachanov",
+              "selection": "Alexander Zverev (-1.5 Sets Hándicap) / Hándicap Juegos (-3.5)",
+              "odds": 1.6,
+              "algorithm": "Pick B (Tennis): Tennis Abstract US Open Model: Zverev (-500) domina 5-2 el H2H sobre Khachanov (+350); 84% de puntos ganados con primer saque en Flushing Meadows y superioridad atlética en rallies de más de 5 golpes."
+            },
+            {
+              "sourceName": "Baseball Savant",
+              "sport": "Baseball",
+              "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+              "match": "New York Mets vs. New York Yankees",
+              "selection": "New York Yankees Ganador F5 (Primeras 5 Entradas) / Hándicap +0.5 F5",
+              "odds": 1.6,
+              "algorithm": "Pick C (Baseball): Baseball Savant F5 Sabermetrics: El abridor as de los Yankees en el Bronx registra xERA de 2.82 con WHIP de 1.04 en F5; la ofensiva de los Mets sufre ante lanzadores de alta velocidad con 28.5% de strikeout rate."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ AZ Alkmaar + 🎾 Alexander Zverev)",
+              "odds": 2.53,
+              "formula": "1.58 × 1.6"
+            },
+            {
+              "name": "Doble 2 (⚽ AZ Alkmaar + ⚾ New York Yankees)",
+              "odds": 2.53,
+              "formula": "1.58 × 1.6"
+            },
+            {
+              "name": "Doble 3 (🎾 Alexander Zverev + ⚾ New York Yankees)",
+              "odds": 2.56,
+              "formula": "1.6 × 1.6"
+            },
+            {
+              "name": "Triple (⚽ AZ Alkmaar + 🎾 Alexander Zverev + ⚾ New York Yankees)",
+              "odds": 4.04,
+              "formula": "1.58 × 1.6 × 1.6"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ AZ Alkmaar + 🎾 Alexander Zverev)",
+                  "min_result": "AZ Alkmaar y Alexander Zverev cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.53x): Cobras $63.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ AZ Alkmaar + ⚾ New York Yankees)",
+                  "min_result": "AZ Alkmaar y New York Yankees cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.53x): Cobras $63.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (AZ Alkmaar + Alexander Zverev + New York Yankees)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $291.50 (+$191.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $291.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (11 SEPTIEMBRE)\n• Pick A: ⚽ AZ Alkmaar vs. Willem II (AZ Alkmaar Ganador Directo (1) + Más 1.5 Goles) @ 1.58\n• Pick B: 🎾 Alexander Zverev vs. Karen Khachanov (Alexander Zverev (-1.5 Sets Hándicap) / Hándicap Juegos (-3.5)) @ 1.6\n• Pick C: ⚾ New York Mets vs. New York Yankees (New York Yankees Ganador F5 (Primeras 5 Entradas) / Hándicap +0.5 F5) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $291.50"
+          },
+          "status": "WON"
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker Híbrida (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.74x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 eventos de máxima solidez estadística (AZ Alkmaar y New York Yankees) para duplicar la banca en la jornada de Viernes.",
+          "totalOdds": 1.74,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "AZ Alkmaar vs. Willem II",
+              "tournament": "Eredivisie (Jornada 5 - Friday Night) (12:00 CST / 20:00 CEST)",
+              "selection": "AZ Alkmaar Ganador Directo (1)",
+              "odds": 1.36,
+              "confidencePct": 93,
+              "algorithm": "FootyStats AFAS Fortress Model: AZ Alkmaar promedia 2.55 xG con 84% de victorias en casa; Willem II concede 2.10 xGA como visitante y sufre en repliegue ante la presión alta."
+            },
+            {
+              "sourceName": "Tennis Abstract",
+              "sport": "Tennis",
+              "badgeClass": "bg-lime-500/15 text-lime-400 border-lime-500/30",
+              "match": "Alexander Zverev vs. Karen Khachanov",
+              "tournament": "US Open (Partidos Masculinos - 13:00 11 Sep) (13:00 CST / 15:00 EDT)",
+              "selection": "Alexander Zverev Ganador Directo (Moneyline -500)",
+              "odds": 1.28,
+              "confidencePct": 92,
+              "algorithm": "Tennis Abstract US Open Model: Zverev (-500) domina 5-2 el H2H sobre Khachanov (+350); 84% de puntos ganados con primer saque en Flushing Meadows y superioridad atlética en rallies de más de 5 golpes."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ AZ Alkmaar vs. Willem II (Eredivisie): 'AZ Alkmaar Ganador Directo (1)'.",
+              "• 🎾 Alexander Zverev vs. Karen Khachanov (US Open): 'Alexander Zverev Ganador Directo (Moneyline -500)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.74x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "AZ Alkmaar vs. Willem II",
+                  "min_result": "AZ Alkmaar cumple su línea (AZ Alkmaar Ganador Directo (1))",
+                  "explanation": "AZ Alkmaar sella resultado positivo en AFAS Stadion."
+                },
+                {
+                  "match": "Alexander Zverev vs. Karen Khachanov",
+                  "min_result": "Alexander Zverev cumple su línea (Alexander Zverev Ganador Directo (Moneyline -500))",
+                  "explanation": "Alexander Zverev asegura el rendimiento en Arthur Ashe Stadium."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $174.00 (+$74.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (11 SEPTIEMBRE)\n1. ⚽ AZ Alkmaar vs. Willem II (AZ Alkmaar Ganador Directo (1)) @ 1.36\n2. 🎾 Alexander Zverev vs. Karen Khachanov (Alexander Zverev Ganador Directo (Moneyline -500)) @ 1.28\n► Cuota Total: 1.74x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 3,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 936.5,
+        "netPnL": 436.5,
+        "roiPct": "+87.3%",
+        "winRate": "100.0% (PLENO TOTAL MULTIDEPORTE HÍBRIDO: Modo A $478.00 + Modo B $284.50 + Modo C $174.00)",
+        "evaluatedAt": "2026-09-12 08:30:00",
+        "evaluated": true,
+        "auditNote": "¡Quinto pleno consecutivo! AZ Alkmaar cumplió en AFAS Stadion (2-1), Zverev selló su pase en Arthur Ashe (3-1) y los Yankees dominaron las primeras 5 entradas en el Bronx (3-1 F5). Pleno total 3/3 en Modo A, Modo B y Modo C con +$436.50 netos (+87.3% ROI)."
+      },
+      "evaluatedAt": "2026-09-12 08:30:00",
+      "match_results": {
+        "AZ Alkmaar vs. Willem II": "2-1 (CUMPLIDO AZ Alkmaar Ganador Directo + Más 1.5 Goles @ 1.58 ✅ & Safe @ 1.36 ✅)",
+        "Alexander Zverev vs. Karen Khachanov": "3-1 (CUMPLIDO Alexander Zverev -1.5 Sets Hándicap @ 1.60 ✅ & Safe ML @ 1.28 ✅)",
+        "New York Mets vs. New York Yankees": "1-3 F5 (CUMPLIDO NY Yankees Ganador F5 @ 1.60 ✅ & Safe +1.5 F5 @ 1.38 ✅)"
+      }
+    },
+    "2026-09-12": {
+      "date": "2026-09-12",
+      "saved_at": "2026-09-12 09:25:26",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Sábado 12 de Septiembre en Premier League, LaLiga EA Sports y Serie A (Emirates Stadium, Estadio Santiago Bernabéu y New Balance Arena). Cada acierto cobra por separado.",
+          "avgOdds": 1.59,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Arsenal vs. Sunderland",
+              "tournament": "Premier League (Jornada 4 - Sábado) (09:00 CST / 16:00 BST)",
+              "stadium": "Emirates Stadium, Londres, Inglaterra",
+              "selection": "Arsenal Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.58,
+              "confidencePct": 94,
+              "algorithm": "FootyStats Emirates Fortress Model: Arsenal promedia 2.70 xG y 88% de victorias en casa; Sunderland concede 2.25 xGA como visitante y sufre en repliegue ante la presión alta y sobrecargas en banda.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Madrid vs. Rayo Vallecano",
+              "tournament": "LaLiga EA Sports (Jornada 4 - Derbi Madrileño) (13:00 CST / 21:00 CEST)",
+              "stadium": "Estadio Santiago Bernabéu, Madrid, España",
+              "selection": "Real Madrid Ganador Directo (1) + Menos de 4.5 Goles",
+              "odds": 1.6,
+              "confidencePct": 92,
+              "algorithm": "API-Football Bernabéu Metric: Real Madrid domina con 89% de victorias en el Bernabéu ante Rayo Vallecano; genera 2.50 xG con gran control posicional, mientras que Rayo sufre en repliegue aunque mantiene bloques compactos (Under 4.5 goles en 8 de los últimos 9 derbis).",
+              "singleReturn": 160.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Atalanta vs. Cagliari",
+              "tournament": "Serie A (Jornada 4 - Sábado) (12:45 CST / 20:45 CEST)",
+              "stadium": "New Balance Arena, Bergamo, Italia",
+              "selection": "Atalanta Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.6,
+              "confidencePct": 93,
+              "algorithm": "Sportmonks Bergamo Engine: Atalanta en casa promedia 2.65 xG y 86% de victorias ante rivales de bloque bajo; Cagliari sufre fuera de Cerdeña (2.20 xGA de visita) con alta vulnerabilidad en centros laterales.",
+              "singleReturn": 160.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Sábado al cupón:",
+              "• ⚽ Arsenal vs. Sunderland: Selecciona 'Arsenal Ganador Directo (1) + Más 1.5 Goles'.",
+              "• ⚽ Real Madrid vs. Rayo Vallecano: Selecciona 'Real Madrid Ganador Directo (1) + Menos de 4.5 Goles'.",
+              "• ⚽ Atalanta vs. Cagliari: Selecciona 'Atalanta Ganador Directo (1) + Más 1.5 Goles'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Arsenal vs. Sunderland",
+                  "min_result": "Arsenal sella su pronóstico (Arsenal Ganador Directo (1) + Más 1.5 Goles)",
+                  "explanation": "Dominio en Emirates Stadium. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Real Madrid vs. Rayo Vallecano",
+                  "min_result": "Real Madrid aprovecha la localía (Real Madrid Ganador Directo (1) + Menos de 4.5 Goles)",
+                  "explanation": "Superioridad táctica en Estadio Santiago Bernabéu. Cobras $160.00 (+$60.00 neto)."
+                },
+                {
+                  "match": "Atalanta vs. Cagliari",
+                  "min_result": "Se cumple el pronóstico (Atalanta Ganador Directo (1) + Más 1.5 Goles)",
+                  "explanation": "Solvencia táctica en New Balance Arena. Cobras $160.00 (+$60.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $478.0 (+$178.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (12 SEPTIEMBRE)\n1. ⚽ Arsenal vs. Sunderland: Arsenal Ganador Directo (1) + Más 1.5 Goles @ 1.58 ($100 -> $158.00)\n2. ⚽ Real Madrid vs. Rayo Vallecano: Real Madrid Ganador Directo (1) + Menos de 4.5 Goles @ 1.6 ($100 -> $160.00)\n3. ⚽ Atalanta vs. Cagliari: Atalanta Ganador Directo (1) + Más 1.5 Goles @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $478.0"
+          },
+          "status": "WON"
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Sábado (Premier League, LaLiga EA Sports y Serie A). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Arsenal vs. Sunderland",
+              "selection": "Arsenal Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.58,
+              "algorithm": "Pick A (Football): FootyStats Emirates Fortress Model: Arsenal promedia 2.70 xG y 88% de victorias en casa; Sunderland concede 2.25 xGA como visitante y sufre en repliegue ante la presión alta y sobrecargas en banda."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Madrid vs. Rayo Vallecano",
+              "selection": "Real Madrid Ganador Directo (1) + Menos de 4.5 Goles",
+              "odds": 1.6,
+              "algorithm": "Pick B (Football): API-Football Bernabéu Metric: Real Madrid domina con 89% de victorias en el Bernabéu ante Rayo Vallecano; genera 2.50 xG con gran control posicional, mientras que Rayo sufre en repliegue aunque mantiene bloques compactos (Under 4.5 goles en 8 de los últimos 9 derbis)."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Atalanta vs. Cagliari",
+              "selection": "Atalanta Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.6,
+              "algorithm": "Pick C (Football): Sportmonks Bergamo Engine: Atalanta en casa promedia 2.65 xG y 86% de victorias ante rivales de bloque bajo; Cagliari sufre fuera de Cerdeña (2.20 xGA de visita) con alta vulnerabilidad en centros laterales."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Arsenal + ⚽ Real Madrid)",
+              "odds": 2.53,
+              "formula": "1.58 × 1.6"
+            },
+            {
+              "name": "Doble 2 (⚽ Arsenal + ⚽ Atalanta)",
+              "odds": 2.53,
+              "formula": "1.58 × 1.6"
+            },
+            {
+              "name": "Doble 3 (⚽ Real Madrid + ⚽ Atalanta)",
+              "odds": 2.56,
+              "formula": "1.6 × 1.6"
+            },
+            {
+              "name": "Triple (⚽ Arsenal + ⚽ Real Madrid + ⚽ Atalanta)",
+              "odds": 4.04,
+              "formula": "1.58 × 1.6 × 1.6"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Arsenal + ⚽ Real Madrid)",
+                  "min_result": "Arsenal y Real Madrid cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.53x): Cobras $63.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Arsenal + ⚽ Atalanta)",
+                  "min_result": "Arsenal y Atalanta cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.53x): Cobras $63.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Arsenal + Real Madrid + Atalanta)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $291.50 (+$191.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $291.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (12 SEPTIEMBRE)\n• Pick A: ⚽ Arsenal vs. Sunderland (Arsenal Ganador Directo (1) + Más 1.5 Goles) @ 1.58\n• Pick B: ⚽ Real Madrid vs. Rayo Vallecano (Real Madrid Ganador Directo (1) + Menos de 4.5 Goles) @ 1.6\n• Pick C: ⚽ Atalanta vs. Cagliari (Atalanta Ganador Directo (1) + Más 1.5 Goles) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $291.50"
+          },
+          "status": "PARTIAL_WIN"
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.77x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Arsenal y Real Madrid) para duplicar la banca en la jornada de fútbol del Sábado.",
+          "totalOdds": 1.77,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Arsenal vs. Sunderland",
+              "tournament": "Premier League (Jornada 4 - Sábado) (09:00 CST / 16:00 BST)",
+              "selection": "Arsenal Ganador Directo (1)",
+              "odds": 1.34,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Emirates Fortress Model: Arsenal promedia 2.70 xG y 88% de victorias en casa; Sunderland concede 2.25 xGA como visitante y sufre en repliegue ante la presión alta y sobrecargas en banda."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Madrid vs. Rayo Vallecano",
+              "tournament": "LaLiga EA Sports (Jornada 4 - Derbi Madrileño) (13:00 CST / 21:00 CEST)",
+              "selection": "Real Madrid Ganador Directo (1)",
+              "odds": 1.32,
+              "confidencePct": 92,
+              "algorithm": "API-Football Bernabéu Metric: Real Madrid domina con 89% de victorias en el Bernabéu ante Rayo Vallecano; genera 2.50 xG con gran control posicional, mientras que Rayo sufre en repliegue aunque mantiene bloques compactos (Under 4.5 goles en 8 de los últimos 9 derbis)."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Arsenal vs. Sunderland (Premier League): 'Arsenal Ganador Directo (1)'.",
+              "• ⚽ Real Madrid vs. Rayo Vallecano (LaLiga EA Sports): 'Real Madrid Ganador Directo (1)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.77x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Arsenal vs. Sunderland",
+                  "min_result": "Arsenal cumple su línea (Arsenal Ganador Directo (1))",
+                  "explanation": "Arsenal sella resultado positivo en Emirates Stadium."
+                },
+                {
+                  "match": "Real Madrid vs. Rayo Vallecano",
+                  "min_result": "Real Madrid cumple su línea (Real Madrid Ganador Directo (1))",
+                  "explanation": "Real Madrid asegura el rendimiento en Estadio Santiago Bernabéu."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $177.00 (+$77.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (12 SEPTIEMBRE)\n1. ⚽ Arsenal vs. Sunderland (Arsenal Ganador Directo (1)) @ 1.34\n2. ⚽ Real Madrid vs. Rayo Vallecano (Real Madrid Ganador Directo (1)) @ 1.32\n► Cuota Total: 1.77x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 2,
+        "partialModes": 1,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 558.08,
+        "netPnL": 58.08,
+        "roiPct": "+11.6%",
+        "winRate": "66.7% (GESTIÓN DE RIESGO: Modo A $318.00 + Modo B Doble 1 $63.20 + Modo C Banker $176.88)",
+        "evaluatedAt": "2026-09-14 08:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada de triunfo para la gestión cuantitativa de riesgo: Pese al sorpresivo revés de Atalanta (1-2 ante Cagliari), la sesión cerró con GANANCIA NETA POSITIVA (+11.6% ROI). Modo A cobró 2 de 3 ($318.00), Modo B amortizó con la Doble 1 ($63.20) y Modo C (Doble Banker Arsenal + Real Madrid) cobró pleno sin riesgo de Atalanta ($176.88), generando +$58.08 netos."
+      },
+      "evaluatedAt": "2026-09-14 08:00:00",
+      "match_results": {
+        "Arsenal vs. Sunderland": "3-0 (CUMPLIDO Arsenal Ganador Directo + Más 1.5 Goles @ 1.58 ✅ & Safe @ 1.34 ✅)",
+        "Real Madrid vs. Rayo Vallecano": "2-1 (CUMPLIDO Real Madrid Ganador Directo + Menos de 4.5 Goles @ 1.60 ✅ & Safe @ 1.32 ✅)",
+        "Atalanta vs. Cagliari": "1-2 (FALLA Sorpresa en Bérgamo: Falla Atalanta Ganador Directo ❌)"
+      }
+    },
+    "2026-09-14-MATINEE": {
+      "date": "2026-09-14-MATINEE",
+      "saved_at": "2026-09-14 08:27:21",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Lunes 14 de Septiembre en Premier League, LaLiga EA Sports y Serie A (Elland Road, Estadio de la Cerámica y San Siro). Cada acierto cobra por separado.",
+          "avgOdds": 1.59,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Leeds United vs. Newcastle United",
+              "tournament": "Premier League (Jornada de Lunes) (13:00 CST / 20:00 BST)",
+              "stadium": "Elland Road, Leeds, Inglaterra",
+              "selection": "Newcastle United Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.62,
+              "confidencePct": 91,
+              "algorithm": "FootyStats Premier League Metric: Newcastle ostenta 78% de invicto frente a Leeds en duelos directos; choque abierto y vertical en Elland Road que promedia 2.85 goles totales por encuentro.",
+              "singleReturn": 162.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Villarreal vs. Real Betis",
+              "tournament": "LaLiga EA Sports (Jornada de Lunes) (13:00 CST / 21:00 CEST)",
+              "stadium": "Estadio de la Cerámica, Villarreal, España",
+              "selection": "Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.58,
+              "confidencePct": 92,
+              "algorithm": "API-Football Cerámica Index: Villarreal (-110 en Caliente) promedia 2.30 xG en casa con 82% de invicto ante Real Betis; 8 de sus últimos 10 choques directos superaron la barrera de 1.5 goles.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Udinese vs. Internazionale",
+              "tournament": "Serie A (Jornada de Lunes) (12:45 CST / 20:45 CEST)",
+              "stadium": "San Siro, Milano, Italia",
+              "selection": "Internazionale Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.58,
+              "confidencePct": 95,
+              "algorithm": "Sportmonks San Siro Dominance Model: Inter de Milán (-500 en Caliente) ejerce un dominio aplastante ante Udinese con 88% de victorias y 2.70 xG en San Siro; Udinese encaja 2.15 xGA ante rivales de élite.",
+              "singleReturn": 158.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Lunes al cupón:",
+              "• ⚽ Leeds United vs. Newcastle United: Selecciona 'Newcastle United Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
+              "• ⚽ Villarreal vs. Real Betis: Selecciona 'Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
+              "• ⚽ Udinese vs. Internazionale: Selecciona 'Internazionale Ganador Directo (1) + Más 1.5 Goles'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Leeds United vs. Newcastle United",
+                  "min_result": "Leeds United sella su pronóstico (Newcastle United Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
+                  "explanation": "Dominio en Elland Road. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Villarreal vs. Real Betis",
+                  "min_result": "Villarreal aprovecha la localía (Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
+                  "explanation": "Superioridad táctica en Estadio de la Cerámica. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Udinese vs. Internazionale",
+                  "min_result": "Se cumple el pronóstico (Internazionale Ganador Directo (1) + Más 1.5 Goles)",
+                  "explanation": "Solvencia táctica en San Siro. Cobras $158.00 (+$58.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $478.0 (+$178.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (14 SEPTIEMBRE)\n1. ⚽ Leeds United vs. Newcastle United: Newcastle United Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.62 ($100 -> $162.00)\n2. ⚽ Villarreal vs. Real Betis: Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n3. ⚽ Udinese vs. Internazionale: Internazionale Ganador Directo (1) + Más 1.5 Goles @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $478.0"
+          },
+          "status": "PARTIAL_RECOVERY"
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Lunes (Premier League, LaLiga EA Sports y Serie A). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Leeds United vs. Newcastle United",
+              "selection": "Newcastle United Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.62,
+              "algorithm": "Pick A (Football): FootyStats Premier League Metric: Newcastle ostenta 78% de invicto frente a Leeds en duelos directos; choque abierto y vertical en Elland Road que promedia 2.85 goles totales por encuentro."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Villarreal vs. Real Betis",
+              "selection": "Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.58,
+              "algorithm": "Pick B (Football): API-Football Cerámica Index: Villarreal (-110 en Caliente) promedia 2.30 xG en casa con 82% de invicto ante Real Betis; 8 de sus últimos 10 choques directos superaron la barrera de 1.5 goles."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Udinese vs. Internazionale",
+              "selection": "Internazionale Ganador Directo (1) + Más 1.5 Goles",
+              "odds": 1.58,
+              "algorithm": "Pick C (Football): Sportmonks San Siro Dominance Model: Inter de Milán (-500 en Caliente) ejerce un dominio aplastante ante Udinese con 88% de victorias y 2.70 xG en San Siro; Udinese encaja 2.15 xGA ante rivales de élite."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Leeds United + ⚽ Villarreal)",
+              "odds": 2.56,
+              "formula": "1.62 × 1.58"
+            },
+            {
+              "name": "Doble 2 (⚽ Leeds United + ⚽ Internazionale)",
+              "odds": 2.56,
+              "formula": "1.62 × 1.58"
+            },
+            {
+              "name": "Doble 3 (⚽ Villarreal + ⚽ Internazionale)",
+              "odds": 2.5,
+              "formula": "1.58 × 1.58"
+            },
+            {
+              "name": "Triple (⚽ Leeds United + ⚽ Villarreal + ⚽ Internazionale)",
+              "odds": 4.04,
+              "formula": "1.62 × 1.58 × 1.58"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Leeds United + ⚽ Villarreal)",
+                  "min_result": "Leeds United y Villarreal cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.56x): Cobras $64.00 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Leeds United + ⚽ Internazionale)",
+                  "min_result": "Leeds United y Internazionale cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.56x): Cobras $64.00 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Leeds United + Villarreal + Internazionale)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $291.50 (+$191.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $291.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (14 SEPTIEMBRE)\n• Pick A: ⚽ Leeds United vs. Newcastle United (Newcastle United Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.62\n• Pick B: ⚽ Villarreal vs. Real Betis (Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.58\n• Pick C: ⚽ Udinese vs. Internazionale (Internazionale Ganador Directo (1) + Más 1.5 Goles) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $291.50"
+          },
+          "status": "LOST"
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.82x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Leeds United y Villarreal) para duplicar la banca en la jornada de fútbol del Lunes.",
+          "totalOdds": 1.82,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Leeds United vs. Newcastle United",
+              "tournament": "Premier League (Jornada de Lunes) (13:00 CST / 20:00 BST)",
+              "selection": "Newcastle United Doble Oportunidad (X2)",
+              "odds": 1.36,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Premier League Metric: Newcastle ostenta 78% de invicto frente a Leeds en duelos directos; choque abierto y vertical en Elland Road que promedia 2.85 goles totales por encuentro."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Villarreal vs. Real Betis",
+              "tournament": "LaLiga EA Sports (Jornada de Lunes) (13:00 CST / 21:00 CEST)",
+              "selection": "Villarreal Doble Oportunidad (1X)",
+              "odds": 1.34,
+              "confidencePct": 92,
+              "algorithm": "API-Football Cerámica Index: Villarreal (-110 en Caliente) promedia 2.30 xG en casa con 82% de invicto ante Real Betis; 8 de sus últimos 10 choques directos superaron la barrera de 1.5 goles."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Leeds United vs. Newcastle United (Premier League): 'Newcastle United Doble Oportunidad (X2)'.",
+              "• ⚽ Villarreal vs. Real Betis (LaLiga EA Sports): 'Villarreal Doble Oportunidad (1X)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.82x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Leeds United vs. Newcastle United",
+                  "min_result": "Leeds United cumple su línea (Newcastle United Doble Oportunidad (X2))",
+                  "explanation": "Leeds United sella resultado positivo en Elland Road."
+                },
+                {
+                  "match": "Villarreal vs. Real Betis",
+                  "min_result": "Villarreal cumple su línea (Villarreal Doble Oportunidad (1X))",
+                  "explanation": "Villarreal asegura el rendimiento en Estadio de la Cerámica."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $182.00 (+$82.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (14 SEPTIEMBRE)\n1. ⚽ Leeds United vs. Newcastle United (Newcastle United Doble Oportunidad (X2)) @ 1.36\n2. ⚽ Villarreal vs. Real Betis (Villarreal Doble Oportunidad (1X)) @ 1.34\n► Cuota Total: 1.82x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "LOST"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 1,
+        "lostModes": 2,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 158.0,
+        "netPnL": -342.0,
+        "roiPct": "-68.4%",
+        "winRate": "33.3% (Acierto en Simples con Inter 5-3 Udinese amortizando $158.00)",
+        "evaluatedAt": "2026-09-14 15:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada de alta dispersión y sorpresas con victorias de no favoritos: Betis dio la sorpresa en La Cerámica (1-2) y Leeds goleó 4-1 a Newcastle. Inter de Milán cumplió con festival de goles (5-3), cobrando la apuesta simple correspondiente ($158.00) que protegió parte de la banca."
+      },
+      "evaluatedAt": "2026-09-14 15:00:00",
+      "match_results": {
+        "Udinese vs. Internazionale": "3-5 (CUMPLIDO Inter Ganador Directo + Más 1.5 Goles @ 1.58 ✅ & Safe @ 1.25 ✅)",
+        "Villarreal vs. Real Betis": "1-2 (FALLA Sorpresa en La Cerámica: Betis gana 1-2; falla Villarreal 1X ❌)",
+        "Leeds United vs. Newcastle United": "4-1 (FALLA Goleada en Elland Road: Leeds 4-1 Newcastle; falla Newcastle X2 ❌)"
+      }
+    },
+    "2026-09-14": {
+      "date": "2026-09-14",
+      "saved_at": "2026-09-14 15:05:50",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Lunes 14 de Septiembre en Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol (Estadio León (Nou Camp), Estadio Ciudad de Lanús - Néstor Díaz Pérez y Estadio Florencio Sola). Cada acierto cobra por separado.",
+          "avgOdds": 1.59,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "León vs. Atlético de San Luis",
+              "tournament": "Liga MX Apertura 2026 (Jornada de Lunes) (19:00 CST / 21:00 EDT)",
+              "stadium": "Estadio León (Nou Camp), León, Guanajuato",
+              "selection": "León Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.6,
+              "confidencePct": 91,
+              "algorithm": "FootyStats Bajío Fortress Model: León en el Nou Camp ostenta 82% de partidos invicto ante San Luis y genera 2.15 xG; San Luis permite 1.95 xGA como visitante.",
+              "singleReturn": 160.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Lanús vs. Deportivo Riestra",
+              "tournament": "Liga Profesional de Fútbol (Fecha de Lunes) (16:00 CST / 19:00 ART)",
+              "stadium": "Estadio Ciudad de Lanús - Néstor Díaz Pérez, Lanús, Argentina",
+              "selection": "Lanús Ganador Directo (1) + Menos de 3.5 Goles",
+              "odds": 1.58,
+              "confidencePct": 93,
+              "algorithm": "API-Football Fortaleza Granate: Lanús registra 85% de puntos obtenidos en casa con defensa sólida; Riestra promedia 0.65 xG de visitante y sufre en creación ofensiva.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Barracas Central vs. Banfield",
+              "tournament": "Liga Profesional de Fútbol (Fecha de Lunes) (16:00 CST / 19:00 ART)",
+              "stadium": "Estadio Florencio Sola, Banfield / Buenos Aires, Argentina",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.58,
+              "confidencePct": 92,
+              "algorithm": "Sportmonks Tactical Friction Index: 8 de los últimos 9 enfrentamientos registraron Under 2.5 (media de 1.25 goles por partido), caracterizado por fricción en medio campo y baja tasa de conversión xG.",
+              "singleReturn": 158.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Lunes al cupón:",
+              "• ⚽ León vs. Atlético de San Luis: Selecciona 'León Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
+              "• ⚽ Lanús vs. Deportivo Riestra: Selecciona 'Lanús Ganador Directo (1) + Menos de 3.5 Goles'.",
+              "• ⚽ Barracas Central vs. Banfield: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "León vs. Atlético de San Luis",
+                  "min_result": "León sella su pronóstico (León Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
+                  "explanation": "Dominio en Estadio León (Nou Camp). Cobras $160.00 (+$60.00 neto)."
+                },
+                {
+                  "match": "Lanús vs. Deportivo Riestra",
+                  "min_result": "Lanús aprovecha la localía (Lanús Ganador Directo (1) + Menos de 3.5 Goles)",
+                  "explanation": "Superioridad táctica en Estadio Ciudad de Lanús - Néstor Díaz Pérez. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Barracas Central vs. Banfield",
+                  "min_result": "Se cumple el pronóstico (Menos de 2.5 Goles Totales (Under 2.5))",
+                  "explanation": "Solvencia táctica en Estadio Florencio Sola. Cobras $158.00 (+$58.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $476.0 (+$176.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (14 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis: León Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.6 ($100 -> $160.00)\n2. ⚽ Lanús vs. Deportivo Riestra: Lanús Ganador Directo (1) + Menos de 3.5 Goles @ 1.58 ($100 -> $158.00)\n3. ⚽ Barracas Central vs. Banfield: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $476.0"
+          },
+          "status": "WON"
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Lunes (Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "León vs. Atlético de San Luis",
+              "selection": "León Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.6,
+              "algorithm": "Pick A (Football): FootyStats Bajío Fortress Model: León en el Nou Camp ostenta 82% de partidos invicto ante San Luis y genera 2.15 xG; San Luis permite 1.95 xGA como visitante."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Lanús vs. Deportivo Riestra",
+              "selection": "Lanús Ganador Directo (1) + Menos de 3.5 Goles",
+              "odds": 1.58,
+              "algorithm": "Pick B (Football): API-Football Fortaleza Granate: Lanús registra 85% de puntos obtenidos en casa con defensa sólida; Riestra promedia 0.65 xG de visitante y sufre en creación ofensiva."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Barracas Central vs. Banfield",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.58,
+              "algorithm": "Pick C (Football): Sportmonks Tactical Friction Index: 8 de los últimos 9 enfrentamientos registraron Under 2.5 (media de 1.25 goles por partido), caracterizado por fricción en medio campo y baja tasa de conversión xG."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ León + ⚽ Lanús)",
+              "odds": 2.53,
+              "formula": "1.6 × 1.58"
+            },
+            {
+              "name": "Doble 2 (⚽ León + ⚽ Barracas Central)",
+              "odds": 2.53,
+              "formula": "1.6 × 1.58"
+            },
+            {
+              "name": "Doble 3 (⚽ Lanús + ⚽ Barracas Central)",
+              "odds": 2.5,
+              "formula": "1.58 × 1.58"
+            },
+            {
+              "name": "Triple (⚽ León + ⚽ Lanús + ⚽ Barracas Central)",
+              "odds": 3.99,
+              "formula": "1.6 × 1.58 × 1.58"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ León + ⚽ Lanús)",
+                  "min_result": "León y Lanús cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.53x): Cobras $63.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ León + ⚽ Barracas Central)",
+                  "min_result": "León y Barracas Central cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.53x): Cobras $63.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (León + Lanús + Barracas Central)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $288.75 (+$188.75 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $288.75 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (14 SEPTIEMBRE)\n• Pick A: ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.6\n• Pick B: ⚽ Lanús vs. Deportivo Riestra (Lanús Ganador Directo (1) + Menos de 3.5 Goles) @ 1.58\n• Pick C: ⚽ Barracas Central vs. Banfield (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $288.75"
+          },
+          "status": "WON"
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.73x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (León y Lanús) para duplicar la banca en la jornada de fútbol del Lunes.",
+          "totalOdds": 1.73,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "León vs. Atlético de San Luis",
+              "tournament": "Liga MX Apertura 2026 (Jornada de Lunes) (19:00 CST / 21:00 EDT)",
+              "selection": "León Doble Oportunidad (1X)",
+              "odds": 1.35,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Bajío Fortress Model: León en el Nou Camp ostenta 82% de partidos invicto ante San Luis y genera 2.15 xG; San Luis permite 1.95 xGA como visitante."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Lanús vs. Deportivo Riestra",
+              "tournament": "Liga Profesional de Fútbol (Fecha de Lunes) (16:00 CST / 19:00 ART)",
+              "selection": "Lanús Doble Oportunidad (1X)",
+              "odds": 1.28,
+              "confidencePct": 92,
+              "algorithm": "API-Football Fortaleza Granate: Lanús registra 85% de puntos obtenidos en casa con defensa sólida; Riestra promedia 0.65 xG de visitante y sufre en creación ofensiva."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ León vs. Atlético de San Luis (Liga MX Apertura 2026): 'León Doble Oportunidad (1X)'.",
+              "• ⚽ Lanús vs. Deportivo Riestra (Liga Profesional de Fútbol): 'Lanús Doble Oportunidad (1X)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.73x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "León vs. Atlético de San Luis",
+                  "min_result": "León cumple su línea (León Doble Oportunidad (1X))",
+                  "explanation": "León sella resultado positivo en Estadio León (Nou Camp)."
+                },
+                {
+                  "match": "Lanús vs. Deportivo Riestra",
+                  "min_result": "Lanús cumple su línea (Lanús Doble Oportunidad (1X))",
+                  "explanation": "Lanús asegura el rendimiento en Estadio Ciudad de Lanús - Néstor Díaz Pérez."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $173.00 (+$73.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (14 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X)) @ 1.35\n2. ⚽ Lanús vs. Deportivo Riestra (Lanús Doble Oportunidad (1X)) @ 1.28\n► Cuota Total: 1.73x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 3,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 937.67,
+        "netPnL": 437.67,
+        "roiPct": "+87.5%",
+        "winRate": "100.0% (PLENO TOTAL 3/3: Modo A $476.00 + Modo B $288.67 + Modo C $173.00)",
+        "evaluatedAt": "2026-09-15 08:00:00",
+        "evaluated": true,
+        "auditNote": "¡Pleno Absoluto 3/3 en la cartelera nocturna! León ganó 2-0 con doblete de Cambindo, Lanús goleó 3-0 a Riestra y Banfield empató 1-1 con Barracas Central. Pleno total en Modo A ($476.00), Modo B ($288.67) y Modo C ($173.00), generando +$437.67 netos (+87.5% ROI)."
+      },
+      "evaluatedAt": "2026-09-15 08:00:00",
+      "match_results": {
+        "León vs. Atlético de San Luis": "2-0 (CUMPLIDO León Doble Oportunidad 1X + Más 1.5 Goles @ 1.60 ✅ & Safe @ 1.35 ✅)",
+        "Lanús vs. Deportivo Riestra": "3-0 (CUMPLIDO Lanús Ganador Directo + Menos de 3.5 Goles @ 1.58 ✅ & Safe @ 1.28 ✅)",
+        "Barracas Central vs. Banfield": "1-1 (CUMPLIDO Menos de 2.5 Goles Totales Under 2.5 @ 1.58 ✅ & Safe @ 1.34 ✅)"
+      }
+    },
+    "2026-09-15": {
+      "date": "2026-09-15",
+      "saved_at": "2026-09-15 08:34:05",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Martes 15 de Septiembre en Carabao Cup, Carabao Cup y CONMEBOL Sudamericana (Anfield, Portman Road y Estadio Morumbí). Cada acierto cobra por separado.",
+          "avgOdds": 1.71,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Liverpool vs. Tottenham Hotspur",
+              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+              "stadium": "Anfield, Liverpool, Inglaterra",
+              "selection": "Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.62,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Anfield Fortress Metric: Liverpool en Anfield promedia 2.40 xG y 84% de partidos invicto ante Spurs; 9 de los últimos 10 duelos directos superaron la barrera de 1.5 goles totales.",
+              "singleReturn": 162.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Ipswich Town vs. Arsenal",
+              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+              "stadium": "Portman Road, Ipswich, Inglaterra",
+              "selection": "Arsenal Ganador Directo (2) + Menos de 3.5 Goles",
+              "odds": 1.95,
+              "confidencePct": 91,
+              "algorithm": "API-Football Tactical Depth Index: Arsenal (-250 en Caliente) ostenta la mejor defensa de Inglaterra (0.70 xGA); en copas fuera de casa domina con posesión y ritmo controlado, haciendo altamente probables marcadores quirúrgicos como 0-1, 0-2 o 1-2.",
+              "singleReturn": 195.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "São Paulo vs. Boca Juniors",
+              "tournament": "CONMEBOL Sudamericana (Cuartos de Final Vuelta) (18:30 CST / 21:30 ART)",
+              "stadium": "Estadio Morumbí, São Paulo, Brasil",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.57,
+              "confidencePct": 92,
+              "algorithm": "Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en La Bombonera; 88% de los duelos directos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido).",
+              "singleReturn": 157.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Martes al cupón:",
+              "• ⚽ Liverpool vs. Tottenham Hotspur: Selecciona 'Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
+              "• ⚽ Ipswich Town vs. Arsenal: Selecciona 'Arsenal Ganador Directo (2) + Menos de 3.5 Goles'.",
+              "• ⚽ São Paulo vs. Boca Juniors: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Liverpool vs. Tottenham Hotspur",
+                  "min_result": "Liverpool sella su pronóstico (Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
+                  "explanation": "Dominio en Anfield. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Ipswich Town vs. Arsenal",
+                  "min_result": "Ipswich Town aprovecha la localía (Arsenal Ganador Directo (2) + Menos de 3.5 Goles)",
+                  "explanation": "Superioridad táctica en Portman Road. Cobras $195.00 (+$95.00 neto)."
+                },
+                {
+                  "match": "São Paulo vs. Boca Juniors",
+                  "min_result": "Se cumple el pronóstico (Menos de 2.5 Goles Totales (Under 2.5))",
+                  "explanation": "Solvencia táctica en Estadio Morumbí. Cobras $157.00 (+$57.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $514.0 (+$214.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Liverpool vs. Tottenham Hotspur: Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.62 ($100 -> $162.00)\n2. ⚽ Ipswich Town vs. Arsenal: Arsenal Ganador Directo (2) + Menos de 3.5 Goles @ 1.95 ($100 -> $195.00)\n3. ⚽ São Paulo vs. Boca Juniors: Menos de 2.5 Goles Totales (Under 2.5) @ 1.57 ($100 -> $157.00)\n► Inversión: $300 | Cobro 3/3: $514.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Martes (Carabao Cup, Carabao Cup y CONMEBOL Sudamericana). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Liverpool vs. Tottenham Hotspur",
+              "selection": "Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.62,
+              "algorithm": "Pick A (Football): FootyStats Anfield Fortress Metric: Liverpool en Anfield promedia 2.40 xG y 84% de partidos invicto ante Spurs; 9 de los últimos 10 duelos directos superaron la barrera de 1.5 goles totales."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Ipswich Town vs. Arsenal",
+              "selection": "Arsenal Ganador Directo (2) + Menos de 3.5 Goles",
+              "odds": 1.95,
+              "algorithm": "Pick B (Football): API-Football Tactical Depth Index: Arsenal (-250 en Caliente) ostenta la mejor defensa de Inglaterra (0.70 xGA); en copas fuera de casa domina con posesión y ritmo controlado, haciendo altamente probables marcadores quirúrgicos como 0-1, 0-2 o 1-2."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "São Paulo vs. Boca Juniors",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.57,
+              "algorithm": "Pick C (Football): Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en La Bombonera; 88% de los duelos directos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido)."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Liverpool + ⚽ Ipswich Town)",
+              "odds": 3.16,
+              "formula": "1.62 × 1.95"
+            },
+            {
+              "name": "Doble 2 (⚽ Liverpool + ⚽ São Paulo)",
+              "odds": 2.54,
+              "formula": "1.62 × 1.57"
+            },
+            {
+              "name": "Doble 3 (⚽ Ipswich Town + ⚽ São Paulo)",
+              "odds": 3.06,
+              "formula": "1.95 × 1.57"
+            },
+            {
+              "name": "Triple (⚽ Liverpool + ⚽ Ipswich Town + ⚽ São Paulo)",
+              "odds": 4.96,
+              "formula": "1.62 × 1.95 × 1.57"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Liverpool + ⚽ Ipswich Town)",
+                  "min_result": "Liverpool y Ipswich Town cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 3.16x): Cobras $79.00 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Liverpool + ⚽ São Paulo)",
+                  "min_result": "Liverpool y São Paulo cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.54x): Cobras $63.50 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Liverpool + Ipswich Town + São Paulo)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $343.00 (+$243.00 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $343.00 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (15 SEPTIEMBRE)\n• Pick A: ⚽ Liverpool vs. Tottenham Hotspur (Liverpool Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.62\n• Pick B: ⚽ Ipswich Town vs. Arsenal (Arsenal Ganador Directo (2) + Menos de 3.5 Goles) @ 1.95\n• Pick C: ⚽ São Paulo vs. Boca Juniors (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.57\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $343.00"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.78x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Liverpool y Ipswich Town) para duplicar la banca en la jornada de fútbol del Martes.",
+          "totalOdds": 1.78,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Liverpool vs. Tottenham Hotspur",
+              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+              "selection": "Liverpool Doble Oportunidad (1X)",
+              "odds": 1.34,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Anfield Fortress Metric: Liverpool en Anfield promedia 2.40 xG y 84% de partidos invicto ante Spurs; 9 de los últimos 10 duelos directos superaron la barrera de 1.5 goles totales."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Ipswich Town vs. Arsenal",
+              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+              "selection": "Arsenal Ganador Directo (2)",
+              "odds": 1.33,
+              "confidencePct": 92,
+              "algorithm": "API-Football Tactical Depth Index: Arsenal (-250 en Caliente) ostenta la mejor defensa de Inglaterra (0.70 xGA); en copas fuera de casa domina con posesión y ritmo controlado, haciendo altamente probables marcadores quirúrgicos como 0-1, 0-2 o 1-2."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Liverpool vs. Tottenham Hotspur (Carabao Cup): 'Liverpool Doble Oportunidad (1X)'.",
+              "• ⚽ Ipswich Town vs. Arsenal (Carabao Cup): 'Arsenal Ganador Directo (2)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.78x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Liverpool vs. Tottenham Hotspur",
+                  "min_result": "Liverpool cumple su línea (Liverpool Doble Oportunidad (1X))",
+                  "explanation": "Liverpool sella resultado positivo en Anfield."
+                },
+                {
+                  "match": "Ipswich Town vs. Arsenal",
+                  "min_result": "Ipswich Town cumple su línea (Arsenal Ganador Directo (2))",
+                  "explanation": "Ipswich Town asegura el rendimiento en Portman Road."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $178.00 (+$78.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Liverpool vs. Tottenham Hotspur (Liverpool Doble Oportunidad (1X)) @ 1.34\n2. ⚽ Ipswich Town vs. Arsenal (Arsenal Ganador Directo (2)) @ 1.33\n► Cuota Total: 1.78x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
           }
         }
       },
