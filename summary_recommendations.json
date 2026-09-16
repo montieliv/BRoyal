@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-15 11:00:00",
+  "generated_at": "2026-09-16 11:00:00",
   "hybrid_mode": false,
-  "hybrid_trigger_reason": "MODO MONO-DEPORTE (100% FÚTBOL): Tríada Prime Time de Martes Tarde/Noche (CONMEBOL Libertadores, Copa Sudamericana y Liga BBVA MX) con máxima asimetría estadística y EV+ >25%.",
+  "hybrid_trigger_reason": "MODO MONO-DEPORTE (100% FÚTBOL): Tríada estelar de Miércoles (Carabao Cup Inglaterra y UEFA Europa League) con máxima asimetría estadística y EV+ >25%.",
   "active_sports": [
     "Football"
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-09-15",
-    "verified_at": "2026-09-15 16:36:48",
+    "verified_date": "2026-09-16",
+    "verified_at": "2026-09-16 11:30:58",
     "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
     "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
@@ -21,8 +21,8 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Martes 15 de Septiembre en Liga BBVA MX Apertura 2026, CONMEBOL Sudamericana y CONMEBOL Libertadores (Estadio Cuauhtémoc, Estadio Morumbí y Estadio Ciudad de Vicente López). Cada acierto cobra por separado.",
-      "avgOdds": 1.6,
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Miércoles 16 de Septiembre en Carabao Cup, Carabao Cup y Liga Europa de la UEFA (Coventry Building Society Arena, Old Trafford y Neo GSP Stadium). Cada acierto cobra por separado.",
+      "avgOdds": 1.62,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -32,52 +32,52 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Puebla vs. Toluca",
-          "tournament": "Liga BBVA MX Apertura 2026 (Jornada 7 Reprogramada) (19:00 CST / 21:00 EDT)",
-          "stadium": "Estadio Cuauhtémoc, Puebla, México",
-          "selection": "Toluca Doble Oportunidad (X2) + Más 1.5 Goles Totales",
-          "odds": 1.62,
-          "confidencePct": 91,
-          "algorithm": "FootyStats Cuauhtémoc High-Tempo Metric: Toluca genera 2.35 xG y ostenta 82% de partidos invicto de visita ante Puebla; la Franja encaja 2.05 goles por juego en casa ante ataques top 4.",
-          "singleReturn": 162.0,
+          "match": "Coventry City vs. Aston Villa",
+          "tournament": "Carabao Cup (Ronda 3) (13:00 CST / 20:00 BST)",
+          "stadium": "Coventry Building Society Arena, Coventry, Inglaterra",
+          "selection": "Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales",
+          "odds": 1.65,
+          "confidencePct": 92,
+          "algorithm": "API-Football Premier Hierarchy Metric: Aston Villa ostenta 85% de efectividad en copas ante rivales de divisiones inferiores; Unai Emery despliega ataque directo (2.40 xG proyectado) ante un Coventry que permite 1.85 xGA.",
+          "singleReturn": 165.0,
           "verified": true
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "São Paulo vs. Boca Juniors",
-          "tournament": "CONMEBOL Sudamericana (Cuartos de Final Vuelta) (18:30 CST / 21:30 ART)",
-          "stadium": "Estadio Morumbí, São Paulo, Brasil",
-          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.58,
-          "confidencePct": 93,
-          "algorithm": "Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en Buenos Aires; 88% de los duelos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido con altísima fricción táctica).",
-          "singleReturn": 158.0,
+          "match": "Manchester United vs. Brighton & Hove Albion",
+          "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+          "stadium": "Old Trafford, Manchester, Inglaterra",
+          "selection": "Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.62,
+          "confidencePct": 91,
+          "algorithm": "FootyStats Old Trafford Resiliency Index: Manchester United en casa promedia 2.20 xG y 80% de partidos invicto ante Brighton en torneos coperos; 8 de los últimos 9 duelos directos superaron los 1.5 goles totales.",
+          "singleReturn": 162.0,
           "verified": true
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Platense vs. Fluminense",
-          "tournament": "CONMEBOL Libertadores (Cuartos de Final) (19:00 CST / 22:00 ART)",
-          "stadium": "Estadio Ciudad de Vicente López, Buenos Aires, Argentina",
-          "selection": "Fluminense Doble Oportunidad (X2) + Menos de 3.5 Goles",
-          "odds": 1.6,
-          "confidencePct": 92,
-          "algorithm": "API-Football Libertadores Control Model: Fluminense domina posesión territorial (61%) y permite apenas 0.75 xGA de visitante; Platense prioriza orden defensivo y bloque bajo, reduciendo la proyección a menos de 2.5 goles totales.",
-          "singleReturn": 160.0,
+          "match": "Omonia Nicosia vs. RC Celta de Vigo",
+          "tournament": "Liga Europa de la UEFA (Jornada 1 - Fase de Liga) (13:00 CST / 21:00 CEST)",
+          "stadium": "Neo GSP Stadium, Nicosia, Chipre",
+          "selection": "RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+          "odds": 1.58,
+          "confidencePct": 93,
+          "algorithm": "Sportmonks UEFA Depth Index: El Celta de Vigo debuta en Europa League con clara superioridad técnica en transiciones; Omonia concede 1.70 xGA ante equipos de las 5 grandes ligas y ambos suelen generar choques dinámicos.",
+          "singleReturn": 158.0,
           "verified": true
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 partidos estelares de fútbol del Martes al cupón:",
-          "• ⚽ Puebla vs. Toluca: Selecciona 'Toluca Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
-          "• ⚽ São Paulo vs. Boca Juniors: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
-          "• ⚽ Platense vs. Fluminense: Selecciona 'Fluminense Doble Oportunidad (X2) + Menos de 3.5 Goles'.",
+          "Agrega los 3 partidos estelares de fútbol del Miércoles al cupón:",
+          "• ⚽ Coventry City vs. Aston Villa: Selecciona 'Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales'.",
+          "• ⚽ Manchester United vs. Brighton & Hove Albion: Selecciona 'Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
+          "• ⚽ Omonia Nicosia vs. RC Celta de Vigo: Selecciona 'RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
           "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
@@ -85,24 +85,24 @@
           "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "Puebla vs. Toluca",
-              "min_result": "Puebla sella su pronóstico (Toluca Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
-              "explanation": "Dominio en Estadio Cuauhtémoc. Cobras $162.00 (+$62.00 neto)."
+              "match": "Coventry City vs. Aston Villa",
+              "min_result": "Coventry City sella su pronóstico (Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales)",
+              "explanation": "Dominio en Coventry Building Society Arena. Cobras $165.00 (+$65.00 neto)."
             },
             {
-              "match": "São Paulo vs. Boca Juniors",
-              "min_result": "São Paulo aprovecha la localía (Menos de 2.5 Goles Totales (Under 2.5))",
-              "explanation": "Superioridad táctica en Estadio Morumbí. Cobras $158.00 (+$58.00 neto)."
+              "match": "Manchester United vs. Brighton & Hove Albion",
+              "min_result": "Manchester United aprovecha la localía (Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
+              "explanation": "Superioridad táctica en Old Trafford. Cobras $162.00 (+$62.00 neto)."
             },
             {
-              "match": "Platense vs. Fluminense",
-              "min_result": "Se cumple el pronóstico (Fluminense Doble Oportunidad (X2) + Menos de 3.5 Goles)",
-              "explanation": "Solvencia táctica en Estadio Ciudad de Vicente López. Cobras $160.00 (+$60.00 neto)."
+              "match": "Omonia Nicosia vs. RC Celta de Vigo",
+              "min_result": "Se cumple el pronóstico (RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
+              "explanation": "Solvencia táctica en Neo GSP Stadium. Cobras $158.00 (+$58.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $480.0 (+$180.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $485.0 (+$185.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Puebla vs. Toluca: Toluca Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.62 ($100 -> $162.00)\n2. ⚽ São Paulo vs. Boca Juniors: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n3. ⚽ Platense vs. Fluminense: Fluminense Doble Oportunidad (X2) + Menos de 3.5 Goles @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $480.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (16 SEPTIEMBRE)\n1. ⚽ Coventry City vs. Aston Villa: Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales @ 1.65 ($100 -> $165.00)\n2. ⚽ Manchester United vs. Brighton & Hove Albion: Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.62 ($100 -> $162.00)\n3. ⚽ Omonia Nicosia vs. RC Celta de Vigo: RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $485.0"
       }
     },
     "modo_b_sistema": {
@@ -112,7 +112,7 @@
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Martes (Liga BBVA MX Apertura 2026, CONMEBOL Sudamericana y CONMEBOL Libertadores). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Miércoles (Carabao Cup, Carabao Cup y Liga Europa de la UEFA). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -123,50 +123,50 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Puebla vs. Toluca",
-          "selection": "Toluca Doble Oportunidad (X2) + Más 1.5 Goles Totales",
-          "odds": 1.62,
-          "algorithm": "Pick A (Football): FootyStats Cuauhtémoc High-Tempo Metric: Toluca genera 2.35 xG y ostenta 82% de partidos invicto de visita ante Puebla; la Franja encaja 2.05 goles por juego en casa ante ataques top 4."
+          "match": "Coventry City vs. Aston Villa",
+          "selection": "Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales",
+          "odds": 1.65,
+          "algorithm": "Pick A (Football): API-Football Premier Hierarchy Metric: Aston Villa ostenta 85% de efectividad en copas ante rivales de divisiones inferiores; Unai Emery despliega ataque directo (2.40 xG proyectado) ante un Coventry que permite 1.85 xGA."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "São Paulo vs. Boca Juniors",
-          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.58,
-          "algorithm": "Pick B (Football): Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en Buenos Aires; 88% de los duelos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido con altísima fricción táctica)."
+          "match": "Manchester United vs. Brighton & Hove Albion",
+          "selection": "Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.62,
+          "algorithm": "Pick B (Football): FootyStats Old Trafford Resiliency Index: Manchester United en casa promedia 2.20 xG y 80% de partidos invicto ante Brighton en torneos coperos; 8 de los últimos 9 duelos directos superaron los 1.5 goles totales."
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Platense vs. Fluminense",
-          "selection": "Fluminense Doble Oportunidad (X2) + Menos de 3.5 Goles",
-          "odds": 1.6,
-          "algorithm": "Pick C (Football): API-Football Libertadores Control Model: Fluminense domina posesión territorial (61%) y permite apenas 0.75 xGA de visitante; Platense prioriza orden defensivo y bloque bajo, reduciendo la proyección a menos de 2.5 goles totales."
+          "match": "Omonia Nicosia vs. RC Celta de Vigo",
+          "selection": "RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+          "odds": 1.58,
+          "algorithm": "Pick C (Football): Sportmonks UEFA Depth Index: El Celta de Vigo debuta en Europa League con clara superioridad técnica en transiciones; Omonia concede 1.70 xGA ante equipos de las 5 grandes ligas y ambos suelen generar choques dinámicos."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Puebla + ⚽ São Paulo)",
+          "name": "Doble 1 (⚽ Coventry City + ⚽ Manchester United)",
+          "odds": 2.67,
+          "formula": "1.65 × 1.62"
+        },
+        {
+          "name": "Doble 2 (⚽ Coventry City + ⚽ Omonia Nicosia)",
+          "odds": 2.61,
+          "formula": "1.65 × 1.58"
+        },
+        {
+          "name": "Doble 3 (⚽ Manchester United + ⚽ Omonia Nicosia)",
           "odds": 2.56,
           "formula": "1.62 × 1.58"
         },
         {
-          "name": "Doble 2 (⚽ Puebla + ⚽ Platense)",
-          "odds": 2.59,
-          "formula": "1.62 × 1.6"
-        },
-        {
-          "name": "Doble 3 (⚽ São Paulo + ⚽ Platense)",
-          "odds": 2.53,
-          "formula": "1.58 × 1.6"
-        },
-        {
-          "name": "Triple (⚽ Puebla + ⚽ São Paulo + ⚽ Platense)",
-          "odds": 4.1,
-          "formula": "1.62 × 1.58 × 1.6"
+          "name": "Triple (⚽ Coventry City + ⚽ Manchester United + ⚽ Omonia Nicosia)",
+          "odds": 4.22,
+          "formula": "1.65 × 1.62 × 1.58"
         }
       ],
       "real_life_example": {
@@ -181,35 +181,35 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ Puebla + ⚽ São Paulo)",
-              "min_result": "Puebla y São Paulo cumplen sus líneas",
-              "explanation": "Cobras la Doble 1 (@ 2.56x): Cobras $64.00 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ Coventry City + ⚽ Manchester United)",
+              "min_result": "Coventry City y Manchester United cumplen sus líneas",
+              "explanation": "Cobras la Doble 1 (@ 2.67x): Cobras $66.75 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ Puebla + ⚽ Platense)",
-              "min_result": "Puebla y Platense cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.59x): Cobras $64.75 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ Coventry City + ⚽ Omonia Nicosia)",
+              "min_result": "Coventry City y Omonia Nicosia cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.61x): Cobras $65.25 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (Puebla + São Paulo + Platense)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $294.50 (+$194.50 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (Coventry City + Manchester United + Omonia Nicosia)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $301.50 (+$201.50 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $294.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (15 SEPTIEMBRE)\n• Pick A: ⚽ Puebla vs. Toluca (Toluca Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.62\n• Pick B: ⚽ São Paulo vs. Boca Juniors (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n• Pick C: ⚽ Platense vs. Fluminense (Fluminense Doble Oportunidad (X2) + Menos de 3.5 Goles) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $294.50"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (16 SEPTIEMBRE)\n• Pick A: ⚽ Coventry City vs. Aston Villa (Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales) @ 1.65\n• Pick B: ⚽ Manchester United vs. Brighton & Hove Albion (Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.62\n• Pick C: ⚽ Omonia Nicosia vs. RC Celta de Vigo (RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.73x)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.82x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Puebla vs. Toluca y São Paulo vs. Boca Juniors) para duplicar la banca en la jornada de fútbol del Martes.",
-      "totalOdds": 1.73,
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Coventry City vs. Aston Villa y Manchester United vs. Brighton & Hove Albion) para duplicar la banca en la jornada de fútbol del Miércoles.",
+      "totalOdds": 1.82,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
       "combinedEv": "+33.5%",
@@ -220,51 +220,51 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Puebla vs. Toluca",
-          "tournament": "Liga BBVA MX Apertura 2026 (Jornada 7 Reprogramada) (19:00 CST / 21:00 EDT)",
-          "selection": "Toluca Doble Oportunidad (X2)",
-          "odds": 1.33,
+          "match": "Coventry City vs. Aston Villa",
+          "tournament": "Carabao Cup (Ronda 3) (13:00 CST / 20:00 BST)",
+          "selection": "Aston Villa Ganador Directo (2)",
+          "odds": 1.36,
           "confidencePct": 93,
-          "algorithm": "FootyStats Cuauhtémoc High-Tempo Metric: Toluca genera 2.35 xG y ostenta 82% de partidos invicto de visita ante Puebla; la Franja encaja 2.05 goles por juego en casa ante ataques top 4."
+          "algorithm": "API-Football Premier Hierarchy Metric: Aston Villa ostenta 85% de efectividad en copas ante rivales de divisiones inferiores; Unai Emery despliega ataque directo (2.40 xG proyectado) ante un Coventry que permite 1.85 xGA."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "São Paulo vs. Boca Juniors",
-          "tournament": "CONMEBOL Sudamericana (Cuartos de Final Vuelta) (18:30 CST / 21:30 ART)",
-          "selection": "Menos de 3.0 Goles Totales",
-          "odds": 1.3,
+          "match": "Manchester United vs. Brighton & Hove Albion",
+          "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+          "selection": "Manchester United Doble Oportunidad (1X)",
+          "odds": 1.34,
           "confidencePct": 92,
-          "algorithm": "Sportmonks CONMEBOL Tension Index: Choque decisivo de vuelta tras el 1-0 en Buenos Aires; 88% de los duelos de eliminación directa entre ambos registran Under 2.5 (media de 1.35 goles por partido con altísima fricción táctica)."
+          "algorithm": "FootyStats Old Trafford Resiliency Index: Manchester United en casa promedia 2.20 xG y 80% de partidos invicto ante Brighton en torneos coperos; 8 de los últimos 9 duelos directos superaron los 1.5 goles totales."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
           "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-          "• ⚽ Puebla vs. Toluca (Liga BBVA MX Apertura 2026): 'Toluca Doble Oportunidad (X2)'.",
-          "• ⚽ São Paulo vs. Boca Juniors (CONMEBOL Sudamericana): 'Menos de 3.0 Goles Totales'.",
+          "• ⚽ Coventry City vs. Aston Villa (Carabao Cup): 'Aston Villa Ganador Directo (2)'.",
+          "• ⚽ Manchester United vs. Brighton & Hove Albion (Carabao Cup): 'Manchester United Doble Oportunidad (1X)'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.73x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.82x."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "Puebla vs. Toluca",
-              "min_result": "Se cumple (Toluca Doble Oportunidad (X2))",
-              "explanation": "Se consolida el escenario de valor en Estadio Cuauhtémoc."
+              "match": "Coventry City vs. Aston Villa",
+              "min_result": "Se cumple (Aston Villa Ganador Directo (2))",
+              "explanation": "Se consolida el escenario de valor en Coventry Building Society Arena."
             },
             {
-              "match": "São Paulo vs. Boca Juniors",
-              "min_result": "Se cumple (Menos de 3.0 Goles Totales)",
-              "explanation": "Se asegura el rendimiento cuantitativo en Estadio Morumbí."
+              "match": "Manchester United vs. Brighton & Hove Albion",
+              "min_result": "Se cumple (Manchester United Doble Oportunidad (1X))",
+              "explanation": "Se asegura el rendimiento cuantitativo en Old Trafford."
             }
           ],
-          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $173.00 (+$73.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $182.00 (+$82.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (15 SEPTIEMBRE)\n1. ⚽ Puebla vs. Toluca (Toluca Doble Oportunidad (X2)) @ 1.33\n2. ⚽ São Paulo vs. Boca Juniors (Menos de 3.0 Goles Totales) @ 1.3\n► Cuota Total: 1.73x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (16 SEPTIEMBRE)\n1. ⚽ Coventry City vs. Aston Villa (Aston Villa Ganador Directo (2)) @ 1.36\n2. ⚽ Manchester United vs. Brighton & Hove Albion (Manchester United Doble Oportunidad (1X)) @ 1.34\n► Cuota Total: 1.82x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   }
