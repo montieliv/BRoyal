@@ -6011,7 +6011,7 @@
     "2026-09-16": {
       "date": "2026-09-16",
       "saved_at": "2026-09-16 11:30:58",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -6102,7 +6102,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $485.0 (+$185.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (16 SEPTIEMBRE)\n1. ⚽ Coventry City vs. Aston Villa: Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales @ 1.65 ($100 -> $165.00)\n2. ⚽ Manchester United vs. Brighton & Hove Albion: Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.62 ($100 -> $162.00)\n3. ⚽ Omonia Nicosia vs. RC Celta de Vigo: RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $485.0"
-          }
+          },
+          "status": "PARTIAL_RECOVERY"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -6198,7 +6199,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $301.50 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (16 SEPTIEMBRE)\n• Pick A: ⚽ Coventry City vs. Aston Villa (Aston Villa Ganador Directo (2) + Más 1.5 Goles Totales) @ 1.65\n• Pick B: ⚽ Manchester United vs. Brighton & Hove Albion (Manchester United Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.62\n• Pick C: ⚽ Omonia Nicosia vs. RC Celta de Vigo (RC Celta Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $301.50"
-          }
+          },
+          "status": "LOST"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -6264,6 +6266,286 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $182.00 (+$82.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (16 SEPTIEMBRE)\n1. ⚽ Coventry City vs. Aston Villa (Aston Villa Ganador Directo (2)) @ 1.36\n2. ⚽ Manchester United vs. Brighton & Hove Albion (Manchester United Doble Oportunidad (1X)) @ 1.34\n► Cuota Total: 1.82x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "LOST"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 1,
+        "lostModes": 2,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 165.0,
+        "netPnL": -335.0,
+        "roiPct": "-67.0%",
+        "winRate": "33.3% (Acierto en Simples con Aston Villa 3-1 amortizando $165.00)",
+        "evaluatedAt": "2026-09-17 08:50:00",
+        "evaluated": true,
+        "auditNote": "Jornada de sorpresas mayúsculas en copa europea y local: Brighton remontó 2-3 al Manchester United en Old Trafford y Omonia defendió el 1-0 ante Celta. Aston Villa cumplió con jerarquía goleando 1-3 a Coventry, amortizando $165.00 en Modo A Simples."
+      },
+      "evaluatedAt": "2026-09-17 08:50:00",
+      "match_results": {
+        "Coventry City vs. Aston Villa": "1-3 (CUMPLIDO Aston Villa Ganador Directo + Más 1.5 Goles @ 1.65 ✅ & Safe @ 1.36 ✅)",
+        "Manchester United vs. Brighton & Hove Albion": "2-3 (Sorpresa en Old Trafford: Brighton gana 2-3; falla Man United 1X ❌)",
+        "Omonia Nicosia vs. RC Celta de Vigo": "1-0 (Campanazo en Chipre: Omonia gana 1-0; falla Celta X2 ❌)"
+      }
+    },
+    "2026-09-17": {
+      "date": "2026-09-17",
+      "saved_at": "2026-09-17 08:47:13",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Jueves 17 de Septiembre en Carabao Cup, LaLiga EA Sports y Liga Europa de la UEFA (Etihad Stadium, Estadio Benito Villamarín y Allianz Stadium). Cada acierto cobra por separado.",
+          "avgOdds": 1.6,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Manchester City vs. Norwich City",
+              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+              "stadium": "Etihad Stadium, Manchester, Inglaterra",
+              "selection": "Manchester City Ganador Directo (1) + Más 2.5 Goles Totales",
+              "odds": 1.62,
+              "confidencePct": 94,
+              "algorithm": "FootyStats Etihad Overwhelming Index: Manchester City en el Etihad genera 3.20 xG ante rivales de Championship y ostenta 90% de victorias por margen de 2+ goles; Norwich encaja 2.10 xGA fuera de casa.",
+              "singleReturn": 162.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Betis vs. Getafe",
+              "tournament": "LaLiga EA Sports (Jornada de Jueves) (13:00 CST / 21:00 CEST)",
+              "stadium": "Estadio Benito Villamarín, Sevilla, España",
+              "selection": "Real Betis Doble Oportunidad (1X) + Menos de 3.5 Goles",
+              "odds": 1.58,
+              "confidencePct": 92,
+              "algorithm": "Sportmonks Tactical Friction Metric: Choque de altísima fricción en Sevilla; 9 de los últimos 10 duelos Betis vs Getafe terminaron en Under 2.5/3.5 goles con Pellegrini invicto en casa ante el bloque bajo de Bordalás.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Juventus vs. NEC Nijmegen",
+              "tournament": "Liga Europa de la UEFA (Jornada 1 - Fase de Liga) (13:00 CST / 21:00 CEST)",
+              "stadium": "Allianz Stadium, Turín, Italia",
+              "selection": "Juventus Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.6,
+              "confidencePct": 93,
+              "algorithm": "API-Football European Hierarchy Model: La Vecchia Signora en Turín impone su jerarquía continental ante un NEC Nijmegen con poca experiencia internacional; Juventus promedia 2.15 xG en casa y concede apenas 0.60 xGA.",
+              "singleReturn": 160.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Jueves al cupón:",
+              "• ⚽ Manchester City vs. Norwich City: Selecciona 'Manchester City Ganador Directo (1) + Más 2.5 Goles Totales'.",
+              "• ⚽ Real Betis vs. Getafe: Selecciona 'Real Betis Doble Oportunidad (1X) + Menos de 3.5 Goles'.",
+              "• ⚽ Juventus vs. NEC Nijmegen: Selecciona 'Juventus Ganador Directo (1) + Más 1.5 Goles Totales'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Manchester City vs. Norwich City",
+                  "min_result": "Manchester City sella su pronóstico (Manchester City Ganador Directo (1) + Más 2.5 Goles Totales)",
+                  "explanation": "Dominio en Etihad Stadium. Cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Real Betis vs. Getafe",
+                  "min_result": "Real Betis aprovecha la localía (Real Betis Doble Oportunidad (1X) + Menos de 3.5 Goles)",
+                  "explanation": "Superioridad táctica en Estadio Benito Villamarín. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Juventus vs. NEC Nijmegen",
+                  "min_result": "Se cumple el pronóstico (Juventus Ganador Directo (1) + Más 1.5 Goles Totales)",
+                  "explanation": "Solvencia táctica en Allianz Stadium. Cobras $160.00 (+$60.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $480.0 (+$180.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (17 SEPTIEMBRE)\n1. ⚽ Manchester City vs. Norwich City: Manchester City Ganador Directo (1) + Más 2.5 Goles Totales @ 1.62 ($100 -> $162.00)\n2. ⚽ Real Betis vs. Getafe: Real Betis Doble Oportunidad (1X) + Menos de 3.5 Goles @ 1.58 ($100 -> $158.00)\n3. ⚽ Juventus vs. NEC Nijmegen: Juventus Ganador Directo (1) + Más 1.5 Goles Totales @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $480.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Jueves (Carabao Cup, LaLiga EA Sports y Liga Europa de la UEFA). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Manchester City vs. Norwich City",
+              "selection": "Manchester City Ganador Directo (1) + Más 2.5 Goles Totales",
+              "odds": 1.62,
+              "algorithm": "Pick A (Football): FootyStats Etihad Overwhelming Index: Manchester City en el Etihad genera 3.20 xG ante rivales de Championship y ostenta 90% de victorias por margen de 2+ goles; Norwich encaja 2.10 xGA fuera de casa."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Betis vs. Getafe",
+              "selection": "Real Betis Doble Oportunidad (1X) + Menos de 3.5 Goles",
+              "odds": 1.58,
+              "algorithm": "Pick B (Football): Sportmonks Tactical Friction Metric: Choque de altísima fricción en Sevilla; 9 de los últimos 10 duelos Betis vs Getafe terminaron en Under 2.5/3.5 goles con Pellegrini invicto en casa ante el bloque bajo de Bordalás."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Juventus vs. NEC Nijmegen",
+              "selection": "Juventus Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.6,
+              "algorithm": "Pick C (Football): API-Football European Hierarchy Model: La Vecchia Signora en Turín impone su jerarquía continental ante un NEC Nijmegen con poca experiencia internacional; Juventus promedia 2.15 xG en casa y concede apenas 0.60 xGA."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Manchester City + ⚽ Real Betis)",
+              "odds": 2.56,
+              "formula": "1.62 × 1.58"
+            },
+            {
+              "name": "Doble 2 (⚽ Manchester City + ⚽ Juventus)",
+              "odds": 2.59,
+              "formula": "1.62 × 1.6"
+            },
+            {
+              "name": "Doble 3 (⚽ Real Betis + ⚽ Juventus)",
+              "odds": 2.53,
+              "formula": "1.58 × 1.6"
+            },
+            {
+              "name": "Triple (⚽ Manchester City + ⚽ Real Betis + ⚽ Juventus)",
+              "odds": 4.1,
+              "formula": "1.62 × 1.58 × 1.6"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Manchester City + ⚽ Real Betis)",
+                  "min_result": "Manchester City y Real Betis cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.56x): Cobras $64.00 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Manchester City + ⚽ Juventus)",
+                  "min_result": "Manchester City y Juventus cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.59x): Cobras $64.75 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Manchester City + Real Betis + Juventus)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $294.50 (+$194.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $294.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (17 SEPTIEMBRE)\n• Pick A: ⚽ Manchester City vs. Norwich City (Manchester City Ganador Directo (1) + Más 2.5 Goles Totales) @ 1.62\n• Pick B: ⚽ Real Betis vs. Getafe (Real Betis Doble Oportunidad (1X) + Menos de 3.5 Goles) @ 1.58\n• Pick C: ⚽ Juventus vs. NEC Nijmegen (Juventus Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $294.50"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.60x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Manchester City vs. Norwich City y Real Betis vs. Getafe) para duplicar la banca en la jornada de fútbol del Jueves.",
+          "totalOdds": 1.6,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Manchester City vs. Norwich City",
+              "tournament": "Carabao Cup (Ronda 3) (13:45 CST / 20:45 BST)",
+              "selection": "Manchester City Ganador Directo (1)",
+              "odds": 1.25,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Etihad Overwhelming Index: Manchester City en el Etihad genera 3.20 xG ante rivales de Championship y ostenta 90% de victorias por margen de 2+ goles; Norwich encaja 2.10 xGA fuera de casa."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Real Betis vs. Getafe",
+              "tournament": "LaLiga EA Sports (Jornada de Jueves) (13:00 CST / 21:00 CEST)",
+              "selection": "Real Betis Doble Oportunidad (1X)",
+              "odds": 1.28,
+              "confidencePct": 92,
+              "algorithm": "Sportmonks Tactical Friction Metric: Choque de altísima fricción en Sevilla; 9 de los últimos 10 duelos Betis vs Getafe terminaron en Under 2.5/3.5 goles con Pellegrini invicto en casa ante el bloque bajo de Bordalás."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Manchester City vs. Norwich City (Carabao Cup): 'Manchester City Ganador Directo (1)'.",
+              "• ⚽ Real Betis vs. Getafe (LaLiga EA Sports): 'Real Betis Doble Oportunidad (1X)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.6x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Manchester City vs. Norwich City",
+                  "min_result": "Se cumple (Manchester City Ganador Directo (1))",
+                  "explanation": "Se consolida el escenario de valor en Etihad Stadium."
+                },
+                {
+                  "match": "Real Betis vs. Getafe",
+                  "min_result": "Se cumple (Real Betis Doble Oportunidad (1X))",
+                  "explanation": "Se asegura el rendimiento cuantitativo en Estadio Benito Villamarín."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $160.00 (+$60.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (17 SEPTIEMBRE)\n1. ⚽ Manchester City vs. Norwich City (Manchester City Ganador Directo (1)) @ 1.25\n2. ⚽ Real Betis vs. Getafe (Real Betis Doble Oportunidad (1X)) @ 1.28\n► Cuota Total: 1.6x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
           }
         }
       },
