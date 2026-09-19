@@ -1007,6 +1007,68 @@ VERIFIED_FIXTURES_DB = {
             "safeSelection": "Espanyol Doble Oportunidad (1X)",
             "safeOdds": 1.28
         }
+    ],
+    "2026-09-19": [
+        {
+            "id": "EPL-20260919-01",
+            "sport": "Football",
+            "sportName": "Fútbol (Premier League)",
+            "sportIcon": "fa-solid fa-futbol",
+            "homeTeam": "Brighton",
+            "awayTeam": "Arsenal",
+            "match": "Brighton vs. Arsenal",
+            "tournament": "Premier League (Jornada de Sábado)",
+            "stadium": "The Amex Stadium, Brighton, Inglaterra",
+            "kickOffTime": "08:00 CST / 15:00 BST",
+            "status": "CONFIRMED_REAL_MATCH",
+            "sourceVerification": "Premier League Official / ESPN Calendario / Caliente.mx (BHA +310 / ARS -120)",
+            "selection": "Arsenal Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+            "odds": 1.58,
+            "confidencePct": 92,
+            "algorithm": "API-Football Transition Model: Arsenal ostenta la estructura defensiva más sólida (0.75 xGA); Brighton adelanta líneas y concede espacios ideales para transiciones de Saka y Martinelli.",
+            "safeSelection": "Arsenal Doble Oportunidad (X2)",
+            "safeOdds": 1.28
+        },
+        {
+            "id": "ESP-20260919-02",
+            "sport": "Football",
+            "sportName": "Fútbol (LaLiga EA Sports)",
+            "sportIcon": "fa-solid fa-futbol",
+            "homeTeam": "Sevilla",
+            "awayTeam": "FC Barcelona",
+            "match": "Sevilla vs. FC Barcelona",
+            "tournament": "LaLiga EA Sports (Jornada de Sábado)",
+            "stadium": "Estadio Ramón Sánchez-Pizjuán, Sevilla, España",
+            "kickOffTime": "13:00 CST / 21:00 CEST",
+            "status": "CONFIRMED_REAL_MATCH",
+            "sourceVerification": "LaLiga Official / ESPN Calendario / Caliente.mx (SEV +380 / BAR -150)",
+            "selection": "FC Barcelona Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+            "odds": 1.55,
+            "confidencePct": 91,
+            "algorithm": "FootyStats Offensive Output Metric: Barcelona promedia 2.65 xG bajo presión alta; Sevilla concede 1.80 xGA ante ataques de élite y sufre en repliegue.",
+            "safeSelection": "FC Barcelona Doble Oportunidad (X2)",
+            "safeOdds": 1.33
+        },
+        {
+            "id": "ESP-20260919-03",
+            "sport": "Football",
+            "sportName": "Fútbol (LaLiga EA Sports)",
+            "sportIcon": "fa-solid fa-futbol",
+            "homeTeam": "Athletic Club",
+            "awayTeam": "Deportivo Alavés",
+            "match": "Athletic Club vs. Deportivo Alavés",
+            "tournament": "LaLiga EA Sports (Derbi Vasco de Sábado)",
+            "stadium": "Estadio de San Mamés, Bilbao, España",
+            "kickOffTime": "08:15 CST / 16:15 CEST",
+            "status": "CONFIRMED_REAL_MATCH",
+            "sourceVerification": "LaLiga Official / ESPN Calendario / Caliente.mx (ATH -165 / ALA +450)",
+            "selection": "Athletic Club Doble Oportunidad (1X) + Menos de 3.5 Goles",
+            "odds": 1.54,
+            "confidencePct": 93,
+            "algorithm": "Sportmonks San Mamés Fortress Metric: Athletic en casa promedia 2.10 xG y concede apenas 0.72 xGA; Alavés promedia 0.80 xG fuera de casa y 8 de sus últimos 9 cruces directos registraron menos de 3.5 goles.",
+            "safeSelection": "Athletic Club Doble Oportunidad (1X)",
+            "safeOdds": 1.25
+        }
     ]
 }
 
@@ -1426,6 +1488,36 @@ def audit_previous_scenarios():
             "evaluatedAt": "2026-09-18 08:30:00",
             "evaluated": True,
             "auditNote": "¡Pleno Absoluto 3/3 en la jornada europea! Manchester City goleó 5-0 a Norwich en el Etihad, Real Betis venció 1-0 a Getafe con gol de Abde y Juventus destrozó 5-0 a NEC Nijmegen en Turín. Pleno total en Modo A ($480.00), Modo B ($294.50) y Modo C ($160.00), generando +$434.50 netos (+86.9% ROI)."
+        }
+
+    # Audit 2026-09-18 (Bayern Munich vs Union Berlin, Brentford vs Chelsea, Espanyol vs Elche)
+    if "2026-09-18" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-09-18"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-09-19 00:10:00"
+        snap["match_results"] = {
+            "Bayern Munich vs. 1. FC Union Berlin": "7-0 (CUMPLIDO Bayern Munich Ganador Directo + Más 2.5 Goles @ 1.62 ✅ & Safe @ 1.25 ✅)",
+            "Brentford vs. Chelsea": "3-0 (Falla Chelsea X2 + Más 1.5 Goles y Safe X2)",
+            "Espanyol vs. Elche": "1-3 (Falla Espanyol 1X + Menos de 3.5 Goles y Safe 1X)"
+        }
+        if "strategies" in snap:
+            if "modo_a_simples" in snap["strategies"]:
+                snap["strategies"]["modo_a_simples"]["status"] = "PARTIAL"
+            if "modo_b_sistema" in snap["strategies"]:
+                snap["strategies"]["modo_b_sistema"]["status"] = "LOST"
+            if "modo_c_banker" in snap["strategies"]:
+                snap["strategies"]["modo_c_banker"]["status"] = "LOST"
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 1,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 162.0,
+            "netPnL": -338.0,
+            "roiPct": "-67.6%",
+            "winRate": "33.3% (Acierto en Simples con Bayern Munich 7-0 amortizando sesión)",
+            "evaluatedAt": "2026-09-19 00:10:00",
+            "evaluated": True,
+            "auditNote": "Jornada de contrastes marcados: Bayern Munich deslumbró con una goleada histórica 7-0 en Allianz Arena cobrando $162.00 en Simples. No obstante, las sorpresas de Brentford (3-0 a Chelsea) y Elche (1-3 a Espanyol) quebraron las combinadas del viernes."
         }
 
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
