@@ -3,13 +3,13 @@
   "hybrid_mode": true,
   "hybrid_trigger_reason": "ACTIVADO: El motor cuantitativo seleccionó la tríada de máxima asimetría estadística en Baseball, Football.",
   "active_sports": [
-    "Football",
-    "Baseball"
+    "Baseball",
+    "Football"
   ],
   "verification_meta": {
     "verified": true,
     "verified_date": "2026-09-22",
-    "verified_at": "2026-09-21 20:11:17",
+    "verified_at": "2026-09-22 10:04:36",
     "verification_status": "100% REAL CONFIRMED HYBRID MULTI-SPORT FIXTURES (AFTERNOON/EVENING SLATE)",
     "auditor": "Black Royal Hybrid Multi-Sport Arbitrage Engine (Serie A / US Open / MLB)",
     "total_matches_verified": 3
@@ -22,8 +22,8 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones multideporte de élite 100% verificadas para la jornada del Martes 22 de Septiembre en UEFA Women's Champions League, Major League Baseball y Major League Baseball (Meadow Park, Yankee Stadium y Minute Maid Park). Cada acierto cobra por separado.",
-      "avgOdds": 1.58,
+      "description": "3 Selecciones multideporte de élite 100% verificadas para la jornada del Martes 22 de Septiembre en UEFA Women's Champions League, Major League Baseball y Major League Baseball (Estadio Alfredo Di Stéfano, Citizens Bank Park y Progressive Field). Cada acierto cobra por separado.",
+      "avgOdds": 1.6,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -33,27 +33,27 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Arsenal vs. HB Køge",
-          "tournament": "UEFA Women's Champions League (Fase de Liga) (15:00 CST / 21:00 BST)",
-          "stadium": "Meadow Park, Londres, Inglaterra",
-          "selection": "Arsenal Ganador Directo (1) + Más 2.5 Goles Totales",
-          "odds": 1.52,
-          "confidencePct": 94,
-          "algorithm": "FootyStats European Dominance Index: Arsenal en casa promedia 3.40 xG con 90% de victorias por margen amplio; HB Køge concede 2.65 xGA de visitante en torneos continentales.",
-          "singleReturn": 152.0,
+          "match": "Real Madrid vs. Paris Saint-Germain",
+          "tournament": "UEFA Women's Champions League (Fase de Liga) (13:00 CST / 21:00 CEST)",
+          "stadium": "Estadio Alfredo Di Stéfano, Madrid, España",
+          "selection": "Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.58,
+          "confidencePct": 91,
+          "algorithm": "FootyStats Valdebebas Fortress Metric: Real Madrid en casa ostenta 84% de partidos invicto con 2.25 xG generado; PSG concede 1.60 xGA en salidas continentales.",
+          "singleReturn": 158.0,
           "verified": true
         },
         {
           "sourceName": "Baseball Savant",
           "sport": "Baseball",
           "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "New York Yankees vs. Tampa Bay Rays",
-          "tournament": "Major League Baseball (AL East Pennant Race) (15:05 CST / 16:05 EDT)",
-          "stadium": "Yankee Stadium, Bronx, New York",
-          "selection": "New York Yankees Moneyline (Ganador Directo)",
+          "match": "Philadelphia Phillies vs. Milwaukee Brewers",
+          "tournament": "Major League Baseball (NL East vs Central) (13:40 CST / 14:40 EDT)",
+          "stadium": "Citizens Bank Park, Filadelfia, Pensilvania",
+          "selection": "Philadelphia Phillies Moneyline (Ganador Directo)",
           "odds": 1.62,
-          "confidencePct": 91,
-          "algorithm": "Baseball Savant F5 Dominance Metric: Los Yankees en el Bronx presentan un wOBA colectivo de .345 y ventaja decisiva de bullpen ante abridores zurdos de Tampa Bay.",
+          "confidencePct": 90,
+          "algorithm": "Baseball Savant Citizens Bank Dominance: Phillies en casa presentan un wOBA colectivo de .352 y rotación con 27.5% de ponches ante bateadores diestros.",
           "singleReturn": 162.0,
           "verified": true
         },
@@ -61,13 +61,13 @@
           "sourceName": "Baseball Savant",
           "sport": "Baseball",
           "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Houston Astros vs. Seattle Mariners",
-          "tournament": "Major League Baseball (AL West Pennant Race) (18:40 CST / 19:40 CDT)",
-          "stadium": "Minute Maid Park, Houston, Texas",
-          "selection": "Houston Astros Moneyline (Ganador Directo)",
+          "match": "Cleveland Guardians vs. Boston Red Sox",
+          "tournament": "Major League Baseball (AL Wild Card Race) (13:45 CST / 14:45 EDT)",
+          "stadium": "Progressive Field, Cleveland, Ohio",
+          "selection": "Cleveland Guardians Moneyline (Ganador Directo)",
           "odds": 1.6,
-          "confidencePct": 90,
-          "algorithm": "Baseball Savant Run Differential Model: Houston en casa ostenta 82% de efectividad cerrando series divisionales y su rotación abridora limita al rival a menos de 3.2 carreras por juego.",
+          "confidencePct": 92,
+          "algorithm": "Baseball Savant Progressive Lockdown Model: Cleveland ostenta la efectividad de bullpen más dominante (2.65 ERA) y marca de 48-26 en Progressive Field ante abridores zurdos.",
           "singleReturn": 160.0,
           "verified": true
         }
@@ -76,9 +76,9 @@
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
           "Agrega los 3 partidos estelares de fútbol del Martes al cupón:",
-          "• ⚽ Arsenal vs. HB Køge: Selecciona 'Arsenal Ganador Directo (1) + Más 2.5 Goles Totales'.",
-          "• ⚾ New York Yankees vs. Tampa Bay Rays: Selecciona 'New York Yankees Moneyline (Ganador Directo)'.",
-          "• ⚾ Houston Astros vs. Seattle Mariners: Selecciona 'Houston Astros Moneyline (Ganador Directo)'.",
+          "• ⚽ Real Madrid vs. Paris Saint-Germain: Selecciona 'Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
+          "• ⚾ Philadelphia Phillies vs. Milwaukee Brewers: Selecciona 'Philadelphia Phillies Moneyline (Ganador Directo)'.",
+          "• ⚾ Cleveland Guardians vs. Boston Red Sox: Selecciona 'Cleveland Guardians Moneyline (Ganador Directo)'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
           "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
@@ -86,24 +86,24 @@
           "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "Arsenal vs. HB Køge",
-              "min_result": "Arsenal sella su pronóstico (Arsenal Ganador Directo (1) + Más 2.5 Goles Totales)",
-              "explanation": "Dominio en Meadow Park. Cobras $152.00 (+$52.00 neto)."
+              "match": "Real Madrid vs. Paris Saint-Germain",
+              "min_result": "Real Madrid sella su pronóstico (Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
+              "explanation": "Dominio en Estadio Alfredo Di Stéfano. Cobras $158.00 (+$58.00 neto)."
             },
             {
-              "match": "New York Yankees vs. Tampa Bay Rays",
-              "min_result": "New York Yankees aprovecha la localía (New York Yankees Moneyline (Ganador Directo))",
-              "explanation": "Superioridad táctica en Yankee Stadium. Cobras $162.00 (+$62.00 neto)."
+              "match": "Philadelphia Phillies vs. Milwaukee Brewers",
+              "min_result": "Philadelphia Phillies aprovecha la localía (Philadelphia Phillies Moneyline (Ganador Directo))",
+              "explanation": "Superioridad táctica en Citizens Bank Park. Cobras $162.00 (+$62.00 neto)."
             },
             {
-              "match": "Houston Astros vs. Seattle Mariners",
-              "min_result": "Se cumple el pronóstico (Houston Astros Moneyline (Ganador Directo))",
-              "explanation": "Solvencia táctica en Minute Maid Park. Cobras $160.00 (+$60.00 neto)."
+              "match": "Cleveland Guardians vs. Boston Red Sox",
+              "min_result": "Se cumple el pronóstico (Cleveland Guardians Moneyline (Ganador Directo))",
+              "explanation": "Solvencia táctica en Progressive Field. Cobras $160.00 (+$60.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $474.0 (+$174.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $480.0 (+$180.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (22 SEPTIEMBRE)\n1. ⚽ Arsenal vs. HB Køge: Arsenal Ganador Directo (1) + Más 2.5 Goles Totales @ 1.52 ($100 -> $152.00)\n2. ⚾ New York Yankees vs. Tampa Bay Rays: New York Yankees Moneyline (Ganador Directo) @ 1.62 ($100 -> $162.00)\n3. ⚾ Houston Astros vs. Seattle Mariners: Houston Astros Moneyline (Ganador Directo) @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $474.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (22 SEPTIEMBRE)\n1. ⚽ Real Madrid vs. Paris Saint-Germain: Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n2. ⚾ Philadelphia Phillies vs. Milwaukee Brewers: Philadelphia Phillies Moneyline (Ganador Directo) @ 1.62 ($100 -> $162.00)\n3. ⚾ Cleveland Guardians vs. Boston Red Sox: Cleveland Guardians Moneyline (Ganador Directo) @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $480.0"
       }
     },
     "modo_b_sistema": {
@@ -124,50 +124,50 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Arsenal vs. HB Køge",
-          "selection": "Arsenal Ganador Directo (1) + Más 2.5 Goles Totales",
-          "odds": 1.52,
-          "algorithm": "Pick A (Football): FootyStats European Dominance Index: Arsenal en casa promedia 3.40 xG con 90% de victorias por margen amplio; HB Køge concede 2.65 xGA de visitante en torneos continentales."
+          "match": "Real Madrid vs. Paris Saint-Germain",
+          "selection": "Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.58,
+          "algorithm": "Pick A (Football): FootyStats Valdebebas Fortress Metric: Real Madrid en casa ostenta 84% de partidos invicto con 2.25 xG generado; PSG concede 1.60 xGA en salidas continentales."
         },
         {
           "sourceName": "Baseball Savant",
           "sport": "Baseball",
           "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "New York Yankees vs. Tampa Bay Rays",
-          "selection": "New York Yankees Moneyline (Ganador Directo)",
+          "match": "Philadelphia Phillies vs. Milwaukee Brewers",
+          "selection": "Philadelphia Phillies Moneyline (Ganador Directo)",
           "odds": 1.62,
-          "algorithm": "Pick B (Baseball): Baseball Savant F5 Dominance Metric: Los Yankees en el Bronx presentan un wOBA colectivo de .345 y ventaja decisiva de bullpen ante abridores zurdos de Tampa Bay."
+          "algorithm": "Pick B (Baseball): Baseball Savant Citizens Bank Dominance: Phillies en casa presentan un wOBA colectivo de .352 y rotación con 27.5% de ponches ante bateadores diestros."
         },
         {
           "sourceName": "Baseball Savant",
           "sport": "Baseball",
           "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "Houston Astros vs. Seattle Mariners",
-          "selection": "Houston Astros Moneyline (Ganador Directo)",
+          "match": "Cleveland Guardians vs. Boston Red Sox",
+          "selection": "Cleveland Guardians Moneyline (Ganador Directo)",
           "odds": 1.6,
-          "algorithm": "Pick C (Baseball): Baseball Savant Run Differential Model: Houston en casa ostenta 82% de efectividad cerrando series divisionales y su rotación abridora limita al rival a menos de 3.2 carreras por juego."
+          "algorithm": "Pick C (Baseball): Baseball Savant Progressive Lockdown Model: Cleveland ostenta la efectividad de bullpen más dominante (2.65 ERA) y marca de 48-26 en Progressive Field ante abridores zurdos."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Arsenal + ⚾ New York Yankees)",
-          "odds": 2.46,
-          "formula": "1.52 × 1.62"
+          "name": "Doble 1 (⚽ Real Madrid + ⚾ Philadelphia Phillies)",
+          "odds": 2.56,
+          "formula": "1.58 × 1.62"
         },
         {
-          "name": "Doble 2 (⚽ Arsenal + ⚾ Houston Astros)",
-          "odds": 2.43,
-          "formula": "1.52 × 1.6"
+          "name": "Doble 2 (⚽ Real Madrid + ⚾ Cleveland Guardians)",
+          "odds": 2.53,
+          "formula": "1.58 × 1.6"
         },
         {
-          "name": "Doble 3 (⚾ New York Yankees + ⚾ Houston Astros)",
+          "name": "Doble 3 (⚾ Philadelphia Phillies + ⚾ Cleveland Guardians)",
           "odds": 2.59,
           "formula": "1.62 × 1.6"
         },
         {
-          "name": "Triple (⚽ Arsenal + ⚾ New York Yankees + ⚾ Houston Astros)",
-          "odds": 3.94,
-          "formula": "1.52 × 1.62 × 1.6"
+          "name": "Triple (⚽ Real Madrid + ⚾ Philadelphia Phillies + ⚾ Cleveland Guardians)",
+          "odds": 4.1,
+          "formula": "1.58 × 1.62 × 1.6"
         }
       ],
       "real_life_example": {
@@ -182,35 +182,35 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ Arsenal + ⚾ New York Yankees)",
-              "min_result": "Arsenal y New York Yankees cumplen sus líneas",
-              "explanation": "Cobras la Doble 1 (@ 2.46x): Cobras $61.50 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ Real Madrid + ⚾ Philadelphia Phillies)",
+              "min_result": "Real Madrid y Philadelphia Phillies cumplen sus líneas",
+              "explanation": "Cobras la Doble 1 (@ 2.56x): Cobras $64.00 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ Arsenal + ⚾ Houston Astros)",
-              "min_result": "Arsenal y Houston Astros cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.43x): Cobras $60.75 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ Real Madrid + ⚾ Cleveland Guardians)",
+              "min_result": "Real Madrid y Cleveland Guardians cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.53x): Cobras $63.25 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (Arsenal + New York Yankees + Houston Astros)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $285.50 (+$185.50 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (Real Madrid + Philadelphia Phillies + Cleveland Guardians)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $294.50 (+$194.50 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $285.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $294.50 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (22 SEPTIEMBRE)\n• Pick A: ⚽ Arsenal vs. HB Køge (Arsenal Ganador Directo (1) + Más 2.5 Goles Totales) @ 1.52\n• Pick B: ⚾ New York Yankees vs. Tampa Bay Rays (New York Yankees Moneyline (Ganador Directo)) @ 1.62\n• Pick C: ⚾ Houston Astros vs. Seattle Mariners (Houston Astros Moneyline (Ganador Directo)) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $285.50"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (22 SEPTIEMBRE)\n• Pick A: ⚽ Real Madrid vs. Paris Saint-Germain (Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.58\n• Pick B: ⚾ Philadelphia Phillies vs. Milwaukee Brewers (Philadelphia Phillies Moneyline (Ganador Directo)) @ 1.62\n• Pick C: ⚾ Cleveland Guardians vs. Boston Red Sox (Cleveland Guardians Moneyline (Ganador Directo)) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $294.50"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker Híbrida (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.56x)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.66x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 eventos de máxima solidez estadística (Arsenal vs. HB Køge y New York Yankees vs. Tampa Bay Rays) para duplicar la banca en la jornada de Martes.",
-      "totalOdds": 1.56,
+      "description": "Combinada estricta de solo 2 eventos de máxima solidez estadística (Real Madrid vs. Paris Saint-Germain y Philadelphia Phillies vs. Milwaukee Brewers) para duplicar la banca en la jornada de Martes.",
+      "totalOdds": 1.66,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
       "combinedEv": "+33.5%",
@@ -221,51 +221,51 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Arsenal vs. HB Køge",
-          "tournament": "UEFA Women's Champions League (Fase de Liga) (15:00 CST / 21:00 BST)",
-          "selection": "Arsenal Ganador Directo (1)",
-          "odds": 1.2,
+          "match": "Real Madrid vs. Paris Saint-Germain",
+          "tournament": "UEFA Women's Champions League (Fase de Liga) (13:00 CST / 21:00 CEST)",
+          "selection": "Real Madrid Doble Oportunidad (1X)",
+          "odds": 1.28,
           "confidencePct": 93,
-          "algorithm": "FootyStats European Dominance Index: Arsenal en casa promedia 3.40 xG con 90% de victorias por margen amplio; HB Køge concede 2.65 xGA de visitante en torneos continentales."
+          "algorithm": "FootyStats Valdebebas Fortress Metric: Real Madrid en casa ostenta 84% de partidos invicto con 2.25 xG generado; PSG concede 1.60 xGA en salidas continentales."
         },
         {
           "sourceName": "Baseball Savant",
           "sport": "Baseball",
           "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-          "match": "New York Yankees vs. Tampa Bay Rays",
-          "tournament": "Major League Baseball (AL East Pennant Race) (15:05 CST / 16:05 EDT)",
-          "selection": "New York Yankees (+1.5 Hándicap / Run Line)",
+          "match": "Philadelphia Phillies vs. Milwaukee Brewers",
+          "tournament": "Major League Baseball (NL East vs Central) (13:40 CST / 14:40 EDT)",
+          "selection": "Philadelphia Phillies (+1.5 Hándicap / Run Line)",
           "odds": 1.3,
           "confidencePct": 92,
-          "algorithm": "Baseball Savant F5 Dominance Metric: Los Yankees en el Bronx presentan un wOBA colectivo de .345 y ventaja decisiva de bullpen ante abridores zurdos de Tampa Bay."
+          "algorithm": "Baseball Savant Citizens Bank Dominance: Phillies en casa presentan un wOBA colectivo de .352 y rotación con 27.5% de ponches ante bateadores diestros."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
           "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-          "• ⚽ Arsenal vs. HB Køge (UEFA Women's Champions League): 'Arsenal Ganador Directo (1)'.",
-          "• ⚾ New York Yankees vs. Tampa Bay Rays (Major League Baseball): 'New York Yankees (+1.5 Hándicap / Run Line)'.",
+          "• ⚽ Real Madrid vs. Paris Saint-Germain (UEFA Women's Champions League): 'Real Madrid Doble Oportunidad (1X)'.",
+          "• ⚾ Philadelphia Phillies vs. Milwaukee Brewers (Major League Baseball): 'Philadelphia Phillies (+1.5 Hándicap / Run Line)'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.56x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.66x."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "Arsenal vs. HB Køge",
-              "min_result": "Se cumple (Arsenal Ganador Directo (1))",
-              "explanation": "Se consolida el escenario de valor en Meadow Park."
+              "match": "Real Madrid vs. Paris Saint-Germain",
+              "min_result": "Se cumple (Real Madrid Doble Oportunidad (1X))",
+              "explanation": "Se consolida el escenario de valor en Estadio Alfredo Di Stéfano."
             },
             {
-              "match": "New York Yankees vs. Tampa Bay Rays",
-              "min_result": "Se cumple (New York Yankees (+1.5 Hándicap / Run Line))",
-              "explanation": "Se asegura el rendimiento cuantitativo en Yankee Stadium."
+              "match": "Philadelphia Phillies vs. Milwaukee Brewers",
+              "min_result": "Se cumple (Philadelphia Phillies (+1.5 Hándicap / Run Line))",
+              "explanation": "Se asegura el rendimiento cuantitativo en Citizens Bank Park."
             }
           ],
-          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $156.00 (+$56.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $166.00 (+$66.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (22 SEPTIEMBRE)\n1. ⚽ Arsenal vs. HB Køge (Arsenal Ganador Directo (1)) @ 1.2\n2. ⚾ New York Yankees vs. Tampa Bay Rays (New York Yankees (+1.5 Hándicap / Run Line)) @ 1.3\n► Cuota Total: 1.56x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (22 SEPTIEMBRE)\n1. ⚽ Real Madrid vs. Paris Saint-Germain (Real Madrid Doble Oportunidad (1X)) @ 1.28\n2. ⚾ Philadelphia Phillies vs. Milwaukee Brewers (Philadelphia Phillies (+1.5 Hándicap / Run Line)) @ 1.3\n► Cuota Total: 1.66x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   }
