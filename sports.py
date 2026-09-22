@@ -61,30 +61,37 @@ def step_2_build_and_sync_html():
         with open(ROOT_INDEX_HTML, "w", encoding="utf-8") as f_dst:
             f_dst.write(content)
 
-def step_3_archive_new_scenario():
+def step_3_archive_new_scenario(target_date=None):
     save_script = os.path.join(CURRENT_DIR, "save_scenario.py")
     if os.path.exists(save_script):
-        subprocess.run([sys.executable, save_script], check=True, cwd=CURRENT_DIR)
+        cmd = [sys.executable, save_script]
+        if target_date:
+            cmd.append(target_date)
+        subprocess.run(cmd, check=True, cwd=CURRENT_DIR)
 
 def step_4_display_summary():
     fetch_script = os.path.join(CURRENT_DIR, "fetch_daily_intelligence.py")
     if os.path.exists(fetch_script):
         subprocess.run([sys.executable, fetch_script], check=True, cwd=CURRENT_DIR)
 
-def step_0_verify_fixtures():
+def step_0_verify_fixtures(target_date=None):
     verify_script = os.path.join(CURRENT_DIR, "verify_fixtures.py")
     if os.path.exists(verify_script):
-        subprocess.run([sys.executable, verify_script], check=True, cwd=CURRENT_DIR)
+        cmd = [sys.executable, verify_script]
+        if target_date:
+            cmd.append(target_date)
+        subprocess.run(cmd, check=True, cwd=CURRENT_DIR)
 
 def main():
+    target_date = sys.argv[1] if len(sys.argv) > 1 else None
     print("\n" + "="*85)
-    print(" 👑 BLACK ROYAL — COMANDO MAESTRO 'sports' (CICLO AUTÓNOMO COMPLETO)")
+    print(f" 👑 BLACK ROYAL — COMANDO MAESTRO 'sports' (CICLO AUTÓNOMO COMPLETO{' - ' + target_date if target_date else ''})")
     print("="*85)
     
-    run_step("0. Verificación Estricta de Partidos y Fechas de Hoy", step_0_verify_fixtures)
+    run_step("0. Verificación Estricta de Partidos y Fechas", lambda: step_0_verify_fixtures(target_date))
     run_step("1. Auditoría y Liquidación de Escenarios Previos", step_1_audit_yesterday)
     run_step("2. Reconstrucción y Sincronización de index.html", step_2_build_and_sync_html)
-    run_step("3. Respaldo y Archivo del Nuevo Escenario para Mañana", step_3_archive_new_scenario)
+    run_step("3. Respaldo y Archivo del Nuevo Escenario", lambda: step_3_archive_new_scenario(target_date))
     run_step("4. Despliegue de Inteligencia y Resumen Ejecutivo", step_4_display_summary)
     
     print("="*85)
