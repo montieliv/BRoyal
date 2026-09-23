@@ -17,10 +17,11 @@ try:
     days = ["LUNES", "MARTES", "MIÉRCOLES", "JUEVES", "VIERNES", "SÁBADO", "DOMINGO"]
     display_date = f"{days[dt.weekday()]} {dt.day} {months[dt.month - 1]} {dt.year}"
 except Exception:
-    display_date = "MIÉRCOLES 23 SEPTIEMBRE 2026"
+    display_date = "JUEVES 24 SEPTIEMBRE 2026"
 
 is_hybrid = dataset.get("hybrid_mode", False)
 has_hybrid_edition = dataset.get("has_hybrid_edition", False) or ("hybrid_edition" in dataset)
+hybrid_data = dataset.get("hybrid_edition", {})
 
 if has_hybrid_edition or is_hybrid:
     hybrid_badge_html = """
@@ -37,8 +38,25 @@ else:
         </div>
     """
 
-if has_hybrid_edition:
-    dual_edition_switcher_html = """
+if has_hybrid_edition and hybrid_data:
+    # Football summary
+    football_picks = dataset.get("strategies", {}).get("modo_a_simples", {}).get("picks", [])
+    fb_teams = [p["match"].split(" vs. ")[0] for p in football_picks if " vs. " in p.get("match", "")]
+    fb_teams_str = ", ".join(fb_teams) if fb_teams else "Fútbol Europeo"
+    fb_win_rate = dataset.get("strategies", {}).get("modo_a_simples", {}).get("expectedWinRate", "84.5%")
+    fb_avg_odds = dataset.get("strategies", {}).get("modo_a_simples", {}).get("avgOdds", 1.56)
+
+    # Hybrid summary
+    hy_picks = hybrid_data.get("picks", [])
+    hy_win_rate = hybrid_data.get("expectedWinRate", "86.0%")
+    hy_avg_odds = hybrid_data.get("avgOdds", 1.60)
+    hy_ev = hybrid_data.get("combinedEv", "+32.5%")
+    hy_sports = hybrid_data.get("active_sports", ["Football", "Baseball", "NFL"])
+    hy_sports_label = " + ".join(["FÚTBOL" if s=="Football" else ("MLB" if s=="Baseball" else ("NFL" if s=="NFL" else s.upper())) for s in hy_sports])
+    hy_title = hybrid_data.get("title", "Módulo de Arbitraje Híbrido Multideporte")
+    hy_subtitle = hybrid_data.get("subtitle", "Fusión cuantitativa multideporte de alta certeza.")
+
+    dual_edition_switcher_html = f"""
     <!-- ==================== DUAL EDITION SELECTOR (FÚTBOL vs HÍBRIDO) ==================== -->
     <div class="bg-graphite-900/90 rounded-2xl p-4 md:p-5 border border-graphite-700/80 shadow-xl space-y-3">
       <div class="flex flex-wrap items-center justify-between gap-3">
@@ -59,15 +77,15 @@ if has_hybrid_edition:
           <!-- Button Option 1: 100% Football -->
           <button id="btnEditionFootball" onclick="switchEdition('football')" class="px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border shadow-lg cursor-pointer bg-accent-emerald text-black border-accent-emerald">
             <i class="fa-solid fa-futbol text-sm"></i>
-            <span>OPCIÓN 1: 100% FÚTBOL (UWCL)</span>
-            <span class="text-[10px] px-1.5 py-0.2 rounded bg-black/20 text-black font-black">84.5%</span>
+            <span>OPCIÓN 1: 100% FÚTBOL</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded bg-black/20 text-black font-black">{fb_win_rate}</span>
           </button>
           
           <!-- Button Option 2: Hybrid Mode -->
           <button id="btnEditionHybrid" onclick="switchEdition('hybrid')" class="px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border cursor-pointer bg-graphite-850 text-slate-300 border-graphite-700 hover:border-purple-500/50 hover:text-purple-300">
             <i class="fa-solid fa-bolt text-accent-purple text-sm"></i>
-            <span>OPCIÓN 2: HÍBRIDO (FÚTBOL + MLB)</span>
-            <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-500/20 text-purple-300 font-black border border-purple-500/30">85.0%</span>
+            <span>OPCIÓN 2: HÍBRIDO ({hy_sports_label})</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-500/20 text-purple-300 font-black border border-purple-500/30">{hy_win_rate}</span>
           </button>
         </div>
       </div>
@@ -77,17 +95,87 @@ if has_hybrid_edition:
         <div class="flex items-center gap-2.5 text-slate-300">
           <i id="editionInfoIcon" class="fa-solid fa-futbol text-accent-emerald text-sm"></i>
           <span id="editionInfoText">
-            <strong class="text-white">Opción 1 Activa:</strong> Tríada de UEFA Women's Champions League (FC Barcelona, Chelsea FC, Olympique Lyonnais).
+            <strong class="text-white">Opción 1 Activa:</strong> Pronóstico 100% Fútbol de Élite ({fb_teams_str}).
           </span>
         </div>
         <span id="editionStatsBadge" class="text-[11px] font-mono text-accent-emerald font-bold bg-accent-emerald/10 px-2.5 py-0.5 rounded border border-accent-emerald/30">
-          Cuota Promedio: 1.52x | Win Rate: 84.5%
+          Cuota Promedio: {fb_avg_odds:.2f}x | Win Rate: {fb_win_rate}
         </span>
       </div>
     </div>
     """
 
-    hybrid_dedicated_section_html = """
+    # Build picks cards HTML
+    picks_cards_html = ""
+    for idx, p in enumerate(hy_picks):
+        pick_letter = chr(65 + idx)
+        src = p.get("sourceName", "Algoritmo Cuantitativo")
+        if src == "FootyStats":
+            src_cls = "badge-source-cyan"
+            src_icon = "fa-solid fa-chart-pie"
+        elif src == "API-Football":
+            src_cls = "badge-source-emerald"
+            src_icon = "fa-solid fa-chart-line"
+        elif "Baseball" in src or "Savant" in src:
+            src_cls = "badge-source-sky"
+            src_icon = "fa-solid fa-calculator"
+        elif "NFL" in src or "NextGen" in src:
+            src_cls = "badge-source-purple"
+            src_icon = "fa-solid fa-satellite-dish"
+        else:
+            src_cls = "badge-source-amber"
+            src_icon = "fa-solid fa-brain"
+
+        sp = p.get("sport", "Football")
+        if sp == "Baseball":
+            sp_badge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-sky-500/15 text-sky-400 border border-sky-500/30"><i class="fa-solid fa-baseball-bat-ball mr-1 text-[9px]"></i>MLB BÉISBOL</span>'
+        elif sp == "NFL":
+            sp_badge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-purple-500/15 text-purple-400 border border-purple-500/30"><i class="fa-solid fa-football mr-1 text-[9px]"></i>NFL TNF</span>'
+        else:
+            sp_badge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"><i class="fa-solid fa-futbol mr-1 text-[9px]"></i>FÚTBOL</span>'
+
+        conf = p.get("confidencePct", 92)
+        tourn = p.get("tournament", "")
+        stad = p.get("stadium", "")
+        sub_info = f"{tourn} • {stad}" if tourn and stad else (tourn or stad or "Competición Oficial")
+
+        picks_cards_html += f"""
+          <div class="bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-purple-500/50 transition shadow-sm">
+            <div>
+              <div class="flex items-center justify-between gap-1 mb-2 flex-wrap">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono {src_cls}">
+                    <i class="{src_icon} mr-1 text-[9px]"></i>{src}
+                  </span>
+                  {sp_badge}
+                </div>
+                <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK {pick_letter} (CONF: {conf}%)</span>
+              </div>
+              <div class="font-bold text-white text-xs mt-1">{p.get("match", "")}</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">{sub_info}</div>
+            </div>
+            <div class="mt-3 pt-2.5 border-t border-graphite-800/80">
+              <div class="flex items-start justify-between gap-2">
+                <span class="text-accent-emerald font-bold text-xs leading-snug break-words">{p.get("selection", "")}</span>
+                <span class="text-accent-amber font-extrabold text-xs whitespace-nowrap shrink-0">@ {p.get("odds", 1.60):.2f}</span>
+              </div>
+              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">
+                {p.get("algorithm", "Modelo Estadístico")}
+              </div>
+            </div>
+          </div>
+        """
+
+    # Build strategies execution cards
+    hy_strat_a = hybrid_data.get("strategies", {}).get("modo_a_simples", {})
+    hy_strat_b = hybrid_data.get("strategies", {}).get("modo_b_sistema", {})
+    hy_strat_c = hybrid_data.get("strategies", {}).get("modo_c_banker", {})
+
+    hy_strat_a_desc = hy_strat_a.get("description", "Cada acierto cobra de inmediato amortizando el riesgo.")
+    hy_strat_b_desc = hy_strat_b.get("description", "Sistema Trixie de 4 combinadas con seguro contra 1 fallo.")
+    hy_strat_c_desc = hy_strat_c.get("description", "Combinada de 2 eventos de altísima asimetría estadística.")
+
+    hybrid_dedicated_section_html = f"""
     <!-- ==================== DEDICATED HYBRID MODE ARBITRAGE SECTION ==================== -->
     <section id="hybridModeDedicatedSection" class="space-y-6 pt-4 border-t border-graphite-800">
       
@@ -104,7 +192,7 @@ if has_hybrid_edition:
                 MODO HÍBRIDO MULTIDEPORTE ACTIVO
               </span>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-bold font-mono bg-sky-500/15 text-sky-400 border border-sky-500/30">
-                <i class="fa-solid fa-baseball-bat-ball mr-1"></i>MLB + ⚽ UWCL
+                <i class="fa-solid fa-layer-group mr-1"></i>{hy_sports_label}
               </span>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-bold font-mono bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
                 <i class="fa-solid fa-shield-check mr-1"></i>ARBITRAJE DE CORRELACIÓN CERO
@@ -112,10 +200,10 @@ if has_hybrid_edition:
             </div>
 
             <h2 class="text-lg md:text-2xl font-black text-white tracking-tight flex items-center gap-2 pt-1">
-              <span>Módulo de Arbitraje Híbrido: UWCL + MLB Pennant Race</span>
+              <span>{hy_title}</span>
             </h2>
             <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
-              Fusión cuantitativa de la máxima certeza del fútbol europeo continental (<strong class="text-white">FC Barcelona Femení</strong>) con las mejores asimetrías sabermétricas de las Grandes Ligas en plena recta final por el banderín (<strong class="text-white">Los Angeles Dodgers</strong> y <strong class="text-white">New York Yankees</strong>).
+              {hy_subtitle}
             </p>
           </div>
 
@@ -136,15 +224,15 @@ if has_hybrid_edition:
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5 pt-5 border-t border-purple-500/20 relative z-10 font-mono">
           <div class="bg-graphite-950/70 p-3 rounded-xl border border-graphite-800">
             <span class="text-[10px] text-slate-400 block">WIN RATE ESPERADO</span>
-            <span class="text-accent-emerald text-base font-extrabold">85.0%</span>
+            <span class="text-accent-emerald text-base font-extrabold">{hy_win_rate}</span>
           </div>
           <div class="bg-graphite-950/70 p-3 rounded-xl border border-graphite-800">
             <span class="text-[10px] text-slate-400 block">CUOTA PROMEDIO</span>
-            <span class="text-accent-purple text-base font-extrabold">1.60x</span>
+            <span class="text-accent-purple text-base font-extrabold">{hy_avg_odds:.2f}x</span>
           </div>
           <div class="bg-graphite-950/70 p-3 rounded-xl border border-graphite-800">
             <span class="text-[10px] text-slate-400 block">VALOR ESPERADO (EV+)</span>
-            <span class="text-accent-cyan text-base font-extrabold">+31.5%</span>
+            <span class="text-accent-cyan text-base font-extrabold">{hy_ev}</span>
           </div>
           <div class="bg-graphite-950/70 p-3 rounded-xl border border-graphite-800">
             <span class="text-[10px] text-slate-400 block">CORRELACIÓN CRUZADA</span>
@@ -160,95 +248,11 @@ if has_hybrid_edition:
             <i class="fa-solid fa-list-check text-accent-purple"></i>
             <span>Las 3 Selecciones Verificadas del Módulo Híbrido</span>
           </h3>
-          <span class="text-[11px] text-slate-400 font-mono">1 Fútbol UEFA + 2 Béisbol MLB</span>
+          <span class="text-[11px] text-slate-400 font-mono">{hy_sports_label}</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          
-          <!-- Pick 1: Barça Femení (UWCL) -->
-          <div class="bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-purple-500/50 transition shadow-sm">
-            <div>
-              <div class="flex items-center justify-between gap-1 mb-2 flex-wrap">
-                <div class="flex items-center gap-1.5 flex-wrap">
-                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono badge-source-cyan">
-                    <i class="fa-solid fa-chart-pie mr-1 text-[9px]"></i>FootyStats
-                  </span>
-                  <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
-                    <i class="fa-solid fa-futbol mr-1 text-[9px]"></i>FÚTBOL UWCL
-                  </span>
-                </div>
-                <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK A (CONF: 95%)</span>
-              </div>
-              <div class="font-bold text-white text-xs mt-1">FC Barcelona vs. Paris FC</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">UEFA Women's Champions League • Estadi Johan Cruyff</div>
-            </div>
-            <div class="mt-3 pt-2.5 border-t border-graphite-800/80">
-              <div class="flex items-start justify-between gap-2">
-                <span class="text-accent-emerald font-bold text-xs leading-snug break-words">FC Barcelona Ganador Directo (1) + Más 2.5 Goles Totales</span>
-                <span class="text-accent-amber font-extrabold text-xs whitespace-nowrap shrink-0">@ 1.52</span>
-              </div>
-              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">
-                FootyStats Johan Cruyff Dominance: Barça Femení promedia 3.85 xG en casa con 100% de victorias por 3+ goles en sus últimos 12 juegos continentales; Paris FC concede 2.10 xGA en salidas.
-              </div>
-            </div>
-          </div>
-
-          <!-- Pick 2: Dodgers (MLB) -->
-          <div class="bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-purple-500/50 transition shadow-sm">
-            <div>
-              <div class="flex items-center justify-between gap-1 mb-2 flex-wrap">
-                <div class="flex items-center gap-1.5 flex-wrap">
-                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono badge-source-sky">
-                    <i class="fa-solid fa-calculator mr-1 text-[9px]"></i>Baseball Savant
-                  </span>
-                  <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-sky-500/15 text-sky-400 border border-sky-500/30">
-                    <i class="fa-solid fa-baseball-bat-ball mr-1 text-[9px]"></i>MLB BÉISBOL
-                  </span>
-                </div>
-                <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK B (CONF: 90%)</span>
-              </div>
-              <div class="font-bold text-white text-xs mt-1">Los Angeles Dodgers vs. San Diego Padres</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Major League Baseball • NL West Pennant Race • Dodger Stadium</div>
-            </div>
-            <div class="mt-3 pt-2.5 border-t border-graphite-800/80">
-              <div class="flex items-start justify-between gap-2">
-                <span class="text-accent-emerald font-bold text-xs leading-snug break-words">Los Angeles Dodgers Moneyline (Ganador Directo)</span>
-                <span class="text-accent-amber font-extrabold text-xs whitespace-nowrap shrink-0">@ 1.65</span>
-              </div>
-              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">
-                Baseball Savant Dodger Stadium Metric: Dodgers en casa lideran la Liga Nacional en wOBA (.358) y diferencial de carreras; rotación con 28% de ponches en duelos divisionales de alta presión.
-              </div>
-            </div>
-          </div>
-
-          <!-- Pick 3: Yankees (MLB) -->
-          <div class="bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-purple-500/50 transition shadow-sm">
-            <div>
-              <div class="flex items-center justify-between gap-1 mb-2 flex-wrap">
-                <div class="flex items-center gap-1.5 flex-wrap">
-                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono badge-source-sky">
-                    <i class="fa-solid fa-calculator mr-1 text-[9px]"></i>Baseball Savant
-                  </span>
-                  <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-sky-500/15 text-sky-400 border border-sky-500/30">
-                    <i class="fa-solid fa-baseball-bat-ball mr-1 text-[9px]"></i>MLB BÉISBOL
-                  </span>
-                </div>
-                <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK C (CONF: 91%)</span>
-              </div>
-              <div class="font-bold text-white text-xs mt-1">New York Yankees vs. Tampa Bay Rays</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Major League Baseball • AL East Pennant Race • Yankee Stadium</div>
-            </div>
-            <div class="mt-3 pt-2.5 border-t border-graphite-800/80">
-              <div class="flex items-start justify-between gap-2">
-                <span class="text-accent-emerald font-bold text-xs leading-snug break-words">New York Yankees Moneyline (Ganador Directo)</span>
-                <span class="text-accent-amber font-extrabold text-xs whitespace-nowrap shrink-0">@ 1.62</span>
-              </div>
-              <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">
-                Baseball Savant Bronx Power Model: Yankees en el Bronx con ventaja decisiva de bullpen (ERA 2.80) y poder ofensivo ante abridores de Tampa Bay buscando amarrar el liderato.
-              </div>
-            </div>
-          </div>
-
+          {picks_cards_html}
         </div>
       </div>
 
@@ -271,14 +275,14 @@ if has_hybrid_edition:
             <div>
               <div class="flex items-center justify-between mb-1">
                 <span class="text-accent-emerald font-extrabold text-xs">MODO A: SIMPLES HÍBRIDAS</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-accent-emerald/15 text-accent-emerald font-bold">85.0% WR</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-accent-emerald/15 text-accent-emerald font-bold">{hy_win_rate} WR</span>
               </div>
               <p class="text-[11px] text-slate-300 font-sans leading-relaxed">
-                3 apuestas individuales de $100 ($300 total). Cada acierto cobra de inmediato. Si aciertas 2 de 3 cobras ~$320 asegurando rentabilidad neta; con 3 de 3 cobras $479 (+$179 neto).
+                {hy_strat_a_desc}
               </p>
             </div>
             <div class="pt-2 border-t border-graphite-800 flex items-center justify-between">
-              <span class="text-[10px] text-slate-400">Cuota Prom: 1.60x</span>
+              <span class="text-[10px] text-slate-400">Cuota Prom: {hy_avg_odds:.2f}x</span>
               <button onclick="loadHybridModeAndSelect('modo_a_simples')" class="px-2.5 py-1 rounded bg-accent-emerald/15 text-accent-emerald hover:bg-accent-emerald hover:text-black font-bold text-[10px] transition cursor-pointer">
                 Simular Modo A &rarr;
               </button>
@@ -293,7 +297,7 @@ if has_hybrid_edition:
                 <span class="text-[10px] px-2 py-0.5 rounded bg-accent-cyan/15 text-accent-cyan font-bold">SEGURO 1 FALLO</span>
               </div>
               <p class="text-[11px] text-slate-300 font-sans leading-relaxed">
-                4 apuestas combinadas ($25 c/u = $100 total): 3 Dobles cruzadas fútbol + MLB + 1 Triple. Si falla 1 evento, la doble restante paga $62–$67; si aciertan los 3, cobras ~$293 neto.
+                {hy_strat_b_desc}
               </p>
             </div>
             <div class="pt-2 border-t border-graphite-800 flex items-center justify-between">
@@ -309,14 +313,14 @@ if has_hybrid_edition:
             <div>
               <div class="flex items-center justify-between mb-1">
                 <span class="text-accent-amber font-extrabold text-xs">MODO C: DOBLE BANKER HÍBRIDA</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-accent-amber/15 text-accent-amber font-bold">91.5% CONF</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-accent-amber/15 text-accent-amber font-bold">ALTA CERTEZA</span>
               </div>
               <p class="text-[11px] text-slate-300 font-sans leading-relaxed">
-                Combinada de 2 eventos de altísima asimetría: Barça Femení Gana Directo (@ 1.18) + Dodgers Run Line +1.5 (@ 1.30) para cuota de @ 1.54x (o Moneyline directo @ 2.51x) duplicando capital.
+                {hy_strat_c_desc}
               </p>
             </div>
             <div class="pt-2 border-t border-graphite-800 flex items-center justify-between">
-              <span class="text-[10px] text-slate-400">Cuota: 1.54x / 2.51x</span>
+              <span class="text-[10px] text-slate-400">Cuota: {hy_strat_c.get("totalOdds", 1.66):.2f}x</span>
               <button onclick="loadHybridModeAndSelect('modo_c_banker')" class="px-2.5 py-1 rounded bg-accent-amber/15 text-accent-amber hover:bg-accent-amber hover:text-black font-bold text-[10px] transition cursor-pointer">
                 Simular Modo C &rarr;
               </button>
@@ -438,6 +442,11 @@ html_template = f"""<!DOCTYPE html>
       color: #38bdf8;
       border: 1px solid rgba(14, 165, 233, 0.3);
     }}
+    .badge-source-purple {{
+      background: rgba(168, 85, 247, 0.12);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }}
 
     @keyframes fadeInOut {{
       0% {{ opacity: 0; transform: translateY(10px); }}
@@ -486,7 +495,7 @@ html_template = f"""<!DOCTYPE html>
         </div>
         <div class="hidden sm:flex items-center space-x-2 bg-graphite-850 px-3 py-1.5 rounded-lg border border-graphite-700/80">
           <span class="text-slate-400 text-[11px]">TASA DE ÉXITO MODELADA:</span>
-          <span class="text-accent-emerald font-bold">75% – 85%</span>
+          <span class="text-accent-emerald font-bold">75% – 86%</span>
         </div>
         <button id="btnRefreshRemote" onclick="forceRemoteRefresh()" title="Sincronizar y forzar actualización remota" class="px-3.5 py-1.5 bg-accent-emerald text-black hover:bg-emerald-400 font-bold text-xs font-mono rounded-lg shadow-lg flex items-center space-x-1.5 transition cursor-pointer active:scale-95">
           <i id="refreshIcon" class="fa-solid fa-rotate text-xs"></i>
@@ -542,17 +551,17 @@ html_template = f"""<!DOCTYPE html>
         <div id="strategySelectorContainer" class="flex flex-wrap items-center gap-1.5 bg-graphite-900 p-1.5 rounded-xl border border-graphite-700/80 font-mono text-xs shadow-inner">
           <button onclick="switchStrategyTab('modo_a_simples')" id="btnStrat-modo_a_simples" class="px-4 py-2 rounded-lg font-bold transition flex items-center space-x-2 bg-accent-emerald text-black shadow cursor-pointer">
             <i class="fa-solid fa-trophy"></i>
-            <span>{dataset.get('strategies', {}).get('modo_a_simples', {}).get('modeShort', 'Modo A: Simples (84.5% Win Rate)')}</span>
+            <span>{dataset.get('strategies', {}).get('modo_a_simples', {}).get('modeShort', 'Modo A: Simples')}</span>
           </button>
           
           <button onclick="switchStrategyTab('modo_b_sistema')" id="btnStrat-modo_b_sistema" class="px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer">
             <i class="fa-solid fa-shield-halved text-accent-cyan"></i>
-            <span>{dataset.get('strategies', {}).get('modo_b_sistema', {}).get('modeShort', 'Modo B: Sistema 2/3 (Seguro 1 Fallo)')}</span>
+            <span>{dataset.get('strategies', {}).get('modo_b_sistema', {}).get('modeShort', 'Modo B: Sistema 2/3')}</span>
           </button>
 
           <button onclick="switchStrategyTab('modo_c_banker')" id="btnStrat-modo_c_banker" class="px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2 text-slate-400 hover:text-white cursor-pointer">
             <i class="fa-solid fa-bolt text-accent-amber"></i>
-            <span>{dataset.get('strategies', {}).get('modo_c_banker', {}).get('modeShort', 'Modo C: Doble Banker (Duplicador @ 2.09x)')}</span>
+            <span>{dataset.get('strategies', {}).get('modo_c_banker', {}).get('modeShort', 'Modo C: Doble Banker')}</span>
           </button>
         </div>
       </div>
@@ -580,7 +589,7 @@ html_template = f"""<!DOCTYPE html>
 
           <div class="bg-graphite-900/90 border border-graphite-700/80 px-4 py-2.5 rounded-xl font-mono text-right shrink-0">
             <span id="activeStrategyMetricLabel" class="text-[10px] text-slate-400 block font-medium">CUOTA PROMEDIO</span>
-            <span id="activeStrategyOdds" class="text-xl md:text-2xl font-black text-accent-emerald tracking-tight">1.52x</span>
+            <span id="activeStrategyOdds" class="text-xl md:text-2xl font-black text-accent-emerald tracking-tight">1.56x</span>
           </div>
         </div>
 
@@ -592,7 +601,7 @@ html_template = f"""<!DOCTYPE html>
           </div>
           <div class="bg-graphite-900/80 p-3 rounded-xl border border-graphite-800/80">
             <span class="text-[10px] text-slate-400 block">VALOR ESPERADO (EV+)</span>
-            <span id="activeStrategyEv" class="text-accent-cyan font-extrabold text-sm">+29.2%</span>
+            <span id="activeStrategyEv" class="text-accent-cyan font-extrabold text-sm">+28.8%</span>
           </div>
           <div class="bg-graphite-900/80 p-3 rounded-xl border border-graphite-800/80">
             <span class="text-[10px] text-slate-400 block">NIVEL DE RIESGO</span>
@@ -640,12 +649,12 @@ html_template = f"""<!DOCTYPE html>
 
             <div class="bg-graphite-950/80 p-3 rounded-lg border border-graphite-800">
               <span id="calcLabel1" class="text-[10px] text-slate-400 block">Retorno Pleno Estimado:</span>
-              <span id="calcTotalReturn" class="text-accent-emerald font-black text-lg">$456.00</span>
+              <span id="calcTotalReturn" class="text-accent-emerald font-black text-lg">$468.00</span>
             </div>
 
             <div class="bg-graphite-950/80 p-3 rounded-lg border border-graphite-800">
               <span id="calcLabel2" class="text-[10px] text-slate-400 block">Ganancia Neta Pleno:</span>
-              <span id="calcNetProfit" class="text-accent-cyan font-black text-lg">+$156.00</span>
+              <span id="calcNetProfit" class="text-accent-cyan font-black text-lg">+$168.00</span>
             </div>
           </div>
 
@@ -750,6 +759,7 @@ html_template = f"""<!DOCTYPE html>
       if (source === 'API-Football') return 'badge-source-emerald';
       if (source === 'Sportmonks') return 'badge-source-amber';
       if (source === 'Baseball Savant') return 'badge-source-sky';
+      if (source === 'NextGen Stats' || source === 'NFL NextGen') return 'badge-source-purple';
       return 'bg-slate-800 text-slate-300 border-slate-700';
     }}
 
@@ -758,6 +768,7 @@ html_template = f"""<!DOCTYPE html>
       if (source === 'API-Football') return 'fa-solid fa-chart-line';
       if (source === 'Sportmonks') return 'fa-solid fa-brain';
       if (source === 'Baseball Savant') return 'fa-solid fa-calculator';
+      if (source === 'NextGen Stats' || source === 'NFL NextGen') return 'fa-solid fa-satellite-dish';
       return 'fa-solid fa-futbol';
     }}
 
@@ -793,10 +804,15 @@ html_template = f"""<!DOCTYPE html>
           btnHyb.className = 'px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border cursor-pointer bg-graphite-850 text-slate-300 border-graphite-700 hover:border-purple-500/50 hover:text-purple-300';
         }}
         if (icon) icon.className = 'fa-solid fa-futbol text-accent-emerald text-sm';
-        if (text) text.innerHTML = '<strong class="text-white">Opción 1 Activa:</strong> Tríada de UEFA Women\\'s Champions League (FC Barcelona, Chelsea FC, Olympique Lyonnais).';
+        
+        const fbTeams = (DATASET.strategies && DATASET.strategies.modo_a_simples && DATASET.strategies.modo_a_simples.picks) ? DATASET.strategies.modo_a_simples.picks.map(p => p.match.split(' vs. ')[0]).join(', ') : 'Fútbol Europeo';
+        const fbAvgOdds = (DATASET.strategies && DATASET.strategies.modo_a_simples && DATASET.strategies.modo_a_simples.avgOdds) ? DATASET.strategies.modo_a_simples.avgOdds.toFixed(2) : '1.56';
+        const fbWinRate = (DATASET.strategies && DATASET.strategies.modo_a_simples) ? DATASET.strategies.modo_a_simples.expectedWinRate : '84.5%';
+
+        if (text) text.innerHTML = '<strong class="text-white">Opción 1 Activa:</strong> Pronóstico 100% Fútbol de Élite (' + fbTeams + ').';
         if (badge) {{
           badge.className = 'text-[11px] font-mono text-accent-emerald font-bold bg-accent-emerald/10 px-2.5 py-0.5 rounded border border-accent-emerald/30';
-          badge.innerText = 'Cuota Promedio: 1.52x | Win Rate: 84.5%';
+          badge.innerText = 'Cuota Promedio: ' + fbAvgOdds + 'x | Win Rate: ' + fbWinRate;
         }}
       }} else {{
         if (btnFoot) {{
@@ -806,16 +822,22 @@ html_template = f"""<!DOCTYPE html>
           btnHyb.className = 'px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border shadow-lg shadow-purple-500/20 cursor-pointer bg-accent-purple text-white border-accent-purple';
         }}
         if (icon) icon.className = 'fa-solid fa-bolt text-accent-purple text-sm';
-        if (text) text.innerHTML = '<strong class="text-white">Opción 2 Activa:</strong> Módulo de Arbitraje Híbrido Multideporte (Barça Femení UWCL + Dodgers y Yankees en MLB).';
+        
+        const hyTitle = (DATASET.hybrid_edition && DATASET.hybrid_edition.title) ? DATASET.hybrid_edition.title : 'Módulo de Arbitraje Híbrido Multideporte';
+        const hySports = (DATASET.hybrid_edition && DATASET.hybrid_edition.active_sports) ? DATASET.hybrid_edition.active_sports.join(' + ') : 'Multideporte';
+        const hyAvgOdds = (DATASET.hybrid_edition && DATASET.hybrid_edition.avgOdds) ? DATASET.hybrid_edition.avgOdds.toFixed(2) : '1.60';
+        const hyWinRate = (DATASET.hybrid_edition && DATASET.hybrid_edition.expectedWinRate) ? DATASET.hybrid_edition.expectedWinRate : '86.0%';
+
+        if (text) text.innerHTML = '<strong class="text-white">Opción 2 Activa:</strong> ' + hyTitle + ' (' + hySports + ').';
         if (badge) {{
           badge.className = 'text-[11px] font-mono text-purple-300 font-bold bg-purple-500/20 px-2.5 py-0.5 rounded border border-purple-500/40';
-          badge.innerText = 'Cuota Promedio: 1.60x | Win Rate: 85.0%';
+          badge.innerText = 'Cuota Promedio: ' + hyAvgOdds + 'x | Win Rate: ' + hyWinRate;
         }}
       }}
 
       updateStrategyButtons();
       renderStrategyCard(currentStrategyKey);
-      showToast(edition === 'football' ? '⚽ Activado pronóstico 100% Fútbol' : '⚡ Activado modo Híbrido (Fútbol + MLB)');
+      showToast(edition === 'football' ? '⚽ Activado pronóstico 100% Fútbol' : '⚡ Activado modo Híbrido Multideporte');
     }}
 
     function updateStrategyButtons() {{
@@ -884,7 +906,7 @@ html_template = f"""<!DOCTYPE html>
           ? 'absolute top-0 right-0 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl pointer-events-none'
           : 'absolute top-0 right-0 w-80 h-80 bg-accent-emerald/5 rounded-full blur-3xl pointer-events-none';
         document.getElementById('activeStrategyMetricLabel').innerText = 'CUOTA PROMEDIO';
-        document.getElementById('activeStrategyOdds').innerText = `${{strat.avgOdds ? strat.avgOdds.toFixed(2) : '1.52'}}x`;
+        document.getElementById('activeStrategyOdds').innerText = `${{strat.avgOdds ? strat.avgOdds.toFixed(2) : '1.56'}}x`;
       }} else if (stratKey === 'modo_b_sistema') {{
         badgeEl.className = 'px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider font-mono bg-accent-cyan text-black';
         badgeEl.innerText = strat.badge || 'SEGURO CONTRA 1 FALLO';
@@ -896,7 +918,7 @@ html_template = f"""<!DOCTYPE html>
         badgeEl.innerText = strat.badge || 'DUPLICADOR DE BANCA';
         glowEl.className = 'absolute top-0 right-0 w-80 h-80 bg-accent-amber/5 rounded-full blur-3xl pointer-events-none';
         document.getElementById('activeStrategyMetricLabel').innerText = 'CUOTA TOTAL';
-        document.getElementById('activeStrategyOdds').innerText = `${{strat.totalOdds ? strat.totalOdds.toFixed(2) : '1.54'}}x`;
+        document.getElementById('activeStrategyOdds').innerText = `${{strat.totalOdds ? strat.totalOdds.toFixed(2) : '1.66'}}x`;
       }}
 
       document.getElementById('activeStrategyTitle').innerText = strat.modeName;
@@ -1026,11 +1048,11 @@ html_template = f"""<!DOCTYPE html>
       // 3. Tip Box Text
       if (currentEdition === 'hybrid') {{
         if (stratKey === 'modo_a_simples') {{
-          document.getElementById('realLifeTipText').innerText = "En Modo A Híbrido, cruzas fútbol europeo con MLB; cada evento liquida por separado reduciendo la varianza a cero.";
+          document.getElementById('realLifeTipText').innerText = "En Modo A Híbrido, cruzas ligas con correlación cero (Nations League + MLB + NFL), reduciendo la varianza sistémica a cero.";
         }} else if (stratKey === 'modo_b_sistema') {{
-          document.getElementById('realLifeTipText').innerText = "En Modo B Híbrido el sistema Trixie genera 4 combinadas cruzadas fútbol + MLB: si 1 falla, la doble restante protege tu banca.";
+          document.getElementById('realLifeTipText').innerText = "En Modo B Híbrido el sistema Trixie genera 4 combinadas cruzadas: si 1 falla, la doble restante protege y amortiza tu capital.";
         }} else if (stratKey === 'modo_c_banker') {{
-          document.getElementById('realLifeTipText').innerText = "En Modo C Híbrido combinas la certeza europea de Barça Femení con el Run Line de Dodgers en MLB.";
+          document.getElementById('realLifeTipText').innerText = "En Modo C Híbrido juegas solo las 2 líneas más asimétricas con más de 91% de probabilidad calculada.";
         }}
       }} else {{
         if (stratKey === 'modo_a_simples') {{
@@ -1088,8 +1110,8 @@ html_template = f"""<!DOCTYPE html>
             if (idx === 0) retSingleDoble = ret;
           }});
         }} else {{
-          retAll = perBet * (2.56 + 2.61 + 2.67 + 4.22);
-          retSingleDoble = perBet * 2.56;
+          retAll = perBet * (2.54 + 2.49 + 2.67 + 4.12);
+          retSingleDoble = perBet * 2.54;
         }}
         const profitAll = retAll - stake;
 
