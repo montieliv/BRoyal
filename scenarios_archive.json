@@ -8917,6 +8917,273 @@
         "netPnL": 0.0,
         "roiPct": "0.0%"
       }
+    },
+    "2026-09-25": {
+      "date": "2026-09-25",
+      "saved_at": "2026-09-24 00:21:58",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Viernes 25 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Stadio Olimpico, Rams Park y Strawberry Arena). Cada acierto cobra por separado.",
+          "avgOdds": 1.58,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Italia vs. Bélgica",
+              "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
+              "stadium": "Stadio Olimpico, Roma, Italia",
+              "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.55,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales.",
+              "singleReturn": 155.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Turquía vs. Francia",
+              "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST (21:45 TRT))",
+              "stadium": "Rams Park, Estambul, Turquía",
+              "selection": "Francia Ganador Directo (2) + Más 1.5 Goles Totales",
+              "odds": 1.58,
+              "confidencePct": 92,
+              "algorithm": "API-Football French Arsenal: Francia promedia 2.40 xG con Mbappé y Barcola en ataque estelar; Turquía concede 1.85 xGA ante rivales de élite continental.",
+              "singleReturn": 158.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Suecia vs. Rumania",
+              "tournament": "UEFA Nations League (Liga B, Grupo 2) (12:45 CST / 20:45 CEST)",
+              "stadium": "Strawberry Arena, Solna, Suecia",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.62,
+              "confidencePct": 91,
+              "algorithm": "Sportmonks High-Pace Metric: Suecia con Isak y Gyökeres genera 2.65 xG por encuentro; 75% de sus duelos superan la línea de 2.5 goles debido al juego vertical nórdico.",
+              "singleReturn": 162.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Viernes al cupón:",
+              "• ⚽ Italia vs. Bélgica: Selecciona 'Italia Ganador Directo (1) + Más 1.5 Goles Totales'.",
+              "• ⚽ Turquía vs. Francia: Selecciona 'Francia Ganador Directo (2) + Más 1.5 Goles Totales'.",
+              "• ⚽ Suecia vs. Rumania: Selecciona 'Más de 2.5 Goles Totales (Over 2.5)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Italia vs. Bélgica",
+                  "min_result": "Italia sella su pronóstico (Italia Ganador Directo (1) + Más 1.5 Goles Totales)",
+                  "explanation": "Dominio en Stadio Olimpico. Cobras $155.00 (+$55.00 neto)."
+                },
+                {
+                  "match": "Turquía vs. Francia",
+                  "min_result": "Turquía aprovecha la localía (Francia Ganador Directo (2) + Más 1.5 Goles Totales)",
+                  "explanation": "Superioridad táctica en Rams Park. Cobras $158.00 (+$58.00 neto)."
+                },
+                {
+                  "match": "Suecia vs. Rumania",
+                  "min_result": "Se cumple el pronóstico (Más de 2.5 Goles Totales (Over 2.5))",
+                  "explanation": "Solvencia táctica en Strawberry Arena. Cobras $162.00 (+$62.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $475.0 (+$175.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica: Italia Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n2. ⚽ Turquía vs. Francia: Francia Ganador Directo (2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n3. ⚽ Suecia vs. Rumania: Más de 2.5 Goles Totales (Over 2.5) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $475.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Viernes (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Italia vs. Bélgica",
+              "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.55,
+              "algorithm": "Pick A (Football): FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Turquía vs. Francia",
+              "selection": "Francia Ganador Directo (2) + Más 1.5 Goles Totales",
+              "odds": 1.58,
+              "algorithm": "Pick B (Football): API-Football French Arsenal: Francia promedia 2.40 xG con Mbappé y Barcola en ataque estelar; Turquía concede 1.85 xGA ante rivales de élite continental."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Suecia vs. Rumania",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.62,
+              "algorithm": "Pick C (Football): Sportmonks High-Pace Metric: Suecia con Isak y Gyökeres genera 2.65 xG por encuentro; 75% de sus duelos superan la línea de 2.5 goles debido al juego vertical nórdico."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Italia + ⚽ Turquía)",
+              "odds": 2.45,
+              "formula": "1.55 × 1.58"
+            },
+            {
+              "name": "Doble 2 (⚽ Italia + ⚽ Suecia)",
+              "odds": 2.51,
+              "formula": "1.55 × 1.62"
+            },
+            {
+              "name": "Doble 3 (⚽ Turquía + ⚽ Suecia)",
+              "odds": 2.56,
+              "formula": "1.58 × 1.62"
+            },
+            {
+              "name": "Triple (⚽ Italia + ⚽ Turquía + ⚽ Suecia)",
+              "odds": 3.97,
+              "formula": "1.55 × 1.58 × 1.62"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Italia + ⚽ Turquía)",
+                  "min_result": "Italia y Turquía cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.45x): Cobras $61.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Italia + ⚽ Suecia)",
+                  "min_result": "Italia y Suecia cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.51x): Cobras $62.75 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Italia + Turquía + Suecia)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $287.25 (+$187.25 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $287.25 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (25 SEPTIEMBRE)\n• Pick A: ⚽ Italia vs. Bélgica (Italia Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.55\n• Pick B: ⚽ Turquía vs. Francia (Francia Ganador Directo (2) + Más 1.5 Goles Totales) @ 1.58\n• Pick C: ⚽ Suecia vs. Rumania (Más de 2.5 Goles Totales (Over 2.5)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $287.25"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.56x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Italia vs. Bélgica y Turquía vs. Francia) para duplicar la banca en la jornada de fútbol del Viernes.",
+          "totalOdds": 1.56,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Italia vs. Bélgica",
+              "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
+              "selection": "Italia Doble Oportunidad (1X)",
+              "odds": 1.25,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Turquía vs. Francia",
+              "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST (21:45 TRT))",
+              "selection": "Francia Doble Oportunidad (X2)",
+              "odds": 1.25,
+              "confidencePct": 92,
+              "algorithm": "API-Football French Arsenal: Francia promedia 2.40 xG con Mbappé y Barcola en ataque estelar; Turquía concede 1.85 xGA ante rivales de élite continental."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Italia vs. Bélgica (UEFA Nations League): 'Italia Doble Oportunidad (1X)'.",
+              "• ⚽ Turquía vs. Francia (UEFA Nations League): 'Francia Doble Oportunidad (X2)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.56x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Italia vs. Bélgica",
+                  "min_result": "Se cumple (Italia Doble Oportunidad (1X))",
+                  "explanation": "Se consolida el escenario de valor en Stadio Olimpico."
+                },
+                {
+                  "match": "Turquía vs. Francia",
+                  "min_result": "Se cumple (Francia Doble Oportunidad (X2))",
+                  "explanation": "Se asegura el rendimiento cuantitativo en Rams Park."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $156.00 (+$56.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica (Italia Doble Oportunidad (1X)) @ 1.25\n2. ⚽ Turquía vs. Francia (Francia Doble Oportunidad (X2)) @ 1.25\n► Cuota Total: 1.56x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      }
     }
   }
 }

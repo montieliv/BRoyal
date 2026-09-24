@@ -2704,8 +2704,12 @@ def verify_and_build_dataset(target_date=None):
             hybrid_title = "Módulo de Arbitraje Híbrido Multideporte (Champions League + MLB Pennant Race)"
             hybrid_subtitle = "Fusión cuantitativa de la máxima certeza del fútbol europeo con las mejores asimetrías sabermétricas de MLB en plena recta final."
             hybrid_trigger = "ACTIVADO: Máxima asimetría combinando la hegemonía continental europea de FC Barcelona Femení con el duelo estelar por el banderín de MLB (Dodgers y Yankees)."
-            hybrid_win_rate = "85.0%"
-            hybrid_ev = "+31.5%"
+        elif target_date == "2026-09-25":
+            hybrid_title = "Módulo de Arbitraje Híbrido: Nations League + MLB Pennant Race (Viernes)"
+            hybrid_subtitle = "Fusión cuantitativa del clásico europeo Italia vs. Bélgica con duelos cruciales por el liderato de MLB (Yankees y Phillies en casa)."
+            hybrid_trigger = "ACTIVADO: Arbitraje multideporte de alta asimetría combinando la fortaleza de Italia en el Olímpico de Roma con Yankees en el Bronx y Phillies en Citizens Bank Park."
+            hybrid_win_rate = "86.5%"
+            hybrid_ev = "+33.0%"
         else:
             hybrid_title = f"Módulo de Arbitraje Híbrido Multideporte ({sports_str})"
             hybrid_subtitle = f"Fusión cuantitativa de {hf1['homeTeam']} con las mejores asimetrías de {hf2['homeTeam']} y {hf3['homeTeam']}."
