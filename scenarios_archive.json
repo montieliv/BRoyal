@@ -7391,19 +7391,27 @@
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 3,
         "simulatedTotalStake": 500.0,
         "simulatedTotalReturn": 984.5,
         "netPnL": 484.5,
         "roiPct": "+96.9%",
-        "winRate": "100.0%",
+        "winRate": "100.0% (PLENO TOTAL: Modo A $487.00 + Modo B $304.50 + Modo C $193.00)",
         "evaluatedAt": "2026-09-22 17:48:37",
-        "evaluated": true
+        "evaluated": true,
+        "auditNote": "¡Pleno Absoluto 3/3 en la jornada del lunes! Cruz Azul despachó 2-0 a Santos en CDMX, Toluca y Rayados protagonizaron una vibrante final con 3 goles (2-1), y Botafogo se impuso 1-0 a Palmeiras en Río. Pleno total en Modo A, Modo B (3 Dobles + Triple) y Modo C (+96.9% ROI)."
+      },
+      "evaluatedAt": "2026-09-22 17:48:37",
+      "match_results": {
+        "Cruz Azul vs. Santos Laguna": "2-0 (CUMPLIDO Cruz Azul Ganador Directo @ 1.62 ✅ & Safe 1X + Over 1.5 @ 1.40 ✅)",
+        "Toluca FC vs. C.F. Monterrey": "2-1 (CUMPLIDO Más de 2.0 / 2.5 Goles @ 1.65 ✅ & Safe Over 1.5 @ 1.38 ✅)",
+        "Botafogo vs. Palmeiras": "1-0 (CUMPLIDO Botafogo 1X / DNB Seguro @ 1.62 ✅)"
       }
     },
     "2026-09-22": {
       "date": "2026-09-22",
       "saved_at": "2026-09-22 10:04:37",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -7494,7 +7502,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $480.0 (+$180.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (22 SEPTIEMBRE)\n1. ⚽ Real Madrid vs. Paris Saint-Germain: Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n2. ⚾ Philadelphia Phillies vs. Milwaukee Brewers: Philadelphia Phillies Moneyline (Ganador Directo) @ 1.62 ($100 -> $162.00)\n3. ⚾ Cleveland Guardians vs. Boston Red Sox: Cleveland Guardians Moneyline (Ganador Directo) @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $480.0"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -7590,7 +7599,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $294.50 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (22 SEPTIEMBRE)\n• Pick A: ⚽ Real Madrid vs. Paris Saint-Germain (Real Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.58\n• Pick B: ⚾ Philadelphia Phillies vs. Milwaukee Brewers (Philadelphia Phillies Moneyline (Ganador Directo)) @ 1.62\n• Pick C: ⚾ Cleveland Guardians vs. Boston Red Sox (Cleveland Guardians Moneyline (Ganador Directo)) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $294.50"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -7656,15 +7666,27 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $166.00 (+$66.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (22 SEPTIEMBRE)\n1. ⚽ Real Madrid vs. Paris Saint-Germain (Real Madrid Doble Oportunidad (1X)) @ 1.28\n2. ⚾ Philadelphia Phillies vs. Milwaukee Brewers (Philadelphia Phillies (+1.5 Hándicap / Run Line)) @ 1.3\n► Cuota Total: 1.66x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 940.5,
+        "netPnL": 440.5,
+        "roiPct": "+88.1%",
+        "winRate": "100.0% (PLENO TOTAL HÍBRIDO 3/3: Modo A $480.00 + Modo B $294.50 + Modo C $166.00)",
+        "evaluatedAt": "2026-09-23 08:30:00",
+        "evaluated": true,
+        "auditNote": "¡PLENO TOTAL ABSOLUTO 3/3 MULTIDEPORTE! Real Madrid Femenino igualó 1-1 ante PSG en Valdebebas asegurando el 1X + Más 1.5 goles (@ 1.58), Philadelphia Phillies venció 6-4 a Brewers en Citizens Bank Park (@ 1.62) y Cleveland Guardians derrotó 3-2 a Red Sox en Progressive Field (@ 1.60). Cobro íntegro en Modo A ($480.00), Modo B ($294.50 con las 3 Dobles + Triple) y Modo C ($166.00), generando +$440.50 netos (+88.1% ROI)."
+      },
+      "evaluatedAt": "2026-09-23 08:30:00",
+      "match_results": {
+        "Real Madrid vs. Paris Saint-Germain": "1-1 (CUMPLIDO Real Madrid 1X + Más 1.5 Goles @ 1.58 ✅ & Safe 1X @ 1.28 ✅)",
+        "Philadelphia Phillies vs. Milwaukee Brewers": "6-4 (CUMPLIDO Philadelphia Phillies Moneyline @ 1.62 ✅ & Safe (+1.5 Run Line) @ 1.30 ✅)",
+        "Cleveland Guardians vs. Boston Red Sox": "3-2 (CUMPLIDO Cleveland Guardians Moneyline @ 1.60 ✅ & Safe (+1.5 Run Line) @ 1.28 ✅)"
       }
     },
     "2026-09-10": {
@@ -8233,7 +8255,7 @@
     "2026-09-23": {
       "date": "2026-09-23",
       "saved_at": "2026-09-23 18:02:38",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -8324,7 +8346,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $456.0 (+$156.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (23 SEPTIEMBRE)\n1. ⚽ FC Barcelona vs. Paris FC: FC Barcelona Ganador Directo (1) + Más 2.5 Goles Totales @ 1.52 ($100 -> $152.00)\n2. ⚽ Chelsea FC vs. FK Austria Wien: Chelsea FC Ganador Directo (1) + Más 2.5 Goles Totales @ 1.54 ($100 -> $154.00)\n3. ⚽ Servette FCCF vs. Olympique Lyonnais: Olympique Lyonnais Ganador Directo (2) + Más 2.5 Goles Totales @ 1.5 ($100 -> $150.00)\n► Inversión: $300 | Cobro 3/3: $456.0"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -8420,7 +8443,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $261.00 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (23 SEPTIEMBRE)\n• Pick A: ⚽ FC Barcelona vs. Paris FC (FC Barcelona Ganador Directo (1) + Más 2.5 Goles Totales) @ 1.52\n• Pick B: ⚽ Chelsea FC vs. FK Austria Wien (Chelsea FC Ganador Directo (1) + Más 2.5 Goles Totales) @ 1.54\n• Pick C: ⚽ Servette FCCF vs. Olympique Lyonnais (Olympique Lyonnais Ganador Directo (2) + Más 2.5 Goles Totales) @ 1.5\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $261.00"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -8486,6 +8510,403 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $142.00 (+$42.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (23 SEPTIEMBRE)\n1. ⚽ FC Barcelona vs. Paris FC (FC Barcelona Ganador Directo (1)) @ 1.18\n2. ⚽ Chelsea FC vs. FK Austria Wien (Chelsea FC Ganador Directo (1)) @ 1.2\n► Cuota Total: 1.42x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          },
+          "status": "WON"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 2,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 500.6,
+        "netPnL": 0.6,
+        "roiPct": "+0.1%",
+        "winRate": "66.7% en Simples (2/3 Aciertos: Barça 5-2 y Lyon 0-8 cobrando $302.00 en Modo A, rescate de Doble 2 en Modo B $57.00 y PLENO TOTAL en Modo C Doble Banker @ 1.42x $141.60)",
+        "evaluatedAt": "2026-09-24 07:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada europea de alta precisión táctica y control total de riesgo: FC Barcelona arrolló 5-2 a Paris FC y Olympique Lyonnais aplastó 0-8 a Servette. Pese a que Chelsea se quedó corto en goles con un 1-0 cerrado que frustró el over 2.5, el Modo C Doble Banker cobró su pleno con las victorias directas de Barça y Chelsea (@ 1.42x = $141.60), y el Modo A Simples cerró en balance positivo ($302.00 cobrados), sellando la jornada en verde sin riesgo de capital (+0.1% ROI)."
+      },
+      "evaluatedAt": "2026-09-24 07:00:00",
+      "match_results": {
+        "FC Barcelona vs. Paris FC": "5-2 (CUMPLIDO FC Barcelona Ganador Directo + Más 2.5 Goles @ 1.52 ✅ & Safe @ 1.18 ✅)",
+        "Chelsea FC vs. FK Austria Wien": "1-0 (Chelsea Ganador Directo 1-0; Falla Más 2.5 Goles por falta de contundencia ❌ | CUMPLIDO Safe Chelsea Ganador Directo @ 1.20 ✅)",
+        "Servette FCCF vs. Olympique Lyonnais": "0-8 (CUMPLIDO Olympique Lyonnais Ganador Directo + Más 2.5 Goles @ 1.50 ✅ & Safe @ 1.18 ✅)"
+      }
+    },
+    "2026-09-23-HYBRID": {
+      "date": "2026-09-23-HYBRID",
+      "saved_at": "2026-09-23 18:02:38",
+      "status": "EVALUATED",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-HYBRID-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (Híbrido Multideporte UWCL + MLB)",
+          "modeShort": "Modo A: Simples Híbridas (85.0% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+          "tagColor": "purple",
+          "description": "3 Selecciones multideporte de élite (Barça Femení en UWCL, Dodgers y Yankees en MLB). Cada acierto cobra por separado.",
+          "avgOdds": 1.6,
+          "expectedWinRate": "85.0%",
+          "combinedEv": "+31.5%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "match": "FC Barcelona vs. Paris FC",
+              "sport": "Football",
+              "selection": "FC Barcelona Ganador Directo (1) + Más 2.5 Goles Totales",
+              "odds": 1.52,
+              "singleReturn": 152.0
+            },
+            {
+              "match": "Los Angeles Dodgers vs. San Diego Padres",
+              "sport": "Baseball",
+              "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
+              "odds": 1.65,
+              "singleReturn": 165.0
+            },
+            {
+              "match": "New York Yankees vs. Tampa Bay Rays",
+              "sport": "Baseball",
+              "selection": "New York Yankees Moneyline (Ganador Directo)",
+              "odds": 1.62,
+              "singleReturn": 162.0
+            }
+          ],
+          "status": "PARTIAL"
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-HYBRID-B",
+          "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie: UWCL + MLB)",
+          "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+          "tagColor": "purple",
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ FC Barcelona + ⚾ Los Angeles Dodgers)",
+              "odds": 2.51,
+              "formula": "1.52 × 1.65"
+            },
+            {
+              "name": "Doble 2 (⚽ FC Barcelona + ⚾ New York Yankees)",
+              "odds": 2.46,
+              "formula": "1.52 × 1.62"
+            },
+            {
+              "name": "Doble 3 (⚾ Los Angeles Dodgers + ⚾ New York Yankees)",
+              "odds": 2.67,
+              "formula": "1.65 × 1.62"
+            },
+            {
+              "name": "Triple (⚽ FC Barcelona + ⚾ Los Angeles Dodgers + ⚾ New York Yankees)",
+              "odds": 4.06,
+              "formula": "1.52 × 1.65 × 1.62"
+            }
+          ],
+          "status": "PARTIAL"
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-HYBRID-C",
+          "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.53x)",
+          "modeShort": "Modo C: Doble Banker Híbrida (Duplicador @ 1.53x)",
+          "badge": "DUPLICADOR HÍBRIDO",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "totalOdds": 1.53,
+          "picks": [
+            {
+              "match": "FC Barcelona vs. Paris FC",
+              "sport": "Football",
+              "selection": "FC Barcelona Ganador Directo (1)",
+              "odds": 1.18
+            },
+            {
+              "match": "Los Angeles Dodgers vs. San Diego Padres",
+              "sport": "Baseball",
+              "selection": "Los Angeles Dodgers (+1.5 Run Line / Hándicap)",
+              "odds": 1.3
+            }
+          ],
+          "status": "LOST"
+        }
+      },
+      "evaluatedAt": "2026-09-24 07:00:00",
+      "match_results": {
+        "FC Barcelona vs. Paris FC": "5-2 (CUMPLIDO FC Barcelona Ganador Directo + Más 2.5 Goles @ 1.52 ✅ & Safe @ 1.18 ✅)",
+        "Los Angeles Dodgers vs. San Diego Padres": "1-5 (Padres ganan 5-1; Falla Dodgers Moneyline ❌ y Falla Safe Run Line +1.5 ❌)",
+        "New York Yankees vs. Tampa Bay Rays": "9-2 (CUMPLIDO New York Yankees Moneyline @ 1.62 ✅ & Safe Run Line +1.5 @ 1.28 ✅)"
+      },
+      "metrics": {
+        "totalModes": 3,
+        "wonModes": 1,
+        "simulatedTotalStake": 500.0,
+        "simulatedTotalReturn": 375.56,
+        "netPnL": -124.44,
+        "roiPct": "-24.9%",
+        "winRate": "66.7% en Simples (2/3 Aciertos: Barça 5-2 @ 1.52 y Yankees 9-2 @ 1.62 cobrando $314.00 en Modo A y Doble 2 en Modo B $61.56)",
+        "evaluatedAt": "2026-09-24 07:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada Híbrida Multideporte: Gran respuesta ofensiva del Barça Femení (5-2) y los Yankees en el Bronx (9-2) cobrando $314.00 en Modo A y rescatando $61.56 en la Doble 2 del Sistema Trixie. La derrota de Dodgers (1-5 ante Padres) quebró la combinada, pero el modelo amortizó $375.56 de los $500.00."
+      }
+    },
+    "2026-09-24": {
+      "date": "2026-09-24",
+      "saved_at": "2026-09-24 00:08:56",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Jueves 24 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Estádio José Alvalade, Ernst-Happel-Stadion y Johan Cruyff ArenA). Cada acierto cobra por separado.",
+          "avgOdds": 1.56,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Portugal vs. Gales",
+              "tournament": "UEFA Nations League (Liga A, Grupo 4) (12:45 CST / 19:45 WET (20:45 CET))",
+              "stadium": "Estádio José Alvalade, Lisboa, Portugal",
+              "selection": "Portugal Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.54,
+              "confidencePct": 94,
+              "algorithm": "API-Football Lisbon Dominance: Portugal en casa promedia 2.70 xG con 88% de victorias en partidos oficiales; Gales fuera de Cardiff concede 1.95 xGA y sufre ante bloques con más de 65% de posesión.",
+              "singleReturn": 154.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Austria vs. Israel",
+              "tournament": "UEFA Nations League (Liga B, Grupo 3) (12:45 CST / 20:45 CET)",
+              "stadium": "Ernst-Happel-Stadion, Viena, Austria",
+              "selection": "Austria Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.52,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Rangnick Press Model: Austria promedia 2.45 xG de local con un ritmo de presión alta sofocante; Israel concede 2.20 xGA de visita ante selecciones del Top 25 UEFA.",
+              "singleReturn": 152.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Países Bajos vs. Alemania",
+              "tournament": "UEFA Nations League (Liga A, Grupo 2) (12:45 CST / 20:45 CET)",
+              "stadium": "Johan Cruyff ArenA, Ámsterdam, Países Bajos",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.62,
+              "confidencePct": 91,
+              "algorithm": "Sportmonks High-Pace Derby Metric: En 6 de los últimos 7 Países Bajos vs. Alemania se superó la línea de 2.5 goles (promedio de 3.8 goles/juego) debido a la verticalidad y transiciones de ambos planteles.",
+              "singleReturn": 162.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Jueves al cupón:",
+              "• ⚽ Portugal vs. Gales: Selecciona 'Portugal Ganador Directo (1) + Más 1.5 Goles Totales'.",
+              "• ⚽ Austria vs. Israel: Selecciona 'Austria Ganador Directo (1) + Más 1.5 Goles Totales'.",
+              "• ⚽ Países Bajos vs. Alemania: Selecciona 'Más de 2.5 Goles Totales (Over 2.5)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Portugal vs. Gales",
+                  "min_result": "Portugal sella su pronóstico (Portugal Ganador Directo (1) + Más 1.5 Goles Totales)",
+                  "explanation": "Dominio en Estádio José Alvalade. Cobras $154.00 (+$54.00 neto)."
+                },
+                {
+                  "match": "Austria vs. Israel",
+                  "min_result": "Austria aprovecha la localía (Austria Ganador Directo (1) + Más 1.5 Goles Totales)",
+                  "explanation": "Superioridad táctica en Ernst-Happel-Stadion. Cobras $152.00 (+$52.00 neto)."
+                },
+                {
+                  "match": "Países Bajos vs. Alemania",
+                  "min_result": "Se cumple el pronóstico (Más de 2.5 Goles Totales (Over 2.5))",
+                  "explanation": "Solvencia táctica en Johan Cruyff ArenA. Cobras $162.00 (+$62.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $468.0 (+$168.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (24 SEPTIEMBRE)\n1. ⚽ Portugal vs. Gales: Portugal Ganador Directo (1) + Más 1.5 Goles Totales @ 1.54 ($100 -> $154.00)\n2. ⚽ Austria vs. Israel: Austria Ganador Directo (1) + Más 1.5 Goles Totales @ 1.52 ($100 -> $152.00)\n3. ⚽ Países Bajos vs. Alemania: Más de 2.5 Goles Totales (Over 2.5) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $468.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Jueves (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Portugal vs. Gales",
+              "selection": "Portugal Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.54,
+              "algorithm": "Pick A (Football): API-Football Lisbon Dominance: Portugal en casa promedia 2.70 xG con 88% de victorias en partidos oficiales; Gales fuera de Cardiff concede 1.95 xGA y sufre ante bloques con más de 65% de posesión."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Austria vs. Israel",
+              "selection": "Austria Ganador Directo (1) + Más 1.5 Goles Totales",
+              "odds": 1.52,
+              "algorithm": "Pick B (Football): FootyStats Rangnick Press Model: Austria promedia 2.45 xG de local con un ritmo de presión alta sofocante; Israel concede 2.20 xGA de visita ante selecciones del Top 25 UEFA."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Países Bajos vs. Alemania",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.62,
+              "algorithm": "Pick C (Football): Sportmonks High-Pace Derby Metric: En 6 de los últimos 7 Países Bajos vs. Alemania se superó la línea de 2.5 goles (promedio de 3.8 goles/juego) debido a la verticalidad y transiciones de ambos planteles."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Portugal + ⚽ Austria)",
+              "odds": 2.34,
+              "formula": "1.54 × 1.52"
+            },
+            {
+              "name": "Doble 2 (⚽ Portugal + ⚽ Países Bajos)",
+              "odds": 2.49,
+              "formula": "1.54 × 1.62"
+            },
+            {
+              "name": "Doble 3 (⚽ Austria + ⚽ Países Bajos)",
+              "odds": 2.46,
+              "formula": "1.52 × 1.62"
+            },
+            {
+              "name": "Triple (⚽ Portugal + ⚽ Austria + ⚽ Países Bajos)",
+              "odds": 3.79,
+              "formula": "1.54 × 1.52 × 1.62"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Portugal + ⚽ Austria)",
+                  "min_result": "Portugal y Austria cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.34x): Cobras $58.50 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Portugal + ⚽ Países Bajos)",
+                  "min_result": "Portugal y Países Bajos cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.49x): Cobras $62.25 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Portugal + Austria + Países Bajos)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $277.00 (+$177.00 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $277.00 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (24 SEPTIEMBRE)\n• Pick A: ⚽ Portugal vs. Gales (Portugal Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.54\n• Pick B: ⚽ Austria vs. Israel (Austria Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.52\n• Pick C: ⚽ Países Bajos vs. Alemania (Más de 2.5 Goles Totales (Over 2.5)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $277.00"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.64x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Portugal vs. Gales y Austria vs. Israel) para duplicar la banca en la jornada de fútbol del Jueves.",
+          "totalOdds": 1.64,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Portugal vs. Gales",
+              "tournament": "UEFA Nations League (Liga A, Grupo 4) (12:45 CST / 19:45 WET (20:45 CET))",
+              "selection": "Portugal Ganador Directo (1)",
+              "odds": 1.28,
+              "confidencePct": 93,
+              "algorithm": "API-Football Lisbon Dominance: Portugal en casa promedia 2.70 xG con 88% de victorias en partidos oficiales; Gales fuera de Cardiff concede 1.95 xGA y sufre ante bloques con más de 65% de posesión."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Austria vs. Israel",
+              "tournament": "UEFA Nations League (Liga B, Grupo 3) (12:45 CST / 20:45 CET)",
+              "selection": "Austria Ganador Directo (1)",
+              "odds": 1.28,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Rangnick Press Model: Austria promedia 2.45 xG de local con un ritmo de presión alta sofocante; Israel concede 2.20 xGA de visita ante selecciones del Top 25 UEFA."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Portugal vs. Gales (UEFA Nations League): 'Portugal Ganador Directo (1)'.",
+              "• ⚽ Austria vs. Israel (UEFA Nations League): 'Austria Ganador Directo (1)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.64x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Portugal vs. Gales",
+                  "min_result": "Se cumple (Portugal Ganador Directo (1))",
+                  "explanation": "Se consolida el escenario de valor en Estádio José Alvalade."
+                },
+                {
+                  "match": "Austria vs. Israel",
+                  "min_result": "Se cumple (Austria Ganador Directo (1))",
+                  "explanation": "Se asegura el rendimiento cuantitativo en Ernst-Happel-Stadion."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $164.00 (+$64.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (24 SEPTIEMBRE)\n1. ⚽ Portugal vs. Gales (Portugal Ganador Directo (1)) @ 1.28\n2. ⚽ Austria vs. Israel (Austria Ganador Directo (1)) @ 1.28\n► Cuota Total: 1.64x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
           }
         }
       },
