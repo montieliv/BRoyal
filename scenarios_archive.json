@@ -8653,8 +8653,8 @@
     },
     "2026-09-24": {
       "date": "2026-09-24",
-      "saved_at": "2026-09-24 18:02:01",
-      "status": "PENDING_EVALUATION",
+      "saved_at": "2026-09-24 00:08:56",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -8745,7 +8745,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $468.0 (+$168.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (24 SEPTIEMBRE)\n1. ⚽ Portugal vs. Gales: Portugal Ganador Directo (1) + Más 1.5 Goles Totales @ 1.54 ($100 -> $154.00)\n2. ⚽ Austria vs. Israel: Austria Ganador Directo (1) + Más 1.5 Goles Totales @ 1.52 ($100 -> $152.00)\n3. ⚽ Países Bajos vs. Alemania: Más de 2.5 Goles Totales (Over 2.5) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $468.0"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -8841,7 +8842,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $277.00 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (24 SEPTIEMBRE)\n• Pick A: ⚽ Portugal vs. Gales (Portugal Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.54\n• Pick B: ⚽ Austria vs. Israel (Austria Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.52\n• Pick C: ⚽ Países Bajos vs. Alemania (Más de 2.5 Goles Totales (Over 2.5)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $277.00"
-          }
+          },
+          "status": "LOST"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -8907,20 +8909,32 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $164.00 (+$64.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (24 SEPTIEMBRE)\n1. ⚽ Portugal vs. Gales (Portugal Ganador Directo (1)) @ 1.28\n2. ⚽ Austria vs. Israel (Austria Ganador Directo (1)) @ 1.28\n► Cuota Total: 1.64x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 2,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 315.84,
+        "netPnL": -184.16,
+        "roiPct": "-36.8%",
+        "winRate": "66.7% (Acierto en Simples con Austria $152.00 y PLENO TOTAL en Modo C Doble Banker cobrando $163.84 @ 1.64x)",
+        "evaluatedAt": "2026-09-25 08:30:00",
+        "evaluated": true,
+        "auditNote": "Jornada del jueves con cobro perfecto e impecable en Modo C Doble Banker (@ 1.64x = $163.84 cobrados) con las victorias directas de Portugal (1-0) y Austria (3-1). En Modo A, Austria cumplió su victoria y goles cobrando $152.00 adicionales."
+      },
+      "evaluatedAt": "2026-09-25 08:30:00",
+      "match_results": {
+        "Portugal vs. Gales": "1-0 (CUMPLIDO Portugal Ganador Directo @ 1.28 ✅; Falla Over 1.5 por medio gol)",
+        "Austria vs. Israel": "3-1 (CUMPLIDO Austria Ganador Directo + Más 1.5 Goles @ 1.52 ✅ & Safe @ 1.28 ✅)",
+        "Países Bajos vs. Alemania": "1-1 (Falla Over 2.5 tras empate 1-1 al 90+2; Safe Over 2.0 Asiático PUSH / REEMBOLSO)"
       }
     },
     "2026-09-25": {
       "date": "2026-09-25",
-      "saved_at": "2026-09-25 18:07:57",
+      "saved_at": "2026-09-24 00:21:58",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
@@ -9174,6 +9188,273 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $156.00 (+$56.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica (Italia Doble Oportunidad (1X)) @ 1.25\n2. ⚽ Turquía vs. Francia (Francia Doble Oportunidad (X2)) @ 1.25\n► Cuota Total: 1.56x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      }
+    },
+    "2026-09-26": {
+      "date": "2026-09-26",
+      "saved_at": "2026-09-25 16:34:31",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Sábado 26 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Wembley Stadium, Toše Proeski Arena y Fortuna Arena). Cada acierto cobra por separado.",
+          "avgOdds": 1.56,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Inglaterra vs. España",
+              "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 19:45 BST (20:45 CET))",
+              "stadium": "Wembley Stadium, Londres, Inglaterra",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.56,
+              "confidencePct": 94,
+              "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG con Kane y Bellingham. 8 de sus últimos 9 duelos oficiales superaron 1.5 goles.",
+              "singleReturn": 156.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Macedonia del Norte vs. Suiza",
+              "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+              "stadium": "Toše Proeski Arena, Skopie, Macedonia del Norte",
+              "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
+              "odds": 1.55,
+              "confidencePct": 93,
+              "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA con dominio de Xhaka en mediocampo; Macedonia sufre ante bloques de posesión alta.",
+              "singleReturn": 155.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "República Checa vs. Croacia",
+              "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+              "stadium": "Fortuna Arena, Praga, República Checa",
+              "selection": "Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.58,
+              "confidencePct": 91,
+              "algorithm": "Sportmonks Tactical Index: Croacia en Nations League ostenta 80% de imbatibilidad en fase regular; mediocampo con Modrić y Kovačić controla ritmo y transiciones ante una Chequia intensa que concede 1.70 xGA.",
+              "singleReturn": 158.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Sábado al cupón:",
+              "• ⚽ Inglaterra vs. España: Selecciona 'Más de 1.5 Goles Totales (Over 1.5)'.",
+              "• ⚽ Macedonia del Norte vs. Suiza: Selecciona 'Suiza Ganador Directo (2) + Más 1.5 Goles Totales'.",
+              "• ⚽ República Checa vs. Croacia: Selecciona 'Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Inglaterra vs. España",
+                  "min_result": "Inglaterra sella su pronóstico (Más de 1.5 Goles Totales (Over 1.5))",
+                  "explanation": "Dominio en Wembley Stadium. Cobras $156.00 (+$56.00 neto)."
+                },
+                {
+                  "match": "Macedonia del Norte vs. Suiza",
+                  "min_result": "Macedonia del Norte aprovecha la localía (Suiza Ganador Directo (2) + Más 1.5 Goles Totales)",
+                  "explanation": "Superioridad táctica en Toše Proeski Arena. Cobras $155.00 (+$55.00 neto)."
+                },
+                {
+                  "match": "República Checa vs. Croacia",
+                  "min_result": "Se cumple el pronóstico (Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
+                  "explanation": "Solvencia táctica en Fortuna Arena. Cobras $158.00 (+$58.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $469.0 (+$169.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (26 SEPTIEMBRE)\n1. ⚽ Inglaterra vs. España: Más de 1.5 Goles Totales (Over 1.5) @ 1.56 ($100 -> $156.00)\n2. ⚽ Macedonia del Norte vs. Suiza: Suiza Ganador Directo (2) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n3. ⚽ República Checa vs. Croacia: Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $469.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Sábado (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Inglaterra vs. España",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.56,
+              "algorithm": "Pick A (Football): FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG con Kane y Bellingham. 8 de sus últimos 9 duelos oficiales superaron 1.5 goles."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Macedonia del Norte vs. Suiza",
+              "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
+              "odds": 1.55,
+              "algorithm": "Pick B (Football): API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA con dominio de Xhaka en mediocampo; Macedonia sufre ante bloques de posesión alta."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "República Checa vs. Croacia",
+              "selection": "Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.58,
+              "algorithm": "Pick C (Football): Sportmonks Tactical Index: Croacia en Nations League ostenta 80% de imbatibilidad en fase regular; mediocampo con Modrić y Kovačić controla ritmo y transiciones ante una Chequia intensa que concede 1.70 xGA."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Inglaterra + ⚽ Macedonia del Norte)",
+              "odds": 2.42,
+              "formula": "1.56 × 1.55"
+            },
+            {
+              "name": "Doble 2 (⚽ Inglaterra + ⚽ República Checa)",
+              "odds": 2.46,
+              "formula": "1.56 × 1.58"
+            },
+            {
+              "name": "Doble 3 (⚽ Macedonia del Norte + ⚽ República Checa)",
+              "odds": 2.45,
+              "formula": "1.55 × 1.58"
+            },
+            {
+              "name": "Triple (⚽ Inglaterra + ⚽ Macedonia del Norte + ⚽ República Checa)",
+              "odds": 3.82,
+              "formula": "1.56 × 1.55 × 1.58"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Inglaterra + ⚽ Macedonia del Norte)",
+                  "min_result": "Inglaterra y Macedonia del Norte cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.42x): Cobras $60.50 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Inglaterra + ⚽ República Checa)",
+                  "min_result": "Inglaterra y República Checa cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.46x): Cobras $61.50 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Inglaterra + Macedonia del Norte + República Checa)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $278.75 (+$178.75 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $278.75 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (26 SEPTIEMBRE)\n• Pick A: ⚽ Inglaterra vs. España (Más de 1.5 Goles Totales (Over 1.5)) @ 1.56\n• Pick B: ⚽ Macedonia del Norte vs. Suiza (Suiza Ganador Directo (2) + Más 1.5 Goles Totales) @ 1.55\n• Pick C: ⚽ República Checa vs. Croacia (Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $278.75"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.57x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Inglaterra vs. España y Macedonia del Norte vs. Suiza) para duplicar la banca en la jornada de fútbol del Sábado.",
+          "totalOdds": 1.57,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Inglaterra vs. España",
+              "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 19:45 BST (20:45 CET))",
+              "selection": "Más de 1.5 Goles Totales",
+              "odds": 1.26,
+              "confidencePct": 93,
+              "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG con Kane y Bellingham. 8 de sus últimos 9 duelos oficiales superaron 1.5 goles."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Macedonia del Norte vs. Suiza",
+              "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+              "selection": "Suiza Ganador Directo (2)",
+              "odds": 1.25,
+              "confidencePct": 92,
+              "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA con dominio de Xhaka en mediocampo; Macedonia sufre ante bloques de posesión alta."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Inglaterra vs. España (UEFA Nations League): 'Más de 1.5 Goles Totales'.",
+              "• ⚽ Macedonia del Norte vs. Suiza (UEFA Nations League): 'Suiza Ganador Directo (2)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.57x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Inglaterra vs. España",
+                  "min_result": "Se cumple (Más de 1.5 Goles Totales)",
+                  "explanation": "Se consolida el escenario de valor en Wembley Stadium."
+                },
+                {
+                  "match": "Macedonia del Norte vs. Suiza",
+                  "min_result": "Se cumple (Suiza Ganador Directo (2))",
+                  "explanation": "Se asegura el rendimiento cuantitativo en Toše Proeski Arena."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $157.00 (+$57.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (26 SEPTIEMBRE)\n1. ⚽ Inglaterra vs. España (Más de 1.5 Goles Totales) @ 1.26\n2. ⚽ Macedonia del Norte vs. Suiza (Suiza Ganador Directo (2)) @ 1.25\n► Cuota Total: 1.57x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
           }
         }
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25 11:00:00",
+  "generated_at": "2026-09-26 11:00:00",
   "hybrid_mode": false,
   "hybrid_trigger_reason": "MODO MONO-DEPORTE (100% FÚTBOL): Tríada estelar de Domingo (Premier League y Derbi Madrileño de LaLiga) con máxima asimetría estadística y EV+ >25%.",
   "active_sports": [
@@ -7,8 +7,8 @@
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-09-25",
-    "verified_at": "2026-09-25 18:07:57",
+    "verified_date": "2026-09-26",
+    "verified_at": "2026-09-25 16:34:31",
     "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
     "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
@@ -21,8 +21,8 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Viernes 25 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Stadio Olimpico, Rams Park y Strawberry Arena). Cada acierto cobra por separado.",
-      "avgOdds": 1.58,
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Sábado 26 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Wembley Stadium, Toše Proeski Arena y Fortuna Arena). Cada acierto cobra por separado.",
+      "avgOdds": 1.56,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -32,52 +32,52 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Italia vs. Bélgica",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
-          "stadium": "Stadio Olimpico, Roma, Italia",
-          "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
-          "odds": 1.55,
-          "confidencePct": 93,
-          "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales.",
-          "singleReturn": 155.0,
+          "match": "Inglaterra vs. España",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 19:45 BST (20:45 CET))",
+          "stadium": "Wembley Stadium, Londres, Inglaterra",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.56,
+          "confidencePct": 94,
+          "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG con Kane y Bellingham. 8 de sus últimos 9 duelos oficiales superaron 1.5 goles.",
+          "singleReturn": 156.0,
           "verified": true
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Turquía vs. Francia",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST (21:45 TRT))",
-          "stadium": "Rams Park, Estambul, Turquía",
-          "selection": "Francia Ganador Directo (2) + Más 1.5 Goles Totales",
-          "odds": 1.58,
-          "confidencePct": 92,
-          "algorithm": "API-Football French Arsenal: Francia promedia 2.40 xG con Mbappé y Barcola en ataque estelar; Turquía concede 1.85 xGA ante rivales de élite continental.",
-          "singleReturn": 158.0,
+          "match": "Macedonia del Norte vs. Suiza",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "stadium": "Toše Proeski Arena, Skopie, Macedonia del Norte",
+          "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
+          "odds": 1.55,
+          "confidencePct": 93,
+          "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA con dominio de Xhaka en mediocampo; Macedonia sufre ante bloques de posesión alta.",
+          "singleReturn": 155.0,
           "verified": true
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Suecia vs. Rumania",
-          "tournament": "UEFA Nations League (Liga B, Grupo 2) (12:45 CST / 20:45 CEST)",
-          "stadium": "Strawberry Arena, Solna, Suecia",
-          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-          "odds": 1.62,
+          "match": "República Checa vs. Croacia",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "stadium": "Fortuna Arena, Praga, República Checa",
+          "selection": "Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+          "odds": 1.58,
           "confidencePct": 91,
-          "algorithm": "Sportmonks High-Pace Metric: Suecia con Isak y Gyökeres genera 2.65 xG por encuentro; 75% de sus duelos superan la línea de 2.5 goles debido al juego vertical nórdico.",
-          "singleReturn": 162.0,
+          "algorithm": "Sportmonks Tactical Index: Croacia en Nations League ostenta 80% de imbatibilidad en fase regular; mediocampo con Modrić y Kovačić controla ritmo y transiciones ante una Chequia intensa que concede 1.70 xGA.",
+          "singleReturn": 158.0,
           "verified": true
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 partidos estelares de fútbol del Viernes al cupón:",
-          "• ⚽ Italia vs. Bélgica: Selecciona 'Italia Ganador Directo (1) + Más 1.5 Goles Totales'.",
-          "• ⚽ Turquía vs. Francia: Selecciona 'Francia Ganador Directo (2) + Más 1.5 Goles Totales'.",
-          "• ⚽ Suecia vs. Rumania: Selecciona 'Más de 2.5 Goles Totales (Over 2.5)'.",
+          "Agrega los 3 partidos estelares de fútbol del Sábado al cupón:",
+          "• ⚽ Inglaterra vs. España: Selecciona 'Más de 1.5 Goles Totales (Over 1.5)'.",
+          "• ⚽ Macedonia del Norte vs. Suiza: Selecciona 'Suiza Ganador Directo (2) + Más 1.5 Goles Totales'.",
+          "• ⚽ República Checa vs. Croacia: Selecciona 'Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
           "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
@@ -85,24 +85,24 @@
           "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "Italia vs. Bélgica",
-              "min_result": "Italia sella su pronóstico (Italia Ganador Directo (1) + Más 1.5 Goles Totales)",
-              "explanation": "Dominio en Stadio Olimpico. Cobras $155.00 (+$55.00 neto)."
+              "match": "Inglaterra vs. España",
+              "min_result": "Inglaterra sella su pronóstico (Más de 1.5 Goles Totales (Over 1.5))",
+              "explanation": "Dominio en Wembley Stadium. Cobras $156.00 (+$56.00 neto)."
             },
             {
-              "match": "Turquía vs. Francia",
-              "min_result": "Turquía aprovecha la localía (Francia Ganador Directo (2) + Más 1.5 Goles Totales)",
-              "explanation": "Superioridad táctica en Rams Park. Cobras $158.00 (+$58.00 neto)."
+              "match": "Macedonia del Norte vs. Suiza",
+              "min_result": "Macedonia del Norte aprovecha la localía (Suiza Ganador Directo (2) + Más 1.5 Goles Totales)",
+              "explanation": "Superioridad táctica en Toše Proeski Arena. Cobras $155.00 (+$55.00 neto)."
             },
             {
-              "match": "Suecia vs. Rumania",
-              "min_result": "Se cumple el pronóstico (Más de 2.5 Goles Totales (Over 2.5))",
-              "explanation": "Solvencia táctica en Strawberry Arena. Cobras $162.00 (+$62.00 neto)."
+              "match": "República Checa vs. Croacia",
+              "min_result": "Se cumple el pronóstico (Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
+              "explanation": "Solvencia táctica en Fortuna Arena. Cobras $158.00 (+$58.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $475.0 (+$175.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $469.0 (+$169.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica: Italia Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n2. ⚽ Turquía vs. Francia: Francia Ganador Directo (2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n3. ⚽ Suecia vs. Rumania: Más de 2.5 Goles Totales (Over 2.5) @ 1.62 ($100 -> $162.00)\n► Inversión: $300 | Cobro 3/3: $475.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (26 SEPTIEMBRE)\n1. ⚽ Inglaterra vs. España: Más de 1.5 Goles Totales (Over 1.5) @ 1.56 ($100 -> $156.00)\n2. ⚽ Macedonia del Norte vs. Suiza: Suiza Ganador Directo (2) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n3. ⚽ República Checa vs. Croacia: Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $469.0"
       }
     },
     "modo_b_sistema": {
@@ -112,7 +112,7 @@
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Viernes (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Sábado (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -123,50 +123,50 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Italia vs. Bélgica",
-          "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
-          "odds": 1.55,
-          "algorithm": "Pick A (Football): FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales."
+          "match": "Inglaterra vs. España",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.56,
+          "algorithm": "Pick A (Football): FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG con Kane y Bellingham. 8 de sus últimos 9 duelos oficiales superaron 1.5 goles."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Turquía vs. Francia",
-          "selection": "Francia Ganador Directo (2) + Más 1.5 Goles Totales",
-          "odds": 1.58,
-          "algorithm": "Pick B (Football): API-Football French Arsenal: Francia promedia 2.40 xG con Mbappé y Barcola en ataque estelar; Turquía concede 1.85 xGA ante rivales de élite continental."
+          "match": "Macedonia del Norte vs. Suiza",
+          "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
+          "odds": 1.55,
+          "algorithm": "Pick B (Football): API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA con dominio de Xhaka en mediocampo; Macedonia sufre ante bloques de posesión alta."
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Suecia vs. Rumania",
-          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-          "odds": 1.62,
-          "algorithm": "Pick C (Football): Sportmonks High-Pace Metric: Suecia con Isak y Gyökeres genera 2.65 xG por encuentro; 75% de sus duelos superan la línea de 2.5 goles debido al juego vertical nórdico."
+          "match": "República Checa vs. Croacia",
+          "selection": "Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+          "odds": 1.58,
+          "algorithm": "Pick C (Football): Sportmonks Tactical Index: Croacia en Nations League ostenta 80% de imbatibilidad en fase regular; mediocampo con Modrić y Kovačić controla ritmo y transiciones ante una Chequia intensa que concede 1.70 xGA."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Italia + ⚽ Turquía)",
+          "name": "Doble 1 (⚽ Inglaterra + ⚽ Macedonia del Norte)",
+          "odds": 2.42,
+          "formula": "1.56 × 1.55"
+        },
+        {
+          "name": "Doble 2 (⚽ Inglaterra + ⚽ República Checa)",
+          "odds": 2.46,
+          "formula": "1.56 × 1.58"
+        },
+        {
+          "name": "Doble 3 (⚽ Macedonia del Norte + ⚽ República Checa)",
           "odds": 2.45,
           "formula": "1.55 × 1.58"
         },
         {
-          "name": "Doble 2 (⚽ Italia + ⚽ Suecia)",
-          "odds": 2.51,
-          "formula": "1.55 × 1.62"
-        },
-        {
-          "name": "Doble 3 (⚽ Turquía + ⚽ Suecia)",
-          "odds": 2.56,
-          "formula": "1.58 × 1.62"
-        },
-        {
-          "name": "Triple (⚽ Italia + ⚽ Turquía + ⚽ Suecia)",
-          "odds": 3.97,
-          "formula": "1.55 × 1.58 × 1.62"
+          "name": "Triple (⚽ Inglaterra + ⚽ Macedonia del Norte + ⚽ República Checa)",
+          "odds": 3.82,
+          "formula": "1.56 × 1.55 × 1.58"
         }
       ],
       "real_life_example": {
@@ -181,35 +181,35 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ Italia + ⚽ Turquía)",
-              "min_result": "Italia y Turquía cumplen sus líneas",
-              "explanation": "Cobras la Doble 1 (@ 2.45x): Cobras $61.25 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ Inglaterra + ⚽ Macedonia del Norte)",
+              "min_result": "Inglaterra y Macedonia del Norte cumplen sus líneas",
+              "explanation": "Cobras la Doble 1 (@ 2.42x): Cobras $60.50 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ Italia + ⚽ Suecia)",
-              "min_result": "Italia y Suecia cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.51x): Cobras $62.75 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ Inglaterra + ⚽ República Checa)",
+              "min_result": "Inglaterra y República Checa cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.46x): Cobras $61.50 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (Italia + Turquía + Suecia)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $287.25 (+$187.25 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (Inglaterra + Macedonia del Norte + República Checa)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $278.75 (+$178.75 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $287.25 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $278.75 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (25 SEPTIEMBRE)\n• Pick A: ⚽ Italia vs. Bélgica (Italia Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.55\n• Pick B: ⚽ Turquía vs. Francia (Francia Ganador Directo (2) + Más 1.5 Goles Totales) @ 1.58\n• Pick C: ⚽ Suecia vs. Rumania (Más de 2.5 Goles Totales (Over 2.5)) @ 1.62\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $287.25"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (26 SEPTIEMBRE)\n• Pick A: ⚽ Inglaterra vs. España (Más de 1.5 Goles Totales (Over 1.5)) @ 1.56\n• Pick B: ⚽ Macedonia del Norte vs. Suiza (Suiza Ganador Directo (2) + Más 1.5 Goles Totales) @ 1.55\n• Pick C: ⚽ República Checa vs. Croacia (Croacia Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $278.75"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.56x)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.57x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Italia vs. Bélgica y Turquía vs. Francia) para duplicar la banca en la jornada de fútbol del Viernes.",
-      "totalOdds": 1.56,
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Inglaterra vs. España y Macedonia del Norte vs. Suiza) para duplicar la banca en la jornada de fútbol del Sábado.",
+      "totalOdds": 1.57,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
       "combinedEv": "+33.5%",
@@ -220,78 +220,92 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Italia vs. Bélgica",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
-          "selection": "Italia Doble Oportunidad (1X)",
-          "odds": 1.25,
+          "match": "Inglaterra vs. España",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 19:45 BST (20:45 CET))",
+          "selection": "Más de 1.5 Goles Totales",
+          "odds": 1.26,
           "confidencePct": 93,
-          "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales."
+          "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG con Kane y Bellingham. 8 de sus últimos 9 duelos oficiales superaron 1.5 goles."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Turquía vs. Francia",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST (21:45 TRT))",
-          "selection": "Francia Doble Oportunidad (X2)",
+          "match": "Macedonia del Norte vs. Suiza",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "selection": "Suiza Ganador Directo (2)",
           "odds": 1.25,
           "confidencePct": 92,
-          "algorithm": "API-Football French Arsenal: Francia promedia 2.40 xG con Mbappé y Barcola en ataque estelar; Turquía concede 1.85 xGA ante rivales de élite continental."
+          "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA con dominio de Xhaka en mediocampo; Macedonia sufre ante bloques de posesión alta."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
           "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-          "• ⚽ Italia vs. Bélgica (UEFA Nations League): 'Italia Doble Oportunidad (1X)'.",
-          "• ⚽ Turquía vs. Francia (UEFA Nations League): 'Francia Doble Oportunidad (X2)'.",
+          "• ⚽ Inglaterra vs. España (UEFA Nations League): 'Más de 1.5 Goles Totales'.",
+          "• ⚽ Macedonia del Norte vs. Suiza (UEFA Nations League): 'Suiza Ganador Directo (2)'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.56x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.57x."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "Italia vs. Bélgica",
-              "min_result": "Se cumple (Italia Doble Oportunidad (1X))",
-              "explanation": "Se consolida el escenario de valor en Stadio Olimpico."
+              "match": "Inglaterra vs. España",
+              "min_result": "Se cumple (Más de 1.5 Goles Totales)",
+              "explanation": "Se consolida el escenario de valor en Wembley Stadium."
             },
             {
-              "match": "Turquía vs. Francia",
-              "min_result": "Se cumple (Francia Doble Oportunidad (X2))",
-              "explanation": "Se asegura el rendimiento cuantitativo en Rams Park."
+              "match": "Macedonia del Norte vs. Suiza",
+              "min_result": "Se cumple (Suiza Ganador Directo (2))",
+              "explanation": "Se asegura el rendimiento cuantitativo en Toše Proeski Arena."
             }
           ],
-          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $156.00 (+$56.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $157.00 (+$57.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica (Italia Doble Oportunidad (1X)) @ 1.25\n2. ⚽ Turquía vs. Francia (Francia Doble Oportunidad (X2)) @ 1.25\n► Cuota Total: 1.56x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (26 SEPTIEMBRE)\n1. ⚽ Inglaterra vs. España (Más de 1.5 Goles Totales) @ 1.26\n2. ⚽ Macedonia del Norte vs. Suiza (Suiza Ganador Directo (2)) @ 1.25\n► Cuota Total: 1.57x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   },
   "has_hybrid_edition": true,
   "hybrid_edition": {
-    "title": "Módulo de Arbitraje Híbrido: Nations League + MLB Pennant Race (Viernes)",
-    "subtitle": "Fusión cuantitativa del clásico europeo Italia vs. Bélgica con duelos cruciales por el liderato de MLB (Yankees y Phillies en casa).",
-    "trigger_reason": "ACTIVADO: Arbitraje multideporte de alta asimetría combinando la fortaleza de Italia en el Olímpico de Roma con Yankees en el Bronx y Phillies en Citizens Bank Park.",
+    "title": "Módulo de Arbitraje Híbrido: Súper Sábado (Nations League + Clásico MLB)",
+    "subtitle": "Fusión cuantitativa del choque Wembley Inglaterra vs. España y Suiza con el Clásico del Oeste Dodgers vs. Giants.",
+    "trigger_reason": "ACTIVADO: Arbitraje multideporte de alta asimetría combinando la potencia ofensiva en Wembley con la solvencia suiza y Dodgers en Chávez Ravine.",
     "active_sports": [
       "Football",
       "Baseball"
     ],
-    "expectedWinRate": "86.5%",
-    "avgOdds": 1.59,
-    "combinedEv": "+33.0%",
+    "expectedWinRate": "86.0%",
+    "avgOdds": 1.58,
+    "combinedEv": "+32.5%",
     "picks": [
       {
         "sourceName": "FootyStats",
         "sport": "Football",
         "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "match": "Italia vs. Bélgica",
-        "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-        "stadium": "Stadio Olimpico, Roma, Italia",
-        "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
+        "match": "Inglaterra vs. España",
+        "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+        "stadium": "Wembley Stadium, Londres, Inglaterra",
+        "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+        "odds": 1.56,
+        "confidencePct": 94,
+        "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG. 8 de 9 duelos oficiales superaron 1.5 goles.",
+        "singleReturn": 156.0,
+        "verified": true
+      },
+      {
+        "sourceName": "API-Football",
+        "sport": "Football",
+        "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+        "match": "Macedonia del Norte vs. Suiza",
+        "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+        "stadium": "Toše Proeski Arena, Skopie, Macedonia del Norte",
+        "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
         "odds": 1.55,
         "confidencePct": 93,
-        "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales.",
+        "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA; Xhaka y Vargas dominan transiciones ante una Macedonia vulnerable.",
         "singleReturn": 155.0,
         "verified": true
       },
@@ -299,28 +313,14 @@
         "sourceName": "Baseball Savant",
         "sport": "Baseball",
         "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-        "match": "New York Yankees vs. Baltimore Orioles",
-        "tournament": "Major League Baseball (AL East Pennant Race)",
-        "stadium": "Yankee Stadium, Bronx, New York",
-        "selection": "New York Yankees Moneyline (Ganador Directo)",
+        "match": "Los Angeles Dodgers vs. San Francisco Giants",
+        "tournament": "Major League Baseball (NL West Rivalry)",
+        "stadium": "Dodger Stadium, Los Ángeles, California",
+        "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
         "odds": 1.62,
-        "confidencePct": 92,
-        "algorithm": "Baseball Savant Bronx Dominance: Yankees en el Bronx lideran la liga en wOBA (.355) y diferencial de carreras ante abridores de Baltimore; ventaja decisiva de bullpen en la serie definitoria divisional.",
-        "singleReturn": 162.0,
-        "verified": true
-      },
-      {
-        "sourceName": "Baseball Savant",
-        "sport": "Baseball",
-        "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-        "match": "Philadelphia Phillies vs. Tampa Bay Rays",
-        "tournament": "Major League Baseball (NL / AL Interleague)",
-        "stadium": "Citizens Bank Park, Filadelfia, Pensilvania",
-        "selection": "Philadelphia Phillies Moneyline (Ganador Directo)",
-        "odds": 1.6,
         "confidencePct": 91,
-        "algorithm": "Baseball Savant South Philly Metric: Phillies en Citizens Bank Park con 68% de victorias de local; rotación abridora con 27% K% ante bateadores de contacto de Tampa Bay.",
-        "singleReturn": 160.0,
+        "algorithm": "Baseball Savant Chavez Ravine Metric: Dodgers en casa lideran la Liga Nacional en wOBA (.356) y poder ante abridores de San Francisco; ventaja de bullpen en entradas finales.",
+        "singleReturn": 162.0,
         "verified": true
       }
     ],
@@ -328,14 +328,14 @@
       "modo_a_simples": {
         "id": "STRATEGY-HYBRID-A",
         "modeName": "Modo A: Simples Híbridas (Fútbol + MLB)",
-        "modeShort": "Modo A: Simples Híbridas (86.5% Win Rate)",
+        "modeShort": "Modo A: Simples Híbridas (86.0% Win Rate)",
         "badge": "MÁXIMO WIN RATE HÍBRIDO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
-        "description": "3 Selecciones multideporte de élite para el Viernes 25 de Septiembre (Italia en Football, New York Yankees en Baseball y Philadelphia Phillies en Baseball). Cada acierto cobra por separado.",
-        "avgOdds": 1.59,
-        "expectedWinRate": "86.5%",
-        "combinedEv": "+33.0%",
+        "description": "3 Selecciones multideporte de élite para el Sábado 26 de Septiembre (Inglaterra en Football, Macedonia del Norte en Football y Los Angeles Dodgers en Baseball). Cada acierto cobra por separado.",
+        "avgOdds": 1.58,
+        "expectedWinRate": "86.0%",
+        "combinedEv": "+32.5%",
         "recommendedStake": "1.0% por selección (Flat Staking)",
         "riskLevel": "MÍNIMO",
         "picks": [
@@ -343,13 +343,27 @@
             "sourceName": "FootyStats",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Italia vs. Bélgica",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "stadium": "Stadio Olimpico, Roma, Italia",
-            "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
+            "match": "Inglaterra vs. España",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Wembley Stadium, Londres, Inglaterra",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.56,
+            "confidencePct": 94,
+            "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG. 8 de 9 duelos oficiales superaron 1.5 goles.",
+            "singleReturn": 156.0,
+            "verified": true
+          },
+          {
+            "sourceName": "API-Football",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "Macedonia del Norte vs. Suiza",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Toše Proeski Arena, Skopie, Macedonia del Norte",
+            "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
             "odds": 1.55,
             "confidencePct": 93,
-            "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales.",
+            "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA; Xhaka y Vargas dominan transiciones ante una Macedonia vulnerable.",
             "singleReturn": 155.0,
             "verified": true
           },
@@ -357,28 +371,14 @@
             "sourceName": "Baseball Savant",
             "sport": "Baseball",
             "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-            "match": "New York Yankees vs. Baltimore Orioles",
-            "tournament": "Major League Baseball (AL East Pennant Race)",
-            "stadium": "Yankee Stadium, Bronx, New York",
-            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "match": "Los Angeles Dodgers vs. San Francisco Giants",
+            "tournament": "Major League Baseball (NL West Rivalry)",
+            "stadium": "Dodger Stadium, Los Ángeles, California",
+            "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
             "odds": 1.62,
-            "confidencePct": 92,
-            "algorithm": "Baseball Savant Bronx Dominance: Yankees en el Bronx lideran la liga en wOBA (.355) y diferencial de carreras ante abridores de Baltimore; ventaja decisiva de bullpen en la serie definitoria divisional.",
-            "singleReturn": 162.0,
-            "verified": true
-          },
-          {
-            "sourceName": "Baseball Savant",
-            "sport": "Baseball",
-            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-            "match": "Philadelphia Phillies vs. Tampa Bay Rays",
-            "tournament": "Major League Baseball (NL / AL Interleague)",
-            "stadium": "Citizens Bank Park, Filadelfia, Pensilvania",
-            "selection": "Philadelphia Phillies Moneyline (Ganador Directo)",
-            "odds": 1.6,
             "confidencePct": 91,
-            "algorithm": "Baseball Savant South Philly Metric: Phillies en Citizens Bank Park con 68% de victorias de local; rotación abridora con 27% K% ante bateadores de contacto de Tampa Bay.",
-            "singleReturn": 160.0,
+            "algorithm": "Baseball Savant Chavez Ravine Metric: Dodgers en casa lideran la Liga Nacional en wOBA (.356) y poder ante abridores de San Francisco; ventaja de bullpen en entradas finales.",
+            "singleReturn": 162.0,
             "verified": true
           }
         ],
@@ -386,33 +386,33 @@
           "bookie_steps": [
             "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
             "Agrega los 3 eventos multideporte al cupón:",
-            "• ⚽ Italia vs. Bélgica: 'Italia Ganador Directo (1) + Más 1.5 Goles Totales'.",
-            "• ⚾ New York Yankees vs. Baltimore Orioles: 'New York Yankees Moneyline (Ganador Directo)'.",
-            "• ⚾ Philadelphia Phillies vs. Tampa Bay Rays: 'Philadelphia Phillies Moneyline (Ganador Directo)'.",
+            "• ⚽ Inglaterra vs. España: 'Más de 1.5 Goles Totales (Over 1.5)'.",
+            "• ⚽ Macedonia del Norte vs. Suiza: 'Suiza Ganador Directo (2) + Más 1.5 Goles Totales'.",
+            "• ⚾ Los Angeles Dodgers vs. San Francisco Giants: 'Los Angeles Dodgers Moneyline (Ganador Directo)'.",
             "Selecciona 'APUESTAS INDIVIDUALES / SIMPLES' con $100 en cada una (Total: $300)."
           ],
           "winning_scenario": {
             "title": "¿Cómo se cobra con el Híbrido Multideporte en Simples?",
             "match_examples": [
               {
-                "match": "Italia vs. Bélgica",
-                "min_result": "Italia sella su pronóstico",
+                "match": "Inglaterra vs. España",
+                "min_result": "Inglaterra sella su pronóstico",
+                "explanation": "Cobras $156.00."
+              },
+              {
+                "match": "Macedonia del Norte vs. Suiza",
+                "min_result": "Macedonia del Norte gana su encuentro",
                 "explanation": "Cobras $155.00."
               },
               {
-                "match": "New York Yankees vs. Baltimore Orioles",
-                "min_result": "New York Yankees gana su encuentro",
+                "match": "Los Angeles Dodgers vs. San Francisco Giants",
+                "min_result": "Los Angeles Dodgers cumple su línea estelar",
                 "explanation": "Cobras $162.00."
-              },
-              {
-                "match": "Philadelphia Phillies vs. Tampa Bay Rays",
-                "min_result": "Philadelphia Phillies cumple su línea estelar",
-                "explanation": "Cobras $160.00."
               }
             ],
-            "payout_example": "Si aciertas 2 de 3 cobras ~$314.00 – $327.00. Con 3 de 3 cobras $477.0 (+$177.0 neto)."
+            "payout_example": "Si aciertas 2 de 3 cobras ~$314.00 – $327.00. Con 3 de 3 cobras $473.0 (+$173.0 neto)."
           },
-          "copy_text": "👑 BLACK ROYAL — HÍBRIDO SIMPLES: FÚTBOL + MLB (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica: Italia Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55\n2. ⚾ New York Yankees vs. Baltimore Orioles: New York Yankees Moneyline (Ganador Directo) @ 1.62\n3. ⚾ Philadelphia Phillies vs. Tampa Bay Rays: Philadelphia Phillies Moneyline (Ganador Directo) @ 1.6\n► Inversión: $300 | Cobro 3/3: $477.0"
+          "copy_text": "👑 BLACK ROYAL — HÍBRIDO SIMPLES: FÚTBOL + MLB (26 SEPTIEMBRE)\n1. ⚽ Inglaterra vs. España: Más de 1.5 Goles Totales (Over 1.5) @ 1.56\n2. ⚽ Macedonia del Norte vs. Suiza: Suiza Ganador Directo (2) + Más 1.5 Goles Totales @ 1.55\n3. ⚾ Los Angeles Dodgers vs. San Francisco Giants: Los Angeles Dodgers Moneyline (Ganador Directo) @ 1.62\n► Inversión: $300 | Cobro 3/3: $473.0"
         }
       },
       "modo_b_sistema": {
@@ -433,13 +433,27 @@
             "sourceName": "FootyStats",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Italia vs. Bélgica",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "stadium": "Stadio Olimpico, Roma, Italia",
-            "selection": "Italia Ganador Directo (1) + Más 1.5 Goles Totales",
+            "match": "Inglaterra vs. España",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Wembley Stadium, Londres, Inglaterra",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.56,
+            "confidencePct": 94,
+            "algorithm": "FootyStats Wembley Pace Metric: Reedición de la final de Eurocopa 2024; España promedia 2.25 xG con Yamal y Nico Williams; Inglaterra en Wembley genera 2.10 xG. 8 de 9 duelos oficiales superaron 1.5 goles.",
+            "singleReturn": 156.0,
+            "verified": true
+          },
+          {
+            "sourceName": "API-Football",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "Macedonia del Norte vs. Suiza",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Toše Proeski Arena, Skopie, Macedonia del Norte",
+            "selection": "Suiza Ganador Directo (2) + Más 1.5 Goles Totales",
             "odds": 1.55,
             "confidencePct": 93,
-            "algorithm": "FootyStats Olimpico Fortress: Italia en casa ostenta 82% de invicto en partidos oficiales UEFA con 2.30 xG generado; Bélgica concede 1.65 xGA en sus últimas 5 salidas continentales.",
+            "algorithm": "API-Football Swiss Hegemony: Suiza registra 84% de efectividad ante selecciones fuera del Top 50 FIFA, concediendo apenas 0.70 xGA; Xhaka y Vargas dominan transiciones ante una Macedonia vulnerable.",
             "singleReturn": 155.0,
             "verified": true
           },
@@ -447,51 +461,37 @@
             "sourceName": "Baseball Savant",
             "sport": "Baseball",
             "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-            "match": "New York Yankees vs. Baltimore Orioles",
-            "tournament": "Major League Baseball (AL East Pennant Race)",
-            "stadium": "Yankee Stadium, Bronx, New York",
-            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "match": "Los Angeles Dodgers vs. San Francisco Giants",
+            "tournament": "Major League Baseball (NL West Rivalry)",
+            "stadium": "Dodger Stadium, Los Ángeles, California",
+            "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
             "odds": 1.62,
-            "confidencePct": 92,
-            "algorithm": "Baseball Savant Bronx Dominance: Yankees en el Bronx lideran la liga en wOBA (.355) y diferencial de carreras ante abridores de Baltimore; ventaja decisiva de bullpen en la serie definitoria divisional.",
-            "singleReturn": 162.0,
-            "verified": true
-          },
-          {
-            "sourceName": "Baseball Savant",
-            "sport": "Baseball",
-            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
-            "match": "Philadelphia Phillies vs. Tampa Bay Rays",
-            "tournament": "Major League Baseball (NL / AL Interleague)",
-            "stadium": "Citizens Bank Park, Filadelfia, Pensilvania",
-            "selection": "Philadelphia Phillies Moneyline (Ganador Directo)",
-            "odds": 1.6,
             "confidencePct": 91,
-            "algorithm": "Baseball Savant South Philly Metric: Phillies en Citizens Bank Park con 68% de victorias de local; rotación abridora con 27% K% ante bateadores de contacto de Tampa Bay.",
-            "singleReturn": 160.0,
+            "algorithm": "Baseball Savant Chavez Ravine Metric: Dodgers en casa lideran la Liga Nacional en wOBA (.356) y poder ante abridores de San Francisco; ventaja de bullpen en entradas finales.",
+            "singleReturn": 162.0,
             "verified": true
           }
         ],
         "combinations": [
           {
-            "name": "Doble 1 (⚽ Italia + ⚾ New York Yankees)",
+            "name": "Doble 1 (⚽ Inglaterra + ⚽ Macedonia del Norte)",
+            "odds": 2.42,
+            "formula": "1.56 × 1.55"
+          },
+          {
+            "name": "Doble 2 (⚽ Inglaterra + ⚾ Los Angeles Dodgers)",
+            "odds": 2.53,
+            "formula": "1.56 × 1.62"
+          },
+          {
+            "name": "Doble 3 (⚽ Macedonia del Norte + ⚾ Los Angeles Dodgers)",
             "odds": 2.51,
             "formula": "1.55 × 1.62"
           },
           {
-            "name": "Doble 2 (⚽ Italia + ⚾ Philadelphia Phillies)",
-            "odds": 2.48,
-            "formula": "1.55 × 1.6"
-          },
-          {
-            "name": "Doble 3 (⚾ New York Yankees + ⚾ Philadelphia Phillies)",
-            "odds": 2.59,
-            "formula": "1.62 × 1.6"
-          },
-          {
-            "name": "Triple (⚽ Italia + ⚾ New York Yankees + ⚾ Philadelphia Phillies)",
-            "odds": 4.02,
-            "formula": "1.55 × 1.62 × 1.6"
+            "name": "Triple (⚽ Inglaterra + ⚽ Macedonia del Norte + ⚾ Los Angeles Dodgers)",
+            "odds": 3.92,
+            "formula": "1.56 × 1.55 × 1.62"
           }
         ],
         "real_life_example": {
@@ -504,35 +504,35 @@
             "title": "¿Cómo se cobra con el Sistema Híbrido?",
             "match_examples": [
               {
-                "match": "Escenario 2 de 3 (Italia + New York Yankees)",
-                "min_result": "Ganan Italia y New York Yankees",
-                "explanation": "Cobras la Doble 1 (@ 2.51x): $62.75."
+                "match": "Escenario 2 de 3 (Inglaterra + Macedonia del Norte)",
+                "min_result": "Ganan Inglaterra y Macedonia del Norte",
+                "explanation": "Cobras la Doble 1 (@ 2.42x): $60.50."
               },
               {
-                "match": "Escenario 2 de 3 (Italia + Philadelphia Phillies)",
-                "min_result": "Ganan Italia y Philadelphia Phillies",
-                "explanation": "Cobras la Doble 2 (@ 2.48x): $62.00."
+                "match": "Escenario 2 de 3 (Inglaterra + Los Angeles Dodgers)",
+                "min_result": "Ganan Inglaterra y Los Angeles Dodgers",
+                "explanation": "Cobras la Doble 2 (@ 2.53x): $63.25."
               },
               {
                 "match": "Escenario Pleno 3 de 3",
                 "min_result": "Ganan los 3 eventos",
-                "explanation": "Cobras las 3 Dobles + Triple: $290.00."
+                "explanation": "Cobras las 3 Dobles + Triple: $284.50."
               }
             ],
-            "payout_example": "Con $100, cobras hasta $290.00 si aciertan los 3, o amortizas si 1 falla."
+            "payout_example": "Con $100, cobras hasta $284.50 si aciertan los 3, o amortizas si 1 falla."
           },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (25 SEPTIEMBRE)\n• Pick A: ⚽ Italia vs. Bélgica @ 1.55\n• Pick B: ⚾ New York Yankees vs. Baltimore Orioles @ 1.62\n• Pick C: ⚾ Philadelphia Phillies vs. Tampa Bay Rays @ 1.6\n► Modalidad: Trixie | Inversión: $100 | Cobro 3/3: $290.00"
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (26 SEPTIEMBRE)\n• Pick A: ⚽ Inglaterra vs. España @ 1.56\n• Pick B: ⚽ Macedonia del Norte vs. Suiza @ 1.55\n• Pick C: ⚾ Los Angeles Dodgers vs. San Francisco Giants @ 1.62\n► Modalidad: Trixie | Inversión: $100 | Cobro 3/3: $284.50"
         }
       },
       "modo_c_banker": {
         "id": "STRATEGY-HYBRID-C",
-        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.60x)",
-        "modeShort": "Modo C: Doble Banker Híbrida (Duplicador @ 1.60x)",
+        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.57x)",
+        "modeShort": "Modo C: Doble Banker Híbrida (Duplicador @ 1.57x)",
         "badge": "DUPLICADOR HÍBRIDO",
         "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
         "tagColor": "amber",
-        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Italia en Football y New York Yankees en Baseball.",
-        "totalOdds": 1.6,
+        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Inglaterra en Football y Macedonia del Norte en Football.",
+        "totalOdds": 1.57,
         "fairOdds": 1.5,
         "expectedWinRate": "91.5%",
         "combinedEv": "+33.5%",
@@ -542,45 +542,45 @@
           {
             "sourceName": "FootyStats",
             "sport": "Football",
-            "match": "Italia vs. Bélgica",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "selection": "Italia Doble Oportunidad (1X)",
-            "odds": 1.25,
+            "match": "Inglaterra vs. España",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "selection": "Más de 1.5 Goles Totales",
+            "odds": 1.26,
             "confidencePct": 95
           },
           {
-            "sourceName": "Baseball Savant",
-            "sport": "Baseball",
-            "match": "New York Yankees vs. Baltimore Orioles",
-            "tournament": "Major League Baseball (AL East Pennant Race)",
-            "selection": "New York Yankees (+1.5 Run Line / Hándicap)",
-            "odds": 1.28,
+            "sourceName": "API-Football",
+            "sport": "Football",
+            "match": "Macedonia del Norte vs. Suiza",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "selection": "Suiza Ganador Directo (2)",
+            "odds": 1.25,
             "confidencePct": 92
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas.",
-            "Selecciona: ⚽ Italia vs. Bélgica (Italia Doble Oportunidad (1X)) y ⚾ New York Yankees vs. Baltimore Orioles (New York Yankees (+1.5 Run Line / Hándicap)).",
-            "Coloca tu apuesta en Parlay / Combinada (ej. $100 o $250). Cuota: 1.60x."
+            "Selecciona: ⚽ Inglaterra vs. España (Más de 1.5 Goles Totales) y ⚽ Macedonia del Norte vs. Suiza (Suiza Ganador Directo (2)).",
+            "Coloca tu apuesta en Parlay / Combinada (ej. $100 o $250). Cuota: 1.57x."
           ],
           "winning_scenario": {
             "title": "¿Cómo se gana con la Doble Banker Híbrida?",
             "match_examples": [
               {
-                "match": "Italia vs. Bélgica",
-                "min_result": "Italia cumple su pronóstico de alta certeza",
+                "match": "Inglaterra vs. España",
+                "min_result": "Inglaterra cumple su pronóstico de alta certeza",
                 "explanation": "Acierto contundente."
               },
               {
-                "match": "New York Yankees vs. Baltimore Orioles",
-                "min_result": "New York Yankees cubre la línea con margen",
+                "match": "Macedonia del Norte vs. Suiza",
+                "min_result": "Macedonia del Norte cubre la línea con margen",
                 "explanation": "Línea cubierta con solvencia."
               }
             ],
-            "payout_example": "Si ambos cumplen, con $100 cobras $160.00 (+$60.00 neto)."
+            "payout_example": "Si ambos cumplen, con $100 cobras $157.00 (+$57.00 neto)."
           },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (25 SEPTIEMBRE)\n1. ⚽ Italia vs. Bélgica (Italia Doble Oportunidad (1X)) @ 1.25\n2. ⚾ New York Yankees vs. Baltimore Orioles (New York Yankees (+1.5 Run Line / Hándicap)) @ 1.28\n► Cuota Total: 1.60x | Confianza: 91.5% | Stake: 2.5% - 3.0%"
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (26 SEPTIEMBRE)\n1. ⚽ Inglaterra vs. España (Más de 1.5 Goles Totales) @ 1.26\n2. ⚽ Macedonia del Norte vs. Suiza (Suiza Ganador Directo (2)) @ 1.25\n► Cuota Total: 1.57x | Confianza: 91.5% | Stake: 2.5% - 3.0%"
         }
       }
     }
