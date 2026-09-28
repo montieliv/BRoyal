@@ -48,6 +48,10 @@ def archive_current_scenario(target_date=None):
         }
     }
 
+    if summary_data.get("has_hybrid_edition"):
+        snapshot["has_hybrid_edition"] = True
+        snapshot["hybrid_edition"] = summary_data.get("hybrid_edition", {})
+
     archive["snapshots"][target_date] = snapshot
     save_json(ARCHIVE_FILE, archive)
     

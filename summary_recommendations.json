@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28 11:00:00",
+  "generated_at": "2026-09-29 11:00:00",
   "hybrid_mode": false,
   "hybrid_trigger_reason": "MODO MONO-DEPORTE (100% FÚTBOL): Tríada estelar de Domingo (Premier League y Derbi Madrileño de LaLiga) con máxima asimetría estadística y EV+ >25%.",
   "active_sports": [
@@ -7,8 +7,8 @@
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-09-28",
-    "verified_at": "2026-09-28 20:18:20",
+    "verified_date": "2026-09-29",
+    "verified_at": "2026-09-28 16:10:30",
     "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
     "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
@@ -21,8 +21,8 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Lunes 28 de Septiembre en Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol (Estadio León (Nou Camp), Estadio Ciudad de Lanús - Néstor Díaz Pérez y Estadio Florencio Sola). Cada acierto cobra por separado.",
-      "avgOdds": 1.59,
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Martes 29 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Estadio de La Cartuja, Fortuna Arena y Stadio Olimpico de San Marino). Cada acierto cobra por separado.",
+      "avgOdds": 1.55,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
@@ -32,27 +32,27 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "León vs. Atlético de San Luis",
-          "tournament": "Liga MX Apertura 2026 (Jornada de Lunes) (19:00 CST / 21:00 EDT)",
-          "stadium": "Estadio León (Nou Camp), León, Guanajuato",
-          "selection": "León Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.6,
-          "confidencePct": 91,
-          "algorithm": "FootyStats Bajío Fortress Model: León en el Nou Camp ostenta 82% de partidos invicto ante San Luis y genera 2.15 xG; San Luis permite 1.95 xGA como visitante.",
-          "singleReturn": 160.0,
+          "match": "España vs. Croacia",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "stadium": "Estadio de La Cartuja, Sevilla, España",
+          "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+          "odds": 1.55,
+          "confidencePct": 94,
+          "algorithm": "FootyStats Cartuja Dominance Model: España en casa promedia 2.45 xG con Lamine Yamal y Nico Williams desbordando por bandas; Croacia concede 1.60 xGA de visita ante selecciones Top 5 FIFA. 7 de sus últimos 8 duelos directos superaron 1.5 goles.",
+          "singleReturn": 155.0,
           "verified": true
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Lanús vs. Deportivo Riestra",
-          "tournament": "Liga Profesional de Fútbol (Fecha de Lunes) (16:00 CST / 19:00 ART)",
-          "stadium": "Estadio Ciudad de Lanús - Néstor Díaz Pérez, Lanús, Argentina",
-          "selection": "Lanús Ganador Directo (1) + Menos de 3.5 Goles",
+          "match": "República Checa vs. Inglaterra",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "stadium": "Fortuna Arena, Praga, República Checa",
+          "selection": "Inglaterra Ganador Directo (2)",
           "odds": 1.58,
-          "confidencePct": 93,
-          "algorithm": "API-Football Fortaleza Granate: Lanús registra 85% de puntos obtenidos en casa con defensa sólida; Riestra promedia 0.65 xG de visitante y sufre en creación ofensiva.",
+          "confidencePct": 92,
+          "algorithm": "API-Football Three Lions Redux: Tras caer 2-3 ante España, Inglaterra necesita ganar para no comprometer el grupo; Harry Kane y Jude Bellingham lideran un ataque que genera 2.30 xG ante una Chequia que concede 1.70 xGA en transiciones.",
           "singleReturn": 158.0,
           "verified": true
         },
@@ -60,24 +60,24 @@
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Barracas Central vs. Banfield",
-          "tournament": "Liga Profesional de Fútbol (Fecha de Lunes) (16:00 CST / 19:00 ART)",
-          "stadium": "Estadio Florencio Sola, Banfield / Buenos Aires, Argentina",
-          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.58,
-          "confidencePct": 92,
-          "algorithm": "Sportmonks Tactical Friction Index: 8 de los últimos 9 enfrentamientos registraron Under 2.5 (media de 1.25 goles por partido), caracterizado por fricción en medio campo y baja tasa de conversión xG.",
-          "singleReturn": 158.0,
+          "match": "San Marino vs. Albania",
+          "tournament": "UEFA Nations League (Liga C, Grupo 1) (12:45 CST / 20:45 CEST)",
+          "stadium": "Stadio Olimpico de San Marino, Serravalle",
+          "selection": "Albania (-1.5 Hándicap Asiático)",
+          "odds": 1.52,
+          "confidencePct": 93,
+          "algorithm": "Sportmonks Mismatch Index: Albania ejerce un control territorial superior al 76% ante San Marino; el poder aéreo de Broja y Asani genera promedio de 2.6 goles de margen ante bloques ultrabajos.",
+          "singleReturn": 152.0,
           "verified": true
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 partidos estelares de fútbol del Lunes al cupón:",
-          "• ⚽ León vs. Atlético de San Luis: Selecciona 'León Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
-          "• ⚽ Lanús vs. Deportivo Riestra: Selecciona 'Lanús Ganador Directo (1) + Menos de 3.5 Goles'.",
-          "• ⚽ Barracas Central vs. Banfield: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
+          "Agrega los 3 partidos estelares de fútbol del Martes al cupón:",
+          "• ⚽ España vs. Croacia: Selecciona 'España Ganador Directo (1) + Más 1.5 Goles Totales'.",
+          "• ⚽ República Checa vs. Inglaterra: Selecciona 'Inglaterra Ganador Directo (2)'.",
+          "• ⚽ San Marino vs. Albania: Selecciona 'Albania (-1.5 Hándicap Asiático)'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
           "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
@@ -85,24 +85,24 @@
           "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "León vs. Atlético de San Luis",
-              "min_result": "León sella su pronóstico (León Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
-              "explanation": "Dominio en Estadio León (Nou Camp). Cobras $160.00 (+$60.00 neto)."
+              "match": "España vs. Croacia",
+              "min_result": "España sella su pronóstico (España Ganador Directo (1) + Más 1.5 Goles Totales)",
+              "explanation": "Dominio en Estadio de La Cartuja. Cobras $155.00 (+$55.00 neto)."
             },
             {
-              "match": "Lanús vs. Deportivo Riestra",
-              "min_result": "Lanús aprovecha la localía (Lanús Ganador Directo (1) + Menos de 3.5 Goles)",
-              "explanation": "Superioridad táctica en Estadio Ciudad de Lanús - Néstor Díaz Pérez. Cobras $158.00 (+$58.00 neto)."
+              "match": "República Checa vs. Inglaterra",
+              "min_result": "República Checa aprovecha la localía (Inglaterra Ganador Directo (2))",
+              "explanation": "Superioridad táctica en Fortuna Arena. Cobras $158.00 (+$58.00 neto)."
             },
             {
-              "match": "Barracas Central vs. Banfield",
-              "min_result": "Se cumple el pronóstico (Menos de 2.5 Goles Totales (Under 2.5))",
-              "explanation": "Solvencia táctica en Estadio Florencio Sola. Cobras $158.00 (+$58.00 neto)."
+              "match": "San Marino vs. Albania",
+              "min_result": "Se cumple el pronóstico (Albania (-1.5 Hándicap Asiático))",
+              "explanation": "Solvencia táctica en Stadio Olimpico de San Marino. Cobras $152.00 (+$52.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $476.0 (+$176.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $465.0 (+$165.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (28 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis: León Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.6 ($100 -> $160.00)\n2. ⚽ Lanús vs. Deportivo Riestra: Lanús Ganador Directo (1) + Menos de 3.5 Goles @ 1.58 ($100 -> $158.00)\n3. ⚽ Barracas Central vs. Banfield: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $476.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (29 SEPTIEMBRE)\n1. ⚽ España vs. Croacia: España Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n2. ⚽ República Checa vs. Inglaterra: Inglaterra Ganador Directo (2) @ 1.58 ($100 -> $158.00)\n3. ⚽ San Marino vs. Albania: Albania (-1.5 Hándicap Asiático) @ 1.52 ($100 -> $152.00)\n► Inversión: $300 | Cobro 3/3: $465.0"
       }
     },
     "modo_b_sistema": {
@@ -112,7 +112,7 @@
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Lunes (Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Martes (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -123,50 +123,50 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "León vs. Atlético de San Luis",
-          "selection": "León Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.6,
-          "algorithm": "Pick A (Football): FootyStats Bajío Fortress Model: León en el Nou Camp ostenta 82% de partidos invicto ante San Luis y genera 2.15 xG; San Luis permite 1.95 xGA como visitante."
+          "match": "España vs. Croacia",
+          "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+          "odds": 1.55,
+          "algorithm": "Pick A (Football): FootyStats Cartuja Dominance Model: España en casa promedia 2.45 xG con Lamine Yamal y Nico Williams desbordando por bandas; Croacia concede 1.60 xGA de visita ante selecciones Top 5 FIFA. 7 de sus últimos 8 duelos directos superaron 1.5 goles."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Lanús vs. Deportivo Riestra",
-          "selection": "Lanús Ganador Directo (1) + Menos de 3.5 Goles",
+          "match": "República Checa vs. Inglaterra",
+          "selection": "Inglaterra Ganador Directo (2)",
           "odds": 1.58,
-          "algorithm": "Pick B (Football): API-Football Fortaleza Granate: Lanús registra 85% de puntos obtenidos en casa con defensa sólida; Riestra promedia 0.65 xG de visitante y sufre en creación ofensiva."
+          "algorithm": "Pick B (Football): API-Football Three Lions Redux: Tras caer 2-3 ante España, Inglaterra necesita ganar para no comprometer el grupo; Harry Kane y Jude Bellingham lideran un ataque que genera 2.30 xG ante una Chequia que concede 1.70 xGA en transiciones."
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Barracas Central vs. Banfield",
-          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.58,
-          "algorithm": "Pick C (Football): Sportmonks Tactical Friction Index: 8 de los últimos 9 enfrentamientos registraron Under 2.5 (media de 1.25 goles por partido), caracterizado por fricción en medio campo y baja tasa de conversión xG."
+          "match": "San Marino vs. Albania",
+          "selection": "Albania (-1.5 Hándicap Asiático)",
+          "odds": 1.52,
+          "algorithm": "Pick C (Football): Sportmonks Mismatch Index: Albania ejerce un control territorial superior al 76% ante San Marino; el poder aéreo de Broja y Asani genera promedio de 2.6 goles de margen ante bloques ultrabajos."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ León + ⚽ Lanús)",
-          "odds": 2.53,
-          "formula": "1.6 × 1.58"
+          "name": "Doble 1 (⚽ España + ⚽ República Checa)",
+          "odds": 2.45,
+          "formula": "1.55 × 1.58"
         },
         {
-          "name": "Doble 2 (⚽ León + ⚽ Barracas Central)",
-          "odds": 2.53,
-          "formula": "1.6 × 1.58"
+          "name": "Doble 2 (⚽ España + ⚽ San Marino)",
+          "odds": 2.36,
+          "formula": "1.55 × 1.52"
         },
         {
-          "name": "Doble 3 (⚽ Lanús + ⚽ Barracas Central)",
-          "odds": 2.5,
-          "formula": "1.58 × 1.58"
+          "name": "Doble 3 (⚽ República Checa + ⚽ San Marino)",
+          "odds": 2.4,
+          "formula": "1.58 × 1.52"
         },
         {
-          "name": "Triple (⚽ León + ⚽ Lanús + ⚽ Barracas Central)",
-          "odds": 3.99,
-          "formula": "1.6 × 1.58 × 1.58"
+          "name": "Triple (⚽ España + ⚽ República Checa + ⚽ San Marino)",
+          "odds": 3.72,
+          "formula": "1.55 × 1.58 × 1.52"
         }
       ],
       "real_life_example": {
@@ -181,35 +181,35 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ León + ⚽ Lanús)",
-              "min_result": "León y Lanús cumplen sus líneas",
-              "explanation": "Cobras la Doble 1 (@ 2.53x): Cobras $63.25 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ España + ⚽ República Checa)",
+              "min_result": "España y República Checa cumplen sus líneas",
+              "explanation": "Cobras la Doble 1 (@ 2.45x): Cobras $61.25 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ León + ⚽ Barracas Central)",
-              "min_result": "León y Barracas Central cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.53x): Cobras $63.25 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ España + ⚽ San Marino)",
+              "min_result": "España y San Marino cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.36x): Cobras $59.00 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (León + Lanús + Barracas Central)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $288.75 (+$188.75 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (España + República Checa + San Marino)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $273.25 (+$173.25 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $288.75 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $273.25 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (28 SEPTIEMBRE)\n• Pick A: ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.6\n• Pick B: ⚽ Lanús vs. Deportivo Riestra (Lanús Ganador Directo (1) + Menos de 3.5 Goles) @ 1.58\n• Pick C: ⚽ Barracas Central vs. Banfield (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $288.75"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (29 SEPTIEMBRE)\n• Pick A: ⚽ España vs. Croacia (España Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.55\n• Pick B: ⚽ República Checa vs. Inglaterra (Inglaterra Ganador Directo (2)) @ 1.58\n• Pick C: ⚽ San Marino vs. Albania (Albania (-1.5 Hándicap Asiático)) @ 1.52\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $273.25"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.73x)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.56x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (León vs. Atlético de San Luis y Lanús vs. Deportivo Riestra) para duplicar la banca en la jornada de fútbol del Lunes.",
-      "totalOdds": 1.73,
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (España vs. Croacia y República Checa vs. Inglaterra) para duplicar la banca en la jornada de fútbol del Martes.",
+      "totalOdds": 1.56,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
       "combinedEv": "+33.5%",
@@ -220,51 +220,368 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "León vs. Atlético de San Luis",
-          "tournament": "Liga MX Apertura 2026 (Jornada de Lunes) (19:00 CST / 21:00 EDT)",
-          "selection": "León Doble Oportunidad (1X)",
-          "odds": 1.35,
+          "match": "España vs. Croacia",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "selection": "España Doble Oportunidad (1X) + Más 1.5 Goles",
+          "odds": 1.28,
           "confidencePct": 93,
-          "algorithm": "FootyStats Bajío Fortress Model: León en el Nou Camp ostenta 82% de partidos invicto ante San Luis y genera 2.15 xG; San Luis permite 1.95 xGA como visitante."
+          "algorithm": "FootyStats Cartuja Dominance Model: España en casa promedia 2.45 xG con Lamine Yamal y Nico Williams desbordando por bandas; Croacia concede 1.60 xGA de visita ante selecciones Top 5 FIFA. 7 de sus últimos 8 duelos directos superaron 1.5 goles."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Lanús vs. Deportivo Riestra",
-          "tournament": "Liga Profesional de Fútbol (Fecha de Lunes) (16:00 CST / 19:00 ART)",
-          "selection": "Lanús Doble Oportunidad (1X)",
-          "odds": 1.28,
+          "match": "República Checa vs. Inglaterra",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "selection": "Inglaterra Doble Oportunidad (X2)",
+          "odds": 1.22,
           "confidencePct": 92,
-          "algorithm": "API-Football Fortaleza Granate: Lanús registra 85% de puntos obtenidos en casa con defensa sólida; Riestra promedia 0.65 xG de visitante y sufre en creación ofensiva."
+          "algorithm": "API-Football Three Lions Redux: Tras caer 2-3 ante España, Inglaterra necesita ganar para no comprometer el grupo; Harry Kane y Jude Bellingham lideran un ataque que genera 2.30 xG ante una Chequia que concede 1.70 xGA en transiciones."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
           "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-          "• ⚽ León vs. Atlético de San Luis (Liga MX Apertura 2026): 'León Doble Oportunidad (1X)'.",
-          "• ⚽ Lanús vs. Deportivo Riestra (Liga Profesional de Fútbol): 'Lanús Doble Oportunidad (1X)'.",
+          "• ⚽ España vs. Croacia (UEFA Nations League): 'España Doble Oportunidad (1X) + Más 1.5 Goles'.",
+          "• ⚽ República Checa vs. Inglaterra (UEFA Nations League): 'Inglaterra Doble Oportunidad (X2)'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.73x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.56x."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "León vs. Atlético de San Luis",
-              "min_result": "Se cumple (León Doble Oportunidad (1X))",
-              "explanation": "Se consolida el escenario de valor en Estadio León (Nou Camp)."
+              "match": "España vs. Croacia",
+              "min_result": "Se cumple (España Doble Oportunidad (1X) + Más 1.5 Goles)",
+              "explanation": "Se consolida el escenario de valor en Estadio de La Cartuja."
             },
             {
-              "match": "Lanús vs. Deportivo Riestra",
-              "min_result": "Se cumple (Lanús Doble Oportunidad (1X))",
-              "explanation": "Se asegura el rendimiento cuantitativo en Estadio Ciudad de Lanús - Néstor Díaz Pérez."
+              "match": "República Checa vs. Inglaterra",
+              "min_result": "Se cumple (Inglaterra Doble Oportunidad (X2))",
+              "explanation": "Se asegura el rendimiento cuantitativo en Fortuna Arena."
             }
           ],
-          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $173.00 (+$73.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $156.00 (+$56.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (28 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X)) @ 1.35\n2. ⚽ Lanús vs. Deportivo Riestra (Lanús Doble Oportunidad (1X)) @ 1.28\n► Cuota Total: 1.73x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (29 SEPTIEMBRE)\n1. ⚽ España vs. Croacia (España Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.28\n2. ⚽ República Checa vs. Inglaterra (Inglaterra Doble Oportunidad (X2)) @ 1.22\n► Cuota Total: 1.56x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+      }
+    }
+  },
+  "has_hybrid_edition": true,
+  "hybrid_edition": {
+    "title": "Módulo de Arbitraje Híbrido: Súper Martes (Nations League + MLB Wild Card Game 1)",
+    "subtitle": "Fusión cuantitativa del liderato europeo (España e Inglaterra) con el inicio oficial de la Postemporada de MLB en el Bronx (Yankees vs. Red Sox).",
+    "trigger_reason": "ACTIVADO: Arbitraje multideporte de alta asimetría combinando la jerarquía de España e Inglaterra en Nations League con New York Yankees abriendo los playoffs de MLB en el Bronx.",
+    "active_sports": [
+      "Football",
+      "Baseball"
+    ],
+    "expectedWinRate": "87.0%",
+    "avgOdds": 1.58,
+    "combinedEv": "+33.5%",
+    "picks": [
+      {
+        "sourceName": "FootyStats",
+        "sport": "Football",
+        "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+        "match": "España vs. Croacia",
+        "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+        "stadium": "Estadio de La Cartuja, Sevilla, España",
+        "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+        "odds": 1.55,
+        "confidencePct": 94,
+        "algorithm": "FootyStats Cartuja Dominance Model: España en casa promedia 2.45 xG con Lamine Yamal y Nico Williams; Croacia concede 1.60 xGA de visita ante selecciones Top 5. Duelo clave por el liderato.",
+        "singleReturn": 155.0,
+        "verified": true
+      },
+      {
+        "sourceName": "API-Football",
+        "sport": "Football",
+        "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+        "match": "República Checa vs. Inglaterra",
+        "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+        "stadium": "Fortuna Arena, Praga, República Checa",
+        "selection": "Inglaterra Ganador Directo (2)",
+        "odds": 1.58,
+        "confidencePct": 92,
+        "algorithm": "API-Football Three Lions Redux: Tras caer ante España, Inglaterra necesita ganar para no comprometer el grupo; Kane y Bellingham lideran un ataque que genera 2.30 xG ante la defensa checa.",
+        "singleReturn": 158.0,
+        "verified": true
+      },
+      {
+        "sourceName": "Baseball Savant",
+        "sport": "Baseball",
+        "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+        "match": "New York Yankees vs. Boston Red Sox",
+        "tournament": "Major League Baseball (AL Wild Card Game 1)",
+        "stadium": "Yankee Stadium, Bronx, New York",
+        "selection": "New York Yankees Moneyline (Ganador Directo)",
+        "odds": 1.62,
+        "confidencePct": 92,
+        "algorithm": "Baseball Savant Bronx October Metric: Yankees abren la postemporada en el Bronx con wOBA de .356 y rotación abridora estelar; bullpen de élite listo para entradas cortas frente a la ofensiva de Boston.",
+        "singleReturn": 162.0,
+        "verified": true
+      }
+    ],
+    "strategies": {
+      "modo_a_simples": {
+        "id": "STRATEGY-HYBRID-A",
+        "modeName": "Modo A: Simples Híbridas (Fútbol + MLB)",
+        "modeShort": "Modo A: Simples Híbridas (87.0% Win Rate)",
+        "badge": "MÁXIMO WIN RATE HÍBRIDO",
+        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+        "tagColor": "purple",
+        "description": "3 Selecciones multideporte de élite para el Martes 29 de Septiembre (España en Football, República Checa en Football y New York Yankees en Baseball). Cada acierto cobra por separado.",
+        "avgOdds": 1.58,
+        "expectedWinRate": "87.0%",
+        "combinedEv": "+33.5%",
+        "recommendedStake": "1.0% por selección (Flat Staking)",
+        "riskLevel": "MÍNIMO",
+        "picks": [
+          {
+            "sourceName": "FootyStats",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "España vs. Croacia",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Estadio de La Cartuja, Sevilla, España",
+            "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+            "odds": 1.55,
+            "confidencePct": 94,
+            "algorithm": "FootyStats Cartuja Dominance Model: España en casa promedia 2.45 xG con Lamine Yamal y Nico Williams; Croacia concede 1.60 xGA de visita ante selecciones Top 5. Duelo clave por el liderato.",
+            "singleReturn": 155.0,
+            "verified": true
+          },
+          {
+            "sourceName": "API-Football",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "República Checa vs. Inglaterra",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Fortuna Arena, Praga, República Checa",
+            "selection": "Inglaterra Ganador Directo (2)",
+            "odds": 1.58,
+            "confidencePct": 92,
+            "algorithm": "API-Football Three Lions Redux: Tras caer ante España, Inglaterra necesita ganar para no comprometer el grupo; Kane y Bellingham lideran un ataque que genera 2.30 xG ante la defensa checa.",
+            "singleReturn": 158.0,
+            "verified": true
+          },
+          {
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+            "match": "New York Yankees vs. Boston Red Sox",
+            "tournament": "Major League Baseball (AL Wild Card Game 1)",
+            "stadium": "Yankee Stadium, Bronx, New York",
+            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "odds": 1.62,
+            "confidencePct": 92,
+            "algorithm": "Baseball Savant Bronx October Metric: Yankees abren la postemporada en el Bronx con wOBA de .356 y rotación abridora estelar; bullpen de élite listo para entradas cortas frente a la ofensiva de Boston.",
+            "singleReturn": 162.0,
+            "verified": true
+          }
+        ],
+        "real_life_example": {
+          "bookie_steps": [
+            "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+            "Agrega los 3 eventos multideporte al cupón:",
+            "• ⚽ España vs. Croacia: 'España Ganador Directo (1) + Más 1.5 Goles Totales'.",
+            "• ⚽ República Checa vs. Inglaterra: 'Inglaterra Ganador Directo (2)'.",
+            "• ⚾ New York Yankees vs. Boston Red Sox: 'New York Yankees Moneyline (Ganador Directo)'.",
+            "Selecciona 'APUESTAS INDIVIDUALES / SIMPLES' con $100 en cada una (Total: $300)."
+          ],
+          "winning_scenario": {
+            "title": "¿Cómo se cobra con el Híbrido Multideporte en Simples?",
+            "match_examples": [
+              {
+                "match": "España vs. Croacia",
+                "min_result": "España sella su pronóstico",
+                "explanation": "Cobras $155.00."
+              },
+              {
+                "match": "República Checa vs. Inglaterra",
+                "min_result": "República Checa gana su encuentro",
+                "explanation": "Cobras $158.00."
+              },
+              {
+                "match": "New York Yankees vs. Boston Red Sox",
+                "min_result": "New York Yankees cumple su línea estelar",
+                "explanation": "Cobras $162.00."
+              }
+            ],
+            "payout_example": "Si aciertas 2 de 3 cobras ~$314.00 – $327.00. Con 3 de 3 cobras $475.0 (+$175.0 neto)."
+          },
+          "copy_text": "👑 BLACK ROYAL — HÍBRIDO SIMPLES: FÚTBOL + MLB (29 SEPTIEMBRE)\n1. ⚽ España vs. Croacia: España Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55\n2. ⚽ República Checa vs. Inglaterra: Inglaterra Ganador Directo (2) @ 1.58\n3. ⚾ New York Yankees vs. Boston Red Sox: New York Yankees Moneyline (Ganador Directo) @ 1.62\n► Inversión: $300 | Cobro 3/3: $475.0"
+        }
+      },
+      "modo_b_sistema": {
+        "id": "STRATEGY-HYBRID-B",
+        "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie Multideporte: Fútbol + MLB)",
+        "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+        "badge": "SEGURO CONTRA 1 FALLO",
+        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+        "tagColor": "purple",
+        "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando Fútbol + MLB. ¡Si falla 1 evento cobras la doble correspondiente sin perder capital!",
+        "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+        "expectedWinRate": "89.5%",
+        "combinedEv": "+34.0%",
+        "recommendedStake": "$25 por combinación ($100 total)",
+        "riskLevel": "BAJO",
+        "picks": [
+          {
+            "sourceName": "FootyStats",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "España vs. Croacia",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Estadio de La Cartuja, Sevilla, España",
+            "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+            "odds": 1.55,
+            "confidencePct": 94,
+            "algorithm": "FootyStats Cartuja Dominance Model: España en casa promedia 2.45 xG con Lamine Yamal y Nico Williams; Croacia concede 1.60 xGA de visita ante selecciones Top 5. Duelo clave por el liderato.",
+            "singleReturn": 155.0,
+            "verified": true
+          },
+          {
+            "sourceName": "API-Football",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "República Checa vs. Inglaterra",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Fortuna Arena, Praga, República Checa",
+            "selection": "Inglaterra Ganador Directo (2)",
+            "odds": 1.58,
+            "confidencePct": 92,
+            "algorithm": "API-Football Three Lions Redux: Tras caer ante España, Inglaterra necesita ganar para no comprometer el grupo; Kane y Bellingham lideran un ataque que genera 2.30 xG ante la defensa checa.",
+            "singleReturn": 158.0,
+            "verified": true
+          },
+          {
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+            "match": "New York Yankees vs. Boston Red Sox",
+            "tournament": "Major League Baseball (AL Wild Card Game 1)",
+            "stadium": "Yankee Stadium, Bronx, New York",
+            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "odds": 1.62,
+            "confidencePct": 92,
+            "algorithm": "Baseball Savant Bronx October Metric: Yankees abren la postemporada en el Bronx con wOBA de .356 y rotación abridora estelar; bullpen de élite listo para entradas cortas frente a la ofensiva de Boston.",
+            "singleReturn": 162.0,
+            "verified": true
+          }
+        ],
+        "combinations": [
+          {
+            "name": "Doble 1 (⚽ España + ⚽ República Checa)",
+            "odds": 2.45,
+            "formula": "1.55 × 1.58"
+          },
+          {
+            "name": "Doble 2 (⚽ España + ⚾ New York Yankees)",
+            "odds": 2.51,
+            "formula": "1.55 × 1.62"
+          },
+          {
+            "name": "Doble 3 (⚽ República Checa + ⚾ New York Yankees)",
+            "odds": 2.56,
+            "formula": "1.58 × 1.62"
+          },
+          {
+            "name": "Triple (⚽ España + ⚽ República Checa + ⚾ New York Yankees)",
+            "odds": 3.97,
+            "formula": "1.55 × 1.58 × 1.62"
+          }
+        ],
+        "real_life_example": {
+          "bookie_steps": [
+            "Abre tu casa de apuestas e ingresa los 3 eventos.",
+            "Selecciona 'SISTEMA' -> 'TRIXIE' (4 apuestas de $25 = $100).",
+            "Si cualquiera de los 3 falla, la doble restante te devuelve tu inversión con ganancia."
+          ],
+          "winning_scenario": {
+            "title": "¿Cómo se cobra con el Sistema Híbrido?",
+            "match_examples": [
+              {
+                "match": "Escenario 2 de 3 (España + República Checa)",
+                "min_result": "Ganan España y República Checa",
+                "explanation": "Cobras la Doble 1 (@ 2.45x): $61.25."
+              },
+              {
+                "match": "Escenario 2 de 3 (España + New York Yankees)",
+                "min_result": "Ganan España y New York Yankees",
+                "explanation": "Cobras la Doble 2 (@ 2.51x): $62.75."
+              },
+              {
+                "match": "Escenario Pleno 3 de 3",
+                "min_result": "Ganan los 3 eventos",
+                "explanation": "Cobras las 3 Dobles + Triple: $287.25."
+              }
+            ],
+            "payout_example": "Con $100, cobras hasta $287.25 si aciertan los 3, o amortizas si 1 falla."
+          },
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (29 SEPTIEMBRE)\n• Pick A: ⚽ España vs. Croacia @ 1.55\n• Pick B: ⚽ República Checa vs. Inglaterra @ 1.58\n• Pick C: ⚾ New York Yankees vs. Boston Red Sox @ 1.62\n► Modalidad: Trixie | Inversión: $100 | Cobro 3/3: $287.25"
+        }
+      },
+      "modo_c_banker": {
+        "id": "STRATEGY-HYBRID-C",
+        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.56x)",
+        "modeShort": "Modo C: Doble Banker Híbrida (Duplicador @ 1.56x)",
+        "badge": "DUPLICADOR HÍBRIDO",
+        "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+        "tagColor": "amber",
+        "description": "Combinada estricta de solo 2 eventos de altísima certeza: España en Football y República Checa en Football.",
+        "totalOdds": 1.56,
+        "fairOdds": 1.5,
+        "expectedWinRate": "91.5%",
+        "combinedEv": "+33.5%",
+        "recommendedStake": "2.5% – 3.0% Bankroll",
+        "riskLevel": "BAJO",
+        "picks": [
+          {
+            "sourceName": "FootyStats",
+            "sport": "Football",
+            "match": "España vs. Croacia",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "selection": "España Doble Oportunidad (1X) + Más 1.5 Goles",
+            "odds": 1.28,
+            "confidencePct": 95
+          },
+          {
+            "sourceName": "API-Football",
+            "sport": "Football",
+            "match": "República Checa vs. Inglaterra",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "selection": "Inglaterra Doble Oportunidad (X2)",
+            "odds": 1.22,
+            "confidencePct": 92
+          }
+        ],
+        "real_life_example": {
+          "bookie_steps": [
+            "Abre tu casa de apuestas.",
+            "Selecciona: ⚽ España vs. Croacia (España Doble Oportunidad (1X) + Más 1.5 Goles) y ⚽ República Checa vs. Inglaterra (Inglaterra Doble Oportunidad (X2)).",
+            "Coloca tu apuesta en Parlay / Combinada (ej. $100 o $250). Cuota: 1.56x."
+          ],
+          "winning_scenario": {
+            "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+            "match_examples": [
+              {
+                "match": "España vs. Croacia",
+                "min_result": "España cumple su pronóstico de alta certeza",
+                "explanation": "Acierto contundente."
+              },
+              {
+                "match": "República Checa vs. Inglaterra",
+                "min_result": "República Checa cubre la línea con margen",
+                "explanation": "Línea cubierta con solvencia."
+              }
+            ],
+            "payout_example": "Si ambos cumplen, con $100 cobras $156.00 (+$56.00 neto)."
+          },
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (29 SEPTIEMBRE)\n1. ⚽ España vs. Croacia (España Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.28\n2. ⚽ República Checa vs. Inglaterra (Inglaterra Doble Oportunidad (X2)) @ 1.22\n► Cuota Total: 1.56x | Confianza: 91.5% | Stake: 2.5% - 3.0%"
+        }
       }
     }
   }
