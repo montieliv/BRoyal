@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27 11:00:00",
+  "generated_at": "2026-09-28 11:00:00",
   "hybrid_mode": false,
   "hybrid_trigger_reason": "MODO MONO-DEPORTE (100% FÚTBOL): Tríada estelar de Domingo (Premier League y Derbi Madrileño de LaLiga) con máxima asimetría estadística y EV+ >25%.",
   "active_sports": [
@@ -7,8 +7,8 @@
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-09-27",
-    "verified_at": "2026-09-27 17:58:33",
+    "verified_date": "2026-09-28",
+    "verified_at": "2026-09-28 20:18:20",
     "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
     "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
@@ -21,7 +21,7 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Domingo 27 de Septiembre en Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol (Estadio León (Nou Camp), Estadio Ciudad de Lanús - Néstor Díaz Pérez y Estadio Florencio Sola). Cada acierto cobra por separado.",
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Lunes 28 de Septiembre en Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol (Estadio León (Nou Camp), Estadio Ciudad de Lanús - Néstor Díaz Pérez y Estadio Florencio Sola). Cada acierto cobra por separado.",
       "avgOdds": 1.59,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
@@ -74,7 +74,7 @@
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 partidos estelares de fútbol del Domingo al cupón:",
+          "Agrega los 3 partidos estelares de fútbol del Lunes al cupón:",
           "• ⚽ León vs. Atlético de San Luis: Selecciona 'León Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
           "• ⚽ Lanús vs. Deportivo Riestra: Selecciona 'Lanús Ganador Directo (1) + Menos de 3.5 Goles'.",
           "• ⚽ Barracas Central vs. Banfield: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
@@ -102,7 +102,7 @@
           ],
           "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $476.0 (+$176.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (27 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis: León Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.6 ($100 -> $160.00)\n2. ⚽ Lanús vs. Deportivo Riestra: Lanús Ganador Directo (1) + Menos de 3.5 Goles @ 1.58 ($100 -> $158.00)\n3. ⚽ Barracas Central vs. Banfield: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $476.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (28 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis: León Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.6 ($100 -> $160.00)\n2. ⚽ Lanús vs. Deportivo Riestra: Lanús Ganador Directo (1) + Menos de 3.5 Goles @ 1.58 ($100 -> $158.00)\n3. ⚽ Barracas Central vs. Banfield: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $476.0"
       }
     },
     "modo_b_sistema": {
@@ -112,7 +112,7 @@
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Domingo (Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Lunes (Liga MX Apertura 2026, Liga Profesional de Fútbol y Liga Profesional de Fútbol). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -198,7 +198,7 @@
           ],
           "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $288.75 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (27 SEPTIEMBRE)\n• Pick A: ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.6\n• Pick B: ⚽ Lanús vs. Deportivo Riestra (Lanús Ganador Directo (1) + Menos de 3.5 Goles) @ 1.58\n• Pick C: ⚽ Barracas Central vs. Banfield (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $288.75"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (28 SEPTIEMBRE)\n• Pick A: ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.6\n• Pick B: ⚽ Lanús vs. Deportivo Riestra (Lanús Ganador Directo (1) + Menos de 3.5 Goles) @ 1.58\n• Pick C: ⚽ Barracas Central vs. Banfield (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $288.75"
       }
     },
     "modo_c_banker": {
@@ -208,7 +208,7 @@
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (León vs. Atlético de San Luis y Lanús vs. Deportivo Riestra) para duplicar la banca en la jornada de fútbol del Domingo.",
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (León vs. Atlético de San Luis y Lanús vs. Deportivo Riestra) para duplicar la banca en la jornada de fútbol del Lunes.",
       "totalOdds": 1.73,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
@@ -264,7 +264,7 @@
           ],
           "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $173.00 (+$73.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (27 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X)) @ 1.35\n2. ⚽ Lanús vs. Deportivo Riestra (Lanús Doble Oportunidad (1X)) @ 1.28\n► Cuota Total: 1.73x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (28 SEPTIEMBRE)\n1. ⚽ León vs. Atlético de San Luis (León Doble Oportunidad (1X)) @ 1.35\n2. ⚽ Lanús vs. Deportivo Riestra (Lanús Doble Oportunidad (1X)) @ 1.28\n► Cuota Total: 1.73x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   }
