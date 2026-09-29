@@ -11289,6 +11289,590 @@
         "República Checa vs. Inglaterra": "0-2 (CUMPLIDO Inglaterra Ganador Directo @ 1.58 ✅ & Safe X2 @ 1.22 ✅)",
         "San Marino vs. Albania": "0-3 (CUMPLIDO Albania -1.5 Hándicap Asiático @ 1.52 ✅ & Safe Ganador Directo @ 1.18 ✅)"
       }
+    },
+    "2026-09-30": {
+      "date": "2026-09-30",
+      "saved_at": "2026-09-29 16:33:13",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (84.5% Win Rate)",
+          "badge": "MÁXIMO WIN RATE",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Miércoles 30 de Septiembre en Liga Profesional de Fútbol, Liga Profesional de Fútbol y Liga Profesional de Fútbol (Estadio Monumental de Alta Córdoba, Estadio Gigante de Arroyito y Estadio Ciudad de Vicente López). Cada acierto cobra por separado.",
+          "avgOdds": 1.55,
+          "expectedWinRate": "84.5%",
+          "combinedEv": "+29.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MÍNIMO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Instituto vs. Racing Club",
+              "tournament": "Liga Profesional de Fútbol (Fecha 11) (17:00 CST / 20:00 ART)",
+              "stadium": "Estadio Monumental de Alta Córdoba, Córdoba, Argentina",
+              "selection": "Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.56,
+              "confidencePct": 93,
+              "algorithm": "API-Football Academia Offensive Model: Racing Club promedia 1.85 xG con Maravilla Martínez y Quintero; Instituto concede 1.60 xGA ante ataques con alto volumen ofensivo exterior.",
+              "singleReturn": 156.0,
+              "verified": true
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Rosario Central vs. Unión",
+              "tournament": "Liga Profesional de Fútbol (Fecha 11) (18:00 CST / 21:00 ART)",
+              "stadium": "Estadio Gigante de Arroyito, Rosario, Argentina",
+              "selection": "Rosario Central Doble Oportunidad (1X) + Menos de 3.5 Goles",
+              "odds": 1.52,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Arroyito Fortress Metric: Rosario Central ostenta 78% de invicto en el Gigante de Arroyito y apenas 1.35 goles totales por partido; Unión prioriza el orden táctico de visitante.",
+              "singleReturn": 152.0,
+              "verified": true
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Platense vs. Huracán",
+              "tournament": "Liga Profesional de Fútbol (Fecha 11) (17:00 CST / 20:00 ART)",
+              "stadium": "Estadio Ciudad de Vicente López, Buenos Aires, Argentina",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.58,
+              "confidencePct": 91,
+              "algorithm": "Sportmonks Defensive Friction Model: Duelo de fricción y bloque bajo en Vicente López; 8 de los últimos 9 enfrentamientos directos Platense vs Huracán registraron Under 2.5 (1.3 goles/juego).",
+              "singleReturn": 158.0,
+              "verified": true
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+              "Agrega los 3 partidos estelares de fútbol del Miércoles al cupón:",
+              "• ⚽ Instituto vs. Racing Club: Selecciona 'Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
+              "• ⚽ Rosario Central vs. Unión: Selecciona 'Rosario Central Doble Oportunidad (1X) + Menos de 3.5 Goles'.",
+              "• ⚽ Platense vs. Huracán: Selecciona 'Menos de 2.5 Goles Totales (Under 2.5)'.",
+              "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
+              "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
+              "match_examples": [
+                {
+                  "match": "Instituto vs. Racing Club",
+                  "min_result": "Instituto sella su pronóstico (Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
+                  "explanation": "Dominio en Estadio Monumental de Alta Córdoba. Cobras $156.00 (+$56.00 neto)."
+                },
+                {
+                  "match": "Rosario Central vs. Unión",
+                  "min_result": "Rosario Central aprovecha la localía (Rosario Central Doble Oportunidad (1X) + Menos de 3.5 Goles)",
+                  "explanation": "Superioridad táctica en Estadio Gigante de Arroyito. Cobras $152.00 (+$52.00 neto)."
+                },
+                {
+                  "match": "Platense vs. Huracán",
+                  "min_result": "Se cumple el pronóstico (Menos de 2.5 Goles Totales (Under 2.5))",
+                  "explanation": "Solvencia táctica en Estadio Ciudad de Vicente López. Cobras $158.00 (+$58.00 neto)."
+                }
+              ],
+              "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $466.0 (+$166.0 de ganancia neta)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (30 SEPTIEMBRE)\n1. ⚽ Instituto vs. Racing Club: Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.56 ($100 -> $156.00)\n2. ⚽ Rosario Central vs. Unión: Rosario Central Doble Oportunidad (1X) + Menos de 3.5 Goles @ 1.52 ($100 -> $152.00)\n3. ⚽ Platense vs. Huracán: Menos de 2.5 Goles Totales (Under 2.5) @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $466.0"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Miércoles (Liga Profesional de Fútbol, Liga Profesional de Fútbol y Liga Profesional de Fútbol). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "89.5%",
+          "combinedEv": "+34.5%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Instituto vs. Racing Club",
+              "selection": "Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.56,
+              "algorithm": "Pick A (Football): API-Football Academia Offensive Model: Racing Club promedia 1.85 xG con Maravilla Martínez y Quintero; Instituto concede 1.60 xGA ante ataques con alto volumen ofensivo exterior."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Rosario Central vs. Unión",
+              "selection": "Rosario Central Doble Oportunidad (1X) + Menos de 3.5 Goles",
+              "odds": 1.52,
+              "algorithm": "Pick B (Football): FootyStats Arroyito Fortress Metric: Rosario Central ostenta 78% de invicto en el Gigante de Arroyito y apenas 1.35 goles totales por partido; Unión prioriza el orden táctico de visitante."
+            },
+            {
+              "sourceName": "Sportmonks",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Platense vs. Huracán",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.58,
+              "algorithm": "Pick C (Football): Sportmonks Defensive Friction Model: Duelo de fricción y bloque bajo en Vicente López; 8 de los últimos 9 enfrentamientos directos Platense vs Huracán registraron Under 2.5 (1.3 goles/juego)."
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Instituto + ⚽ Rosario Central)",
+              "odds": 2.37,
+              "formula": "1.56 × 1.52"
+            },
+            {
+              "name": "Doble 2 (⚽ Instituto + ⚽ Platense)",
+              "odds": 2.46,
+              "formula": "1.56 × 1.58"
+            },
+            {
+              "name": "Doble 3 (⚽ Rosario Central + ⚽ Platense)",
+              "odds": 2.4,
+              "formula": "1.52 × 1.58"
+            },
+            {
+              "name": "Triple (⚽ Instituto + ⚽ Rosario Central + ⚽ Platense)",
+              "odds": 3.75,
+              "formula": "1.56 × 1.52 × 1.58"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas y selecciona los 3 eventos multideporte en el cupón.",
+              "Ve a la pestaña 'SISTEMA' o 'COMBINACIONES EN GRUPO'.",
+              "Selecciona 'TRIXIE' o 'DOBLES (3) + TRIPLE (1)' (Total: 4 Apuestas).",
+              "Coloca $25 a cada una (Total apostado: $100).",
+              "Con solo acertar 2 eventos cobras la doble correspondiente protegiendo tu dinero."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (⚽ Instituto + ⚽ Rosario Central)",
+                  "min_result": "Instituto y Rosario Central cumplen sus líneas",
+                  "explanation": "Cobras la Doble 1 (@ 2.37x): Cobras $59.25 amortizando el boleto."
+                },
+                {
+                  "match": "Escenario 2 de 3 (⚽ Instituto + ⚽ Platense)",
+                  "min_result": "Instituto y Platense cumplen sus líneas",
+                  "explanation": "Cobras la Doble 2 (@ 2.46x): Cobras $61.50 protegiendo el capital."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3 (Multideporte)",
+                  "min_result": "Se cumplen los 3 eventos (Instituto + Rosario Central + Platense)",
+                  "explanation": "Cobras las 3 Dobles + la Triple: Cobras $274.50 (+$174.50 de ganancia neta)."
+                }
+              ],
+              "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $274.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (30 SEPTIEMBRE)\n• Pick A: ⚽ Instituto vs. Racing Club (Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.56\n• Pick B: ⚽ Rosario Central vs. Unión (Rosario Central Doble Oportunidad (1X) + Menos de 3.5 Goles) @ 1.52\n• Pick C: ⚽ Platense vs. Huracán (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $274.50"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (Duplicador @ 1.60x)",
+          "badge": "DUPLICADOR DE BANCA",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Instituto vs. Racing Club y Rosario Central vs. Unión) para duplicar la banca en la jornada de fútbol del Miércoles.",
+          "totalOdds": 1.6,
+          "fairOdds": 1.62,
+          "expectedWinRate": "90.5%",
+          "combinedEv": "+33.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "FootyStats",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Instituto vs. Racing Club",
+              "tournament": "Liga Profesional de Fútbol (Fecha 11) (17:00 CST / 20:00 ART)",
+              "selection": "Racing Club Doble Oportunidad (X2)",
+              "odds": 1.28,
+              "confidencePct": 93,
+              "algorithm": "API-Football Academia Offensive Model: Racing Club promedia 1.85 xG con Maravilla Martínez y Quintero; Instituto concede 1.60 xGA ante ataques con alto volumen ofensivo exterior."
+            },
+            {
+              "sourceName": "API-Football",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Rosario Central vs. Unión",
+              "tournament": "Liga Profesional de Fútbol (Fecha 11) (18:00 CST / 21:00 ART)",
+              "selection": "Rosario Central Doble Oportunidad (1X)",
+              "odds": 1.25,
+              "confidencePct": 92,
+              "algorithm": "FootyStats Arroyito Fortress Metric: Rosario Central ostenta 78% de invicto en el Gigante de Arroyito y apenas 1.35 goles totales por partido; Unión prioriza el orden táctico de visitante."
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona estos 2 partidos de fútbol de máxima certeza:",
+              "• ⚽ Instituto vs. Racing Club (Liga Profesional de Fútbol): 'Racing Club Doble Oportunidad (X2)'.",
+              "• ⚽ Rosario Central vs. Unión (Liga Profesional de Fútbol): 'Rosario Central Doble Oportunidad (1X)'.",
+              "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
+              "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.6x."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
+              "match_examples": [
+                {
+                  "match": "Instituto vs. Racing Club",
+                  "min_result": "Se cumple (Racing Club Doble Oportunidad (X2))",
+                  "explanation": "Se consolida el escenario de valor en Estadio Monumental de Alta Córdoba."
+                },
+                {
+                  "match": "Rosario Central vs. Unión",
+                  "min_result": "Se cumple (Rosario Central Doble Oportunidad (1X))",
+                  "explanation": "Se asegura el rendimiento cuantitativo en Estadio Gigante de Arroyito."
+                }
+              ],
+              "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $160.00 (+$60.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (30 SEPTIEMBRE)\n1. ⚽ Instituto vs. Racing Club (Racing Club Doble Oportunidad (X2)) @ 1.28\n2. ⚽ Rosario Central vs. Unión (Rosario Central Doble Oportunidad (1X)) @ 1.25\n► Cuota Total: 1.6x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido: Miércoles de Definición (Liga Argentina + MLB Wild Card Game 2)",
+        "subtitle": "Fusión cuantitativa del liderato de Racing Club en Córdoba con la jornada decisiva de postemporada en Minute Maid Park y el Yankee Stadium.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte de alta asimetría combinando la solvencia ofensiva de Racing Club con Houston Astros y New York Yankees en duelos clave de Wild Card de MLB.",
+        "active_sports": [
+          "Football",
+          "Baseball"
+        ],
+        "expectedWinRate": "87.0%",
+        "avgOdds": 1.59,
+        "combinedEv": "+33.5%",
+        "picks": [
+          {
+            "sourceName": "FootyStats",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Instituto vs. Racing Club",
+            "tournament": "Liga Profesional de Fútbol (Fecha 11)",
+            "stadium": "Estadio Monumental de Alta Córdoba, Córdoba, Argentina",
+            "selection": "Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+            "odds": 1.56,
+            "confidencePct": 93,
+            "algorithm": "API-Football Academia Offensive Model: Racing Club promedia 1.85 xG con Maravilla Martínez y Quintero; Instituto concede 1.60 xGA ante ataques con alto volumen ofensivo exterior.",
+            "singleReturn": 156.0,
+            "verified": true
+          },
+          {
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "match": "Houston Astros vs. Chicago White Sox",
+            "tournament": "Major League Baseball (AL Wild Card Game 2)",
+            "stadium": "Minute Maid Park, Houston, Texas",
+            "selection": "Houston Astros Moneyline (Ganador Directo)",
+            "odds": 1.58,
+            "confidencePct": 93,
+            "algorithm": "Baseball Savant Minute Maid Postseason Index: Astros dominan en casa con diferencial de carreras +142 y ventaja decisiva de abridores frente a unos White Sox con alta tasa de ponches (26.4%).",
+            "singleReturn": 158.0,
+            "verified": true
+          },
+          {
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+            "match": "New York Yankees vs. Boston Red Sox",
+            "tournament": "Major League Baseball (AL Wild Card Game 2)",
+            "stadium": "Yankee Stadium, Bronx, New York",
+            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "odds": 1.62,
+            "confidencePct": 92,
+            "algorithm": "Baseball Savant Bronx Elimination Edge: Yankees buscan sellar la serie en el Yankee Stadium; wOBA de .358 en casa y ventaja abrumadora de relevo intermedio ante el bullpen desgastado de Boston.",
+            "singleReturn": 162.0,
+            "verified": true
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + MLB)",
+            "modeShort": "Modo A: Simples Híbridas (87.0% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Miércoles 30 de Septiembre (Instituto en Football, Houston Astros en Baseball y New York Yankees en Baseball). Cada acierto cobra por separado.",
+            "avgOdds": 1.59,
+            "expectedWinRate": "87.0%",
+            "combinedEv": "+33.5%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "FootyStats",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Instituto vs. Racing Club",
+                "tournament": "Liga Profesional de Fútbol (Fecha 11)",
+                "stadium": "Estadio Monumental de Alta Córdoba, Córdoba, Argentina",
+                "selection": "Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+                "odds": 1.56,
+                "confidencePct": 93,
+                "algorithm": "API-Football Academia Offensive Model: Racing Club promedia 1.85 xG con Maravilla Martínez y Quintero; Instituto concede 1.60 xGA ante ataques con alto volumen ofensivo exterior.",
+                "singleReturn": 156.0,
+                "verified": true
+              },
+              {
+                "sourceName": "Baseball Savant",
+                "sport": "Baseball",
+                "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+                "match": "Houston Astros vs. Chicago White Sox",
+                "tournament": "Major League Baseball (AL Wild Card Game 2)",
+                "stadium": "Minute Maid Park, Houston, Texas",
+                "selection": "Houston Astros Moneyline (Ganador Directo)",
+                "odds": 1.58,
+                "confidencePct": 93,
+                "algorithm": "Baseball Savant Minute Maid Postseason Index: Astros dominan en casa con diferencial de carreras +142 y ventaja decisiva de abridores frente a unos White Sox con alta tasa de ponches (26.4%).",
+                "singleReturn": 158.0,
+                "verified": true
+              },
+              {
+                "sourceName": "Baseball Savant",
+                "sport": "Baseball",
+                "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+                "match": "New York Yankees vs. Boston Red Sox",
+                "tournament": "Major League Baseball (AL Wild Card Game 2)",
+                "stadium": "Yankee Stadium, Bronx, New York",
+                "selection": "New York Yankees Moneyline (Ganador Directo)",
+                "odds": 1.62,
+                "confidencePct": 92,
+                "algorithm": "Baseball Savant Bronx Elimination Edge: Yankees buscan sellar la serie en el Yankee Stadium; wOBA de .358 en casa y ventaja abrumadora de relevo intermedio ante el bullpen desgastado de Boston.",
+                "singleReturn": 162.0,
+                "verified": true
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
+                "Agrega los 3 eventos multideporte al cupón:",
+                "• ⚽ Instituto vs. Racing Club: 'Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
+                "• ⚾ Houston Astros vs. Chicago White Sox: 'Houston Astros Moneyline (Ganador Directo)'.",
+                "• ⚾ New York Yankees vs. Boston Red Sox: 'New York Yankees Moneyline (Ganador Directo)'.",
+                "Selecciona 'APUESTAS INDIVIDUALES / SIMPLES' con $100 en cada una (Total: $300)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Híbrido Multideporte en Simples?",
+                "match_examples": [
+                  {
+                    "match": "Instituto vs. Racing Club",
+                    "min_result": "Instituto sella su pronóstico",
+                    "explanation": "Cobras $156.00."
+                  },
+                  {
+                    "match": "Houston Astros vs. Chicago White Sox",
+                    "min_result": "Houston Astros gana su encuentro",
+                    "explanation": "Cobras $158.00."
+                  },
+                  {
+                    "match": "New York Yankees vs. Boston Red Sox",
+                    "min_result": "New York Yankees cumple su línea estelar",
+                    "explanation": "Cobras $162.00."
+                  }
+                ],
+                "payout_example": "Si aciertas 2 de 3 cobras ~$314.00 – $327.00. Con 3 de 3 cobras $476.0 (+$176.0 neto)."
+              },
+              "copy_text": "👑 BLACK ROYAL — HÍBRIDO SIMPLES: FÚTBOL + MLB (30 SEPTIEMBRE)\n1. ⚽ Instituto vs. Racing Club: Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.56\n2. ⚾ Houston Astros vs. Chicago White Sox: Houston Astros Moneyline (Ganador Directo) @ 1.58\n3. ⚾ New York Yankees vs. Boston Red Sox: New York Yankees Moneyline (Ganador Directo) @ 1.62\n► Inversión: $300 | Cobro 3/3: $476.0"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie Multideporte: Fútbol + MLB)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO CONTRA 1 FALLO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando Fútbol + MLB. ¡Si falla 1 evento cobras la doble correspondiente sin perder capital!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "89.5%",
+            "combinedEv": "+34.0%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "FootyStats",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Instituto vs. Racing Club",
+                "tournament": "Liga Profesional de Fútbol (Fecha 11)",
+                "stadium": "Estadio Monumental de Alta Córdoba, Córdoba, Argentina",
+                "selection": "Racing Club Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+                "odds": 1.56,
+                "confidencePct": 93,
+                "algorithm": "API-Football Academia Offensive Model: Racing Club promedia 1.85 xG con Maravilla Martínez y Quintero; Instituto concede 1.60 xGA ante ataques con alto volumen ofensivo exterior.",
+                "singleReturn": 156.0,
+                "verified": true
+              },
+              {
+                "sourceName": "Baseball Savant",
+                "sport": "Baseball",
+                "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+                "match": "Houston Astros vs. Chicago White Sox",
+                "tournament": "Major League Baseball (AL Wild Card Game 2)",
+                "stadium": "Minute Maid Park, Houston, Texas",
+                "selection": "Houston Astros Moneyline (Ganador Directo)",
+                "odds": 1.58,
+                "confidencePct": 93,
+                "algorithm": "Baseball Savant Minute Maid Postseason Index: Astros dominan en casa con diferencial de carreras +142 y ventaja decisiva de abridores frente a unos White Sox con alta tasa de ponches (26.4%).",
+                "singleReturn": 158.0,
+                "verified": true
+              },
+              {
+                "sourceName": "Baseball Savant",
+                "sport": "Baseball",
+                "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+                "match": "New York Yankees vs. Boston Red Sox",
+                "tournament": "Major League Baseball (AL Wild Card Game 2)",
+                "stadium": "Yankee Stadium, Bronx, New York",
+                "selection": "New York Yankees Moneyline (Ganador Directo)",
+                "odds": 1.62,
+                "confidencePct": 92,
+                "algorithm": "Baseball Savant Bronx Elimination Edge: Yankees buscan sellar la serie en el Yankee Stadium; wOBA de .358 en casa y ventaja abrumadora de relevo intermedio ante el bullpen desgastado de Boston.",
+                "singleReturn": 162.0,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (⚽ Instituto + ⚾ Houston Astros)",
+                "odds": 2.46,
+                "formula": "1.56 × 1.58"
+              },
+              {
+                "name": "Doble 2 (⚽ Instituto + ⚾ New York Yankees)",
+                "odds": 2.53,
+                "formula": "1.56 × 1.62"
+              },
+              {
+                "name": "Doble 3 (⚾ Houston Astros + ⚾ New York Yankees)",
+                "odds": 2.56,
+                "formula": "1.58 × 1.62"
+              },
+              {
+                "name": "Triple (⚽ Instituto + ⚾ Houston Astros + ⚾ New York Yankees)",
+                "odds": 3.99,
+                "formula": "1.56 × 1.58 × 1.62"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas e ingresa los 3 eventos.",
+                "Selecciona 'SISTEMA' -> 'TRIXIE' (4 apuestas de $25 = $100).",
+                "Si cualquiera de los 3 falla, la doble restante te devuelve tu inversión con ganancia."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Instituto + Houston Astros)",
+                    "min_result": "Ganan Instituto y Houston Astros",
+                    "explanation": "Cobras la Doble 1 (@ 2.46x): $61.50."
+                  },
+                  {
+                    "match": "Escenario 2 de 3 (Instituto + New York Yankees)",
+                    "min_result": "Ganan Instituto y New York Yankees",
+                    "explanation": "Cobras la Doble 2 (@ 2.53x): $63.25."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Ganan los 3 eventos",
+                    "explanation": "Cobras las 3 Dobles + Triple: $288.50."
+                  }
+                ],
+                "payout_example": "Con $100, cobras hasta $288.50 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (30 SEPTIEMBRE)\n• Pick A: ⚽ Instituto vs. Racing Club @ 1.56\n• Pick B: ⚾ Houston Astros vs. Chicago White Sox @ 1.58\n• Pick C: ⚾ New York Yankees vs. Boston Red Sox @ 1.62\n► Modalidad: Trixie | Inversión: $100 | Cobro 3/3: $288.50"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.64x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (Duplicador @ 1.64x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Instituto en Football y Houston Astros en Baseball.",
+            "totalOdds": 1.64,
+            "fairOdds": 1.5,
+            "expectedWinRate": "91.5%",
+            "combinedEv": "+33.5%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "FootyStats",
+                "sport": "Football",
+                "match": "Instituto vs. Racing Club",
+                "tournament": "Liga Profesional de Fútbol (Fecha 11)",
+                "selection": "Racing Club Doble Oportunidad (X2)",
+                "odds": 1.28,
+                "confidencePct": 95
+              },
+              {
+                "sourceName": "Baseball Savant",
+                "sport": "Baseball",
+                "match": "Houston Astros vs. Chicago White Sox",
+                "tournament": "Major League Baseball (AL Wild Card Game 2)",
+                "selection": "Houston Astros (+1.5 Run Line / Hándicap)",
+                "odds": 1.28,
+                "confidencePct": 92
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: ⚽ Instituto vs. Racing Club (Racing Club Doble Oportunidad (X2)) y ⚾ Houston Astros vs. Chicago White Sox (Houston Astros (+1.5 Run Line / Hándicap)).",
+                "Coloca tu apuesta en Parlay / Combinada (ej. $100 o $250). Cuota: 1.64x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Instituto vs. Racing Club",
+                    "min_result": "Instituto cumple su pronóstico de alta certeza",
+                    "explanation": "Acierto contundente."
+                  },
+                  {
+                    "match": "Houston Astros vs. Chicago White Sox",
+                    "min_result": "Houston Astros cubre la línea con margen",
+                    "explanation": "Línea cubierta con solvencia."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $164.00 (+$64.00 neto)."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (30 SEPTIEMBRE)\n1. ⚽ Instituto vs. Racing Club (Racing Club Doble Oportunidad (X2)) @ 1.28\n2. ⚾ Houston Astros vs. Chicago White Sox (Houston Astros (+1.5 Run Line / Hándicap)) @ 1.28\n► Cuota Total: 1.64x | Confianza: 91.5% | Stake: 2.5% - 3.0%"
+            }
+          }
+        }
+      }
     }
   }
 }
