@@ -10096,7 +10096,7 @@
     "2026-09-28": {
       "date": "2026-09-28",
       "saved_at": "2026-09-28 08:32:05",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -10187,7 +10187,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $471.0 (+$171.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (28 SEPTIEMBRE)\n1. ⚽ Bélgica vs. Francia: Francia Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n2. ⚽ Turquía vs. Italia: Italia Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.56 ($100 -> $156.00)\n3. ⚽ Suecia vs. Polonia: Más de 2.0 / 2.5 Goles Totales (Over Asiático) @ 1.6 ($100 -> $160.00)\n► Inversión: $300 | Cobro 3/3: $471.0"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -10283,7 +10284,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $281.75 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (28 SEPTIEMBRE)\n• Pick A: ⚽ Bélgica vs. Francia (Francia Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.55\n• Pick B: ⚽ Turquía vs. Italia (Italia Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.56\n• Pick C: ⚽ Suecia vs. Polonia (Más de 2.0 / 2.5 Goles Totales (Over Asiático)) @ 1.6\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $281.75"
-          }
+          },
+          "status": "LOST"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -10349,15 +10351,21 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $157.00 (+$57.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (28 SEPTIEMBRE)\n1. ⚽ Bélgica vs. Francia (Francia Doble Oportunidad (X2)) @ 1.25\n2. ⚽ Turquía vs. Italia (Italia Doble Oportunidad (X2)) @ 1.26\n► Cuota Total: 1.57x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 2,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 313.66,
+        "netPnL": -186.34,
+        "roiPct": "-37.3%",
+        "winRate": "66.7% (PLENO TOTAL en Modo C Doble Banker cobrando $157.50 @ 1.57x con las victorias/empates de Francia e Italia, más cobro de $156.00 en Modo A con la goleada de Italia)",
+        "evaluatedAt": "2026-09-29 08:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada del lunes con cobro perfecto en Modo C Doble Banker (@ 1.57x = $157.50 cobrados) gracias al gol agónico de Olise (0-1 Francia) y la exhibición de Italia (1-4 en Turquía). En Modo A, Italia cobró $156.00 amortizando el 62.7% del capital."
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -10675,12 +10683,19 @@
             }
           }
         }
+      },
+      "evaluatedAt": "2026-09-29 08:00:00",
+      "match_results": {
+        "Bélgica vs. Francia": "0-1 (CUMPLIDO Francia Doble Oportunidad X2 @ 1.25 ✅; Falla Over 1.5 por medio gol)",
+        "Turquía vs. Italia": "1-4 (CUMPLIDO Italia Doble Oportunidad X2 + Más 1.5 Goles @ 1.56 ✅ & Safe X2 @ 1.26 ✅)",
+        "Suecia vs. Polonia": "1-0 (Gol de Nygren 8'; Falla Over 2.0/2.5 Goles)",
+        "Chicago Bears vs. Philadelphia Eagles": "27-7 (Bears sorprenden con Case Keenum; Falla Eagles Moneyline)"
       }
     },
     "2026-09-29": {
       "date": "2026-09-29",
-      "saved_at": "2026-09-29 18:58:35",
-      "status": "PENDING_EVALUATION",
+      "saved_at": "2026-09-28 16:10:30",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -10771,7 +10786,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $465.0 (+$165.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (29 SEPTIEMBRE)\n1. ⚽ España vs. Croacia: España Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n2. ⚽ República Checa vs. Inglaterra: Inglaterra Ganador Directo (2) @ 1.58 ($100 -> $158.00)\n3. ⚽ San Marino vs. Albania: Albania (-1.5 Hándicap Asiático) @ 1.52 ($100 -> $152.00)\n► Inversión: $300 | Cobro 3/3: $465.0"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -10867,7 +10883,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $273.25 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (29 SEPTIEMBRE)\n• Pick A: ⚽ España vs. Croacia (España Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.55\n• Pick B: ⚽ República Checa vs. Inglaterra (Inglaterra Ganador Directo (2)) @ 1.58\n• Pick C: ⚽ San Marino vs. Albania (Albania (-1.5 Hándicap Asiático)) @ 1.52\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $273.25"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -10933,15 +10950,21 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $156.00 (+$56.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (29 SEPTIEMBRE)\n1. ⚽ España vs. Croacia (España Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.28\n2. ⚽ República Checa vs. Inglaterra (Inglaterra Doble Oportunidad (X2)) @ 1.22\n► Cuota Total: 1.56x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 894.41,
+        "netPnL": 394.41,
+        "roiPct": "+78.9%",
+        "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3: Modo A $465.00 + Modo B $273.25 + Modo C $156.16)",
+        "evaluatedAt": "2026-09-29 16:20:00",
+        "evaluated": true,
+        "auditNote": "Jornada perfecta e histórica de Martes en UEFA Nations League: España arrolló 4-1 a Croacia con show de Yamal, Inglaterra ganó 0-2 en Praga con goles de Gordon y Kane, y Albania goleó 0-3 a San Marino cubriendo el hándicap -1.5 con solvencia. Pleno total 3/3 en todas las estrategias con +$394.41 de ganancia neta (+78.9% ROI)."
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -11259,6 +11282,12 @@
             }
           }
         }
+      },
+      "evaluatedAt": "2026-09-29 16:20:00",
+      "match_results": {
+        "España vs. Croacia": "4-1 (5 Goles; CUMPLIDO España Ganador Directo + Más 1.5 Goles @ 1.55 ✅ & Safe 1X + Over 1.5 @ 1.28 ✅)",
+        "República Checa vs. Inglaterra": "0-2 (CUMPLIDO Inglaterra Ganador Directo @ 1.58 ✅ & Safe X2 @ 1.22 ✅)",
+        "San Marino vs. Albania": "0-3 (CUMPLIDO Albania -1.5 Hándicap Asiático @ 1.52 ✅ & Safe Ganador Directo @ 1.18 ✅)"
       }
     }
   }

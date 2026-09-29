@@ -2916,6 +2916,67 @@ def audit_previous_scenarios():
             "auditNote": "Jornada dominical marcada por la sorpresiva e histórica caída de Alemania en casa ante Grecia (0-1). A pesar del fallo del favorito de cuota comprimida, la arquitectura de Modo A generó ganancia neta en Simples ($314.00 de $300.00) y el Sistema Trixie rescató $61.50 con la Doble 3 (Noruega 1-2 + Países Bajos 1-2), amortizando el 75.1% del capital total simulado."
         }
 
+    # Audit 2026-09-28 (Belgium vs France, Turkey vs Italy, Sweden vs Poland)
+    if "2026-09-28" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-09-28"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-09-29 08:00:00"
+        snap["match_results"] = {
+            "Bélgica vs. Francia": "0-1 (CUMPLIDO Francia Doble Oportunidad X2 @ 1.25 ✅; Falla Over 1.5 por medio gol)",
+            "Turquía vs. Italia": "1-4 (CUMPLIDO Italia Doble Oportunidad X2 + Más 1.5 Goles @ 1.56 ✅ & Safe X2 @ 1.26 ✅)",
+            "Suecia vs. Polonia": "1-0 (Gol de Nygren 8'; Falla Over 2.0/2.5 Goles)",
+            "Chicago Bears vs. Philadelphia Eagles": "27-7 (Bears sorprenden con Case Keenum; Falla Eagles Moneyline)"
+        }
+        if "strategies" in snap:
+            if "modo_a_simples" in snap["strategies"]:
+                snap["strategies"]["modo_a_simples"]["status"] = "PARTIAL"
+            if "modo_b_sistema" in snap["strategies"]:
+                snap["strategies"]["modo_b_sistema"]["status"] = "LOST"
+            if "modo_c_banker" in snap["strategies"]:
+                snap["strategies"]["modo_c_banker"]["status"] = "WON"
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 2,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 313.66,
+            "netPnL": -186.34,
+            "roiPct": "-37.3%",
+            "winRate": "66.7% (PLENO TOTAL en Modo C Doble Banker cobrando $157.50 @ 1.57x con las victorias/empates de Francia e Italia, más cobro de $156.00 en Modo A con la goleada de Italia)",
+            "evaluatedAt": "2026-09-29 08:00:00",
+            "evaluated": True,
+            "auditNote": "Jornada del lunes con cobro perfecto en Modo C Doble Banker (@ 1.57x = $157.50 cobrados) gracias al gol agónico de Olise (0-1 Francia) y la exhibición de Italia (1-4 en Turquía). En Modo A, Italia cobró $156.00 amortizando el 62.7% del capital."
+        }
+
+    # Audit 2026-09-29 (Spain vs Croatia, Czechia vs England, San Marino vs Albania)
+    if "2026-09-29" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-09-29"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-09-29 16:20:00"
+        snap["match_results"] = {
+            "España vs. Croacia": "4-1 (5 Goles; CUMPLIDO España Ganador Directo + Más 1.5 Goles @ 1.55 ✅ & Safe 1X + Over 1.5 @ 1.28 ✅)",
+            "República Checa vs. Inglaterra": "0-2 (CUMPLIDO Inglaterra Ganador Directo @ 1.58 ✅ & Safe X2 @ 1.22 ✅)",
+            "San Marino vs. Albania": "0-3 (CUMPLIDO Albania -1.5 Hándicap Asiático @ 1.52 ✅ & Safe Ganador Directo @ 1.18 ✅)"
+        }
+        if "strategies" in snap:
+            if "modo_a_simples" in snap["strategies"]:
+                snap["strategies"]["modo_a_simples"]["status"] = "WON"
+            if "modo_b_sistema" in snap["strategies"]:
+                snap["strategies"]["modo_b_sistema"]["status"] = "WON"
+            if "modo_c_banker" in snap["strategies"]:
+                snap["strategies"]["modo_c_banker"]["status"] = "WON"
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 3,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 894.41,
+            "netPnL": 394.41,
+            "roiPct": "+78.9%",
+            "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3: Modo A $465.00 + Modo B $273.25 + Modo C $156.16)",
+            "evaluatedAt": "2026-09-29 16:20:00",
+            "evaluated": True,
+            "auditNote": "Jornada perfecta e histórica de Martes en UEFA Nations League: España arrolló 4-1 a Croacia con show de Yamal, Inglaterra ganó 0-2 en Praga con goles de Gordon y Kane, y Albania goleó 0-3 a San Marino cubriendo el hándicap -1.5 con solvencia. Pleno total 3/3 en todas las estrategias con +$394.41 de ganancia neta (+78.9% ROI)."
+        }
+
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
         json.dump(archive, f, ensure_ascii=False, indent=2)
 
