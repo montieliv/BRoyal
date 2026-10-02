@@ -3397,6 +3397,38 @@ def audit_previous_scenarios():
             "auditNote": "Jornada exitosa de Miércoles con banca en verde (+4.2% ROI): Goleada contundente de Argentina (4-0) y empate táctico de Peñarol (1-1) cobraron la Doble Banker de forma invicta ($152.50) y produjeron ganancia neta en Simples ($309.00 sobre $300.00). El Sistema Trixie amortizó $59.68 con la Doble 1, cerrando con balance neto positivo de +$21.18."
         }
 
+    # Audit 2026-10-01 (Germany vs Serbia, Denmark vs Portugal, Greece vs Netherlands)
+    if "2026-10-01" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-10-01"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-10-02 08:00:00"
+        snap["match_results"] = {
+            "Alemania vs. Serbia": "2-0 (CUMPLIDO Alemania Ganador Directo (1) + Más 1.5 Goles @ 1.52 ✅ & Safe 1 @ 1.22 ✅)",
+            "Dinamarca vs. Portugal": "2-2 (4 Goles; CUMPLIDO Portugal Doble Oportunidad X2 + Más 1.5 Goles @ 1.56 ✅ & Safe X2 @ 1.26 ✅)",
+            "Grecia vs. Países Bajos": "2-2 (4 Goles; CUMPLIDO Países Bajos Doble Oportunidad X2 + Más 1.5 Goles @ 1.58 ✅ & Safe X2 @ 1.27 ✅)",
+            "Pittsburgh Steelers vs. Cleveland Browns": "24-27 (Steelers pierden por 3 pts con FG agónico; CUMPLIDO Safe Spread +4.5 @ 1.28 ✅; Falla Moneyline)",
+            "Atlanta Braves vs. Philadelphia Phillies": "6-2 (CUMPLIDO Atlanta Braves Ganador Directo @ 1.62 ✅ & Safe +1.5 @ 1.28 ✅)"
+        }
+        if "strategies" in snap:
+            if "modo_a_simples" in snap["strategies"]:
+                snap["strategies"]["modo_a_simples"]["status"] = "WON"
+            if "modo_b_sistema" in snap["strategies"]:
+                snap["strategies"]["modo_b_sistema"]["status"] = "WON"
+            if "modo_c_banker" in snap["strategies"]:
+                snap["strategies"]["modo_c_banker"]["status"] = "WON"
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 3,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 894.32,
+            "netPnL": 394.32,
+            "roiPct": "+78.9%",
+            "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $466.00 + Modo B $274.60 + Modo C $153.72)",
+            "evaluatedAt": "2026-10-02 08:00:00",
+            "evaluated": True,
+            "auditNote": "Jornada perfecta e histórica de Jueves en UEFA Nations League: Alemania derrotó 2-0 a Serbia con solvencia, Portugal rescató el 2-2 en Copenhague en partidazo de 4 goles, y Países Bajos empató 2-2 in extremis ante Grecia en Tesalónica. Pleno total 3/3 en fútbol generando +$394.32 de ganancia neta (+78.9% ROI). En la noche, Braves eliminó a Phillies (6-2) cobrando la simple de MLB y Steelers cubrió el hándicap +4.5 (24-27)."
+        }
+
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
         json.dump(archive, f, ensure_ascii=False, indent=2)
 

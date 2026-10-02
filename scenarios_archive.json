@@ -11891,7 +11891,7 @@
     "2026-10-01": {
       "date": "2026-10-01",
       "saved_at": "2026-10-01 19:06:46",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -11982,7 +11982,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $466.0 (+$166.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (01 SEPTIEMBRE)\n1. ⚽ Alemania vs. Serbia: Alemania Ganador Directo (1) + Más 1.5 Goles Totales @ 1.52 ($100 -> $152.00)\n2. ⚽ Dinamarca vs. Portugal: Portugal Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.56 ($100 -> $156.00)\n3. ⚽ Grecia vs. Países Bajos: Países Bajos Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $466.0"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -12078,7 +12079,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $274.50 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (01 SEPTIEMBRE)\n• Pick A: ⚽ Alemania vs. Serbia (Alemania Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.52\n• Pick B: ⚽ Dinamarca vs. Portugal (Portugal Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.56\n• Pick C: ⚽ Grecia vs. Países Bajos (Países Bajos Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $274.50"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -12144,15 +12146,21 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $154.00 (+$54.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (01 SEPTIEMBRE)\n1. ⚽ Alemania vs. Serbia (Alemania Ganador Directo (1)) @ 1.22\n2. ⚽ Dinamarca vs. Portugal (Portugal Doble Oportunidad (X2)) @ 1.26\n► Cuota Total: 1.54x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 894.32,
+        "netPnL": 394.32,
+        "roiPct": "+78.9%",
+        "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $466.00 + Modo B $274.60 + Modo C $153.72)",
+        "evaluatedAt": "2026-10-02 08:00:00",
+        "evaluated": true,
+        "auditNote": "Jornada perfecta e histórica de Jueves en UEFA Nations League: Alemania derrotó 2-0 a Serbia con solvencia, Portugal rescató el 2-2 en Copenhague en partidazo de 4 goles, y Países Bajos empató 2-2 in extremis ante Grecia en Tesalónica. Pleno total 3/3 en fútbol generando +$394.32 de ganancia neta (+78.9% ROI). En la noche, Braves eliminó a Phillies (6-2) cobrando la simple de MLB y Steelers cubrió el hándicap +4.5 (24-27)."
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -12471,11 +12479,19 @@
             }
           }
         }
+      },
+      "evaluatedAt": "2026-10-02 08:00:00",
+      "match_results": {
+        "Alemania vs. Serbia": "2-0 (CUMPLIDO Alemania Ganador Directo (1) + Más 1.5 Goles @ 1.52 ✅ & Safe 1 @ 1.22 ✅)",
+        "Dinamarca vs. Portugal": "2-2 (4 Goles; CUMPLIDO Portugal Doble Oportunidad X2 + Más 1.5 Goles @ 1.56 ✅ & Safe X2 @ 1.26 ✅)",
+        "Grecia vs. Países Bajos": "2-2 (4 Goles; CUMPLIDO Países Bajos Doble Oportunidad X2 + Más 1.5 Goles @ 1.58 ✅ & Safe X2 @ 1.27 ✅)",
+        "Pittsburgh Steelers vs. Cleveland Browns": "24-27 (Steelers pierden por 3 pts con FG agónico; CUMPLIDO Safe Spread +4.5 @ 1.28 ✅; Falla Moneyline)",
+        "Atlanta Braves vs. Philadelphia Phillies": "6-2 (CUMPLIDO Atlanta Braves Ganador Directo @ 1.62 ✅ & Safe +1.5 @ 1.28 ✅)"
       }
     },
     "2026-10-02": {
       "date": "2026-10-02",
-      "saved_at": "2026-10-01 15:04:10",
+      "saved_at": "2026-10-02 08:04:31",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
