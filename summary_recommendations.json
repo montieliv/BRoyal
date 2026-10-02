@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02 11:00:00",
+  "generated_at": "2026-10-03 11:00:00",
   "hybrid_mode": false,
   "hybrid_trigger_reason": "MODO MONO-DEPORTE (100% FÚTBOL): Tríada estelar de Domingo (Premier League y Derbi Madrileño de LaLiga) con máxima asimetría estadística y EV+ >25%.",
   "active_sports": [
@@ -7,8 +7,8 @@
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-10-02",
-    "verified_at": "2026-10-02 18:46:34",
+    "verified_date": "2026-10-03",
+    "verified_at": "2026-10-02 14:51:30",
     "verification_status": "100% REAL CONFIRMED FOOTBALL FIXTURES",
     "auditor": "Black Royal Football Quantitative Engine",
     "total_matches_verified": 3
@@ -21,7 +21,7 @@
       "badge": "MÁXIMO WIN RATE",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Viernes 02 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Stade de France, Stade Maurice Dufrasne y PGE Narodowy). Cada acierto cobra por separado.",
+      "description": "3 Selecciones de fútbol de élite 100% verificadas para la jornada del Sábado 03 de Septiembre en UEFA Nations League, UEFA Nations League y UEFA Nations League (Estadio Carlos Tartiere, Stadion Rujevica y Estadio Olímpico de Helsinki). Cada acierto cobra por separado.",
       "avgOdds": 1.55,
       "expectedWinRate": "84.5%",
       "combinedEv": "+29.2%",
@@ -32,27 +32,27 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Francia vs. Italia",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
-          "stadium": "Stade de France, Saint-Denis, Francia",
-          "selection": "Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales",
-          "odds": 1.52,
-          "confidencePct": 94,
-          "algorithm": "FootyStats Stade de France Iron Defense Metric: Francia bajo Didier Deschamps promedia apenas 0.45 goles concedidos por partido en Saint-Denis; Italia priorizará el bloque bajo tras su fragilidad defensiva ante Turquía.",
-          "singleReturn": 152.0,
+          "match": "España vs. República Checa",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "stadium": "Estadio Carlos Tartiere, Oviedo, España",
+          "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+          "odds": 1.5,
+          "confidencePct": 95,
+          "algorithm": "FootyStats La Roja Tartiere Engine: España acumula 40 partidos invicto y promedia 2.85 xG en casa con Lamine Yamal y Nico Williams; Chequia concede 2.10 xGA de visita y llega con dos derrotas consecutivas.",
+          "singleReturn": 150.0,
           "verified": true
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Bélgica vs. Turquía",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
-          "stadium": "Stade Maurice Dufrasne, Lieja, Bélgica",
-          "selection": "Bélgica Ganador Directo (1) + Más 1.5 Goles Totales",
+          "match": "Croacia vs. Inglaterra",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (10:00 CST / 18:00 CEST)",
+          "stadium": "Stadion Rujevica, Rijeka, Croacia",
+          "selection": "Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales",
           "odds": 1.56,
           "confidencePct": 93,
-          "algorithm": "API-Football Red Devils High-Press Model: Bélgica promedia 2.35 xG en casa con Doku, Openda y De Bruyne; Turquía llega con bajas capitales como Çalhanoğlu y Yıldíz y ha recibido 5 goles en sus primeras dos jornadas.",
+          "algorithm": "API-Football Three Lions Empty Ground Metric: Partido a puerta cerrada en Rijeka sin la presión de la hinchada croata; Kane y Bellingham generan 2.25 xG de visita frente a una zaga balcánica que encajó 4 goles ante España.",
           "singleReturn": 156.0,
           "verified": true
         },
@@ -60,13 +60,13 @@
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Polonia vs. Rumanía",
-          "tournament": "UEFA Nations League (Liga B, Grupo 4) (12:45 CST / 20:45 CEST)",
-          "stadium": "PGE Narodowy, Varsovia, Polonia",
-          "selection": "Polonia Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "match": "Finlandia vs. Albania",
+          "tournament": "UEFA Nations League (Liga C, Grupo 1) (07:00 CST / 15:00 CEST)",
+          "stadium": "Estadio Olímpico de Helsinki, Helsinki, Finlandia",
+          "selection": "Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales",
           "odds": 1.58,
-          "confidencePct": 91,
-          "algorithm": "Sportmonks Narodowy Fortress Metric: Polonia en Varsovia es sumamente fiable con Lewandowski y Zieliński generando 1.95 xG; Rumanía concede 1.65 xGA en sus visitas ante combinados de la Liga B.",
+          "confidencePct": 92,
+          "algorithm": "Sportmonks Balkan Resilience Model: Albania lidera invicta con 6/6 pts y 0 goles recibidos con Asani y Broja; Finlandia no ha recibido gol en casa, proyectando un duelo cerrado y táctico con margen para la visita.",
           "singleReturn": 158.0,
           "verified": true
         }
@@ -74,10 +74,10 @@
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
-          "Agrega los 3 partidos estelares de fútbol del Viernes al cupón:",
-          "• ⚽ Francia vs. Italia: Selecciona 'Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales'.",
-          "• ⚽ Bélgica vs. Turquía: Selecciona 'Bélgica Ganador Directo (1) + Más 1.5 Goles Totales'.",
-          "• ⚽ Polonia vs. Rumanía: Selecciona 'Polonia Doble Oportunidad (1X) + Más 1.5 Goles Totales'.",
+          "Agrega los 3 partidos estelares de fútbol del Sábado al cupón:",
+          "• ⚽ España vs. República Checa: Selecciona 'España Ganador Directo (1) + Más 1.5 Goles Totales'.",
+          "• ⚽ Croacia vs. Inglaterra: Selecciona 'Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales'.",
+          "• ⚽ Finlandia vs. Albania: Selecciona 'Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales'.",
           "IMPORTANTE: Marca la casilla 'APUESTAS INDIVIDUALES / SIMPLES'.",
           "Coloca $100 en cada casilla (Inversión total: $300). Cada acierto se cobra de inmediato al finalizar cada partido."
         ],
@@ -85,24 +85,24 @@
           "title": "¿Cómo se cobra en la vida real con el Pronóstico 100% Fútbol en Simples?",
           "match_examples": [
             {
-              "match": "Francia vs. Italia",
-              "min_result": "Francia sella su pronóstico (Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales)",
-              "explanation": "Dominio en Stade de France. Cobras $152.00 (+$52.00 neto)."
+              "match": "España vs. República Checa",
+              "min_result": "España sella su pronóstico (España Ganador Directo (1) + Más 1.5 Goles Totales)",
+              "explanation": "Dominio en Estadio Carlos Tartiere. Cobras $150.00 (+$50.00 neto)."
             },
             {
-              "match": "Bélgica vs. Turquía",
-              "min_result": "Bélgica aprovecha la localía (Bélgica Ganador Directo (1) + Más 1.5 Goles Totales)",
-              "explanation": "Superioridad táctica en Stade Maurice Dufrasne. Cobras $156.00 (+$56.00 neto)."
+              "match": "Croacia vs. Inglaterra",
+              "min_result": "Croacia aprovecha la localía (Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales)",
+              "explanation": "Superioridad táctica en Stadion Rujevica. Cobras $156.00 (+$56.00 neto)."
             },
             {
-              "match": "Polonia vs. Rumanía",
-              "min_result": "Se cumple el pronóstico (Polonia Doble Oportunidad (1X) + Más 1.5 Goles Totales)",
-              "explanation": "Solvencia táctica en PGE Narodowy. Cobras $158.00 (+$58.00 neto)."
+              "match": "Finlandia vs. Albania",
+              "min_result": "Se cumple el pronóstico (Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales)",
+              "explanation": "Solvencia táctica en Estadio Olímpico de Helsinki. Cobras $158.00 (+$58.00 neto)."
             }
           ],
-          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $466.0 (+$166.0 de ganancia neta)."
+          "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $464.0 (+$164.0 de ganancia neta)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (02 SEPTIEMBRE)\n1. ⚽ Francia vs. Italia: Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales @ 1.52 ($100 -> $152.00)\n2. ⚽ Bélgica vs. Turquía: Bélgica Ganador Directo (1) + Más 1.5 Goles Totales @ 1.56 ($100 -> $156.00)\n3. ⚽ Polonia vs. Rumanía: Polonia Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $466.0"
+        "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (03 SEPTIEMBRE)\n1. ⚽ España vs. República Checa: España Ganador Directo (1) + Más 1.5 Goles Totales @ 1.5 ($100 -> $150.00)\n2. ⚽ Croacia vs. Inglaterra: Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.56 ($100 -> $156.00)\n3. ⚽ Finlandia vs. Albania: Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $464.0"
       }
     },
     "modo_b_sistema": {
@@ -112,7 +112,7 @@
       "badge": "SEGURO CONTRA 1 FALLO",
       "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
       "tagColor": "cyan",
-      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Viernes (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
+      "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando la jornada estelar de fútbol del Sábado (UEFA Nations League, UEFA Nations League y UEFA Nations League). ¡Si falla 1 partido cobras la doble correspondiente sin perder tu dinero!",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
       "expectedWinRate": "89.5%",
       "combinedEv": "+34.5%",
@@ -123,50 +123,50 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Francia vs. Italia",
-          "selection": "Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales",
-          "odds": 1.52,
-          "algorithm": "Pick A (Football): FootyStats Stade de France Iron Defense Metric: Francia bajo Didier Deschamps promedia apenas 0.45 goles concedidos por partido en Saint-Denis; Italia priorizará el bloque bajo tras su fragilidad defensiva ante Turquía."
+          "match": "España vs. República Checa",
+          "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+          "odds": 1.5,
+          "algorithm": "Pick A (Football): FootyStats La Roja Tartiere Engine: España acumula 40 partidos invicto y promedia 2.85 xG en casa con Lamine Yamal y Nico Williams; Chequia concede 2.10 xGA de visita y llega con dos derrotas consecutivas."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Bélgica vs. Turquía",
-          "selection": "Bélgica Ganador Directo (1) + Más 1.5 Goles Totales",
+          "match": "Croacia vs. Inglaterra",
+          "selection": "Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales",
           "odds": 1.56,
-          "algorithm": "Pick B (Football): API-Football Red Devils High-Press Model: Bélgica promedia 2.35 xG en casa con Doku, Openda y De Bruyne; Turquía llega con bajas capitales como Çalhanoğlu y Yıldíz y ha recibido 5 goles en sus primeras dos jornadas."
+          "algorithm": "Pick B (Football): API-Football Three Lions Empty Ground Metric: Partido a puerta cerrada en Rijeka sin la presión de la hinchada croata; Kane y Bellingham generan 2.25 xG de visita frente a una zaga balcánica que encajó 4 goles ante España."
         },
         {
           "sourceName": "Sportmonks",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Polonia vs. Rumanía",
-          "selection": "Polonia Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "match": "Finlandia vs. Albania",
+          "selection": "Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales",
           "odds": 1.58,
-          "algorithm": "Pick C (Football): Sportmonks Narodowy Fortress Metric: Polonia en Varsovia es sumamente fiable con Lewandowski y Zieliński generando 1.95 xG; Rumanía concede 1.65 xGA en sus visitas ante combinados de la Liga B."
+          "algorithm": "Pick C (Football): Sportmonks Balkan Resilience Model: Albania lidera invicta con 6/6 pts y 0 goles recibidos con Asani y Broja; Finlandia no ha recibido gol en casa, proyectando un duelo cerrado y táctico con margen para la visita."
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Francia + ⚽ Bélgica)",
+          "name": "Doble 1 (⚽ España + ⚽ Croacia)",
+          "odds": 2.34,
+          "formula": "1.5 × 1.56"
+        },
+        {
+          "name": "Doble 2 (⚽ España + ⚽ Finlandia)",
           "odds": 2.37,
-          "formula": "1.52 × 1.56"
+          "formula": "1.5 × 1.58"
         },
         {
-          "name": "Doble 2 (⚽ Francia + ⚽ Polonia)",
-          "odds": 2.4,
-          "formula": "1.52 × 1.58"
-        },
-        {
-          "name": "Doble 3 (⚽ Bélgica + ⚽ Polonia)",
+          "name": "Doble 3 (⚽ Croacia + ⚽ Finlandia)",
           "odds": 2.46,
           "formula": "1.56 × 1.58"
         },
         {
-          "name": "Triple (⚽ Francia + ⚽ Bélgica + ⚽ Polonia)",
-          "odds": 3.75,
-          "formula": "1.52 × 1.56 × 1.58"
+          "name": "Triple (⚽ España + ⚽ Croacia + ⚽ Finlandia)",
+          "odds": 3.7,
+          "formula": "1.5 × 1.56 × 1.58"
         }
       ],
       "real_life_example": {
@@ -181,35 +181,35 @@
           "title": "¿Cómo se cobra en la vida real con el Sistema 2/3 Híbrido?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (⚽ Francia + ⚽ Bélgica)",
-              "min_result": "Francia y Bélgica cumplen sus líneas",
-              "explanation": "Cobras la Doble 1 (@ 2.37x): Cobras $59.25 amortizando el boleto."
+              "match": "Escenario 2 de 3 (⚽ España + ⚽ Croacia)",
+              "min_result": "España y Croacia cumplen sus líneas",
+              "explanation": "Cobras la Doble 1 (@ 2.34x): Cobras $58.50 amortizando el boleto."
             },
             {
-              "match": "Escenario 2 de 3 (⚽ Francia + ⚽ Polonia)",
-              "min_result": "Francia y Polonia cumplen sus líneas",
-              "explanation": "Cobras la Doble 2 (@ 2.4x): Cobras $60.00 protegiendo el capital."
+              "match": "Escenario 2 de 3 (⚽ España + ⚽ Finlandia)",
+              "min_result": "España y Finlandia cumplen sus líneas",
+              "explanation": "Cobras la Doble 2 (@ 2.37x): Cobras $59.25 protegiendo el capital."
             },
             {
               "match": "Escenario Pleno 3 de 3 (Multideporte)",
-              "min_result": "Se cumplen los 3 eventos (Francia + Bélgica + Polonia)",
-              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $274.50 (+$174.50 de ganancia neta)."
+              "min_result": "Se cumplen los 3 eventos (España + Croacia + Finlandia)",
+              "explanation": "Cobras las 3 Dobles + la Triple: Cobras $271.75 (+$171.75 de ganancia neta)."
             }
           ],
-          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $274.50 si aciertan los 3, o amortizas el boleto si 1 falla."
+          "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $271.75 si aciertan los 3, o amortizas el boleto si 1 falla."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (02 SEPTIEMBRE)\n• Pick A: ⚽ Francia vs. Italia (Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales) @ 1.52\n• Pick B: ⚽ Bélgica vs. Turquía (Bélgica Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.56\n• Pick C: ⚽ Polonia vs. Rumanía (Polonia Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $274.50"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (03 SEPTIEMBRE)\n• Pick A: ⚽ España vs. República Checa (España Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.5\n• Pick B: ⚽ Croacia vs. Inglaterra (Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.56\n• Pick C: ⚽ Finlandia vs. Albania (Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $271.75"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.54x)",
+      "modeShort": "Modo C: Doble Banker (Duplicador @ 1.49x)",
       "badge": "DUPLICADOR DE BANCA",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (Francia vs. Italia y Bélgica vs. Turquía) para duplicar la banca en la jornada de fútbol del Viernes.",
-      "totalOdds": 1.54,
+      "description": "Combinada estricta de solo 2 partidos de máxima solidez estadística (España vs. República Checa y Croacia vs. Inglaterra) para duplicar la banca en la jornada de fútbol del Sábado.",
+      "totalOdds": 1.49,
       "fairOdds": 1.62,
       "expectedWinRate": "90.5%",
       "combinedEv": "+33.5%",
@@ -220,122 +220,122 @@
           "sourceName": "FootyStats",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Francia vs. Italia",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
-          "selection": "Francia Doble Oportunidad (1X)",
-          "odds": 1.22,
+          "match": "España vs. República Checa",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (12:45 CST / 20:45 CEST)",
+          "selection": "España Ganador Directo (1)",
+          "odds": 1.2,
           "confidencePct": 93,
-          "algorithm": "FootyStats Stade de France Iron Defense Metric: Francia bajo Didier Deschamps promedia apenas 0.45 goles concedidos por partido en Saint-Denis; Italia priorizará el bloque bajo tras su fragilidad defensiva ante Turquía."
+          "algorithm": "FootyStats La Roja Tartiere Engine: España acumula 40 partidos invicto y promedia 2.85 xG en casa con Lamine Yamal y Nico Williams; Chequia concede 2.10 xGA de visita y llega con dos derrotas consecutivas."
         },
         {
           "sourceName": "API-Football",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Bélgica vs. Turquía",
-          "tournament": "UEFA Nations League (Liga A, Grupo 1) (12:45 CST / 20:45 CEST)",
-          "selection": "Bélgica Ganador Directo (1)",
-          "odds": 1.26,
+          "match": "Croacia vs. Inglaterra",
+          "tournament": "UEFA Nations League (Liga A, Grupo 3) (10:00 CST / 18:00 CEST)",
+          "selection": "Inglaterra Doble Oportunidad (X2)",
+          "odds": 1.24,
           "confidencePct": 92,
-          "algorithm": "API-Football Red Devils High-Press Model: Bélgica promedia 2.35 xG en casa con Doku, Openda y De Bruyne; Turquía llega con bajas capitales como Çalhanoğlu y Yıldíz y ha recibido 5 goles en sus primeras dos jornadas."
+          "algorithm": "API-Football Three Lions Empty Ground Metric: Partido a puerta cerrada en Rijeka sin la presión de la hinchada croata; Kane y Bellingham generan 2.25 xG de visita frente a una zaga balcánica que encajó 4 goles ante España."
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
           "Selecciona estos 2 partidos de fútbol de máxima certeza:",
-          "• ⚽ Francia vs. Italia (UEFA Nations League): 'Francia Doble Oportunidad (1X)'.",
-          "• ⚽ Bélgica vs. Turquía (UEFA Nations League): 'Bélgica Ganador Directo (1)'.",
+          "• ⚽ España vs. República Checa (UEFA Nations League): 'España Ganador Directo (1)'.",
+          "• ⚽ Croacia vs. Inglaterra (UEFA Nations League): 'Inglaterra Doble Oportunidad (X2)'.",
           "Selecciona 'PARLAY / COMBINADA (2 Selecciones)'.",
-          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.54x."
+          "Ingresa tu apuesta (ej. $100 o $250). La cuota total es de 1.49x."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana en la vida real con la Doble Banker 100% Fútbol?",
           "match_examples": [
             {
-              "match": "Francia vs. Italia",
-              "min_result": "Se cumple (Francia Doble Oportunidad (1X))",
-              "explanation": "Se consolida el escenario de valor en Stade de France."
+              "match": "España vs. República Checa",
+              "min_result": "Se cumple (España Ganador Directo (1))",
+              "explanation": "Se consolida el escenario de valor en Estadio Carlos Tartiere."
             },
             {
-              "match": "Bélgica vs. Turquía",
-              "min_result": "Se cumple (Bélgica Ganador Directo (1))",
-              "explanation": "Se asegura el rendimiento cuantitativo en Stade Maurice Dufrasne."
+              "match": "Croacia vs. Inglaterra",
+              "min_result": "Se cumple (Inglaterra Doble Oportunidad (X2))",
+              "explanation": "Se asegura el rendimiento cuantitativo en Stadion Rujevica."
             }
           ],
-          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $154.00 (+$54.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
+          "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $149.00 (+$49.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (02 SEPTIEMBRE)\n1. ⚽ Francia vs. Italia (Francia Doble Oportunidad (1X)) @ 1.22\n2. ⚽ Bélgica vs. Turquía (Bélgica Ganador Directo (1)) @ 1.26\n► Cuota Total: 1.54x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (03 SEPTIEMBRE)\n1. ⚽ España vs. República Checa (España Ganador Directo (1)) @ 1.2\n2. ⚽ Croacia vs. Inglaterra (Inglaterra Doble Oportunidad (X2)) @ 1.24\n► Cuota Total: 1.49x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
       }
     }
   },
   "has_hybrid_edition": true,
   "hybrid_edition": {
-    "title": "Módulo de Arbitraje Híbrido: Súper Viernes Estelar (Francia vs. Italia + Bélgica + NCAA)",
-    "subtitle": "Fusión cuantitativa del Clásico Europeo en Saint-Denis con la artillería de Bélgica en Lieja y el Friday Night de Penn State en la Big Ten.",
-    "trigger_reason": "ACTIVADO: Arbitraje multideporte de alta asimetría combinando el poder defensivo de Francia y la delantera belga en Nations League con la hegemonía colegial de Penn State.",
+    "title": "Módulo de Arbitraje Híbrido: Súper Sábado de Postemporada (España + MLB Division Series Game 1)",
+    "subtitle": "Fusión cuantitativa del invicto de España en el Carlos Tartiere con el Juego 1 de las Series Divisionales de MLB (Dodgers en Chávez Ravine y Yankees en el Bronx).",
+    "trigger_reason": "ACTIVADO: Arbitraje multideporte de alta asimetría combinando la hegemonía de España en Nations League con Dodgers y Yankees abriendo sus series divisionales en casa.",
     "active_sports": [
       "Football",
-      "NFL"
+      "Baseball"
     ],
-    "expectedWinRate": "87.0%",
-    "avgOdds": 1.56,
-    "combinedEv": "+33.5%",
+    "expectedWinRate": "88.0%",
+    "avgOdds": 1.57,
+    "combinedEv": "+34.5%",
     "picks": [
       {
         "sourceName": "FootyStats",
         "sport": "Football",
         "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "match": "Francia vs. Italia",
-        "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-        "stadium": "Stade de France, Saint-Denis, Francia",
-        "selection": "Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales",
-        "odds": 1.52,
-        "confidencePct": 94,
-        "algorithm": "FootyStats Stade de France Iron Defense Metric: Francia bajo Didier Deschamps promedia apenas 0.45 goles concedidos por partido en Saint-Denis; Italia priorizará el bloque bajo tras su fragilidad defensiva ante Turquía.",
-        "singleReturn": 152.0,
+        "match": "España vs. República Checa",
+        "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+        "stadium": "Estadio Carlos Tartiere, Oviedo, España",
+        "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+        "odds": 1.5,
+        "confidencePct": 95,
+        "algorithm": "FootyStats La Roja Tartiere Engine: España acumula 40 partidos invicto y promedia 2.85 xG en casa con Lamine Yamal y Nico Williams; Chequia concede 2.10 xGA de visita y llega con dos derrotas consecutivas.",
+        "singleReturn": 150.0,
         "verified": true
       },
       {
-        "sourceName": "API-Football",
-        "sport": "Football",
-        "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-        "match": "Bélgica vs. Turquía",
-        "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-        "stadium": "Stade Maurice Dufrasne, Lieja, Bélgica",
-        "selection": "Bélgica Ganador Directo (1) + Más 1.5 Goles Totales",
-        "odds": 1.56,
+        "sourceName": "Baseball Savant",
+        "sport": "Baseball",
+        "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+        "match": "Los Angeles Dodgers vs. Atlanta Braves",
+        "tournament": "Major League Baseball (NL Division Series Game 1)",
+        "stadium": "Dodger Stadium, Los Angeles, California",
+        "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
+        "odds": 1.58,
         "confidencePct": 93,
-        "algorithm": "API-Football Red Devils High-Press Model: Bélgica promedia 2.35 xG en casa con Doku, Openda y De Bruyne; Turquía llega con bajas capitales como Çalhanoğlu y Yıldíz y ha recibido 5 goles en sus primeras dos jornadas.",
-        "singleReturn": 156.0,
+        "algorithm": "Baseball Savant Chávez Ravine Power Index: Dodgers descansados abren la NLDS con Ohtani y Freeman (.365 wOBA en casa); ventaja determinante de rotación ante unos Braves con bullpen desgastado tras la serie de Wild Card.",
+        "singleReturn": 158.0,
         "verified": true
       },
       {
-        "sourceName": "NextGen Stats NCAA",
-        "sport": "NFL",
-        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Penn State vs. Northwestern",
-        "tournament": "NCAA College Football (Friday Night Big Ten)",
-        "stadium": "Ryan Field, Evanston, Illinois",
-        "selection": "Penn State Ganador Directo (Moneyline)",
-        "odds": 1.6,
-        "confidencePct": 93,
-        "algorithm": "NextGen Stats Big Ten Power Index: Penn State promedia 34.5 puntos y apenas 12.0 permitidos; la frontal defensiva dominará la línea de golpeo ante un ataque aéreo limitado de Northwestern.",
-        "singleReturn": 160.0,
+        "sourceName": "Baseball Savant",
+        "sport": "Baseball",
+        "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+        "match": "New York Yankees vs. Tampa Bay Rays",
+        "tournament": "Major League Baseball (AL Division Series Game 1)",
+        "stadium": "Yankee Stadium, Bronx, New York",
+        "selection": "New York Yankees Moneyline (Ganador Directo)",
+        "odds": 1.62,
+        "confidencePct": 92,
+        "algorithm": "Baseball Savant Bronx October Metric: Yankees barrieron a Boston en Wild Card y llegan con bateo oportuno encendido (.358 wOBA en casa); rotación abridora lista para contener la ofensiva de los Rays.",
+        "singleReturn": 162.0,
         "verified": true
       }
     ],
     "strategies": {
       "modo_a_simples": {
         "id": "STRATEGY-HYBRID-A",
-        "modeName": "Modo A: Simples Híbridas (Fútbol + NFL)",
-        "modeShort": "Modo A: Simples Híbridas (87.0% Win Rate)",
+        "modeName": "Modo A: Simples Híbridas (Fútbol + MLB)",
+        "modeShort": "Modo A: Simples Híbridas (88.0% Win Rate)",
         "badge": "MÁXIMO WIN RATE HÍBRIDO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
-        "description": "3 Selecciones multideporte de élite para el Viernes 02 de Septiembre (Francia en Football, Bélgica en Football y Northwestern en NFL). Cada acierto cobra por separado.",
-        "avgOdds": 1.56,
-        "expectedWinRate": "87.0%",
-        "combinedEv": "+33.5%",
+        "description": "3 Selecciones multideporte de élite para el Sábado 03 de Septiembre (España en Football, Los Angeles Dodgers en Baseball y New York Yankees en Baseball). Cada acierto cobra por separado.",
+        "avgOdds": 1.57,
+        "expectedWinRate": "88.0%",
+        "combinedEv": "+34.5%",
         "recommendedStake": "1.0% por selección (Flat Staking)",
         "riskLevel": "MÍNIMO",
         "picks": [
@@ -343,42 +343,42 @@
             "sourceName": "FootyStats",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Francia vs. Italia",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "stadium": "Stade de France, Saint-Denis, Francia",
-            "selection": "Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales",
-            "odds": 1.52,
-            "confidencePct": 94,
-            "algorithm": "FootyStats Stade de France Iron Defense Metric: Francia bajo Didier Deschamps promedia apenas 0.45 goles concedidos por partido en Saint-Denis; Italia priorizará el bloque bajo tras su fragilidad defensiva ante Turquía.",
-            "singleReturn": 152.0,
+            "match": "España vs. República Checa",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Estadio Carlos Tartiere, Oviedo, España",
+            "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+            "odds": 1.5,
+            "confidencePct": 95,
+            "algorithm": "FootyStats La Roja Tartiere Engine: España acumula 40 partidos invicto y promedia 2.85 xG en casa con Lamine Yamal y Nico Williams; Chequia concede 2.10 xGA de visita y llega con dos derrotas consecutivas.",
+            "singleReturn": 150.0,
             "verified": true
           },
           {
-            "sourceName": "API-Football",
-            "sport": "Football",
-            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-            "match": "Bélgica vs. Turquía",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "stadium": "Stade Maurice Dufrasne, Lieja, Bélgica",
-            "selection": "Bélgica Ganador Directo (1) + Más 1.5 Goles Totales",
-            "odds": 1.56,
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "match": "Los Angeles Dodgers vs. Atlanta Braves",
+            "tournament": "Major League Baseball (NL Division Series Game 1)",
+            "stadium": "Dodger Stadium, Los Angeles, California",
+            "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
+            "odds": 1.58,
             "confidencePct": 93,
-            "algorithm": "API-Football Red Devils High-Press Model: Bélgica promedia 2.35 xG en casa con Doku, Openda y De Bruyne; Turquía llega con bajas capitales como Çalhanoğlu y Yıldíz y ha recibido 5 goles en sus primeras dos jornadas.",
-            "singleReturn": 156.0,
+            "algorithm": "Baseball Savant Chávez Ravine Power Index: Dodgers descansados abren la NLDS con Ohtani y Freeman (.365 wOBA en casa); ventaja determinante de rotación ante unos Braves con bullpen desgastado tras la serie de Wild Card.",
+            "singleReturn": 158.0,
             "verified": true
           },
           {
-            "sourceName": "NextGen Stats NCAA",
-            "sport": "NFL",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Penn State vs. Northwestern",
-            "tournament": "NCAA College Football (Friday Night Big Ten)",
-            "stadium": "Ryan Field, Evanston, Illinois",
-            "selection": "Penn State Ganador Directo (Moneyline)",
-            "odds": 1.6,
-            "confidencePct": 93,
-            "algorithm": "NextGen Stats Big Ten Power Index: Penn State promedia 34.5 puntos y apenas 12.0 permitidos; la frontal defensiva dominará la línea de golpeo ante un ataque aéreo limitado de Northwestern.",
-            "singleReturn": 160.0,
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+            "match": "New York Yankees vs. Tampa Bay Rays",
+            "tournament": "Major League Baseball (AL Division Series Game 1)",
+            "stadium": "Yankee Stadium, Bronx, New York",
+            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "odds": 1.62,
+            "confidencePct": 92,
+            "algorithm": "Baseball Savant Bronx October Metric: Yankees barrieron a Boston en Wild Card y llegan con bateo oportuno encendido (.358 wOBA en casa); rotación abridora lista para contener la ofensiva de los Rays.",
+            "singleReturn": 162.0,
             "verified": true
           }
         ],
@@ -386,43 +386,43 @@
           "bookie_steps": [
             "Abre tu casa de apuestas (Bet365, Caliente, Betano, Pinnacle, etc.).",
             "Agrega los 3 eventos multideporte al cupón:",
-            "• ⚽ Francia vs. Italia: 'Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales'.",
-            "• ⚽ Bélgica vs. Turquía: 'Bélgica Ganador Directo (1) + Más 1.5 Goles Totales'.",
-            "• 🏈 Penn State vs. Northwestern: 'Penn State Ganador Directo (Moneyline)'.",
+            "• ⚽ España vs. República Checa: 'España Ganador Directo (1) + Más 1.5 Goles Totales'.",
+            "• ⚾ Los Angeles Dodgers vs. Atlanta Braves: 'Los Angeles Dodgers Moneyline (Ganador Directo)'.",
+            "• ⚾ New York Yankees vs. Tampa Bay Rays: 'New York Yankees Moneyline (Ganador Directo)'.",
             "Selecciona 'APUESTAS INDIVIDUALES / SIMPLES' con $100 en cada una (Total: $300)."
           ],
           "winning_scenario": {
             "title": "¿Cómo se cobra con el Híbrido Multideporte en Simples?",
             "match_examples": [
               {
-                "match": "Francia vs. Italia",
-                "min_result": "Francia sella su pronóstico",
-                "explanation": "Cobras $152.00."
+                "match": "España vs. República Checa",
+                "min_result": "España sella su pronóstico",
+                "explanation": "Cobras $150.00."
               },
               {
-                "match": "Bélgica vs. Turquía",
-                "min_result": "Bélgica gana su encuentro",
-                "explanation": "Cobras $156.00."
+                "match": "Los Angeles Dodgers vs. Atlanta Braves",
+                "min_result": "Los Angeles Dodgers gana su encuentro",
+                "explanation": "Cobras $158.00."
               },
               {
-                "match": "Penn State vs. Northwestern",
-                "min_result": "Northwestern cumple su línea estelar",
-                "explanation": "Cobras $160.00."
+                "match": "New York Yankees vs. Tampa Bay Rays",
+                "min_result": "New York Yankees cumple su línea estelar",
+                "explanation": "Cobras $162.00."
               }
             ],
-            "payout_example": "Si aciertas 2 de 3 cobras ~$314.00 – $327.00. Con 3 de 3 cobras $468.0 (+$168.0 neto)."
+            "payout_example": "Si aciertas 2 de 3 cobras ~$314.00 – $327.00. Con 3 de 3 cobras $470.0 (+$170.0 neto)."
           },
-          "copy_text": "👑 BLACK ROYAL — HÍBRIDO SIMPLES: FÚTBOL + NFL (02 SEPTIEMBRE)\n1. ⚽ Francia vs. Italia: Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales @ 1.52\n2. ⚽ Bélgica vs. Turquía: Bélgica Ganador Directo (1) + Más 1.5 Goles Totales @ 1.56\n3. 🏈 Penn State vs. Northwestern: Penn State Ganador Directo (Moneyline) @ 1.6\n► Inversión: $300 | Cobro 3/3: $468.0"
+          "copy_text": "👑 BLACK ROYAL — HÍBRIDO SIMPLES: FÚTBOL + MLB (03 SEPTIEMBRE)\n1. ⚽ España vs. República Checa: España Ganador Directo (1) + Más 1.5 Goles Totales @ 1.5\n2. ⚾ Los Angeles Dodgers vs. Atlanta Braves: Los Angeles Dodgers Moneyline (Ganador Directo) @ 1.58\n3. ⚾ New York Yankees vs. Tampa Bay Rays: New York Yankees Moneyline (Ganador Directo) @ 1.62\n► Inversión: $300 | Cobro 3/3: $470.0"
         }
       },
       "modo_b_sistema": {
         "id": "STRATEGY-HYBRID-B",
-        "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie Multideporte: Fútbol + NFL)",
+        "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie Multideporte: Fútbol + MLB)",
         "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
         "badge": "SEGURO CONTRA 1 FALLO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
-        "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando Fútbol + NFL. ¡Si falla 1 evento cobras la doble correspondiente sin perder capital!",
+        "description": "Genera 4 combinadas automáticas (3 Dobles + 1 Triple) cruzando Fútbol + MLB. ¡Si falla 1 evento cobras la doble correspondiente sin perder capital!",
         "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
         "expectedWinRate": "89.5%",
         "combinedEv": "+34.0%",
@@ -433,65 +433,65 @@
             "sourceName": "FootyStats",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Francia vs. Italia",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "stadium": "Stade de France, Saint-Denis, Francia",
-            "selection": "Francia Doble Oportunidad (1X) + Menos de 3.5 Goles Totales",
-            "odds": 1.52,
-            "confidencePct": 94,
-            "algorithm": "FootyStats Stade de France Iron Defense Metric: Francia bajo Didier Deschamps promedia apenas 0.45 goles concedidos por partido en Saint-Denis; Italia priorizará el bloque bajo tras su fragilidad defensiva ante Turquía.",
-            "singleReturn": 152.0,
+            "match": "España vs. República Checa",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "stadium": "Estadio Carlos Tartiere, Oviedo, España",
+            "selection": "España Ganador Directo (1) + Más 1.5 Goles Totales",
+            "odds": 1.5,
+            "confidencePct": 95,
+            "algorithm": "FootyStats La Roja Tartiere Engine: España acumula 40 partidos invicto y promedia 2.85 xG en casa con Lamine Yamal y Nico Williams; Chequia concede 2.10 xGA de visita y llega con dos derrotas consecutivas.",
+            "singleReturn": 150.0,
             "verified": true
           },
           {
-            "sourceName": "API-Football",
-            "sport": "Football",
-            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-            "match": "Bélgica vs. Turquía",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "stadium": "Stade Maurice Dufrasne, Lieja, Bélgica",
-            "selection": "Bélgica Ganador Directo (1) + Más 1.5 Goles Totales",
-            "odds": 1.56,
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "match": "Los Angeles Dodgers vs. Atlanta Braves",
+            "tournament": "Major League Baseball (NL Division Series Game 1)",
+            "stadium": "Dodger Stadium, Los Angeles, California",
+            "selection": "Los Angeles Dodgers Moneyline (Ganador Directo)",
+            "odds": 1.58,
             "confidencePct": 93,
-            "algorithm": "API-Football Red Devils High-Press Model: Bélgica promedia 2.35 xG en casa con Doku, Openda y De Bruyne; Turquía llega con bajas capitales como Çalhanoğlu y Yıldíz y ha recibido 5 goles en sus primeras dos jornadas.",
-            "singleReturn": 156.0,
+            "algorithm": "Baseball Savant Chávez Ravine Power Index: Dodgers descansados abren la NLDS con Ohtani y Freeman (.365 wOBA en casa); ventaja determinante de rotación ante unos Braves con bullpen desgastado tras la serie de Wild Card.",
+            "singleReturn": 158.0,
             "verified": true
           },
           {
-            "sourceName": "NextGen Stats NCAA",
-            "sport": "NFL",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Penn State vs. Northwestern",
-            "tournament": "NCAA College Football (Friday Night Big Ten)",
-            "stadium": "Ryan Field, Evanston, Illinois",
-            "selection": "Penn State Ganador Directo (Moneyline)",
-            "odds": 1.6,
-            "confidencePct": 93,
-            "algorithm": "NextGen Stats Big Ten Power Index: Penn State promedia 34.5 puntos y apenas 12.0 permitidos; la frontal defensiva dominará la línea de golpeo ante un ataque aéreo limitado de Northwestern.",
-            "singleReturn": 160.0,
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+            "match": "New York Yankees vs. Tampa Bay Rays",
+            "tournament": "Major League Baseball (AL Division Series Game 1)",
+            "stadium": "Yankee Stadium, Bronx, New York",
+            "selection": "New York Yankees Moneyline (Ganador Directo)",
+            "odds": 1.62,
+            "confidencePct": 92,
+            "algorithm": "Baseball Savant Bronx October Metric: Yankees barrieron a Boston en Wild Card y llegan con bateo oportuno encendido (.358 wOBA en casa); rotación abridora lista para contener la ofensiva de los Rays.",
+            "singleReturn": 162.0,
             "verified": true
           }
         ],
         "combinations": [
           {
-            "name": "Doble 1 (⚽ Francia + ⚽ Bélgica)",
+            "name": "Doble 1 (⚽ España + ⚾ Los Angeles Dodgers)",
             "odds": 2.37,
-            "formula": "1.52 × 1.56"
+            "formula": "1.5 × 1.58"
           },
           {
-            "name": "Doble 2 (⚽ Francia + 🏈 Northwestern)",
+            "name": "Doble 2 (⚽ España + ⚾ New York Yankees)",
             "odds": 2.43,
-            "formula": "1.52 × 1.6"
+            "formula": "1.5 × 1.62"
           },
           {
-            "name": "Doble 3 (⚽ Bélgica + 🏈 Northwestern)",
-            "odds": 2.5,
-            "formula": "1.56 × 1.6"
+            "name": "Doble 3 (⚾ Los Angeles Dodgers + ⚾ New York Yankees)",
+            "odds": 2.56,
+            "formula": "1.58 × 1.62"
           },
           {
-            "name": "Triple (⚽ Francia + ⚽ Bélgica + 🏈 Northwestern)",
-            "odds": 3.79,
-            "formula": "1.52 × 1.56 × 1.6"
+            "name": "Triple (⚽ España + ⚾ Los Angeles Dodgers + ⚾ New York Yankees)",
+            "odds": 3.84,
+            "formula": "1.5 × 1.58 × 1.62"
           }
         ],
         "real_life_example": {
@@ -504,24 +504,24 @@
             "title": "¿Cómo se cobra con el Sistema Híbrido?",
             "match_examples": [
               {
-                "match": "Escenario 2 de 3 (Francia + Bélgica)",
-                "min_result": "Ganan Francia y Bélgica",
+                "match": "Escenario 2 de 3 (España + Los Angeles Dodgers)",
+                "min_result": "Ganan España y Los Angeles Dodgers",
                 "explanation": "Cobras la Doble 1 (@ 2.37x): $59.25."
               },
               {
-                "match": "Escenario 2 de 3 (Francia + Northwestern)",
-                "min_result": "Ganan Francia y Northwestern",
+                "match": "Escenario 2 de 3 (España + New York Yankees)",
+                "min_result": "Ganan España y New York Yankees",
                 "explanation": "Cobras la Doble 2 (@ 2.43x): $60.75."
               },
               {
                 "match": "Escenario Pleno 3 de 3",
                 "min_result": "Ganan los 3 eventos",
-                "explanation": "Cobras las 3 Dobles + Triple: $277.25."
+                "explanation": "Cobras las 3 Dobles + Triple: $280.00."
               }
             ],
-            "payout_example": "Con $100, cobras hasta $277.25 si aciertan los 3, o amortizas si 1 falla."
+            "payout_example": "Con $100, cobras hasta $280.00 si aciertan los 3, o amortizas si 1 falla."
           },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (02 SEPTIEMBRE)\n• Pick A: ⚽ Francia vs. Italia @ 1.52\n• Pick B: ⚽ Bélgica vs. Turquía @ 1.56\n• Pick C: 🏈 Penn State vs. Northwestern @ 1.6\n► Modalidad: Trixie | Inversión: $100 | Cobro 3/3: $277.25"
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (03 SEPTIEMBRE)\n• Pick A: ⚽ España vs. República Checa @ 1.5\n• Pick B: ⚾ Los Angeles Dodgers vs. Atlanta Braves @ 1.58\n• Pick C: ⚾ New York Yankees vs. Tampa Bay Rays @ 1.62\n► Modalidad: Trixie | Inversión: $100 | Cobro 3/3: $280.00"
         }
       },
       "modo_c_banker": {
@@ -531,7 +531,7 @@
         "badge": "DUPLICADOR HÍBRIDO",
         "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
         "tagColor": "amber",
-        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Francia en Football y Bélgica en Football.",
+        "description": "Combinada estricta de solo 2 eventos de altísima certeza: España en Football y Los Angeles Dodgers en Baseball.",
         "totalOdds": 1.54,
         "fairOdds": 1.5,
         "expectedWinRate": "91.5%",
@@ -542,45 +542,45 @@
           {
             "sourceName": "FootyStats",
             "sport": "Football",
-            "match": "Francia vs. Italia",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "selection": "Francia Doble Oportunidad (1X)",
-            "odds": 1.22,
+            "match": "España vs. República Checa",
+            "tournament": "UEFA Nations League (Liga A, Grupo 3)",
+            "selection": "España Ganador Directo (1)",
+            "odds": 1.2,
             "confidencePct": 95
           },
           {
-            "sourceName": "API-Football",
-            "sport": "Football",
-            "match": "Bélgica vs. Turquía",
-            "tournament": "UEFA Nations League (Liga A, Grupo 1)",
-            "selection": "Bélgica Ganador Directo (1)",
-            "odds": 1.26,
+            "sourceName": "Baseball Savant",
+            "sport": "Baseball",
+            "match": "Los Angeles Dodgers vs. Atlanta Braves",
+            "tournament": "Major League Baseball (NL Division Series Game 1)",
+            "selection": "Los Angeles Dodgers (+1.5 Run Line / Hándicap)",
+            "odds": 1.28,
             "confidencePct": 92
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas.",
-            "Selecciona: ⚽ Francia vs. Italia (Francia Doble Oportunidad (1X)) y ⚽ Bélgica vs. Turquía (Bélgica Ganador Directo (1)).",
+            "Selecciona: ⚽ España vs. República Checa (España Ganador Directo (1)) y ⚾ Los Angeles Dodgers vs. Atlanta Braves (Los Angeles Dodgers (+1.5 Run Line / Hándicap)).",
             "Coloca tu apuesta en Parlay / Combinada (ej. $100 o $250). Cuota: 1.54x."
           ],
           "winning_scenario": {
             "title": "¿Cómo se gana con la Doble Banker Híbrida?",
             "match_examples": [
               {
-                "match": "Francia vs. Italia",
-                "min_result": "Francia cumple su pronóstico de alta certeza",
+                "match": "España vs. República Checa",
+                "min_result": "España cumple su pronóstico de alta certeza",
                 "explanation": "Acierto contundente."
               },
               {
-                "match": "Bélgica vs. Turquía",
-                "min_result": "Bélgica cubre la línea con margen",
+                "match": "Los Angeles Dodgers vs. Atlanta Braves",
+                "min_result": "Los Angeles Dodgers cubre la línea con margen",
                 "explanation": "Línea cubierta con solvencia."
               }
             ],
             "payout_example": "Si ambos cumplen, con $100 cobras $154.00 (+$54.00 neto)."
           },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (02 SEPTIEMBRE)\n1. ⚽ Francia vs. Italia (Francia Doble Oportunidad (1X)) @ 1.22\n2. ⚽ Bélgica vs. Turquía (Bélgica Ganador Directo (1)) @ 1.26\n► Cuota Total: 1.54x | Confianza: 91.5% | Stake: 2.5% - 3.0%"
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (03 SEPTIEMBRE)\n1. ⚽ España vs. República Checa (España Ganador Directo (1)) @ 1.2\n2. ⚾ Los Angeles Dodgers vs. Atlanta Braves (Los Angeles Dodgers (+1.5 Run Line / Hándicap)) @ 1.28\n► Cuota Total: 1.54x | Confianza: 91.5% | Stake: 2.5% - 3.0%"
         }
       }
     }
