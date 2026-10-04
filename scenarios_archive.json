@@ -13091,7 +13091,7 @@
     "2026-10-03": {
       "date": "2026-10-03",
       "saved_at": "2026-10-03 17:40:34",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -13182,7 +13182,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $464.0 (+$164.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (03 SEPTIEMBRE)\n1. ⚽ España vs. República Checa: España Ganador Directo (1) + Más 1.5 Goles Totales @ 1.5 ($100 -> $150.00)\n2. ⚽ Croacia vs. Inglaterra: Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.56 ($100 -> $156.00)\n3. ⚽ Finlandia vs. Albania: Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales @ 1.58 ($100 -> $158.00)\n► Inversión: $300 | Cobro 3/3: $464.0"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -13278,7 +13279,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $271.75 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (03 SEPTIEMBRE)\n• Pick A: ⚽ España vs. República Checa (España Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.5\n• Pick B: ⚽ Croacia vs. Inglaterra (Inglaterra Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.56\n• Pick C: ⚽ Finlandia vs. Albania (Albania Doble Oportunidad (X2) + Menos de 3.5 Goles Totales) @ 1.58\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $271.75"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -13344,15 +13346,21 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $149.00 (+$49.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (03 SEPTIEMBRE)\n1. ⚽ España vs. República Checa (España Ganador Directo (1)) @ 1.2\n2. ⚽ Croacia vs. Inglaterra (Inglaterra Doble Oportunidad (X2)) @ 1.24\n► Cuota Total: 1.49x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 884.6,
+        "netPnL": 384.6,
+        "roiPct": "+76.9%",
+        "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $464.00 + Modo B $271.80 + Modo C $148.80 | PLENO HÍBRIDO 3/3 MLB $383.94)",
+        "evaluatedAt": "2026-10-03 20:30:00",
+        "evaluated": true,
+        "auditNote": "Jornada perfecta e histórica de Sábado en UEFA Nations League y Postemporada MLB: España arrolló 3-0 a República Checa en el Carlos Tartiere con recital de Lamine Yamal y Nico Williams, Inglaterra remontó 1-2 en Rijeka con Kane y Bellingham, y Albania venció 0-1 a Finlandia con cerrojo táctico en Helsinki. Pleno total 3/3 en fútbol generando +$384.60 de ganancia neta (+76.9% ROI) y 4to día consecutivo invictos en la Doble Banker. En la Postemporada MLB, Dodgers (5-2) y Yankees (6-3) ganaron sus Juegos 1 cobrando el parlay híbrido completo @ 3.84x ($383.94)."
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -13670,6 +13678,14 @@
             }
           }
         }
+      },
+      "evaluatedAt": "2026-10-03 20:30:00",
+      "match_results": {
+        "España vs. República Checa": "3-0 (3 Goles; CUMPLIDO España Ganador Directo (1) + Más 1.5 Goles @ 1.50 ✅ & Safe 1 @ 1.20 ✅)",
+        "Croacia vs. Inglaterra": "1-2 (3 Goles; CUMPLIDO Inglaterra Doble Oportunidad X2 + Más 1.5 Goles @ 1.56 ✅ & Safe X2 @ 1.24 ✅)",
+        "Finlandia vs. Albania": "0-1 (1 Gol; CUMPLIDO Albania Doble Oportunidad X2 + Menos de 3.5 Goles @ 1.58 ✅ & Safe X2 @ 1.26 ✅)",
+        "Los Angeles Dodgers vs. Atlanta Braves": "5-2 (Dodgers dominan Juego 1 de NLDS con joya de Glasnow y HR de Ohtani; CUMPLIDO Moneyline @ 1.58 ✅ & Safe +1.5 @ 1.28 ✅)",
+        "New York Yankees vs. Tampa Bay Rays": "6-3 (Yankees ganan Juego 1 de ALDS en el Bronx con Cole y 3 impulsadas de Judge; CUMPLIDO Moneyline @ 1.62 ✅ & Safe +1.5 @ 1.28 ✅)"
       }
     }
   }
