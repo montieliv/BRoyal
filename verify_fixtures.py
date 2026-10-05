@@ -3756,32 +3756,32 @@ def audit_previous_scenarios():
     if "2026-10-04" in archive.get("snapshots", {}):
         snap = archive["snapshots"]["2026-10-04"]
         snap["status"] = "EVALUATED"
-        snap["evaluatedAt"] = "2026-10-04 21:30:00"
+        snap["evaluatedAt"] = "2026-10-04 21:40:00"
         snap["match_results"] = {
             "Portugal vs. Noruega": "3-1 (4 Goles; CUMPLIDO Portugal Ganador Directo (1) + Más 1.5 Goles @ 1.55 ✅ & Safe 1X + Over 1.5 @ 1.25 ✅)",
             "Países Bajos vs. Serbia": "2-0 (2 Goles; CUMPLIDO Países Bajos Ganador Directo (1) + Más 1.5 Goles @ 1.52 ✅ & Safe 1 @ 1.22 ✅)",
-            "Grecia vs. Alemania": "1-2 (3 Goles; CUMPLIDO Alemania Doble Oportunidad X2 + Más 1.5 Goles @ 1.54 ✅ & Safe X2 @ 1.22 ✅)",
+            "Grecia vs. Alemania": "0-0 (0 Goles; CUMPLIDO Safe Doble Oportunidad X2 @ 1.22 ✅; Falla Más 1.5 Goles por cerrojo heleno ❌)",
             "Kansas City Chiefs vs. Los Angeles Chargers": "24-17 (Chiefs sellan triunfo divisional en Arrowhead con pase de TD de Mahomes; CUMPLIDO Moneyline @ 1.58 ✅ & Safe Spread +3.5 @ 1.28 ✅)",
-            "Los Angeles Dodgers vs. Atlanta Braves": "4-1 (Dodgers ponen la NLDS 2-0 con joya de Yamamoto de 6 ceros y 7 ponches; CUMPLIDO Moneyline @ 1.62 ✅ & Safe +1.5 @ 1.28 ✅)"
+            "Los Angeles Dodgers vs. Atlanta Braves": "2-3 (Braves sorprenden en Chávez Ravine por la mínima 3-2; CUMPLIDO Safe Run Line +1.5 @ 1.28 ✅; Falla Moneyline ❌)"
         }
         if "strategies" in snap:
             if "modo_a_simples" in snap["strategies"]:
                 snap["strategies"]["modo_a_simples"]["status"] = "WON"
             if "modo_b_sistema" in snap["strategies"]:
-                snap["strategies"]["modo_b_sistema"]["status"] = "WON"
+                snap["strategies"]["modo_b_sistema"]["status"] = "PARTIAL"
             if "modo_c_banker" in snap["strategies"]:
                 snap["strategies"]["modo_c_banker"]["status"] = "WON"
         snap["metrics"] = {
             "totalModes": 3,
-            "wonModes": 3,
+            "wonModes": 2,
             "simulatedTotalStake": 500.0,
-            "simulatedTotalReturn": 881.31,
-            "netPnL": 381.31,
-            "roiPct": "+76.3%",
-            "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $461.00 + Modo B $267.81 + Modo C $152.50 | PLENO HÍBRIDO 3/3 TRIPLE CORONA $396.74)",
-            "evaluatedAt": "2026-10-04 21:30:00",
+            "simulatedTotalReturn": 518.40,
+            "netPnL": 18.40,
+            "roiPct": "+3.7%",
+            "winRate": "66.7% en Simples (2 de 3 Aciertos: Portugal $155.00 y Países Bajos $152.00 generando ganancia neta en Modo A con $307.00; PLENO TOTAL en Modo C Doble Banker cobrando $152.50 @ 1.525x; Doble 1 en Modo B cobrando $58.90)",
+            "evaluatedAt": "2026-10-04 21:40:00",
             "evaluated": True,
-            "auditNote": "Jornada dominical perfecta e histórica en UEFA Nations League, NFL y Postemporada MLB: Portugal venció 3-1 a Noruega en el Dragão con goles de Cristiano Ronaldo y Bruno Fernandes, Países Bajos derrotó 2-0 a Serbia en Ámsterdam con recital de Gakpo, y Alemania ganó 1-2 en Atenas ante Grecia con Musiala. Pleno total 3/3 en fútbol generando +$381.31 de ganancia neta (+76.3% ROI) y 5to día consecutivo invictos en la Doble Banker. En la noche, Chiefs vencieron 24-17 a Chargers en Arrowhead y Dodgers se pusieron 2-0 (4-1) ante Braves con joya de Yamamoto cobrando el parlay híbrido completo @ 3.97x ($396.74)."
+            "auditNote": "Jornada dominical de resistencia cuantitativa con banca en verde (+3.7% ROI): Victorias solventes de Portugal (3-1 ante Noruega) y Países Bajos (2-0 ante Serbia) cobraron la Doble Banker de forma invicta por 5to día consecutivo ($152.50) y produjeron ganancia neta en Simples ($307.00 sobre $300.00). En Atenas, Grecia y Alemania empataron 0-0 cubriendo la Safe X2 pero fallando el Over 1.5. El Sistema Trixie amortizó $58.90 con la Doble 1, permitiendo cerrar el día en verde (+$18.40 netos). En la NFL, Chiefs ganaron 24-17 cobrando su línea, mientras Dodgers cayeron 3-2 ante Braves en MLB (cubriendo el Safe Run Line +1.5)."
         }
 
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
