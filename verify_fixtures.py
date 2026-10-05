@@ -3914,6 +3914,38 @@ def audit_previous_scenarios():
             "auditNote": "Jornada dominical de resistencia cuantitativa con banca en verde (+3.7% ROI): Victorias solventes de Portugal (3-1 ante Noruega) y Países Bajos (2-0 ante Serbia) cobraron la Doble Banker de forma invicta por 5to día consecutivo ($152.50) y produjeron ganancia neta en Simples ($307.00 sobre $300.00). En Atenas, Grecia y Alemania empataron 0-0 cubriendo la Safe X2 pero fallando el Over 1.5. El Sistema Trixie amortizó $58.90 con la Doble 1, permitiendo cerrar el día en verde (+$18.40 netos). En la NFL, Chiefs ganaron 24-17 cobrando su línea, mientras Dodgers cayeron 3-2 ante Braves en MLB (cubriendo el Safe Run Line +1.5)."
         }
 
+    # Audit 2026-10-05 (France vs Belgium, Italy vs Turkey, Bosnia vs Poland + Saints vs Falcons + Rays vs Yankees)
+    if "2026-10-05" in archive.get("snapshots", {}):
+        snap = archive["snapshots"]["2026-10-05"]
+        snap["status"] = "EVALUATED"
+        snap["evaluatedAt"] = "2026-10-05 15:05:00"
+        snap["match_results"] = {
+            "Francia vs. Bélgica": "2-0 (2 Goles; CUMPLIDO Francia Doble Oportunidad (1X) + Más 1.5 Goles @ 1.54 ✅ & Safe 1X @ 1.24 ✅)",
+            "Italia vs. Turquía": "2-1 (3 Goles; CUMPLIDO Italia Ganador Directo (1) + Más 1.5 Goles @ 1.52 ✅ & Safe 1 @ 1.22 ✅)",
+            "Bosnia y Herzegovina vs. Polonia": "1-2 (3 Goles; CUMPLIDO Polonia Doble Oportunidad (X2) + Menos de 3.5 Goles @ 1.56 ✅ & Safe X2 @ 1.25 ✅)",
+            "New Orleans Saints vs. Atlanta Falcons": "Pendiente (NFL MNF Kickoff 18:15 CST; Atlanta Falcons +3.5 @ 1.58)",
+            "Tampa Bay Rays vs. New York Yankees": "Pendiente (MLB ALDS Juego 2 Kickoff 18:00 CST; New York Yankees Moneyline @ 1.62)"
+        }
+        if "strategies" in snap:
+            if "modo_a_simples" in snap["strategies"]:
+                snap["strategies"]["modo_a_simples"]["status"] = "WON"
+            if "modo_b_sistema" in snap["strategies"]:
+                snap["strategies"]["modo_b_sistema"]["status"] = "WON"
+            if "modo_c_banker" in snap["strategies"]:
+                snap["strategies"]["modo_c_banker"]["status"] = "WON"
+        snap["metrics"] = {
+            "totalModes": 3,
+            "wonModes": 3,
+            "simulatedTotalStake": 500.0,
+            "simulatedTotalReturn": 882.43,
+            "netPnL": 382.43,
+            "roiPct": "+76.5%",
+            "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $462.00 + Modo B $269.15 + Modo C $151.28)",
+            "evaluatedAt": "2026-10-05 15:05:00",
+            "evaluated": True,
+            "auditNote": "Jornada perfecta e intachable de Lunes en UEFA Nations League: Francia superó 2-0 a Bélgica en el Parc des Princes, Italia derrotó 2-1 a Turquía en el Olímpico de Roma, y Polonia selló su victoria 1-2 en Zenica ante Bosnia y Herzegovina cumpliendo la línea baja de 3.5 goles. Pleno absoluto 3 de 3 en fútbol cobrando Modo A ($462.00), pleno de 4 combinadas en Modo B Trixie ($269.15) y extendiendo la racha invicta de Modo C Doble Banker a 6 DÍAS CONSECUTIVOS ($151.28 @ 1.51x). Beneficio neto de +$382.43 con +76.5% ROI global. En la cartelera nocturna híbrida, Saints vs. Falcons (NFL MNF) y Rays vs. Yankees (MLB ALDS Juego 2) se disputan a partir de las 18:00 CST."
+        }
+
     with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
         json.dump(archive, f, ensure_ascii=False, indent=2)
 
