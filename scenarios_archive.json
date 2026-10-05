@@ -14481,7 +14481,7 @@
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (05 OCTUBRE)\n• Pick A: ⚽ Francia vs. Bélgica (Francia Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.54\n• Pick B: ⚽ Italia vs. Turquía (Italia Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.52\n• Pick C: ⚽ Bosnia y Herzegovina vs. Polonia (Polonia Doble Oportunidad (X2) + Menos de 3.5 Goles Totales) @ 1.56\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $269.00"
           },
-          "status": "WON"
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -14553,15 +14553,15 @@
       },
       "metrics": {
         "totalModes": 3,
-        "wonModes": 3,
+        "wonModes": 2,
         "simulatedTotalStake": 500.0,
-        "simulatedTotalReturn": 882.43,
-        "netPnL": 382.43,
-        "roiPct": "+76.5%",
-        "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $462.00 + Modo B $269.15 + Modo C $151.28)",
-        "evaluatedAt": "2026-10-05 15:05:00",
+        "simulatedTotalReturn": 515.8,
+        "netPnL": 15.8,
+        "roiPct": "+3.2%",
+        "winRate": "66.7% en Simples (2 de 3 Aciertos: Francia $154.00 e Italia $152.00 generando ganancia neta en Modo A con $306.00; PLENO TOTAL en Modo C Doble Banker cobrando $151.28 @ 1.51x invicto por 6to día consecutivo; Doble 1 en Modo B cobrando $58.52)",
+        "evaluatedAt": "2026-10-05 15:08:00",
         "evaluated": true,
-        "auditNote": "Jornada perfecta e intachable de Lunes en UEFA Nations League: Francia superó 2-0 a Bélgica en el Parc des Princes, Italia derrotó 2-1 a Turquía en el Olímpico de Roma, y Polonia selló su victoria 1-2 en Zenica ante Bosnia y Herzegovina cumpliendo la línea baja de 3.5 goles. Pleno absoluto 3 de 3 en fútbol cobrando Modo A ($462.00), pleno de 4 combinadas en Modo B Trixie ($269.15) y extendiendo la racha invicta de Modo C Doble Banker a 6 DÍAS CONSECUTIVOS ($151.28 @ 1.51x). Beneficio neto de +$382.43 con +76.5% ROI global. En la cartelera nocturna híbrida, Saints vs. Falcons (NFL MNF) y Rays vs. Yankees (MLB ALDS Juego 2) se disputan a partir de las 18:00 CST."
+        "auditNote": "Jornada de resistencia cuantitativa y preservación de banca en verde (+3.2% ROI): Victorias solventes de Francia (2-0 ante Bélgica) e Italia (2-1 ante Turquía) cobraron la Doble Banker de forma invicta por 6TO DÍA CONSECUTIVO ($151.28 @ 1.51x) y produjeron ganancia neta en Simples ($306.00 sobre $300.00). En Zenica, Bosnia sorprendió 1-0 a Polonia cumpliendo la línea baja de 3.5 goles pero fallando la Doble Oportunidad X2. El Sistema Trixie amortizó $58.52 con la Doble 1 (Francia + Italia), permitiendo cerrar el día en ganancia neta (+15.80 USD). En la noche, Saints vs. Falcons (NFL MNF) y Rays vs. Yankees (MLB ALDS Juego 2) se disputan a partir de las 18:00 CST."
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -14881,11 +14881,11 @@
           }
         }
       },
-      "evaluatedAt": "2026-10-05 15:05:00",
+      "evaluatedAt": "2026-10-05 15:08:00",
       "match_results": {
         "Francia vs. Bélgica": "2-0 (2 Goles; CUMPLIDO Francia Doble Oportunidad (1X) + Más 1.5 Goles @ 1.54 ✅ & Safe 1X @ 1.24 ✅)",
         "Italia vs. Turquía": "2-1 (3 Goles; CUMPLIDO Italia Ganador Directo (1) + Más 1.5 Goles @ 1.52 ✅ & Safe 1 @ 1.22 ✅)",
-        "Bosnia y Herzegovina vs. Polonia": "1-2 (3 Goles; CUMPLIDO Polonia Doble Oportunidad (X2) + Menos de 3.5 Goles @ 1.56 ✅ & Safe X2 @ 1.25 ✅)",
+        "Bosnia y Herzegovina vs. Polonia": "1-0 (1 Gol; CUMPLIDO Menos de 3.5 Goles; Falla Polonia Doble Oportunidad X2 @ 1.56 ❌ & Safe X2 @ 1.25 ❌)",
         "New Orleans Saints vs. Atlanta Falcons": "Pendiente (NFL MNF Kickoff 18:15 CST; Atlanta Falcons +3.5 @ 1.58)",
         "Tampa Bay Rays vs. New York Yankees": "Pendiente (MLB ALDS Juego 2 Kickoff 18:00 CST; New York Yankees Moneyline @ 1.62)"
       }
