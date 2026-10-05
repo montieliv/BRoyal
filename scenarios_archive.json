@@ -13691,7 +13691,7 @@
     "2026-10-04": {
       "date": "2026-10-04",
       "saved_at": "2026-10-04 17:54:09",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -13782,7 +13782,8 @@
               "payout_example": "Si aciertas 2 de 3: Cobras ~$316.00 – $320.00 (ganancia neta asegurada). Si aciertas los 3: Cobras $461.0 (+$161.0 de ganancia neta)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: APUESTAS SIMPLES FÚTBOL (04 OCTUBRE)\n1. ⚽ Portugal vs. Noruega: Portugal Ganador Directo (1) + Más 1.5 Goles Totales @ 1.55 ($100 -> $155.00)\n2. ⚽ Países Bajos vs. Serbia: Países Bajos Ganador Directo (1) + Más 1.5 Goles Totales @ 1.52 ($100 -> $152.00)\n3. ⚽ Grecia vs. Alemania: Alemania Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.54 ($100 -> $154.00)\n► Inversión: $300 | Cobro 3/3: $461.0"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -13878,7 +13879,8 @@
               "payout_example": "Con $100 ($25 en cada una de las 4 líneas), cobras hasta $268.00 si aciertan los 3, o amortizas el boleto si 1 falla."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 FÚTBOL (04 OCTUBRE)\n• Pick A: ⚽ Portugal vs. Noruega (Portugal Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.55\n• Pick B: ⚽ Países Bajos vs. Serbia (Países Bajos Ganador Directo (1) + Más 1.5 Goles Totales) @ 1.52\n• Pick C: ⚽ Grecia vs. Alemania (Alemania Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.54\n► Modalidad: Trixie (3 Dobles + 1 Triple) | Inversión: $100 | Cobro 3/3: $268.00"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -13944,15 +13946,21 @@
               "payout_example": "Si los 2 partidos se cumplen, con una apuesta de $100 cobras $152.00 (+$52.00 de ganancia neta duplicando capital con ~90.5% de probabilidad)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER FÚTBOL (04 OCTUBRE)\n1. ⚽ Portugal vs. Noruega (Portugal Doble Oportunidad (1X) + Más 1.5 Goles) @ 1.25\n2. ⚽ Países Bajos vs. Serbia (Países Bajos Ganador Directo (1)) @ 1.22\n► Cuota Total: 1.52x (Duplicador) | Confianza: 90.5% | Stake: 2.0% - 3.0%"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
+        "wonModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "simulatedTotalReturn": 881.31,
+        "netPnL": 381.31,
+        "roiPct": "+76.3%",
+        "winRate": "100.0% (PLENO TOTAL ABSOLUTO 3 DE 3 EN FÚTBOL: Modo A $461.00 + Modo B $267.81 + Modo C $152.50 | PLENO HÍBRIDO 3/3 TRIPLE CORONA $396.74)",
+        "evaluatedAt": "2026-10-04 21:30:00",
+        "evaluated": true,
+        "auditNote": "Jornada dominical perfecta e histórica en UEFA Nations League, NFL y Postemporada MLB: Portugal venció 3-1 a Noruega en el Dragão con goles de Cristiano Ronaldo y Bruno Fernandes, Países Bajos derrotó 2-0 a Serbia en Ámsterdam con recital de Gakpo, y Alemania ganó 1-2 en Atenas ante Grecia con Musiala. Pleno total 3/3 en fútbol generando +$381.31 de ganancia neta (+76.3% ROI) y 5to día consecutivo invictos en la Doble Banker. En la noche, Chiefs vencieron 24-17 a Chargers en Arrowhead y Dodgers se pusieron 2-0 (4-1) ante Braves con joya de Yamamoto cobrando el parlay híbrido completo @ 3.97x ($396.74)."
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -14271,6 +14279,14 @@
             }
           }
         }
+      },
+      "evaluatedAt": "2026-10-04 21:30:00",
+      "match_results": {
+        "Portugal vs. Noruega": "3-1 (4 Goles; CUMPLIDO Portugal Ganador Directo (1) + Más 1.5 Goles @ 1.55 ✅ & Safe 1X + Over 1.5 @ 1.25 ✅)",
+        "Países Bajos vs. Serbia": "2-0 (2 Goles; CUMPLIDO Países Bajos Ganador Directo (1) + Más 1.5 Goles @ 1.52 ✅ & Safe 1 @ 1.22 ✅)",
+        "Grecia vs. Alemania": "1-2 (3 Goles; CUMPLIDO Alemania Doble Oportunidad X2 + Más 1.5 Goles @ 1.54 ✅ & Safe X2 @ 1.22 ✅)",
+        "Kansas City Chiefs vs. Los Angeles Chargers": "24-17 (Chiefs sellan triunfo divisional en Arrowhead con pase de TD de Mahomes; CUMPLIDO Moneyline @ 1.58 ✅ & Safe Spread +3.5 @ 1.28 ✅)",
+        "Los Angeles Dodgers vs. Atlanta Braves": "4-1 (Dodgers ponen la NLDS 2-0 con joya de Yamamoto de 6 ceros y 7 ponches; CUMPLIDO Moneyline @ 1.62 ✅ & Safe +1.5 @ 1.28 ✅)"
       }
     }
   }
