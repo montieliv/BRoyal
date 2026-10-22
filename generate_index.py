@@ -93,29 +93,29 @@ if has_hybrid_edition and hybrid_data:
 
       <!-- Quick Ticker of Finished and Upcoming Matches -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 pt-2 border-t border-graphite-800 text-xs font-mono">
-        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/20 flex flex-col justify-between">
+        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/30 flex flex-col justify-between">
           <div class="flex items-center justify-between text-[10px] text-slate-400">
-            <span>EUROPA LEAGUE</span>
-            <span class="text-accent-cyan font-bold">13:00 CST</span>
+            <span>EUROPA LEAGUE (10:45)</span>
+            <span class="text-emerald-400 font-bold">4-0 ✅ / 4-1 ✅</span>
           </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">Lillestrom vs Real Sociedad</div>
-          <div class="text-[10px] text-emerald-400 font-semibold truncate">Real Sociedad (2) @ 1.41</div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">AZ Alkmaar & Ferencváros</div>
+          <div class="text-[10px] text-emerald-400 font-semibold truncate">Goleadas contundentes</div>
         </div>
-        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/20 flex flex-col justify-between">
+        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-purple-500/30 flex flex-col justify-between">
           <div class="flex items-center justify-between text-[10px] text-slate-400">
-            <span>EUROPA LEAGUE</span>
-            <span class="text-accent-cyan font-bold">13:00 CST</span>
+            <span>LIBERTADORES</span>
+            <span class="text-accent-cyan font-bold">18:30 CST</span>
           </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">Olympiacos vs Sparta Prague</div>
-          <div class="text-[10px] text-emerald-400 font-semibold truncate">Olympiacos (1) @ 1.50</div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">Flamengo vs Estudiantes</div>
+          <div class="text-[10px] text-emerald-400 font-semibold truncate">Flamengo (1) @ 1.29</div>
         </div>
-        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/20 flex flex-col justify-between">
+        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-purple-500/30 flex flex-col justify-between">
           <div class="flex items-center justify-between text-[10px] text-slate-400">
-            <span>EUROPA LEAGUE</span>
-            <span class="text-accent-cyan font-bold">13:00 CST</span>
+            <span>COLOMBIA</span>
+            <span class="text-accent-cyan font-bold">19:00 CST</span>
           </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">NK Celje vs RB Salzburg</div>
-          <div class="text-[10px] text-emerald-400 font-semibold truncate">RB Salzburg (2) @ 1.51</div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">Atl. Nacional vs Pasto</div>
+          <div class="text-[10px] text-emerald-400 font-semibold truncate">Nacional (1) @ 1.26</div>
         </div>
         <div class="bg-purple-950/40 p-2.5 rounded-lg border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
           <div class="flex items-center justify-between text-[10px] text-purple-300">
@@ -123,7 +123,7 @@ if has_hybrid_edition and hybrid_data:
             <span class="text-accent-amber font-bold animate-pulse">18:15 CST</span>
           </div>
           <div class="font-bold text-white text-[11px] truncate mt-1">Bears vs Patriots</div>
-          <div class="text-[10px] text-accent-cyan font-bold truncate">Bears (+3.5) @ 1.48</div>
+          <div class="text-[10px] text-accent-cyan font-bold truncate">Bears (ML) @ 1.65</div>
         </div>
         <div class="bg-purple-950/40 p-2.5 rounded-lg border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
           <div class="flex items-center justify-between text-[10px] text-purple-300">
@@ -131,7 +131,7 @@ if has_hybrid_edition and hybrid_data:
             <span class="text-accent-amber font-bold animate-pulse">19:30 CST</span>
           </div>
           <div class="font-bold text-white text-[11px] truncate mt-1">Thunder vs Nuggets</div>
-          <div class="text-[10px] text-accent-cyan font-bold truncate">OKC Thunder (-3.5) @ 1.48</div>
+          <div class="text-[10px] text-accent-cyan font-bold truncate">OKC Thunder (ML) @ 1.29</div>
         </div>
       </div>
     </div>

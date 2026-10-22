@@ -583,9 +583,9 @@ def pick_best(cands):
     def score(c):
         return c["p"] + 1.5 * c["ev"]
 
-    main_pool = [c for c in cands if not c["estimated"] and 1.40 <= c["odds"] <= 1.95 and c["p"] >= 0.55]
-    if len(main_pool) < 3:
-        main_pool = [c for c in cands if not c["estimated"] and 1.30 <= c["odds"] <= 2.30 and c["p"] >= 0.48]
+    main_pool = [c for c in cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20 and c["p"] >= 0.50]
+    if len(main_pool) < 2:
+        main_pool = [c for c in cands if not c["estimated"] and 1.20 <= c["odds"] <= 2.50 and c["p"] >= 0.45]
     main, used = [], set()
     for c in sorted(main_pool, key=score, reverse=True):
         if c["espnEventId"] in used:
@@ -877,12 +877,12 @@ def build_hybrid_edition(day, soccer_cands, us_cands):
     def score(c):
         return c["p"] + 1.5 * c["ev"]
 
-    best_soccer = sorted([c for c in soccer_cands if not c["estimated"] and 1.30 <= c["odds"] <= 2.20], key=score, reverse=True)
+    best_soccer = sorted([c for c in soccer_cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20], key=score, reverse=True)
     if not best_soccer:
         best_soccer = sorted(soccer_cands, key=score, reverse=True)
     f_pick = best_soccer[0]
 
-    best_us = sorted([c for c in us_cands if not c["estimated"] and 1.20 <= c["odds"] <= 2.20], key=score, reverse=True)
+    best_us = sorted([c for c in us_cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20], key=score, reverse=True)
     us_picks = []
     used = set()
     for c in best_us:
