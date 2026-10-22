@@ -469,27 +469,50 @@ def analyze_event(ev, now_local, target_day, slot=None, min_lead=45):
         return []
     odds = (comp.get("odds") or [{}])[0] or {}
     ml = odds.get("moneyline") or {}
-    oh, od, oa = (odds_side(ml, "home"), odds_side(ml, "draw"), odds_side(ml, "away"))
-    if not (oh and od and oa):
+    oh = odds_side(ml, "home")
+    od = odds_side(ml, "draw")
+    oa = odds_side(ml, "away")
+    if not (oh and oa):
         return []
-    dh, dd, da = (american_to_decimal(x["odds"]) for x in (oh, od, oa))
-    if not (dh and dd and da):
+    dh = american_to_decimal(oh["odds"])
+    da = american_to_decimal(oa["odds"])
+    dd = american_to_decimal(od["odds"]) if od else None
+    if not (dh and da):
         return []
-    inv = 1 / dh + 1 / dd + 1 / da
-    ph, pd, pa = (1 / dh) / inv, (1 / dd) / inv, (1 / da) / inv
+
+    if dd:
+        inv = 1 / dh + 1 / dd + 1 / da
+        ph, pd, pa = (1 / dh) / inv, (1 / dd) / inv, (1 / da) / inv
+    else:
+        inv = 1 / dh + 1 / da
+        ph, pd, pa = (1 / dh) / inv, 0.0, (1 / da) / inv
     margin = inv - 1
 
     fh, fa = form_score(home.get("form")), form_score(away.get("form"))
     adj = 0.06 * (fh - fa) if fh is not None and fa is not None else 0.0
     mh = min(0.95, max(0.02, ph + adj))
     ma = min(0.95, max(0.02, pa - adj))
-    md = max(0.02, 1 - mh - ma)
+    md = max(0.0, 1 - mh - ma) if dd else 0.0
 
     hn, an = home["team"]["displayName"], away["team"]["displayName"]
     league = ev["_league"]
+
+    sport = "Football"
+    league_name = SOCCER_LEAGUES.get(league)
+    if not league_name:
+        if "nba" in league:
+            sport, league_name = "Basketball", "NBA 2026-27"
+        elif "nfl" in league:
+            sport, league_name = "NFL", "NFL 2026"
+        elif "mlb" in league:
+            sport, league_name = "Baseball", "MLB Postseason"
+        else:
+            sport, league_name = "Football", OTHER_SPORTS.get(league, league)
+
     base = {
         "espnEventId": ev["id"], "espnLeague": league,
-        "league": SOCCER_LEAGUES.get(league, league),
+        "sport": sport,
+        "league": league_name,
         "home": hn, "away": an, "match": f"{hn} vs. {an}",
         "kickoff": ko, "venue": (comp.get("venue") or {}).get("fullName", "Por confirmar"),
         "formH": home.get("form", "") or "—", "formA": away.get("form", "") or "—",
@@ -502,14 +525,31 @@ def analyze_event(ev, now_local, target_day, slot=None, min_lead=45):
         cands.append({**base, "selection": sel, "market": mk, "odds": round(odds_dec, 2),
                       "p": p, "pMktSel": p_mkt, "ev": ev_, "srcOdds": src_odds, "estimated": estimated})
 
-    add(f"{hn} Ganador Directo (1)", {"type": "ML", "side": "home"}, dh, mh, ph, oh["odds"])
-    add(f"{an} Ganador Directo (2)", {"type": "ML", "side": "away"}, da, ma, pa, oa["odds"])
+    if sport == "Football":
+        add(f"{hn} Ganador Directo (1)", {"type": "ML", "side": "home"}, dh, mh, ph, oh["odds"])
+        add(f"{an} Ganador Directo (2)", {"type": "ML", "side": "away"}, da, ma, pa, oa["odds"])
 
-    # doble oportunidad (cuota estimada con el margen del libro)
-    for side, p_m, p_mod, team in (("1X", ph + pd, mh + md, hn), ("X2", pa + pd, ma + md, an)):
-        est = 1 / (p_m * (1 + margin))
-        add(f"{team} Doble Oportunidad ({side})", {"type": "DC", "side": side}, est, p_mod, p_m,
-            dec_to_american(est), estimated=True)
+        # doble oportunidad (cuota estimada con el margen del libro)
+        for side, p_m, p_mod, team in (("1X", ph + pd, mh + md, hn), ("X2", pa + pd, ma + md, an)):
+            est = 1 / (p_m * (1 + margin))
+            add(f"{team} Doble Oportunidad ({side})", {"type": "DC", "side": side}, est, p_mod, p_m,
+                dec_to_american(est), estimated=True)
+    else:
+        # US sports: Moneyline
+        add(f"{hn} Ganador Directo (Moneyline)", {"type": "ML", "side": "home"}, dh, mh, ph, oh["odds"])
+        add(f"{an} Ganador Directo (Moneyline)", {"type": "ML", "side": "away"}, da, ma, pa, oa["odds"])
+
+        # Spread / Handicap if present
+        ps = odds.get("pointSpread") or {}
+        sh = odds_side(ps, "home")
+        sa = odds_side(ps, "away")
+        if sh and sa and sh.get("line") and sa.get("line"):
+            d_sh = american_to_decimal(sh.get("odds", "-110")) or 1.91
+            d_sa = american_to_decimal(sa.get("odds", "-110")) or 1.91
+            add(f"{hn} ({sh['line']} Spread / Hándicap)", {"type": "SPREAD", "side": "home", "line": sh['line']},
+                d_sh, 0.50, 0.50, sh.get("odds", "-110"))
+            add(f"{an} ({sa['line']} Spread / Hándicap)", {"type": "SPREAD", "side": "away", "line": sa['line']},
+                d_sa, 0.50, 0.50, sa.get("odds", "-110"))
 
     tot = odds.get("total") or {}
     ov, un = odds_side(tot, "over"), odds_side(tot, "under")
@@ -519,20 +559,22 @@ def analyze_event(ev, now_local, target_day, slot=None, min_lead=45):
         if line and do and du:
             inv_t = 1 / do + 1 / du
             po, pu = (1 / do) / inv_t, (1 / du) / inv_t
-            add(f"Más de {line} Goles Totales (Over {line})", {"type": "TOTAL", "side": "over", "line": line}, do, po, po, ov["odds"])
-            add(f"Menos de {line} Goles Totales (Under {line})", {"type": "TOTAL", "side": "under", "line": line}, du, pu, pu, un["odds"])
-            lmb = lambda_from_over(po, line)
-            base["lambda"] = lmb
-            for c in cands:
-                c["lambda"] = lmb
-            # líneas alternativas (cuota estimada) para piernas seguras
-            for alt in (line - 1, line + 1):
-                if alt > 0:
-                    p_o = poisson_over(lmb, alt)
-                    add(f"Más de {alt} Goles Totales (Over {alt})", {"type": "TOTAL", "side": "over", "line": alt},
-                        1 / (p_o * (1 + margin)), p_o, p_o, "est", estimated=True)
-                    add(f"Menos de {alt} Goles Totales (Under {alt})", {"type": "TOTAL", "side": "under", "line": alt},
-                        1 / ((1 - p_o) * (1 + margin)), 1 - p_o, 1 - p_o, "est", estimated=True)
+            unit = "Goles" if sport == "Football" else ("Carreras" if sport == "Baseball" else "Puntos")
+            add(f"Más de {line} {unit} Totales (Over {line})", {"type": "TOTAL", "side": "over", "line": line}, do, po, po, ov["odds"])
+            add(f"Menos de {line} {unit} Totales (Under {line})", {"type": "TOTAL", "side": "under", "line": line}, du, pu, pu, un["odds"])
+            if sport == "Football" and line <= 8.5:
+                lmb = lambda_from_over(po, line)
+                base["lambda"] = lmb
+                for c in cands:
+                    c["lambda"] = lmb
+                # líneas alternativas (cuota estimada) para piernas seguras
+                for alt in (line - 1, line + 1):
+                    if alt > 0:
+                        p_o = poisson_over(lmb, alt)
+                        add(f"Más de {alt} Goles Totales (Over {alt})", {"type": "TOTAL", "side": "over", "line": alt},
+                            1 / (p_o * (1 + margin)), p_o, p_o, "est", estimated=True)
+                        add(f"Menos de {alt} Goles Totales (Under {alt})", {"type": "TOTAL", "side": "under", "line": alt},
+                            1 / ((1 - p_o) * (1 + margin)), 1 - p_o, 1 - p_o, "est", estimated=True)
     return cands
 
 
@@ -587,10 +629,24 @@ def algo_text(c):
 
 
 def pick_dict(c, i, with_detail=True):
+    sport = c.get("sport", "Football")
+    if sport == "Basketball":
+        src = "NBA Second Spectrum"
+        badge = "bg-purple-500/15 text-purple-400 border-purple-500/30"
+    elif sport == "NFL":
+        src = "Next Gen Stats NFL"
+        badge = "bg-orange-500/15 text-orange-400 border-orange-500/30"
+    elif sport == "Baseball":
+        src = "Statcast Sabermetrics"
+        badge = "bg-sky-500/15 text-sky-400 border-sky-500/30"
+    else:
+        src = "ESPN / DraftKings"
+        badge = BADGES[i % 3]
+
     d = {
-        "sourceName": "ESPN / DraftKings",
-        "sport": "Football",
-        "badgeClass": BADGES[i % 3],
+        "sourceName": src,
+        "sport": sport,
+        "badgeClass": badge,
         "match": c["match"],
         "tournament": f"{c['league']} ({c['kickoff'].strftime('%H:%M')} CST)",
         "selection": c["selection"],
@@ -610,7 +666,7 @@ def pick_dict(c, i, with_detail=True):
     return d
 
 
-def build_summary(day, main, safe):
+def build_summary(day, main, safe, hybrid_data=None):
     dn, mn = DAYS[day.weekday()], MONTHS[day.month - 1]
     tag = f"{day.day} {mn.upper()}"
     p = [c["p"] for c in main]
@@ -727,10 +783,10 @@ def build_summary(day, main, safe):
         }
 
     now = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d %H:%M:%S")
-    return {
+    out = {
         "generated_at": now,
-        "hybrid_mode": False,
-        "hybrid_trigger_reason": f"MODO FÚTBOL: selección automática de {len(main)} partidos del {dn} {day.day} de {mn} con cuotas reales (ESPN/DraftKings).",
+        "hybrid_mode": bool(hybrid_data),
+        "hybrid_trigger_reason": f"EDICIÓN DUAL: 100% Fútbol ({len(main)} partidos)" + (f" + Modo Híbrido ({', '.join(hybrid_data['active_sports'])})" if hybrid_data else ""),
         "active_sports": ["Football"],
         "verification_meta": {
             "verified": True,
@@ -742,6 +798,174 @@ def build_summary(day, main, safe):
         },
         "strategies": strategies,
     }
+    if hybrid_data:
+        out["has_hybrid_edition"] = True
+        out["hybrid_edition"] = hybrid_data
+    return out
+
+
+def build_hybrid_edition(day, soccer_cands, us_cands):
+    if not us_cands or not soccer_cands:
+        return None
+
+    def score(c):
+        return c["p"] + 1.5 * c["ev"]
+
+    best_soccer = sorted([c for c in soccer_cands if not c["estimated"] and 1.30 <= c["odds"] <= 2.20], key=score, reverse=True)
+    if not best_soccer:
+        best_soccer = sorted(soccer_cands, key=score, reverse=True)
+    f_pick = best_soccer[0]
+
+    best_us = sorted([c for c in us_cands if not c["estimated"] and 1.20 <= c["odds"] <= 2.20], key=score, reverse=True)
+    us_picks = []
+    used = set()
+    for c in best_us:
+        if c["espnEventId"] not in used:
+            us_picks.append(c)
+            used.add(c["espnEventId"])
+            if len(us_picks) == 2:
+                break
+
+    if len(us_picks) < 2:
+        additional_soccer = [c for c in best_soccer if c["espnEventId"] != f_pick["espnEventId"]]
+        if additional_soccer:
+            hybrid_main = [f_pick, additional_soccer[0]] + us_picks
+        else:
+            hybrid_main = [f_pick] + us_picks
+    else:
+        hybrid_main = [f_pick, us_picks[0], us_picks[1]]
+
+    if len(hybrid_main) < 3:
+        return None
+
+    h_safe = []
+    for c in hybrid_main[:2]:
+        pool = [x for x in (soccer_cands + us_cands) if x["espnEventId"] == c["espnEventId"] and 1.10 <= x["odds"] <= 1.45]
+        h_safe.append(sorted(pool, key=lambda x: -x["p"])[0] if pool else c)
+
+    dn, mn = DAYS[day.weekday()], MONTHS[day.month - 1]
+    tag = f"{day.day} {mn.upper()}"
+    p = [c["p"] for c in hybrid_main]
+    o = [c["odds"] for c in hybrid_main]
+    avg_odds = round(sum(o) / len(o), 2)
+    a_wr = sum(p) / len(p)
+    a_ev = sum(c["ev"] for c in hybrid_main) / len(hybrid_main)
+
+    active_sports = list(dict.fromkeys([c["sport"] for c in hybrid_main]))
+    sports_label = " + ".join(["Fútbol" if s == "Football" else s for s in active_sports])
+
+    p1, p2, p3 = p
+    d1, d2, d3 = round(o[0] * o[1], 2), round(o[0] * o[2], 2), round(o[1] * o[2], 2)
+    tr = round(o[0] * o[1] * o[2], 2)
+    p_ge2 = p1 * p2 * p3 + p1 * p2 * (1 - p3) + p1 * (1 - p2) * p3 + (1 - p1) * p2 * p3
+    exp_ret = 25 * (d1 * p1 * p2 + d2 * p1 * p3 + d3 * p2 * p3 + tr * p1 * p2 * p3)
+
+    c_tot = round(h_safe[0]["odds"] * h_safe[1]["odds"], 2)
+    c_p = h_safe[0]["p"] * h_safe[1]["p"]
+
+    picks_formatted = [pick_dict(c, i) for i, c in enumerate(hybrid_main)]
+    for i, pf in enumerate(picks_formatted):
+        pf["safeSelection"] = h_safe[i]["selection"] if i < len(h_safe) else pf["selection"]
+        pf["safeOdds"] = h_safe[i]["odds"] if i < len(h_safe) else pf["odds"]
+
+    return {
+        "title": f"Módulo de Arbitraje Híbrido Multideporte ({sports_label})",
+        "subtitle": f"Fusión cuantitativa del fútbol con las mejores asimetrías de {active_sports[1] if len(active_sports) > 1 else 'deportes americanos'}.",
+        "trigger_reason": f"ACTIVADO: Arbitraje multideporte combinando {hybrid_main[0]['match']} con {hybrid_main[1]['match']} y {hybrid_main[2]['match']}.",
+        "active_sports": active_sports,
+        "expectedWinRate": f"{a_wr:.1%}",
+        "avgOdds": avg_odds,
+        "combinedEv": f"{a_ev:+.1%}",
+        "picks": picks_formatted,
+        "strategies": {
+            "modo_a_simples": {
+                "id": "STRATEGY-HYBRID-A",
+                "modeName": f"Modo A: Simples Híbridas ({sports_label})",
+                "modeShort": f"Modo A: Simples Híbridas ({a_wr:.1%} Win Rate)",
+                "badge": "MÁXIMO WIN RATE HÍBRIDO",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "tagColor": "purple",
+                "description": f"3 Selecciones multideporte de élite para el {dn} {day.day} de {mn}. Cada acierto cobra por separado amortizando el riesgo.",
+                "avgOdds": avg_odds,
+                "expectedWinRate": f"{a_wr:.1%}",
+                "combinedEv": f"{a_ev:+.1%}",
+                "recommendedStake": "1.0% por selección (Flat Staking)",
+                "riskLevel": "MÍNIMO",
+                "picks": picks_formatted,
+                "real_life_example": {
+                    "bookie_steps": [
+                        "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                        f"Coloca 3 apuestas SIMPLES independientes: {hybrid_main[0]['match']}, {hybrid_main[1]['match']} y {hybrid_main[2]['match']}.",
+                        "Apuesta el mismo monto en cada una (ej. $100)."
+                    ],
+                    "winning_scenario": {
+                        "title": "¿Cómo se cobra con las Simples Híbridas?",
+                        "match_examples": [{"match": c["match"], "min_result": c["selection"], "explanation": f"Cobras ${100 * c['odds']:.2f}."} for c in hybrid_main],
+                        "payout_example": f"Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras ${100 * sum(o):.2f}."
+                    },
+                    "copy_text": f"👑 BLACK ROYAL — SIMPLES HÍBRIDAS ({tag})\n" + "\n".join(f"{i+1}. {c['match']}: {c['selection']} @ {c['odds']:.2f}" for i, c in enumerate(hybrid_main))
+                }
+            },
+            "modo_b_sistema": {
+                "id": "STRATEGY-HYBRID-B",
+                "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+                "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+                "badge": "SEGURO MULTIDEPORTE",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "tagColor": "cyan",
+                "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+                "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+                "expectedWinRate": f"{p_ge2:.1%}",
+                "combinedEv": f"{exp_ret / 100 - 1:+.1%}",
+                "recommendedStake": "$25 por combinación ($100 total)",
+                "riskLevel": "BAJO",
+                "picks": [{**pick_dict(c, i, False), "algorithm": f"Pick {chr(65 + i)}: {algo_text(c)}"} for i, c in enumerate(hybrid_main)],
+                "combinations": [
+                    {"name": f"Doble 1 ({hybrid_main[0]['home']} + {hybrid_main[1]['home']})", "odds": d1, "formula": f"{o[0]} × {o[1]}"},
+                    {"name": f"Doble 2 ({hybrid_main[0]['home']} + {hybrid_main[2]['home']})", "odds": d2, "formula": f"{o[0]} × {o[2]}"},
+                    {"name": f"Doble 3 ({hybrid_main[1]['home']} + {hybrid_main[2]['home']})", "odds": d3, "formula": f"{o[1]} × {o[2]}"},
+                    {"name": "Triple (Pleno Multideporte)", "odds": tr, "formula": f"{o[0]} × {o[1]} × {o[2]}"}
+                ],
+                "real_life_example": {
+                    "bookie_steps": ["Selecciona los 3 eventos en el cupón.", "Elige pestaña Sistema → Trixie.", "Apuesta $25 por línea ($100 total)."],
+                    "winning_scenario": {
+                        "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                        "match_examples": [
+                            {"match": f"Escenario 2 de 3 ({hybrid_main[0]['home']} + {hybrid_main[1]['home']})", "min_result": "Ganan los 2 primeros", "explanation": f"Cobras Doble 1 (@ {d1}x): ${25 * d1:.2f} amortizando."},
+                            {"match": "Escenario Pleno 3 de 3", "min_result": "Cumplen los 3", "explanation": f"Cobras las 3 Dobles + Triple: ${25 * (d1 + d2 + d3 + tr):.2f}."}
+                        ],
+                        "payout_example": f"Con $100 cobras hasta ${25 * (d1 + d2 + d3 + tr):.2f} si aciertan los 3, o amortizas si 1 falla."
+                    },
+                    "copy_text": f"👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO ({tag})\n" + "\n".join(f"• Pick {chr(65 + i)}: {c['match']} ({c['selection']}) @ {c['odds']:.2f}" for i, c in enumerate(hybrid_main))
+                }
+            },
+            "modo_c_banker": {
+                "id": "STRATEGY-HYBRID-C",
+                "modeName": f"Modo C: Doble Banker Híbrida (Duplicador @ {c_tot:.2f}x)",
+                "modeShort": f"Modo C: Doble Banker Híbrida (@ {c_tot:.2f}x)",
+                "badge": "DUPLICADOR HÍBRIDO",
+                "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+                "tagColor": "amber",
+                "description": f"Combinada estricta de solo 2 eventos de altísima certeza: {h_safe[0]['match']} y {h_safe[1]['match']}.",
+                "totalOdds": c_tot,
+                "fairOdds": round(1 / c_p, 2) if c_p else 1.5,
+                "expectedWinRate": f"{c_p:.1%}",
+                "combinedEv": f"{c_p * c_tot - 1:+.1%}",
+                "recommendedStake": "2.5% – 3.0% Bankroll",
+                "riskLevel": "BAJO",
+                "picks": [pick_dict(c, i) for i, c in enumerate(h_safe[:2])],
+                "real_life_example": {
+                    "bookie_steps": ["Abre tu casa de apuestas.", f"Selecciona: {h_safe[0]['match']} y {h_safe[1]['match']}.", f"Coloca Parlay / Combinada @ {c_tot:.2f}x."],
+                    "winning_scenario": {
+                        "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                        "match_examples": [{"match": c["match"], "min_result": c["selection"], "explanation": f"Probabilidad modelo {c['p']:.0%}."} for c in h_safe[:2]],
+                        "payout_example": f"Si ambos cumplen, con $100 cobras ${c_tot * 100:.2f}."
+                    },
+                    "copy_text": f"👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA ({tag})\n" + "\n".join(f"{i+1}. {c['match']} ({c['selection']}) @ {c['odds']:.2f}" for i, c in enumerate(h_safe[:2]))
+                }
+            }
+        }
+    }
 
 
 def archive_snapshot(day, summary, suffix=""):
@@ -751,7 +975,7 @@ def archive_snapshot(day, summary, suffix=""):
     if old and old.get("status") == "EVALUATED":
         print(f"  ℹ El escenario {key} ya está evaluado; no se sobrescribe.")
         return
-    archive["snapshots"][key] = {
+    snapshot = {
         "date": key,
         "saved_at": datetime.now(LOCAL_TZ).strftime("%Y-%m-%d %H:%M:%S"),
         "status": "PENDING_EVALUATION",
@@ -759,6 +983,10 @@ def archive_snapshot(day, summary, suffix=""):
         "metrics": {"totalModes": len(summary["strategies"]), "simulatedTotalStake": 500.0,
                     "evaluated": False, "netPnL": 0.0, "roiPct": "0.0%"},
     }
+    if summary.get("has_hybrid_edition"):
+        snapshot["has_hybrid_edition"] = True
+        snapshot["hybrid_edition"] = summary["hybrid_edition"]
+    archive["snapshots"][key] = snapshot
     save_json(ARCHIVE_FILE, archive)
 
 
@@ -781,7 +1009,7 @@ def fmt_settlement(report):
 
 
 def fmt_picks(summary):
-    out = []
+    out = ["## Opción 1: 100% Fútbol"]
     for key, s in summary["strategies"].items():
         out.append(f"### {s['modeName']}")
         out.append(f"Prob. estimada: **{s['expectedWinRate']}** | EV: {s['combinedEv']}"
@@ -790,6 +1018,19 @@ def fmt_picks(summary):
             est = " _(cuota estimada)_" if p.get("oddsEstimated") else ""
             out.append(f"- {p['tournament']} — **{p['match']}**: {p['selection']} @ **{p['odds']:.2f}**{est} (conf. {p['confidencePct']}%)")
         out.append("")
+
+    if summary.get("has_hybrid_edition") and summary.get("hybrid_edition"):
+        hy = summary["hybrid_edition"]
+        out.append("## Opción 2: Modo Híbrido Multideporte (" + " + ".join(hy.get("active_sports", [])) + ")")
+        out.append(f"_{hy.get('subtitle', '')}_\n")
+        for key, s in hy.get("strategies", {}).items():
+            out.append(f"### {s['modeName']}")
+            out.append(f"Prob. estimada: **{s['expectedWinRate']}** | EV: {s['combinedEv']}"
+                       + (f" | Cuota total: {s['totalOdds']}" if "totalOdds" in s else ""))
+            for p in s.get("picks", []):
+                est = " _(cuota estimada)_" if p.get("oddsEstimated") else ""
+                out.append(f"- {p.get('tournament', '')} — **{p['match']}**: {p['selection']} @ **{p['odds']:.2f}**{est} (conf. {p.get('confidencePct', 0)}%)")
+            out.append("")
     return "\n".join(out)
 
 
@@ -810,10 +1051,10 @@ def main():
     day = datetime.strptime(args.date, "%Y-%m-%d").date() if args.date else now_local.date()
 
     print("=" * 90)
-    print(f" 👑 BLACK ROYAL — PRONÓSTICO DIARIO AUTOMÁTICO  ({day})  [fuente: ESPN API + DraftKings]")
+    print(f" 👑 BLACK ROYAL — PRONÓSTICO DIARIO DUAL (FÚTBOL + HÍBRIDO)  ({day})  [ESPN API + DraftKings]")
     print("=" * 90)
 
-    print("\n▶ 1. Liquidación de escenarios pendientes")
+    print("\n▶ 1. Liquidación de escenarios pendientes (Fútbol + Híbridos)")
     report = settle_pending(day, args.dry_run)
     settle_md = fmt_settlement(report)
     print(settle_md)
@@ -821,22 +1062,38 @@ def main():
     if args.settle_only:
         return
 
-    print(f"\n▶ 2. Análisis de partidos del {day} con cuotas reales")
-    events = fetch_many(list(SOCCER_LEAGUES), [day, day + timedelta(days=1)])
-    cands = []
+    print(f"\n▶ 2. Análisis de partidos del {day} con cuotas reales (Fútbol + Multideporte)")
+    all_paths = list(SOCCER_LEAGUES) if slot else (list(SOCCER_LEAGUES) + list(OTHER_SPORTS))
+    events = fetch_many(all_paths, [day, day + timedelta(days=1)])
+    soccer_cands = []
+    us_cands = []
     for ev in events:
         try:
-            cands.extend(analyze_event(ev, now_local, day, slot, 0 if slot else 45))
+            analyzed = analyze_event(ev, now_local, day, slot, 0 if slot else 45)
+            for c in analyzed:
+                if c.get("sport") == "Football":
+                    soccer_cands.append(c)
+                else:
+                    us_cands.append(c)
         except Exception as e:  # evento mal formado: se ignora
             print(f"    ⚠️ Evento {ev.get('id')} omitido: {e}")
-    n_matches = len({c["espnEventId"] for c in cands})
-    print(f"  • Partidos elegibles con cuotas: {n_matches}")
-    main_p, safe_p = pick_best(cands)
+
+    n_matches = len({c["espnEventId"] for c in soccer_cands})
+    print(f"  • Partidos de fútbol elegibles con cuotas: {n_matches}")
+    if us_cands:
+        n_us = len({c["espnEventId"] for c in us_cands})
+        print(f"  • Eventos multideporte elegibles (NBA/NFL/MLB): {n_us}")
+
+    main_p, safe_p = pick_best(soccer_cands)
     if len(main_p) < 2:
         print("  ❌ No hay suficientes partidos con cuotas reales para publicar un pronóstico confiable. No se modifica nada.")
         sys.exit(1)
 
-    summary = build_summary(day, main_p, safe_p)
+    hybrid_edition = None
+    if not slot and us_cands:
+        hybrid_edition = build_hybrid_edition(day, soccer_cands, us_cands)
+
+    summary = build_summary(day, main_p, safe_p, hybrid_edition)
     if slot:
         summary["hybrid_trigger_reason"] = f"EDICIÓN {slot} CST: " + summary["hybrid_trigger_reason"]
         for s in summary["strategies"].values():
@@ -853,19 +1110,19 @@ def main():
         print(f"▶ 3. Archivando edición {slot} (el pronóstico principal e index.html no se modifican)")
         archive_snapshot(day, summary, suffix)
     else:
-        print("▶ 3. Guardando summary_recommendations.json y archivo de escenarios")
+        print("▶ 3. Guardando summary_recommendations.json y archivo de escenarios (Dual: Fútbol + Híbrido)")
         save_json(SUMMARY_FILE, summary)
         archive_snapshot(day, summary)
 
     if not slot and not args.no_html and os.path.exists(GEN_INDEX):
-        print("▶ 4. Reconstruyendo index.html")
+        print("▶ 4. Reconstruyendo index.html (activando selector dual Fútbol vs Híbrido)")
         subprocess.run([sys.executable, GEN_INDEX], check=False, cwd=CURRENT_DIR)
 
     os.makedirs(REPORTS_DIR, exist_ok=True)
     rpath = os.path.join(REPORTS_DIR, f"pronostico_{day}{suffix}.md")
     with open(rpath, "w", encoding="utf-8") as f:
-        f.write(f"# BLACK ROYAL — Pronóstico {day}{' (edición ' + slot + ' CST)' if slot else ''}\n\n_Generado {now_local:%Y-%m-%d %H:%M} CST · Fuente: ESPN API + DraftKings_\n\n")
-        f.write("## Liquidación de días anteriores\n\n" + settle_md + "\n\n## Pronóstico del día\n\n" + picks_md)
+        f.write(f"# BLACK ROYAL — Pronóstico Dual {day}{' (edición ' + slot + ' CST)' if slot else ''}\n\n_Generado {now_local:%Y-%m-%d %H:%M} CST · Fuente: ESPN API + DraftKings_\n\n")
+        f.write("## Liquidación de días anteriores\n\n" + settle_md + "\n\n## Pronóstico del día (Fútbol + Híbrido)\n\n" + picks_md)
         f.write("\n> Probabilidades = cuotas DraftKings sin margen + pequeño ajuste por forma reciente. "
                 "Las cuotas marcadas como estimadas deben verificarse en tu casa de apuestas. No es garantía de resultado.\n")
     print(f"\n✔ Listo. Reporte: {rpath}")
