@@ -25165,7 +25165,7 @@
     },
     "2026-10-22": {
       "date": "2026-10-22",
-      "saved_at": "2026-10-22 10:21:45",
+      "saved_at": "2026-10-22 11:22:33",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
@@ -25191,7 +25191,7 @@
               "selection": "Real Sociedad Ganador Directo (2)",
               "odds": 1.41,
               "confidencePct": 69,
-              "algorithm": "ESPN/DraftKings Model: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; prob. modelo 69%; EV -2.4%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 69%; EV -2.4%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25215,7 +25215,7 @@
               "selection": "Olympiacos Ganador Directo (1)",
               "odds": 1.5,
               "confidencePct": 66,
-              "algorithm": "ESPN/DraftKings Model: DraftKings -200 → @ 1.50; prob. de mercado sin margen 64%; forma últimos 5 Olympiacos DWWWW vs Sparta Prague DWLWL; goles esperados (Poisson) 2.83; prob. modelo 66%; EV -1.0%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -200 → @ 1.50; prob. de mercado sin margen 64%; forma últimos 5 Olympiacos DWWWW vs Sparta Prague DWLWL; goles esperados (Poisson) 2.83; Últimos 5: Olympiacos (7 anotados / 1 recibidos goles) vs Sparta Prague (12 anotados / 9 recibidos); prob. modelo 66%; EV -1.0%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25239,7 +25239,7 @@
               "selection": "RB Salzburg Ganador Directo (2)",
               "odds": 1.51,
               "confidencePct": 64,
-              "algorithm": "ESPN/DraftKings Model: DraftKings -195 → @ 1.51; prob. de mercado sin margen 63%; forma últimos 5 NK Celje DLLDW vs RB Salzburg DLDWW; goles esperados (Poisson) 3.27; prob. modelo 64%; EV -2.7%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 63%; forma últimos 5 NK Celje DLLDW vs RB Salzburg DLDWW; goles esperados (Poisson) 3.27; Últimos 5: NK Celje (4 anotados / 8 recibidos goles) vs RB Salzburg (7 anotados / 6 recibidos); prob. modelo 64%; EV -2.7%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25308,7 +25308,7 @@
               "selection": "Real Sociedad Ganador Directo (2)",
               "odds": 1.41,
               "confidencePct": 69,
-              "algorithm": "Pick A: ESPN/DraftKings Model: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; prob. modelo 69%; EV -2.4%.",
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 69%; EV -2.4%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25330,7 +25330,7 @@
               "selection": "Olympiacos Ganador Directo (1)",
               "odds": 1.5,
               "confidencePct": 66,
-              "algorithm": "Pick B: ESPN/DraftKings Model: DraftKings -200 → @ 1.50; prob. de mercado sin margen 64%; forma últimos 5 Olympiacos DWWWW vs Sparta Prague DWLWL; goles esperados (Poisson) 2.83; prob. modelo 66%; EV -1.0%.",
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -200 → @ 1.50; prob. de mercado sin margen 64%; forma últimos 5 Olympiacos DWWWW vs Sparta Prague DWLWL; goles esperados (Poisson) 2.83; Últimos 5: Olympiacos (7 anotados / 1 recibidos goles) vs Sparta Prague (12 anotados / 9 recibidos); prob. modelo 66%; EV -1.0%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25352,7 +25352,7 @@
               "selection": "RB Salzburg Ganador Directo (2)",
               "odds": 1.51,
               "confidencePct": 64,
-              "algorithm": "Pick C: ESPN/DraftKings Model: DraftKings -195 → @ 1.51; prob. de mercado sin margen 63%; forma últimos 5 NK Celje DLLDW vs RB Salzburg DLDWW; goles esperados (Poisson) 3.27; prob. modelo 64%; EV -2.7%.",
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 63%; forma últimos 5 NK Celje DLLDW vs RB Salzburg DLDWW; goles esperados (Poisson) 3.27; Últimos 5: NK Celje (4 anotados / 8 recibidos goles) vs RB Salzburg (7 anotados / 6 recibidos); prob. modelo 64%; EV -2.7%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25442,7 +25442,7 @@
               "selection": "Real Sociedad Doble Oportunidad (X2)",
               "odds": 1.11,
               "confidencePct": 87,
-              "algorithm": "ESPN/DraftKings Model: cuota estimada → @ 1.11; prob. de mercado sin margen 85%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; prob. modelo 87%; EV -3.0%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.11; prob. de mercado sin margen 85%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 87%; EV -3.0%.",
               "markets": [
                 {
                   "type": "DC",
@@ -25466,7 +25466,7 @@
               "selection": "Olympiacos Doble Oportunidad (1X)",
               "odds": 1.12,
               "confidencePct": 88,
-              "algorithm": "ESPN/DraftKings Model: cuota estimada → @ 1.12; prob. de mercado sin margen 85%; forma últimos 5 Olympiacos DWWWW vs Sparta Prague DWLWL; goles esperados (Poisson) 2.83; prob. modelo 88%; EV -1.9%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.12; prob. de mercado sin margen 85%; forma últimos 5 Olympiacos DWWWW vs Sparta Prague DWLWL; goles esperados (Poisson) 2.83; Últimos 5: Olympiacos (7 anotados / 1 recibidos goles) vs Sparta Prague (12 anotados / 9 recibidos); prob. modelo 88%; EV -1.9%.",
               "markets": [
                 {
                   "type": "DC",
@@ -25517,153 +25517,219 @@
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
-        "title": "Módulo de Arbitraje Híbrido: Europa League + NFL Thursday Night + NBA Season",
-        "subtitle": "Fusión cuantitativa del despliegue de la Real Sociedad en Noruega (UEL) con el Thursday Night Football en Soldier Field (Bears) y el poder de OKC Thunder en el Opening Week (NBA).",
-        "trigger_reason": "ACTIVADO: Arbitraje multideporte de élite combinando Real Sociedad en UEFA Europa League (13:00 CST) con Chicago Bears en NFL Thursday Night Football (18:15 CST) y OKC Thunder en la NBA (19:30 CST).",
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball + NFL)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Lillestrom vs. Real Sociedad con Oklahoma City Thunder vs. Denver Nuggets y Chicago Bears vs. New England Patriots.",
         "active_sports": [
           "Football",
-          "NFL",
-          "Basketball"
+          "Basketball",
+          "NFL"
         ],
-        "expectedWinRate": "89.5%",
-        "avgOdds": 1.46,
-        "combinedEv": "+32.8%",
+        "expectedWinRate": "67.2%",
+        "avgOdds": 1.45,
+        "combinedEv": "-3.5%",
         "picks": [
           {
-            "sourceName": "FootyStats / Sportmonks",
+            "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
             "match": "Lillestrom vs. Real Sociedad",
-            "tournament": "UEFA Europa League (Fase de Liga - 13:00 CST)",
-            "stadium": "Åråsen Stadion, Lillestrøm, Noruega",
+            "tournament": "UEFA Europa League (13:00 CST)",
             "selection": "Real Sociedad Ganador Directo (2)",
             "odds": 1.41,
             "confidencePct": 69,
-            "algorithm": "FootyStats Continental Pace Engine: Real Sociedad supera ampliamente en jerarquía a Lillestrom (DraftKings @ 1.41 / -245 con 69% prob. sin margen); dominio técnico del mediocampo txuri-urdin.",
-            "singleReturn": 141.0,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 69%; EV -2.4%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401915540",
+            "espnLeague": "uefa.europa",
+            "kickoffLocal": "2026-10-22 13:00",
+            "oddsEstimated": false,
             "verified": true,
+            "stadium": "Arasen Stadion",
+            "singleReturn": 141.0,
             "safeSelection": "Real Sociedad Doble Oportunidad (X2)",
             "safeOdds": 1.11
-          },
-          {
-            "sourceName": "Next Gen Stats NFL",
-            "sport": "NFL",
-            "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
-            "match": "Chicago Bears vs. New England Patriots",
-            "tournament": "National Football League (Semana 8 - Thursday Night Football - 18:15 CST)",
-            "stadium": "Soldier Field, Chicago, IL",
-            "selection": "Chicago Bears (+3.5 Hándicap / Spread Seguro)",
-            "odds": 1.48,
-            "confidencePct": 92,
-            "algorithm": "Next Gen Stats Soldier Field Edge: Chicago Bears (4-2) con Caleb Williams abren favoritos en casa (-3.0); el spread alternativo +3.5 otorga más de un gol de campo de colchón protegiendo el parlay.",
-            "singleReturn": 148.0,
-            "verified": true,
-            "safeSelection": "Chicago Bears (+6.5 Spread Alternativo)",
-            "safeOdds": 1.25
           },
           {
             "sourceName": "NBA Second Spectrum",
             "sport": "Basketball",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
             "match": "Oklahoma City Thunder vs. Denver Nuggets",
-            "tournament": "NBA 2026-27 (Opening Week - Conferencia Oeste - 19:30 CST)",
-            "stadium": "Paycom Center, Oklahoma City, OK",
-            "selection": "Oklahoma City Thunder (-3.5 Spread Alternativo)",
-            "odds": 1.48,
-            "confidencePct": 93,
-            "algorithm": "Second Spectrum Paycom Arena Fortress: OKC Thunder (1-0) abre con ventaja masiva en línea oficial (-8.5 spread / -340 ML); el spread alternativo de -3.5 reduce el margen a dos posesiones frente a Denver.",
-            "singleReturn": 148.0,
+            "tournament": "NBA 2026-27 (19:30 CST)",
+            "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+            "odds": 1.29,
+            "confidencePct": 74,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Oklahoma City Thunder — vs Denver Nuggets —; Predictor Oficial ESPN: Oklahoma City Thunder 76.5% vs Denver Nuggets 23.5%; Últimos 5: Oklahoma City Thunder (441 anotados / 461 recibidos pts) vs Denver Nuggets (578 anotados / 571 recibidos); prob. modelo 74%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909094",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-22 19:30",
+            "oddsEstimated": false,
             "verified": true,
+            "stadium": "Paycom Center",
+            "singleReturn": 129.0,
             "safeSelection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
             "safeOdds": 1.29
+          },
+          {
+            "sourceName": "Next Gen Stats NFL",
+            "sport": "NFL",
+            "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
+            "match": "Chicago Bears vs. New England Patriots",
+            "tournament": "NFL 2026 (18:15 CST)",
+            "selection": "Chicago Bears Ganador Directo (Moneyline)",
+            "odds": 1.65,
+            "confidencePct": 58,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Chicago Bears — vs New England Patriots —; Predictor Oficial ESPN: Chicago Bears 59.4% vs New England Patriots 40.3%; Últimos 5: Chicago Bears (91 anotados / 82 recibidos pts) vs New England Patriots (126 anotados / 100 recibidos); prob. modelo 58%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401873010",
+            "espnLeague": "football/nfl",
+            "kickoffLocal": "2026-10-22 18:15",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Soldier Field",
+            "singleReturn": 165.0,
+            "safeSelection": "Chicago Bears Ganador Directo (Moneyline)",
+            "safeOdds": 1.65
           }
         ],
         "strategies": {
           "modo_a_simples": {
             "id": "STRATEGY-HYBRID-A",
-            "modeName": "Modo A: Simples Híbridas (Fútbol + NFL + Básquetbol)",
-            "modeShort": "Modo A: Simples Híbridas (89.5% Win Rate)",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball + NFL)",
+            "modeShort": "Modo A: Simples Híbridas (67.2% Win Rate)",
             "badge": "MÁXIMO WIN RATE HÍBRIDO",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
             "tagColor": "purple",
-            "description": "3 Selecciones multideporte de élite para el Jueves 22 de Octubre (Real Sociedad en Europa League, Chicago Bears en NFL TNF y OKC Thunder en NBA). Cada acierto cobra por separado.",
-            "avgOdds": 1.46,
-            "expectedWinRate": "89.5%",
-            "combinedEv": "+32.8%",
+            "description": "3 Selecciones multideporte de élite para el Jueves 22 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.45,
+            "expectedWinRate": "67.2%",
+            "combinedEv": "-3.5%",
             "recommendedStake": "1.0% por selección (Flat Staking)",
             "riskLevel": "MÍNIMO",
             "picks": [
               {
-                "sourceName": "FootyStats / Sportmonks",
+                "sourceName": "ESPN / DraftKings",
                 "sport": "Football",
                 "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
                 "match": "Lillestrom vs. Real Sociedad",
-                "tournament": "UEFA Europa League (Fase de Liga - 13:00 CST)",
-                "stadium": "Åråsen Stadion, Lillestrøm, Noruega",
+                "tournament": "UEFA Europa League (13:00 CST)",
                 "selection": "Real Sociedad Ganador Directo (2)",
                 "odds": 1.41,
                 "confidencePct": 69,
-                "algorithm": "FootyStats Continental Pace Engine: Real Sociedad supera ampliamente en jerarquía a Lillestrom (DraftKings @ 1.41 / -245 con 69% prob. sin margen).",
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 69%; EV -2.4%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401915540",
+                "espnLeague": "uefa.europa",
+                "kickoffLocal": "2026-10-22 13:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Arasen Stadion",
                 "singleReturn": 141.0,
-                "verified": true
-              },
-              {
-                "sourceName": "Next Gen Stats NFL",
-                "sport": "NFL",
-                "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
-                "match": "Chicago Bears vs. New England Patriots",
-                "tournament": "National Football League (Semana 8 - Thursday Night Football - 18:15 CST)",
-                "stadium": "Soldier Field, Chicago, IL",
-                "selection": "Chicago Bears (+3.5 Hándicap / Spread Seguro)",
-                "odds": 1.48,
-                "confidencePct": 92,
-                "algorithm": "Next Gen Stats Soldier Field Edge: Chicago Bears (4-2) con Caleb Williams abren favoritos en casa (-3.0); el spread alternativo +3.5 otorga colchón protegiendo el parlay.",
-                "singleReturn": 148.0,
-                "verified": true
+                "safeSelection": "Real Sociedad Doble Oportunidad (X2)",
+                "safeOdds": 1.11
               },
               {
                 "sourceName": "NBA Second Spectrum",
                 "sport": "Basketball",
                 "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
                 "match": "Oklahoma City Thunder vs. Denver Nuggets",
-                "tournament": "NBA 2026-27 (Opening Week - Conferencia Oeste - 19:30 CST)",
-                "stadium": "Paycom Center, Oklahoma City, OK",
-                "selection": "Oklahoma City Thunder (-3.5 Spread Alternativo)",
-                "odds": 1.48,
-                "confidencePct": 93,
-                "algorithm": "Second Spectrum Paycom Arena Fortress: OKC Thunder (1-0) abre con ventaja masiva en línea oficial (-8.5 spread / -340 ML); spread alternativo de -3.5 a cuota 1.48.",
-                "singleReturn": 148.0,
-                "verified": true
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Oklahoma City Thunder — vs Denver Nuggets —; Predictor Oficial ESPN: Oklahoma City Thunder 76.5% vs Denver Nuggets 23.5%; Últimos 5: Oklahoma City Thunder (441 anotados / 461 recibidos pts) vs Denver Nuggets (578 anotados / 571 recibidos); prob. modelo 74%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909094",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-22 19:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Paycom Center",
+                "singleReturn": 129.0,
+                "safeSelection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "safeOdds": 1.29
+              },
+              {
+                "sourceName": "Next Gen Stats NFL",
+                "sport": "NFL",
+                "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
+                "match": "Chicago Bears vs. New England Patriots",
+                "tournament": "NFL 2026 (18:15 CST)",
+                "selection": "Chicago Bears Ganador Directo (Moneyline)",
+                "odds": 1.65,
+                "confidencePct": 58,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Chicago Bears — vs New England Patriots —; Predictor Oficial ESPN: Chicago Bears 59.4% vs New England Patriots 40.3%; Últimos 5: Chicago Bears (91 anotados / 82 recibidos pts) vs New England Patriots (126 anotados / 100 recibidos); prob. modelo 58%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401873010",
+                "espnLeague": "football/nfl",
+                "kickoffLocal": "2026-10-22 18:15",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Soldier Field",
+                "singleReturn": 165.0,
+                "safeSelection": "Chicago Bears Ganador Directo (Moneyline)",
+                "safeOdds": 1.65
               }
             ],
             "real_life_example": {
               "bookie_steps": [
                 "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
-                "Coloca 3 apuestas SIMPLES independientes: ⚽ Real Sociedad (13:00 CST), 🏈 Chicago Bears +3.5 (18:15 CST) y 🏀 OKC Thunder -3.5 (19:30 CST).",
-                "Apuesta  en cada una (Total )."
+                "Coloca 3 apuestas SIMPLES independientes: Lillestrom vs. Real Sociedad, Oklahoma City Thunder vs. Denver Nuggets y Chicago Bears vs. New England Patriots.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
               ],
               "winning_scenario": {
-                "title": "¿Cómo se cobra en la vida real con las Simples Híbridas?",
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
                 "match_examples": [
                   {
-                    "match": "⚽ Lillestrom vs. Real Sociedad",
-                    "min_result": "Gana Real Sociedad",
-                    "explanation": "Cobras .00 (+.00 neto)."
+                    "match": "Lillestrom vs. Real Sociedad",
+                    "min_result": "Real Sociedad Ganador Directo (2)",
+                    "explanation": "Cobras $141.00."
                   },
                   {
-                    "match": "🏈 Bears vs. Patriots",
-                    "min_result": "Bears ganan o pierden por máximo 3 pts",
-                    "explanation": "Cobras .00 (+.00 neto)."
+                    "match": "Oklahoma City Thunder vs. Denver Nuggets",
+                    "min_result": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $129.00."
                   },
                   {
-                    "match": "🏀 Thunder vs. Nuggets",
-                    "min_result": "OKC Thunder gana por 4+ pts",
-                    "explanation": "Cobras .00 (+.00 neto)."
+                    "match": "Chicago Bears vs. New England Patriots",
+                    "min_result": "Chicago Bears Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $165.00."
                   }
                 ],
-                "payout_example": "Con 2 aciertos de 3 ya aseguras ganancias netas ( – ). Con pleno 3 de 3 cobras .00."
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $435.00."
               },
-              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (22 OCTUBRE)\n1. ⚽ Lillestrom vs. Real Sociedad: Real Sociedad (2) @ 1.41\n2. 🏈 Chicago Bears vs. NE Patriots: Bears (+3.5) @ 1.48\n3. 🏀 OKC Thunder vs. Denver Nuggets: Thunder (-3.5) @ 1.48\n► Win Rate Proyectado: 89.5% | EV: +32.8%"
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (22 OCTUBRE)\n1. Lillestrom vs. Real Sociedad: Real Sociedad Ganador Directo (2) @ 1.41\n2. Oklahoma City Thunder vs. Denver Nuggets: Oklahoma City Thunder Ganador Directo (Moneyline) @ 1.29\n3. Chicago Bears vs. New England Patriots: Chicago Bears Ganador Directo (Moneyline) @ 1.65"
             }
           },
           "modo_b_sistema": {
@@ -25673,150 +25739,214 @@
             "badge": "SEGURO MULTIDEPORTE",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
             "tagColor": "cyan",
-            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol Europeo, NFL Thursday Night y NBA. Si 1 falla, ¡cobras la doble correspondiente!",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
             "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-            "expectedWinRate": "91.0%",
-            "combinedEv": "+34.5%",
-            "recommendedStake": " por combinación ( total)",
+            "expectedWinRate": "75.1%",
+            "combinedEv": "-7.6%",
+            "recommendedStake": "$25 por combinación ($100 total)",
             "riskLevel": "BAJO",
             "picks": [
               {
-                "sourceName": "FootyStats / Sportmonks",
+                "sourceName": "ESPN / DraftKings",
                 "sport": "Football",
                 "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
                 "match": "Lillestrom vs. Real Sociedad",
+                "tournament": "UEFA Europa League (13:00 CST)",
                 "selection": "Real Sociedad Ganador Directo (2)",
                 "odds": 1.41,
-                "algorithm": "Pick A (Fútbol): Real Sociedad en Europa League con 69% prob. @ 1.41."
-              },
-              {
-                "sourceName": "Next Gen Stats NFL",
-                "sport": "NFL",
-                "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
-                "match": "Chicago Bears vs. New England Patriots",
-                "selection": "Chicago Bears (+3.5 Hándicap / Spread Seguro)",
-                "odds": 1.48,
-                "algorithm": "Pick B (NFL): Chicago Bears +3.5 spread en Soldier Field horario estelar."
+                "confidencePct": 69,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 69%; EV -2.4%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401915540",
+                "espnLeague": "uefa.europa",
+                "kickoffLocal": "2026-10-22 13:00",
+                "oddsEstimated": false,
+                "verified": true
               },
               {
                 "sourceName": "NBA Second Spectrum",
                 "sport": "Basketball",
                 "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
                 "match": "Oklahoma City Thunder vs. Denver Nuggets",
-                "selection": "Oklahoma City Thunder (-3.5 Spread Alternativo)",
-                "odds": 1.48,
-                "algorithm": "Pick C (NBA): OKC Thunder -3.5 spread alternativo con solvencia en casa."
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Oklahoma City Thunder — vs Denver Nuggets —; Predictor Oficial ESPN: Oklahoma City Thunder 76.5% vs Denver Nuggets 23.5%; Últimos 5: Oklahoma City Thunder (441 anotados / 461 recibidos pts) vs Denver Nuggets (578 anotados / 571 recibidos); prob. modelo 74%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909094",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-22 19:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "Next Gen Stats NFL",
+                "sport": "NFL",
+                "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
+                "match": "Chicago Bears vs. New England Patriots",
+                "tournament": "NFL 2026 (18:15 CST)",
+                "selection": "Chicago Bears Ganador Directo (Moneyline)",
+                "odds": 1.65,
+                "confidencePct": 58,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Chicago Bears — vs New England Patriots —; Predictor Oficial ESPN: Chicago Bears 59.4% vs New England Patriots 40.3%; Últimos 5: Chicago Bears (91 anotados / 82 recibidos pts) vs New England Patriots (126 anotados / 100 recibidos); prob. modelo 58%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401873010",
+                "espnLeague": "football/nfl",
+                "kickoffLocal": "2026-10-22 18:15",
+                "oddsEstimated": false,
+                "verified": true
               }
             ],
             "combinations": [
               {
-                "name": "Doble 1 (⚽ Real Sociedad + 🏈 Bears)",
-                "odds": 2.09,
-                "formula": "1.41 × 1.48"
+                "name": "Doble 1 (Lillestrom + Oklahoma City Thunder)",
+                "odds": 1.82,
+                "formula": "1.41 × 1.29"
               },
               {
-                "name": "Doble 2 (⚽ Real Sociedad + 🏀 Thunder)",
-                "odds": 2.09,
-                "formula": "1.41 × 1.48"
+                "name": "Doble 2 (Lillestrom + Chicago Bears)",
+                "odds": 2.33,
+                "formula": "1.41 × 1.65"
               },
               {
-                "name": "Doble 3 (🏈 Bears + 🏀 Thunder)",
-                "odds": 2.19,
-                "formula": "1.48 × 1.48"
+                "name": "Doble 3 (Oklahoma City Thunder + Chicago Bears)",
+                "odds": 2.13,
+                "formula": "1.29 × 1.65"
               },
               {
                 "name": "Triple (Pleno Multideporte)",
-                "odds": 3.09,
-                "formula": "1.41 × 1.48 × 1.48"
+                "odds": 3.0,
+                "formula": "1.41 × 1.29 × 1.65"
               }
             ],
             "real_life_example": {
               "bookie_steps": [
-                "Abre tu casa de apuestas y selecciona los 3 eventos en el cupón.",
-                "Elige pestaña Sistema → Trixie (3 Dobles + 1 Triple).",
-                "Coloca  por línea ( total)."
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
               ],
               "winning_scenario": {
                 "title": "¿Cómo se cobra con el Sistema Híbrido?",
                 "match_examples": [
                   {
-                    "match": "Escenario 2 de 3 (Real Sociedad + Bears)",
-                    "min_result": "Cumplen Real Sociedad y Bears",
-                    "explanation": "Cobras Doble 1 (@ 2.09x): .25 amortizando."
-                  },
-                  {
-                    "match": "Escenario 2 de 3 (Bears + Thunder)",
-                    "min_result": "Cumplen Bears y Thunder",
-                    "explanation": "Cobras Doble 3 (@ 2.19x): .75 amortizando."
+                    "match": "Escenario 2 de 3 (Lillestrom + Oklahoma City Thunder)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 1.82x): $45.50 amortizando."
                   },
                   {
                     "match": "Escenario Pleno 3 de 3",
-                    "min_result": "Cumplen los 3 eventos",
-                    "explanation": "Cobras las 3 Dobles + Triple: .50 (+136.5% neto)."
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $232.00."
                   }
                 ],
-                "payout_example": "Con  cobras hasta .50 si aciertan los 3, o amortizas más de la mitad si 1 falla."
+                "payout_example": "Con $100 cobras hasta $232.00 si aciertan los 3, o amortizas si 1 falla."
               },
-              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (22 OCTUBRE)\n• Pick A: ⚽ Lillestrom vs. Real Sociedad @ 1.41\n• Pick B: 🏈 Bears vs. Patriots (+3.5) @ 1.48\n• Pick C: 🏀 Thunder vs. Nuggets (-3.5) @ 1.48\n► Sistema Trixie (4 Apuestas) | Stake:  c/u ( total)"
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (22 OCTUBRE)\n• Pick A: Lillestrom vs. Real Sociedad (Real Sociedad Ganador Directo (2)) @ 1.41\n• Pick B: Oklahoma City Thunder vs. Denver Nuggets (Oklahoma City Thunder Ganador Directo (Moneyline)) @ 1.29\n• Pick C: Chicago Bears vs. New England Patriots (Chicago Bears Ganador Directo (Moneyline)) @ 1.65"
             }
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
-            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.39x)",
-            "modeShort": "Modo C: Doble Banker Híbrida (Duplicador @ 1.39x)",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.43x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.43x)",
             "badge": "DUPLICADOR HÍBRIDO",
             "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
             "tagColor": "amber",
-            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Real Sociedad Doble Oportunidad (X2) en Europa League y Chicago Bears (+6.5 Spread) en NFL TNF.",
-            "totalOdds": 1.39,
-            "fairOdds": 1.2,
-            "expectedWinRate": "91.0%",
-            "combinedEv": "+26.5%",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Lillestrom vs. Real Sociedad y Oklahoma City Thunder vs. Denver Nuggets.",
+            "totalOdds": 1.43,
+            "fairOdds": 1.54,
+            "expectedWinRate": "64.8%",
+            "combinedEv": "-7.4%",
             "recommendedStake": "2.5% – 3.0% Bankroll",
             "riskLevel": "BAJO",
             "picks": [
               {
-                "sourceName": "FootyStats / Sportmonks",
+                "sourceName": "ESPN / DraftKings",
                 "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
                 "match": "Lillestrom vs. Real Sociedad",
-                "tournament": "UEFA Europa League (Fase de Liga - 13:00 CST)",
+                "tournament": "UEFA Europa League (13:00 CST)",
                 "selection": "Real Sociedad Doble Oportunidad (X2)",
                 "odds": 1.11,
-                "confidencePct": 87
+                "confidencePct": 87,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.11; prob. de mercado sin margen 85%; forma últimos 5 Lillestrom DDDLL vs Real Sociedad DDWWL; goles esperados (Poisson) 3.50; Últimos 5: Lillestrom (6 anotados / 8 recibidos goles) vs Real Sociedad (13 anotados / 9 recibidos); prob. modelo 87%; EV -3.0%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "X2"
+                  }
+                ],
+                "espnEventId": "401915540",
+                "espnLeague": "uefa.europa",
+                "kickoffLocal": "2026-10-22 13:00",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Arasen Stadion",
+                "singleReturn": 111.0
               },
               {
-                "sourceName": "Next Gen Stats NFL",
-                "sport": "NFL",
-                "match": "Chicago Bears vs. New England Patriots",
-                "tournament": "National Football League (Semana 8 - Thursday Night Football - 18:15 CST)",
-                "selection": "Chicago Bears (+6.5 Spread Alternativo)",
-                "odds": 1.25,
-                "confidencePct": 95
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Oklahoma City Thunder vs. Denver Nuggets",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Oklahoma City Thunder — vs Denver Nuggets —; Predictor Oficial ESPN: Oklahoma City Thunder 76.5% vs Denver Nuggets 23.5%; Últimos 5: Oklahoma City Thunder (441 anotados / 461 recibidos pts) vs Denver Nuggets (578 anotados / 571 recibidos); prob. modelo 74%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909094",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-22 19:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Paycom Center",
+                "singleReturn": 129.0
               }
             ],
             "real_life_example": {
               "bookie_steps": [
                 "Abre tu casa de apuestas.",
-                "Selecciona: ⚽ Real Sociedad (X2) @ 1.11 y 🏈 Chicago Bears (+6.5) @ 1.25.",
-                "Coloca tu apuesta en Parlay / Combinada (ej.  o ). Cuota: 1.39x."
+                "Selecciona: Lillestrom vs. Real Sociedad y Oklahoma City Thunder vs. Denver Nuggets.",
+                "Coloca Parlay / Combinada @ 1.43x."
               ],
               "winning_scenario": {
                 "title": "¿Cómo se gana con la Doble Banker Híbrida?",
                 "match_examples": [
                   {
                     "match": "Lillestrom vs. Real Sociedad",
-                    "min_result": "Real Sociedad empata o gana",
-                    "explanation": "Acierto con máxima solvencia defensiva."
+                    "min_result": "Real Sociedad Doble Oportunidad (X2)",
+                    "explanation": "Probabilidad modelo 87%."
                   },
                   {
-                    "match": "Chicago Bears vs. NE Patriots",
-                    "min_result": "Bears ganan o pierden por máximo 6 pts",
-                    "explanation": "Línea de casi un touchdown completo de ventaja."
+                    "match": "Oklahoma City Thunder vs. Denver Nuggets",
+                    "min_result": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 74%."
                   }
                 ],
-                "payout_example": "Si ambos cumplen, con  cobras .00 (+.00 netos)."
+                "payout_example": "Si ambos cumplen, con $100 cobras $143.00."
               },
-              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (22 OCTUBRE)\n1. ⚽ Lillestrom vs. Real Sociedad (Real Sociedad X2) @ 1.11\n2. 🏈 Chicago Bears vs. Patriots (Bears +6.5) @ 1.25\n► Cuota Combinada: 1.39x | Confianza: 91.0%"
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (22 OCTUBRE)\n1. Lillestrom vs. Real Sociedad (Real Sociedad Doble Oportunidad (X2)) @ 1.11\n2. Oklahoma City Thunder vs. Denver Nuggets (Oklahoma City Thunder Ganador Directo (Moneyline)) @ 1.29"
             }
           }
         }

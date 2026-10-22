@@ -619,12 +619,78 @@ BADGES = ["bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
           "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "bg-amber-500/15 text-amber-400 border-amber-500/30"]
 
+_deep_cache = {}
+
+
+def fetch_deep_intel(ev_id, league_path):
+    if not ev_id:
+        return {}
+    if ev_id in _deep_cache:
+        return _deep_cache[ev_id]
+    path = league_path if "/" in league_path else f"soccer/{league_path}"
+    url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/summary?event={ev_id}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 BlackRoyal"})
+    intel = {}
+    try:
+        with urllib.request.urlopen(req, timeout=8) as r:
+            d = json.load(r)
+            pred = d.get("predictor", {})
+            if pred and "homeTeam" in pred:
+                ht_proj = pred["homeTeam"].get("gameProjection")
+                at_proj = pred.get("awayTeam", {}).get("gameProjection")
+                if ht_proj and at_proj:
+                    intel["predictor"] = {"home": float(ht_proj), "away": float(at_proj)}
+            lfg = d.get("lastFiveGames", [])
+            team_stats = {}
+            for t in lfg:
+                tname = t.get("team", {}).get("displayName", "")
+                gf, ga = 0, 0
+                for m in t.get("events", []):
+                    score = m.get("score", "")
+                    res = m.get("gameResult", "")
+                    if "-" in score:
+                        parts = score.split("-")
+                        try:
+                            s1, s2 = int(parts[0]), int(parts[1])
+                            if res == "W":
+                                gf += max(s1, s2); ga += min(s1, s2)
+                            elif res == "L":
+                                gf += min(s1, s2); ga += max(s1, s2)
+                            else:
+                                gf += s1; ga += s2
+                        except Exception:
+                            pass
+                if tname:
+                    team_stats[tname] = {"gf": gf, "ga": ga}
+            if team_stats:
+                intel["team_stats"] = team_stats
+    except Exception:
+        pass
+    _deep_cache[ev_id] = intel
+    return intel
+
 
 def algo_text(c):
-    tag = "cuota estimada" if c["estimated"] else f"DraftKings {c['srcOdds']}"
+    tag = "cuota estimada" if c.get("oddsEstimated") or c.get("estimated") else f"DraftKings {c.get('srcOdds', '')}"
     lam = f"; goles esperados (Poisson) {c['lambda']:.2f}" if c.get("lambda") else ""
-    return (f"ESPN/DraftKings Model: {tag} → @ {c['odds']:.2f}; prob. de mercado sin margen {c['pMktSel']:.0%}; "
-            f"forma últimos 5 {c['home']} {c['formH']} vs {c['away']} {c['formA']}{lam}; "
+    intel = fetch_deep_intel(c.get("espnEventId"), c.get("espnLeague", ""))
+
+    extra_parts = []
+    pred = intel.get("predictor")
+    if pred:
+        extra_parts.append(f"Predictor Oficial ESPN: {c['home']} {pred['home']:.1f}% vs {c['away']} {pred['away']:.1f}%")
+
+    ts = intel.get("team_stats", {})
+    if ts:
+        unit = "goles" if c.get("sport") == "Football" else "pts"
+        h_s = ts.get(c["home"])
+        a_s = ts.get(c["away"])
+        if h_s and a_s:
+            extra_parts.append(f"Últimos 5: {c['home']} ({h_s['gf']} anotados / {h_s['ga']} recibidos {unit}) vs {c['away']} ({a_s['gf']} anotados / {a_s['ga']} recibidos)")
+
+    extra_str = "; " + "; ".join(extra_parts) if extra_parts else ""
+    return (f"Modelo Cuantitativo Multifuente: {tag} → @ {c['odds']:.2f}; prob. de mercado sin margen {c.get('pMktSel', c['p']):.0%}; "
+            f"forma últimos 5 {c['home']} {c.get('formH', '—')} vs {c['away']} {c.get('formA', '—')}{lam}{extra_str}; "
             f"prob. modelo {c['p']:.0%}; EV {c['ev']:+.1%}.")
 
 
