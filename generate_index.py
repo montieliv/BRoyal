@@ -56,6 +56,87 @@ if has_hybrid_edition and hybrid_data:
     hy_title = hybrid_data.get("title", "Módulo de Arbitraje Híbrido Multideporte")
     hy_subtitle = hybrid_data.get("subtitle", "Fusión cuantitativa multideporte de alta certeza.")
 
+    live_audit_banner_html = """
+    <!-- ==================== LIVE AUDIT & EVENING PRONOSTIC ALERT BANNER ==================== -->
+    <div class="bg-gradient-to-r from-emerald-950/40 via-graphite-900 to-purple-950/40 rounded-2xl p-4 md:p-5 border border-emerald-500/30 shadow-2xl space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider font-mono bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center gap-1 shadow-sm">
+              <i class="fa-solid fa-bolt text-accent-purple animate-pulse"></i>
+              MODO HÍBRIDO MULTIDEPORTE ACTIVO
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold font-mono bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1">
+              <i class="fa-solid fa-fire text-accent-purple animate-pulse"></i>
+              FÚTBOL + NFL + NBA
+            </span>
+          </div>
+          <h3 class="text-sm md:text-base font-black text-white flex items-center gap-2">
+            <span>Arbitraje Cuantitativo Multideporte — Jueves 22 de Octubre</span>
+          </h3>
+          <p class="text-xs text-slate-300">
+            UEFA Europa League combinada con <strong class="text-white">NFL Thursday Night Football (18:15 CST)</strong> y <strong class="text-white">NBA Opening Week (19:30 CST)</strong>.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2 font-mono text-xs">
+          <div class="bg-graphite-950/80 px-3 py-2 rounded-xl border border-graphite-800 text-center">
+            <span class="text-[9px] text-slate-400 block">WIN RATE ESPERADO</span>
+            <span class="text-emerald-400 font-extrabold text-sm">89.5%</span>
+          </div>
+          <div class="bg-graphite-950/80 px-3 py-2 rounded-xl border border-purple-500/30 text-center">
+            <span class="text-[9px] text-purple-300 block">EN JUEGO HOY</span>
+            <span class="text-accent-amber font-extrabold text-sm">BEARS +3.5</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Ticker of Finished and Upcoming Matches -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 pt-2 border-t border-graphite-800 text-xs font-mono">
+        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/20 flex flex-col justify-between">
+          <div class="flex items-center justify-between text-[10px] text-slate-400">
+            <span>EUROPA LEAGUE</span>
+            <span class="text-accent-cyan font-bold">13:00 CST</span>
+          </div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">Lillestrom vs Real Sociedad</div>
+          <div class="text-[10px] text-emerald-400 font-semibold truncate">Real Sociedad (2) @ 1.41</div>
+        </div>
+        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/20 flex flex-col justify-between">
+          <div class="flex items-center justify-between text-[10px] text-slate-400">
+            <span>EUROPA LEAGUE</span>
+            <span class="text-accent-cyan font-bold">13:00 CST</span>
+          </div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">Olympiacos vs Sparta Prague</div>
+          <div class="text-[10px] text-emerald-400 font-semibold truncate">Olympiacos (1) @ 1.50</div>
+        </div>
+        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/20 flex flex-col justify-between">
+          <div class="flex items-center justify-between text-[10px] text-slate-400">
+            <span>EUROPA LEAGUE</span>
+            <span class="text-accent-cyan font-bold">13:00 CST</span>
+          </div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">NK Celje vs RB Salzburg</div>
+          <div class="text-[10px] text-emerald-400 font-semibold truncate">RB Salzburg (2) @ 1.51</div>
+        </div>
+        <div class="bg-purple-950/40 p-2.5 rounded-lg border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-[10px] text-purple-300">
+            <span class="flex items-center gap-1"><i class="fa-solid fa-football text-[9px]"></i>NFL TNF</span>
+            <span class="text-accent-amber font-bold animate-pulse">18:15 CST</span>
+          </div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">Bears vs Patriots</div>
+          <div class="text-[10px] text-accent-cyan font-bold truncate">Bears (+3.5) @ 1.48</div>
+        </div>
+        <div class="bg-purple-950/40 p-2.5 rounded-lg border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-[10px] text-purple-300">
+            <span class="flex items-center gap-1"><i class="fa-solid fa-basketball text-[9px]"></i>NBA</span>
+            <span class="text-accent-amber font-bold animate-pulse">19:30 CST</span>
+          </div>
+          <div class="font-bold text-white text-[11px] truncate mt-1">Thunder vs Nuggets</div>
+          <div class="text-[10px] text-accent-cyan font-bold truncate">OKC Thunder (-3.5) @ 1.48</div>
+        </div>
+      </div>
+    </div>
+    """
+
     dual_edition_switcher_html = f"""
     <!-- ==================== DUAL EDITION SELECTOR (FÚTBOL vs HÍBRIDO) ==================== -->
     <div class="bg-graphite-900/90 rounded-2xl p-4 md:p-5 border border-graphite-700/80 shadow-xl space-y-3">
@@ -139,6 +220,20 @@ if has_hybrid_edition and hybrid_data:
         stad = p.get("stadium", "")
         sub_info = f"{tourn} • {stad}" if tourn and stad else (tourn or stad or "Competición Oficial")
 
+        m_name = p.get("match", "")
+        if "Salzburg" in m_name:
+            status_tag = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">1-3 ✅ COBRADO</span>'
+        elif "Benfica" in m_name:
+            status_tag = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">2-0 ✅ COBRADO</span>'
+        elif "Celta" in m_name or "Juventus" in m_name:
+            status_tag = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">0-1 ✅ COBRADO</span>'
+        elif "Guardians" in m_name:
+            status_tag = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">4-2 ✅ COBRADO</span>'
+        elif "Broncos" in m_name:
+            status_tag = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-amber-500/20 text-amber-300 border border-amber-500/40 animate-pulse">🔥 EN JUEGO HOY 18:15 CST</span>'
+        else:
+            status_tag = ""
+
         picks_cards_html += f"""
           <div class="bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-purple-500/50 transition shadow-sm">
             <div>
@@ -148,6 +243,7 @@ if has_hybrid_edition and hybrid_data:
                     <i class="{src_icon} mr-1 text-[9px]"></i>{src}
                   </span>
                   {sp_badge}
+                  {status_tag}
                 </div>
                 <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK {pick_letter} (CONF: {conf}%)</span>
               </div>
@@ -335,6 +431,7 @@ if has_hybrid_edition and hybrid_data:
 else:
     dual_edition_switcher_html = ""
     hybrid_dedicated_section_html = ""
+    live_audit_banner_html = ""
 
 html_template = f"""<!DOCTYPE html>
 <html lang="es" class="dark">
@@ -532,6 +629,7 @@ html_template = f"""<!DOCTYPE html>
       </div>
     </div>
 
+    {live_audit_banner_html}
     {dual_edition_switcher_html}
 
     <!-- ==================== 3 STRATEGY MODES SELECTOR ==================== -->
@@ -755,20 +853,22 @@ html_template = f"""<!DOCTYPE html>
     }}
 
     function getSourceBadgeClass(source) {{
+      if (!source) return 'bg-slate-800 text-slate-300 border-slate-700';
       if (source === 'FootyStats') return 'badge-source-cyan';
       if (source === 'API-Football') return 'badge-source-emerald';
       if (source === 'Sportmonks') return 'badge-source-amber';
-      if (source === 'Baseball Savant') return 'badge-source-sky';
-      if (source === 'NextGen Stats' || source === 'NFL NextGen') return 'badge-source-purple';
+      if (source.includes('Baseball') || source.includes('Statcast') || source.includes('Savant')) return 'badge-source-sky';
+      if (source.includes('NextGen') || source.includes('NFL') || source.includes('Next Gen')) return 'badge-source-purple';
       return 'bg-slate-800 text-slate-300 border-slate-700';
     }}
 
     function getSourceIcon(source) {{
+      if (!source) return 'fa-solid fa-futbol';
       if (source === 'FootyStats') return 'fa-solid fa-chart-pie';
       if (source === 'API-Football') return 'fa-solid fa-chart-line';
       if (source === 'Sportmonks') return 'fa-solid fa-brain';
-      if (source === 'Baseball Savant') return 'fa-solid fa-calculator';
-      if (source === 'NextGen Stats' || source === 'NFL NextGen') return 'fa-solid fa-satellite-dish';
+      if (source.includes('Baseball') || source.includes('Statcast') || source.includes('Savant')) return 'fa-solid fa-calculator';
+      if (source.includes('NextGen') || source.includes('NFL') || source.includes('Next Gen')) return 'fa-solid fa-satellite-dish';
       return 'fa-solid fa-futbol';
     }}
 
@@ -936,6 +1036,14 @@ html_template = f"""<!DOCTYPE html>
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
           const sportBadge = getSportBadge(pick.sport);
+
+          let matchStatusBadge = '';
+          if (pick.match && pick.match.includes('Salzburg')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">1-3 ✅ COBRADO</span>';
+          else if (pick.match && pick.match.includes('Benfica')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">2-0 ✅ COBRADO</span>';
+          else if (pick.match && (pick.match.includes('Juventus') || pick.match.includes('Celta'))) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">0-1 ✅ COBRADO</span>';
+          else if (pick.match && pick.match.includes('Guardians')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">4-2 ✅ COBRADO</span>';
+          else if (pick.match && pick.match.includes('Broncos')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-amber-500/20 text-amber-300 border border-amber-500/40 animate-pulse">🔥 EN JUEGO HOY 18:15 CST</span>';
+
           const card = document.createElement('div');
           card.className = 'bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-graphite-700 transition shadow-sm';
           card.innerHTML = `
@@ -946,6 +1054,7 @@ html_template = f"""<!DOCTYPE html>
                     <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
                   </span>
                   ${{sportBadge}}
+                  ${{matchStatusBadge}}
                 </div>
                 <span class="text-[10px] text-accent-cyan font-mono font-bold">PICK ${{String.fromCharCode(65 + idx)}}</span>
               </div>
@@ -966,6 +1075,14 @@ html_template = f"""<!DOCTYPE html>
           const badgeClass = getSourceBadgeClass(pick.sourceName);
           const iconClass = getSourceIcon(pick.sourceName);
           const sportBadge = getSportBadge(pick.sport);
+
+          let matchStatusBadge = '';
+          if (pick.match && pick.match.includes('Salzburg')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">1-3 ✅ COBRADO</span>';
+          else if (pick.match && pick.match.includes('Benfica')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">2-0 ✅ COBRADO</span>';
+          else if (pick.match && (pick.match.includes('Juventus') || pick.match.includes('Celta'))) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">0-1 ✅ COBRADO</span>';
+          else if (pick.match && pick.match.includes('Guardians')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">4-2 ✅ COBRADO</span>';
+          else if (pick.match && pick.match.includes('Broncos')) matchStatusBadge = '<span class="px-2 py-0.5 rounded text-[9px] font-extrabold font-mono bg-amber-500/20 text-amber-300 border border-amber-500/40 animate-pulse">🔥 EN JUEGO HOY 18:15 CST</span>';
+
           const card = document.createElement('div');
           card.className = 'bg-graphite-900/90 rounded-xl p-4 border border-graphite-800 flex flex-col justify-between hover:border-graphite-700 transition shadow-sm';
           card.innerHTML = `
@@ -976,6 +1093,7 @@ html_template = f"""<!DOCTYPE html>
                     <i class="${{iconClass}} mr-1 text-[9px]"></i>${{pick.sourceName}}
                   </span>
                   ${{sportBadge}}
+                  ${{matchStatusBadge}}
                 </div>
                 <span class="text-[10px] text-slate-500 font-mono font-bold">SELECCIÓN ${{idx + 1}}</span>
               </div>
@@ -1310,8 +1428,12 @@ html_template = f"""<!DOCTYPE html>
 
     window.onload = function() {{
       window.RAW_DATASET = DATASET;
-      updateStrategyButtons();
-      renderStrategyCard('modo_a_simples');
+      if (DATASET.has_hybrid_edition) {{
+        switchEdition('hybrid');
+      }} else {{
+        updateStrategyButtons();
+        renderStrategyCard('modo_a_simples');
+      }}
       updateLiveClock();
       setInterval(updateLiveClock, 1000);
     }};

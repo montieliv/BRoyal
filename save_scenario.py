@@ -34,6 +34,10 @@ def archive_current_scenario(target_date=None):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     strategies = summary_data.get("strategies", {})
 
+    if target_date in archive.get("snapshots", {}) and archive["snapshots"][target_date].get("metrics", {}).get("evaluated"):
+        print(f"  ℹ Escenario {target_date} ya se encuentra evaluado o parcialmente liquidado. Preservando métricas de auditoría.")
+        return
+
     snapshot = {
         "date": target_date,
         "saved_at": timestamp,
