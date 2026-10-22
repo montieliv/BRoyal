@@ -34,6 +34,7 @@ import unicodedata
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+import math
 from math import exp, factorial
 
 try:
@@ -220,6 +221,18 @@ def grade_leg(leg, hs, as_, home_name, away_name, market=None):
             return "WON" if ((total > line) if side == "over" else (total < line)) else "LOST"
         if t == "BTTS":
             return "WON" if (hs > 0 and as_ > 0) == (side == "yes") else "LOST"
+        if t == "COMBO":
+            sub = market.get("subtype")
+            side = market.get("side")
+            line = market.get("line", 1.5)
+            if sub == "DC_OVER":
+                res_ok = {"1X": diff >= 0, "X2": diff <= 0, "12": diff != 0}.get(side, False)
+            elif sub == "ML_OVER":
+                res_ok = (diff > 0 if side == "home" else diff < 0)
+            else:
+                res_ok = False
+            goals_ok = (total > line)
+            return "WON" if (res_ok and goals_ok) else "LOST"
 
     L = unicodedata.normalize("NFKD", leg).encode("ascii", "ignore").decode().lower()
 
@@ -520,10 +533,13 @@ def analyze_event(ev, now_local, target_day, slot=None, min_lead=45):
     }
     cands = []
 
-    def add(sel, mk, odds_dec, p, p_mkt, src_odds, estimated=False):
+    def add(sel, mk, odds_dec, p, p_mkt, src_odds, estimated=False, markets=None):
         ev_ = p * odds_dec - 1
-        cands.append({**base, "selection": sel, "market": mk, "odds": round(odds_dec, 2),
-                      "p": p, "pMktSel": p_mkt, "ev": ev_, "srcOdds": src_odds, "estimated": estimated})
+        cand = {**base, "selection": sel, "market": mk, "odds": round(odds_dec, 2),
+                "p": p, "pMktSel": p_mkt, "ev": ev_, "srcOdds": src_odds, "estimated": estimated}
+        if markets:
+            cand["markets"] = markets
+        cands.append(cand)
 
     if sport == "Football":
         add(f"{hn} Ganador Directo (1)", {"type": "ML", "side": "home"}, dh, mh, ph, oh["odds"])
@@ -575,17 +591,73 @@ def analyze_event(ev, now_local, target_day, slot=None, min_lead=45):
                             1 / (p_o * (1 + margin)), p_o, p_o, "est", estimated=True)
                         add(f"Menos de {alt} Goles Totales (Under {alt})", {"type": "TOTAL", "side": "under", "line": alt},
                             1 / ((1 - p_o) * (1 + margin)), 1 - p_o, 1 - p_o, "est", estimated=True)
+
+    if sport == "Football":
+        lmb = base.get("lambda", 2.65)
+        # ── Bet Builder Correlacionado (1X + Más 1.5, 1 + Más 1.5) ──
+        # Descomposición bivariada Poisson de goles esperados por equipo
+        lh = max(0.2, lmb * (ph + 0.5 * pd))
+        la = max(0.2, lmb * (pa + 0.5 * pd))
+        e_neg = math.exp(-lmb)
+        p00 = e_neg
+        p10 = lh * e_neg
+        p01 = la * e_neg
+
+        # 1. Local 1X + Más 1.5 Goles (Cobertura de empates 1-1, 2-2)
+        p_1x_o15 = max(0.05, min(0.95, (ph + pd) - p00 - p10))
+        odds_1x_o15 = round(1 / (p_1x_o15 * (1 + margin)), 2)
+        add(f"{hn} Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+            {"type": "COMBO", "subtype": "DC_OVER", "side": "1X", "line": 1.5},
+            odds_1x_o15, p_1x_o15, p_1x_o15, "combo_est", estimated=True,
+            markets=[{"type": "DC", "side": "1X"}, {"type": "TOTAL", "side": "over", "line": 1.5}])
+
+        # 2. Local 1 + Más 1.5 Goles (Potenciador de cuota)
+        p_1_o15 = max(0.05, min(0.95, ph - p10))
+        odds_1_o15 = round(1 / (p_1_o15 * (1 + margin)), 2)
+        add(f"{hn} Ganador Directo (1) + Más 1.5 Goles Totales",
+            {"type": "COMBO", "subtype": "ML_OVER", "side": "home", "line": 1.5},
+            odds_1_o15, p_1_o15, p_1_o15, "combo_est", estimated=True,
+            markets=[{"type": "ML", "side": "home"}, {"type": "TOTAL", "side": "over", "line": 1.5}])
+
+        # 3. Visitante X2 + Más 1.5 Goles
+        p_x2_o15 = max(0.05, min(0.95, (pa + pd) - p00 - p01))
+        odds_x2_o15 = round(1 / (p_x2_o15 * (1 + margin)), 2)
+        add(f"{an} Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+            {"type": "COMBO", "subtype": "DC_OVER", "side": "X2", "line": 1.5},
+            odds_x2_o15, p_x2_o15, p_x2_o15, "combo_est", estimated=True,
+            markets=[{"type": "DC", "side": "X2"}, {"type": "TOTAL", "side": "over", "line": 1.5}])
+
+        # 4. Visitante 2 + Más 1.5 Goles
+        p_2_o15 = max(0.05, min(0.95, pa - p01))
+        odds_2_o15 = round(1 / (p_2_o15 * (1 + margin)), 2)
+        add(f"{an} Ganador Directo (2) + Más 1.5 Goles Totales",
+            {"type": "COMBO", "subtype": "ML_OVER", "side": "away", "line": 1.5},
+            odds_2_o15, p_2_o15, p_2_o15, "combo_est", estimated=True,
+            markets=[{"type": "ML", "side": "away"}, {"type": "TOTAL", "side": "over", "line": 1.5}])
+
     return cands
 
 
 def pick_best(cands):
     """Top 3 (partidos distintos) para Modo A/B y 2 piernas seguras para Modo C."""
     def score(c):
-        return c["p"] + 1.5 * c["ev"]
+        mk_t = c.get("market", {}).get("type")
+        bonus = 0.05 if (mk_t == "COMBO" and c.get("market", {}).get("subtype") == "DC_OVER") else 0.0
+        return c["p"] + 1.5 * c["ev"] + bonus
 
-    main_pool = [c for c in cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20 and c["p"] >= 0.50]
+    def is_valid_main(c):
+        if not (1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48):
+            return False
+        if not c["estimated"]:
+            return True
+        if c.get("market", {}).get("type") == "COMBO":
+            return True
+        return False
+
+    main_pool = [c for c in cands if is_valid_main(c)]
     if len(main_pool) < 2:
-        main_pool = [c for c in cands if not c["estimated"] and 1.20 <= c["odds"] <= 2.50 and c["p"] >= 0.45]
+        main_pool = [c for c in cands if 1.20 <= c["odds"] <= 2.50 and c["p"] >= 0.42]
+
     main, used = [], set()
     for c in sorted(main_pool, key=score, reverse=True):
         if c["espnEventId"] in used:
@@ -597,15 +669,22 @@ def pick_best(cands):
 
     safe = []
     for c in main[:2]:
-        pool = [x for x in cands if x["espnEventId"] == c["espnEventId"] and 1.10 <= x["odds"] <= 1.45 and x["p"] >= 0.68]
-        # coherente con la pierna principal
-        mk = c["market"]
-        if mk["type"] == "ML":
-            pref = [x for x in pool if x["market"] == {"type": "DC", "side": "1X" if mk["side"] == "home" else "X2"}]
-        elif mk["type"] == "TOTAL":
-            pref = [x for x in pool if x["market"]["type"] == "TOTAL" and x["market"]["side"] == mk["side"]]
-        else:
-            pref = []
+        pool = [x for x in cands if x["espnEventId"] == c["espnEventId"] and 1.10 <= x["odds"] <= 1.55 and x["p"] >= 0.62]
+        mk = c.get("market", {})
+        pref = []
+        if mk.get("type") == "COMBO":
+            side = mk.get("side")
+            pref = [x for x in pool if x.get("market", {}).get("subtype") == "DC_OVER" and x.get("market", {}).get("side") == side]
+            if not pref:
+                pref = [x for x in pool if x.get("market", {}).get("type") == "DC" and x.get("market", {}).get("side") == side]
+        elif mk.get("type") == "ML":
+            side = "1X" if mk.get("side") == "home" else "X2"
+            pref = [x for x in pool if x.get("market", {}).get("subtype") == "DC_OVER" and x.get("market", {}).get("side") == side]
+            if not pref:
+                pref = [x for x in pool if x.get("market", {}).get("type") == "DC" and x.get("market", {}).get("side") == side]
+        elif mk.get("type") == "TOTAL":
+            pref = [x for x in pool if x.get("market", {}).get("type") == "TOTAL" and x.get("market", {}).get("side") == mk.get("side")]
+
         chosen = (sorted(pref, key=lambda x: -x["p"]) or sorted(pool, key=lambda x: -x["p"]) or [c])[0]
         safe.append(chosen)
     return main, safe
@@ -719,7 +798,7 @@ def pick_dict(c, i, with_detail=True):
         "odds": c["odds"],
         "confidencePct": round(c["p"] * 100),
         "algorithm": algo_text(c),
-        "markets": [c["market"]],
+        "markets": c.get("markets") or [c["market"]],
         "espnEventId": c["espnEventId"],
         "espnLeague": c["espnLeague"],
         "kickoffLocal": c["kickoff"].strftime("%Y-%m-%d %H:%M"),
@@ -877,7 +956,12 @@ def build_hybrid_edition(day, soccer_cands, us_cands):
     def score(c):
         return c["p"] + 1.5 * c["ev"]
 
-    best_soccer = sorted([c for c in soccer_cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20], key=score, reverse=True)
+    def is_valid_soccer(c):
+        if not (1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48):
+            return False
+        return not c["estimated"] or c.get("market", {}).get("type") == "COMBO"
+
+    best_soccer = sorted([c for c in soccer_cands if is_valid_soccer(c)], key=score, reverse=True)
     if not best_soccer:
         best_soccer = sorted(soccer_cands, key=score, reverse=True)
     f_pick = best_soccer[0]
