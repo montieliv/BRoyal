@@ -61,7 +61,7 @@ ODDS_SPORT_KEYS = {
 
 MAX_EVENTS = 6        # partidos que se enriquecen con cuotas multicasa
 MAX_DC_EVENTS = 4     # partidos con consulta extra de Doble Oportunidad real
-MAX_APIF_EVENTS = 5   # partidos con predicción + lesiones (2 consultas c/u)
+MAX_APIF_EVENTS = 3   # partidos con predicción + lesiones (respeta el límite de 10 req/min)
 
 _state = {"odds_remaining": None, "odds_used": None, "notes": []}
 
@@ -199,6 +199,7 @@ class APIFootball:
         self.key = key
 
     def _get(self, path, **params):
+        time.sleep(1.0)
         url = f"{APIF_BASE}{path}?{urllib.parse.urlencode(params)}"
         data, _ = _http_json(url, headers={"x-apisports-key": self.key})
         errs = data.get("errors")
