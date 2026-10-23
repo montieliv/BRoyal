@@ -25950,7 +25950,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $415.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. ⚽ VfB Stuttgart vs. Borussia Mönchengladbach: VfB Stuttgart Ganador Directo (1) @ 1.32\n3. ⚽ Go Ahead Eagles vs. Telstar: Go Ahead Eagles Ganador Directo (1) @ 1.51"
-          }
+          },
+          "status": "LOST"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -26083,7 +26084,8 @@
               "payout_example": "Con $100 cobras hasta $208.75 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (23 OCTUBRE)\n• Pick A: ⚽ Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: ⚽ VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Ganador Directo (1)) @ 1.32\n• Pick C: ⚽ Go Ahead Eagles vs. Telstar (Go Ahead Eagles Ganador Directo (1)) @ 1.51"
-          }
+          },
+          "status": "LOST"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -26182,15 +26184,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $144.00 (+$44.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. ⚽ VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.17"
-          }
+          },
+          "status": "LOST"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
         "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "netPnL": -500.0,
+        "roiPct": "-100.0%",
+        "wonModes": 0,
+        "simulatedTotalReturn": 0.0,
+        "winRate": "0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00",
+        "evaluatedAt": "2026-10-23 10:13:47",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -26406,7 +26414,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $390.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (23 OCTUBRE)\n1. Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. Los Angeles Lakers vs. LA Clippers: Los Angeles Lakers Ganador Directo (Moneyline) @ 1.27\n3. Washington Wizards vs. Toronto Raptors: Toronto Raptors Ganador Directo (Moneyline) @ 1.31"
-            }
+            },
+            "status": "LOST"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -26534,7 +26543,8 @@
                 "payout_example": "Con $100 cobras hasta $181.75 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (23 OCTUBRE)\n• Pick A: Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27\n• Pick C: Washington Wizards vs. Toronto Raptors (Toronto Raptors Ganador Directo (Moneyline)) @ 1.31"
-            }
+            },
+            "status": "LOST"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -26628,9 +26638,392 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $156.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (23 OCTUBRE)\n1. Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27"
+            },
+            "status": "LOST"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 0,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 0.0,
+          "netPnL": -500.0,
+          "roiPct": "-100.0%",
+          "winRate": "0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00",
+          "evaluated": false,
+          "evaluatedAt": "2026-10-23 10:13:47",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Cruzeiro vs. Remo": "Scheduled — Cruzeiro Ganador Directo (1) ⏳ | Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳",
+        "VfB Stuttgart vs. Borussia Mönchengladbach": "Scheduled — VfB Stuttgart Ganador Directo (1) ⏳ | VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳",
+        "Go Ahead Eagles vs. Telstar": "Scheduled — Go Ahead Eagles Ganador Directo (1) ⏳",
+        "Los Angeles Lakers vs. LA Clippers": "Scheduled — Los Angeles Lakers Ganador Directo (Moneyline) ⏳",
+        "Washington Wizards vs. Toronto Raptors": "Scheduled — Toronto Raptors Ganador Directo (Moneyline) ⏳"
+      }
+    },
+    "2026-10-24": {
+      "date": "2026-10-24",
+      "saved_at": "2026-10-23 10:13:49",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (74.4% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Sábado 24 de Octubre (EFL Championship, LaLiga, Liga BetPlay (Colombia)). Cada acierto cobra por separado.",
+          "avgOdds": 1.32,
+          "expectedWinRate": "74.4%",
+          "combinedEv": "-2.3%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Atlético Madrid vs. Deportivo",
+              "tournament": "LaLiga (13:00 CST)",
+              "selection": "Atlético Madrid Ganador Directo (1)",
+              "odds": 1.29,
+              "confidencePct": 78,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.2%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401882834",
+              "espnLeague": "esp.1",
+              "kickoffLocal": "2026-10-24 13:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Riyadh Air Metropolitano",
+              "singleReturn": 129.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Wolverhampton Wanderers vs. Watford",
+              "tournament": "EFL Championship (08:00 CST)",
+              "selection": "Wolverhampton Wanderers Ganador Directo (1)",
+              "odds": 1.37,
+              "confidencePct": 72,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); prob. modelo 72%; EV -1.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401880197",
+              "espnLeague": "eng.2",
+              "kickoffLocal": "2026-10-24 08:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Molineux Stadium",
+              "singleReturn": 137.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Once Caldas vs. Deportivo Pereira",
+              "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
+              "selection": "Once Caldas Ganador Directo (1)",
+              "odds": 1.29,
+              "confidencePct": 73,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 71%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.98; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 73%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401877895",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-24 19:15",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Palogrande",
+              "singleReturn": 129.0
             }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Atlético Madrid vs. Deportivo",
+                  "min_result": "Atlético Madrid Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
+                },
+                {
+                  "match": "Wolverhampton Wanderers vs. Watford",
+                  "min_result": "Wolverhampton Wanderers Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $137.00 (+$37.00 neto)."
+                },
+                {
+                  "match": "Once Caldas vs. Deportivo Pereira",
+                  "min_result": "Once Caldas Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $395.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (24 OCTUBRE)\n1. ⚽ Atlético Madrid vs. Deportivo: Atlético Madrid Ganador Directo (1) @ 1.29\n2. ⚽ Wolverhampton Wanderers vs. Watford: Wolverhampton Wanderers Ganador Directo (1) @ 1.37\n3. ⚽ Once Caldas vs. Deportivo Pereira: Once Caldas Ganador Directo (1) @ 1.29"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "83.7%",
+          "combinedEv": "-4.7%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Atlético Madrid vs. Deportivo",
+              "tournament": "LaLiga (13:00 CST)",
+              "selection": "Atlético Madrid Ganador Directo (1)",
+              "odds": 1.29,
+              "confidencePct": 78,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.2%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401882834",
+              "espnLeague": "esp.1",
+              "kickoffLocal": "2026-10-24 13:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Wolverhampton Wanderers vs. Watford",
+              "tournament": "EFL Championship (08:00 CST)",
+              "selection": "Wolverhampton Wanderers Ganador Directo (1)",
+              "odds": 1.37,
+              "confidencePct": 72,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); prob. modelo 72%; EV -1.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401880197",
+              "espnLeague": "eng.2",
+              "kickoffLocal": "2026-10-24 08:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Once Caldas vs. Deportivo Pereira",
+              "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
+              "selection": "Once Caldas Ganador Directo (1)",
+              "odds": 1.29,
+              "confidencePct": 73,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 71%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.98; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 73%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401877895",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-24 19:15",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Atlético Madrid + ⚽ Wolverhampton Wanderers)",
+              "odds": 1.77,
+              "formula": "1.29 × 1.37"
+            },
+            {
+              "name": "Doble 2 (⚽ Atlético Madrid + ⚽ Once Caldas)",
+              "odds": 1.66,
+              "formula": "1.29 × 1.29"
+            },
+            {
+              "name": "Doble 3 (⚽ Wolverhampton Wanderers + ⚽ Once Caldas)",
+              "odds": 1.77,
+              "formula": "1.37 × 1.29"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 2.28,
+              "formula": "1.29 × 1.37 × 1.29"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Atlético Madrid + Wolverhampton Wanderers)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $44.25."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Atlético Madrid + Once Caldas)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $41.50."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $187.00."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $187.00 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (24 OCTUBRE)\n• Pick A: ⚽ Atlético Madrid vs. Deportivo (Atlético Madrid Ganador Directo (1)) @ 1.29\n• Pick B: ⚽ Wolverhampton Wanderers vs. Watford (Wolverhampton Wanderers Ganador Directo (1)) @ 1.37\n• Pick C: ⚽ Once Caldas vs. Deportivo Pereira (Once Caldas Ganador Directo (1)) @ 1.29"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.68x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Atlético Madrid vs. Deportivo y Wolverhampton Wanderers vs. Watford).",
+          "totalOdds": 1.68,
+          "fairOdds": 1.84,
+          "expectedWinRate": "54.5%",
+          "combinedEv": "-8.5%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Atlético Madrid vs. Deportivo",
+              "tournament": "LaLiga (13:00 CST)",
+              "selection": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.26,
+              "confidencePct": 76,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 76%; EV -4.6%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401882834",
+              "espnLeague": "esp.1",
+              "kickoffLocal": "2026-10-24 13:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Riyadh Air Metropolitano",
+              "singleReturn": 126.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Wolverhampton Wanderers vs. Watford",
+              "tournament": "EFL Championship (08:00 CST)",
+              "selection": "Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.33,
+              "confidencePct": 72,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); prob. modelo 72%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401880197",
+              "espnLeague": "eng.2",
+              "kickoffLocal": "2026-10-24 08:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Molineux Stadium",
+              "singleReturn": 133.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Atlético Madrid vs. Deportivo (Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Wolverhampton Wanderers vs. Watford (Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.68x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Atlético Madrid vs. Deportivo",
+                  "min_result": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 76%."
+                },
+                {
+                  "match": "Wolverhampton Wanderers vs. Watford",
+                  "min_result": "Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 72%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $168.00 (+$68.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (24 OCTUBRE)\n1. ⚽ Atlético Madrid vs. Deportivo (Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.26\n2. ⚽ Wolverhampton Wanderers vs. Watford (Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.33"
           }
         }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
       }
     }
   }
