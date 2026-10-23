@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23 08:41:21",
+  "generated_at": "2026-10-23 10:01:08",
   "hybrid_mode": true,
   "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, Basketball)",
   "active_sports": [
@@ -8,7 +8,7 @@
   "verification_meta": {
     "verified": true,
     "verified_date": "2026-10-23",
-    "verified_at": "2026-10-23 08:41:21",
+    "verified_at": "2026-10-23 10:01:08",
     "verification_status": "PARTIDOS Y CUOTAS REALES (ESPN API / DraftKings)",
     "auditor": "Black Royal — pronostico_diario.py",
     "total_matches_verified": 3
@@ -17,14 +17,14 @@
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
       "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-      "modeShort": "Modo A: Simples Fútbol (72.0% prob. media)",
+      "modeShort": "Modo A: Simples Fútbol (69.6% prob. media)",
       "badge": "MAYOR PROBABILIDAD",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 selecciones con cuotas reales DraftKings para el Viernes 23 de Octubre (Brasileirão Série A, EFL Championship, Eredivisie). Cada acierto cobra por separado.",
-      "avgOdds": 1.33,
-      "expectedWinRate": "72.0%",
-      "combinedEv": "-4.4%",
+      "description": "3 selecciones con cuotas reales DraftKings para el Viernes 23 de Octubre (Brasileirão Série A, Bundesliga, Eredivisie). Cada acierto cobra por separado.",
+      "avgOdds": 1.38,
+      "expectedWinRate": "69.6%",
+      "combinedEv": "-3.9%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
       "riskLevel": "BAJO",
       "picks": [
@@ -32,35 +32,6 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Go Ahead Eagles vs. Telstar",
-          "tournament": "Eredivisie (12:00 CST)",
-          "selection": "Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.29,
-          "confidencePct": 73,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.72; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 73%; EV -5.6%.",
-          "markets": [
-            {
-              "type": "DC",
-              "side": "1X"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
-            }
-          ],
-          "espnEventId": "401875574",
-          "espnLeague": "ned.1",
-          "kickoffLocal": "2026-10-23 12:00",
-          "oddsEstimated": true,
-          "verified": true,
-          "stadium": "De Adelaarshorst",
-          "singleReturn": 129.0
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "match": "Cruzeiro vs. Remo",
           "tournament": "Brasileirão Série A (17:00 CST)",
           "selection": "Cruzeiro Ganador Directo (1)",
@@ -84,31 +55,50 @@
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Bolton Wanderers vs. Middlesbrough",
-          "tournament": "EFL Championship (13:00 CST)",
-          "selection": "Middlesbrough Doble Oportunidad (X2) + Más 1.5 Goles Totales",
-          "odds": 1.37,
-          "confidencePct": 70,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Bolton Wanderers DWLWW vs Middlesbrough DWWDD; goles esperados (Poisson) 3.44; Últimos 5: Bolton Wanderers (9 anotados / 6 recibidos goles) vs Middlesbrough (10 anotados / 8 recibidos); prob. modelo 70%; EV -4.7%.",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
+          "tournament": "Bundesliga (12:30 CST)",
+          "selection": "VfB Stuttgart Ganador Directo (1)",
+          "odds": 1.32,
+          "confidencePct": 72,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 70%; forma últimos 5 VfB Stuttgart DLWWL vs Borussia Mönchengladbach DLLLL; goles esperados (Poisson) 3.97; Últimos 5: VfB Stuttgart (11 anotados / 2 recibidos goles) vs Borussia Mönchengladbach (9 anotados / 9 recibidos); prob. modelo 72%; EV -4.3%.",
           "markets": [
             {
-              "type": "DC",
-              "side": "X2"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
+              "type": "ML",
+              "side": "home"
             }
           ],
-          "espnEventId": "401880207",
-          "espnLeague": "eng.2",
-          "kickoffLocal": "2026-10-23 13:00",
-          "oddsEstimated": true,
+          "espnEventId": "401884761",
+          "espnLeague": "ger.1",
+          "kickoffLocal": "2026-10-23 12:30",
+          "oddsEstimated": false,
           "verified": true,
-          "stadium": "Toughsheet Community Stadium",
-          "singleReturn": 137.0
+          "stadium": "MHPArena",
+          "singleReturn": 132.0
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Go Ahead Eagles vs. Telstar",
+          "tournament": "Eredivisie (12:00 CST)",
+          "selection": "Go Ahead Eagles Ganador Directo (1)",
+          "odds": 1.51,
+          "confidencePct": 63,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.77; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 63%; EV -4.5%.",
+          "markets": [
+            {
+              "type": "ML",
+              "side": "home"
+            }
+          ],
+          "espnEventId": "401875574",
+          "espnLeague": "ned.1",
+          "kickoffLocal": "2026-10-23 12:00",
+          "oddsEstimated": false,
+          "verified": true,
+          "stadium": "De Adelaarshorst",
+          "singleReturn": 151.0
         }
       ],
       "real_life_example": {
@@ -121,24 +111,24 @@
           "title": "¿Cómo se cobra con las Simples?",
           "match_examples": [
             {
-              "match": "Go Ahead Eagles vs. Telstar",
-              "min_result": "Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
-            },
-            {
               "match": "Cruzeiro vs. Remo",
               "min_result": "Cruzeiro Ganador Directo (1)",
               "explanation": "Si se cumple cobras $132.00 (+$32.00 neto)."
             },
             {
-              "match": "Bolton Wanderers vs. Middlesbrough",
-              "min_result": "Middlesbrough Doble Oportunidad (X2) + Más 1.5 Goles Totales",
-              "explanation": "Si se cumple cobras $137.00 (+$37.00 neto)."
+              "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
+              "min_result": "VfB Stuttgart Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $132.00 (+$32.00 neto)."
+            },
+            {
+              "match": "Go Ahead Eagles vs. Telstar",
+              "min_result": "Go Ahead Eagles Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $151.00 (+$51.00 neto)."
             }
           ],
-          "payout_example": "Con $100 por selección: los 3 aciertos pagan $398.00."
+          "payout_example": "Con $100 por selección: los 3 aciertos pagan $415.00."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (23 OCTUBRE)\n1. ⚽ Go Ahead Eagles vs. Telstar: Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales @ 1.29\n2. ⚽ Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n3. ⚽ Bolton Wanderers vs. Middlesbrough: Middlesbrough Doble Oportunidad (X2) + Más 1.5 Goles Totales @ 1.37"
+        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. ⚽ VfB Stuttgart vs. Borussia Mönchengladbach: VfB Stuttgart Ganador Directo (1) @ 1.32\n3. ⚽ Go Ahead Eagles vs. Telstar: Go Ahead Eagles Ganador Directo (1) @ 1.51"
       }
     },
     "modo_b_sistema": {
@@ -150,8 +140,8 @@
       "tagColor": "cyan",
       "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "80.9%",
-      "combinedEv": "-9.9%",
+      "expectedWinRate": "78.0%",
+      "combinedEv": "-9.2%",
       "recommendedStake": "$25 por combinación ($100 total)",
       "riskLevel": "MEDIO",
       "picks": [
@@ -159,39 +149,12 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Go Ahead Eagles vs. Telstar",
-          "tournament": "Eredivisie (12:00 CST)",
-          "selection": "Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.29,
-          "confidencePct": 73,
-          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: cuota estimada → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.72; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 73%; EV -5.6%.",
-          "markets": [
-            {
-              "type": "DC",
-              "side": "1X"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
-            }
-          ],
-          "espnEventId": "401875574",
-          "espnLeague": "ned.1",
-          "kickoffLocal": "2026-10-23 12:00",
-          "oddsEstimated": true,
-          "verified": true
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "match": "Cruzeiro vs. Remo",
           "tournament": "Brasileirão Série A (17:00 CST)",
           "selection": "Cruzeiro Ganador Directo (1)",
           "odds": 1.32,
           "confidencePct": 73,
-          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
+          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
           "markets": [
             {
               "type": "ML",
@@ -207,51 +170,68 @@
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Bolton Wanderers vs. Middlesbrough",
-          "tournament": "EFL Championship (13:00 CST)",
-          "selection": "Middlesbrough Doble Oportunidad (X2) + Más 1.5 Goles Totales",
-          "odds": 1.37,
-          "confidencePct": 70,
-          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: cuota estimada → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Bolton Wanderers DWLWW vs Middlesbrough DWWDD; goles esperados (Poisson) 3.44; Últimos 5: Bolton Wanderers (9 anotados / 6 recibidos goles) vs Middlesbrough (10 anotados / 8 recibidos); prob. modelo 70%; EV -4.7%.",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
+          "tournament": "Bundesliga (12:30 CST)",
+          "selection": "VfB Stuttgart Ganador Directo (1)",
+          "odds": 1.32,
+          "confidencePct": 72,
+          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 70%; forma últimos 5 VfB Stuttgart DLWWL vs Borussia Mönchengladbach DLLLL; goles esperados (Poisson) 3.97; Últimos 5: VfB Stuttgart (11 anotados / 2 recibidos goles) vs Borussia Mönchengladbach (9 anotados / 9 recibidos); prob. modelo 72%; EV -4.3%.",
           "markets": [
             {
-              "type": "DC",
-              "side": "X2"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
+              "type": "ML",
+              "side": "home"
             }
           ],
-          "espnEventId": "401880207",
-          "espnLeague": "eng.2",
-          "kickoffLocal": "2026-10-23 13:00",
-          "oddsEstimated": true,
+          "espnEventId": "401884761",
+          "espnLeague": "ger.1",
+          "kickoffLocal": "2026-10-23 12:30",
+          "oddsEstimated": false,
+          "verified": true
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Go Ahead Eagles vs. Telstar",
+          "tournament": "Eredivisie (12:00 CST)",
+          "selection": "Go Ahead Eagles Ganador Directo (1)",
+          "odds": 1.51,
+          "confidencePct": 63,
+          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.77; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 63%; EV -4.5%.",
+          "markets": [
+            {
+              "type": "ML",
+              "side": "home"
+            }
+          ],
+          "espnEventId": "401875574",
+          "espnLeague": "ned.1",
+          "kickoffLocal": "2026-10-23 12:00",
+          "oddsEstimated": false,
           "verified": true
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Go Ahead Eagles + ⚽ Cruzeiro)",
-          "odds": 1.7,
-          "formula": "1.29 × 1.32"
+          "name": "Doble 1 (⚽ Cruzeiro + ⚽ VfB Stuttgart)",
+          "odds": 1.74,
+          "formula": "1.32 × 1.32"
         },
         {
-          "name": "Doble 2 (⚽ Go Ahead Eagles + ⚽ Bolton Wanderers)",
-          "odds": 1.77,
-          "formula": "1.29 × 1.37"
+          "name": "Doble 2 (⚽ Cruzeiro + ⚽ Go Ahead Eagles)",
+          "odds": 1.99,
+          "formula": "1.32 × 1.51"
         },
         {
-          "name": "Doble 3 (⚽ Cruzeiro + ⚽ Bolton Wanderers)",
-          "odds": 1.81,
-          "formula": "1.32 × 1.37"
+          "name": "Doble 3 (⚽ VfB Stuttgart + ⚽ Go Ahead Eagles)",
+          "odds": 1.99,
+          "formula": "1.32 × 1.51"
         },
         {
           "name": "Triple (Pleno 3/3)",
-          "odds": 2.33,
-          "formula": "1.29 × 1.32 × 1.37"
+          "odds": 2.63,
+          "formula": "1.32 × 1.32 × 1.51"
         }
       ],
       "real_life_example": {
@@ -264,38 +244,38 @@
           "title": "¿Cómo se cobra con el Sistema 2/3?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (Go Ahead Eagles + Cruzeiro)",
+              "match": "Escenario 2 de 3 (Cruzeiro + VfB Stuttgart)",
               "min_result": "Fallan solo el tercero",
-              "explanation": "Cobras la Doble 1: $42.50."
+              "explanation": "Cobras la Doble 1: $43.50."
             },
             {
-              "match": "Escenario 2 de 3 (Go Ahead Eagles + Bolton Wanderers)",
+              "match": "Escenario 2 de 3 (Cruzeiro + Go Ahead Eagles)",
               "min_result": "Falla solo el segundo",
-              "explanation": "Cobras la Doble 2: $44.25."
+              "explanation": "Cobras la Doble 2: $49.75."
             },
             {
               "match": "Escenario Pleno 3 de 3",
               "min_result": "Aciertan los 3",
-              "explanation": "Cobras $190.25."
+              "explanation": "Cobras $208.75."
             }
           ],
-          "payout_example": "Con $100 cobras hasta $190.25 si aciertan los 3."
+          "payout_example": "Con $100 cobras hasta $208.75 si aciertan los 3."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (23 OCTUBRE)\n• Pick A: ⚽ Go Ahead Eagles vs. Telstar (Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.29\n• Pick B: ⚽ Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick C: ⚽ Bolton Wanderers vs. Middlesbrough (Middlesbrough Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.37"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (23 OCTUBRE)\n• Pick A: ⚽ Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: ⚽ VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Ganador Directo (1)) @ 1.32\n• Pick C: ⚽ Go Ahead Eagles vs. Telstar (Go Ahead Eagles Ganador Directo (1)) @ 1.51"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (@ 1.59x)",
+      "modeShort": "Modo C: Doble Banker (@ 1.44x)",
       "badge": "BAJA VOLATILIDAD",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada de 2 piernas de alta probabilidad (Go Ahead Eagles vs. Telstar y Cruzeiro vs. Remo).",
-      "totalOdds": 1.59,
-      "fairOdds": 1.77,
-      "expectedWinRate": "56.5%",
-      "combinedEv": "-10.2%",
+      "description": "Combinada de 2 piernas de alta probabilidad (Cruzeiro vs. Remo y VfB Stuttgart vs. Borussia Mönchengladbach).",
+      "totalOdds": 1.44,
+      "fairOdds": 1.64,
+      "expectedWinRate": "61.0%",
+      "combinedEv": "-12.2%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
       "picks": [
@@ -303,35 +283,6 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Go Ahead Eagles vs. Telstar",
-          "tournament": "Eredivisie (12:00 CST)",
-          "selection": "Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.29,
-          "confidencePct": 73,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.72; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 73%; EV -5.6%.",
-          "markets": [
-            {
-              "type": "DC",
-              "side": "1X"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
-            }
-          ],
-          "espnEventId": "401875574",
-          "espnLeague": "ned.1",
-          "kickoffLocal": "2026-10-23 12:00",
-          "oddsEstimated": true,
-          "verified": true,
-          "stadium": "De Adelaarshorst",
-          "singleReturn": 129.0
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "match": "Cruzeiro vs. Remo",
           "tournament": "Brasileirão Série A (17:00 CST)",
           "selection": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
@@ -356,31 +307,60 @@
           "verified": true,
           "stadium": "Estadio Mineirão",
           "singleReturn": 123.0
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
+          "tournament": "Bundesliga (12:30 CST)",
+          "selection": "VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.17,
+          "confidencePct": 79,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.17; prob. de mercado sin margen 79%; forma últimos 5 VfB Stuttgart DLWWL vs Borussia Mönchengladbach DLLLL; goles esperados (Poisson) 3.97; Últimos 5: VfB Stuttgart (11 anotados / 2 recibidos goles) vs Borussia Mönchengladbach (9 anotados / 9 recibidos); prob. modelo 79%; EV -7.6%.",
+          "markets": [
+            {
+              "type": "DC",
+              "side": "1X"
+            },
+            {
+              "type": "TOTAL",
+              "side": "over",
+              "line": 1.5
+            }
+          ],
+          "espnEventId": "401884761",
+          "espnLeague": "ger.1",
+          "kickoffLocal": "2026-10-23 12:30",
+          "oddsEstimated": true,
+          "verified": true,
+          "stadium": "MHPArena",
+          "singleReturn": 117.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona: Go Ahead Eagles vs. Telstar (Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
-          "Coloca una Combinada / Parlay. Cuota aprox.: 1.59x (verifica la cuota real en tu casa)."
+          "Selecciona: Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) y VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+          "Coloca una Combinada / Parlay. Cuota aprox.: 1.44x (verifica la cuota real en tu casa)."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana con la Doble Banker?",
           "match_examples": [
             {
-              "match": "Go Ahead Eagles vs. Telstar",
-              "min_result": "Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 73%."
-            },
-            {
               "match": "Cruzeiro vs. Remo",
               "min_result": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
               "explanation": "Probabilidad modelo 77%."
+            },
+            {
+              "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
+              "min_result": "VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "explanation": "Probabilidad modelo 79%."
             }
           ],
-          "payout_example": "Si ambas se cumplen, con $100 cobras $159.00 (+$59.00 neto)."
+          "payout_example": "Si ambas se cumplen, con $100 cobras $144.00 (+$44.00 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (23 OCTUBRE)\n1. ⚽ Go Ahead Eagles vs. Telstar (Go Ahead Eagles Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.29\n2. ⚽ Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. ⚽ VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.17"
       }
     }
   },
@@ -393,7 +373,7 @@
       "Football",
       "Basketball"
     ],
-    "expectedWinRate": "74.2%",
+    "expectedWinRate": "74.1%",
     "avgOdds": 1.3,
     "combinedEv": "-3.7%",
     "picks": [
@@ -430,9 +410,9 @@
         "match": "Los Angeles Lakers vs. LA Clippers",
         "tournament": "NBA 2026-27 (20:00 CST)",
         "selection": "Los Angeles Lakers Ganador Directo (Moneyline)",
-        "odds": 1.26,
+        "odds": 1.27,
         "confidencePct": 76,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -380 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.0%.",
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.1%.",
         "markets": [
           {
             "type": "ML",
@@ -445,9 +425,9 @@
         "oddsEstimated": false,
         "verified": true,
         "stadium": "crypto.com Arena",
-        "singleReturn": 126.0,
+        "singleReturn": 127.0,
         "safeSelection": "Los Angeles Lakers Ganador Directo (Moneyline)",
-        "safeOdds": 1.26
+        "safeOdds": 1.27
       },
       {
         "sourceName": "NBA Second Spectrum",
@@ -480,13 +460,13 @@
       "modo_a_simples": {
         "id": "STRATEGY-HYBRID-A",
         "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
-        "modeShort": "Modo A: Simples Híbridas (74.2% Win Rate)",
+        "modeShort": "Modo A: Simples Híbridas (74.1% Win Rate)",
         "badge": "MÁXIMO WIN RATE HÍBRIDO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
         "description": "3 Selecciones multideporte de élite para el Viernes 23 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
         "avgOdds": 1.3,
-        "expectedWinRate": "74.2%",
+        "expectedWinRate": "74.1%",
         "combinedEv": "-3.7%",
         "recommendedStake": "1.0% por selección (Flat Staking)",
         "riskLevel": "MÍNIMO",
@@ -524,9 +504,9 @@
             "match": "Los Angeles Lakers vs. LA Clippers",
             "tournament": "NBA 2026-27 (20:00 CST)",
             "selection": "Los Angeles Lakers Ganador Directo (Moneyline)",
-            "odds": 1.26,
+            "odds": 1.27,
             "confidencePct": 76,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -380 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.0%.",
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
@@ -539,9 +519,9 @@
             "oddsEstimated": false,
             "verified": true,
             "stadium": "crypto.com Arena",
-            "singleReturn": 126.0,
+            "singleReturn": 127.0,
             "safeSelection": "Los Angeles Lakers Ganador Directo (Moneyline)",
-            "safeOdds": 1.26
+            "safeOdds": 1.27
           },
           {
             "sourceName": "NBA Second Spectrum",
@@ -587,7 +567,7 @@
               {
                 "match": "Los Angeles Lakers vs. LA Clippers",
                 "min_result": "Los Angeles Lakers Ganador Directo (Moneyline)",
-                "explanation": "Cobras $126.00."
+                "explanation": "Cobras $127.00."
               },
               {
                 "match": "Washington Wizards vs. Toronto Raptors",
@@ -595,9 +575,9 @@
                 "explanation": "Cobras $131.00."
               }
             ],
-            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $389.00."
+            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $390.00."
           },
-          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (23 OCTUBRE)\n1. Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. Los Angeles Lakers vs. LA Clippers: Los Angeles Lakers Ganador Directo (Moneyline) @ 1.26\n3. Washington Wizards vs. Toronto Raptors: Toronto Raptors Ganador Directo (Moneyline) @ 1.31"
+          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (23 OCTUBRE)\n1. Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. Los Angeles Lakers vs. LA Clippers: Los Angeles Lakers Ganador Directo (Moneyline) @ 1.27\n3. Washington Wizards vs. Toronto Raptors: Toronto Raptors Ganador Directo (Moneyline) @ 1.31"
         }
       },
       "modo_b_sistema": {
@@ -609,8 +589,8 @@
         "tagColor": "cyan",
         "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
         "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-        "expectedWinRate": "83.5%",
-        "combinedEv": "-8.4%",
+        "expectedWinRate": "83.4%",
+        "combinedEv": "-8.0%",
         "recommendedStake": "$25 por combinación ($100 total)",
         "riskLevel": "BAJO",
         "picks": [
@@ -643,9 +623,9 @@
             "match": "Los Angeles Lakers vs. LA Clippers",
             "tournament": "NBA 2026-27 (20:00 CST)",
             "selection": "Los Angeles Lakers Ganador Directo (Moneyline)",
-            "odds": 1.26,
+            "odds": 1.27,
             "confidencePct": 76,
-            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -380 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.0%.",
+            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
@@ -684,8 +664,8 @@
         "combinations": [
           {
             "name": "Doble 1 (Cruzeiro + Los Angeles Lakers)",
-            "odds": 1.66,
-            "formula": "1.32 × 1.26"
+            "odds": 1.68,
+            "formula": "1.32 × 1.27"
           },
           {
             "name": "Doble 2 (Cruzeiro + Washington Wizards)",
@@ -694,13 +674,13 @@
           },
           {
             "name": "Doble 3 (Los Angeles Lakers + Washington Wizards)",
-            "odds": 1.65,
-            "formula": "1.26 × 1.31"
+            "odds": 1.66,
+            "formula": "1.27 × 1.31"
           },
           {
             "name": "Triple (Pleno Multideporte)",
-            "odds": 2.18,
-            "formula": "1.32 × 1.26 × 1.31"
+            "odds": 2.2,
+            "formula": "1.32 × 1.27 × 1.31"
           }
         ],
         "real_life_example": {
@@ -715,31 +695,31 @@
               {
                 "match": "Escenario 2 de 3 (Cruzeiro + Los Angeles Lakers)",
                 "min_result": "Ganan los 2 primeros",
-                "explanation": "Cobras Doble 1 (@ 1.66x): $41.50 amortizando."
+                "explanation": "Cobras Doble 1 (@ 1.68x): $42.00 amortizando."
               },
               {
                 "match": "Escenario Pleno 3 de 3",
                 "min_result": "Cumplen los 3",
-                "explanation": "Cobras las 3 Dobles + Triple: $180.50."
+                "explanation": "Cobras las 3 Dobles + Triple: $181.75."
               }
             ],
-            "payout_example": "Con $100 cobras hasta $180.50 si aciertan los 3, o amortizas si 1 falla."
+            "payout_example": "Con $100 cobras hasta $181.75 si aciertan los 3, o amortizas si 1 falla."
           },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (23 OCTUBRE)\n• Pick A: Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.26\n• Pick C: Washington Wizards vs. Toronto Raptors (Toronto Raptors Ganador Directo (Moneyline)) @ 1.31"
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (23 OCTUBRE)\n• Pick A: Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27\n• Pick C: Washington Wizards vs. Toronto Raptors (Toronto Raptors Ganador Directo (Moneyline)) @ 1.31"
         }
       },
       "modo_c_banker": {
         "id": "STRATEGY-HYBRID-C",
-        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.55x)",
-        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.55x)",
+        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.56x)",
+        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.56x)",
         "badge": "DUPLICADOR HÍBRIDO",
         "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
         "tagColor": "amber",
         "description": "Combinada estricta de solo 2 eventos de altísima certeza: Cruzeiro vs. Remo y Los Angeles Lakers vs. LA Clippers.",
-        "totalOdds": 1.55,
-        "fairOdds": 1.7,
-        "expectedWinRate": "58.7%",
-        "combinedEv": "-9.1%",
+        "totalOdds": 1.56,
+        "fairOdds": 1.71,
+        "expectedWinRate": "58.4%",
+        "combinedEv": "-8.8%",
         "recommendedStake": "2.5% – 3.0% Bankroll",
         "riskLevel": "BAJO",
         "picks": [
@@ -779,9 +759,9 @@
             "match": "Los Angeles Lakers vs. LA Clippers",
             "tournament": "NBA 2026-27 (20:00 CST)",
             "selection": "Los Angeles Lakers Ganador Directo (Moneyline)",
-            "odds": 1.26,
+            "odds": 1.27,
             "confidencePct": 76,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -380 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.0%.",
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Los Angeles Lakers — vs LA Clippers —; Predictor Oficial ESPN: Los Angeles Lakers 74.2% vs LA Clippers 25.8%; Últimos 5: Los Angeles Lakers (534 anotados / 561 recibidos pts) vs LA Clippers (574 anotados / 547 recibidos); prob. modelo 76%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
@@ -794,14 +774,14 @@
             "oddsEstimated": false,
             "verified": true,
             "stadium": "crypto.com Arena",
-            "singleReturn": 126.0
+            "singleReturn": 127.0
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas.",
             "Selecciona: Cruzeiro vs. Remo y Los Angeles Lakers vs. LA Clippers.",
-            "Coloca Parlay / Combinada @ 1.55x."
+            "Coloca Parlay / Combinada @ 1.56x."
           ],
           "winning_scenario": {
             "title": "¿Cómo se gana con la Doble Banker Híbrida?",
@@ -817,9 +797,9 @@
                 "explanation": "Probabilidad modelo 76%."
               }
             ],
-            "payout_example": "Si ambos cumplen, con $100 cobras $155.00."
+            "payout_example": "Si ambos cumplen, con $100 cobras $156.00."
           },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (23 OCTUBRE)\n1. Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.26"
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (23 OCTUBRE)\n1. Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27"
         }
       }
     }

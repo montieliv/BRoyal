@@ -641,22 +641,16 @@ def analyze_event(ev, now_local, target_day, slot=None, min_lead=45):
 def pick_best(cands):
     """Top 3 (partidos distintos) para Modo A/B y 2 piernas seguras para Modo C."""
     def score(c):
-        mk_t = c.get("market", {}).get("type")
-        bonus = 0.05 if (mk_t == "COMBO" and c.get("market", {}).get("subtype") == "DC_OVER") else 0.0
-        return c["p"] + 1.5 * c["ev"] + bonus
+        return c["p"] + 1.5 * c["ev"]
 
     def is_valid_main(c):
-        if not (1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48):
-            return False
-        if not c["estimated"]:
-            return True
-        if c.get("market", {}).get("type") == "COMBO":
-            return True
-        return False
+        # Modo A/B: solo cuotas reales de DraftKings (verificables). Los combos y
+        # líneas estimadas quedan para las piernas de seguridad del Modo C.
+        return (not c["estimated"]) and 1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48
 
     main_pool = [c for c in cands if is_valid_main(c)]
     if len(main_pool) < 2:
-        main_pool = [c for c in cands if 1.20 <= c["odds"] <= 2.50 and c["p"] >= 0.42]
+        main_pool = [c for c in cands if not c["estimated"] and 1.20 <= c["odds"] <= 2.50 and c["p"] >= 0.42]
 
     main, used = [], set()
     for c in sorted(main_pool, key=score, reverse=True):
@@ -957,9 +951,7 @@ def build_hybrid_edition(day, soccer_cands, us_cands):
         return c["p"] + 1.5 * c["ev"]
 
     def is_valid_soccer(c):
-        if not (1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48):
-            return False
-        return not c["estimated"] or c.get("market", {}).get("type") == "COMBO"
+        return (not c["estimated"]) and 1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48
 
     best_soccer = sorted([c for c in soccer_cands if is_valid_soccer(c)], key=score, reverse=True)
     if not best_soccer:
