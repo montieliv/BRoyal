@@ -25832,20 +25832,20 @@
     },
     "2026-10-23": {
       "date": "2026-10-23",
-      "saved_at": "2026-10-23 10:01:08",
+      "saved_at": "2026-10-23 12:00:26",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
           "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-          "modeShort": "Modo A: Simples Fútbol (69.6% prob. media)",
+          "modeShort": "Modo A: Simples Fútbol (66.5% prob. media)",
           "badge": "MAYOR PROBABILIDAD",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
           "tagColor": "emerald",
-          "description": "3 selecciones con cuotas reales DraftKings para el Viernes 23 de Octubre (Brasileirão Série A, Bundesliga, Eredivisie). Cada acierto cobra por separado.",
-          "avgOdds": 1.38,
-          "expectedWinRate": "69.6%",
-          "combinedEv": "-3.9%",
+          "description": "3 selecciones con cuotas reales DraftKings para el Viernes 23 de Octubre (Brasileirão Série A, Liga Profesional Argentina, Primeira Liga). Cada acierto cobra por separado.",
+          "avgOdds": 1.44,
+          "expectedWinRate": "66.5%",
+          "combinedEv": "-4.8%",
           "recommendedStake": "1.0% por selección (Flat Staking)",
           "riskLevel": "BAJO",
           "picks": [
@@ -25856,9 +25856,9 @@
               "match": "Cruzeiro vs. Remo",
               "tournament": "Brasileirão Série A (17:00 CST)",
               "selection": "Cruzeiro Ganador Directo (1)",
-              "odds": 1.32,
-              "confidencePct": 73,
-              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
+              "odds": 1.3,
+              "confidencePct": 74,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -330 → @ 1.30; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 74%; EV -3.5%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25871,54 +25871,55 @@
               "oddsEstimated": false,
               "verified": true,
               "stadium": "Estadio Mineirão",
-              "singleReturn": 132.0
+              "singleReturn": 130.0
             },
             {
               "sourceName": "ESPN / DraftKings",
               "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
-              "tournament": "Bundesliga (12:30 CST)",
-              "selection": "VfB Stuttgart Ganador Directo (1)",
-              "odds": 1.32,
-              "confidencePct": 72,
-              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 70%; forma últimos 5 VfB Stuttgart DLWWL vs Borussia Mönchengladbach DLLLL; goles esperados (Poisson) 3.97; Últimos 5: VfB Stuttgart (11 anotados / 2 recibidos goles) vs Borussia Mönchengladbach (9 anotados / 9 recibidos); prob. modelo 72%; EV -4.3%.",
+              "match": "Vitória de Guimaraes vs. Maritimo",
+              "tournament": "Primeira Liga (13:45 CST)",
+              "selection": "Vitória de Guimaraes Ganador Directo (1)",
+              "odds": 1.5,
+              "confidencePct": 64,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -200 → @ 1.50; prob. de mercado sin margen 63%; forma últimos 5 Vitória de Guimaraes DLDLD vs Maritimo DLDLL; goles esperados (Poisson) 2.76; Últimos 5: Vitória de Guimaraes (3 anotados / 5 recibidos goles) vs Maritimo (5 anotados / 10 recibidos); prob. modelo 64%; EV -4.4%.",
               "markets": [
                 {
                   "type": "ML",
                   "side": "home"
                 }
               ],
-              "espnEventId": "401884761",
-              "espnLeague": "ger.1",
-              "kickoffLocal": "2026-10-23 12:30",
+              "espnEventId": "401885412",
+              "espnLeague": "por.1",
+              "kickoffLocal": "2026-10-23 13:45",
               "oddsEstimated": false,
               "verified": true,
-              "stadium": "MHPArena",
-              "singleReturn": 132.0
+              "stadium": "Estádio D. Afonso Henriques",
+              "singleReturn": 150.0
             },
             {
               "sourceName": "ESPN / DraftKings",
               "sport": "Football",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Go Ahead Eagles vs. Telstar",
-              "tournament": "Eredivisie (12:00 CST)",
-              "selection": "Go Ahead Eagles Ganador Directo (1)",
+              "match": "Tigre vs. Atlético Tucumán",
+              "tournament": "Liga Profesional Argentina (18:15 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
               "odds": 1.51,
-              "confidencePct": 63,
-              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.77; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 63%; EV -4.5%.",
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Tigre DLLLL vs Atlético Tucumán DDLLW; goles esperados (Poisson) 2.22; Últimos 5: Tigre (6 anotados / 10 recibidos goles) vs Atlético Tucumán (6 anotados / 9 recibidos); prob. modelo 62%; EV -6.5%.",
               "markets": [
                 {
-                  "type": "ML",
-                  "side": "home"
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
                 }
               ],
-              "espnEventId": "401875574",
-              "espnLeague": "ned.1",
-              "kickoffLocal": "2026-10-23 12:00",
+              "espnEventId": "401841643",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-23 18:15",
               "oddsEstimated": false,
               "verified": true,
-              "stadium": "De Adelaarshorst",
+              "stadium": "Monumental de Victoria (José Dellagiovanna)",
               "singleReturn": 151.0
             }
           ],
@@ -25934,24 +25935,23 @@
                 {
                   "match": "Cruzeiro vs. Remo",
                   "min_result": "Cruzeiro Ganador Directo (1)",
-                  "explanation": "Si se cumple cobras $132.00 (+$32.00 neto)."
+                  "explanation": "Si se cumple cobras $130.00 (+$30.00 neto)."
                 },
                 {
-                  "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
-                  "min_result": "VfB Stuttgart Ganador Directo (1)",
-                  "explanation": "Si se cumple cobras $132.00 (+$32.00 neto)."
+                  "match": "Vitória de Guimaraes vs. Maritimo",
+                  "min_result": "Vitória de Guimaraes Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $150.00 (+$50.00 neto)."
                 },
                 {
-                  "match": "Go Ahead Eagles vs. Telstar",
-                  "min_result": "Go Ahead Eagles Ganador Directo (1)",
+                  "match": "Tigre vs. Atlético Tucumán",
+                  "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
                   "explanation": "Si se cumple cobras $151.00 (+$51.00 neto)."
                 }
               ],
-              "payout_example": "Con $100 por selección: los 3 aciertos pagan $415.00."
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $431.00."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. ⚽ VfB Stuttgart vs. Borussia Mönchengladbach: VfB Stuttgart Ganador Directo (1) @ 1.32\n3. ⚽ Go Ahead Eagles vs. Telstar: Go Ahead Eagles Ganador Directo (1) @ 1.51"
-          },
-          "status": "LOST"
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.30\n2. ⚽ Vitória de Guimaraes vs. Maritimo: Vitória de Guimaraes Ganador Directo (1) @ 1.50\n3. ⚽ Tigre vs. Atlético Tucumán: Menos de 2.5 Goles Totales (Under 2.5) @ 1.51"
+          }
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -25962,8 +25962,8 @@
           "tagColor": "cyan",
           "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
           "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-          "expectedWinRate": "78.0%",
-          "combinedEv": "-9.2%",
+          "expectedWinRate": "74.0%",
+          "combinedEv": "-10.8%",
           "recommendedStake": "$25 por combinación ($100 total)",
           "riskLevel": "MEDIO",
           "picks": [
@@ -25974,9 +25974,9 @@
               "match": "Cruzeiro vs. Remo",
               "tournament": "Brasileirão Série A (17:00 CST)",
               "selection": "Cruzeiro Ganador Directo (1)",
-              "odds": 1.32,
-              "confidencePct": 73,
-              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
+              "odds": 1.3,
+              "confidencePct": 74,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -330 → @ 1.30; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 74%; EV -3.5%.",
               "markets": [
                 {
                   "type": "ML",
@@ -25993,21 +25993,21 @@
               "sourceName": "ESPN / DraftKings",
               "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
-              "tournament": "Bundesliga (12:30 CST)",
-              "selection": "VfB Stuttgart Ganador Directo (1)",
-              "odds": 1.32,
-              "confidencePct": 72,
-              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 70%; forma últimos 5 VfB Stuttgart DLWWL vs Borussia Mönchengladbach DLLLL; goles esperados (Poisson) 3.97; Últimos 5: VfB Stuttgart (11 anotados / 2 recibidos goles) vs Borussia Mönchengladbach (9 anotados / 9 recibidos); prob. modelo 72%; EV -4.3%.",
+              "match": "Vitória de Guimaraes vs. Maritimo",
+              "tournament": "Primeira Liga (13:45 CST)",
+              "selection": "Vitória de Guimaraes Ganador Directo (1)",
+              "odds": 1.5,
+              "confidencePct": 64,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -200 → @ 1.50; prob. de mercado sin margen 63%; forma últimos 5 Vitória de Guimaraes DLDLD vs Maritimo DLDLL; goles esperados (Poisson) 2.76; Últimos 5: Vitória de Guimaraes (3 anotados / 5 recibidos goles) vs Maritimo (5 anotados / 10 recibidos); prob. modelo 64%; EV -4.4%.",
               "markets": [
                 {
                   "type": "ML",
                   "side": "home"
                 }
               ],
-              "espnEventId": "401884761",
-              "espnLeague": "ger.1",
-              "kickoffLocal": "2026-10-23 12:30",
+              "espnEventId": "401885412",
+              "espnLeague": "por.1",
+              "kickoffLocal": "2026-10-23 13:45",
               "oddsEstimated": false,
               "verified": true
             },
@@ -26015,45 +26015,46 @@
               "sourceName": "ESPN / DraftKings",
               "sport": "Football",
               "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-              "match": "Go Ahead Eagles vs. Telstar",
-              "tournament": "Eredivisie (12:00 CST)",
-              "selection": "Go Ahead Eagles Ganador Directo (1)",
+              "match": "Tigre vs. Atlético Tucumán",
+              "tournament": "Liga Profesional Argentina (18:15 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
               "odds": 1.51,
-              "confidencePct": 63,
-              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Go Ahead Eagles DDDDD vs Telstar DDLDL; goles esperados (Poisson) 3.77; Últimos 5: Go Ahead Eagles (9 anotados / 12 recibidos goles) vs Telstar (5 anotados / 8 recibidos); prob. modelo 63%; EV -4.5%.",
+              "confidencePct": 62,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Tigre DLLLL vs Atlético Tucumán DDLLW; goles esperados (Poisson) 2.22; Últimos 5: Tigre (6 anotados / 10 recibidos goles) vs Atlético Tucumán (6 anotados / 9 recibidos); prob. modelo 62%; EV -6.5%.",
               "markets": [
                 {
-                  "type": "ML",
-                  "side": "home"
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
                 }
               ],
-              "espnEventId": "401875574",
-              "espnLeague": "ned.1",
-              "kickoffLocal": "2026-10-23 12:00",
+              "espnEventId": "401841643",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-23 18:15",
               "oddsEstimated": false,
               "verified": true
             }
           ],
           "combinations": [
             {
-              "name": "Doble 1 (⚽ Cruzeiro + ⚽ VfB Stuttgart)",
-              "odds": 1.74,
-              "formula": "1.32 × 1.32"
+              "name": "Doble 1 (⚽ Cruzeiro + ⚽ Vitória de Guimaraes)",
+              "odds": 1.95,
+              "formula": "1.3 × 1.5"
             },
             {
-              "name": "Doble 2 (⚽ Cruzeiro + ⚽ Go Ahead Eagles)",
-              "odds": 1.99,
-              "formula": "1.32 × 1.51"
+              "name": "Doble 2 (⚽ Cruzeiro + ⚽ Tigre)",
+              "odds": 1.96,
+              "formula": "1.3 × 1.51"
             },
             {
-              "name": "Doble 3 (⚽ VfB Stuttgart + ⚽ Go Ahead Eagles)",
-              "odds": 1.99,
-              "formula": "1.32 × 1.51"
+              "name": "Doble 3 (⚽ Vitória de Guimaraes + ⚽ Tigre)",
+              "odds": 2.27,
+              "formula": "1.5 × 1.51"
             },
             {
               "name": "Triple (Pleno 3/3)",
-              "odds": 2.63,
-              "formula": "1.32 × 1.32 × 1.51"
+              "odds": 2.94,
+              "formula": "1.3 × 1.5 × 1.51"
             }
           ],
           "real_life_example": {
@@ -26066,39 +26067,38 @@
               "title": "¿Cómo se cobra con el Sistema 2/3?",
               "match_examples": [
                 {
-                  "match": "Escenario 2 de 3 (Cruzeiro + VfB Stuttgart)",
+                  "match": "Escenario 2 de 3 (Cruzeiro + Vitória de Guimaraes)",
                   "min_result": "Fallan solo el tercero",
-                  "explanation": "Cobras la Doble 1: $43.50."
+                  "explanation": "Cobras la Doble 1: $48.75."
                 },
                 {
-                  "match": "Escenario 2 de 3 (Cruzeiro + Go Ahead Eagles)",
+                  "match": "Escenario 2 de 3 (Cruzeiro + Tigre)",
                   "min_result": "Falla solo el segundo",
-                  "explanation": "Cobras la Doble 2: $49.75."
+                  "explanation": "Cobras la Doble 2: $49.00."
                 },
                 {
                   "match": "Escenario Pleno 3 de 3",
                   "min_result": "Aciertan los 3",
-                  "explanation": "Cobras $208.75."
+                  "explanation": "Cobras $228.00."
                 }
               ],
-              "payout_example": "Con $100 cobras hasta $208.75 si aciertan los 3."
+              "payout_example": "Con $100 cobras hasta $228.00 si aciertan los 3."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (23 OCTUBRE)\n• Pick A: ⚽ Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: ⚽ VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Ganador Directo (1)) @ 1.32\n• Pick C: ⚽ Go Ahead Eagles vs. Telstar (Go Ahead Eagles Ganador Directo (1)) @ 1.51"
-          },
-          "status": "LOST"
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (23 OCTUBRE)\n• Pick A: ⚽ Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.30\n• Pick B: ⚽ Vitória de Guimaraes vs. Maritimo (Vitória de Guimaraes Ganador Directo (1)) @ 1.50\n• Pick C: ⚽ Tigre vs. Atlético Tucumán (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.51"
+          }
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
           "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-          "modeShort": "Modo C: Doble Banker (@ 1.44x)",
+          "modeShort": "Modo C: Doble Banker (@ 1.76x)",
           "badge": "BAJA VOLATILIDAD",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
           "tagColor": "amber",
-          "description": "Combinada de 2 piernas de alta probabilidad (Cruzeiro vs. Remo y VfB Stuttgart vs. Borussia Mönchengladbach).",
-          "totalOdds": 1.44,
-          "fairOdds": 1.64,
-          "expectedWinRate": "61.0%",
-          "combinedEv": "-12.2%",
+          "description": "Combinada de 2 piernas de alta probabilidad (Cruzeiro vs. Remo y Vitória de Guimaraes vs. Maritimo).",
+          "totalOdds": 1.76,
+          "fairOdds": 1.95,
+          "expectedWinRate": "51.2%",
+          "combinedEv": "-9.8%",
           "recommendedStake": "2.0% – 3.0% Bankroll",
           "riskLevel": "BAJO",
           "picks": [
@@ -26109,9 +26109,9 @@
               "match": "Cruzeiro vs. Remo",
               "tournament": "Brasileirão Série A (17:00 CST)",
               "selection": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "odds": 1.23,
-              "confidencePct": 77,
-              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.23; prob. de mercado sin margen 77%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 77%; EV -5.1%.",
+              "odds": 1.22,
+              "confidencePct": 78,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 78%; EV -5.3%.",
               "markets": [
                 {
                   "type": "DC",
@@ -26129,18 +26129,18 @@
               "oddsEstimated": true,
               "verified": true,
               "stadium": "Estadio Mineirão",
-              "singleReturn": 123.0
+              "singleReturn": 122.0
             },
             {
               "sourceName": "ESPN / DraftKings",
               "sport": "Football",
               "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-              "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
-              "tournament": "Bundesliga (12:30 CST)",
-              "selection": "VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "odds": 1.17,
-              "confidencePct": 79,
-              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.17; prob. de mercado sin margen 79%; forma últimos 5 VfB Stuttgart DLWWL vs Borussia Mönchengladbach DLLLL; goles esperados (Poisson) 3.97; Últimos 5: VfB Stuttgart (11 anotados / 2 recibidos goles) vs Borussia Mönchengladbach (9 anotados / 9 recibidos); prob. modelo 79%; EV -7.6%.",
+              "match": "Vitória de Guimaraes vs. Maritimo",
+              "tournament": "Primeira Liga (13:45 CST)",
+              "selection": "Vitória de Guimaraes Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.44,
+              "confidencePct": 66,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Vitória de Guimaraes DLDLD vs Maritimo DLDLL; goles esperados (Poisson) 2.76; Últimos 5: Vitória de Guimaraes (3 anotados / 5 recibidos goles) vs Maritimo (5 anotados / 10 recibidos); prob. modelo 66%; EV -4.9%.",
               "markets": [
                 {
                   "type": "DC",
@@ -26152,20 +26152,20 @@
                   "line": 1.5
                 }
               ],
-              "espnEventId": "401884761",
-              "espnLeague": "ger.1",
-              "kickoffLocal": "2026-10-23 12:30",
+              "espnEventId": "401885412",
+              "espnLeague": "por.1",
+              "kickoffLocal": "2026-10-23 13:45",
               "oddsEstimated": true,
               "verified": true,
-              "stadium": "MHPArena",
-              "singleReturn": 117.0
+              "stadium": "Estádio D. Afonso Henriques",
+              "singleReturn": 144.0
             }
           ],
           "real_life_example": {
             "bookie_steps": [
               "Abre tu casa de apuestas.",
-              "Selecciona: Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) y VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
-              "Coloca una Combinada / Parlay. Cuota aprox.: 1.44x (verifica la cuota real en tu casa)."
+              "Selecciona: Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Vitória de Guimaraes vs. Maritimo (Vitória de Guimaraes Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.76x (verifica la cuota real en tu casa)."
             ],
             "winning_scenario": {
               "title": "¿Cómo se gana con la Doble Banker?",
@@ -26173,32 +26173,26 @@
                 {
                   "match": "Cruzeiro vs. Remo",
                   "min_result": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-                  "explanation": "Probabilidad modelo 77%."
+                  "explanation": "Probabilidad modelo 78%."
                 },
                 {
-                  "match": "VfB Stuttgart vs. Borussia Mönchengladbach",
-                  "min_result": "VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-                  "explanation": "Probabilidad modelo 79%."
+                  "match": "Vitória de Guimaraes vs. Maritimo",
+                  "min_result": "Vitória de Guimaraes Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 66%."
                 }
               ],
-              "payout_example": "Si ambas se cumplen, con $100 cobras $144.00 (+$44.00 neto)."
+              "payout_example": "Si ambas se cumplen, con $100 cobras $176.00 (+$76.00 neto)."
             },
-            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. ⚽ VfB Stuttgart vs. Borussia Mönchengladbach (VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.17"
-          },
-          "status": "LOST"
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (23 OCTUBRE)\n1. ⚽ Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.22\n2. ⚽ Vitória de Guimaraes vs. Maritimo (Vitória de Guimaraes Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.44"
+          }
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
         "evaluated": false,
-        "netPnL": -500.0,
-        "roiPct": "-100.0%",
-        "wonModes": 0,
-        "simulatedTotalReturn": 0.0,
-        "winRate": "0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00",
-        "evaluatedAt": "2026-10-23 10:44:48",
-        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -26209,9 +26203,9 @@
           "Football",
           "Basketball"
         ],
-        "expectedWinRate": "74.1%",
-        "avgOdds": 1.3,
-        "combinedEv": "-3.7%",
+        "expectedWinRate": "74.6%",
+        "avgOdds": 1.29,
+        "combinedEv": "-3.9%",
         "picks": [
           {
             "sourceName": "ESPN / DraftKings",
@@ -26220,9 +26214,9 @@
             "match": "Cruzeiro vs. Remo",
             "tournament": "Brasileirão Série A (17:00 CST)",
             "selection": "Cruzeiro Ganador Directo (1)",
-            "odds": 1.32,
-            "confidencePct": 73,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
+            "odds": 1.3,
+            "confidencePct": 74,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -330 → @ 1.30; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 74%; EV -3.5%.",
             "markets": [
               {
                 "type": "ML",
@@ -26235,9 +26229,9 @@
             "oddsEstimated": false,
             "verified": true,
             "stadium": "Estadio Mineirão",
-            "singleReturn": 132.0,
+            "singleReturn": 130.0,
             "safeSelection": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-            "safeOdds": 1.23
+            "safeOdds": 1.22
           },
           {
             "sourceName": "NBA Second Spectrum",
@@ -26272,9 +26266,9 @@
             "match": "Washington Wizards vs. Toronto Raptors",
             "tournament": "NBA 2026-27 (17:00 CST)",
             "selection": "Toronto Raptors Ganador Directo (Moneyline)",
-            "odds": 1.31,
-            "confidencePct": 73,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Washington Wizards — vs Toronto Raptors —; Predictor Oficial ESPN: Washington Wizards 35.0% vs Toronto Raptors 65.0%; Últimos 5: Washington Wizards (467 anotados / 463 recibidos pts) vs Toronto Raptors (642 anotados / 547 recibidos); prob. modelo 73%; EV -4.1%.",
+            "odds": 1.29,
+            "confidencePct": 74,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Washington Wizards — vs Toronto Raptors —; Predictor Oficial ESPN: Washington Wizards 35.0% vs Toronto Raptors 65.0%; Últimos 5: Washington Wizards (467 anotados / 463 recibidos pts) vs Toronto Raptors (642 anotados / 547 recibidos); prob. modelo 74%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
@@ -26287,23 +26281,23 @@
             "oddsEstimated": false,
             "verified": true,
             "stadium": "Capital One Arena",
-            "singleReturn": 131.0,
+            "singleReturn": 129.0,
             "safeSelection": "Toronto Raptors Ganador Directo (Moneyline)",
-            "safeOdds": 1.31
+            "safeOdds": 1.29
           }
         ],
         "strategies": {
           "modo_a_simples": {
             "id": "STRATEGY-HYBRID-A",
             "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
-            "modeShort": "Modo A: Simples Híbridas (74.1% Win Rate)",
+            "modeShort": "Modo A: Simples Híbridas (74.6% Win Rate)",
             "badge": "MÁXIMO WIN RATE HÍBRIDO",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
             "tagColor": "purple",
             "description": "3 Selecciones multideporte de élite para el Viernes 23 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
-            "avgOdds": 1.3,
-            "expectedWinRate": "74.1%",
-            "combinedEv": "-3.7%",
+            "avgOdds": 1.29,
+            "expectedWinRate": "74.6%",
+            "combinedEv": "-3.9%",
             "recommendedStake": "1.0% por selección (Flat Staking)",
             "riskLevel": "MÍNIMO",
             "picks": [
@@ -26314,9 +26308,9 @@
                 "match": "Cruzeiro vs. Remo",
                 "tournament": "Brasileirão Série A (17:00 CST)",
                 "selection": "Cruzeiro Ganador Directo (1)",
-                "odds": 1.32,
-                "confidencePct": 73,
-                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
+                "odds": 1.3,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -330 → @ 1.30; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 74%; EV -3.5%.",
                 "markets": [
                   {
                     "type": "ML",
@@ -26329,9 +26323,9 @@
                 "oddsEstimated": false,
                 "verified": true,
                 "stadium": "Estadio Mineirão",
-                "singleReturn": 132.0,
+                "singleReturn": 130.0,
                 "safeSelection": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-                "safeOdds": 1.23
+                "safeOdds": 1.22
               },
               {
                 "sourceName": "NBA Second Spectrum",
@@ -26366,9 +26360,9 @@
                 "match": "Washington Wizards vs. Toronto Raptors",
                 "tournament": "NBA 2026-27 (17:00 CST)",
                 "selection": "Toronto Raptors Ganador Directo (Moneyline)",
-                "odds": 1.31,
-                "confidencePct": 73,
-                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Washington Wizards — vs Toronto Raptors —; Predictor Oficial ESPN: Washington Wizards 35.0% vs Toronto Raptors 65.0%; Últimos 5: Washington Wizards (467 anotados / 463 recibidos pts) vs Toronto Raptors (642 anotados / 547 recibidos); prob. modelo 73%; EV -4.1%.",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Washington Wizards — vs Toronto Raptors —; Predictor Oficial ESPN: Washington Wizards 35.0% vs Toronto Raptors 65.0%; Últimos 5: Washington Wizards (467 anotados / 463 recibidos pts) vs Toronto Raptors (642 anotados / 547 recibidos); prob. modelo 74%; EV -4.1%.",
                 "markets": [
                   {
                     "type": "ML",
@@ -26381,9 +26375,9 @@
                 "oddsEstimated": false,
                 "verified": true,
                 "stadium": "Capital One Arena",
-                "singleReturn": 131.0,
+                "singleReturn": 129.0,
                 "safeSelection": "Toronto Raptors Ganador Directo (Moneyline)",
-                "safeOdds": 1.31
+                "safeOdds": 1.29
               }
             ],
             "real_life_example": {
@@ -26398,7 +26392,7 @@
                   {
                     "match": "Cruzeiro vs. Remo",
                     "min_result": "Cruzeiro Ganador Directo (1)",
-                    "explanation": "Cobras $132.00."
+                    "explanation": "Cobras $130.00."
                   },
                   {
                     "match": "Los Angeles Lakers vs. LA Clippers",
@@ -26408,14 +26402,13 @@
                   {
                     "match": "Washington Wizards vs. Toronto Raptors",
                     "min_result": "Toronto Raptors Ganador Directo (Moneyline)",
-                    "explanation": "Cobras $131.00."
+                    "explanation": "Cobras $129.00."
                   }
                 ],
-                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $390.00."
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $386.00."
               },
-              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (23 OCTUBRE)\n1. Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.32\n2. Los Angeles Lakers vs. LA Clippers: Los Angeles Lakers Ganador Directo (Moneyline) @ 1.27\n3. Washington Wizards vs. Toronto Raptors: Toronto Raptors Ganador Directo (Moneyline) @ 1.31"
-            },
-            "status": "LOST"
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (23 OCTUBRE)\n1. Cruzeiro vs. Remo: Cruzeiro Ganador Directo (1) @ 1.30\n2. Los Angeles Lakers vs. LA Clippers: Los Angeles Lakers Ganador Directo (Moneyline) @ 1.27\n3. Washington Wizards vs. Toronto Raptors: Toronto Raptors Ganador Directo (Moneyline) @ 1.29"
+            }
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -26426,8 +26419,8 @@
             "tagColor": "cyan",
             "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
             "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-            "expectedWinRate": "83.4%",
-            "combinedEv": "-8.0%",
+            "expectedWinRate": "84.0%",
+            "combinedEv": "-8.7%",
             "recommendedStake": "$25 por combinación ($100 total)",
             "riskLevel": "BAJO",
             "picks": [
@@ -26438,9 +26431,9 @@
                 "match": "Cruzeiro vs. Remo",
                 "tournament": "Brasileirão Série A (17:00 CST)",
                 "selection": "Cruzeiro Ganador Directo (1)",
-                "odds": 1.32,
-                "confidencePct": 73,
-                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -310 → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 73%; EV -3.1%.",
+                "odds": 1.3,
+                "confidencePct": 74,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -330 → @ 1.30; prob. de mercado sin margen 72%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 74%; EV -3.5%.",
                 "markets": [
                   {
                     "type": "ML",
@@ -26482,9 +26475,9 @@
                 "match": "Washington Wizards vs. Toronto Raptors",
                 "tournament": "NBA 2026-27 (17:00 CST)",
                 "selection": "Toronto Raptors Ganador Directo (Moneyline)",
-                "odds": 1.31,
-                "confidencePct": 73,
-                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Washington Wizards — vs Toronto Raptors —; Predictor Oficial ESPN: Washington Wizards 35.0% vs Toronto Raptors 65.0%; Últimos 5: Washington Wizards (467 anotados / 463 recibidos pts) vs Toronto Raptors (642 anotados / 547 recibidos); prob. modelo 73%; EV -4.1%.",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Washington Wizards — vs Toronto Raptors —; Predictor Oficial ESPN: Washington Wizards 35.0% vs Toronto Raptors 65.0%; Últimos 5: Washington Wizards (467 anotados / 463 recibidos pts) vs Toronto Raptors (642 anotados / 547 recibidos); prob. modelo 74%; EV -4.1%.",
                 "markets": [
                   {
                     "type": "ML",
@@ -26501,23 +26494,23 @@
             "combinations": [
               {
                 "name": "Doble 1 (Cruzeiro + Los Angeles Lakers)",
-                "odds": 1.68,
-                "formula": "1.32 × 1.27"
+                "odds": 1.65,
+                "formula": "1.3 × 1.27"
               },
               {
                 "name": "Doble 2 (Cruzeiro + Washington Wizards)",
-                "odds": 1.73,
-                "formula": "1.32 × 1.31"
+                "odds": 1.68,
+                "formula": "1.3 × 1.29"
               },
               {
                 "name": "Doble 3 (Los Angeles Lakers + Washington Wizards)",
-                "odds": 1.66,
-                "formula": "1.27 × 1.31"
+                "odds": 1.64,
+                "formula": "1.27 × 1.29"
               },
               {
                 "name": "Triple (Pleno Multideporte)",
-                "odds": 2.2,
-                "formula": "1.32 × 1.27 × 1.31"
+                "odds": 2.13,
+                "formula": "1.3 × 1.27 × 1.29"
               }
             ],
             "real_life_example": {
@@ -26532,32 +26525,31 @@
                   {
                     "match": "Escenario 2 de 3 (Cruzeiro + Los Angeles Lakers)",
                     "min_result": "Ganan los 2 primeros",
-                    "explanation": "Cobras Doble 1 (@ 1.68x): $42.00 amortizando."
+                    "explanation": "Cobras Doble 1 (@ 1.65x): $41.25 amortizando."
                   },
                   {
                     "match": "Escenario Pleno 3 de 3",
                     "min_result": "Cumplen los 3",
-                    "explanation": "Cobras las 3 Dobles + Triple: $181.75."
+                    "explanation": "Cobras las 3 Dobles + Triple: $177.50."
                   }
                 ],
-                "payout_example": "Con $100 cobras hasta $181.75 si aciertan los 3, o amortizas si 1 falla."
+                "payout_example": "Con $100 cobras hasta $177.50 si aciertan los 3, o amortizas si 1 falla."
               },
-              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (23 OCTUBRE)\n• Pick A: Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.32\n• Pick B: Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27\n• Pick C: Washington Wizards vs. Toronto Raptors (Toronto Raptors Ganador Directo (Moneyline)) @ 1.31"
-            },
-            "status": "LOST"
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (23 OCTUBRE)\n• Pick A: Cruzeiro vs. Remo (Cruzeiro Ganador Directo (1)) @ 1.30\n• Pick B: Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27\n• Pick C: Washington Wizards vs. Toronto Raptors (Toronto Raptors Ganador Directo (Moneyline)) @ 1.29"
+            }
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
-            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.56x)",
-            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.56x)",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.55x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.55x)",
             "badge": "DUPLICADOR HÍBRIDO",
             "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
             "tagColor": "amber",
             "description": "Combinada estricta de solo 2 eventos de altísima certeza: Cruzeiro vs. Remo y Los Angeles Lakers vs. LA Clippers.",
-            "totalOdds": 1.56,
-            "fairOdds": 1.71,
-            "expectedWinRate": "58.4%",
-            "combinedEv": "-8.8%",
+            "totalOdds": 1.55,
+            "fairOdds": 1.7,
+            "expectedWinRate": "58.8%",
+            "combinedEv": "-8.9%",
             "recommendedStake": "2.5% – 3.0% Bankroll",
             "riskLevel": "BAJO",
             "picks": [
@@ -26568,9 +26560,9 @@
                 "match": "Cruzeiro vs. Remo",
                 "tournament": "Brasileirão Série A (17:00 CST)",
                 "selection": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-                "odds": 1.23,
-                "confidencePct": 77,
-                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.23; prob. de mercado sin margen 77%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.56; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 77%; EV -5.1%.",
+                "odds": 1.22,
+                "confidencePct": 78,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 Cruzeiro DLWWL vs Remo DDDLL; goles esperados (Poisson) 3.53; Últimos 5: Cruzeiro (12 anotados / 9 recibidos goles) vs Remo (4 anotados / 6 recibidos); prob. modelo 78%; EV -5.3%.",
                 "markets": [
                   {
                     "type": "DC",
@@ -26588,7 +26580,7 @@
                 "oddsEstimated": true,
                 "verified": true,
                 "stadium": "Estadio Mineirão",
-                "singleReturn": 123.0
+                "singleReturn": 122.0
               },
               {
                 "sourceName": "NBA Second Spectrum",
@@ -26619,7 +26611,7 @@
               "bookie_steps": [
                 "Abre tu casa de apuestas.",
                 "Selecciona: Cruzeiro vs. Remo y Los Angeles Lakers vs. LA Clippers.",
-                "Coloca Parlay / Combinada @ 1.56x."
+                "Coloca Parlay / Combinada @ 1.55x."
               ],
               "winning_scenario": {
                 "title": "¿Cómo se gana con la Doble Banker Híbrida?",
@@ -26627,7 +26619,7 @@
                   {
                     "match": "Cruzeiro vs. Remo",
                     "min_result": "Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-                    "explanation": "Probabilidad modelo 77%."
+                    "explanation": "Probabilidad modelo 78%."
                   },
                   {
                     "match": "Los Angeles Lakers vs. LA Clippers",
@@ -26635,32 +26627,12 @@
                     "explanation": "Probabilidad modelo 76%."
                   }
                 ],
-                "payout_example": "Si ambos cumplen, con $100 cobras $156.00."
+                "payout_example": "Si ambos cumplen, con $100 cobras $155.00."
               },
-              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (23 OCTUBRE)\n1. Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27"
-            },
-            "status": "LOST"
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (23 OCTUBRE)\n1. Cruzeiro vs. Remo (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.22\n2. Los Angeles Lakers vs. LA Clippers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.27"
+            }
           }
-        },
-        "metrics": {
-          "totalModes": 3,
-          "wonModes": 0,
-          "simulatedTotalStake": 500.0,
-          "simulatedTotalReturn": 0.0,
-          "netPnL": -500.0,
-          "roiPct": "-100.0%",
-          "winRate": "0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00",
-          "evaluated": false,
-          "evaluatedAt": "2026-10-23 10:13:47",
-          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
         }
-      },
-      "match_results": {
-        "Cruzeiro vs. Remo": "Scheduled — Cruzeiro Ganador Directo (1) ⏳ | Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳",
-        "VfB Stuttgart vs. Borussia Mönchengladbach": "Scheduled — VfB Stuttgart Ganador Directo (1) ⏳ | VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳",
-        "Go Ahead Eagles vs. Telstar": "Scheduled — Go Ahead Eagles Ganador Directo (1) ⏳",
-        "Los Angeles Lakers vs. LA Clippers": "Scheduled — Los Angeles Lakers Ganador Directo (Moneyline) ⏳",
-        "Washington Wizards vs. Toronto Raptors": "Scheduled — Toronto Raptors Ganador Directo (Moneyline) ⏳"
       }
     },
     "2026-10-24": {
