@@ -761,6 +761,14 @@ def algo_text(c):
         if h_s and a_s:
             extra_parts.append(f"Últimos 5: {c['home']} ({h_s['gf']} anotados / {h_s['ga']} recibidos {unit}) vs {c['away']} ({a_s['gf']} anotados / {a_s['ga']} recibidos)")
 
+    try:
+        import fuentes_extra
+        fx_note, _ = fuentes_extra.describe(c)
+        if fx_note:
+            extra_parts.append(fx_note)
+    except Exception:
+        pass
+
     extra_str = "; " + "; ".join(extra_parts) if extra_parts else ""
     return (f"Modelo Cuantitativo Multifuente: {tag} → @ {c['odds']:.2f}; prob. de mercado sin margen {c.get('pMktSel', c['p']):.0%}; "
             f"forma últimos 5 {c['home']} {c.get('formH', '—')} vs {c['away']} {c.get('formA', '—')}{lam}{extra_str}; "
@@ -799,6 +807,14 @@ def pick_dict(c, i, with_detail=True):
         "oddsEstimated": c["estimated"],
         "verified": True,
     }
+    if c.get("extra"):
+        try:
+            import fuentes_extra
+            _, fx_cmp = fuentes_extra.describe(c)
+            if fx_cmp:
+                d["crossVerification"] = fx_cmp
+        except Exception:
+            pass
     if with_detail:
         d["stadium"] = c["venue"]
         d["singleReturn"] = round(STAKE_A_PER_PICK * c["odds"], 2)
@@ -1225,6 +1241,12 @@ def main():
     if us_cands:
         n_us = len({c["espnEventId"] for c in us_cands})
         print(f"  • Eventos multideporte elegibles (NBA/NFL/MLB): {n_us}")
+
+    try:
+        import fuentes_extra
+        fuentes_extra.enrich(soccer_cands, day, name_score)
+    except Exception as e:
+        print(f"  • Fuentes extra omitidas ({e})")
 
     main_p, safe_p = pick_best(soccer_cands)
     if len(main_p) < 2:
