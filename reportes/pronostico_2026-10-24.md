@@ -1,6 +1,6 @@
 # BLACK ROYAL — Pronóstico Dual 2026-10-24
 
-_Generado 2026-10-23 10:13 CST · Fuente: ESPN API + DraftKings_
+_Generado 2026-10-23 10:44 CST · Fuente: ESPN API + DraftKings_
 
 ## Liquidación de días anteriores
 
@@ -8,12 +8,6 @@ _Generado 2026-10-23 10:13 CST · Fuente: ESPN API + DraftKings_
 - **Cruzeiro vs. Remo**: Scheduled — Cruzeiro Ganador Directo (1) ⏳ | Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳
 - **VfB Stuttgart vs. Borussia Mönchengladbach**: Scheduled — VfB Stuttgart Ganador Directo (1) ⏳ | VfB Stuttgart Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳
 - **Go Ahead Eagles vs. Telstar**: Scheduled — Go Ahead Eagles Ganador Directo (1) ⏳
-- **PnL**: apostado $500.00 → cobrado $0.00 | neto **$-500.00** (-100.0%) | 0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00
-
-### 2026-10-23 — Edición híbrida (PARCIAL: hay partidos pendientes)
-- **Cruzeiro vs. Remo**: Scheduled — Cruzeiro Ganador Directo (1) ⏳ | Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales ⏳
-- **Los Angeles Lakers vs. LA Clippers**: Scheduled — Los Angeles Lakers Ganador Directo (Moneyline) ⏳
-- **Washington Wizards vs. Toronto Raptors**: Scheduled — Toronto Raptors Ganador Directo (Moneyline) ⏳
 - **PnL**: apostado $500.00 → cobrado $0.00 | neto **$-500.00** (-100.0%) | 0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00
 
 

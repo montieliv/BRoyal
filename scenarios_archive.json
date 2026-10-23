@@ -26197,7 +26197,7 @@
         "wonModes": 0,
         "simulatedTotalReturn": 0.0,
         "winRate": "0.0% de selecciones (0/0) | Modo A $0.00 (0/3) + Modo B $0.00 + Modo C $0.00",
-        "evaluatedAt": "2026-10-23 10:13:47",
+        "evaluatedAt": "2026-10-23 10:44:48",
         "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
@@ -26665,7 +26665,7 @@
     },
     "2026-10-24": {
       "date": "2026-10-24",
-      "saved_at": "2026-10-23 10:13:49",
+      "saved_at": "2026-10-23 10:45:04",
       "status": "PENDING_EVALUATION",
       "strategies": {
         "modo_a_simples": {
@@ -26691,7 +26691,7 @@
               "selection": "Atlético Madrid Ganador Directo (1)",
               "odds": 1.29,
               "confidencePct": 78,
-              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.2%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); Odds API: mejor cuota 1.34 (1xBet), promedio 1.27 en 19 casas; consenso sin margen 75%; API-Football: Atlético Madrid 50%/emp 50%/Deportivo 0% — «Winner : Atletico Madrid»; bajas Atlético Madrid: 3 (J. Cardoso, Koke, C. Romero); bajas Deportivo: 5 (P. Aubameyang, N. Carrillo, M. Casado…); prob. modelo 78%; EV +0.2%.",
               "markets": [
                 {
                   "type": "ML",
@@ -26703,6 +26703,39 @@
               "kickoffLocal": "2026-10-24 13:00",
               "oddsEstimated": false,
               "verified": true,
+              "crossVerification": {
+                "multicasa": {
+                  "best": 1.34,
+                  "book": "1xBet",
+                  "avg": 1.27,
+                  "n": 19,
+                  "consensusP": 0.746
+                },
+                "apiFootball": {
+                  "fixtureId": 1570425,
+                  "percent": {
+                    "home": 0.5,
+                    "draw": 0.5,
+                    "away": 0.0
+                  },
+                  "advice": "Winner : Atletico Madrid",
+                  "winner": "Atletico Madrid",
+                  "injuries": {
+                    "home": [
+                      "J. Cardoso",
+                      "Koke",
+                      "C. Romero"
+                    ],
+                    "away": [
+                      "P. Aubameyang",
+                      "N. Carrillo",
+                      "M. Casado",
+                      "Z. Eddahchouri",
+                      "B. Ede"
+                    ]
+                  }
+                }
+              },
               "stadium": "Riyadh Air Metropolitano",
               "singleReturn": 129.0
             },
@@ -26715,7 +26748,7 @@
               "selection": "Wolverhampton Wanderers Ganador Directo (1)",
               "odds": 1.37,
               "confidencePct": 72,
-              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); prob. modelo 72%; EV -1.1%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); Odds API: mejor cuota 1.42 (Betfair), promedio 1.35 en 21 casas; consenso sin margen 69%; prob. modelo 72%; EV -1.1%.",
               "markets": [
                 {
                   "type": "ML",
@@ -26727,6 +26760,15 @@
               "kickoffLocal": "2026-10-24 08:00",
               "oddsEstimated": false,
               "verified": true,
+              "crossVerification": {
+                "multicasa": {
+                  "best": 1.42,
+                  "book": "Betfair",
+                  "avg": 1.35,
+                  "n": 21,
+                  "consensusP": 0.689
+                }
+              },
               "stadium": "Molineux Stadium",
               "singleReturn": 137.0
             },
@@ -26808,7 +26850,7 @@
               "selection": "Atlético Madrid Ganador Directo (1)",
               "odds": 1.29,
               "confidencePct": 78,
-              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.2%.",
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); Odds API: mejor cuota 1.34 (1xBet), promedio 1.27 en 19 casas; consenso sin margen 75%; API-Football: Atlético Madrid 50%/emp 50%/Deportivo 0% — «Winner : Atletico Madrid»; bajas Atlético Madrid: 3 (J. Cardoso, Koke, C. Romero); bajas Deportivo: 5 (P. Aubameyang, N. Carrillo, M. Casado…); prob. modelo 78%; EV +0.2%.",
               "markets": [
                 {
                   "type": "ML",
@@ -26819,7 +26861,40 @@
               "espnLeague": "esp.1",
               "kickoffLocal": "2026-10-24 13:00",
               "oddsEstimated": false,
-              "verified": true
+              "verified": true,
+              "crossVerification": {
+                "multicasa": {
+                  "best": 1.34,
+                  "book": "1xBet",
+                  "avg": 1.27,
+                  "n": 19,
+                  "consensusP": 0.746
+                },
+                "apiFootball": {
+                  "fixtureId": 1570425,
+                  "percent": {
+                    "home": 0.5,
+                    "draw": 0.5,
+                    "away": 0.0
+                  },
+                  "advice": "Winner : Atletico Madrid",
+                  "winner": "Atletico Madrid",
+                  "injuries": {
+                    "home": [
+                      "J. Cardoso",
+                      "Koke",
+                      "C. Romero"
+                    ],
+                    "away": [
+                      "P. Aubameyang",
+                      "N. Carrillo",
+                      "M. Casado",
+                      "Z. Eddahchouri",
+                      "B. Ede"
+                    ]
+                  }
+                }
+              }
             },
             {
               "sourceName": "ESPN / DraftKings",
@@ -26830,7 +26905,7 @@
               "selection": "Wolverhampton Wanderers Ganador Directo (1)",
               "odds": 1.37,
               "confidencePct": 72,
-              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); prob. modelo 72%; EV -1.1%.",
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); Odds API: mejor cuota 1.42 (Betfair), promedio 1.35 en 21 casas; consenso sin margen 69%; prob. modelo 72%; EV -1.1%.",
               "markets": [
                 {
                   "type": "ML",
@@ -26841,7 +26916,16 @@
               "espnLeague": "eng.2",
               "kickoffLocal": "2026-10-24 08:00",
               "oddsEstimated": false,
-              "verified": true
+              "verified": true,
+              "crossVerification": {
+                "multicasa": {
+                  "best": 1.42,
+                  "book": "Betfair",
+                  "avg": 1.35,
+                  "n": 21,
+                  "consensusP": 0.689
+                }
+              }
             },
             {
               "sourceName": "ESPN / DraftKings",
@@ -26942,7 +27026,7 @@
               "selection": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
               "odds": 1.26,
               "confidencePct": 76,
-              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 76%; EV -4.6%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); 1X real 1.08 (1xBet); API-Football: Atlético Madrid 50%/emp 50%/Deportivo 0% — «Winner : Atletico Madrid»; bajas Atlético Madrid: 3 (J. Cardoso, Koke, C. Romero); bajas Deportivo: 5 (P. Aubameyang, N. Carrillo, M. Casado…); prob. modelo 76%; EV -4.6%.",
               "markets": [
                 {
                   "type": "DC",
@@ -26959,6 +27043,39 @@
               "kickoffLocal": "2026-10-24 13:00",
               "oddsEstimated": true,
               "verified": true,
+              "crossVerification": {
+                "dobleOportunidadReal": {
+                  "best": 1.08,
+                  "book": "1xBet",
+                  "avg": 1.07,
+                  "n": 5,
+                  "consensusP": null
+                },
+                "apiFootball": {
+                  "fixtureId": 1570425,
+                  "percent": {
+                    "home": 0.5,
+                    "draw": 0.5,
+                    "away": 0.0
+                  },
+                  "advice": "Winner : Atletico Madrid",
+                  "winner": "Atletico Madrid",
+                  "injuries": {
+                    "home": [
+                      "J. Cardoso",
+                      "Koke",
+                      "C. Romero"
+                    ],
+                    "away": [
+                      "P. Aubameyang",
+                      "N. Carrillo",
+                      "M. Casado",
+                      "Z. Eddahchouri",
+                      "B. Ede"
+                    ]
+                  }
+                }
+              },
               "stadium": "Riyadh Air Metropolitano",
               "singleReturn": 126.0
             },
@@ -26971,7 +27088,7 @@
               "selection": "Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales",
               "odds": 1.33,
               "confidencePct": 72,
-              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); prob. modelo 72%; EV -4.3%.",
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); 1X real 1.10 (Pinnacle); prob. modelo 72%; EV -4.3%.",
               "markets": [
                 {
                   "type": "DC",
@@ -26988,6 +27105,15 @@
               "kickoffLocal": "2026-10-24 08:00",
               "oddsEstimated": true,
               "verified": true,
+              "crossVerification": {
+                "dobleOportunidadReal": {
+                  "best": 1.1,
+                  "book": "Pinnacle",
+                  "avg": 1.07,
+                  "n": 5,
+                  "consensusP": null
+                }
+              },
               "stadium": "Molineux Stadium",
               "singleReturn": 133.0
             }
