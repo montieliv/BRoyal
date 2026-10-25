@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24 11:04:30",
+  "generated_at": "2026-10-25 11:18:41",
   "hybrid_mode": true,
   "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, Basketball)",
   "active_sports": [
@@ -7,8 +7,8 @@
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-10-24",
-    "verified_at": "2026-10-24 11:04:30",
+    "verified_date": "2026-10-25",
+    "verified_at": "2026-10-25 11:18:41",
     "verification_status": "PARTIDOS Y CUOTAS REALES (ESPN API / DraftKings)",
     "auditor": "Black Royal — pronostico_diario.py",
     "total_matches_verified": 3
@@ -17,14 +17,14 @@
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
       "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-      "modeShort": "Modo A: Simples Fútbol (71.3% prob. media)",
+      "modeShort": "Modo A: Simples Fútbol (65.3% prob. media)",
       "badge": "MAYOR PROBABILIDAD",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 selecciones con cuotas reales DraftKings para el Sábado 24 de Octubre (Brasileirão Série A, LaLiga, Liga BetPlay (Colombia)). Cada acierto cobra por separado.",
-      "avgOdds": 1.39,
-      "expectedWinRate": "71.3%",
-      "combinedEv": "-1.7%",
+      "description": "3 selecciones con cuotas reales DraftKings para el Domingo 25 de Octubre (Jupiler Pro League, Liga MX, Liga Profesional Argentina). Cada acierto cobra por separado.",
+      "avgOdds": 1.52,
+      "expectedWinRate": "65.3%",
+      "combinedEv": "-1.5%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
       "riskLevel": "BAJO",
       "picks": [
@@ -32,73 +32,73 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Madrid vs. Deportivo",
-          "tournament": "LaLiga (13:00 CST)",
-          "selection": "Atlético Madrid Ganador Directo (1)",
-          "odds": 1.29,
-          "confidencePct": 78,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.9%.",
+          "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+          "tournament": "Jupiler Pro League (12:15 CST)",
+          "selection": "Union St.-Gilloise Ganador Directo (1)",
+          "odds": 1.34,
+          "confidencePct": 73,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -290 → @ 1.34; prob. de mercado sin margen 70%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 73%; EV -1.8%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401882834",
-          "espnLeague": "esp.1",
-          "kickoffLocal": "2026-10-24 13:00",
+          "espnEventId": "401878961",
+          "espnLeague": "bel.1",
+          "kickoffLocal": "2026-10-25 12:15",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Riyadh Air Metropolitano",
-          "singleReturn": 129.0
+          "stadium": "Stade Joseph Marien",
+          "singleReturn": 134.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Once Caldas vs. Deportivo Pereira",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
-          "selection": "Once Caldas Ganador Directo (1)",
-          "odds": 1.33,
-          "confidencePct": 71,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -300 → @ 1.33; prob. de mercado sin margen 69%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.91; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 71%; EV -5.0%.",
+          "match": "Barracas Central vs. Estudiantes de Río Cuarto",
+          "tournament": "Liga Profesional Argentina (18:30 CST)",
+          "selection": "Barracas Central Ganador Directo (1)",
+          "odds": 1.61,
+          "confidencePct": 62,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -165 → @ 1.61; prob. de mercado sin margen 59%; forma últimos 5 Barracas Central DWWLD vs Estudiantes de Río Cuarto DLLLL; goles esperados (Poisson) 1.96; Últimos 5: Barracas Central (7 anotados / 5 recibidos goles) vs Estudiantes de Río Cuarto (5 anotados / 8 recibidos); prob. modelo 62%; EV -1.0%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401877895",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-10-24 19:15",
+          "espnEventId": "401841640",
+          "espnLeague": "arg.1",
+          "kickoffLocal": "2026-10-25 18:30",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Palogrande",
-          "singleReturn": 133.0
+          "stadium": "Estadio Claudio Chiqui Tapia",
+          "singleReturn": 161.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Palmeiras vs. Red Bull Bragantino",
-          "tournament": "Brasileirão Série A (15:30 CST)",
-          "selection": "Palmeiras Ganador Directo (1)",
-          "odds": 1.54,
-          "confidencePct": 64,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 61%; forma últimos 5 Palmeiras DWWWW vs Red Bull Bragantino DWDLL; goles esperados (Poisson) 2.91; Últimos 5: Palmeiras (9 anotados / 3 recibidos goles) vs Red Bull Bragantino (7 anotados / 7 recibidos); prob. modelo 64%; EV -1.0%.",
+          "match": "América vs. Pachuca",
+          "tournament": "Liga MX (19:05 CST)",
+          "selection": "América Ganador Directo (1)",
+          "odds": 1.61,
+          "confidencePct": 61,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -165 → @ 1.61; prob. de mercado sin margen 59%; forma últimos 5 América DWDWD vs Pachuca DLDLD; goles esperados (Poisson) 3.04; Últimos 5: América (15 anotados / 10 recibidos goles) vs Pachuca (7 anotados / 10 recibidos); prob. modelo 61%; EV -1.7%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401841283",
-          "espnLeague": "bra.1",
-          "kickoffLocal": "2026-10-24 15:30",
+          "espnEventId": "401876922",
+          "espnLeague": "mex.1",
+          "kickoffLocal": "2026-10-25 19:05",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Arena Barueri",
-          "singleReturn": 154.0
+          "stadium": "Estadio Banorte",
+          "singleReturn": 161.0
         }
       ],
       "real_life_example": {
@@ -111,24 +111,24 @@
           "title": "¿Cómo se cobra con las Simples?",
           "match_examples": [
             {
-              "match": "Atlético Madrid vs. Deportivo",
-              "min_result": "Atlético Madrid Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
+              "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+              "min_result": "Union St.-Gilloise Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $134.00 (+$34.00 neto)."
             },
             {
-              "match": "Once Caldas vs. Deportivo Pereira",
-              "min_result": "Once Caldas Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $133.00 (+$33.00 neto)."
+              "match": "Barracas Central vs. Estudiantes de Río Cuarto",
+              "min_result": "Barracas Central Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $161.00 (+$61.00 neto)."
             },
             {
-              "match": "Palmeiras vs. Red Bull Bragantino",
-              "min_result": "Palmeiras Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $154.00 (+$54.00 neto)."
+              "match": "América vs. Pachuca",
+              "min_result": "América Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $161.00 (+$61.00 neto)."
             }
           ],
-          "payout_example": "Con $100 por selección: los 3 aciertos pagan $416.00."
+          "payout_example": "Con $100 por selección: los 3 aciertos pagan $456.00."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (24 OCTUBRE)\n1. ⚽ Atlético Madrid vs. Deportivo: Atlético Madrid Ganador Directo (1) @ 1.29\n2. ⚽ Once Caldas vs. Deportivo Pereira: Once Caldas Ganador Directo (1) @ 1.33\n3. ⚽ Palmeiras vs. Red Bull Bragantino: Palmeiras Ganador Directo (1) @ 1.54"
+        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (25 OCTUBRE)\n1. ⚽ Union St.-Gilloise vs. Cercle Brugge KSV: Union St.-Gilloise Ganador Directo (1) @ 1.34\n2. ⚽ Barracas Central vs. Estudiantes de Río Cuarto: Barracas Central Ganador Directo (1) @ 1.61\n3. ⚽ América vs. Pachuca: América Ganador Directo (1) @ 1.61"
       }
     },
     "modo_b_sistema": {
@@ -140,8 +140,8 @@
       "tagColor": "cyan",
       "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "80.2%",
-      "combinedEv": "-3.7%",
+      "expectedWinRate": "72.3%",
+      "combinedEv": "-3.3%",
       "recommendedStake": "$25 por combinación ($100 total)",
       "riskLevel": "MEDIO",
       "picks": [
@@ -149,21 +149,21 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Madrid vs. Deportivo",
-          "tournament": "LaLiga (13:00 CST)",
-          "selection": "Atlético Madrid Ganador Directo (1)",
-          "odds": 1.29,
-          "confidencePct": 78,
-          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.9%.",
+          "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+          "tournament": "Jupiler Pro League (12:15 CST)",
+          "selection": "Union St.-Gilloise Ganador Directo (1)",
+          "odds": 1.34,
+          "confidencePct": 73,
+          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -290 → @ 1.34; prob. de mercado sin margen 70%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 73%; EV -1.8%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401882834",
-          "espnLeague": "esp.1",
-          "kickoffLocal": "2026-10-24 13:00",
+          "espnEventId": "401878961",
+          "espnLeague": "bel.1",
+          "kickoffLocal": "2026-10-25 12:15",
           "oddsEstimated": false,
           "verified": true
         },
@@ -171,21 +171,21 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Once Caldas vs. Deportivo Pereira",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
-          "selection": "Once Caldas Ganador Directo (1)",
-          "odds": 1.33,
-          "confidencePct": 71,
-          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -300 → @ 1.33; prob. de mercado sin margen 69%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.91; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 71%; EV -5.0%.",
+          "match": "Barracas Central vs. Estudiantes de Río Cuarto",
+          "tournament": "Liga Profesional Argentina (18:30 CST)",
+          "selection": "Barracas Central Ganador Directo (1)",
+          "odds": 1.61,
+          "confidencePct": 62,
+          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -165 → @ 1.61; prob. de mercado sin margen 59%; forma últimos 5 Barracas Central DWWLD vs Estudiantes de Río Cuarto DLLLL; goles esperados (Poisson) 1.96; Últimos 5: Barracas Central (7 anotados / 5 recibidos goles) vs Estudiantes de Río Cuarto (5 anotados / 8 recibidos); prob. modelo 62%; EV -1.0%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401877895",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-10-24 19:15",
+          "espnEventId": "401841640",
+          "espnLeague": "arg.1",
+          "kickoffLocal": "2026-10-25 18:30",
           "oddsEstimated": false,
           "verified": true
         },
@@ -193,45 +193,45 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Palmeiras vs. Red Bull Bragantino",
-          "tournament": "Brasileirão Série A (15:30 CST)",
-          "selection": "Palmeiras Ganador Directo (1)",
-          "odds": 1.54,
-          "confidencePct": 64,
-          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 61%; forma últimos 5 Palmeiras DWWWW vs Red Bull Bragantino DWDLL; goles esperados (Poisson) 2.91; Últimos 5: Palmeiras (9 anotados / 3 recibidos goles) vs Red Bull Bragantino (7 anotados / 7 recibidos); prob. modelo 64%; EV -1.0%.",
+          "match": "América vs. Pachuca",
+          "tournament": "Liga MX (19:05 CST)",
+          "selection": "América Ganador Directo (1)",
+          "odds": 1.61,
+          "confidencePct": 61,
+          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -165 → @ 1.61; prob. de mercado sin margen 59%; forma últimos 5 América DWDWD vs Pachuca DLDLD; goles esperados (Poisson) 3.04; Últimos 5: América (15 anotados / 10 recibidos goles) vs Pachuca (7 anotados / 10 recibidos); prob. modelo 61%; EV -1.7%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401841283",
-          "espnLeague": "bra.1",
-          "kickoffLocal": "2026-10-24 15:30",
+          "espnEventId": "401876922",
+          "espnLeague": "mex.1",
+          "kickoffLocal": "2026-10-25 19:05",
           "oddsEstimated": false,
           "verified": true
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Atlético Madrid + ⚽ Once Caldas)",
-          "odds": 1.72,
-          "formula": "1.29 × 1.33"
+          "name": "Doble 1 (⚽ Union St.-Gilloise + ⚽ Barracas Central)",
+          "odds": 2.16,
+          "formula": "1.34 × 1.61"
         },
         {
-          "name": "Doble 2 (⚽ Atlético Madrid + ⚽ Palmeiras)",
-          "odds": 1.99,
-          "formula": "1.29 × 1.54"
+          "name": "Doble 2 (⚽ Union St.-Gilloise + ⚽ América)",
+          "odds": 2.16,
+          "formula": "1.34 × 1.61"
         },
         {
-          "name": "Doble 3 (⚽ Once Caldas + ⚽ Palmeiras)",
-          "odds": 2.05,
-          "formula": "1.33 × 1.54"
+          "name": "Doble 3 (⚽ Barracas Central + ⚽ América)",
+          "odds": 2.59,
+          "formula": "1.61 × 1.61"
         },
         {
           "name": "Triple (Pleno 3/3)",
-          "odds": 2.64,
-          "formula": "1.29 × 1.33 × 1.54"
+          "odds": 3.47,
+          "formula": "1.34 × 1.61 × 1.61"
         }
       ],
       "real_life_example": {
@@ -244,38 +244,38 @@
           "title": "¿Cómo se cobra con el Sistema 2/3?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (Atlético Madrid + Once Caldas)",
+              "match": "Escenario 2 de 3 (Union St.-Gilloise + Barracas Central)",
               "min_result": "Fallan solo el tercero",
-              "explanation": "Cobras la Doble 1: $43.00."
+              "explanation": "Cobras la Doble 1: $54.00."
             },
             {
-              "match": "Escenario 2 de 3 (Atlético Madrid + Palmeiras)",
+              "match": "Escenario 2 de 3 (Union St.-Gilloise + América)",
               "min_result": "Falla solo el segundo",
-              "explanation": "Cobras la Doble 2: $49.75."
+              "explanation": "Cobras la Doble 2: $54.00."
             },
             {
               "match": "Escenario Pleno 3 de 3",
               "min_result": "Aciertan los 3",
-              "explanation": "Cobras $210.00."
+              "explanation": "Cobras $259.50."
             }
           ],
-          "payout_example": "Con $100 cobras hasta $210.00 si aciertan los 3."
+          "payout_example": "Con $100 cobras hasta $259.50 si aciertan los 3."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (24 OCTUBRE)\n• Pick A: ⚽ Atlético Madrid vs. Deportivo (Atlético Madrid Ganador Directo (1)) @ 1.29\n• Pick B: ⚽ Once Caldas vs. Deportivo Pereira (Once Caldas Ganador Directo (1)) @ 1.33\n• Pick C: ⚽ Palmeiras vs. Red Bull Bragantino (Palmeiras Ganador Directo (1)) @ 1.54"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (25 OCTUBRE)\n• Pick A: ⚽ Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Ganador Directo (1)) @ 1.34\n• Pick B: ⚽ Barracas Central vs. Estudiantes de Río Cuarto (Barracas Central Ganador Directo (1)) @ 1.61\n• Pick C: ⚽ América vs. Pachuca (América Ganador Directo (1)) @ 1.61"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (@ 1.64x)",
+      "modeShort": "Modo C: Doble Banker (@ 1.42x)",
       "badge": "BAJA VOLATILIDAD",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada de 2 piernas de alta probabilidad (Atlético Madrid vs. Deportivo y Once Caldas vs. Deportivo Pereira).",
-      "totalOdds": 1.64,
-      "fairOdds": 1.85,
-      "expectedWinRate": "53.9%",
-      "combinedEv": "-11.5%",
+      "description": "Combinada de 2 piernas de alta probabilidad (Union St.-Gilloise vs. Cercle Brugge KSV y Barracas Central vs. Estudiantes de Río Cuarto).",
+      "totalOdds": 1.42,
+      "fairOdds": 1.54,
+      "expectedWinRate": "64.9%",
+      "combinedEv": "-7.8%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
       "picks": [
@@ -283,12 +283,12 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Madrid vs. Deportivo",
-          "tournament": "LaLiga (13:00 CST)",
-          "selection": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.25,
-          "confidencePct": 76,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.25; prob. de mercado sin margen 76%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 76%; EV -4.5%.",
+          "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+          "tournament": "Jupiler Pro League (12:15 CST)",
+          "selection": "Union St.-Gilloise Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.28,
+          "confidencePct": 74,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.28; prob. de mercado sin margen 74%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 74%; EV -5.8%.",
           "markets": [
             {
               "type": "DC",
@@ -300,67 +300,62 @@
               "line": 1.5
             }
           ],
-          "espnEventId": "401882834",
-          "espnLeague": "esp.1",
-          "kickoffLocal": "2026-10-24 13:00",
+          "espnEventId": "401878961",
+          "espnLeague": "bel.1",
+          "kickoffLocal": "2026-10-25 12:15",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Riyadh Air Metropolitano",
-          "singleReturn": 125.0
+          "stadium": "Stade Joseph Marien",
+          "singleReturn": 128.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Once Caldas vs. Deportivo Pereira",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
-          "selection": "Once Caldas Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.31,
-          "confidencePct": 71,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.31; prob. de mercado sin margen 71%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.91; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 71%; EV -7.5%.",
+          "match": "Barracas Central vs. Estudiantes de Río Cuarto",
+          "tournament": "Liga Profesional Argentina (18:30 CST)",
+          "selection": "Barracas Central Doble Oportunidad (1X)",
+          "odds": 1.11,
+          "confidencePct": 88,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.11; prob. de mercado sin margen 85%; forma últimos 5 Barracas Central DWWLD vs Estudiantes de Río Cuarto DLLLL; goles esperados (Poisson) 1.96; Últimos 5: Barracas Central (7 anotados / 5 recibidos goles) vs Estudiantes de Río Cuarto (5 anotados / 8 recibidos); prob. modelo 88%; EV -2.4%.",
           "markets": [
             {
               "type": "DC",
               "side": "1X"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
             }
           ],
-          "espnEventId": "401877895",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-10-24 19:15",
+          "espnEventId": "401841640",
+          "espnLeague": "arg.1",
+          "kickoffLocal": "2026-10-25 18:30",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Palogrande",
-          "singleReturn": 131.0
+          "stadium": "Estadio Claudio Chiqui Tapia",
+          "singleReturn": 111.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona: Atlético Madrid vs. Deportivo (Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Once Caldas vs. Deportivo Pereira (Once Caldas Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
-          "Coloca una Combinada / Parlay. Cuota aprox.: 1.64x (verifica la cuota real en tu casa)."
+          "Selecciona: Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Barracas Central vs. Estudiantes de Río Cuarto (Barracas Central Doble Oportunidad (1X)).",
+          "Coloca una Combinada / Parlay. Cuota aprox.: 1.42x (verifica la cuota real en tu casa)."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana con la Doble Banker?",
           "match_examples": [
             {
-              "match": "Atlético Madrid vs. Deportivo",
-              "min_result": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 76%."
+              "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+              "min_result": "Union St.-Gilloise Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "explanation": "Probabilidad modelo 74%."
             },
             {
-              "match": "Once Caldas vs. Deportivo Pereira",
-              "min_result": "Once Caldas Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 71%."
+              "match": "Barracas Central vs. Estudiantes de Río Cuarto",
+              "min_result": "Barracas Central Doble Oportunidad (1X)",
+              "explanation": "Probabilidad modelo 88%."
             }
           ],
-          "payout_example": "Si ambas se cumplen, con $100 cobras $164.00 (+$64.00 neto)."
+          "payout_example": "Si ambas se cumplen, con $100 cobras $142.00 (+$42.00 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (24 OCTUBRE)\n1. ⚽ Atlético Madrid vs. Deportivo (Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.25\n2. ⚽ Once Caldas vs. Deportivo Pereira (Once Caldas Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.31"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (25 OCTUBRE)\n1. ⚽ Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.28\n2. ⚽ Barracas Central vs. Estudiantes de Río Cuarto (Barracas Central Doble Oportunidad (1X)) @ 1.11"
       }
     }
   },
@@ -368,106 +363,106 @@
   "hybrid_edition": {
     "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
     "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
-    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Atlético Madrid vs. Deportivo con Phoenix Suns vs. Golden State Warriors y Charlotte Hornets vs. Miami Heat.",
+    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Union St.-Gilloise vs. Cercle Brugge KSV con New York Knicks vs. Orlando Magic y Brooklyn Nets vs. Indiana Pacers.",
     "active_sports": [
       "Football",
       "Basketball"
     ],
-    "expectedWinRate": "70.2%",
-    "avgOdds": 1.42,
-    "combinedEv": "-2.4%",
+    "expectedWinRate": "71.5%",
+    "avgOdds": 1.35,
+    "combinedEv": "-3.3%",
     "picks": [
       {
         "sourceName": "ESPN / DraftKings",
         "sport": "Football",
         "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "match": "Atlético Madrid vs. Deportivo",
-        "tournament": "LaLiga (13:00 CST)",
-        "selection": "Atlético Madrid Ganador Directo (1)",
-        "odds": 1.29,
-        "confidencePct": 78,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.9%.",
+        "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+        "tournament": "Jupiler Pro League (12:15 CST)",
+        "selection": "Union St.-Gilloise Ganador Directo (1)",
+        "odds": 1.34,
+        "confidencePct": 73,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -290 → @ 1.34; prob. de mercado sin margen 70%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 73%; EV -1.8%.",
         "markets": [
           {
             "type": "ML",
             "side": "home"
           }
         ],
-        "espnEventId": "401882834",
-        "espnLeague": "esp.1",
-        "kickoffLocal": "2026-10-24 13:00",
+        "espnEventId": "401878961",
+        "espnLeague": "bel.1",
+        "kickoffLocal": "2026-10-25 12:15",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Riyadh Air Metropolitano",
-        "singleReturn": 129.0,
-        "safeSelection": "Atlético Madrid Ganador Directo (1)",
-        "safeOdds": 1.29
+        "stadium": "Stade Joseph Marien",
+        "singleReturn": 134.0,
+        "safeSelection": "Menos de 4.5 Goles Totales (Under 4.5)",
+        "safeOdds": 1.22
       },
       {
         "sourceName": "NBA Second Spectrum",
         "sport": "Basketball",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Phoenix Suns vs. Golden State Warriors",
-        "tournament": "NBA 2026-27 (20:00 CST)",
-        "selection": "Phoenix Suns Ganador Directo (Moneyline)",
-        "odds": 1.27,
-        "confidencePct": 76,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Phoenix Suns — vs Golden State Warriors —; Predictor Oficial ESPN: Phoenix Suns 67.8% vs Golden State Warriors 32.2%; Últimos 5: Phoenix Suns (521 anotados / 588 recibidos pts) vs Golden State Warriors (553 anotados / 551 recibidos); prob. modelo 76%; EV -4.1%.",
+        "match": "New York Knicks vs. Orlando Magic",
+        "tournament": "NBA 2026-27 (17:00 CST)",
+        "selection": "New York Knicks Ganador Directo (Moneyline)",
+        "odds": 1.35,
+        "confidencePct": 71,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 New York Knicks — vs Orlando Magic —; Predictor Oficial ESPN: New York Knicks 70.1% vs Orlando Magic 29.9%; Últimos 5: New York Knicks (527 anotados / 603 recibidos pts) vs Orlando Magic (591 anotados / 597 recibidos); prob. modelo 71%; EV -4.1%.",
         "markets": [
           {
             "type": "ML",
             "side": "home"
           }
         ],
-        "espnEventId": "401909860",
+        "espnEventId": "401909863",
         "espnLeague": "basketball/nba",
-        "kickoffLocal": "2026-10-24 20:00",
+        "kickoffLocal": "2026-10-25 17:00",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Mortgage Matchup Center",
-        "singleReturn": 127.0,
-        "safeSelection": "Phoenix Suns Ganador Directo (Moneyline)",
-        "safeOdds": 1.27
+        "stadium": "Madison Square Garden",
+        "singleReturn": 135.0,
+        "safeSelection": "New York Knicks Ganador Directo (Moneyline)",
+        "safeOdds": 1.35
       },
       {
         "sourceName": "NBA Second Spectrum",
         "sport": "Basketball",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Charlotte Hornets vs. Miami Heat",
+        "match": "Brooklyn Nets vs. Indiana Pacers",
         "tournament": "NBA 2026-27 (16:00 CST)",
-        "selection": "Miami Heat Ganador Directo (Moneyline)",
-        "odds": 1.7,
-        "confidencePct": 56,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -142 → @ 1.70; prob. de mercado sin margen 56%; forma últimos 5 Charlotte Hornets — vs Miami Heat —; Predictor Oficial ESPN: Charlotte Hornets 44.0% vs Miami Heat 56.0%; Últimos 5: Charlotte Hornets (487 anotados / 551 recibidos pts) vs Miami Heat (600 anotados / 648 recibidos); prob. modelo 56%; EV -4.0%.",
+        "selection": "Indiana Pacers Ganador Directo (Moneyline)",
+        "odds": 1.36,
+        "confidencePct": 70,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Brooklyn Nets — vs Indiana Pacers —; Predictor Oficial ESPN: Brooklyn Nets 36.1% vs Indiana Pacers 63.9%; Últimos 5: Brooklyn Nets (597 anotados / 609 recibidos pts) vs Indiana Pacers (345 anotados / 360 recibidos); prob. modelo 70%; EV -4.1%.",
         "markets": [
           {
             "type": "ML",
             "side": "away"
           }
         ],
-        "espnEventId": "401909853",
+        "espnEventId": "401909862",
         "espnLeague": "basketball/nba",
-        "kickoffLocal": "2026-10-24 16:00",
+        "kickoffLocal": "2026-10-25 16:00",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Spectrum Center",
-        "singleReturn": 170.0,
-        "safeSelection": "Miami Heat Ganador Directo (Moneyline)",
-        "safeOdds": 1.7
+        "stadium": "Barclays Center",
+        "singleReturn": 136.0,
+        "safeSelection": "Indiana Pacers Ganador Directo (Moneyline)",
+        "safeOdds": 1.36
       }
     ],
     "strategies": {
       "modo_a_simples": {
         "id": "STRATEGY-HYBRID-A",
         "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
-        "modeShort": "Modo A: Simples Híbridas (70.2% Win Rate)",
+        "modeShort": "Modo A: Simples Híbridas (71.5% Win Rate)",
         "badge": "MÁXIMO WIN RATE HÍBRIDO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
-        "description": "3 Selecciones multideporte de élite para el Sábado 24 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
-        "avgOdds": 1.42,
-        "expectedWinRate": "70.2%",
-        "combinedEv": "-2.4%",
+        "description": "3 Selecciones multideporte de élite para el Domingo 25 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
+        "avgOdds": 1.35,
+        "expectedWinRate": "71.5%",
+        "combinedEv": "-3.3%",
         "recommendedStake": "1.0% por selección (Flat Staking)",
         "riskLevel": "MÍNIMO",
         "picks": [
@@ -475,109 +470,109 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Atlético Madrid vs. Deportivo",
-            "tournament": "LaLiga (13:00 CST)",
-            "selection": "Atlético Madrid Ganador Directo (1)",
-            "odds": 1.29,
-            "confidencePct": 78,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.9%.",
+            "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+            "tournament": "Jupiler Pro League (12:15 CST)",
+            "selection": "Union St.-Gilloise Ganador Directo (1)",
+            "odds": 1.34,
+            "confidencePct": 73,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -290 → @ 1.34; prob. de mercado sin margen 70%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 73%; EV -1.8%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401882834",
-            "espnLeague": "esp.1",
-            "kickoffLocal": "2026-10-24 13:00",
+            "espnEventId": "401878961",
+            "espnLeague": "bel.1",
+            "kickoffLocal": "2026-10-25 12:15",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Riyadh Air Metropolitano",
-            "singleReturn": 129.0,
-            "safeSelection": "Atlético Madrid Ganador Directo (1)",
-            "safeOdds": 1.29
+            "stadium": "Stade Joseph Marien",
+            "singleReturn": 134.0,
+            "safeSelection": "Menos de 4.5 Goles Totales (Under 4.5)",
+            "safeOdds": 1.22
           },
           {
             "sourceName": "NBA Second Spectrum",
             "sport": "Basketball",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Phoenix Suns vs. Golden State Warriors",
-            "tournament": "NBA 2026-27 (20:00 CST)",
-            "selection": "Phoenix Suns Ganador Directo (Moneyline)",
-            "odds": 1.27,
-            "confidencePct": 76,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Phoenix Suns — vs Golden State Warriors —; Predictor Oficial ESPN: Phoenix Suns 67.8% vs Golden State Warriors 32.2%; Últimos 5: Phoenix Suns (521 anotados / 588 recibidos pts) vs Golden State Warriors (553 anotados / 551 recibidos); prob. modelo 76%; EV -4.1%.",
+            "match": "New York Knicks vs. Orlando Magic",
+            "tournament": "NBA 2026-27 (17:00 CST)",
+            "selection": "New York Knicks Ganador Directo (Moneyline)",
+            "odds": 1.35,
+            "confidencePct": 71,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 New York Knicks — vs Orlando Magic —; Predictor Oficial ESPN: New York Knicks 70.1% vs Orlando Magic 29.9%; Últimos 5: New York Knicks (527 anotados / 603 recibidos pts) vs Orlando Magic (591 anotados / 597 recibidos); prob. modelo 71%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401909860",
+            "espnEventId": "401909863",
             "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-10-24 20:00",
+            "kickoffLocal": "2026-10-25 17:00",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Mortgage Matchup Center",
-            "singleReturn": 127.0,
-            "safeSelection": "Phoenix Suns Ganador Directo (Moneyline)",
-            "safeOdds": 1.27
+            "stadium": "Madison Square Garden",
+            "singleReturn": 135.0,
+            "safeSelection": "New York Knicks Ganador Directo (Moneyline)",
+            "safeOdds": 1.35
           },
           {
             "sourceName": "NBA Second Spectrum",
             "sport": "Basketball",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Charlotte Hornets vs. Miami Heat",
+            "match": "Brooklyn Nets vs. Indiana Pacers",
             "tournament": "NBA 2026-27 (16:00 CST)",
-            "selection": "Miami Heat Ganador Directo (Moneyline)",
-            "odds": 1.7,
-            "confidencePct": 56,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -142 → @ 1.70; prob. de mercado sin margen 56%; forma últimos 5 Charlotte Hornets — vs Miami Heat —; Predictor Oficial ESPN: Charlotte Hornets 44.0% vs Miami Heat 56.0%; Últimos 5: Charlotte Hornets (487 anotados / 551 recibidos pts) vs Miami Heat (600 anotados / 648 recibidos); prob. modelo 56%; EV -4.0%.",
+            "selection": "Indiana Pacers Ganador Directo (Moneyline)",
+            "odds": 1.36,
+            "confidencePct": 70,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Brooklyn Nets — vs Indiana Pacers —; Predictor Oficial ESPN: Brooklyn Nets 36.1% vs Indiana Pacers 63.9%; Últimos 5: Brooklyn Nets (597 anotados / 609 recibidos pts) vs Indiana Pacers (345 anotados / 360 recibidos); prob. modelo 70%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "away"
               }
             ],
-            "espnEventId": "401909853",
+            "espnEventId": "401909862",
             "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-10-24 16:00",
+            "kickoffLocal": "2026-10-25 16:00",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Spectrum Center",
-            "singleReturn": 170.0,
-            "safeSelection": "Miami Heat Ganador Directo (Moneyline)",
-            "safeOdds": 1.7
+            "stadium": "Barclays Center",
+            "singleReturn": 136.0,
+            "safeSelection": "Indiana Pacers Ganador Directo (Moneyline)",
+            "safeOdds": 1.36
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
-            "Coloca 3 apuestas SIMPLES independientes: Atlético Madrid vs. Deportivo, Phoenix Suns vs. Golden State Warriors y Charlotte Hornets vs. Miami Heat.",
+            "Coloca 3 apuestas SIMPLES independientes: Union St.-Gilloise vs. Cercle Brugge KSV, New York Knicks vs. Orlando Magic y Brooklyn Nets vs. Indiana Pacers.",
             "Apuesta el mismo monto en cada una (ej. $100)."
           ],
           "winning_scenario": {
             "title": "¿Cómo se cobra con las Simples Híbridas?",
             "match_examples": [
               {
-                "match": "Atlético Madrid vs. Deportivo",
-                "min_result": "Atlético Madrid Ganador Directo (1)",
-                "explanation": "Cobras $129.00."
+                "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+                "min_result": "Union St.-Gilloise Ganador Directo (1)",
+                "explanation": "Cobras $134.00."
               },
               {
-                "match": "Phoenix Suns vs. Golden State Warriors",
-                "min_result": "Phoenix Suns Ganador Directo (Moneyline)",
-                "explanation": "Cobras $127.00."
+                "match": "New York Knicks vs. Orlando Magic",
+                "min_result": "New York Knicks Ganador Directo (Moneyline)",
+                "explanation": "Cobras $135.00."
               },
               {
-                "match": "Charlotte Hornets vs. Miami Heat",
-                "min_result": "Miami Heat Ganador Directo (Moneyline)",
-                "explanation": "Cobras $170.00."
+                "match": "Brooklyn Nets vs. Indiana Pacers",
+                "min_result": "Indiana Pacers Ganador Directo (Moneyline)",
+                "explanation": "Cobras $136.00."
               }
             ],
-            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $426.00."
+            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $405.00."
           },
-          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (24 OCTUBRE)\n1. Atlético Madrid vs. Deportivo: Atlético Madrid Ganador Directo (1) @ 1.29\n2. Phoenix Suns vs. Golden State Warriors: Phoenix Suns Ganador Directo (Moneyline) @ 1.27\n3. Charlotte Hornets vs. Miami Heat: Miami Heat Ganador Directo (Moneyline) @ 1.70"
+          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (25 OCTUBRE)\n1. Union St.-Gilloise vs. Cercle Brugge KSV: Union St.-Gilloise Ganador Directo (1) @ 1.34\n2. New York Knicks vs. Orlando Magic: New York Knicks Ganador Directo (Moneyline) @ 1.35\n3. Brooklyn Nets vs. Indiana Pacers: Indiana Pacers Ganador Directo (Moneyline) @ 1.36"
         }
       },
       "modo_b_sistema": {
@@ -589,8 +584,8 @@
         "tagColor": "cyan",
         "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
         "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-        "expectedWinRate": "79.3%",
-        "combinedEv": "-5.0%",
+        "expectedWinRate": "80.3%",
+        "combinedEv": "-7.7%",
         "recommendedStake": "$25 por combinación ($100 total)",
         "riskLevel": "BAJO",
         "picks": [
@@ -598,21 +593,21 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Atlético Madrid vs. Deportivo",
-            "tournament": "LaLiga (13:00 CST)",
-            "selection": "Atlético Madrid Ganador Directo (1)",
-            "odds": 1.29,
-            "confidencePct": 78,
-            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.9%.",
+            "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+            "tournament": "Jupiler Pro League (12:15 CST)",
+            "selection": "Union St.-Gilloise Ganador Directo (1)",
+            "odds": 1.34,
+            "confidencePct": 73,
+            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -290 → @ 1.34; prob. de mercado sin margen 70%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 73%; EV -1.8%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401882834",
-            "espnLeague": "esp.1",
-            "kickoffLocal": "2026-10-24 13:00",
+            "espnEventId": "401878961",
+            "espnLeague": "bel.1",
+            "kickoffLocal": "2026-10-25 12:15",
             "oddsEstimated": false,
             "verified": true
           },
@@ -620,21 +615,21 @@
             "sourceName": "NBA Second Spectrum",
             "sport": "Basketball",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Phoenix Suns vs. Golden State Warriors",
-            "tournament": "NBA 2026-27 (20:00 CST)",
-            "selection": "Phoenix Suns Ganador Directo (Moneyline)",
-            "odds": 1.27,
-            "confidencePct": 76,
-            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Phoenix Suns — vs Golden State Warriors —; Predictor Oficial ESPN: Phoenix Suns 67.8% vs Golden State Warriors 32.2%; Últimos 5: Phoenix Suns (521 anotados / 588 recibidos pts) vs Golden State Warriors (553 anotados / 551 recibidos); prob. modelo 76%; EV -4.1%.",
+            "match": "New York Knicks vs. Orlando Magic",
+            "tournament": "NBA 2026-27 (17:00 CST)",
+            "selection": "New York Knicks Ganador Directo (Moneyline)",
+            "odds": 1.35,
+            "confidencePct": 71,
+            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 New York Knicks — vs Orlando Magic —; Predictor Oficial ESPN: New York Knicks 70.1% vs Orlando Magic 29.9%; Últimos 5: New York Knicks (527 anotados / 603 recibidos pts) vs Orlando Magic (591 anotados / 597 recibidos); prob. modelo 71%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401909860",
+            "espnEventId": "401909863",
             "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-10-24 20:00",
+            "kickoffLocal": "2026-10-25 17:00",
             "oddsEstimated": false,
             "verified": true
           },
@@ -642,45 +637,45 @@
             "sourceName": "NBA Second Spectrum",
             "sport": "Basketball",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Charlotte Hornets vs. Miami Heat",
+            "match": "Brooklyn Nets vs. Indiana Pacers",
             "tournament": "NBA 2026-27 (16:00 CST)",
-            "selection": "Miami Heat Ganador Directo (Moneyline)",
-            "odds": 1.7,
-            "confidencePct": 56,
-            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -142 → @ 1.70; prob. de mercado sin margen 56%; forma últimos 5 Charlotte Hornets — vs Miami Heat —; Predictor Oficial ESPN: Charlotte Hornets 44.0% vs Miami Heat 56.0%; Últimos 5: Charlotte Hornets (487 anotados / 551 recibidos pts) vs Miami Heat (600 anotados / 648 recibidos); prob. modelo 56%; EV -4.0%.",
+            "selection": "Indiana Pacers Ganador Directo (Moneyline)",
+            "odds": 1.36,
+            "confidencePct": 70,
+            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Brooklyn Nets — vs Indiana Pacers —; Predictor Oficial ESPN: Brooklyn Nets 36.1% vs Indiana Pacers 63.9%; Últimos 5: Brooklyn Nets (597 anotados / 609 recibidos pts) vs Indiana Pacers (345 anotados / 360 recibidos); prob. modelo 70%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "away"
               }
             ],
-            "espnEventId": "401909853",
+            "espnEventId": "401909862",
             "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-10-24 16:00",
+            "kickoffLocal": "2026-10-25 16:00",
             "oddsEstimated": false,
             "verified": true
           }
         ],
         "combinations": [
           {
-            "name": "Doble 1 (Atlético Madrid + Phoenix Suns)",
-            "odds": 1.64,
-            "formula": "1.29 × 1.27"
+            "name": "Doble 1 (Union St.-Gilloise + New York Knicks)",
+            "odds": 1.81,
+            "formula": "1.34 × 1.35"
           },
           {
-            "name": "Doble 2 (Atlético Madrid + Charlotte Hornets)",
-            "odds": 2.19,
-            "formula": "1.29 × 1.7"
+            "name": "Doble 2 (Union St.-Gilloise + Brooklyn Nets)",
+            "odds": 1.82,
+            "formula": "1.34 × 1.36"
           },
           {
-            "name": "Doble 3 (Phoenix Suns + Charlotte Hornets)",
-            "odds": 2.16,
-            "formula": "1.27 × 1.7"
+            "name": "Doble 3 (New York Knicks + Brooklyn Nets)",
+            "odds": 1.84,
+            "formula": "1.35 × 1.36"
           },
           {
             "name": "Triple (Pleno Multideporte)",
-            "odds": 2.79,
-            "formula": "1.29 × 1.27 × 1.7"
+            "odds": 2.46,
+            "formula": "1.34 × 1.35 × 1.36"
           }
         ],
         "real_life_example": {
@@ -693,33 +688,33 @@
             "title": "¿Cómo se cobra con el Sistema Híbrido?",
             "match_examples": [
               {
-                "match": "Escenario 2 de 3 (Atlético Madrid + Phoenix Suns)",
+                "match": "Escenario 2 de 3 (Union St.-Gilloise + New York Knicks)",
                 "min_result": "Ganan los 2 primeros",
-                "explanation": "Cobras Doble 1 (@ 1.64x): $41.00 amortizando."
+                "explanation": "Cobras Doble 1 (@ 1.81x): $45.25 amortizando."
               },
               {
                 "match": "Escenario Pleno 3 de 3",
                 "min_result": "Cumplen los 3",
-                "explanation": "Cobras las 3 Dobles + Triple: $219.50."
+                "explanation": "Cobras las 3 Dobles + Triple: $198.25."
               }
             ],
-            "payout_example": "Con $100 cobras hasta $219.50 si aciertan los 3, o amortizas si 1 falla."
+            "payout_example": "Con $100 cobras hasta $198.25 si aciertan los 3, o amortizas si 1 falla."
           },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (24 OCTUBRE)\n• Pick A: Atlético Madrid vs. Deportivo (Atlético Madrid Ganador Directo (1)) @ 1.29\n• Pick B: Phoenix Suns vs. Golden State Warriors (Phoenix Suns Ganador Directo (Moneyline)) @ 1.27\n• Pick C: Charlotte Hornets vs. Miami Heat (Miami Heat Ganador Directo (Moneyline)) @ 1.70"
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (25 OCTUBRE)\n• Pick A: Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Ganador Directo (1)) @ 1.34\n• Pick B: New York Knicks vs. Orlando Magic (New York Knicks Ganador Directo (Moneyline)) @ 1.35\n• Pick C: Brooklyn Nets vs. Indiana Pacers (Indiana Pacers Ganador Directo (Moneyline)) @ 1.36"
         }
       },
       "modo_c_banker": {
         "id": "STRATEGY-HYBRID-C",
-        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.64x)",
-        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.64x)",
+        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.65x)",
+        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.65x)",
         "badge": "DUPLICADOR HÍBRIDO",
         "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
         "tagColor": "amber",
-        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Atlético Madrid vs. Deportivo y Phoenix Suns vs. Golden State Warriors.",
-        "totalOdds": 1.64,
-        "fairOdds": 1.68,
-        "expectedWinRate": "59.4%",
-        "combinedEv": "-2.6%",
+        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Union St.-Gilloise vs. Cercle Brugge KSV y New York Knicks vs. Orlando Magic.",
+        "totalOdds": 1.65,
+        "fairOdds": 1.83,
+        "expectedWinRate": "54.8%",
+        "combinedEv": "-9.6%",
         "recommendedStake": "2.5% – 3.0% Bankroll",
         "riskLevel": "BAJO",
         "picks": [
@@ -727,74 +722,75 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Atlético Madrid vs. Deportivo",
-            "tournament": "LaLiga (13:00 CST)",
-            "selection": "Atlético Madrid Ganador Directo (1)",
-            "odds": 1.29,
-            "confidencePct": 78,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.27; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); prob. modelo 78%; EV +0.9%.",
+            "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+            "tournament": "Jupiler Pro League (12:15 CST)",
+            "selection": "Menos de 4.5 Goles Totales (Under 4.5)",
+            "odds": 1.22,
+            "confidencePct": 77,
+            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 77%; forma últimos 5 Union St.-Gilloise DDDWW vs Cercle Brugge KSV DLDLL; goles esperados (Poisson) 3.25; Últimos 5: Union St.-Gilloise (11 anotados / 2 recibidos goles) vs Cercle Brugge KSV (4 anotados / 10 recibidos); prob. modelo 77%; EV -5.5%.",
             "markets": [
               {
-                "type": "ML",
-                "side": "home"
+                "type": "TOTAL",
+                "side": "under",
+                "line": 4.5
               }
             ],
-            "espnEventId": "401882834",
-            "espnLeague": "esp.1",
-            "kickoffLocal": "2026-10-24 13:00",
-            "oddsEstimated": false,
+            "espnEventId": "401878961",
+            "espnLeague": "bel.1",
+            "kickoffLocal": "2026-10-25 12:15",
+            "oddsEstimated": true,
             "verified": true,
-            "stadium": "Riyadh Air Metropolitano",
-            "singleReturn": 129.0
+            "stadium": "Stade Joseph Marien",
+            "singleReturn": 122.0
           },
           {
             "sourceName": "NBA Second Spectrum",
             "sport": "Basketball",
             "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Phoenix Suns vs. Golden State Warriors",
-            "tournament": "NBA 2026-27 (20:00 CST)",
-            "selection": "Phoenix Suns Ganador Directo (Moneyline)",
-            "odds": 1.27,
-            "confidencePct": 76,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Phoenix Suns — vs Golden State Warriors —; Predictor Oficial ESPN: Phoenix Suns 67.8% vs Golden State Warriors 32.2%; Últimos 5: Phoenix Suns (521 anotados / 588 recibidos pts) vs Golden State Warriors (553 anotados / 551 recibidos); prob. modelo 76%; EV -4.1%.",
+            "match": "New York Knicks vs. Orlando Magic",
+            "tournament": "NBA 2026-27 (17:00 CST)",
+            "selection": "New York Knicks Ganador Directo (Moneyline)",
+            "odds": 1.35,
+            "confidencePct": 71,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 New York Knicks — vs Orlando Magic —; Predictor Oficial ESPN: New York Knicks 70.1% vs Orlando Magic 29.9%; Últimos 5: New York Knicks (527 anotados / 603 recibidos pts) vs Orlando Magic (591 anotados / 597 recibidos); prob. modelo 71%; EV -4.1%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401909860",
+            "espnEventId": "401909863",
             "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-10-24 20:00",
+            "kickoffLocal": "2026-10-25 17:00",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Mortgage Matchup Center",
-            "singleReturn": 127.0
+            "stadium": "Madison Square Garden",
+            "singleReturn": 135.0
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas.",
-            "Selecciona: Atlético Madrid vs. Deportivo y Phoenix Suns vs. Golden State Warriors.",
-            "Coloca Parlay / Combinada @ 1.64x."
+            "Selecciona: Union St.-Gilloise vs. Cercle Brugge KSV y New York Knicks vs. Orlando Magic.",
+            "Coloca Parlay / Combinada @ 1.65x."
           ],
           "winning_scenario": {
             "title": "¿Cómo se gana con la Doble Banker Híbrida?",
             "match_examples": [
               {
-                "match": "Atlético Madrid vs. Deportivo",
-                "min_result": "Atlético Madrid Ganador Directo (1)",
-                "explanation": "Probabilidad modelo 78%."
+                "match": "Union St.-Gilloise vs. Cercle Brugge KSV",
+                "min_result": "Menos de 4.5 Goles Totales (Under 4.5)",
+                "explanation": "Probabilidad modelo 77%."
               },
               {
-                "match": "Phoenix Suns vs. Golden State Warriors",
-                "min_result": "Phoenix Suns Ganador Directo (Moneyline)",
-                "explanation": "Probabilidad modelo 76%."
+                "match": "New York Knicks vs. Orlando Magic",
+                "min_result": "New York Knicks Ganador Directo (Moneyline)",
+                "explanation": "Probabilidad modelo 71%."
               }
             ],
-            "payout_example": "Si ambos cumplen, con $100 cobras $164.00."
+            "payout_example": "Si ambos cumplen, con $100 cobras $165.00."
           },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (24 OCTUBRE)\n1. Atlético Madrid vs. Deportivo (Atlético Madrid Ganador Directo (1)) @ 1.29\n2. Phoenix Suns vs. Golden State Warriors (Phoenix Suns Ganador Directo (Moneyline)) @ 1.27"
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (25 OCTUBRE)\n1. Union St.-Gilloise vs. Cercle Brugge KSV (Menos de 4.5 Goles Totales (Under 4.5)) @ 1.22\n2. New York Knicks vs. Orlando Magic (New York Knicks Ganador Directo (Moneyline)) @ 1.35"
         }
       }
     }
