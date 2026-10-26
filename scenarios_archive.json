@@ -27498,7 +27498,7 @@
     "2026-10-25": {
       "date": "2026-10-25",
       "saved_at": "2026-10-25 11:18:41",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -27615,7 +27615,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $456.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (25 OCTUBRE)\n1. ⚽ Union St.-Gilloise vs. Cercle Brugge KSV: Union St.-Gilloise Ganador Directo (1) @ 1.34\n2. ⚽ Barracas Central vs. Estudiantes de Río Cuarto: Barracas Central Ganador Directo (1) @ 1.61\n3. ⚽ América vs. Pachuca: América Ganador Directo (1) @ 1.61"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -27748,7 +27749,8 @@
               "payout_example": "Con $100 cobras hasta $259.50 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (25 OCTUBRE)\n• Pick A: ⚽ Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Ganador Directo (1)) @ 1.34\n• Pick B: ⚽ Barracas Central vs. Estudiantes de Río Cuarto (Barracas Central Ganador Directo (1)) @ 1.61\n• Pick C: ⚽ América vs. Pachuca (América Ganador Directo (1)) @ 1.61"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -27842,15 +27844,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $142.00 (+$42.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (25 OCTUBRE)\n1. ⚽ Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.28\n2. ⚽ Barracas Central vs. Estudiantes de Río Cuarto (Barracas Central Doble Oportunidad (1X)) @ 1.11"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": -8.99,
+        "roiPct": "-1.8%",
+        "wonModes": 1,
+        "simulatedTotalReturn": 491.01,
+        "winRate": "80.0% de selecciones (4/5) | Modo A $295.00 (2/3) + Modo B $53.94 + Modo C $142.08",
+        "evaluatedAt": "2026-10-26 13:38:11",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -28066,7 +28074,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $405.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (25 OCTUBRE)\n1. Union St.-Gilloise vs. Cercle Brugge KSV: Union St.-Gilloise Ganador Directo (1) @ 1.34\n2. New York Knicks vs. Orlando Magic: New York Knicks Ganador Directo (Moneyline) @ 1.35\n3. Brooklyn Nets vs. Indiana Pacers: Indiana Pacers Ganador Directo (Moneyline) @ 1.36"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -28194,7 +28203,8 @@
                 "payout_example": "Con $100 cobras hasta $198.25 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (25 OCTUBRE)\n• Pick A: Union St.-Gilloise vs. Cercle Brugge KSV (Union St.-Gilloise Ganador Directo (1)) @ 1.34\n• Pick B: New York Knicks vs. Orlando Magic (New York Knicks Ganador Directo (Moneyline)) @ 1.35\n• Pick C: Brooklyn Nets vs. Indiana Pacers (Indiana Pacers Ganador Directo (Moneyline)) @ 1.36"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -28284,6 +28294,820 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $165.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (25 OCTUBRE)\n1. Union St.-Gilloise vs. Cercle Brugge KSV (Menos de 4.5 Goles Totales (Under 4.5)) @ 1.22\n2. New York Knicks vs. Orlando Magic (New York Knicks Ganador Directo (Moneyline)) @ 1.35"
+            },
+            "status": "LOST"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 0,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 315.56,
+          "netPnL": -184.44,
+          "roiPct": "-36.9%",
+          "winRate": "50.0% de selecciones (2/4) | Modo A $270.00 (2/3) + Modo B $45.56 + Modo C $0.00",
+          "evaluated": true,
+          "evaluatedAt": "2026-10-26 13:38:11",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Union St.-Gilloise vs. Cercle Brugge KSV": "5-2 — Union St.-Gilloise Ganador Directo (1) ✅ | Union St.-Gilloise Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "Barracas Central vs. Estudiantes de Río Cuarto": "2-1 — Barracas Central Ganador Directo (1) ✅ | Barracas Central Doble Oportunidad (1X) ✅",
+        "América vs. Pachuca": "1-2 — América Ganador Directo (1) ❌",
+        "New York Knicks vs. Orlando Magic": "102-111 — New York Knicks Ganador Directo (Moneyline) ❌",
+        "Brooklyn Nets vs. Indiana Pacers": "109-136 — Indiana Pacers Ganador Directo (Moneyline) ✅"
+      },
+      "evaluatedAt": "2026-10-26 13:38:11"
+    },
+    "2026-10-26": {
+      "date": "2026-10-26",
+      "saved_at": "2026-10-26 13:38:12",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (56.9% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Lunes 26 de Octubre (Brasileirão Série A, Liga Profesional Argentina). Cada acierto cobra por separado.",
+          "avgOdds": 1.68,
+          "expectedWinRate": "56.9%",
+          "combinedEv": "-4.4%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+              "tournament": "Liga Profesional Argentina (18:15 CST)",
+              "selection": "Instituto (Córdoba) Ganador Directo (1)",
+              "odds": 1.83,
+              "confidencePct": 55,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 52%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 55%; EV +0.4%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841635",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-26 18:15",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Monumental Presidente Perón",
+              "singleReturn": 183.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Flamengo vs. Atlético-MG",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "odds": 1.57,
+              "confidencePct": 59,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -175 → @ 1.57; prob. de mercado sin margen 59%; forma últimos 5 Flamengo DWDWD vs Atlético-MG DWWWD; goles esperados (Poisson) 3.24; Últimos 5: Flamengo (6 anotados / 2 recibidos goles) vs Atlético-MG (8 anotados / 5 recibidos); prob. modelo 59%; EV -6.7%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 3.5
+                }
+              ],
+              "espnEventId": "401841286",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-26 17:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio do Maracana",
+              "singleReturn": 157.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Unión (Santa Fe) vs. Estudiantes de La Plata",
+              "tournament": "Liga Profesional Argentina (16:00 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.65,
+              "confidencePct": 57,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 57%; forma últimos 5 Unión (Santa Fe) DLLLL vs Estudiantes de La Plata DLDDW; goles esperados (Poisson) 2.41; Últimos 5: Unión (Santa Fe) (3 anotados / 10 recibidos goles) vs Estudiantes de La Plata (6 anotados / 4 recibidos); prob. modelo 57%; EV -6.8%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401841630",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-26 16:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "15 de Abril",
+              "singleReturn": 165.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                  "min_result": "Instituto (Córdoba) Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $183.00 (+$83.00 neto)."
+                },
+                {
+                  "match": "Flamengo vs. Atlético-MG",
+                  "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
+                  "explanation": "Si se cumple cobras $157.00 (+$57.00 neto)."
+                },
+                {
+                  "match": "Unión (Santa Fe) vs. Estudiantes de La Plata",
+                  "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
+                  "explanation": "Si se cumple cobras $165.00 (+$65.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $505.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (26 OCTUBRE)\n1. ⚽ Instituto (Córdoba) vs. Deportivo Riestra: Instituto (Córdoba) Ganador Directo (1) @ 1.83\n2. ⚽ Flamengo vs. Atlético-MG: Menos de 3.5 Goles Totales (Under 3.5) @ 1.57\n3. ⚽ Unión (Santa Fe) vs. Estudiantes de La Plata: Menos de 2.5 Goles Totales (Under 2.5) @ 1.65"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "60.4%",
+          "combinedEv": "-9.6%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+              "tournament": "Liga Profesional Argentina (18:15 CST)",
+              "selection": "Instituto (Córdoba) Ganador Directo (1)",
+              "odds": 1.83,
+              "confidencePct": 55,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 52%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 55%; EV +0.4%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841635",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-26 18:15",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Flamengo vs. Atlético-MG",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "odds": 1.57,
+              "confidencePct": 59,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -175 → @ 1.57; prob. de mercado sin margen 59%; forma últimos 5 Flamengo DWDWD vs Atlético-MG DWWWD; goles esperados (Poisson) 3.24; Últimos 5: Flamengo (6 anotados / 2 recibidos goles) vs Atlético-MG (8 anotados / 5 recibidos); prob. modelo 59%; EV -6.7%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 3.5
+                }
+              ],
+              "espnEventId": "401841286",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-26 17:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Unión (Santa Fe) vs. Estudiantes de La Plata",
+              "tournament": "Liga Profesional Argentina (16:00 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.65,
+              "confidencePct": 57,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 57%; forma últimos 5 Unión (Santa Fe) DLLLL vs Estudiantes de La Plata DLDDW; goles esperados (Poisson) 2.41; Últimos 5: Unión (Santa Fe) (3 anotados / 10 recibidos goles) vs Estudiantes de La Plata (6 anotados / 4 recibidos); prob. modelo 57%; EV -6.8%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401841630",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-26 16:00",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Instituto (Córdoba) + ⚽ Flamengo)",
+              "odds": 2.87,
+              "formula": "1.83 × 1.57"
+            },
+            {
+              "name": "Doble 2 (⚽ Instituto (Córdoba) + ⚽ Unión (Santa Fe))",
+              "odds": 3.02,
+              "formula": "1.83 × 1.65"
+            },
+            {
+              "name": "Doble 3 (⚽ Flamengo + ⚽ Unión (Santa Fe))",
+              "odds": 2.59,
+              "formula": "1.57 × 1.65"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 4.74,
+              "formula": "1.83 × 1.57 × 1.65"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Instituto (Córdoba) + Flamengo)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $71.75."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Instituto (Córdoba) + Unión (Santa Fe))",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $75.50."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $330.50."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $330.50 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (26 OCTUBRE)\n• Pick A: ⚽ Instituto (Córdoba) vs. Deportivo Riestra (Instituto (Córdoba) Ganador Directo (1)) @ 1.83\n• Pick B: ⚽ Flamengo vs. Atlético-MG (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.57\n• Pick C: ⚽ Unión (Santa Fe) vs. Estudiantes de La Plata (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.65"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.43x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Instituto (Córdoba) vs. Deportivo Riestra y Flamengo vs. Atlético-MG).",
+          "totalOdds": 1.43,
+          "fairOdds": 1.53,
+          "expectedWinRate": "65.2%",
+          "combinedEv": "-6.7%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+              "tournament": "Liga Profesional Argentina (18:15 CST)",
+              "selection": "Instituto (Córdoba) Doble Oportunidad (1X)",
+              "odds": 1.17,
+              "confidencePct": 84,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.17; prob. de mercado sin margen 81%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 84%; EV -1.8%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                }
+              ],
+              "espnEventId": "401841635",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-10-26 18:15",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Monumental Presidente Perón",
+              "singleReturn": 117.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Flamengo vs. Atlético-MG",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Menos de 4.5 Goles Totales (Under 4.5)",
+              "odds": 1.22,
+              "confidencePct": 77,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 77%; forma últimos 5 Flamengo DWDWD vs Atlético-MG DWWWD; goles esperados (Poisson) 3.24; Últimos 5: Flamengo (6 anotados / 2 recibidos goles) vs Atlético-MG (8 anotados / 5 recibidos); prob. modelo 77%; EV -5.6%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 4.5
+                }
+              ],
+              "espnEventId": "401841286",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-26 17:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio do Maracana",
+              "singleReturn": 122.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Instituto (Córdoba) vs. Deportivo Riestra (Instituto (Córdoba) Doble Oportunidad (1X)) y Flamengo vs. Atlético-MG (Menos de 4.5 Goles Totales (Under 4.5)).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.43x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                  "min_result": "Instituto (Córdoba) Doble Oportunidad (1X)",
+                  "explanation": "Probabilidad modelo 84%."
+                },
+                {
+                  "match": "Flamengo vs. Atlético-MG",
+                  "min_result": "Menos de 4.5 Goles Totales (Under 4.5)",
+                  "explanation": "Probabilidad modelo 77%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $143.00 (+$43.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (26 OCTUBRE)\n1. ⚽ Instituto (Córdoba) vs. Deportivo Riestra (Instituto (Córdoba) Doble Oportunidad (1X)) @ 1.17\n2. ⚽ Flamengo vs. Atlético-MG (Menos de 4.5 Goles Totales (Under 4.5)) @ 1.22"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Instituto (Córdoba) vs. Deportivo Riestra con Oklahoma City Thunder vs. Phoenix Suns y Miami Heat vs. Dallas Mavericks.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "66.4%",
+        "avgOdds": 1.5,
+        "combinedEv": "-2.6%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+            "tournament": "Liga Profesional Argentina (18:15 CST)",
+            "selection": "Instituto (Córdoba) Ganador Directo (1)",
+            "odds": 1.83,
+            "confidencePct": 55,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 52%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 55%; EV +0.4%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401841635",
+            "espnLeague": "arg.1",
+            "kickoffLocal": "2026-10-26 18:15",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Monumental Presidente Perón",
+            "singleReturn": 183.0,
+            "safeSelection": "Instituto (Córdoba) Doble Oportunidad (1X)",
+            "safeOdds": 1.17
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Oklahoma City Thunder vs. Phoenix Suns",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+            "odds": 1.31,
+            "confidencePct": 73,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Oklahoma City Thunder — vs Phoenix Suns —; Predictor Oficial ESPN: Oklahoma City Thunder 78.6% vs Phoenix Suns 21.4%; Últimos 5: Oklahoma City Thunder (409 anotados / 405 recibidos pts) vs Phoenix Suns (535 anotados / 586 recibidos); prob. modelo 73%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909873",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-26 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Paycom Center",
+            "singleReturn": 131.0,
+            "safeSelection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+            "safeOdds": 1.31
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Miami Heat vs. Dallas Mavericks",
+            "tournament": "NBA 2026-27 (17:30 CST)",
+            "selection": "Miami Heat Ganador Directo (Moneyline)",
+            "odds": 1.35,
+            "confidencePct": 71,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 Miami Heat — vs Dallas Mavericks —; Predictor Oficial ESPN: Miami Heat 69.7% vs Dallas Mavericks 30.3%; Últimos 5: Miami Heat (586 anotados / 638 recibidos pts) vs Dallas Mavericks (545 anotados / 591 recibidos); prob. modelo 71%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909871",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-26 17:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Kaseya Center",
+            "singleReturn": 135.0,
+            "safeSelection": "Miami Heat Ganador Directo (Moneyline)",
+            "safeOdds": 1.35
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (66.4% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Lunes 26 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.5,
+            "expectedWinRate": "66.4%",
+            "combinedEv": "-2.6%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                "tournament": "Liga Profesional Argentina (18:15 CST)",
+                "selection": "Instituto (Córdoba) Ganador Directo (1)",
+                "odds": 1.83,
+                "confidencePct": 55,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 52%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 55%; EV +0.4%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841635",
+                "espnLeague": "arg.1",
+                "kickoffLocal": "2026-10-26 18:15",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Monumental Presidente Perón",
+                "singleReturn": 183.0,
+                "safeSelection": "Instituto (Córdoba) Doble Oportunidad (1X)",
+                "safeOdds": 1.17
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Oklahoma City Thunder vs. Phoenix Suns",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "odds": 1.31,
+                "confidencePct": 73,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Oklahoma City Thunder — vs Phoenix Suns —; Predictor Oficial ESPN: Oklahoma City Thunder 78.6% vs Phoenix Suns 21.4%; Últimos 5: Oklahoma City Thunder (409 anotados / 405 recibidos pts) vs Phoenix Suns (535 anotados / 586 recibidos); prob. modelo 73%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909873",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-26 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Paycom Center",
+                "singleReturn": 131.0,
+                "safeSelection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "safeOdds": 1.31
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Miami Heat vs. Dallas Mavericks",
+                "tournament": "NBA 2026-27 (17:30 CST)",
+                "selection": "Miami Heat Ganador Directo (Moneyline)",
+                "odds": 1.35,
+                "confidencePct": 71,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 Miami Heat — vs Dallas Mavericks —; Predictor Oficial ESPN: Miami Heat 69.7% vs Dallas Mavericks 30.3%; Últimos 5: Miami Heat (586 anotados / 638 recibidos pts) vs Dallas Mavericks (545 anotados / 591 recibidos); prob. modelo 71%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909871",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-26 17:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Kaseya Center",
+                "singleReturn": 135.0,
+                "safeSelection": "Miami Heat Ganador Directo (Moneyline)",
+                "safeOdds": 1.35
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Instituto (Córdoba) vs. Deportivo Riestra, Oklahoma City Thunder vs. Phoenix Suns y Miami Heat vs. Dallas Mavericks.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                    "min_result": "Instituto (Córdoba) Ganador Directo (1)",
+                    "explanation": "Cobras $183.00."
+                  },
+                  {
+                    "match": "Oklahoma City Thunder vs. Phoenix Suns",
+                    "min_result": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $131.00."
+                  },
+                  {
+                    "match": "Miami Heat vs. Dallas Mavericks",
+                    "min_result": "Miami Heat Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $135.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $449.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (26 OCTUBRE)\n1. Instituto (Córdoba) vs. Deportivo Riestra: Instituto (Córdoba) Ganador Directo (1) @ 1.83\n2. Oklahoma City Thunder vs. Phoenix Suns: Oklahoma City Thunder Ganador Directo (Moneyline) @ 1.31\n3. Miami Heat vs. Dallas Mavericks: Miami Heat Ganador Directo (Moneyline) @ 1.35"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "74.1%",
+            "combinedEv": "-5.8%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                "tournament": "Liga Profesional Argentina (18:15 CST)",
+                "selection": "Instituto (Córdoba) Ganador Directo (1)",
+                "odds": 1.83,
+                "confidencePct": 55,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 52%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 55%; EV +0.4%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841635",
+                "espnLeague": "arg.1",
+                "kickoffLocal": "2026-10-26 18:15",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Oklahoma City Thunder vs. Phoenix Suns",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "odds": 1.31,
+                "confidencePct": 73,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Oklahoma City Thunder — vs Phoenix Suns —; Predictor Oficial ESPN: Oklahoma City Thunder 78.6% vs Phoenix Suns 21.4%; Últimos 5: Oklahoma City Thunder (409 anotados / 405 recibidos pts) vs Phoenix Suns (535 anotados / 586 recibidos); prob. modelo 73%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909873",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-26 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Miami Heat vs. Dallas Mavericks",
+                "tournament": "NBA 2026-27 (17:30 CST)",
+                "selection": "Miami Heat Ganador Directo (Moneyline)",
+                "odds": 1.35,
+                "confidencePct": 71,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -285 → @ 1.35; prob. de mercado sin margen 71%; forma últimos 5 Miami Heat — vs Dallas Mavericks —; Predictor Oficial ESPN: Miami Heat 69.7% vs Dallas Mavericks 30.3%; Últimos 5: Miami Heat (586 anotados / 638 recibidos pts) vs Dallas Mavericks (545 anotados / 591 recibidos); prob. modelo 71%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909871",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-26 17:30",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Instituto (Córdoba) + Oklahoma City Thunder)",
+                "odds": 2.4,
+                "formula": "1.83 × 1.31"
+              },
+              {
+                "name": "Doble 2 (Instituto (Córdoba) + Miami Heat)",
+                "odds": 2.47,
+                "formula": "1.83 × 1.35"
+              },
+              {
+                "name": "Doble 3 (Oklahoma City Thunder + Miami Heat)",
+                "odds": 1.77,
+                "formula": "1.31 × 1.35"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 3.24,
+                "formula": "1.83 × 1.31 × 1.35"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Instituto (Córdoba) + Oklahoma City Thunder)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 2.4x): $60.00 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $247.00."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $247.00 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (26 OCTUBRE)\n• Pick A: Instituto (Córdoba) vs. Deportivo Riestra (Instituto (Córdoba) Ganador Directo (1)) @ 1.83\n• Pick B: Oklahoma City Thunder vs. Phoenix Suns (Oklahoma City Thunder Ganador Directo (Moneyline)) @ 1.31\n• Pick C: Miami Heat vs. Dallas Mavericks (Miami Heat Ganador Directo (Moneyline)) @ 1.35"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.53x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.53x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Instituto (Córdoba) vs. Deportivo Riestra y Oklahoma City Thunder vs. Phoenix Suns.",
+            "totalOdds": 1.53,
+            "fairOdds": 1.62,
+            "expectedWinRate": "61.8%",
+            "combinedEv": "-5.4%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                "tournament": "Liga Profesional Argentina (18:15 CST)",
+                "selection": "Instituto (Córdoba) Doble Oportunidad (1X)",
+                "odds": 1.17,
+                "confidencePct": 84,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.17; prob. de mercado sin margen 81%; forma últimos 5 Instituto (Córdoba) DDWWW vs Deportivo Riestra DLDDL; goles esperados (Poisson) 2.00; Últimos 5: Instituto (Córdoba) (12 anotados / 5 recibidos goles) vs Deportivo Riestra (2 anotados / 6 recibidos); prob. modelo 84%; EV -1.8%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401841635",
+                "espnLeague": "arg.1",
+                "kickoffLocal": "2026-10-26 18:15",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Monumental Presidente Perón",
+                "singleReturn": 117.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Oklahoma City Thunder vs. Phoenix Suns",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                "odds": 1.31,
+                "confidencePct": 73,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -325 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Oklahoma City Thunder — vs Phoenix Suns —; Predictor Oficial ESPN: Oklahoma City Thunder 78.6% vs Phoenix Suns 21.4%; Últimos 5: Oklahoma City Thunder (409 anotados / 405 recibidos pts) vs Phoenix Suns (535 anotados / 586 recibidos); prob. modelo 73%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909873",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-26 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Paycom Center",
+                "singleReturn": 131.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Instituto (Córdoba) vs. Deportivo Riestra y Oklahoma City Thunder vs. Phoenix Suns.",
+                "Coloca Parlay / Combinada @ 1.53x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Instituto (Córdoba) vs. Deportivo Riestra",
+                    "min_result": "Instituto (Córdoba) Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 84%."
+                  },
+                  {
+                    "match": "Oklahoma City Thunder vs. Phoenix Suns",
+                    "min_result": "Oklahoma City Thunder Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 73%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $153.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (26 OCTUBRE)\n1. Instituto (Córdoba) vs. Deportivo Riestra (Instituto (Córdoba) Doble Oportunidad (1X)) @ 1.17\n2. Oklahoma City Thunder vs. Phoenix Suns (Oklahoma City Thunder Ganador Directo (Moneyline)) @ 1.31"
             }
           }
         }
