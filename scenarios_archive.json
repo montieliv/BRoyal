@@ -29147,7 +29147,7 @@
     "2026-10-27": {
       "date": "2026-10-27",
       "saved_at": "2026-10-27 13:02:47",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -29267,7 +29267,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $495.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (27 OCTUBRE)\n1. ⚽ Argentinos Juniors vs. Independiente Rivadavia: Menos de 2.5 Goles Totales (Under 2.5) @ 1.61\n2. ⚽ Cúcuta Deportivo vs. Águilas Doradas: Menos de 2.5 Goles Totales (Under 2.5) @ 1.67\n3. ⚽ Boyacá Chicó FC vs. Atlético Junior: Menos de 2.5 Goles Totales (Under 2.5) @ 1.67"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -29403,7 +29404,8 @@
               "payout_example": "Con $100 cobras hasta $316.50 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (27 OCTUBRE)\n• Pick A: ⚽ Argentinos Juniors vs. Independiente Rivadavia (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.61\n• Pick B: ⚽ Cúcuta Deportivo vs. Águilas Doradas (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.67\n• Pick C: ⚽ Boyacá Chicó FC vs. Atlético Junior (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.67"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -29494,15 +29496,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $144.00 (+$44.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (27 OCTUBRE)\n1. ⚽ Argentinos Juniors vs. Independiente Rivadavia (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.20\n2. ⚽ Cúcuta Deportivo vs. Águilas Doradas (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.20"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": 455.41,
+        "roiPct": "+91.1%",
+        "wonModes": 3,
+        "simulatedTotalReturn": 955.41,
+        "winRate": "100.0% de selecciones (5/5) | Modo A $495.00 (3/3) + Modo B $316.41 + Modo C $144.00",
+        "evaluatedAt": "2026-10-28 13:10:55",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -29720,7 +29728,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $500.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (27 OCTUBRE)\n1. Argentinos Juniors vs. Independiente Rivadavia: Menos de 2.5 Goles Totales (Under 2.5) @ 1.61\n2. New York Knicks vs. Detroit Pistons: New York Knicks Ganador Directo (Moneyline) @ 1.59\n3. Los Angeles Lakers vs. Portland Trail Blazers: Los Angeles Lakers Ganador Directo (Moneyline) @ 1.80"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -29849,7 +29858,8 @@
                 "payout_example": "Con $100 cobras hasta $323.25 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (27 OCTUBRE)\n• Pick A: Argentinos Juniors vs. Independiente Rivadavia (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.61\n• Pick B: New York Knicks vs. Detroit Pistons (New York Knicks Ganador Directo (Moneyline)) @ 1.59\n• Pick C: Los Angeles Lakers vs. Portland Trail Blazers (Los Angeles Lakers Ganador Directo (Moneyline)) @ 1.80"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -29939,6 +29949,830 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $191.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (27 OCTUBRE)\n1. Argentinos Juniors vs. Independiente Rivadavia (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.20\n2. New York Knicks vs. Detroit Pistons (New York Knicks Ganador Directo (Moneyline)) @ 1.59"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 2,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 574.8,
+          "netPnL": 74.8,
+          "roiPct": "+15.0%",
+          "winRate": "75.0% de selecciones (3/4) | Modo A $320.00 (2/3) + Modo B $64.00 + Modo C $190.80",
+          "evaluated": true,
+          "evaluatedAt": "2026-10-28 13:10:55",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Argentinos Juniors vs. Independiente Rivadavia": "1-0 — Menos de 2.5 Goles Totales (Under 2.5) ✅ | Menos de 3.5 Goles Totales (Under 3.5) ✅",
+        "Cúcuta Deportivo vs. Águilas Doradas": "0-2 — Menos de 2.5 Goles Totales (Under 2.5) ✅ | Menos de 3.5 Goles Totales (Under 3.5) ✅",
+        "Boyacá Chicó FC vs. Atlético Junior": "1-1 — Menos de 2.5 Goles Totales (Under 2.5) ✅",
+        "New York Knicks vs. Detroit Pistons": "111-97 — New York Knicks Ganador Directo (Moneyline) ✅",
+        "Los Angeles Lakers vs. Portland Trail Blazers": "129-136 — Los Angeles Lakers Ganador Directo (Moneyline) ❌"
+      },
+      "evaluatedAt": "2026-10-28 13:10:55"
+    },
+    "2026-10-28": {
+      "date": "2026-10-28",
+      "saved_at": "2026-10-28 13:10:57",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (70.2% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Miércoles 28 de Octubre (Brasileirão Série A, Liga MX, MLS). Cada acierto cobra por separado.",
+          "avgOdds": 1.38,
+          "expectedWinRate": "70.2%",
+          "combinedEv": "-3.6%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Red Bull Bragantino vs. Chapecoense",
+              "tournament": "Brasileirão Série A (16:30 CST)",
+              "selection": "Red Bull Bragantino Ganador Directo (1)",
+              "odds": 1.29,
+              "confidencePct": 75,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 75%; EV -3.8%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841291",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-28 16:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estádio Municipal Cicero de Souza Marques",
+              "singleReturn": 129.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "América vs. Tijuana",
+              "tournament": "Liga MX (21:00 CST)",
+              "selection": "América Ganador Directo (1)",
+              "odds": 1.44,
+              "confidencePct": 69,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 América DWWDW vs Tijuana DDDDL; goles esperados (Poisson) 3.24; Últimos 5: América (12 anotados / 10 recibidos goles) vs Tijuana (9 anotados / 7 recibidos); prob. modelo 69%; EV -1.6%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401876986",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-10-28 21:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Banorte",
+              "singleReturn": 144.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Minnesota United FC vs. Sporting Kansas City",
+              "tournament": "MLS (18:30 CST)",
+              "selection": "Minnesota United FC Ganador Directo (1)",
+              "odds": 1.41,
+              "confidencePct": 67,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 66%; forma últimos 5 Minnesota United FC DWDDL vs Sporting Kansas City DLLDL; goles esperados (Poisson) 3.75; Últimos 5: Minnesota United FC (8 anotados / 9 recibidos goles) vs Sporting Kansas City (6 anotados / 14 recibidos); prob. modelo 67%; EV -5.5%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "761913",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-10-28 18:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Allianz Field",
+              "singleReturn": 141.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Red Bull Bragantino vs. Chapecoense",
+                  "min_result": "Red Bull Bragantino Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
+                },
+                {
+                  "match": "América vs. Tijuana",
+                  "min_result": "América Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $144.00 (+$44.00 neto)."
+                },
+                {
+                  "match": "Minnesota United FC vs. Sporting Kansas City",
+                  "min_result": "Minnesota United FC Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $141.00 (+$41.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $414.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (28 OCTUBRE)\n1. ⚽ Red Bull Bragantino vs. Chapecoense: Red Bull Bragantino Ganador Directo (1) @ 1.29\n2. ⚽ América vs. Tijuana: América Ganador Directo (1) @ 1.44\n3. ⚽ Minnesota United FC vs. Sporting Kansas City: Minnesota United FC Ganador Directo (1) @ 1.41"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "78.7%",
+          "combinedEv": "-7.4%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Red Bull Bragantino vs. Chapecoense",
+              "tournament": "Brasileirão Série A (16:30 CST)",
+              "selection": "Red Bull Bragantino Ganador Directo (1)",
+              "odds": 1.29,
+              "confidencePct": 75,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 75%; EV -3.8%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841291",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-28 16:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "América vs. Tijuana",
+              "tournament": "Liga MX (21:00 CST)",
+              "selection": "América Ganador Directo (1)",
+              "odds": 1.44,
+              "confidencePct": 69,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 América DWWDW vs Tijuana DDDDL; goles esperados (Poisson) 3.24; Últimos 5: América (12 anotados / 10 recibidos goles) vs Tijuana (9 anotados / 7 recibidos); prob. modelo 69%; EV -1.6%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401876986",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-10-28 21:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Minnesota United FC vs. Sporting Kansas City",
+              "tournament": "MLS (18:30 CST)",
+              "selection": "Minnesota United FC Ganador Directo (1)",
+              "odds": 1.41,
+              "confidencePct": 67,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -245 → @ 1.41; prob. de mercado sin margen 66%; forma últimos 5 Minnesota United FC DWDDL vs Sporting Kansas City DLLDL; goles esperados (Poisson) 3.75; Últimos 5: Minnesota United FC (8 anotados / 9 recibidos goles) vs Sporting Kansas City (6 anotados / 14 recibidos); prob. modelo 67%; EV -5.5%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "761913",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-10-28 18:30",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Red Bull Bragantino + ⚽ América)",
+              "odds": 1.86,
+              "formula": "1.29 × 1.44"
+            },
+            {
+              "name": "Doble 2 (⚽ Red Bull Bragantino + ⚽ Minnesota United FC)",
+              "odds": 1.82,
+              "formula": "1.29 × 1.41"
+            },
+            {
+              "name": "Doble 3 (⚽ América + ⚽ Minnesota United FC)",
+              "odds": 2.03,
+              "formula": "1.44 × 1.41"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 2.62,
+              "formula": "1.29 × 1.44 × 1.41"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Red Bull Bragantino + América)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $46.50."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Red Bull Bragantino + Minnesota United FC)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $45.50."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $208.25."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $208.25 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (28 OCTUBRE)\n• Pick A: ⚽ Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Ganador Directo (1)) @ 1.29\n• Pick B: ⚽ América vs. Tijuana (América Ganador Directo (1)) @ 1.44\n• Pick C: ⚽ Minnesota United FC vs. Sporting Kansas City (Minnesota United FC Ganador Directo (1)) @ 1.41"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.55x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Red Bull Bragantino vs. Chapecoense y América vs. Tijuana).",
+          "totalOdds": 1.55,
+          "fairOdds": 1.75,
+          "expectedWinRate": "57.2%",
+          "combinedEv": "-11.3%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Red Bull Bragantino vs. Chapecoense",
+              "tournament": "Brasileirão Série A (16:30 CST)",
+              "selection": "Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.18,
+              "confidencePct": 80,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.18; prob. de mercado sin margen 80%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 80%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841291",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-28 16:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estádio Municipal Cicero de Souza Marques",
+              "singleReturn": 118.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "América vs. Tijuana",
+              "tournament": "Liga MX (21:00 CST)",
+              "selection": "América Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.31,
+              "confidencePct": 72,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.31; prob. de mercado sin margen 72%; forma últimos 5 América DWWDW vs Tijuana DDDDL; goles esperados (Poisson) 3.24; Últimos 5: América (12 anotados / 10 recibidos goles) vs Tijuana (9 anotados / 7 recibidos); prob. modelo 72%; EV -5.8%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401876986",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-10-28 21:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio Banorte",
+              "singleReturn": 131.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales) y América vs. Tijuana (América Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.55x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Red Bull Bragantino vs. Chapecoense",
+                  "min_result": "Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 80%."
+                },
+                {
+                  "match": "América vs. Tijuana",
+                  "min_result": "América Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 72%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $155.00 (+$55.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (28 OCTUBRE)\n1. ⚽ Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.18\n2. ⚽ América vs. Tijuana (América Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.31"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Red Bull Bragantino vs. Chapecoense con Cleveland Cavaliers vs. Washington Wizards y Milwaukee Bucks vs. Houston Rockets.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "75.2%",
+        "avgOdds": 1.28,
+        "combinedEv": "-4.0%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Red Bull Bragantino vs. Chapecoense",
+            "tournament": "Brasileirão Série A (16:30 CST)",
+            "selection": "Red Bull Bragantino Ganador Directo (1)",
+            "odds": 1.29,
+            "confidencePct": 75,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 75%; EV -3.8%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401841291",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-10-28 16:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Estádio Municipal Cicero de Souza Marques",
+            "singleReturn": 129.0,
+            "safeSelection": "Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+            "safeOdds": 1.18
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Cleveland Cavaliers vs. Washington Wizards",
+            "tournament": "NBA 2026-27 (17:00 CST)",
+            "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+            "odds": 1.25,
+            "confidencePct": 77,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Cleveland Cavaliers — vs Washington Wizards —; Predictor Oficial ESPN: Cleveland Cavaliers 75.0% vs Washington Wizards 25.0%; Últimos 5: Cleveland Cavaliers (466 anotados / 472 recibidos pts) vs Washington Wizards (563 anotados / 565 recibidos); prob. modelo 77%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909882",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-28 17:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Rocket Arena",
+            "singleReturn": 125.0,
+            "safeSelection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+            "safeOdds": 1.25
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Milwaukee Bucks vs. Houston Rockets",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Houston Rockets Ganador Directo (Moneyline)",
+            "odds": 1.29,
+            "confidencePct": 74,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Milwaukee Bucks — vs Houston Rockets —; Predictor Oficial ESPN: Milwaukee Bucks 27.3% vs Houston Rockets 72.7%; Últimos 5: Milwaukee Bucks (467 anotados / 489 recibidos pts) vs Houston Rockets (599 anotados / 533 recibidos); prob. modelo 74%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401909887",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-28 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Fiserv Forum",
+            "singleReturn": 129.0,
+            "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+            "safeOdds": 1.29
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (75.2% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Miércoles 28 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.28,
+            "expectedWinRate": "75.2%",
+            "combinedEv": "-4.0%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Red Bull Bragantino vs. Chapecoense",
+                "tournament": "Brasileirão Série A (16:30 CST)",
+                "selection": "Red Bull Bragantino Ganador Directo (1)",
+                "odds": 1.29,
+                "confidencePct": 75,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 75%; EV -3.8%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841291",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-10-28 16:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Estádio Municipal Cicero de Souza Marques",
+                "singleReturn": 129.0,
+                "safeSelection": "Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                "safeOdds": 1.18
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Cleveland Cavaliers vs. Washington Wizards",
+                "tournament": "NBA 2026-27 (17:00 CST)",
+                "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "odds": 1.25,
+                "confidencePct": 77,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Cleveland Cavaliers — vs Washington Wizards —; Predictor Oficial ESPN: Cleveland Cavaliers 75.0% vs Washington Wizards 25.0%; Últimos 5: Cleveland Cavaliers (466 anotados / 472 recibidos pts) vs Washington Wizards (563 anotados / 565 recibidos); prob. modelo 77%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909882",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-28 17:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Rocket Arena",
+                "singleReturn": 125.0,
+                "safeSelection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "safeOdds": 1.25
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Milwaukee Bucks vs. Houston Rockets",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Milwaukee Bucks — vs Houston Rockets —; Predictor Oficial ESPN: Milwaukee Bucks 27.3% vs Houston Rockets 72.7%; Últimos 5: Milwaukee Bucks (467 anotados / 489 recibidos pts) vs Houston Rockets (599 anotados / 533 recibidos); prob. modelo 74%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909887",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-28 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Fiserv Forum",
+                "singleReturn": 129.0,
+                "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+                "safeOdds": 1.29
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Red Bull Bragantino vs. Chapecoense, Cleveland Cavaliers vs. Washington Wizards y Milwaukee Bucks vs. Houston Rockets.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Red Bull Bragantino vs. Chapecoense",
+                    "min_result": "Red Bull Bragantino Ganador Directo (1)",
+                    "explanation": "Cobras $129.00."
+                  },
+                  {
+                    "match": "Cleveland Cavaliers vs. Washington Wizards",
+                    "min_result": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $125.00."
+                  },
+                  {
+                    "match": "Milwaukee Bucks vs. Houston Rockets",
+                    "min_result": "Houston Rockets Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $129.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $383.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (28 OCTUBRE)\n1. Red Bull Bragantino vs. Chapecoense: Red Bull Bragantino Ganador Directo (1) @ 1.29\n2. Cleveland Cavaliers vs. Washington Wizards: Cleveland Cavaliers Ganador Directo (Moneyline) @ 1.25\n3. Milwaukee Bucks vs. Houston Rockets: Houston Rockets Ganador Directo (Moneyline) @ 1.29"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "84.6%",
+            "combinedEv": "-9.0%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Red Bull Bragantino vs. Chapecoense",
+                "tournament": "Brasileirão Série A (16:30 CST)",
+                "selection": "Red Bull Bragantino Ganador Directo (1)",
+                "odds": 1.29,
+                "confidencePct": 75,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 73%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 75%; EV -3.8%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841291",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-10-28 16:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Cleveland Cavaliers vs. Washington Wizards",
+                "tournament": "NBA 2026-27 (17:00 CST)",
+                "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "odds": 1.25,
+                "confidencePct": 77,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Cleveland Cavaliers — vs Washington Wizards —; Predictor Oficial ESPN: Cleveland Cavaliers 75.0% vs Washington Wizards 25.0%; Últimos 5: Cleveland Cavaliers (466 anotados / 472 recibidos pts) vs Washington Wizards (563 anotados / 565 recibidos); prob. modelo 77%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909882",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-28 17:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Milwaukee Bucks vs. Houston Rockets",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -340 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Milwaukee Bucks — vs Houston Rockets —; Predictor Oficial ESPN: Milwaukee Bucks 27.3% vs Houston Rockets 72.7%; Últimos 5: Milwaukee Bucks (467 anotados / 489 recibidos pts) vs Houston Rockets (599 anotados / 533 recibidos); prob. modelo 74%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909887",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-28 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Red Bull Bragantino + Cleveland Cavaliers)",
+                "odds": 1.61,
+                "formula": "1.29 × 1.25"
+              },
+              {
+                "name": "Doble 2 (Red Bull Bragantino + Milwaukee Bucks)",
+                "odds": 1.66,
+                "formula": "1.29 × 1.29"
+              },
+              {
+                "name": "Doble 3 (Cleveland Cavaliers + Milwaukee Bucks)",
+                "odds": 1.61,
+                "formula": "1.25 × 1.29"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.08,
+                "formula": "1.29 × 1.25 × 1.29"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Red Bull Bragantino + Cleveland Cavaliers)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 1.61x): $40.25 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $174.00."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $174.00 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (28 OCTUBRE)\n• Pick A: Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Ganador Directo (1)) @ 1.29\n• Pick B: Cleveland Cavaliers vs. Washington Wizards (Cleveland Cavaliers Ganador Directo (Moneyline)) @ 1.25\n• Pick C: Milwaukee Bucks vs. Houston Rockets (Houston Rockets Ganador Directo (Moneyline)) @ 1.29"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.47x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.47x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Red Bull Bragantino vs. Chapecoense y Cleveland Cavaliers vs. Washington Wizards.",
+            "totalOdds": 1.47,
+            "fairOdds": 1.64,
+            "expectedWinRate": "60.9%",
+            "combinedEv": "-10.4%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Red Bull Bragantino vs. Chapecoense",
+                "tournament": "Brasileirão Série A (16:30 CST)",
+                "selection": "Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                "odds": 1.18,
+                "confidencePct": 80,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.18; prob. de mercado sin margen 80%; forma últimos 5 Red Bull Bragantino DDWDL vs Chapecoense DLLLD; goles esperados (Poisson) 3.77; Últimos 5: Red Bull Bragantino (6 anotados / 7 recibidos goles) vs Chapecoense (4 anotados / 11 recibidos); prob. modelo 80%; EV -6.1%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  },
+                  {
+                    "type": "TOTAL",
+                    "side": "over",
+                    "line": 1.5
+                  }
+                ],
+                "espnEventId": "401841291",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-10-28 16:30",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Estádio Municipal Cicero de Souza Marques",
+                "singleReturn": 118.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Cleveland Cavaliers vs. Washington Wizards",
+                "tournament": "NBA 2026-27 (17:00 CST)",
+                "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "odds": 1.25,
+                "confidencePct": 77,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Cleveland Cavaliers — vs Washington Wizards —; Predictor Oficial ESPN: Cleveland Cavaliers 75.0% vs Washington Wizards 25.0%; Últimos 5: Cleveland Cavaliers (466 anotados / 472 recibidos pts) vs Washington Wizards (563 anotados / 565 recibidos); prob. modelo 77%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909882",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-28 17:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Rocket Arena",
+                "singleReturn": 125.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Red Bull Bragantino vs. Chapecoense y Cleveland Cavaliers vs. Washington Wizards.",
+                "Coloca Parlay / Combinada @ 1.47x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Red Bull Bragantino vs. Chapecoense",
+                    "min_result": "Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                    "explanation": "Probabilidad modelo 80%."
+                  },
+                  {
+                    "match": "Cleveland Cavaliers vs. Washington Wizards",
+                    "min_result": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 77%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $147.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (28 OCTUBRE)\n1. Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.18\n2. Cleveland Cavaliers vs. Washington Wizards (Cleveland Cavaliers Ganador Directo (Moneyline)) @ 1.25"
             }
           }
         }
