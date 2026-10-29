@@ -29978,7 +29978,7 @@
     "2026-10-28": {
       "date": "2026-10-28",
       "saved_at": "2026-10-28 13:10:57",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -30095,7 +30095,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $414.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (28 OCTUBRE)\n1. ⚽ Red Bull Bragantino vs. Chapecoense: Red Bull Bragantino Ganador Directo (1) @ 1.29\n2. ⚽ América vs. Tijuana: América Ganador Directo (1) @ 1.44\n3. ⚽ Minnesota United FC vs. Sporting Kansas City: Minnesota United FC Ganador Directo (1) @ 1.41"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -30228,7 +30229,8 @@
               "payout_example": "Con $100 cobras hasta $208.25 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (28 OCTUBRE)\n• Pick A: ⚽ Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Ganador Directo (1)) @ 1.29\n• Pick B: ⚽ América vs. Tijuana (América Ganador Directo (1)) @ 1.44\n• Pick C: ⚽ Minnesota United FC vs. Sporting Kansas City (Minnesota United FC Ganador Directo (1)) @ 1.41"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -30327,15 +30329,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $155.00 (+$55.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (28 OCTUBRE)\n1. ⚽ Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.18\n2. ⚽ América vs. Tijuana (América Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.31"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": -29.95,
+        "roiPct": "-6.0%",
+        "wonModes": 1,
+        "simulatedTotalReturn": 470.05,
+        "winRate": "80.0% de selecciones (4/5) | Modo A $270.00 (2/3) + Modo B $45.47 + Modo C $154.58",
+        "evaluatedAt": "2026-10-29 13:19:40",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -30551,7 +30559,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $383.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (28 OCTUBRE)\n1. Red Bull Bragantino vs. Chapecoense: Red Bull Bragantino Ganador Directo (1) @ 1.29\n2. Cleveland Cavaliers vs. Washington Wizards: Cleveland Cavaliers Ganador Directo (Moneyline) @ 1.25\n3. Milwaukee Bucks vs. Houston Rockets: Houston Rockets Ganador Directo (Moneyline) @ 1.29"
-            }
+            },
+            "status": "WON"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -30679,7 +30688,8 @@
                 "payout_example": "Con $100 cobras hasta $174.00 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (28 OCTUBRE)\n• Pick A: Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Ganador Directo (1)) @ 1.29\n• Pick B: Cleveland Cavaliers vs. Washington Wizards (Cleveland Cavaliers Ganador Directo (Moneyline)) @ 1.25\n• Pick C: Milwaukee Bucks vs. Houston Rockets (Houston Rockets Ganador Directo (Moneyline)) @ 1.29"
-            }
+            },
+            "status": "WON"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -30773,6 +30783,825 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $147.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (28 OCTUBRE)\n1. Red Bull Bragantino vs. Chapecoense (Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.18\n2. Cleveland Cavaliers vs. Washington Wizards (Cleveland Cavaliers Ganador Directo (Moneyline)) @ 1.25"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 3,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 704.73,
+          "netPnL": 204.73,
+          "roiPct": "+40.9%",
+          "winRate": "100.0% de selecciones (4/4) | Modo A $383.00 (3/3) + Modo B $174.23 + Modo C $147.50",
+          "evaluated": true,
+          "evaluatedAt": "2026-10-29 13:19:40",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Red Bull Bragantino vs. Chapecoense": "3-0 — Red Bull Bragantino Ganador Directo (1) ✅ | Red Bull Bragantino Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "América vs. Tijuana": "1-1 — América Ganador Directo (1) ❌ | América Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "Minnesota United FC vs. Sporting Kansas City": "3-1 — Minnesota United FC Ganador Directo (1) ✅",
+        "Cleveland Cavaliers vs. Washington Wizards": "121-111 — Cleveland Cavaliers Ganador Directo (Moneyline) ✅",
+        "Milwaukee Bucks vs. Houston Rockets": "100-132 — Houston Rockets Ganador Directo (Moneyline) ✅"
+      },
+      "evaluatedAt": "2026-10-29 13:19:40"
+    },
+    "2026-10-29": {
+      "date": "2026-10-29",
+      "saved_at": "2026-10-29 13:19:41",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (58.9% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Jueves 29 de Octubre (Brasileirão Série A, Liga BetPlay (Colombia)). Cada acierto cobra por separado.",
+          "avgOdds": 1.63,
+          "expectedWinRate": "58.9%",
+          "combinedEv": "-4.8%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "América de Cali vs. Fortaleza CEIF",
+              "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+              "selection": "América de Cali Ganador Directo (1)",
+              "odds": 1.54,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 60%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 62%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401878035",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-29 17:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Pascual Guerrero",
+              "singleReturn": 154.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético Nacional vs. Independiente Santa Fe",
+              "tournament": "Liga BetPlay (Colombia) (19:30 CST)",
+              "selection": "Atlético Nacional Ganador Directo (1)",
+              "odds": 1.48,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 62%; forma últimos 5 Atlético Nacional DWLWW vs Independiente Santa Fe DWLWW; goles esperados (Poisson) 3.27; Últimos 5: Atlético Nacional (12 anotados / 5 recibidos goles) vs Independiente Santa Fe (7 anotados / 5 recibidos); prob. modelo 62%; EV -8.0%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401877845",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-29 19:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Atanasio Girardot",
+              "singleReturn": 148.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vasco da Gama vs. Flamengo",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Flamengo Ganador Directo (2)",
+              "odds": 1.87,
+              "confidencePct": 52,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -115 → @ 1.87; prob. de mercado sin margen 51%; forma últimos 5 Vasco da Gama DLLWD vs Flamengo DDWDW; goles esperados (Poisson) 2.72; Últimos 5: Vasco da Gama (5 anotados / 6 recibidos goles) vs Flamengo (7 anotados / 2 recibidos); prob. modelo 52%; EV -2.2%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401841292",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-29 17:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Joao Havelange Stadium",
+              "singleReturn": 187.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "América de Cali vs. Fortaleza CEIF",
+                  "min_result": "América de Cali Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $154.00 (+$54.00 neto)."
+                },
+                {
+                  "match": "Atlético Nacional vs. Independiente Santa Fe",
+                  "min_result": "Atlético Nacional Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $148.00 (+$48.00 neto)."
+                },
+                {
+                  "match": "Vasco da Gama vs. Flamengo",
+                  "min_result": "Flamengo Ganador Directo (2)",
+                  "explanation": "Si se cumple cobras $187.00 (+$87.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $489.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (29 OCTUBRE)\n1. ⚽ América de Cali vs. Fortaleza CEIF: América de Cali Ganador Directo (1) @ 1.54\n2. ⚽ Atlético Nacional vs. Independiente Santa Fe: Atlético Nacional Ganador Directo (1) @ 1.48\n3. ⚽ Vasco da Gama vs. Flamengo: Flamengo Ganador Directo (2) @ 1.87"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "63.3%",
+          "combinedEv": "-10.4%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "América de Cali vs. Fortaleza CEIF",
+              "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+              "selection": "América de Cali Ganador Directo (1)",
+              "odds": 1.54,
+              "confidencePct": 62,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 60%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 62%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401878035",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-29 17:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético Nacional vs. Independiente Santa Fe",
+              "tournament": "Liga BetPlay (Colombia) (19:30 CST)",
+              "selection": "Atlético Nacional Ganador Directo (1)",
+              "odds": 1.48,
+              "confidencePct": 62,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 62%; forma últimos 5 Atlético Nacional DWLWW vs Independiente Santa Fe DWLWW; goles esperados (Poisson) 3.27; Últimos 5: Atlético Nacional (12 anotados / 5 recibidos goles) vs Independiente Santa Fe (7 anotados / 5 recibidos); prob. modelo 62%; EV -8.0%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401877845",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-29 19:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vasco da Gama vs. Flamengo",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Flamengo Ganador Directo (2)",
+              "odds": 1.87,
+              "confidencePct": 52,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -115 → @ 1.87; prob. de mercado sin margen 51%; forma últimos 5 Vasco da Gama DLLWD vs Flamengo DDWDW; goles esperados (Poisson) 2.72; Últimos 5: Vasco da Gama (5 anotados / 6 recibidos goles) vs Flamengo (7 anotados / 2 recibidos); prob. modelo 52%; EV -2.2%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401841292",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-10-29 17:00",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ América de Cali + ⚽ Atlético Nacional)",
+              "odds": 2.28,
+              "formula": "1.54 × 1.48"
+            },
+            {
+              "name": "Doble 2 (⚽ América de Cali + ⚽ Flamengo)",
+              "odds": 2.88,
+              "formula": "1.54 × 1.87"
+            },
+            {
+              "name": "Doble 3 (⚽ Atlético Nacional + ⚽ Flamengo)",
+              "odds": 2.77,
+              "formula": "1.48 × 1.87"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 4.26,
+              "formula": "1.54 × 1.48 × 1.87"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (América de Cali + Atlético Nacional)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $57.00."
+                },
+                {
+                  "match": "Escenario 2 de 3 (América de Cali + Flamengo)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $72.00."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $304.75."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $304.75 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (29 OCTUBRE)\n• Pick A: ⚽ América de Cali vs. Fortaleza CEIF (América de Cali Ganador Directo (1)) @ 1.54\n• Pick B: ⚽ Atlético Nacional vs. Independiente Santa Fe (Atlético Nacional Ganador Directo (1)) @ 1.48\n• Pick C: ⚽ Vasco da Gama vs. Flamengo (Flamengo Ganador Directo (2)) @ 1.87"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.94x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (América de Cali vs. Fortaleza CEIF y Atlético Nacional vs. Independiente Santa Fe).",
+          "totalOdds": 1.94,
+          "fairOdds": 2.27,
+          "expectedWinRate": "44.0%",
+          "combinedEv": "-14.7%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "América de Cali vs. Fortaleza CEIF",
+              "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+              "selection": "América de Cali Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.48,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.48; prob. de mercado sin margen 62%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 62%; EV -7.6%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401878035",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-29 17:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Pascual Guerrero",
+              "singleReturn": 148.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético Nacional vs. Independiente Santa Fe",
+              "tournament": "Liga BetPlay (Colombia) (19:30 CST)",
+              "selection": "Atlético Nacional Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.31,
+              "confidencePct": 70,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.31; prob. de mercado sin margen 70%; forma últimos 5 Atlético Nacional DWLWW vs Independiente Santa Fe DWLWW; goles esperados (Poisson) 3.27; Últimos 5: Atlético Nacional (12 anotados / 5 recibidos goles) vs Independiente Santa Fe (7 anotados / 5 recibidos); prob. modelo 70%; EV -7.7%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401877845",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-10-29 19:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Atanasio Girardot",
+              "singleReturn": 131.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: América de Cali vs. Fortaleza CEIF (América de Cali Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Atlético Nacional vs. Independiente Santa Fe (Atlético Nacional Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.94x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "América de Cali vs. Fortaleza CEIF",
+                  "min_result": "América de Cali Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 62%."
+                },
+                {
+                  "match": "Atlético Nacional vs. Independiente Santa Fe",
+                  "min_result": "Atlético Nacional Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 70%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $194.00 (+$94.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (29 OCTUBRE)\n1. ⚽ América de Cali vs. Fortaleza CEIF (América de Cali Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.48\n2. ⚽ Atlético Nacional vs. Independiente Santa Fe (Atlético Nacional Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.31"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando América de Cali vs. Fortaleza CEIF con Portland Trail Blazers vs. Memphis Grizzlies y New Orleans Pelicans vs. Sacramento Kings.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "66.7%",
+        "avgOdds": 1.44,
+        "combinedEv": "-4.2%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "América de Cali vs. Fortaleza CEIF",
+            "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+            "selection": "América de Cali Ganador Directo (1)",
+            "odds": 1.54,
+            "confidencePct": 62,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 60%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 62%; EV -4.3%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401878035",
+            "espnLeague": "col.1",
+            "kickoffLocal": "2026-10-29 17:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Pascual Guerrero",
+            "singleReturn": 154.0,
+            "safeSelection": "América de Cali Doble Oportunidad (1X)",
+            "safeOdds": 1.1
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Portland Trail Blazers vs. Memphis Grizzlies",
+            "tournament": "NBA 2026-27 (20:00 CST)",
+            "selection": "Portland Trail Blazers Ganador Directo (Moneyline)",
+            "odds": 1.36,
+            "confidencePct": 70,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Portland Trail Blazers — vs Memphis Grizzlies —; Predictor Oficial ESPN: Portland Trail Blazers 70.7% vs Memphis Grizzlies 29.3%; Últimos 5: Portland Trail Blazers (616 anotados / 558 recibidos pts) vs Memphis Grizzlies (583 anotados / 526 recibidos); prob. modelo 70%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909895",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-29 20:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Moda Center",
+            "singleReturn": 136.0,
+            "safeSelection": "Portland Trail Blazers Ganador Directo (Moneyline)",
+            "safeOdds": 1.36
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "New Orleans Pelicans vs. Sacramento Kings",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "New Orleans Pelicans Ganador Directo (Moneyline)",
+            "odds": 1.42,
+            "confidencePct": 68,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -238 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 New Orleans Pelicans — vs Sacramento Kings —; Predictor Oficial ESPN: New Orleans Pelicans 72.3% vs Sacramento Kings 27.7%; Últimos 5: New Orleans Pelicans (437 anotados / 453 recibidos pts) vs Sacramento Kings (528 anotados / 628 recibidos); prob. modelo 68%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909894",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-29 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Smoothie King Center",
+            "singleReturn": 142.0,
+            "safeSelection": "New Orleans Pelicans Ganador Directo (Moneyline)",
+            "safeOdds": 1.42
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (66.7% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Jueves 29 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.44,
+            "expectedWinRate": "66.7%",
+            "combinedEv": "-4.2%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "América de Cali vs. Fortaleza CEIF",
+                "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+                "selection": "América de Cali Ganador Directo (1)",
+                "odds": 1.54,
+                "confidencePct": 62,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 60%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 62%; EV -4.3%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401878035",
+                "espnLeague": "col.1",
+                "kickoffLocal": "2026-10-29 17:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Pascual Guerrero",
+                "singleReturn": 154.0,
+                "safeSelection": "América de Cali Doble Oportunidad (1X)",
+                "safeOdds": 1.1
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Portland Trail Blazers vs. Memphis Grizzlies",
+                "tournament": "NBA 2026-27 (20:00 CST)",
+                "selection": "Portland Trail Blazers Ganador Directo (Moneyline)",
+                "odds": 1.36,
+                "confidencePct": 70,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Portland Trail Blazers — vs Memphis Grizzlies —; Predictor Oficial ESPN: Portland Trail Blazers 70.7% vs Memphis Grizzlies 29.3%; Últimos 5: Portland Trail Blazers (616 anotados / 558 recibidos pts) vs Memphis Grizzlies (583 anotados / 526 recibidos); prob. modelo 70%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909895",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-29 20:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Moda Center",
+                "singleReturn": 136.0,
+                "safeSelection": "Portland Trail Blazers Ganador Directo (Moneyline)",
+                "safeOdds": 1.36
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "New Orleans Pelicans vs. Sacramento Kings",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "New Orleans Pelicans Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -238 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 New Orleans Pelicans — vs Sacramento Kings —; Predictor Oficial ESPN: New Orleans Pelicans 72.3% vs Sacramento Kings 27.7%; Últimos 5: New Orleans Pelicans (437 anotados / 453 recibidos pts) vs Sacramento Kings (528 anotados / 628 recibidos); prob. modelo 68%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909894",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-29 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Smoothie King Center",
+                "singleReturn": 142.0,
+                "safeSelection": "New Orleans Pelicans Ganador Directo (Moneyline)",
+                "safeOdds": 1.42
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: América de Cali vs. Fortaleza CEIF, Portland Trail Blazers vs. Memphis Grizzlies y New Orleans Pelicans vs. Sacramento Kings.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "América de Cali vs. Fortaleza CEIF",
+                    "min_result": "América de Cali Ganador Directo (1)",
+                    "explanation": "Cobras $154.00."
+                  },
+                  {
+                    "match": "Portland Trail Blazers vs. Memphis Grizzlies",
+                    "min_result": "Portland Trail Blazers Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $136.00."
+                  },
+                  {
+                    "match": "New Orleans Pelicans vs. Sacramento Kings",
+                    "min_result": "New Orleans Pelicans Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $142.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $432.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (29 OCTUBRE)\n1. América de Cali vs. Fortaleza CEIF: América de Cali Ganador Directo (1) @ 1.54\n2. Portland Trail Blazers vs. Memphis Grizzlies: Portland Trail Blazers Ganador Directo (Moneyline) @ 1.36\n3. New Orleans Pelicans vs. Sacramento Kings: New Orleans Pelicans Ganador Directo (Moneyline) @ 1.42"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "74.2%",
+            "combinedEv": "-9.2%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "América de Cali vs. Fortaleza CEIF",
+                "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+                "selection": "América de Cali Ganador Directo (1)",
+                "odds": 1.54,
+                "confidencePct": 62,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -185 → @ 1.54; prob. de mercado sin margen 60%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 62%; EV -4.3%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401878035",
+                "espnLeague": "col.1",
+                "kickoffLocal": "2026-10-29 17:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Portland Trail Blazers vs. Memphis Grizzlies",
+                "tournament": "NBA 2026-27 (20:00 CST)",
+                "selection": "Portland Trail Blazers Ganador Directo (Moneyline)",
+                "odds": 1.36,
+                "confidencePct": 70,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Portland Trail Blazers — vs Memphis Grizzlies —; Predictor Oficial ESPN: Portland Trail Blazers 70.7% vs Memphis Grizzlies 29.3%; Últimos 5: Portland Trail Blazers (616 anotados / 558 recibidos pts) vs Memphis Grizzlies (583 anotados / 526 recibidos); prob. modelo 70%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909895",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-29 20:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "New Orleans Pelicans vs. Sacramento Kings",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "New Orleans Pelicans Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -238 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 New Orleans Pelicans — vs Sacramento Kings —; Predictor Oficial ESPN: New Orleans Pelicans 72.3% vs Sacramento Kings 27.7%; Últimos 5: New Orleans Pelicans (437 anotados / 453 recibidos pts) vs Sacramento Kings (528 anotados / 628 recibidos); prob. modelo 68%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909894",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-29 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (América de Cali + Portland Trail Blazers)",
+                "odds": 2.09,
+                "formula": "1.54 × 1.36"
+              },
+              {
+                "name": "Doble 2 (América de Cali + New Orleans Pelicans)",
+                "odds": 2.19,
+                "formula": "1.54 × 1.42"
+              },
+              {
+                "name": "Doble 3 (Portland Trail Blazers + New Orleans Pelicans)",
+                "odds": 1.93,
+                "formula": "1.36 × 1.42"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.97,
+                "formula": "1.54 × 1.36 × 1.42"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (América de Cali + Portland Trail Blazers)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 2.09x): $52.25 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $229.50."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $229.50 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (29 OCTUBRE)\n• Pick A: América de Cali vs. Fortaleza CEIF (América de Cali Ganador Directo (1)) @ 1.54\n• Pick B: Portland Trail Blazers vs. Memphis Grizzlies (Portland Trail Blazers Ganador Directo (Moneyline)) @ 1.36\n• Pick C: New Orleans Pelicans vs. Sacramento Kings (New Orleans Pelicans Ganador Directo (Moneyline)) @ 1.42"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.50x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.50x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: América de Cali vs. Fortaleza CEIF y Portland Trail Blazers vs. Memphis Grizzlies.",
+            "totalOdds": 1.5,
+            "fairOdds": 1.65,
+            "expectedWinRate": "60.5%",
+            "combinedEv": "-9.2%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "América de Cali vs. Fortaleza CEIF",
+                "tournament": "Liga BetPlay (Colombia) (17:30 CST)",
+                "selection": "América de Cali Doble Oportunidad (1X)",
+                "odds": 1.1,
+                "confidencePct": 86,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.10; prob. de mercado sin margen 84%; forma últimos 5 América de Cali DWDLW vs Fortaleza CEIF DLLDD; goles esperados (Poisson) 2.59; Últimos 5: América de Cali (11 anotados / 5 recibidos goles) vs Fortaleza CEIF (5 anotados / 6 recibidos); prob. modelo 86%; EV -5.1%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401878035",
+                "espnLeague": "col.1",
+                "kickoffLocal": "2026-10-29 17:30",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Pascual Guerrero",
+                "singleReturn": 110.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Portland Trail Blazers vs. Memphis Grizzlies",
+                "tournament": "NBA 2026-27 (20:00 CST)",
+                "selection": "Portland Trail Blazers Ganador Directo (Moneyline)",
+                "odds": 1.36,
+                "confidencePct": 70,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 70%; forma últimos 5 Portland Trail Blazers — vs Memphis Grizzlies —; Predictor Oficial ESPN: Portland Trail Blazers 70.7% vs Memphis Grizzlies 29.3%; Últimos 5: Portland Trail Blazers (616 anotados / 558 recibidos pts) vs Memphis Grizzlies (583 anotados / 526 recibidos); prob. modelo 70%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909895",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-29 20:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Moda Center",
+                "singleReturn": 136.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: América de Cali vs. Fortaleza CEIF y Portland Trail Blazers vs. Memphis Grizzlies.",
+                "Coloca Parlay / Combinada @ 1.50x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "América de Cali vs. Fortaleza CEIF",
+                    "min_result": "América de Cali Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 86%."
+                  },
+                  {
+                    "match": "Portland Trail Blazers vs. Memphis Grizzlies",
+                    "min_result": "Portland Trail Blazers Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 70%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $150.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (29 OCTUBRE)\n1. América de Cali vs. Fortaleza CEIF (América de Cali Doble Oportunidad (1X)) @ 1.10\n2. Portland Trail Blazers vs. Memphis Grizzlies (Portland Trail Blazers Ganador Directo (Moneyline)) @ 1.36"
             }
           }
         }
