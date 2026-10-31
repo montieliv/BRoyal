@@ -31641,7 +31641,7 @@
     "2026-10-30": {
       "date": "2026-10-30",
       "saved_at": "2026-10-30 12:55:18",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -31758,7 +31758,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $401.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (30 OCTUBRE)\n1. ⚽ Zulte-Waregem vs. Club Brugge: Club Brugge Ganador Directo (2) @ 1.33\n2. ⚽ Villarreal vs. Espanyol: Villarreal Ganador Directo (1) @ 1.39\n3. ⚽ Casa Pia vs. Sporting CP: Sporting CP Ganador Directo (2) @ 1.29"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -31891,7 +31892,8 @@
               "payout_example": "Con $100 cobras hasta $193.50 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (30 OCTUBRE)\n• Pick A: ⚽ Zulte-Waregem vs. Club Brugge (Club Brugge Ganador Directo (2)) @ 1.33\n• Pick B: ⚽ Villarreal vs. Espanyol (Villarreal Ganador Directo (1)) @ 1.39\n• Pick C: ⚽ Casa Pia vs. Sporting CP (Sporting CP Ganador Directo (2)) @ 1.29"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -31990,15 +31992,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $156.00 (+$56.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (30 OCTUBRE)\n1. ⚽ Zulte-Waregem vs. Club Brugge (Club Brugge Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.23\n2. ⚽ Villarreal vs. Espanyol (Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.27"
-          }
+          },
+          "status": "LOST"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": -195.11,
+        "roiPct": "-39.0%",
+        "wonModes": 0,
+        "simulatedTotalReturn": 304.89,
+        "winRate": "60.0% de selecciones (3/5) | Modo A $262.00 (2/3) + Modo B $42.89 + Modo C $0.00",
+        "evaluatedAt": "2026-10-31 12:00:55",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -32214,7 +32222,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $395.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (30 OCTUBRE)\n1. Zulte-Waregem vs. Club Brugge: Club Brugge Ganador Directo (2) @ 1.33\n2. Brooklyn Nets vs. Detroit Pistons: Detroit Pistons Ganador Directo (Moneyline) @ 1.31\n3. Miami Heat vs. Indiana Pacers: Miami Heat Ganador Directo (Moneyline) @ 1.31"
-            }
+            },
+            "status": "WON"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -32342,7 +32351,8 @@
                 "payout_example": "Con $100 cobras hasta $187.00 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (30 OCTUBRE)\n• Pick A: Zulte-Waregem vs. Club Brugge (Club Brugge Ganador Directo (2)) @ 1.33\n• Pick B: Brooklyn Nets vs. Detroit Pistons (Detroit Pistons Ganador Directo (Moneyline)) @ 1.31\n• Pick C: Miami Heat vs. Indiana Pacers (Miami Heat Ganador Directo (Moneyline)) @ 1.31"
-            }
+            },
+            "status": "WON"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -32436,6 +32446,825 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $161.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (30 OCTUBRE)\n1. Zulte-Waregem vs. Club Brugge (Club Brugge Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.23\n2. Brooklyn Nets vs. Detroit Pistons (Detroit Pistons Ganador Directo (Moneyline)) @ 1.31"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 3,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 743.21,
+          "netPnL": 243.21,
+          "roiPct": "+48.6%",
+          "winRate": "100.0% de selecciones (4/4) | Modo A $395.00 (3/3) + Modo B $187.08 + Modo C $161.13",
+          "evaluated": true,
+          "evaluatedAt": "2026-10-31 12:00:55",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Zulte-Waregem vs. Club Brugge": "2-4 — Club Brugge Ganador Directo (2) ✅ | Club Brugge Doble Oportunidad (X2) + Más 1.5 Goles Totales ✅",
+        "Villarreal vs. Espanyol": "0-1 — Villarreal Ganador Directo (1) ❌ | Villarreal Doble Oportunidad (1X) + Más 1.5 Goles Totales ❌",
+        "Casa Pia vs. Sporting CP": "0-2 — Sporting CP Ganador Directo (2) ✅",
+        "Brooklyn Nets vs. Detroit Pistons": "94-110 — Detroit Pistons Ganador Directo (Moneyline) ✅",
+        "Miami Heat vs. Indiana Pacers": "145-125 — Miami Heat Ganador Directo (Moneyline) ✅"
+      },
+      "evaluatedAt": "2026-10-31 12:00:55"
+    },
+    "2026-10-31": {
+      "date": "2026-10-31",
+      "saved_at": "2026-10-31 12:00:56",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (65.0% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Sábado 31 de Octubre (Jupiler Pro League, Liga MX, MLS). Cada acierto cobra por separado.",
+          "avgOdds": 1.46,
+          "expectedWinRate": "65.0%",
+          "combinedEv": "-5.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Waasland-Beveren vs. Union St.-Gilloise",
+              "tournament": "Jupiler Pro League (13:45 CST)",
+              "selection": "Union St.-Gilloise Ganador Directo (2)",
+              "odds": 1.47,
+              "confidencePct": 65,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -215 → @ 1.47; prob. de mercado sin margen 65%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 65%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401878957",
+              "espnLeague": "bel.1",
+              "kickoffLocal": "2026-10-31 13:45",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Freethielstadion",
+              "singleReturn": 147.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "LA Galaxy vs. Austin FC",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "LA Galaxy Ganador Directo (1)",
+              "odds": 1.48,
+              "confidencePct": 64,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 63%; forma últimos 5 LA Galaxy DDWLW vs Austin FC DWLLL; goles esperados (Poisson) 3.60; Últimos 5: LA Galaxy (11 anotados / 12 recibidos goles) vs Austin FC (6 anotados / 12 recibidos); prob. modelo 64%; EV -5.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "761925",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-10-31 15:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Dignity Health Sports Park",
+              "singleReturn": 148.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Guadalajara vs. Atlante",
+              "tournament": "Liga MX (19:07 CST)",
+              "selection": "Guadalajara Ganador Directo (1)",
+              "odds": 1.44,
+              "confidencePct": 65,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Guadalajara DWDDL vs Atlante DWLLW; goles esperados (Poisson) 3.10; Últimos 5: Guadalajara (6 anotados / 2 recibidos goles) vs Atlante (6 anotados / 7 recibidos); prob. modelo 65%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401876915",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-10-31 19:07",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Akron",
+              "singleReturn": 144.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                  "min_result": "Union St.-Gilloise Ganador Directo (2)",
+                  "explanation": "Si se cumple cobras $147.00 (+$47.00 neto)."
+                },
+                {
+                  "match": "LA Galaxy vs. Austin FC",
+                  "min_result": "LA Galaxy Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $148.00 (+$48.00 neto)."
+                },
+                {
+                  "match": "Guadalajara vs. Atlante",
+                  "min_result": "Guadalajara Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $144.00 (+$44.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $439.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (31 OCTUBRE)\n1. ⚽ Waasland-Beveren vs. Union St.-Gilloise: Union St.-Gilloise Ganador Directo (2) @ 1.47\n2. ⚽ LA Galaxy vs. Austin FC: LA Galaxy Ganador Directo (1) @ 1.48\n3. ⚽ Guadalajara vs. Atlante: Guadalajara Ganador Directo (1) @ 1.44"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "71.8%",
+          "combinedEv": "-10.6%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Waasland-Beveren vs. Union St.-Gilloise",
+              "tournament": "Jupiler Pro League (13:45 CST)",
+              "selection": "Union St.-Gilloise Ganador Directo (2)",
+              "odds": 1.47,
+              "confidencePct": 65,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -215 → @ 1.47; prob. de mercado sin margen 65%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 65%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401878957",
+              "espnLeague": "bel.1",
+              "kickoffLocal": "2026-10-31 13:45",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "LA Galaxy vs. Austin FC",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "LA Galaxy Ganador Directo (1)",
+              "odds": 1.48,
+              "confidencePct": 64,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 63%; forma últimos 5 LA Galaxy DDWLW vs Austin FC DWLLL; goles esperados (Poisson) 3.60; Últimos 5: LA Galaxy (11 anotados / 12 recibidos goles) vs Austin FC (6 anotados / 12 recibidos); prob. modelo 64%; EV -5.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "761925",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-10-31 15:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Guadalajara vs. Atlante",
+              "tournament": "Liga MX (19:07 CST)",
+              "selection": "Guadalajara Ganador Directo (1)",
+              "odds": 1.44,
+              "confidencePct": 65,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Guadalajara DWDDL vs Atlante DWLLW; goles esperados (Poisson) 3.10; Últimos 5: Guadalajara (6 anotados / 2 recibidos goles) vs Atlante (6 anotados / 7 recibidos); prob. modelo 65%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401876915",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-10-31 19:07",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Union St.-Gilloise + ⚽ LA Galaxy)",
+              "odds": 2.18,
+              "formula": "1.47 × 1.48"
+            },
+            {
+              "name": "Doble 2 (⚽ Union St.-Gilloise + ⚽ Guadalajara)",
+              "odds": 2.12,
+              "formula": "1.47 × 1.44"
+            },
+            {
+              "name": "Doble 3 (⚽ LA Galaxy + ⚽ Guadalajara)",
+              "odds": 2.13,
+              "formula": "1.48 × 1.44"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 3.13,
+              "formula": "1.47 × 1.48 × 1.44"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Union St.-Gilloise + LA Galaxy)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $54.50."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Union St.-Gilloise + Guadalajara)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $53.00."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $239.00."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $239.00 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (31 OCTUBRE)\n• Pick A: ⚽ Waasland-Beveren vs. Union St.-Gilloise (Union St.-Gilloise Ganador Directo (2)) @ 1.47\n• Pick B: ⚽ LA Galaxy vs. Austin FC (LA Galaxy Ganador Directo (1)) @ 1.48\n• Pick C: ⚽ Guadalajara vs. Atlante (Guadalajara Ganador Directo (1)) @ 1.44"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.70x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Waasland-Beveren vs. Union St.-Gilloise y LA Galaxy vs. Austin FC).",
+          "totalOdds": 1.7,
+          "fairOdds": 1.95,
+          "expectedWinRate": "51.4%",
+          "combinedEv": "-12.7%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Waasland-Beveren vs. Union St.-Gilloise",
+              "tournament": "Jupiler Pro League (13:45 CST)",
+              "selection": "Union St.-Gilloise Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.33,
+              "confidencePct": 71,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.33; prob. de mercado sin margen 71%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 71%; EV -5.8%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "X2"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401878957",
+              "espnLeague": "bel.1",
+              "kickoffLocal": "2026-10-31 13:45",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Freethielstadion",
+              "singleReturn": 133.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "LA Galaxy vs. Austin FC",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.28,
+              "confidencePct": 72,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.28; prob. de mercado sin margen 72%; forma últimos 5 LA Galaxy DDWLW vs Austin FC DWLLL; goles esperados (Poisson) 3.60; Últimos 5: LA Galaxy (11 anotados / 12 recibidos goles) vs Austin FC (6 anotados / 12 recibidos); prob. modelo 72%; EV -7.2%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "761925",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-10-31 15:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Dignity Health Sports Park",
+              "singleReturn": 128.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Waasland-Beveren vs. Union St.-Gilloise (Union St.-Gilloise Doble Oportunidad (X2) + Más 1.5 Goles Totales) y LA Galaxy vs. Austin FC (LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.70x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                  "min_result": "Union St.-Gilloise Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 71%."
+                },
+                {
+                  "match": "LA Galaxy vs. Austin FC",
+                  "min_result": "LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 72%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $170.00 (+$70.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (31 OCTUBRE)\n1. ⚽ Waasland-Beveren vs. Union St.-Gilloise (Union St.-Gilloise Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.33\n2. ⚽ LA Galaxy vs. Austin FC (LA Galaxy Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.28"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Waasland-Beveren vs. Union St.-Gilloise con Milwaukee Bucks vs. Cleveland Cavaliers y Memphis Grizzlies vs. Sacramento Kings.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "72.5%",
+        "avgOdds": 1.33,
+        "combinedEv": "-4.1%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Waasland-Beveren vs. Union St.-Gilloise",
+            "tournament": "Jupiler Pro League (13:45 CST)",
+            "selection": "Union St.-Gilloise Ganador Directo (2)",
+            "odds": 1.47,
+            "confidencePct": 65,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -215 → @ 1.47; prob. de mercado sin margen 65%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 65%; EV -4.3%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401878957",
+            "espnLeague": "bel.1",
+            "kickoffLocal": "2026-10-31 13:45",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Freethielstadion",
+            "singleReturn": 147.0,
+            "safeSelection": "Union St.-Gilloise Doble Oportunidad (X2)",
+            "safeOdds": 1.12
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Milwaukee Bucks vs. Cleveland Cavaliers",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+            "odds": 1.25,
+            "confidencePct": 77,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Milwaukee Bucks — vs Cleveland Cavaliers —; Predictor Oficial ESPN: Milwaukee Bucks 26.0% vs Cleveland Cavaliers 74.0%; Últimos 5: Milwaukee Bucks (567 anotados / 621 recibidos pts) vs Cleveland Cavaliers (463 anotados / 460 recibidos); prob. modelo 77%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401909900",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-31 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Fiserv Forum",
+            "singleReturn": 125.0,
+            "safeSelection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+            "safeOdds": 1.25
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Memphis Grizzlies vs. Sacramento Kings",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+            "odds": 1.27,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Memphis Grizzlies — vs Sacramento Kings —; Predictor Oficial ESPN: Memphis Grizzlies 78.7% vs Sacramento Kings 21.3%; Últimos 5: Memphis Grizzlies (591 anotados / 531 recibidos pts) vs Sacramento Kings (551 anotados / 634 recibidos); prob. modelo 76%; EV -4.1%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909899",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-10-31 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "FedExForum",
+            "singleReturn": 127.0,
+            "safeSelection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+            "safeOdds": 1.27
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (72.5% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Sábado 31 de Octubre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.33,
+            "expectedWinRate": "72.5%",
+            "combinedEv": "-4.1%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                "tournament": "Jupiler Pro League (13:45 CST)",
+                "selection": "Union St.-Gilloise Ganador Directo (2)",
+                "odds": 1.47,
+                "confidencePct": 65,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -215 → @ 1.47; prob. de mercado sin margen 65%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 65%; EV -4.3%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401878957",
+                "espnLeague": "bel.1",
+                "kickoffLocal": "2026-10-31 13:45",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Freethielstadion",
+                "singleReturn": 147.0,
+                "safeSelection": "Union St.-Gilloise Doble Oportunidad (X2)",
+                "safeOdds": 1.12
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Milwaukee Bucks vs. Cleveland Cavaliers",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "odds": 1.25,
+                "confidencePct": 77,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Milwaukee Bucks — vs Cleveland Cavaliers —; Predictor Oficial ESPN: Milwaukee Bucks 26.0% vs Cleveland Cavaliers 74.0%; Últimos 5: Milwaukee Bucks (567 anotados / 621 recibidos pts) vs Cleveland Cavaliers (463 anotados / 460 recibidos); prob. modelo 77%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909900",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-31 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Fiserv Forum",
+                "singleReturn": 125.0,
+                "safeSelection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "safeOdds": 1.25
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Memphis Grizzlies vs. Sacramento Kings",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                "odds": 1.27,
+                "confidencePct": 76,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Memphis Grizzlies — vs Sacramento Kings —; Predictor Oficial ESPN: Memphis Grizzlies 78.7% vs Sacramento Kings 21.3%; Últimos 5: Memphis Grizzlies (591 anotados / 531 recibidos pts) vs Sacramento Kings (551 anotados / 634 recibidos); prob. modelo 76%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909899",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-31 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "FedExForum",
+                "singleReturn": 127.0,
+                "safeSelection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                "safeOdds": 1.27
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Waasland-Beveren vs. Union St.-Gilloise, Milwaukee Bucks vs. Cleveland Cavaliers y Memphis Grizzlies vs. Sacramento Kings.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                    "min_result": "Union St.-Gilloise Ganador Directo (2)",
+                    "explanation": "Cobras $147.00."
+                  },
+                  {
+                    "match": "Milwaukee Bucks vs. Cleveland Cavaliers",
+                    "min_result": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $125.00."
+                  },
+                  {
+                    "match": "Memphis Grizzlies vs. Sacramento Kings",
+                    "min_result": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $127.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $399.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (31 OCTUBRE)\n1. Waasland-Beveren vs. Union St.-Gilloise: Union St.-Gilloise Ganador Directo (2) @ 1.47\n2. Milwaukee Bucks vs. Cleveland Cavaliers: Cleveland Cavaliers Ganador Directo (Moneyline) @ 1.25\n3. Memphis Grizzlies vs. Sacramento Kings: Memphis Grizzlies Ganador Directo (Moneyline) @ 1.27"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "81.7%",
+            "combinedEv": "-8.7%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                "tournament": "Jupiler Pro League (13:45 CST)",
+                "selection": "Union St.-Gilloise Ganador Directo (2)",
+                "odds": 1.47,
+                "confidencePct": 65,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -215 → @ 1.47; prob. de mercado sin margen 65%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 65%; EV -4.3%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401878957",
+                "espnLeague": "bel.1",
+                "kickoffLocal": "2026-10-31 13:45",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Milwaukee Bucks vs. Cleveland Cavaliers",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "odds": 1.25,
+                "confidencePct": 77,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Milwaukee Bucks — vs Cleveland Cavaliers —; Predictor Oficial ESPN: Milwaukee Bucks 26.0% vs Cleveland Cavaliers 74.0%; Últimos 5: Milwaukee Bucks (567 anotados / 621 recibidos pts) vs Cleveland Cavaliers (463 anotados / 460 recibidos); prob. modelo 77%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909900",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-31 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Memphis Grizzlies vs. Sacramento Kings",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                "odds": 1.27,
+                "confidencePct": 76,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -375 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Memphis Grizzlies — vs Sacramento Kings —; Predictor Oficial ESPN: Memphis Grizzlies 78.7% vs Sacramento Kings 21.3%; Últimos 5: Memphis Grizzlies (591 anotados / 531 recibidos pts) vs Sacramento Kings (551 anotados / 634 recibidos); prob. modelo 76%; EV -4.1%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909899",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-31 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Waasland-Beveren + Milwaukee Bucks)",
+                "odds": 1.84,
+                "formula": "1.47 × 1.25"
+              },
+              {
+                "name": "Doble 2 (Waasland-Beveren + Memphis Grizzlies)",
+                "odds": 1.87,
+                "formula": "1.47 × 1.27"
+              },
+              {
+                "name": "Doble 3 (Milwaukee Bucks + Memphis Grizzlies)",
+                "odds": 1.59,
+                "formula": "1.25 × 1.27"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.33,
+                "formula": "1.47 × 1.25 × 1.27"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Waasland-Beveren + Milwaukee Bucks)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 1.84x): $46.00 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $190.75."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $190.75 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (31 OCTUBRE)\n• Pick A: Waasland-Beveren vs. Union St.-Gilloise (Union St.-Gilloise Ganador Directo (2)) @ 1.47\n• Pick B: Milwaukee Bucks vs. Cleveland Cavaliers (Cleveland Cavaliers Ganador Directo (Moneyline)) @ 1.25\n• Pick C: Memphis Grizzlies vs. Sacramento Kings (Memphis Grizzlies Ganador Directo (Moneyline)) @ 1.27"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.40x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.40x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Waasland-Beveren vs. Union St.-Gilloise y Milwaukee Bucks vs. Cleveland Cavaliers.",
+            "totalOdds": 1.4,
+            "fairOdds": 1.54,
+            "expectedWinRate": "65.1%",
+            "combinedEv": "-8.8%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                "tournament": "Jupiler Pro League (13:45 CST)",
+                "selection": "Union St.-Gilloise Doble Oportunidad (X2)",
+                "odds": 1.12,
+                "confidencePct": 85,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.12; prob. de mercado sin margen 84%; forma últimos 5 Waasland-Beveren DLLWW vs Union St.-Gilloise DWDDW; goles esperados (Poisson) 3.24; Últimos 5: Waasland-Beveren (10 anotados / 8 recibidos goles) vs Union St.-Gilloise (13 anotados / 4 recibidos); prob. modelo 85%; EV -4.5%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "X2"
+                  }
+                ],
+                "espnEventId": "401878957",
+                "espnLeague": "bel.1",
+                "kickoffLocal": "2026-10-31 13:45",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Freethielstadion",
+                "singleReturn": 112.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Milwaukee Bucks vs. Cleveland Cavaliers",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                "odds": 1.25,
+                "confidencePct": 77,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Milwaukee Bucks — vs Cleveland Cavaliers —; Predictor Oficial ESPN: Milwaukee Bucks 26.0% vs Cleveland Cavaliers 74.0%; Últimos 5: Milwaukee Bucks (567 anotados / 621 recibidos pts) vs Cleveland Cavaliers (463 anotados / 460 recibidos); prob. modelo 77%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909900",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-10-31 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Fiserv Forum",
+                "singleReturn": 125.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Waasland-Beveren vs. Union St.-Gilloise y Milwaukee Bucks vs. Cleveland Cavaliers.",
+                "Coloca Parlay / Combinada @ 1.40x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Waasland-Beveren vs. Union St.-Gilloise",
+                    "min_result": "Union St.-Gilloise Doble Oportunidad (X2)",
+                    "explanation": "Probabilidad modelo 85%."
+                  },
+                  {
+                    "match": "Milwaukee Bucks vs. Cleveland Cavaliers",
+                    "min_result": "Cleveland Cavaliers Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 77%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $140.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (31 OCTUBRE)\n1. Waasland-Beveren vs. Union St.-Gilloise (Union St.-Gilloise Doble Oportunidad (X2)) @ 1.12\n2. Milwaukee Bucks vs. Cleveland Cavaliers (Cleveland Cavaliers Ganador Directo (Moneyline)) @ 1.25"
             }
           }
         }
