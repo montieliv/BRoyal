@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-02 16:30:33",
-  "hybrid_mode": true,
-  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, Basketball)",
+  "generated_at": "2026-11-03 14:19:30",
+  "hybrid_mode": false,
+  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos)",
   "active_sports": [
     "Football"
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-11-02",
-    "verified_at": "2026-11-02 16:30:33",
+    "verified_date": "2026-11-03",
+    "verified_at": "2026-11-03 14:19:30",
     "verification_status": "PARTIDOS Y CUOTAS REALES (ESPN API / DraftKings)",
     "auditor": "Black Royal — pronostico_diario.py",
     "total_matches_verified": 3
@@ -17,14 +17,14 @@
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
       "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-      "modeShort": "Modo A: Simples Fútbol (57.6% prob. media)",
+      "modeShort": "Modo A: Simples Fútbol (56.1% prob. media)",
       "badge": "MAYOR PROBABILIDAD",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 selecciones con cuotas reales DraftKings para el Lunes 2 de Noviembre (Liga BetPlay (Colombia), Liga Profesional Argentina). Cada acierto cobra por separado.",
-      "avgOdds": 1.64,
-      "expectedWinRate": "57.6%",
-      "combinedEv": "-6.2%",
+      "description": "3 selecciones con cuotas reales DraftKings para el Martes 3 de Noviembre (Brasileirão Série A, Liga BetPlay (Colombia)). Cada acierto cobra por separado.",
+      "avgOdds": 1.69,
+      "expectedWinRate": "56.1%",
+      "combinedEv": "-5.3%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
       "riskLevel": "MEDIO",
       "picks": [
@@ -32,61 +32,61 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Tucumán vs. Argentinos Juniors",
-          "tournament": "Liga Profesional Argentina (18:15 CST)",
-          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.51,
-          "confidencePct": 62,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 62%; EV -6.5%.",
-          "markets": [
-            {
-              "type": "TOTAL",
-              "side": "under",
-              "line": 2.5
-            }
-          ],
-          "espnEventId": "401841644",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-02 18:15",
-          "oddsEstimated": false,
-          "verified": true,
-          "stadium": "Monumental Presidente José Fierro",
-          "singleReturn": 151.0
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Independiente Rivadavia vs. Banfield",
-          "tournament": "Liga Profesional Argentina (18:15 CST)",
-          "selection": "Independiente Rivadavia Ganador Directo (1)",
-          "odds": 1.57,
-          "confidencePct": 60,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -175 → @ 1.57; prob. de mercado sin margen 60%; forma últimos 5 Independiente Rivadavia DDLDW vs Banfield DLWDD; goles esperados (Poisson) 2.67; Últimos 5: Independiente Rivadavia (4 anotados / 9 recibidos goles) vs Banfield (6 anotados / 6 recibidos); prob. modelo 60%; EV -5.7%.",
+          "match": "Internacional vs. Coritiba",
+          "tournament": "Brasileirão Série A (18:30 CST)",
+          "selection": "Internacional Ganador Directo (1)",
+          "odds": 1.59,
+          "confidencePct": 61,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Internacional DWLDW vs Coritiba WLLDL; goles esperados (Poisson) 2.80; Últimos 5: Internacional (7 anotados / 6 recibidos goles) vs Coritiba (3 anotados / 7 recibidos); prob. modelo 61%; EV -3.3%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401841652",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-02 18:15",
+          "espnEventId": "401841301",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-03 18:30",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Bautista Gargantini",
-          "singleReturn": 157.0
+          "stadium": "Estadio Beira-Rio",
+          "singleReturn": 159.0
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "Chapecoense vs. Mirassol",
+          "tournament": "Brasileirão Série A (16:30 CST)",
+          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+          "odds": 1.71,
+          "confidencePct": 54,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 Chapecoense DWLLL vs Mirassol LDWLD; goles esperados (Poisson) 2.86; Últimos 5: Chapecoense (3 anotados / 13 recibidos goles) vs Mirassol (4 anotados / 5 recibidos); prob. modelo 54%; EV -6.6%.",
+          "markets": [
+            {
+              "type": "TOTAL",
+              "side": "over",
+              "line": 2.5
+            }
+          ],
+          "espnEventId": "401841304",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-03 16:30",
+          "oddsEstimated": false,
+          "verified": true,
+          "stadium": "Arena Condá",
+          "singleReturn": 171.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Atlético Bucaramanga vs. Atlético Nacional",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
+          "match": "Deportivo Pasto vs. Jaguares de Córdoba",
+          "tournament": "Liga BetPlay (Colombia) (17:20 CST)",
           "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.83,
-          "confidencePct": 51,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 51%; forma últimos 5 Atlético Bucaramanga WLLDD vs Atlético Nacional DWWLW; goles esperados (Poisson) 2.63; Últimos 5: Atlético Bucaramanga (5 anotados / 6 recibidos goles) vs Atlético Nacional (11 anotados / 3 recibidos); prob. modelo 51%; EV -6.5%.",
+          "odds": 1.77,
+          "confidencePct": 53,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -130 → @ 1.77; prob. de mercado sin margen 53%; forma últimos 5 Deportivo Pasto LWLLD vs Jaguares de Córdoba LWLLW; goles esperados (Poisson) 2.55; Últimos 5: Deportivo Pasto (2 anotados / 6 recibidos goles) vs Jaguares de Córdoba (6 anotados / 9 recibidos); prob. modelo 53%; EV -6.1%.",
           "markets": [
             {
               "type": "TOTAL",
@@ -94,13 +94,13 @@
               "line": 2.5
             }
           ],
-          "espnEventId": "401877914",
+          "espnEventId": "401877896",
           "espnLeague": "col.1",
-          "kickoffLocal": "2026-11-02 19:15",
+          "kickoffLocal": "2026-11-03 17:20",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Estadio Alfonso López",
-          "singleReturn": 183.0
+          "stadium": "Departamental Libertad",
+          "singleReturn": 177.0
         }
       ],
       "real_life_example": {
@@ -113,24 +113,24 @@
           "title": "¿Cómo se cobra con las Simples?",
           "match_examples": [
             {
-              "match": "Atlético Tucumán vs. Argentinos Juniors",
-              "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
-              "explanation": "Si se cumple cobras $151.00 (+$51.00 neto)."
+              "match": "Internacional vs. Coritiba",
+              "min_result": "Internacional Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $159.00 (+$59.00 neto)."
             },
             {
-              "match": "Independiente Rivadavia vs. Banfield",
-              "min_result": "Independiente Rivadavia Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $157.00 (+$57.00 neto)."
+              "match": "Chapecoense vs. Mirassol",
+              "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+              "explanation": "Si se cumple cobras $171.00 (+$71.00 neto)."
             },
             {
-              "match": "Atlético Bucaramanga vs. Atlético Nacional",
+              "match": "Deportivo Pasto vs. Jaguares de Córdoba",
               "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
-              "explanation": "Si se cumple cobras $183.00 (+$83.00 neto)."
+              "explanation": "Si se cumple cobras $177.00 (+$77.00 neto)."
             }
           ],
-          "payout_example": "Con $100 por selección: los 3 aciertos pagan $491.00."
+          "payout_example": "Con $100 por selección: los 3 aciertos pagan $507.00."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (2 NOVIEMBRE)\n1. ⚽ Atlético Tucumán vs. Argentinos Juniors: Menos de 2.5 Goles Totales (Under 2.5) @ 1.51\n2. ⚽ Independiente Rivadavia vs. Banfield: Independiente Rivadavia Ganador Directo (1) @ 1.57\n3. ⚽ Atlético Bucaramanga vs. Atlético Nacional: Menos de 2.5 Goles Totales (Under 2.5) @ 1.83"
+        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (3 NOVIEMBRE)\n1. ⚽ Internacional vs. Coritiba: Internacional Ganador Directo (1) @ 1.59\n2. ⚽ Chapecoense vs. Mirassol: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. ⚽ Deportivo Pasto vs. Jaguares de Córdoba: Menos de 2.5 Goles Totales (Under 2.5) @ 1.77"
       }
     },
     "modo_b_sistema": {
@@ -142,8 +142,8 @@
       "tagColor": "cyan",
       "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "61.4%",
-      "combinedEv": "-13.7%",
+      "expectedWinRate": "59.2%",
+      "combinedEv": "-11.7%",
       "recommendedStake": "$25 por combinación ($100 total)",
       "riskLevel": "MEDIO",
       "picks": [
@@ -151,22 +151,21 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Tucumán vs. Argentinos Juniors",
-          "tournament": "Liga Profesional Argentina (18:15 CST)",
-          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.51,
-          "confidencePct": 62,
-          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 62%; EV -6.5%.",
+          "match": "Internacional vs. Coritiba",
+          "tournament": "Brasileirão Série A (18:30 CST)",
+          "selection": "Internacional Ganador Directo (1)",
+          "odds": 1.59,
+          "confidencePct": 61,
+          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Internacional DWLDW vs Coritiba WLLDL; goles esperados (Poisson) 2.80; Últimos 5: Internacional (7 anotados / 6 recibidos goles) vs Coritiba (3 anotados / 7 recibidos); prob. modelo 61%; EV -3.3%.",
           "markets": [
             {
-              "type": "TOTAL",
-              "side": "under",
-              "line": 2.5
+              "type": "ML",
+              "side": "home"
             }
           ],
-          "espnEventId": "401841644",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-02 18:15",
+          "espnEventId": "401841301",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-03 18:30",
           "oddsEstimated": false,
           "verified": true
         },
@@ -174,21 +173,22 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Independiente Rivadavia vs. Banfield",
-          "tournament": "Liga Profesional Argentina (18:15 CST)",
-          "selection": "Independiente Rivadavia Ganador Directo (1)",
-          "odds": 1.57,
-          "confidencePct": 60,
-          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -175 → @ 1.57; prob. de mercado sin margen 60%; forma últimos 5 Independiente Rivadavia DDLDW vs Banfield DLWDD; goles esperados (Poisson) 2.67; Últimos 5: Independiente Rivadavia (4 anotados / 9 recibidos goles) vs Banfield (6 anotados / 6 recibidos); prob. modelo 60%; EV -5.7%.",
+          "match": "Chapecoense vs. Mirassol",
+          "tournament": "Brasileirão Série A (16:30 CST)",
+          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+          "odds": 1.71,
+          "confidencePct": 54,
+          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 Chapecoense DWLLL vs Mirassol LDWLD; goles esperados (Poisson) 2.86; Últimos 5: Chapecoense (3 anotados / 13 recibidos goles) vs Mirassol (4 anotados / 5 recibidos); prob. modelo 54%; EV -6.6%.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "over",
+              "line": 2.5
             }
           ],
-          "espnEventId": "401841652",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-02 18:15",
+          "espnEventId": "401841304",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-03 16:30",
           "oddsEstimated": false,
           "verified": true
         },
@@ -196,12 +196,12 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Atlético Bucaramanga vs. Atlético Nacional",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
+          "match": "Deportivo Pasto vs. Jaguares de Córdoba",
+          "tournament": "Liga BetPlay (Colombia) (17:20 CST)",
           "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.83,
-          "confidencePct": 51,
-          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -120 → @ 1.83; prob. de mercado sin margen 51%; forma últimos 5 Atlético Bucaramanga WLLDD vs Atlético Nacional DWWLW; goles esperados (Poisson) 2.63; Últimos 5: Atlético Bucaramanga (5 anotados / 6 recibidos goles) vs Atlético Nacional (11 anotados / 3 recibidos); prob. modelo 51%; EV -6.5%.",
+          "odds": 1.77,
+          "confidencePct": 53,
+          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -130 → @ 1.77; prob. de mercado sin margen 53%; forma últimos 5 Deportivo Pasto LWLLD vs Jaguares de Córdoba LWLLW; goles esperados (Poisson) 2.55; Últimos 5: Deportivo Pasto (2 anotados / 6 recibidos goles) vs Jaguares de Córdoba (6 anotados / 9 recibidos); prob. modelo 53%; EV -6.1%.",
           "markets": [
             {
               "type": "TOTAL",
@@ -209,33 +209,33 @@
               "line": 2.5
             }
           ],
-          "espnEventId": "401877914",
+          "espnEventId": "401877896",
           "espnLeague": "col.1",
-          "kickoffLocal": "2026-11-02 19:15",
+          "kickoffLocal": "2026-11-03 17:20",
           "oddsEstimated": false,
           "verified": true
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Atlético Tucumán + ⚽ Independiente Rivadavia)",
-          "odds": 2.37,
-          "formula": "1.51 × 1.57"
+          "name": "Doble 1 (⚽ Internacional + ⚽ Chapecoense)",
+          "odds": 2.72,
+          "formula": "1.59 × 1.71"
         },
         {
-          "name": "Doble 2 (⚽ Atlético Tucumán + ⚽ Atlético Bucaramanga)",
-          "odds": 2.76,
-          "formula": "1.51 × 1.83"
+          "name": "Doble 2 (⚽ Internacional + ⚽ Deportivo Pasto)",
+          "odds": 2.81,
+          "formula": "1.59 × 1.77"
         },
         {
-          "name": "Doble 3 (⚽ Independiente Rivadavia + ⚽ Atlético Bucaramanga)",
-          "odds": 2.87,
-          "formula": "1.57 × 1.83"
+          "name": "Doble 3 (⚽ Chapecoense + ⚽ Deportivo Pasto)",
+          "odds": 3.03,
+          "formula": "1.71 × 1.77"
         },
         {
           "name": "Triple (Pleno 3/3)",
-          "odds": 4.34,
-          "formula": "1.51 × 1.57 × 1.83"
+          "odds": 4.81,
+          "formula": "1.59 × 1.71 × 1.77"
         }
       ],
       "real_life_example": {
@@ -248,38 +248,38 @@
           "title": "¿Cómo se cobra con el Sistema 2/3?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (Atlético Tucumán + Independiente Rivadavia)",
+              "match": "Escenario 2 de 3 (Internacional + Chapecoense)",
               "min_result": "Fallan solo el tercero",
-              "explanation": "Cobras la Doble 1: $59.25."
+              "explanation": "Cobras la Doble 1: $68.00."
             },
             {
-              "match": "Escenario 2 de 3 (Atlético Tucumán + Atlético Bucaramanga)",
+              "match": "Escenario 2 de 3 (Internacional + Deportivo Pasto)",
               "min_result": "Falla solo el segundo",
-              "explanation": "Cobras la Doble 2: $69.00."
+              "explanation": "Cobras la Doble 2: $70.25."
             },
             {
               "match": "Escenario Pleno 3 de 3",
               "min_result": "Aciertan los 3",
-              "explanation": "Cobras $308.50."
+              "explanation": "Cobras $334.25."
             }
           ],
-          "payout_example": "Con $100 cobras hasta $308.50 si aciertan los 3."
+          "payout_example": "Con $100 cobras hasta $334.25 si aciertan los 3."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (2 NOVIEMBRE)\n• Pick A: ⚽ Atlético Tucumán vs. Argentinos Juniors (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.51\n• Pick B: ⚽ Independiente Rivadavia vs. Banfield (Independiente Rivadavia Ganador Directo (1)) @ 1.57\n• Pick C: ⚽ Atlético Bucaramanga vs. Atlético Nacional (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.83"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (3 NOVIEMBRE)\n• Pick A: ⚽ Internacional vs. Coritiba (Internacional Ganador Directo (1)) @ 1.59\n• Pick B: ⚽ Chapecoense vs. Mirassol (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: ⚽ Deportivo Pasto vs. Jaguares de Córdoba (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.77"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (@ 1.71x)",
+      "modeShort": "Modo C: Doble Banker (@ 1.78x)",
       "badge": "BAJA VOLATILIDAD",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada de 2 piernas de alta probabilidad (Atlético Tucumán vs. Argentinos Juniors y Independiente Rivadavia vs. Banfield).",
-      "totalOdds": 1.71,
-      "fairOdds": 1.93,
-      "expectedWinRate": "51.8%",
-      "combinedEv": "-11.4%",
+      "description": "Combinada de 2 piernas de alta probabilidad (Internacional vs. Coritiba y Chapecoense vs. Mirassol).",
+      "totalOdds": 1.78,
+      "fairOdds": 1.98,
+      "expectedWinRate": "50.4%",
+      "combinedEv": "-10.3%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
       "picks": [
@@ -287,37 +287,12 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Tucumán vs. Argentinos Juniors",
-          "tournament": "Liga Profesional Argentina (18:15 CST)",
-          "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
-          "odds": 1.15,
-          "confidencePct": 82,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.15; prob. de mercado sin margen 82%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 82%; EV -5.9%.",
-          "markets": [
-            {
-              "type": "TOTAL",
-              "side": "under",
-              "line": 3.5
-            }
-          ],
-          "espnEventId": "401841644",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-02 18:15",
-          "oddsEstimated": true,
-          "verified": true,
-          "stadium": "Monumental Presidente José Fierro",
-          "singleReturn": 115.0
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Independiente Rivadavia vs. Banfield",
-          "tournament": "Liga Profesional Argentina (18:15 CST)",
-          "selection": "Independiente Rivadavia Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.49,
-          "confidencePct": 63,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.49; prob. de mercado sin margen 63%; forma últimos 5 Independiente Rivadavia DDLDW vs Banfield DLWDD; goles esperados (Poisson) 2.67; Últimos 5: Independiente Rivadavia (4 anotados / 9 recibidos goles) vs Banfield (6 anotados / 6 recibidos); prob. modelo 63%; EV -5.4%.",
+          "match": "Internacional vs. Coritiba",
+          "tournament": "Brasileirão Série A (18:30 CST)",
+          "selection": "Internacional Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.46,
+          "confidencePct": 65,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Internacional DWLDW vs Coritiba WLLDL; goles esperados (Poisson) 2.80; Últimos 5: Internacional (7 anotados / 6 recibidos goles) vs Coritiba (3 anotados / 7 recibidos); prob. modelo 65%; EV -5.6%.",
           "markets": [
             {
               "type": "DC",
@@ -329,477 +304,63 @@
               "line": 1.5
             }
           ],
-          "espnEventId": "401841652",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-02 18:15",
+          "espnEventId": "401841301",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-03 18:30",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Bautista Gargantini",
-          "singleReturn": 149.0
+          "stadium": "Estadio Beira-Rio",
+          "singleReturn": 146.0
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "match": "Chapecoense vs. Mirassol",
+          "tournament": "Brasileirão Série A (16:30 CST)",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.22,
+          "confidencePct": 78,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 Chapecoense DWLLL vs Mirassol LDWLD; goles esperados (Poisson) 2.86; Últimos 5: Chapecoense (3 anotados / 13 recibidos goles) vs Mirassol (4 anotados / 5 recibidos); prob. modelo 78%; EV -5.2%.",
+          "markets": [
+            {
+              "type": "TOTAL",
+              "side": "over",
+              "line": 1.5
+            }
+          ],
+          "espnEventId": "401841304",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-03 16:30",
+          "oddsEstimated": true,
+          "verified": true,
+          "stadium": "Arena Condá",
+          "singleReturn": 122.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona: Atlético Tucumán vs. Argentinos Juniors (Menos de 3.5 Goles Totales (Under 3.5)) y Independiente Rivadavia vs. Banfield (Independiente Rivadavia Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
-          "Coloca una Combinada / Parlay. Cuota aprox.: 1.71x (verifica la cuota real en tu casa)."
+          "Selecciona: Internacional vs. Coritiba (Internacional Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Chapecoense vs. Mirassol (Más de 1.5 Goles Totales (Over 1.5)).",
+          "Coloca una Combinada / Parlay. Cuota aprox.: 1.78x (verifica la cuota real en tu casa)."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana con la Doble Banker?",
           "match_examples": [
             {
-              "match": "Atlético Tucumán vs. Argentinos Juniors",
-              "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
-              "explanation": "Probabilidad modelo 82%."
+              "match": "Internacional vs. Coritiba",
+              "min_result": "Internacional Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "explanation": "Probabilidad modelo 65%."
             },
             {
-              "match": "Independiente Rivadavia vs. Banfield",
-              "min_result": "Independiente Rivadavia Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 63%."
+              "match": "Chapecoense vs. Mirassol",
+              "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+              "explanation": "Probabilidad modelo 78%."
             }
           ],
-          "payout_example": "Si ambas se cumplen, con $100 cobras $171.00 (+$71.00 neto)."
+          "payout_example": "Si ambas se cumplen, con $100 cobras $178.00 (+$78.00 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (2 NOVIEMBRE)\n1. ⚽ Atlético Tucumán vs. Argentinos Juniors (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.15\n2. ⚽ Independiente Rivadavia vs. Banfield (Independiente Rivadavia Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.49"
-      }
-    }
-  },
-  "has_hybrid_edition": true,
-  "hybrid_edition": {
-    "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
-    "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
-    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Atlético Tucumán vs. Argentinos Juniors con Dallas Mavericks vs. Sacramento Kings y Charlotte Hornets vs. Detroit Pistons.",
-    "active_sports": [
-      "Football",
-      "Basketball"
-    ],
-    "expectedWinRate": "67.7%",
-    "avgOdds": 1.41,
-    "combinedEv": "-4.8%",
-    "picks": [
-      {
-        "sourceName": "ESPN / DraftKings",
-        "sport": "Football",
-        "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "match": "Atlético Tucumán vs. Argentinos Juniors",
-        "tournament": "Liga Profesional Argentina (18:15 CST)",
-        "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-        "odds": 1.51,
-        "confidencePct": 62,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 62%; EV -6.5%.",
-        "markets": [
-          {
-            "type": "TOTAL",
-            "side": "under",
-            "line": 2.5
-          }
-        ],
-        "espnEventId": "401841644",
-        "espnLeague": "arg.1",
-        "kickoffLocal": "2026-11-02 18:15",
-        "oddsEstimated": false,
-        "verified": true,
-        "stadium": "Monumental Presidente José Fierro",
-        "singleReturn": 151.0,
-        "safeSelection": "Menos de 3.5 Goles Totales (Under 3.5)",
-        "safeOdds": 1.15
-      },
-      {
-        "sourceName": "NBA Second Spectrum",
-        "sport": "Basketball",
-        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Dallas Mavericks vs. Sacramento Kings",
-        "tournament": "NBA 2026-27 (19:00 CST)",
-        "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
-        "odds": 1.29,
-        "confidencePct": 74,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Dallas Mavericks — vs Sacramento Kings —; Predictor Oficial ESPN: Dallas Mavericks 82.8% vs Sacramento Kings 17.2%; Últimos 5: Dallas Mavericks (576 anotados / 543 recibidos pts) vs Sacramento Kings (560 anotados / 649 recibidos); prob. modelo 74%; EV -3.9%.",
-        "markets": [
-          {
-            "type": "ML",
-            "side": "home"
-          }
-        ],
-        "espnEventId": "401909913",
-        "espnLeague": "basketball/nba",
-        "kickoffLocal": "2026-11-02 19:00",
-        "oddsEstimated": false,
-        "verified": true,
-        "stadium": "American Airlines Center",
-        "singleReturn": 129.0,
-        "safeSelection": "Dallas Mavericks Ganador Directo (Moneyline)",
-        "safeOdds": 1.29
-      },
-      {
-        "sourceName": "NBA Second Spectrum",
-        "sport": "Basketball",
-        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Charlotte Hornets vs. Detroit Pistons",
-        "tournament": "NBA 2026-27 (18:30 CST)",
-        "selection": "Detroit Pistons Ganador Directo (Moneyline)",
-        "odds": 1.44,
-        "confidencePct": 67,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -229 → @ 1.44; prob. de mercado sin margen 67%; forma últimos 5 Charlotte Hornets — vs Detroit Pistons —; Predictor Oficial ESPN: Charlotte Hornets 35.5% vs Detroit Pistons 64.5%; Últimos 5: Charlotte Hornets (497 anotados / 514 recibidos pts) vs Detroit Pistons (538 anotados / 498 recibidos); prob. modelo 67%; EV -4.0%.",
-        "markets": [
-          {
-            "type": "ML",
-            "side": "away"
-          }
-        ],
-        "espnEventId": "401909908",
-        "espnLeague": "basketball/nba",
-        "kickoffLocal": "2026-11-02 18:30",
-        "oddsEstimated": false,
-        "verified": true,
-        "stadium": "Spectrum Center",
-        "singleReturn": 144.0,
-        "safeSelection": "Detroit Pistons Ganador Directo (Moneyline)",
-        "safeOdds": 1.44
-      }
-    ],
-    "strategies": {
-      "modo_a_simples": {
-        "id": "STRATEGY-HYBRID-A",
-        "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
-        "modeShort": "Modo A: Simples Híbridas (67.7% Win Rate)",
-        "badge": "MÁXIMO WIN RATE HÍBRIDO",
-        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "tagColor": "purple",
-        "description": "3 Selecciones multideporte de élite para el Lunes 2 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
-        "avgOdds": 1.41,
-        "expectedWinRate": "67.7%",
-        "combinedEv": "-4.8%",
-        "recommendedStake": "1.0% por selección (Flat Staking)",
-        "riskLevel": "MÍNIMO",
-        "picks": [
-          {
-            "sourceName": "ESPN / DraftKings",
-            "sport": "Football",
-            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Atlético Tucumán vs. Argentinos Juniors",
-            "tournament": "Liga Profesional Argentina (18:15 CST)",
-            "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-            "odds": 1.51,
-            "confidencePct": 62,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 62%; EV -6.5%.",
-            "markets": [
-              {
-                "type": "TOTAL",
-                "side": "under",
-                "line": 2.5
-              }
-            ],
-            "espnEventId": "401841644",
-            "espnLeague": "arg.1",
-            "kickoffLocal": "2026-11-02 18:15",
-            "oddsEstimated": false,
-            "verified": true,
-            "stadium": "Monumental Presidente José Fierro",
-            "singleReturn": 151.0,
-            "safeSelection": "Menos de 3.5 Goles Totales (Under 3.5)",
-            "safeOdds": 1.15
-          },
-          {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Dallas Mavericks vs. Sacramento Kings",
-            "tournament": "NBA 2026-27 (19:00 CST)",
-            "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
-            "odds": 1.29,
-            "confidencePct": 74,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Dallas Mavericks — vs Sacramento Kings —; Predictor Oficial ESPN: Dallas Mavericks 82.8% vs Sacramento Kings 17.2%; Últimos 5: Dallas Mavericks (576 anotados / 543 recibidos pts) vs Sacramento Kings (560 anotados / 649 recibidos); prob. modelo 74%; EV -3.9%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "home"
-              }
-            ],
-            "espnEventId": "401909913",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-02 19:00",
-            "oddsEstimated": false,
-            "verified": true,
-            "stadium": "American Airlines Center",
-            "singleReturn": 129.0,
-            "safeSelection": "Dallas Mavericks Ganador Directo (Moneyline)",
-            "safeOdds": 1.29
-          },
-          {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Charlotte Hornets vs. Detroit Pistons",
-            "tournament": "NBA 2026-27 (18:30 CST)",
-            "selection": "Detroit Pistons Ganador Directo (Moneyline)",
-            "odds": 1.44,
-            "confidencePct": 67,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -229 → @ 1.44; prob. de mercado sin margen 67%; forma últimos 5 Charlotte Hornets — vs Detroit Pistons —; Predictor Oficial ESPN: Charlotte Hornets 35.5% vs Detroit Pistons 64.5%; Últimos 5: Charlotte Hornets (497 anotados / 514 recibidos pts) vs Detroit Pistons (538 anotados / 498 recibidos); prob. modelo 67%; EV -4.0%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "away"
-              }
-            ],
-            "espnEventId": "401909908",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-02 18:30",
-            "oddsEstimated": false,
-            "verified": true,
-            "stadium": "Spectrum Center",
-            "singleReturn": 144.0,
-            "safeSelection": "Detroit Pistons Ganador Directo (Moneyline)",
-            "safeOdds": 1.44
-          }
-        ],
-        "real_life_example": {
-          "bookie_steps": [
-            "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
-            "Coloca 3 apuestas SIMPLES independientes: Atlético Tucumán vs. Argentinos Juniors, Dallas Mavericks vs. Sacramento Kings y Charlotte Hornets vs. Detroit Pistons.",
-            "Apuesta el mismo monto en cada una (ej. $100)."
-          ],
-          "winning_scenario": {
-            "title": "¿Cómo se cobra con las Simples Híbridas?",
-            "match_examples": [
-              {
-                "match": "Atlético Tucumán vs. Argentinos Juniors",
-                "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
-                "explanation": "Cobras $151.00."
-              },
-              {
-                "match": "Dallas Mavericks vs. Sacramento Kings",
-                "min_result": "Dallas Mavericks Ganador Directo (Moneyline)",
-                "explanation": "Cobras $129.00."
-              },
-              {
-                "match": "Charlotte Hornets vs. Detroit Pistons",
-                "min_result": "Detroit Pistons Ganador Directo (Moneyline)",
-                "explanation": "Cobras $144.00."
-              }
-            ],
-            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $424.00."
-          },
-          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (2 NOVIEMBRE)\n1. Atlético Tucumán vs. Argentinos Juniors: Menos de 2.5 Goles Totales (Under 2.5) @ 1.51\n2. Dallas Mavericks vs. Sacramento Kings: Dallas Mavericks Ganador Directo (Moneyline) @ 1.29\n3. Charlotte Hornets vs. Detroit Pistons: Detroit Pistons Ganador Directo (Moneyline) @ 1.44"
-        }
-      },
-      "modo_b_sistema": {
-        "id": "STRATEGY-HYBRID-B",
-        "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
-        "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
-        "badge": "SEGURO MULTIDEPORTE",
-        "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "tagColor": "cyan",
-        "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
-        "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-        "expectedWinRate": "75.6%",
-        "combinedEv": "-10.5%",
-        "recommendedStake": "$25 por combinación ($100 total)",
-        "riskLevel": "BAJO",
-        "picks": [
-          {
-            "sourceName": "ESPN / DraftKings",
-            "sport": "Football",
-            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Atlético Tucumán vs. Argentinos Juniors",
-            "tournament": "Liga Profesional Argentina (18:15 CST)",
-            "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-            "odds": 1.51,
-            "confidencePct": 62,
-            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 62%; EV -6.5%.",
-            "markets": [
-              {
-                "type": "TOTAL",
-                "side": "under",
-                "line": 2.5
-              }
-            ],
-            "espnEventId": "401841644",
-            "espnLeague": "arg.1",
-            "kickoffLocal": "2026-11-02 18:15",
-            "oddsEstimated": false,
-            "verified": true
-          },
-          {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Dallas Mavericks vs. Sacramento Kings",
-            "tournament": "NBA 2026-27 (19:00 CST)",
-            "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
-            "odds": 1.29,
-            "confidencePct": 74,
-            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Dallas Mavericks — vs Sacramento Kings —; Predictor Oficial ESPN: Dallas Mavericks 82.8% vs Sacramento Kings 17.2%; Últimos 5: Dallas Mavericks (576 anotados / 543 recibidos pts) vs Sacramento Kings (560 anotados / 649 recibidos); prob. modelo 74%; EV -3.9%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "home"
-              }
-            ],
-            "espnEventId": "401909913",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-02 19:00",
-            "oddsEstimated": false,
-            "verified": true
-          },
-          {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Charlotte Hornets vs. Detroit Pistons",
-            "tournament": "NBA 2026-27 (18:30 CST)",
-            "selection": "Detroit Pistons Ganador Directo (Moneyline)",
-            "odds": 1.44,
-            "confidencePct": 67,
-            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -229 → @ 1.44; prob. de mercado sin margen 67%; forma últimos 5 Charlotte Hornets — vs Detroit Pistons —; Predictor Oficial ESPN: Charlotte Hornets 35.5% vs Detroit Pistons 64.5%; Últimos 5: Charlotte Hornets (497 anotados / 514 recibidos pts) vs Detroit Pistons (538 anotados / 498 recibidos); prob. modelo 67%; EV -4.0%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "away"
-              }
-            ],
-            "espnEventId": "401909908",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-02 18:30",
-            "oddsEstimated": false,
-            "verified": true
-          }
-        ],
-        "combinations": [
-          {
-            "name": "Doble 1 (Atlético Tucumán + Dallas Mavericks)",
-            "odds": 1.95,
-            "formula": "1.51 × 1.29"
-          },
-          {
-            "name": "Doble 2 (Atlético Tucumán + Charlotte Hornets)",
-            "odds": 2.17,
-            "formula": "1.51 × 1.44"
-          },
-          {
-            "name": "Doble 3 (Dallas Mavericks + Charlotte Hornets)",
-            "odds": 1.86,
-            "formula": "1.29 × 1.44"
-          },
-          {
-            "name": "Triple (Pleno Multideporte)",
-            "odds": 2.8,
-            "formula": "1.51 × 1.29 × 1.44"
-          }
-        ],
-        "real_life_example": {
-          "bookie_steps": [
-            "Selecciona los 3 eventos en el cupón.",
-            "Elige pestaña Sistema → Trixie.",
-            "Apuesta $25 por línea ($100 total)."
-          ],
-          "winning_scenario": {
-            "title": "¿Cómo se cobra con el Sistema Híbrido?",
-            "match_examples": [
-              {
-                "match": "Escenario 2 de 3 (Atlético Tucumán + Dallas Mavericks)",
-                "min_result": "Ganan los 2 primeros",
-                "explanation": "Cobras Doble 1 (@ 1.95x): $48.75 amortizando."
-              },
-              {
-                "match": "Escenario Pleno 3 de 3",
-                "min_result": "Cumplen los 3",
-                "explanation": "Cobras las 3 Dobles + Triple: $219.50."
-              }
-            ],
-            "payout_example": "Con $100 cobras hasta $219.50 si aciertan los 3, o amortizas si 1 falla."
-          },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (2 NOVIEMBRE)\n• Pick A: Atlético Tucumán vs. Argentinos Juniors (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.51\n• Pick B: Dallas Mavericks vs. Sacramento Kings (Dallas Mavericks Ganador Directo (Moneyline)) @ 1.29\n• Pick C: Charlotte Hornets vs. Detroit Pistons (Detroit Pistons Ganador Directo (Moneyline)) @ 1.44"
-        }
-      },
-      "modo_c_banker": {
-        "id": "STRATEGY-HYBRID-C",
-        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.48x)",
-        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.48x)",
-        "badge": "DUPLICADOR HÍBRIDO",
-        "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-        "tagColor": "amber",
-        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Atlético Tucumán vs. Argentinos Juniors y Dallas Mavericks vs. Sacramento Kings.",
-        "totalOdds": 1.48,
-        "fairOdds": 1.65,
-        "expectedWinRate": "60.7%",
-        "combinedEv": "-10.1%",
-        "recommendedStake": "2.5% – 3.0% Bankroll",
-        "riskLevel": "BAJO",
-        "picks": [
-          {
-            "sourceName": "ESPN / DraftKings",
-            "sport": "Football",
-            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Atlético Tucumán vs. Argentinos Juniors",
-            "tournament": "Liga Profesional Argentina (18:15 CST)",
-            "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
-            "odds": 1.15,
-            "confidencePct": 82,
-            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.15; prob. de mercado sin margen 82%; forma últimos 5 Atlético Tucumán DWLDL vs Argentinos Juniors DWDWL; goles esperados (Poisson) 2.22; Últimos 5: Atlético Tucumán (7 anotados / 8 recibidos goles) vs Argentinos Juniors (5 anotados / 3 recibidos); prob. modelo 82%; EV -5.9%.",
-            "markets": [
-              {
-                "type": "TOTAL",
-                "side": "under",
-                "line": 3.5
-              }
-            ],
-            "espnEventId": "401841644",
-            "espnLeague": "arg.1",
-            "kickoffLocal": "2026-11-02 18:15",
-            "oddsEstimated": true,
-            "verified": true,
-            "stadium": "Monumental Presidente José Fierro",
-            "singleReturn": 115.0
-          },
-          {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Dallas Mavericks vs. Sacramento Kings",
-            "tournament": "NBA 2026-27 (19:00 CST)",
-            "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
-            "odds": 1.29,
-            "confidencePct": 74,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Dallas Mavericks — vs Sacramento Kings —; Predictor Oficial ESPN: Dallas Mavericks 82.8% vs Sacramento Kings 17.2%; Últimos 5: Dallas Mavericks (576 anotados / 543 recibidos pts) vs Sacramento Kings (560 anotados / 649 recibidos); prob. modelo 74%; EV -3.9%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "home"
-              }
-            ],
-            "espnEventId": "401909913",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-02 19:00",
-            "oddsEstimated": false,
-            "verified": true,
-            "stadium": "American Airlines Center",
-            "singleReturn": 129.0
-          }
-        ],
-        "real_life_example": {
-          "bookie_steps": [
-            "Abre tu casa de apuestas.",
-            "Selecciona: Atlético Tucumán vs. Argentinos Juniors y Dallas Mavericks vs. Sacramento Kings.",
-            "Coloca Parlay / Combinada @ 1.48x."
-          ],
-          "winning_scenario": {
-            "title": "¿Cómo se gana con la Doble Banker Híbrida?",
-            "match_examples": [
-              {
-                "match": "Atlético Tucumán vs. Argentinos Juniors",
-                "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
-                "explanation": "Probabilidad modelo 82%."
-              },
-              {
-                "match": "Dallas Mavericks vs. Sacramento Kings",
-                "min_result": "Dallas Mavericks Ganador Directo (Moneyline)",
-                "explanation": "Probabilidad modelo 74%."
-              }
-            ],
-            "payout_example": "Si ambos cumplen, con $100 cobras $148.00."
-          },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (2 NOVIEMBRE)\n1. Atlético Tucumán vs. Argentinos Juniors (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.15\n2. Dallas Mavericks vs. Sacramento Kings (Dallas Mavericks Ganador Directo (Moneyline)) @ 1.29"
-        }
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (3 NOVIEMBRE)\n1. ⚽ Internacional vs. Coritiba (Internacional Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.46\n2. ⚽ Chapecoense vs. Mirassol (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
       }
     }
   }
