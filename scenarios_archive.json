@@ -34968,7 +34968,7 @@
     "2026-11-03": {
       "date": "2026-11-03",
       "saved_at": "2026-11-03 14:19:30",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -35087,7 +35087,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $507.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (3 NOVIEMBRE)\n1. ⚽ Internacional vs. Coritiba: Internacional Ganador Directo (1) @ 1.59\n2. ⚽ Chapecoense vs. Mirassol: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. ⚽ Deportivo Pasto vs. Jaguares de Córdoba: Menos de 2.5 Goles Totales (Under 2.5) @ 1.77"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -35222,7 +35223,8 @@
               "payout_example": "Con $100 cobras hasta $334.25 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (3 NOVIEMBRE)\n• Pick A: ⚽ Internacional vs. Coritiba (Internacional Ganador Directo (1)) @ 1.59\n• Pick B: ⚽ Chapecoense vs. Mirassol (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: ⚽ Deportivo Pasto vs. Jaguares de Córdoba (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.77"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -35317,6 +35319,381 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $178.00 (+$78.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (3 NOVIEMBRE)\n1. ⚽ Internacional vs. Coritiba (Internacional Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.46\n2. ⚽ Chapecoense vs. Mirassol (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
+          },
+          "status": "LOST"
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": true,
+        "netPnL": 341.31,
+        "roiPct": "+68.3%",
+        "wonModes": 2,
+        "simulatedTotalReturn": 841.31,
+        "winRate": "80.0% de selecciones (4/5) | Modo A $507.00 (3/3) + Modo B $334.31 + Modo C $0.00",
+        "evaluatedAt": "2026-11-04 14:35:40",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+      },
+      "match_results": {
+        "Internacional vs. Coritiba": "1-0 — Internacional Ganador Directo (1) ✅ | Internacional Doble Oportunidad (1X) + Más 1.5 Goles Totales ❌",
+        "Chapecoense vs. Mirassol": "1-2 — Más de 2.5 Goles Totales (Over 2.5) ✅ | Más de 1.5 Goles Totales (Over 1.5) ✅",
+        "Deportivo Pasto vs. Jaguares de Córdoba": "2-0 — Menos de 2.5 Goles Totales (Under 2.5) ✅"
+      },
+      "evaluatedAt": "2026-11-04 14:35:40"
+    },
+    "2026-11-04": {
+      "date": "2026-11-04",
+      "saved_at": "2026-11-04 14:35:41",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (59.4% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Miércoles 4 de Noviembre (Brasileirão Série A, Liga BetPlay (Colombia)). Cada acierto cobra por separado.",
+          "avgOdds": 1.59,
+          "expectedWinRate": "59.4%",
+          "combinedEv": "-5.7%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Botafogo vs. Atlético-MG",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Botafogo Ganador Directo (1)",
+              "odds": 1.56,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -180 → @ 1.56; prob. de mercado sin margen 61%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 62%; EV -4.2%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841305",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-04 18:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Joao Havelange Stadium",
+              "singleReturn": 156.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "São Paulo vs. Corinthians",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.53,
+              "confidencePct": 61,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 61%; forma últimos 5 São Paulo DDWWL vs Corinthians WLDLL; goles esperados (Poisson) 2.24; Últimos 5: São Paulo (6 anotados / 7 recibidos goles) vs Corinthians (7 anotados / 10 recibidos); prob. modelo 61%; EV -6.7%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401841298",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-04 18:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estádio Vila Belmiro (Urbano Caldeira)",
+              "singleReturn": 153.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Millonarios vs. América de Cali",
+              "tournament": "Liga BetPlay (Colombia) (19:30 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.69,
+              "confidencePct": 55,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -145 → @ 1.69; prob. de mercado sin margen 55%; forma últimos 5 Millonarios DWDLD vs América de Cali DWWDL; goles esperados (Poisson) 2.46; Últimos 5: Millonarios (9 anotados / 6 recibidos goles) vs América de Cali (11 anotados / 5 recibidos); prob. modelo 55%; EV -6.4%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401877910",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-04 19:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Nemesio Camacho El Campín",
+              "singleReturn": 169.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Botafogo vs. Atlético-MG",
+                  "min_result": "Botafogo Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $156.00 (+$56.00 neto)."
+                },
+                {
+                  "match": "São Paulo vs. Corinthians",
+                  "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
+                  "explanation": "Si se cumple cobras $153.00 (+$53.00 neto)."
+                },
+                {
+                  "match": "Millonarios vs. América de Cali",
+                  "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
+                  "explanation": "Si se cumple cobras $169.00 (+$69.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $478.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (4 NOVIEMBRE)\n1. ⚽ Botafogo vs. Atlético-MG: Botafogo Ganador Directo (1) @ 1.56\n2. ⚽ São Paulo vs. Corinthians: Menos de 2.5 Goles Totales (Under 2.5) @ 1.53\n3. ⚽ Millonarios vs. América de Cali: Menos de 2.5 Goles Totales (Under 2.5) @ 1.69"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "63.9%",
+          "combinedEv": "-12.0%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Botafogo vs. Atlético-MG",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Botafogo Ganador Directo (1)",
+              "odds": 1.56,
+              "confidencePct": 62,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -180 → @ 1.56; prob. de mercado sin margen 61%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 62%; EV -4.2%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841305",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-04 18:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "São Paulo vs. Corinthians",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.53,
+              "confidencePct": 61,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 61%; forma últimos 5 São Paulo DDWWL vs Corinthians WLDLL; goles esperados (Poisson) 2.24; Últimos 5: São Paulo (6 anotados / 7 recibidos goles) vs Corinthians (7 anotados / 10 recibidos); prob. modelo 61%; EV -6.7%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401841298",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-04 18:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Millonarios vs. América de Cali",
+              "tournament": "Liga BetPlay (Colombia) (19:30 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.69,
+              "confidencePct": 55,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -145 → @ 1.69; prob. de mercado sin margen 55%; forma últimos 5 Millonarios DWDLD vs América de Cali DWWDL; goles esperados (Poisson) 2.46; Últimos 5: Millonarios (9 anotados / 6 recibidos goles) vs América de Cali (11 anotados / 5 recibidos); prob. modelo 55%; EV -6.4%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401877910",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-04 19:30",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Botafogo + ⚽ São Paulo)",
+              "odds": 2.39,
+              "formula": "1.56 × 1.53"
+            },
+            {
+              "name": "Doble 2 (⚽ Botafogo + ⚽ Millonarios)",
+              "odds": 2.64,
+              "formula": "1.56 × 1.69"
+            },
+            {
+              "name": "Doble 3 (⚽ São Paulo + ⚽ Millonarios)",
+              "odds": 2.59,
+              "formula": "1.53 × 1.69"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 4.03,
+              "formula": "1.56 × 1.53 × 1.69"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Botafogo + São Paulo)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $59.75."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Botafogo + Millonarios)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $66.00."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $291.25."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $291.25 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (4 NOVIEMBRE)\n• Pick A: ⚽ Botafogo vs. Atlético-MG (Botafogo Ganador Directo (1)) @ 1.56\n• Pick B: ⚽ São Paulo vs. Corinthians (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.53\n• Pick C: ⚽ Millonarios vs. América de Cali (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.69"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.68x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Botafogo vs. Atlético-MG y São Paulo vs. Corinthians).",
+          "totalOdds": 1.68,
+          "fairOdds": 1.87,
+          "expectedWinRate": "53.4%",
+          "combinedEv": "-10.3%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Botafogo vs. Atlético-MG",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Botafogo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.44,
+              "confidencePct": 66,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 66%; EV -5.2%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841305",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-04 18:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Joao Havelange Stadium",
+              "singleReturn": 144.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "São Paulo vs. Corinthians",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "odds": 1.17,
+              "confidencePct": 81,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.17; prob. de mercado sin margen 81%; forma últimos 5 São Paulo DDWWL vs Corinthians WLDLL; goles esperados (Poisson) 2.24; Últimos 5: São Paulo (6 anotados / 7 recibidos goles) vs Corinthians (7 anotados / 10 recibidos); prob. modelo 81%; EV -4.9%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 3.5
+                }
+              ],
+              "espnEventId": "401841298",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-04 18:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estádio Vila Belmiro (Urbano Caldeira)",
+              "singleReturn": 117.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Botafogo vs. Atlético-MG (Botafogo Doble Oportunidad (1X) + Más 1.5 Goles Totales) y São Paulo vs. Corinthians (Menos de 3.5 Goles Totales (Under 3.5)).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.68x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Botafogo vs. Atlético-MG",
+                  "min_result": "Botafogo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 66%."
+                },
+                {
+                  "match": "São Paulo vs. Corinthians",
+                  "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
+                  "explanation": "Probabilidad modelo 81%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $168.00 (+$68.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (4 NOVIEMBRE)\n1. ⚽ Botafogo vs. Atlético-MG (Botafogo Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.44\n2. ⚽ São Paulo vs. Corinthians (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.17"
           }
         }
       },
@@ -35326,6 +35703,441 @@
         "evaluated": false,
         "netPnL": 0.0,
         "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Botafogo vs. Atlético-MG con Houston Rockets vs. Minnesota Timberwolves y Memphis Grizzlies vs. Indiana Pacers.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "66.6%",
+        "avgOdds": 1.45,
+        "combinedEv": "-4.0%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Botafogo vs. Atlético-MG",
+            "tournament": "Brasileirão Série A (18:30 CST)",
+            "selection": "Botafogo Ganador Directo (1)",
+            "odds": 1.56,
+            "confidencePct": 62,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -180 → @ 1.56; prob. de mercado sin margen 61%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 62%; EV -4.2%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401841305",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-04 18:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Joao Havelange Stadium",
+            "singleReturn": 156.0,
+            "safeSelection": "Botafogo Doble Oportunidad (1X)",
+            "safeOdds": 1.14
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Houston Rockets vs. Minnesota Timberwolves",
+            "tournament": "NBA 2026-27 (19:30 CST)",
+            "selection": "Houston Rockets Ganador Directo (Moneyline)",
+            "odds": 1.36,
+            "confidencePct": 71,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 71%; forma últimos 5 Houston Rockets — vs Minnesota Timberwolves —; Predictor Oficial ESPN: Houston Rockets 60.1% vs Minnesota Timberwolves 39.9%; Últimos 5: Houston Rockets (591 anotados / 517 recibidos pts) vs Minnesota Timberwolves (464 anotados / 441 recibidos); prob. modelo 71%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909930",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-04 19:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Toyota Center (Houston)",
+            "singleReturn": 136.0,
+            "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+            "safeOdds": 1.36
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Memphis Grizzlies vs. Indiana Pacers",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+            "odds": 1.42,
+            "confidencePct": 68,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Memphis Grizzlies — vs Indiana Pacers —; Predictor Oficial ESPN: Memphis Grizzlies 74.3% vs Indiana Pacers 25.7%; Últimos 5: Memphis Grizzlies (493 anotados / 425 recibidos pts) vs Indiana Pacers (530 anotados / 575 recibidos); prob. modelo 68%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909927",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-04 19:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "FedExForum",
+            "singleReturn": 142.0,
+            "safeSelection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+            "safeOdds": 1.42
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (66.6% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Miércoles 4 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.45,
+            "expectedWinRate": "66.6%",
+            "combinedEv": "-4.0%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Botafogo vs. Atlético-MG",
+                "tournament": "Brasileirão Série A (18:30 CST)",
+                "selection": "Botafogo Ganador Directo (1)",
+                "odds": 1.56,
+                "confidencePct": 62,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -180 → @ 1.56; prob. de mercado sin margen 61%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 62%; EV -4.2%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841305",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-04 18:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Joao Havelange Stadium",
+                "singleReturn": 156.0,
+                "safeSelection": "Botafogo Doble Oportunidad (1X)",
+                "safeOdds": 1.14
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Houston Rockets vs. Minnesota Timberwolves",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.36,
+                "confidencePct": 71,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 71%; forma últimos 5 Houston Rockets — vs Minnesota Timberwolves —; Predictor Oficial ESPN: Houston Rockets 60.1% vs Minnesota Timberwolves 39.9%; Últimos 5: Houston Rockets (591 anotados / 517 recibidos pts) vs Minnesota Timberwolves (464 anotados / 441 recibidos); prob. modelo 71%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909930",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-04 19:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Toyota Center (Houston)",
+                "singleReturn": 136.0,
+                "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+                "safeOdds": 1.36
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Memphis Grizzlies vs. Indiana Pacers",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Memphis Grizzlies — vs Indiana Pacers —; Predictor Oficial ESPN: Memphis Grizzlies 74.3% vs Indiana Pacers 25.7%; Últimos 5: Memphis Grizzlies (493 anotados / 425 recibidos pts) vs Indiana Pacers (530 anotados / 575 recibidos); prob. modelo 68%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909927",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-04 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "FedExForum",
+                "singleReturn": 142.0,
+                "safeSelection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                "safeOdds": 1.42
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Botafogo vs. Atlético-MG, Houston Rockets vs. Minnesota Timberwolves y Memphis Grizzlies vs. Indiana Pacers.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Botafogo vs. Atlético-MG",
+                    "min_result": "Botafogo Ganador Directo (1)",
+                    "explanation": "Cobras $156.00."
+                  },
+                  {
+                    "match": "Houston Rockets vs. Minnesota Timberwolves",
+                    "min_result": "Houston Rockets Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $136.00."
+                  },
+                  {
+                    "match": "Memphis Grizzlies vs. Indiana Pacers",
+                    "min_result": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $142.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $434.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (4 NOVIEMBRE)\n1. Botafogo vs. Atlético-MG: Botafogo Ganador Directo (1) @ 1.56\n2. Houston Rockets vs. Minnesota Timberwolves: Houston Rockets Ganador Directo (Moneyline) @ 1.36\n3. Memphis Grizzlies vs. Indiana Pacers: Memphis Grizzlies Ganador Directo (Moneyline) @ 1.42"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "74.0%",
+            "combinedEv": "-8.7%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Botafogo vs. Atlético-MG",
+                "tournament": "Brasileirão Série A (18:30 CST)",
+                "selection": "Botafogo Ganador Directo (1)",
+                "odds": 1.56,
+                "confidencePct": 62,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -180 → @ 1.56; prob. de mercado sin margen 61%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 62%; EV -4.2%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841305",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-04 18:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Houston Rockets vs. Minnesota Timberwolves",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.36,
+                "confidencePct": 71,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 71%; forma últimos 5 Houston Rockets — vs Minnesota Timberwolves —; Predictor Oficial ESPN: Houston Rockets 60.1% vs Minnesota Timberwolves 39.9%; Últimos 5: Houston Rockets (591 anotados / 517 recibidos pts) vs Minnesota Timberwolves (464 anotados / 441 recibidos); prob. modelo 71%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909930",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-04 19:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Memphis Grizzlies vs. Indiana Pacers",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Memphis Grizzlies Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Memphis Grizzlies — vs Indiana Pacers —; Predictor Oficial ESPN: Memphis Grizzlies 74.3% vs Indiana Pacers 25.7%; Últimos 5: Memphis Grizzlies (493 anotados / 425 recibidos pts) vs Indiana Pacers (530 anotados / 575 recibidos); prob. modelo 68%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909927",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-04 19:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Botafogo + Houston Rockets)",
+                "odds": 2.12,
+                "formula": "1.56 × 1.36"
+              },
+              {
+                "name": "Doble 2 (Botafogo + Memphis Grizzlies)",
+                "odds": 2.22,
+                "formula": "1.56 × 1.42"
+              },
+              {
+                "name": "Doble 3 (Houston Rockets + Memphis Grizzlies)",
+                "odds": 1.93,
+                "formula": "1.36 × 1.42"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 3.01,
+                "formula": "1.56 × 1.36 × 1.42"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Botafogo + Houston Rockets)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 2.12x): $53.00 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $232.00."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $232.00 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (4 NOVIEMBRE)\n• Pick A: Botafogo vs. Atlético-MG (Botafogo Ganador Directo (1)) @ 1.56\n• Pick B: Houston Rockets vs. Minnesota Timberwolves (Houston Rockets Ganador Directo (Moneyline)) @ 1.36\n• Pick C: Memphis Grizzlies vs. Indiana Pacers (Memphis Grizzlies Ganador Directo (Moneyline)) @ 1.42"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.55x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.55x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Botafogo vs. Atlético-MG y Houston Rockets vs. Minnesota Timberwolves.",
+            "totalOdds": 1.55,
+            "fairOdds": 1.69,
+            "expectedWinRate": "59.0%",
+            "combinedEv": "-8.5%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Botafogo vs. Atlético-MG",
+                "tournament": "Brasileirão Série A (18:30 CST)",
+                "selection": "Botafogo Doble Oportunidad (1X)",
+                "odds": 1.14,
+                "confidencePct": 84,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.14; prob. de mercado sin margen 83%; forma últimos 5 Botafogo DLWDL vs Atlético-MG LLLLW; goles esperados (Poisson) 2.90; Últimos 5: Botafogo (4 anotados / 8 recibidos goles) vs Atlético-MG (3 anotados / 8 recibidos); prob. modelo 84%; EV -4.5%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401841305",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-04 18:30",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Joao Havelange Stadium",
+                "singleReturn": 114.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Houston Rockets vs. Minnesota Timberwolves",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.36,
+                "confidencePct": 71,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -278 → @ 1.36; prob. de mercado sin margen 71%; forma últimos 5 Houston Rockets — vs Minnesota Timberwolves —; Predictor Oficial ESPN: Houston Rockets 60.1% vs Minnesota Timberwolves 39.9%; Últimos 5: Houston Rockets (591 anotados / 517 recibidos pts) vs Minnesota Timberwolves (464 anotados / 441 recibidos); prob. modelo 71%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909930",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-04 19:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Toyota Center (Houston)",
+                "singleReturn": 136.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Botafogo vs. Atlético-MG y Houston Rockets vs. Minnesota Timberwolves.",
+                "Coloca Parlay / Combinada @ 1.55x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Botafogo vs. Atlético-MG",
+                    "min_result": "Botafogo Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 84%."
+                  },
+                  {
+                    "match": "Houston Rockets vs. Minnesota Timberwolves",
+                    "min_result": "Houston Rockets Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 71%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $155.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (4 NOVIEMBRE)\n1. Botafogo vs. Atlético-MG (Botafogo Doble Oportunidad (1X)) @ 1.14\n2. Houston Rockets vs. Minnesota Timberwolves (Houston Rockets Ganador Directo (Moneyline)) @ 1.36"
+            }
+          }
+        }
       }
     }
   }
