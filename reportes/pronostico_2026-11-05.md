@@ -1,46 +1,49 @@
-# BLACK ROYAL — Pronóstico Desglosado por Horarios 2026-11-05
+# BLACK ROYAL — Pronóstico Dual 2026-11-05
 
-_Generado 2026-11-04 16:05 CST · Fuente: ESPN API + DraftKings Oficial_
+_Generado 2026-11-05 14:52 CST · Fuente: ESPN API + DraftKings_
 
----
+## Liquidación de días anteriores
 
-## PRONÓSTICO 1: TURNO MATUTINO (11:45 CST · Partidos de las 11 hrs)
+_Sin escenarios pendientes por liquidar._
 
-### Partidos Seleccionados:
-1. **Atalanta vs. Kairat Almaty** (11:45 CST · Gewiss Stadium, Bérgamo)
-   - Atalanta Ganador Directo (1) @ 1.17 (Prob. 85%, EV +0.5%)
-   - Atalanta 1X + Más 1.5 Goles @ 1.15 (Prob. 88%)
-2. **AC Milan vs. Ferencváros** (11:45 CST · San Siro, Milán)
-   - AC Milan Ganador Directo (1) @ 1.36 (Prob. 72%, EV +1.2%)
-   - AC Milan 1X + Más 1.5 Goles @ 1.25 (Prob. 85%)
-3. **Lincoln Red Imps vs. Hajduk Split** (11:45 CST · Victoria Stadium, Gibraltar)
-   - Hajduk Split Ganador Directo (2) @ 1.39 (Prob. 72%, EV +0.8%)
-   - Hajduk Split Doble Oportunidad (X2) @ 1.12 (Prob. 90%)
+## Pronóstico del día (Fútbol + Híbrido)
 
-### Estrategias:
-- **Modo A (Simples Cuantitativas):** Cuota promedio: 1.31x | Win rate esperado: 82.5% | Stake: 1.5% - 2.0% por pick.
-- **Modo B (Trío Matutino):** Atalanta ML (1.17) + Milan ML (1.36) + Hajduk Split X2 (1.12) → **1.78x** (Win rate: 78.2%). Con $100 cobras $178.20.
-- **Modo C (Doble Banker 11:45 CST):** Atalanta 1X+O1.5 (1.15) + AC Milan 1X+O1.5 (1.25) → **1.44x** (Win rate: 75.4%). Con $100 cobras $143.75.
+## Opción 1: 100% Fútbol
+### Modo A: Apuestas Simples de Valor (100% Fútbol)
+Prob. estimada: **62.6%** | EV: -3.7%
+- Brasileirão Série A (16:30 CST) — **Palmeiras vs. Remo**: Palmeiras Ganador Directo (1) @ **1.22** (conf. 79%)
+- Brasileirão Série A (18:30 CST) — **Cruzeiro vs. Bahia**: Cruzeiro Ganador Directo (1) @ **1.77** (conf. 55%)
+- Liga Profesional Argentina (16:15 CST) — **Gimnasia La Plata vs. Belgrano (Córdoba)**: Menos de 2.5 Goles Totales (Under 2.5) @ **1.77** (conf. 53%)
 
----
+### Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)
+Prob. estimada: **68.8%** | EV: -8.3%
+- Brasileirão Série A (16:30 CST) — **Palmeiras vs. Remo**: Palmeiras Ganador Directo (1) @ **1.22** (conf. 79%)
+- Brasileirão Série A (18:30 CST) — **Cruzeiro vs. Bahia**: Cruzeiro Ganador Directo (1) @ **1.77** (conf. 55%)
+- Liga Profesional Argentina (16:15 CST) — **Gimnasia La Plata vs. Belgrano (Córdoba)**: Menos de 2.5 Goles Totales (Under 2.5) @ **1.77** (conf. 53%)
 
-## PRONÓSTICO 2: TURNO VESPERTINO (14:00 CST · Partidos de las 14 hrs)
+### Modo C: Doble Banker 100% Fútbol (2 Legs)
+Prob. estimada: **48.5%** | EV: -11.2% | Cuota total: 1.83
+- Brasileirão Série A (16:30 CST) — **Palmeiras vs. Remo**: Palmeiras Doble Oportunidad (1X) + Más 1.5 Goles Totales @ **1.23** _(cuota estimada)_ (conf. 76%)
+- Brasileirão Série A (18:30 CST) — **Cruzeiro vs. Bahia**: Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales @ **1.49** _(cuota estimada)_ (conf. 64%)
 
-### Partidos Seleccionados:
-1. **Benfica vs. Lech Poznań** (14:00 CST · Estádio da Luz, Lisboa)
-   - Benfica Ganador Directo (1) @ 1.17 (Prob. 86%, EV +0.7%)
-   - Benfica 1X + Más 1.5 Goles @ 1.15 (Prob. 84%)
-2. **Bayer Leverkusen vs. Marseille** (14:00 CST · BayArena, Leverkusen)
-   - Bayer Leverkusen Ganador Directo (1) @ 1.38 (Prob. 70%, EV +0.6%)
-   - Bayer Leverkusen 1X + Más 1.5 Goles @ 1.26 (Prob. 85%)
-3. **Panathinaikos vs. CSKA Sofia** (14:00 CST · Apostolos Nikolaidis, Atenas)
-   - Panathinaikos Ganador Directo (1) @ 1.48 (Prob. 70%, EV +2.9%)
-   - Panathinaikos Doble Oportunidad (1X) @ 1.12 (Prob. 90%)
+## Opción 2: Modo Híbrido Multideporte (Football + Basketball)
+_Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball._
 
-### Estrategias:
-- **Modo A (Simples Cuantitativas):** Cuota promedio: 1.34x | Win rate esperado: 82.0% | Stake: 1.5% - 2.0% por pick.
-- **Modo B (Trío Vespertino):** Benfica ML (1.17) + Leverkusen 1X (1.14) + Panathinaikos 1X (1.12) → **1.50x** (Win rate: 82.1%). Con $100 cobras $149.40.
-- **Modo C (Doble Banker 14:00 CST):** Benfica 1X+O1.5 (1.15) + Leverkusen 1X+O1.5 (1.26) → **1.45x** (Win rate: 72.0%). Con $100 cobras $144.90.
+### Modo A: Simples Híbridas (Fútbol + Basketball)
+Prob. estimada: **66.4%** | EV: -2.9%
+- Brasileirão Série A (16:30 CST) — **Palmeiras vs. Remo**: Palmeiras Ganador Directo (1) @ **1.22** (conf. 79%)
+- NBA 2026-27 (21:00 CST) — **Golden State Warriors vs. Miami Heat**: Golden State Warriors Ganador Directo (Moneyline) @ **1.38** (conf. 70%)
+- NBA 2026-27 (20:00 CST) — **Phoenix Suns vs. Orlando Magic**: Phoenix Suns (-1.5 Spread / Hándicap) @ **1.96** (conf. 50%)
 
----
-_Desglose optimizado por franja horaria: permite liquidar el turno matutino antes de que inicie el vespertino._
+### Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)
+Prob. estimada: **74.6%** | EV: -6.6%
+- Brasileirão Série A (16:30 CST) — **Palmeiras vs. Remo**: Palmeiras Ganador Directo (1) @ **1.22** (conf. 79%)
+- NBA 2026-27 (21:00 CST) — **Golden State Warriors vs. Miami Heat**: Golden State Warriors Ganador Directo (Moneyline) @ **1.38** (conf. 70%)
+- NBA 2026-27 (20:00 CST) — **Phoenix Suns vs. Orlando Magic**: Phoenix Suns (-1.5 Spread / Hándicap) @ **1.96** (conf. 50%)
+
+### Modo C: Doble Banker Híbrida (Duplicador @ 1.68x)
+Prob. estimada: **55.4%** | EV: -6.9% | Cuota total: 1.68
+- Brasileirão Série A (16:30 CST) — **Palmeiras vs. Remo**: Palmeiras Ganador Directo (1) @ **1.22** (conf. 79%)
+- NBA 2026-27 (21:00 CST) — **Golden State Warriors vs. Miami Heat**: Golden State Warriors Ganador Directo (Moneyline) @ **1.38** (conf. 70%)
+
+> Probabilidades = cuotas DraftKings sin margen + pequeño ajuste por forma reciente. Las cuotas marcadas como estimadas deben verificarse en tu casa de apuestas. No es garantía de resultado.
