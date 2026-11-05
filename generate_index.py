@@ -10,7 +10,7 @@ with open(SUMMARY_FILE, 'r', encoding='utf-8') as f:
 
 dataset_json_str = json.dumps(dataset, ensure_ascii=False, indent=2)
 
-gen_at = dataset.get("generated_at", "")
+gen_at = dataset.get("target_date") or dataset.get("verification_meta", {}).get("verified_date") or dataset.get("generated_at", "")
 try:
     dt = datetime.datetime.strptime(gen_at.split()[0], "%Y-%m-%d")
     months = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
@@ -55,8 +55,21 @@ if has_hybrid_edition and hybrid_data:
     hy_sports_label = " + ".join(["FÚTBOL" if s=="Football" else ("MLB" if s=="Baseball" else ("NFL" if s=="NFL" else s.upper())) for s in hy_sports])
     hy_title = hybrid_data.get("title", "Módulo de Arbitraje Híbrido Multideporte")
     hy_subtitle = hybrid_data.get("subtitle", "Fusión cuantitativa multideporte de alta certeza.")
+    hy_badge_text = hybrid_data.get("badge_text", "MODO HÍBRIDO MULTIDEPORTE ACTIVO")
+    hy_badge_icon = hybrid_data.get("badge_icon", "fa-solid fa-bolt")
 
-    live_audit_banner_html = """
+    opt1_label = dataset.get("option1_label", "OPCIÓN 1: 100% FÚTBOL")
+    opt2_label = dataset.get("option2_label", f"OPCIÓN 2: HÍBRIDO ({hy_sports_label})")
+    opt1_icon = dataset.get("option1_icon", "fa-solid fa-futbol")
+    opt2_icon = dataset.get("option2_icon", "fa-solid fa-bolt")
+    opt1_desc = dataset.get("option1_desc", f"Pronóstico 100% Fútbol de Élite ({fb_teams_str}).")
+    opt2_desc = dataset.get("option2_desc", f"{hy_title} ({hy_sports_label}).")
+    switcher_title = dataset.get("switcher_title", "Selecciona la Modalidad Activa para el Simulador")
+    switcher_subtitle = dataset.get("switcher_subtitle", "Alterna entre los pronósticos independientes de la jornada.")
+    switcher_badge = dataset.get("switcher_badge", "Jornada Multiopción Disponible")
+
+    if dataset.get("show_live_audit_banner", False):
+        live_audit_banner_html = """
     <!-- ==================== LIVE AUDIT & EVENING PRONOSTIC ALERT BANNER ==================== -->
     <div class="bg-gradient-to-r from-emerald-950/40 via-graphite-900 to-purple-950/40 rounded-2xl p-4 md:p-5 border border-emerald-500/30 shadow-2xl space-y-3">
       <div class="flex flex-wrap items-center justify-between gap-3">
@@ -72,100 +85,44 @@ if has_hybrid_edition and hybrid_data:
             </span>
           </div>
           <h3 class="text-sm md:text-base font-black text-white flex items-center gap-2">
-            <span>Arbitraje Cuantitativo Multideporte — Jueves 22 de Octubre</span>
+            <span>Arbitraje Cuantitativo Multideporte</span>
           </h3>
-          <p class="text-xs text-slate-300">
-            UEFA Europa League combinada con <strong class="text-white">NFL Thursday Night Football (18:15 CST)</strong> y <strong class="text-white">NBA Opening Week (19:30 CST)</strong>.
-          </p>
-        </div>
-
-        <div class="flex items-center gap-2 font-mono text-xs">
-          <div class="bg-graphite-950/80 px-3 py-2 rounded-xl border border-graphite-800 text-center">
-            <span class="text-[9px] text-slate-400 block">WIN RATE ESPERADO</span>
-            <span class="text-emerald-400 font-extrabold text-sm">89.5%</span>
-          </div>
-          <div class="bg-graphite-950/80 px-3 py-2 rounded-xl border border-purple-500/30 text-center">
-            <span class="text-[9px] text-purple-300 block">EN JUEGO HOY</span>
-            <span class="text-accent-amber font-extrabold text-sm">BEARS +3.5</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quick Ticker of Finished and Upcoming Matches -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 pt-2 border-t border-graphite-800 text-xs font-mono">
-        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-emerald-500/30 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-[10px] text-slate-400">
-            <span>EUROPA LEAGUE (10:45)</span>
-            <span class="text-emerald-400 font-bold">4-0 ✅ / 4-1 ✅</span>
-          </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">AZ Alkmaar & Ferencváros</div>
-          <div class="text-[10px] text-emerald-400 font-semibold truncate">Goleadas contundentes</div>
-        </div>
-        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-purple-500/30 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-[10px] text-slate-400">
-            <span>LIBERTADORES</span>
-            <span class="text-accent-cyan font-bold">18:30 CST</span>
-          </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">Flamengo vs Estudiantes</div>
-          <div class="text-[10px] text-emerald-400 font-semibold truncate">Flamengo (1) @ 1.29</div>
-        </div>
-        <div class="bg-graphite-950/60 p-2.5 rounded-lg border border-purple-500/30 flex flex-col justify-between">
-          <div class="flex items-center justify-between text-[10px] text-slate-400">
-            <span>COLOMBIA</span>
-            <span class="text-accent-cyan font-bold">19:00 CST</span>
-          </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">Atl. Nacional vs Pasto</div>
-          <div class="text-[10px] text-emerald-400 font-semibold truncate">Nacional (1) @ 1.26</div>
-        </div>
-        <div class="bg-purple-950/40 p-2.5 rounded-lg border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
-          <div class="flex items-center justify-between text-[10px] text-purple-300">
-            <span class="flex items-center gap-1"><i class="fa-solid fa-football text-[9px]"></i>NFL TNF</span>
-            <span class="text-accent-amber font-bold animate-pulse">18:15 CST</span>
-          </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">Bears vs Patriots</div>
-          <div class="text-[10px] text-accent-cyan font-bold truncate">Bears (ML) @ 1.65</div>
-        </div>
-        <div class="bg-purple-950/40 p-2.5 rounded-lg border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
-          <div class="flex items-center justify-between text-[10px] text-purple-300">
-            <span class="flex items-center gap-1"><i class="fa-solid fa-basketball text-[9px]"></i>NBA</span>
-            <span class="text-accent-amber font-bold animate-pulse">19:30 CST</span>
-          </div>
-          <div class="font-bold text-white text-[11px] truncate mt-1">Thunder vs Nuggets</div>
-          <div class="text-[10px] text-accent-cyan font-bold truncate">OKC Thunder (ML) @ 1.29</div>
         </div>
       </div>
     </div>
     """
+    else:
+        live_audit_banner_html = ""
 
     dual_edition_switcher_html = f"""
-    <!-- ==================== DUAL EDITION SELECTOR (FÚTBOL vs HÍBRIDO) ==================== -->
+    <!-- ==================== DUAL EDITION SELECTOR ==================== -->
     <div class="bg-graphite-900/90 rounded-2xl p-4 md:p-5 border border-graphite-700/80 shadow-xl space-y-3">
       <div class="flex flex-wrap items-center justify-between gap-3">
         <div>
           <span class="text-[10px] font-mono font-bold tracking-wider text-accent-emerald uppercase bg-accent-emerald/10 px-2 py-0.5 rounded border border-accent-emerald/20">
-            Jornada Multiopción Disponible
+            {switcher_badge}
           </span>
           <h2 class="text-base md:text-lg font-black text-white mt-1 flex items-center gap-2">
-            <span>Selecciona la Modalidad Activa para el Simulador</span>
+            <span>{switcher_title}</span>
           </h2>
           <p class="text-xs text-slate-400 mt-0.5">
-            Alterna entre el pronóstico puro de fútbol europeo y el módulo de arbitraje híbrido multideporte.
+            {switcher_subtitle}
           </p>
         </div>
         
         <!-- Toggle Buttons -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full sm:w-auto">
-          <!-- Button Option 1: 100% Football -->
+          <!-- Button Option 1 -->
           <button id="btnEditionFootball" onclick="switchEdition('football')" class="px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border shadow-lg cursor-pointer bg-accent-emerald text-black border-accent-emerald">
-            <i class="fa-solid fa-futbol text-sm"></i>
-            <span>OPCIÓN 1: 100% FÚTBOL</span>
+            <i class="{opt1_icon} text-sm"></i>
+            <span>{opt1_label}</span>
             <span class="text-[10px] px-1.5 py-0.2 rounded bg-black/20 text-black font-black">{fb_win_rate}</span>
           </button>
           
-          <!-- Button Option 2: Hybrid Mode -->
+          <!-- Button Option 2 -->
           <button id="btnEditionHybrid" onclick="switchEdition('hybrid')" class="px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border cursor-pointer bg-graphite-850 text-slate-300 border-graphite-700 hover:border-purple-500/50 hover:text-purple-300">
-            <i class="fa-solid fa-bolt text-accent-purple text-sm"></i>
-            <span>OPCIÓN 2: HÍBRIDO ({hy_sports_label})</span>
+            <i class="{opt2_icon} text-accent-purple text-sm"></i>
+            <span>{opt2_label}</span>
             <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-500/20 text-purple-300 font-black border border-purple-500/30">{hy_win_rate}</span>
           </button>
         </div>
@@ -174,9 +131,9 @@ if has_hybrid_edition and hybrid_data:
       <!-- Edition Info Banner -->
       <div id="editionInfoBanner" class="p-3 rounded-xl bg-graphite-950/70 border border-graphite-800 text-xs flex items-center justify-between gap-3 flex-wrap">
         <div class="flex items-center gap-2.5 text-slate-300">
-          <i id="editionInfoIcon" class="fa-solid fa-futbol text-accent-emerald text-sm"></i>
+          <i id="editionInfoIcon" class="{opt1_icon} text-accent-emerald text-sm"></i>
           <span id="editionInfoText">
-            <strong class="text-white">Opción 1 Activa:</strong> Pronóstico 100% Fútbol de Élite ({fb_teams_str}).
+            <strong class="text-white">Opción 1 Activa:</strong> {opt1_desc}
           </span>
         </div>
         <span id="editionStatsBadge" class="text-[11px] font-mono text-accent-emerald font-bold bg-accent-emerald/10 px-2.5 py-0.5 rounded border border-accent-emerald/30">
@@ -284,8 +241,8 @@ if has_hybrid_edition and hybrid_data:
           <div class="space-y-1.5 max-w-3xl">
             <div class="flex items-center gap-2 flex-wrap">
               <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider font-mono bg-purple-500/20 text-purple-300 border border-purple-500/40 flex items-center gap-1.5 shadow-sm">
-                <i class="fa-solid fa-bolt text-accent-purple animate-pulse"></i>
-                MODO HÍBRIDO MULTIDEPORTE ACTIVO
+                <i class="{hy_badge_icon} text-accent-purple animate-pulse"></i>
+                {hy_badge_text}
               </span>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-bold font-mono bg-sky-500/15 text-sky-400 border border-sky-500/30">
                 <i class="fa-solid fa-layer-group mr-1"></i>{hy_sports_label}
@@ -903,13 +860,14 @@ html_template = f"""<!DOCTYPE html>
         if (btnHyb) {{
           btnHyb.className = 'px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border cursor-pointer bg-graphite-850 text-slate-300 border-graphite-700 hover:border-purple-500/50 hover:text-purple-300';
         }}
-        if (icon) icon.className = 'fa-solid fa-futbol text-accent-emerald text-sm';
+        if (icon) icon.className = (DATASET.option1_icon || 'fa-solid fa-futbol') + ' text-accent-emerald text-sm';
         
         const fbTeams = (DATASET.strategies && DATASET.strategies.modo_a_simples && DATASET.strategies.modo_a_simples.picks) ? DATASET.strategies.modo_a_simples.picks.map(p => p.match.split(' vs. ')[0]).join(', ') : 'Fútbol Europeo';
         const fbAvgOdds = (DATASET.strategies && DATASET.strategies.modo_a_simples && DATASET.strategies.modo_a_simples.avgOdds) ? DATASET.strategies.modo_a_simples.avgOdds.toFixed(2) : '1.56';
         const fbWinRate = (DATASET.strategies && DATASET.strategies.modo_a_simples) ? DATASET.strategies.modo_a_simples.expectedWinRate : '84.5%';
+        const opt1Desc = DATASET.option1_desc || ('Pronóstico 100% Fútbol de Élite (' + fbTeams + ').');
 
-        if (text) text.innerHTML = '<strong class="text-white">Opción 1 Activa:</strong> Pronóstico 100% Fútbol de Élite (' + fbTeams + ').';
+        if (text) text.innerHTML = '<strong class="text-white">Opción 1 Activa:</strong> ' + opt1Desc;
         if (badge) {{
           badge.className = 'text-[11px] font-mono text-accent-emerald font-bold bg-accent-emerald/10 px-2.5 py-0.5 rounded border border-accent-emerald/30';
           badge.innerText = 'Cuota Promedio: ' + fbAvgOdds + 'x | Win Rate: ' + fbWinRate;
@@ -921,14 +879,15 @@ html_template = f"""<!DOCTYPE html>
         if (btnHyb) {{
           btnHyb.className = 'px-4 py-2.5 rounded-xl font-mono text-xs font-extrabold flex items-center justify-center space-x-2 transition border shadow-lg shadow-purple-500/20 cursor-pointer bg-accent-purple text-white border-accent-purple';
         }}
-        if (icon) icon.className = 'fa-solid fa-bolt text-accent-purple text-sm';
+        if (icon) icon.className = (DATASET.option2_icon || 'fa-solid fa-bolt') + ' text-accent-purple text-sm';
         
         const hyTitle = (DATASET.hybrid_edition && DATASET.hybrid_edition.title) ? DATASET.hybrid_edition.title : 'Módulo de Arbitraje Híbrido Multideporte';
         const hySports = (DATASET.hybrid_edition && DATASET.hybrid_edition.active_sports) ? DATASET.hybrid_edition.active_sports.join(' + ') : 'Multideporte';
         const hyAvgOdds = (DATASET.hybrid_edition && DATASET.hybrid_edition.avgOdds) ? DATASET.hybrid_edition.avgOdds.toFixed(2) : '1.60';
         const hyWinRate = (DATASET.hybrid_edition && DATASET.hybrid_edition.expectedWinRate) ? DATASET.hybrid_edition.expectedWinRate : '86.0%';
+        const opt2Desc = DATASET.option2_desc || (hyTitle + ' (' + hySports + ').');
 
-        if (text) text.innerHTML = '<strong class="text-white">Opción 2 Activa:</strong> ' + hyTitle + ' (' + hySports + ').';
+        if (text) text.innerHTML = '<strong class="text-white">Opción 2 Activa:</strong> ' + opt2Desc;
         if (badge) {{
           badge.className = 'text-[11px] font-mono text-purple-300 font-bold bg-purple-500/20 px-2.5 py-0.5 rounded border border-purple-500/40';
           badge.innerText = 'Cuota Promedio: ' + hyAvgOdds + 'x | Win Rate: ' + hyWinRate;
@@ -937,7 +896,9 @@ html_template = f"""<!DOCTYPE html>
 
       updateStrategyButtons();
       renderStrategyCard(currentStrategyKey);
-      showToast(edition === 'football' ? '⚽ Activado pronóstico 100% Fútbol' : '⚡ Activado modo Híbrido Multideporte');
+      const toast1 = DATASET.option1_toast || '⚽ Activado Pronóstico 1';
+      const toast2 = DATASET.option2_toast || '⚡ Activado Pronóstico 2';
+      showToast(edition === 'football' ? toast1 : toast2);
     }}
 
     function updateStrategyButtons() {{
@@ -1456,7 +1417,8 @@ html_template = f"""<!DOCTYPE html>
 </html>
 """
 
-with open('index.html', 'w', encoding='utf-8') as f:
+target_index = os.path.join(CURRENT_DIR, 'index.html')
+with open(target_index, 'w', encoding='utf-8') as f:
     f.write(html_template)
 
 # Also sync to parent directory if index.html exists there

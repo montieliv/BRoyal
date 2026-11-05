@@ -57,6 +57,9 @@ ODDS_SPORT_KEYS = {
     "bra.1": "soccer_brazil_campeonato",
     "conmebol.libertadores": "soccer_conmebol_copa_libertadores",
     "conmebol.sudamericana": "soccer_conmebol_copa_sudamericana",
+    "eng.league_cup": "soccer_england_efl_cup",
+    "ger.dfb_pokal": "soccer_germany_dfb_pokal",
+    "esp.copa_del_rey": "soccer_spain_copa_del_rey",
 }
 
 MAX_EVENTS = 6        # partidos que se enriquecen con cuotas multicasa

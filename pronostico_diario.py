@@ -73,6 +73,9 @@ SOCCER_LEAGUES = {
     "col.1": "Liga BetPlay (Colombia)",
     "conmebol.libertadores": "CONMEBOL Libertadores",
     "conmebol.sudamericana": "CONMEBOL Sudamericana",
+    "eng.league_cup": "Carabao Cup",
+    "esp.copa_del_rey": "Copa del Rey",
+    "ger.dfb_pokal": "DFB-Pokal",
 }
 # Solo para liquidar picks multideporte heredados (ediciones híbridas)
 OTHER_SPORTS = {
@@ -400,9 +403,7 @@ def settle_pending(today, dry_run=False, lookback_days=4):
             continue
         need_main = snap.get("status") == "PENDING_EVALUATION"
         hyb = snap.get("hybrid_edition") or {}
-        need_hyb = bool(hyb.get("strategies")) and "metrics" not in hyb and d_str >= min_day and (
-            any("Pendiente" in str(v) for v in (snap.get("match_results") or {}).values())
-            or need_main)
+        need_hyb = bool(hyb.get("strategies")) and not hyb.get("metrics", {}).get("evaluated") and d_str >= min_day
         if not (need_main or need_hyb):
             continue
         day = datetime.strptime(d_str, "%Y-%m-%d").date()
@@ -646,20 +647,32 @@ def pick_best(cands):
     def is_valid_main(c):
         # Modo A/B: solo cuotas reales de DraftKings (verificables). Los combos y
         # líneas estimadas quedan para las piernas de seguridad del Modo C.
-        return (not c["estimated"]) and 1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48
+        return (not c["estimated"]) and 1.15 <= c["odds"] <= 2.25 and c["p"] >= 0.48
 
     main_pool = [c for c in cands if is_valid_main(c)]
     if len(main_pool) < 2:
         main_pool = [c for c in cands if not c["estimated"] and 1.20 <= c["odds"] <= 2.50 and c["p"] >= 0.42]
 
     main, used = [], set()
+    from collections import Counter
+    league_counts = Counter()
     for c in sorted(main_pool, key=score, reverse=True):
         if c["espnEventId"] in used:
             continue
-        main.append(c)
-        used.add(c["espnEventId"])
-        if len(main) == 3:
-            break
+        if league_counts[c["league"]] < 2:
+            main.append(c)
+            used.add(c["espnEventId"])
+            league_counts[c["league"]] += 1
+            if len(main) == 3:
+                break
+    if len(main) < 3:
+        for c in sorted(main_pool, key=score, reverse=True):
+            if c["espnEventId"] in used:
+                continue
+            main.append(c)
+            used.add(c["espnEventId"])
+            if len(main) == 3:
+                break
 
     safe = []
     for c in main[:2]:
@@ -960,45 +973,65 @@ def build_summary(day, main, safe, hybrid_data=None):
 
 
 def build_hybrid_edition(day, soccer_cands, us_cands):
-    if not us_cands or not soccer_cands:
+    if not soccer_cands:
         return None
 
     def score(c):
         return c["p"] + 1.5 * c["ev"]
 
     def is_valid_soccer(c):
-        return (not c["estimated"]) and 1.25 <= c["odds"] <= 2.25 and c["p"] >= 0.48
+        return (not c["estimated"]) and 1.20 <= c["odds"] <= 2.25 and c["p"] >= 0.48
 
     best_soccer = sorted([c for c in soccer_cands if is_valid_soccer(c)], key=score, reverse=True)
     if not best_soccer:
         best_soccer = sorted(soccer_cands, key=score, reverse=True)
-    f_pick = best_soccer[0]
 
-    best_us = sorted([c for c in us_cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20], key=score, reverse=True)
-    us_picks = []
-    used = set()
-    for c in best_us:
-        if c["espnEventId"] not in used:
-            us_picks.append(c)
-            used.add(c["espnEventId"])
-            if len(us_picks) == 2:
-                break
+    if us_cands:
+        f_pick = best_soccer[0]
+        best_us = sorted([c for c in us_cands if not c["estimated"] and 1.25 <= c["odds"] <= 2.20], key=score, reverse=True)
+        us_picks = []
+        used = set()
+        for c in best_us:
+            if c["espnEventId"] not in used:
+                us_picks.append(c)
+                used.add(c["espnEventId"])
+                if len(us_picks) == 2:
+                    break
 
-    if len(us_picks) < 2:
-        additional_soccer = [c for c in best_soccer if c["espnEventId"] != f_pick["espnEventId"]]
-        if additional_soccer:
-            hybrid_main = [f_pick, additional_soccer[0]] + us_picks
+        if len(us_picks) < 2:
+            additional_soccer = [c for c in best_soccer if c["espnEventId"] != f_pick["espnEventId"]]
+            if additional_soccer:
+                hybrid_main = [f_pick, additional_soccer[0]] + us_picks
+            else:
+                hybrid_main = [f_pick] + us_picks
         else:
-            hybrid_main = [f_pick] + us_picks
+            hybrid_main = [f_pick, us_picks[0], us_picks[1]]
     else:
-        hybrid_main = [f_pick, us_picks[0], us_picks[1]]
+        # Modo Híbrido Multiliga: seleccionar 3 partidos de ligas distintas con máximo win rate
+        hybrid_main = []
+        used_ids = set()
+        used_leagues = set()
+        for c in best_soccer:
+            if c["espnEventId"] not in used_ids and c["league"] not in used_leagues:
+                hybrid_main.append(c)
+                used_ids.add(c["espnEventId"])
+                used_leagues.add(c["league"])
+                if len(hybrid_main) == 3:
+                    break
+        if len(hybrid_main) < 3:
+            for c in best_soccer:
+                if c["espnEventId"] not in used_ids:
+                    hybrid_main.append(c)
+                    used_ids.add(c["espnEventId"])
+                    if len(hybrid_main) == 3:
+                        break
 
     if len(hybrid_main) < 3:
         return None
 
     h_safe = []
     for c in hybrid_main[:2]:
-        pool = [x for x in (soccer_cands + us_cands) if x["espnEventId"] == c["espnEventId"] and 1.10 <= x["odds"] <= 1.45]
+        pool = [x for x in (soccer_cands + (us_cands or [])) if x["espnEventId"] == c["espnEventId"] and 1.10 <= x["odds"] <= 1.45]
         h_safe.append(sorted(pool, key=lambda x: -x["p"])[0] if pool else c)
 
     dn, mn = DAYS[day.weekday()], MONTHS[day.month - 1]
@@ -1009,8 +1042,18 @@ def build_hybrid_edition(day, soccer_cands, us_cands):
     a_wr = sum(p) / len(p)
     a_ev = sum(c["ev"] for c in hybrid_main) / len(hybrid_main)
 
-    active_sports = list(dict.fromkeys([c["sport"] for c in hybrid_main]))
-    sports_label = " + ".join(["Fútbol" if s == "Football" else s for s in active_sports])
+    if us_cands:
+        active_sports = list(dict.fromkeys([c["sport"] for c in hybrid_main]))
+        sports_label = " + ".join(["Fútbol" if s == "Football" else s for s in active_sports])
+        title = f"Módulo de Arbitraje Híbrido Multideporte ({sports_label})"
+        subtitle = f"Fusión cuantitativa del fútbol con las mejores asimetrías de {active_sports[1] if len(active_sports) > 1 else 'deportes americanos'}."
+        trigger_reason = f"ACTIVADO: Arbitraje multideporte combinando {hybrid_main[0]['match']} con {hybrid_main[1]['match']} y {hybrid_main[2]['match']}."
+    else:
+        active_sports = ["Football", "Multiliga"]
+        sports_label = "Multiliga Internacional"
+        title = "Módulo de Arbitraje Híbrido Multiliga (Cross-League Value)"
+        subtitle = "Fusión cuantitativa entre las principales ligas de fútbol con máxima asimetría de cuotas."
+        trigger_reason = f"ACTIVADO: Arbitraje multiliga combinando {hybrid_main[0]['match']} ({hybrid_main[0]['league']}) con {hybrid_main[1]['match']} ({hybrid_main[1]['league']}) y {hybrid_main[2]['match']} ({hybrid_main[2]['league']})."
 
     p1, p2, p3 = p
     d1, d2, d3 = round(o[0] * o[1], 2), round(o[0] * o[2], 2), round(o[1] * o[2], 2)
@@ -1201,6 +1244,8 @@ def main():
     ap.add_argument("--no-html", action="store_true")
     ap.add_argument("--slot", help="Solo partidos con este horario de inicio HH:MM (CST). Crea una edición aparte "
                                    "(archivo YYYY-MM-DD-HHMM) sin tocar el pronóstico principal ni index.html")
+    ap.add_argument("--before", help="Filtrar partidos con inicio anterior a HH:MM (CST). Ej. 13:45")
+    ap.add_argument("--after", help="Filtrar partidos con inicio a partir de HH:MM (CST). Ej. 13:45")
     args = ap.parse_args()
     slot = args.slot.zfill(5) if args.slot else None
     suffix = f"-{slot.replace(':', '')}" if slot else ""
@@ -1225,9 +1270,10 @@ def main():
     events = fetch_many(all_paths, [day, day + timedelta(days=1)])
     soccer_cands = []
     us_cands = []
+    min_lead_val = 15 if (args.before or now_local.hour >= 12) else (0 if slot else 45)
     for ev in events:
         try:
-            analyzed = analyze_event(ev, now_local, day, slot, 0 if slot else 45)
+            analyzed = analyze_event(ev, now_local, day, slot, min_lead_val)
             for c in analyzed:
                 if c.get("sport") == "Football":
                     soccer_cands.append(c)
@@ -1242,6 +1288,15 @@ def main():
         n_us = len({c["espnEventId"] for c in us_cands})
         print(f"  • Eventos multideporte elegibles (NBA/NFL/MLB): {n_us}")
 
+    if args.before:
+        cutoff_b = datetime.strptime(args.before, "%H:%M").time()
+        soccer_cands = [c for c in soccer_cands if c["kickoff"].astimezone(LOCAL_TZ).time() < cutoff_b]
+        print(f"  • Filtrando franja matutina: partidos antes de las {args.before} CST ({len({c['espnEventId'] for c in soccer_cands})} partidos)")
+    if args.after:
+        cutoff_a = datetime.strptime(args.after, "%H:%M").time()
+        soccer_cands = [c for c in soccer_cands if c["kickoff"].astimezone(LOCAL_TZ).time() >= cutoff_a]
+        print(f"  • Filtrando franja vespertina: partidos a partir de las {args.after} CST ({len({c['espnEventId'] for c in soccer_cands})} partidos)")
+
     try:
         import fuentes_extra
         fuentes_extra.enrich(soccer_cands, day, name_score)
@@ -1254,7 +1309,7 @@ def main():
         sys.exit(1)
 
     hybrid_edition = None
-    if not slot and us_cands:
+    if not slot:
         hybrid_edition = build_hybrid_edition(day, soccer_cands, us_cands)
 
     summary = build_summary(day, main_p, safe_p, hybrid_edition)
@@ -1262,6 +1317,14 @@ def main():
         summary["hybrid_trigger_reason"] = f"EDICIÓN {slot} CST: " + summary["hybrid_trigger_reason"]
         for s in summary["strategies"].values():
             s["modeName"] += f" — Edición {slot}"
+    elif args.before:
+        summary["hybrid_trigger_reason"] = f"EDICIÓN MATUTINA (Antes de {args.before} CST): " + summary["hybrid_trigger_reason"]
+        for s in summary["strategies"].values():
+            s["modeName"] += f" — Edición Matutina (Antes de {args.before} CST)"
+    elif args.after:
+        summary["hybrid_trigger_reason"] = f"EDICIÓN VESPERTINA ({args.after} CST en adelante): " + summary["hybrid_trigger_reason"]
+        for s in summary["strategies"].values():
+            s["modeName"] += f" — Edición Vespertina ({args.after} CST en adelante)"
 
     picks_md = fmt_picks(summary)
     print(picks_md)

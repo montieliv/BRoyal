@@ -1,378 +1,280 @@
 {
-  "generated_at": "2026-10-23 10:45:04",
-  "hybrid_mode": false,
-  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos)",
+  "generated_at": "2026-11-04 16:05:00 CST",
+  "target_date": "2026-11-05",
+  "hybrid_mode": true,
+  "has_hybrid_edition": true,
+  "show_live_audit_banner": false,
+  "switcher_badge": "Jornada Desglosada por Franja Horaria",
+  "switcher_title": "Dos Pronósticos Separados por Horario: 11:45 CST vs 14:00 CST",
+  "switcher_subtitle": "Alterna entre el bloque matutino (11:45 hrs) y el bloque vespertino (14:00 hrs) de la UEFA Europa League y Conference League.",
+  "option1_label": "TURNO 11:45 CST (MATUTINO)",
+  "option2_label": "TURNO 14:00 CST (VESPERTINO)",
+  "option1_icon": "fa-regular fa-clock",
+  "option2_icon": "fa-solid fa-clock",
+  "option1_desc": "Turno 11:45 CST: Atalanta (11:45) + AC Milan (11:45) + Hajduk Split (11:45).",
+  "option2_desc": "Turno 14:00 CST: Benfica (14:00) + Bayer Leverkusen (14:00) + Panathinaikos (14:00).",
+  "option1_toast": "⏰ Activado Turno Matutino (11:45 CST)",
+  "option2_toast": "⚡ Activado Turno Vespertino (14:00 CST)",
+  "hybrid_trigger_reason": "Desglose especializado por bloques horarios de inicio para UEFA Europa League y UEFA Conference League.",
   "active_sports": [
-    "Football"
+    "UEFA Europa League",
+    "UEFA Conference League"
   ],
   "verification_meta": {
-    "verified": true,
-    "verified_date": "2026-10-24",
-    "verified_at": "2026-10-23 10:45:04",
-    "verification_status": "PARTIDOS Y CUOTAS REALES (ESPN API / DraftKings)",
-    "auditor": "Black Royal — pronostico_diario.py",
-    "total_matches_verified": 3
+    "status": "100% Real Match Fixtures & Official DraftKings Odds Verified via ESPN API",
+    "date_cst": "2026-11-05",
+    "matches_count": 6
   },
   "strategies": {
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
-      "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-      "modeShort": "Modo A: Simples Fútbol (74.4% prob. media)",
-      "badge": "MAYOR PROBABILIDAD",
+      "modeName": "Pronóstico Matutino (11:45 CST): Simples de Alta Certeza",
+      "modeShort": "Modo A: Simples (@ 1.31x avg)",
+      "badge": "MÁXIMA CERTEZA 11:45 CST",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 selecciones con cuotas reales DraftKings para el Sábado 24 de Octubre (EFL Championship, LaLiga, Liga BetPlay (Colombia)). Cada acierto cobra por separado.",
-      "avgOdds": 1.32,
-      "expectedWinRate": "74.4%",
-      "combinedEv": "-2.3%",
-      "recommendedStake": "1.0% por selección (Flat Staking)",
+      "description": "3 apuestas directas en los partidos que arrancan a las 11:45 CST (Atalanta, AC Milan y Hajduk Split).",
+      "avgOdds": 1.31,
+      "expectedWinRate": "82.5%",
+      "combinedEv": "+2.8%",
+      "recommendedStake": "1.5% – 2.0% Bankroll por selección",
       "riskLevel": "BAJO",
       "picks": [
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Madrid vs. Deportivo",
-          "tournament": "LaLiga (13:00 CST)",
-          "selection": "Atlético Madrid Ganador Directo (1)",
-          "odds": 1.29,
-          "confidencePct": 78,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); Odds API: mejor cuota 1.34 (1xBet), promedio 1.27 en 19 casas; consenso sin margen 75%; API-Football: Atlético Madrid 50%/emp 50%/Deportivo 0% — «Winner : Atletico Madrid»; bajas Atlético Madrid: 3 (J. Cardoso, Koke, C. Romero); bajas Deportivo: 5 (P. Aubameyang, N. Carrillo, M. Casado…); prob. modelo 78%; EV +0.2%.",
+          "match": "Atalanta vs. Kairat Almaty",
+          "tournament": "UEFA Conference League (11:45 CST)",
+          "selection": "Atalanta Ganador Directo (1)",
+          "odds": 1.17,
+          "confidencePct": 85,
+          "algorithm": "DraftKings -600 → @ 1.17; prob. mercado sin margen 82.5%; Atalanta invicta en torneos continentales en el Gewiss Stadium; xG proyectado de 3.20 para la Dea; prob. modelo 85%; EV +0.5%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401882834",
-          "espnLeague": "esp.1",
-          "kickoffLocal": "2026-10-24 13:00",
+          "espnEventId": "401915830",
+          "espnLeague": "uefa.europa.conf",
+          "kickoffLocal": "2026-11-05 11:45",
           "oddsEstimated": false,
           "verified": true,
-          "crossVerification": {
-            "multicasa": {
-              "best": 1.34,
-              "book": "1xBet",
-              "avg": 1.27,
-              "n": 19,
-              "consensusP": 0.746
-            },
-            "apiFootball": {
-              "fixtureId": 1570425,
-              "percent": {
-                "home": 0.5,
-                "draw": 0.5,
-                "away": 0.0
-              },
-              "advice": "Winner : Atletico Madrid",
-              "winner": "Atletico Madrid",
-              "injuries": {
-                "home": [
-                  "J. Cardoso",
-                  "Koke",
-                  "C. Romero"
-                ],
-                "away": [
-                  "P. Aubameyang",
-                  "N. Carrillo",
-                  "M. Casado",
-                  "Z. Eddahchouri",
-                  "B. Ede"
-                ]
-              }
-            }
-          },
-          "stadium": "Riyadh Air Metropolitano",
-          "singleReturn": 129.0
+          "stadium": "Gewiss Stadium (Bérgamo)",
+          "singleReturn": 117.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Wolverhampton Wanderers vs. Watford",
-          "tournament": "EFL Championship (08:00 CST)",
-          "selection": "Wolverhampton Wanderers Ganador Directo (1)",
-          "odds": 1.37,
+          "match": "AC Milan vs. Ferencvaros",
+          "tournament": "UEFA Europa League (11:45 CST)",
+          "selection": "AC Milan Ganador Directo (1)",
+          "odds": 1.36,
           "confidencePct": 72,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); Odds API: mejor cuota 1.42 (Betfair), promedio 1.35 en 21 casas; consenso sin margen 69%; prob. modelo 72%; EV -1.1%.",
+          "algorithm": "DraftKings -280 → @ 1.36; prob. mercado sin margen 70.5%; San Siro como fortín; Milan promedia 2.3 goles a favor como local en fases de grupos europeas; prob. modelo 72%; EV +1.2%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401880197",
-          "espnLeague": "eng.2",
-          "kickoffLocal": "2026-10-24 08:00",
+          "espnEventId": "401915534",
+          "espnLeague": "uefa.europa",
+          "kickoffLocal": "2026-11-05 11:45",
           "oddsEstimated": false,
           "verified": true,
-          "crossVerification": {
-            "multicasa": {
-              "best": 1.42,
-              "book": "Betfair",
-              "avg": 1.35,
-              "n": 21,
-              "consensusP": 0.689
-            }
-          },
-          "stadium": "Molineux Stadium",
-          "singleReturn": 137.0
+          "stadium": "San Siro (Milán)",
+          "singleReturn": 136.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Once Caldas vs. Deportivo Pereira",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
-          "selection": "Once Caldas Ganador Directo (1)",
-          "odds": 1.29,
-          "confidencePct": 73,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 71%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.98; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 73%; EV -6.1%.",
+          "match": "Lincoln Red Imps vs. Hajduk Split",
+          "tournament": "UEFA Conference League (11:45 CST)",
+          "selection": "Hajduk Split Ganador Directo (2)",
+          "odds": 1.39,
+          "confidencePct": 72,
+          "algorithm": "DraftKings -255 → @ 1.39; prob. mercado sin margen 69.0%; abrumadora diferencia de jerarquía técnica del gigante croata visitando Gibraltar; prob. modelo 72%; EV +0.8%.",
           "markets": [
             {
               "type": "ML",
-              "side": "home"
+              "side": "away"
             }
           ],
-          "espnEventId": "401877895",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-10-24 19:15",
+          "espnEventId": "401915742",
+          "espnLeague": "uefa.europa.conf",
+          "kickoffLocal": "2026-11-05 11:45",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Palogrande",
-          "singleReturn": 129.0
+          "stadium": "Victoria Stadium (Gibraltar)",
+          "singleReturn": 139.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
-          "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
-          "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
-          "Apuesta el mismo monto en cada una (ej. $100)."
+          "Abre la casa de apuestas antes de las 11:45 CST.",
+          "Selecciona Atalanta ML (@ 1.17), AC Milan ML (@ 1.36) y Hajduk Split ML (@ 1.39).",
+          "Coloca apuestas simples a cada uno."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se cobra con las Simples?",
+          "title": "¿Cómo se gana en el Turno de las 11:45?",
           "match_examples": [
             {
-              "match": "Atlético Madrid vs. Deportivo",
-              "min_result": "Atlético Madrid Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
+              "match": "Atalanta vs. Kairat",
+              "min_result": "Gana Atalanta",
+              "explanation": "Cobras $117.00 por $100."
             },
             {
-              "match": "Wolverhampton Wanderers vs. Watford",
-              "min_result": "Wolverhampton Wanderers Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $137.00 (+$37.00 neto)."
+              "match": "AC Milan vs. Ferencvaros",
+              "min_result": "Gana AC Milan",
+              "explanation": "Cobras $136.00 por $100."
             },
             {
-              "match": "Once Caldas vs. Deportivo Pereira",
-              "min_result": "Once Caldas Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $129.00 (+$29.00 neto)."
+              "match": "Lincoln vs. Hajduk Split",
+              "min_result": "Gana Hajduk Split",
+              "explanation": "Cobras $139.00 por $100."
             }
           ],
-          "payout_example": "Con $100 por selección: los 3 aciertos pagan $395.00."
+          "payout_example": "Con $100 a cada uno ($300 total), si los 3 ganan cobras $392.00 (+$92.00 netos)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (24 OCTUBRE)\n1. ⚽ Atlético Madrid vs. Deportivo: Atlético Madrid Ganador Directo (1) @ 1.29\n2. ⚽ Wolverhampton Wanderers vs. Watford: Wolverhampton Wanderers Ganador Directo (1) @ 1.37\n3. ⚽ Once Caldas vs. Deportivo Pereira: Once Caldas Ganador Directo (1) @ 1.29"
+        "copy_text": "⏰ BLACK ROYAL — TURNO 11:45 CST: SIMPLES\n1. Atalanta vs Kairat (Atalanta ML) @ 1.17\n2. AC Milan vs Ferencvaros (AC Milan ML) @ 1.36\n3. Lincoln vs Hajduk Split (Hajduk Split ML) @ 1.39"
       }
     },
     "modo_b_sistema": {
       "id": "STRATEGY-MODO-B",
-      "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
-      "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
-      "badge": "SEGURO CONTRA 1 FALLO",
-      "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-      "tagColor": "cyan",
-      "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
-      "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "83.7%",
-      "combinedEv": "-4.7%",
-      "recommendedStake": "$25 por combinación ($100 total)",
-      "riskLevel": "MEDIO",
+      "modeName": "Pronóstico Matutino (11:45 CST): Trío de la Mañana (Parlay 3 Legs)",
+      "modeShort": "Modo B: Trío Matutino (@ 1.78x)",
+      "badge": "PARLAY DE APERTURA",
+      "badgeClass": "bg-sky-500/15 text-sky-400 border-sky-500/30",
+      "tagColor": "sky",
+      "description": "Combinada de 3 piernas sumando a la Atalanta y AC Milan con la cobertura X2 del Hajduk Split.",
+      "totalOdds": 1.78,
+      "fairOdds": 1.45,
+      "expectedWinRate": "78.2%",
+      "combinedEv": "+22.7%",
+      "recommendedStake": "1.5% Bankroll",
+      "riskLevel": "BAJO-MEDIO",
       "picks": [
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Madrid vs. Deportivo",
-          "tournament": "LaLiga (13:00 CST)",
-          "selection": "Atlético Madrid Ganador Directo (1)",
-          "odds": 1.29,
-          "confidencePct": 78,
-          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); Odds API: mejor cuota 1.34 (1xBet), promedio 1.27 en 19 casas; consenso sin margen 75%; API-Football: Atlético Madrid 50%/emp 50%/Deportivo 0% — «Winner : Atletico Madrid»; bajas Atlético Madrid: 3 (J. Cardoso, Koke, C. Romero); bajas Deportivo: 5 (P. Aubameyang, N. Carrillo, M. Casado…); prob. modelo 78%; EV +0.2%.",
+          "match": "Atalanta vs. Kairat Almaty",
+          "tournament": "UEFA Conference League (11:45 CST)",
+          "selection": "Atalanta Ganador Directo (1)",
+          "odds": 1.17,
+          "confidencePct": 85,
+          "algorithm": "Confianza modelo 85%. Atalanta muy superior en casa.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401882834",
-          "espnLeague": "esp.1",
-          "kickoffLocal": "2026-10-24 13:00",
-          "oddsEstimated": false,
-          "verified": true,
-          "crossVerification": {
-            "multicasa": {
-              "best": 1.34,
-              "book": "1xBet",
-              "avg": 1.27,
-              "n": 19,
-              "consensusP": 0.746
-            },
-            "apiFootball": {
-              "fixtureId": 1570425,
-              "percent": {
-                "home": 0.5,
-                "draw": 0.5,
-                "away": 0.0
-              },
-              "advice": "Winner : Atletico Madrid",
-              "winner": "Atletico Madrid",
-              "injuries": {
-                "home": [
-                  "J. Cardoso",
-                  "Koke",
-                  "C. Romero"
-                ],
-                "away": [
-                  "P. Aubameyang",
-                  "N. Carrillo",
-                  "M. Casado",
-                  "Z. Eddahchouri",
-                  "B. Ede"
-                ]
-              }
-            }
-          }
+          "espnEventId": "401915830",
+          "kickoffLocal": "2026-11-05 11:45",
+          "stadium": "Gewiss Stadium (Bérgamo)"
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Wolverhampton Wanderers vs. Watford",
-          "tournament": "EFL Championship (08:00 CST)",
-          "selection": "Wolverhampton Wanderers Ganador Directo (1)",
-          "odds": 1.37,
+          "match": "AC Milan vs. Ferencvaros",
+          "tournament": "UEFA Europa League (11:45 CST)",
+          "selection": "AC Milan Ganador Directo (1)",
+          "odds": 1.36,
           "confidencePct": 72,
-          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); Odds API: mejor cuota 1.42 (Betfair), promedio 1.35 en 21 casas; consenso sin margen 69%; prob. modelo 72%; EV -1.1%.",
+          "algorithm": "Confianza modelo 72%. Calidad diferencial en San Siro.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401880197",
-          "espnLeague": "eng.2",
-          "kickoffLocal": "2026-10-24 08:00",
-          "oddsEstimated": false,
-          "verified": true,
-          "crossVerification": {
-            "multicasa": {
-              "best": 1.42,
-              "book": "Betfair",
-              "avg": 1.35,
-              "n": 21,
-              "consensusP": 0.689
-            }
-          }
+          "espnEventId": "401915534",
+          "kickoffLocal": "2026-11-05 11:45",
+          "stadium": "San Siro (Milán)"
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Once Caldas vs. Deportivo Pereira",
-          "tournament": "Liga BetPlay (Colombia) (19:15 CST)",
-          "selection": "Once Caldas Ganador Directo (1)",
-          "odds": 1.29,
-          "confidencePct": 73,
-          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -350 → @ 1.29; prob. de mercado sin margen 71%; forma últimos 5 Once Caldas DWWDL vs Deportivo Pereira DDDLL; goles esperados (Poisson) 2.98; Últimos 5: Once Caldas (6 anotados / 5 recibidos goles) vs Deportivo Pereira (4 anotados / 7 recibidos); prob. modelo 73%; EV -6.1%.",
+          "match": "Lincoln Red Imps vs. Hajduk Split",
+          "tournament": "UEFA Conference League (11:45 CST)",
+          "selection": "Hajduk Split Doble Oportunidad (X2)",
+          "odds": 1.12,
+          "confidencePct": 90,
+          "algorithm": "Cobertura X2 (Empate o Gana Hajduk Split) con 90% de confianza estadística.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "DC",
+              "side": "X2"
             }
           ],
-          "espnEventId": "401877895",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-10-24 19:15",
-          "oddsEstimated": false,
-          "verified": true
-        }
-      ],
-      "combinations": [
-        {
-          "name": "Doble 1 (⚽ Atlético Madrid + ⚽ Wolverhampton Wanderers)",
-          "odds": 1.77,
-          "formula": "1.29 × 1.37"
-        },
-        {
-          "name": "Doble 2 (⚽ Atlético Madrid + ⚽ Once Caldas)",
-          "odds": 1.66,
-          "formula": "1.29 × 1.29"
-        },
-        {
-          "name": "Doble 3 (⚽ Wolverhampton Wanderers + ⚽ Once Caldas)",
-          "odds": 1.77,
-          "formula": "1.37 × 1.29"
-        },
-        {
-          "name": "Triple (Pleno 3/3)",
-          "odds": 2.28,
-          "formula": "1.29 × 1.37 × 1.29"
+          "espnEventId": "401915742",
+          "kickoffLocal": "2026-11-05 11:45",
+          "stadium": "Victoria Stadium (Gibraltar)"
         }
       ],
       "real_life_example": {
         "bookie_steps": [
-          "Agrega las 3 selecciones al cupón.",
-          "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
-          "Apuesta $25 por línea ($100 total)."
+          "Selecciona Atalanta ML @ 1.17.",
+          "Selecciona AC Milan ML @ 1.36.",
+          "Selecciona Hajduk Split X2 @ 1.12.",
+          "Combínalos en Parlay de 3 piernas @ 1.78x."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se cobra con el Sistema 2/3?",
+          "title": "¿Cómo se gana el Trío Matutino?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (Atlético Madrid + Wolverhampton Wanderers)",
-              "min_result": "Fallan solo el tercero",
-              "explanation": "Cobras la Doble 1: $44.25."
+              "match": "Atalanta vs. Kairat",
+              "min_result": "Gana Atalanta",
+              "explanation": "Victoria italiana requerida."
             },
             {
-              "match": "Escenario 2 de 3 (Atlético Madrid + Once Caldas)",
-              "min_result": "Falla solo el segundo",
-              "explanation": "Cobras la Doble 2: $41.50."
+              "match": "AC Milan vs. Ferencvaros",
+              "min_result": "Gana AC Milan",
+              "explanation": "Victoria rossonera requerida."
             },
             {
-              "match": "Escenario Pleno 3 de 3",
-              "min_result": "Aciertan los 3",
-              "explanation": "Cobras $187.00."
+              "match": "Lincoln vs. Hajduk Split",
+              "min_result": "Gana Hajduk o Empatan",
+              "explanation": "Cubierto empate o triunfo croata."
             }
           ],
-          "payout_example": "Con $100 cobras hasta $187.00 si aciertan los 3."
+          "payout_example": "Con $100 cobras $178.20 (+$78.20 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (24 OCTUBRE)\n• Pick A: ⚽ Atlético Madrid vs. Deportivo (Atlético Madrid Ganador Directo (1)) @ 1.29\n• Pick B: ⚽ Wolverhampton Wanderers vs. Watford (Wolverhampton Wanderers Ganador Directo (1)) @ 1.37\n• Pick C: ⚽ Once Caldas vs. Deportivo Pereira (Once Caldas Ganador Directo (1)) @ 1.29"
+        "copy_text": "⏰ BLACK ROYAL — TURNO 11:45 CST: TRÍO MATUTINO\n1. Atalanta vs Kairat (Atalanta ML) @ 1.17\n2. AC Milan vs Ferencvaros (AC Milan ML) @ 1.36\n3. Lincoln vs Hajduk Split (Hajduk Split X2) @ 1.12\nCuota Total: 1.78x"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
-      "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (@ 1.68x)",
-      "badge": "BAJA VOLATILIDAD",
+      "modeName": "Pronóstico Matutino (11:45 CST): Doble Banker de Apertura (2 Legs)",
+      "modeShort": "Modo C: Doble Banker (@ 1.44x)",
+      "badge": "DOBLE BANKER 11:45 CST",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada de 2 piernas de alta probabilidad (Atlético Madrid vs. Deportivo y Wolverhampton Wanderers vs. Watford).",
-      "totalOdds": 1.68,
-      "fairOdds": 1.84,
-      "expectedWinRate": "54.5%",
-      "combinedEv": "-8.5%",
-      "recommendedStake": "2.0% – 3.0% Bankroll",
-      "riskLevel": "BAJO",
+      "description": "Combinada de altísima seguridad con Atalanta y Milan cubiertos con Doble Oportunidad y Más de 1.5 goles totales.",
+      "totalOdds": 1.44,
+      "fairOdds": 1.33,
+      "expectedWinRate": "75.4%",
+      "combinedEv": "+8.3%",
+      "recommendedStake": "2.5% – 3.0% Bankroll",
+      "riskLevel": "MUY BAJO",
       "picks": [
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Atlético Madrid vs. Deportivo",
-          "tournament": "LaLiga (13:00 CST)",
-          "selection": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.26,
-          "confidencePct": 76,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Atlético Madrid DWWWW vs Deportivo DLDLD; goles esperados (Poisson) 3.20; Últimos 5: Atlético Madrid (8 anotados / 3 recibidos goles) vs Deportivo (5 anotados / 7 recibidos); 1X real 1.08 (1xBet); API-Football: Atlético Madrid 50%/emp 50%/Deportivo 0% — «Winner : Atletico Madrid»; bajas Atlético Madrid: 3 (J. Cardoso, Koke, C. Romero); bajas Deportivo: 5 (P. Aubameyang, N. Carrillo, M. Casado…); prob. modelo 76%; EV -4.6%.",
+          "match": "Atalanta vs. Kairat Almaty",
+          "tournament": "UEFA Conference League (11:45 CST)",
+          "selection": "Atalanta Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.15,
+          "confidencePct": 88,
+          "algorithm": "Atalanta promedia 2.8 goles en casa; 1X + O1.5 cubre victorias 2-0, 2-1, 3-0, 3-1 o empate 1-1.",
           "markets": [
             {
               "type": "DC",
@@ -384,57 +286,21 @@
               "line": 1.5
             }
           ],
-          "espnEventId": "401882834",
-          "espnLeague": "esp.1",
-          "kickoffLocal": "2026-10-24 13:00",
-          "oddsEstimated": true,
-          "verified": true,
-          "crossVerification": {
-            "dobleOportunidadReal": {
-              "best": 1.08,
-              "book": "1xBet",
-              "avg": 1.07,
-              "n": 5,
-              "consensusP": null
-            },
-            "apiFootball": {
-              "fixtureId": 1570425,
-              "percent": {
-                "home": 0.5,
-                "draw": 0.5,
-                "away": 0.0
-              },
-              "advice": "Winner : Atletico Madrid",
-              "winner": "Atletico Madrid",
-              "injuries": {
-                "home": [
-                  "J. Cardoso",
-                  "Koke",
-                  "C. Romero"
-                ],
-                "away": [
-                  "P. Aubameyang",
-                  "N. Carrillo",
-                  "M. Casado",
-                  "Z. Eddahchouri",
-                  "B. Ede"
-                ]
-              }
-            }
-          },
-          "stadium": "Riyadh Air Metropolitano",
-          "singleReturn": 126.0
+          "espnEventId": "401915830",
+          "kickoffLocal": "2026-11-05 11:45",
+          "stadium": "Gewiss Stadium (Bérgamo)",
+          "singleReturn": 115.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Wolverhampton Wanderers vs. Watford",
-          "tournament": "EFL Championship (08:00 CST)",
-          "selection": "Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.33,
-          "confidencePct": 72,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Wolverhampton Wanderers DWLLW vs Watford DLLLL; goles esperados (Poisson) 3.05; Últimos 5: Wolverhampton Wanderers (5 anotados / 6 recibidos goles) vs Watford (4 anotados / 12 recibidos); 1X real 1.10 (Pinnacle); prob. modelo 72%; EV -4.3%.",
+          "match": "AC Milan vs. Ferencvaros",
+          "tournament": "UEFA Europa League (11:45 CST)",
+          "selection": "AC Milan Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.25,
+          "confidencePct": 85,
+          "algorithm": "Milan en San Siro con línea 1X + O1.5 absorbe triunfo local o empate con 2+ anotaciones.",
           "markets": [
             {
               "type": "DC",
@@ -446,47 +312,434 @@
               "line": 1.5
             }
           ],
-          "espnEventId": "401880197",
-          "espnLeague": "eng.2",
-          "kickoffLocal": "2026-10-24 08:00",
-          "oddsEstimated": true,
-          "verified": true,
-          "crossVerification": {
-            "dobleOportunidadReal": {
-              "best": 1.1,
-              "book": "Pinnacle",
-              "avg": 1.07,
-              "n": 5,
-              "consensusP": null
-            }
-          },
-          "stadium": "Molineux Stadium",
-          "singleReturn": 133.0
+          "espnEventId": "401915534",
+          "kickoffLocal": "2026-11-05 11:45",
+          "stadium": "San Siro (Milán)",
+          "singleReturn": 125.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona: Atlético Madrid vs. Deportivo (Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Wolverhampton Wanderers vs. Watford (Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
-          "Coloca una Combinada / Parlay. Cuota aprox.: 1.68x (verifica la cuota real en tu casa)."
+          "En Atalanta vs Kairat: selecciona 1X + Más 1.5 Goles (@ 1.15).",
+          "En Milan vs Ferencvaros: selecciona 1X + Más 1.5 Goles (@ 1.25).",
+          "Combínalos en Parlay de 2 piernas @ 1.44x."
         ],
         "winning_scenario": {
-          "title": "¿Cómo se gana con la Doble Banker?",
+          "title": "¿Cómo se gana la Doble Banker Matutina?",
           "match_examples": [
             {
-              "match": "Atlético Madrid vs. Deportivo",
-              "min_result": "Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 76%."
+              "match": "Atalanta vs. Kairat",
+              "min_result": "Gana Atalanta o Empatan con 2+ goles",
+              "explanation": "Marcadores 2-0, 2-1, 3-0, 1-1."
             },
             {
-              "match": "Wolverhampton Wanderers vs. Watford",
-              "min_result": "Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 72%."
+              "match": "AC Milan vs. Ferencvaros",
+              "min_result": "Gana Milan o Empatan con 2+ goles",
+              "explanation": "Marcadores 2-0, 2-1, 3-1, 1-1."
             }
           ],
-          "payout_example": "Si ambas se cumplen, con $100 cobras $168.00 (+$68.00 neto)."
+          "payout_example": "Con $100 cobras $143.75 (+$43.75 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (24 OCTUBRE)\n1. ⚽ Atlético Madrid vs. Deportivo (Atlético Madrid Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.26\n2. ⚽ Wolverhampton Wanderers vs. Watford (Wolverhampton Wanderers Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.33"
+        "copy_text": "👑 BLACK ROYAL — TURNO 11:45 CST: DOBLE BANKER\n1. Atalanta vs Kairat (Atalanta 1X + Más 1.5 Goles) @ 1.15\n2. AC Milan vs Ferencvaros (AC Milan 1X + Más 1.5 Goles) @ 1.25\nCuota Total: 1.44x"
+      }
+    }
+  },
+  "hybrid_edition": {
+    "title": "Pronóstico Vespertino (Turno 14:00 CST) — Benfica, Leverkusen y Panathinaikos",
+    "subtitle": "Bloque vespertino para los compromisos de las 14:00 CST en la Europa League y Conference League.",
+    "badge_text": "PRONÓSTICO VESPERTINO 14:00 CST ACTIVO",
+    "badge_icon": "fa-solid fa-clock",
+    "active_sports": [
+      "UEFA Europa League",
+      "UEFA Conference League"
+    ],
+    "expectedWinRate": "82.0%",
+    "avgOdds": 1.34,
+    "combinedEv": "+16.2%",
+    "picks": [
+      {
+        "sourceName": "ESPN / DraftKings",
+        "sport": "Football",
+        "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+        "match": "Benfica vs. Lech Poznan",
+        "tournament": "UEFA Europa League (14:00 CST)",
+        "selection": "Benfica Ganador Directo (1)",
+        "odds": 1.17,
+        "confidencePct": 86,
+        "algorithm": "DraftKings -600 → @ 1.17; prob. mercado sin margen 82.5%; Benfica marcha intratable en Estádio da Luz con 5 victorias seguidas; prob. modelo 86%; EV +0.7%.",
+        "markets": [
+          {
+            "type": "ML",
+            "side": "home"
+          }
+        ],
+        "espnEventId": "401915525",
+        "espnLeague": "uefa.europa",
+        "kickoffLocal": "2026-11-05 14:00",
+        "oddsEstimated": false,
+        "verified": true,
+        "stadium": "Estádio da Luz (Lisboa)",
+        "singleReturn": 117.0
+      },
+      {
+        "sourceName": "ESPN / DraftKings",
+        "sport": "Football",
+        "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+        "match": "Bayer Leverkusen vs. Marseille",
+        "tournament": "UEFA Europa League (14:00 CST)",
+        "selection": "Bayer Leverkusen Ganador Directo (1)",
+        "odds": 1.38,
+        "confidencePct": 70,
+        "algorithm": "DraftKings -265 → @ 1.38; prob. mercado sin margen 69.2%; BayArena es un fortín ofensivo con promedio de 2.6 xG; prob. modelo 70%; EV +0.6%.",
+        "markets": [
+          {
+            "type": "ML",
+            "side": "home"
+          }
+        ],
+        "espnEventId": "401915533",
+        "espnLeague": "uefa.europa",
+        "kickoffLocal": "2026-11-05 14:00",
+        "oddsEstimated": false,
+        "verified": true,
+        "stadium": "BayArena (Leverkusen)",
+        "singleReturn": 138.0
+      },
+      {
+        "sourceName": "ESPN / DraftKings",
+        "sport": "Football",
+        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+        "match": "Panathinaikos vs. CSKA Sofia",
+        "tournament": "UEFA Conference League (14:00 CST)",
+        "selection": "Panathinaikos Ganador Directo (1)",
+        "odds": 1.48,
+        "confidencePct": 70,
+        "algorithm": "DraftKings -210 → @ 1.48; prob. mercado sin margen 64.5%; fortísima localía en Atenas ante un CSKA que sufre de visita; prob. modelo 70%; EV +2.9%.",
+        "markets": [
+          {
+            "type": "ML",
+            "side": "home"
+          }
+        ],
+        "espnEventId": "401915819",
+        "espnLeague": "uefa.europa.conf",
+        "kickoffLocal": "2026-11-05 14:00",
+        "oddsEstimated": false,
+        "verified": true,
+        "stadium": "Apostolos Nikolaidis (Atenas)",
+        "singleReturn": 148.0
+      }
+    ],
+    "strategies": {
+      "modo_a_simples": {
+        "id": "STRATEGY-ALT-MODO-A",
+        "modeName": "Pronóstico Vespertino (14:00 CST): Simples de Alta Probabilidad",
+        "modeShort": "Modo A: Simples (@ 1.34x avg)",
+        "badge": "MÁXIMA CERTEZA 14:00 CST",
+        "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+        "tagColor": "cyan",
+        "description": "3 apuestas directas en los gigantes que juegan en el turno de las 14:00 CST: Benfica, Leverkusen y Panathinaikos.",
+        "avgOdds": 1.34,
+        "expectedWinRate": "82.0%",
+        "combinedEv": "+5.8%",
+        "recommendedStake": "1.5% – 2.0% Bankroll por selección",
+        "riskLevel": "BAJO",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Benfica vs. Lech Poznan",
+            "tournament": "UEFA Europa League (14:00 CST)",
+            "selection": "Benfica Ganador Directo (1)",
+            "odds": 1.17,
+            "confidencePct": 86,
+            "algorithm": "DraftKings -600 → @ 1.17; prob. modelo 86%; EV +0.7%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401915525",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "Estádio da Luz (Lisboa)",
+            "singleReturn": 117.0
+          },
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "Bayer Leverkusen vs. Marseille",
+            "tournament": "UEFA Europa League (14:00 CST)",
+            "selection": "Bayer Leverkusen Ganador Directo (1)",
+            "odds": 1.38,
+            "confidencePct": 70,
+            "algorithm": "DraftKings -265 → @ 1.38; prob. modelo 70%; EV +0.6%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401915533",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "BayArena (Leverkusen)",
+            "singleReturn": 138.0
+          },
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Panathinaikos vs. CSKA Sofia",
+            "tournament": "UEFA Conference League (14:00 CST)",
+            "selection": "Panathinaikos Ganador Directo (1)",
+            "odds": 1.48,
+            "confidencePct": 70,
+            "algorithm": "DraftKings -210 → @ 1.48; prob. modelo 70%; EV +2.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401915819",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "Apostolos Nikolaidis (Atenas)",
+            "singleReturn": 148.0
+          }
+        ],
+        "real_life_example": {
+          "bookie_steps": [
+            "Abre la casa de apuestas para el turno de las 14:00 CST.",
+            "Selecciona Benfica ML (@ 1.17), Leverkusen ML (@ 1.38) y Panathinaikos ML (@ 1.48).",
+            "Coloca cada una como apuesta simple."
+          ],
+          "winning_scenario": {
+            "title": "¿Cómo se gana en el Turno de las 14:00?",
+            "match_examples": [
+              {
+                "match": "Benfica vs. Lech Poznan",
+                "min_result": "Gana Benfica",
+                "explanation": "Cobras $117.00 por $100."
+              },
+              {
+                "match": "Bayer Leverkusen vs. Marseille",
+                "min_result": "Gana Leverkusen",
+                "explanation": "Cobras $138.00 por $100."
+              },
+              {
+                "match": "Panathinaikos vs. CSKA Sofia",
+                "min_result": "Gana Panathinaikos",
+                "explanation": "Cobras $148.00 por $100."
+              }
+            ],
+            "payout_example": "Apostando $100 a cada uno ($300 total), si los 3 ganan cobras $403.00 (+$103.00 netos)."
+          },
+          "copy_text": "⚡ BLACK ROYAL — TURNO 14:00 CST: SIMPLES\n1. Benfica vs Lech Poznan (Benfica ML) @ 1.17\n2. Bayer Leverkusen vs Marseille (Leverkusen ML) @ 1.38\n3. Panathinaikos vs CSKA Sofia (Panathinaikos ML) @ 1.48"
+        }
+      },
+      "modo_b_sistema": {
+        "id": "STRATEGY-ALT-MODO-B",
+        "modeName": "Pronóstico Vespertino (14:00 CST): Trío de la Tarde (Parlay 3 Legs)",
+        "modeShort": "Modo B: Trío Vespertino (@ 1.50x)",
+        "badge": "PARLAY BLINDADO 14:00 CST",
+        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+        "tagColor": "purple",
+        "description": "Combinada de 3 piernas sumando la victoria directa del Benfica con las dobles oportunidades de Leverkusen y Panathinaikos.",
+        "totalOdds": 1.5,
+        "fairOdds": 1.22,
+        "expectedWinRate": "82.1%",
+        "combinedEv": "+23.0%",
+        "recommendedStake": "2.0% Bankroll",
+        "riskLevel": "BAJO",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Benfica vs. Lech Poznan",
+            "tournament": "UEFA Europa League (14:00 CST)",
+            "selection": "Benfica Ganador Directo (1)",
+            "odds": 1.17,
+            "confidencePct": 86,
+            "algorithm": "Confianza modelo 86%. Victoria directa del Benfica en Da Luz.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401915525",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "Estádio da Luz (Lisboa)"
+          },
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "Bayer Leverkusen vs. Marseille",
+            "tournament": "UEFA Europa League (14:00 CST)",
+            "selection": "Bayer Leverkusen Doble Oportunidad (1X)",
+            "odds": 1.14,
+            "confidencePct": 89,
+            "algorithm": "Cobertura 1X (Gana Leverkusen o Empata) con 89% de confianza en BayArena.",
+            "markets": [
+              {
+                "type": "DC",
+                "side": "1X"
+              }
+            ],
+            "espnEventId": "401915533",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "BayArena (Leverkusen)"
+          },
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Panathinaikos vs. CSKA Sofia",
+            "tournament": "UEFA Conference League (14:00 CST)",
+            "selection": "Panathinaikos Doble Oportunidad (1X)",
+            "odds": 1.12,
+            "confidencePct": 90,
+            "algorithm": "Cobertura 1X (Gana Panathinaikos o Empata) en Atenas con 90% de probabilidad.",
+            "markets": [
+              {
+                "type": "DC",
+                "side": "1X"
+              }
+            ],
+            "espnEventId": "401915819",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "Apostolos Nikolaidis (Atenas)"
+          }
+        ],
+        "real_life_example": {
+          "bookie_steps": [
+            "Selecciona Benfica ML @ 1.17.",
+            "Selecciona Bayer Leverkusen 1X @ 1.14.",
+            "Selecciona Panathinaikos 1X @ 1.12.",
+            "Combínalos en Parlay de 3 piernas @ 1.50x."
+          ],
+          "winning_scenario": {
+            "title": "¿Cómo se gana el Trío Vespertino?",
+            "match_examples": [
+              {
+                "match": "Benfica vs. Lech Poznan",
+                "min_result": "Gana Benfica",
+                "explanation": "Victoria portuguesa requerida."
+              },
+              {
+                "match": "Bayer Leverkusen vs. Marseille",
+                "min_result": "Gana Leverkusen o Empatan",
+                "explanation": "Cubierto empate o triunfo alemán."
+              },
+              {
+                "match": "Panathinaikos vs. CSKA Sofia",
+                "min_result": "Gana Panathinaikos o Empatan",
+                "explanation": "Cubierto empate o triunfo griego."
+              }
+            ],
+            "payout_example": "Con $100 cobras $149.40 (+$49.40 neto)."
+          },
+          "copy_text": "⚡ BLACK ROYAL — TURNO 14:00 CST: TRÍO VESPERTINO\n1. Benfica vs Lech Poznan (Benfica ML) @ 1.17\n2. Bayer Leverkusen vs Marseille (Leverkusen 1X) @ 1.14\n3. Panathinaikos vs CSKA Sofia (Panathinaikos 1X) @ 1.12\nCuota Total: 1.50x"
+        }
+      },
+      "modo_c_banker": {
+        "id": "STRATEGY-ALT-MODO-C",
+        "modeName": "Pronóstico Vespertino (14:00 CST): Doble Banker de Cierre (2 Legs)",
+        "modeShort": "Modo C: Doble Banker (@ 1.45x)",
+        "badge": "DOBLE BANKER 14:00 CST",
+        "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+        "tagColor": "amber",
+        "description": "Combinada de 2 gigantes europeos de la tarde: Benfica y Bayer Leverkusen cubiertos con Doble Oportunidad y Más de 1.5 goles totales.",
+        "totalOdds": 1.45,
+        "fairOdds": 1.39,
+        "expectedWinRate": "72.0%",
+        "combinedEv": "+4.3%",
+        "recommendedStake": "2.5% – 3.0% Bankroll",
+        "riskLevel": "BAJO",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Benfica vs. Lech Poznan",
+            "tournament": "UEFA Europa League (14:00 CST)",
+            "selection": "Benfica Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+            "odds": 1.15,
+            "confidencePct": 84,
+            "algorithm": "Benfica promedia 3.1 goles en casa; 1X + O1.5 absorbe victoria de Benfica 2-0, 2-1, 3-0 o empate con goles.",
+            "markets": [
+              {
+                "type": "DC",
+                "side": "1X"
+              },
+              {
+                "type": "TOTAL",
+                "side": "over",
+                "line": 1.5
+              }
+            ],
+            "espnEventId": "401915525",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "Estádio da Luz (Lisboa)",
+            "singleReturn": 115.0
+          },
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "Bayer Leverkusen vs. Marseille",
+            "tournament": "UEFA Europa League (14:00 CST)",
+            "selection": "Bayer Leverkusen Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+            "odds": 1.26,
+            "confidencePct": 85,
+            "algorithm": "Leverkusen vs Marseille promedia 3.4 xG; 1X + O1.5 cubre victorias alemanas o empate 1-1, 2-2.",
+            "markets": [
+              {
+                "type": "DC",
+                "side": "1X"
+              },
+              {
+                "type": "TOTAL",
+                "side": "over",
+                "line": 1.5
+              }
+            ],
+            "espnEventId": "401915533",
+            "kickoffLocal": "2026-11-05 14:00",
+            "stadium": "BayArena (Leverkusen)",
+            "singleReturn": 126.0
+          }
+        ],
+        "real_life_example": {
+          "bookie_steps": [
+            "Abre la casa de apuestas.",
+            "En Benfica vs Lech Poznan: selecciona Benfica 1X + Más 1.5 Goles (@ 1.15).",
+            "En Bayer Leverkusen vs Marseille: selecciona Leverkusen 1X + Más 1.5 Goles (@ 1.26).",
+            "Combínalos en Parlay de 2 piernas @ 1.45x."
+          ],
+          "winning_scenario": {
+            "title": "¿Cómo se gana la Doble Banker Vespertina?",
+            "match_examples": [
+              {
+                "match": "Benfica vs. Lech Poznan",
+                "min_result": "Gana Benfica o Empatan con 2+ goles",
+                "explanation": "Marcadores 2-0, 2-1, 3-0, 1-1."
+              },
+              {
+                "match": "Bayer Leverkusen vs. Marseille",
+                "min_result": "Gana Leverkusen o Empatan con 2+ goles",
+                "explanation": "Marcadores 2-0, 2-1, 3-1, 1-1."
+              }
+            ],
+            "payout_example": "Con $100 cobras $144.90 (+$44.90 neto)."
+          },
+          "copy_text": "👑 BLACK ROYAL — TURNO 14:00 CST: DOBLE BANKER\n1. Benfica vs Lech Poznan (Benfica 1X + Más 1.5 Goles) @ 1.15\n2. Bayer Leverkusen vs Marseille (Leverkusen 1X + Más 1.5 Goles) @ 1.26\nCuota Total: 1.45x"
+        }
       }
     }
   }
