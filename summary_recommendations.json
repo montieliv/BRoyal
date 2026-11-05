@@ -76,8 +76,9 @@
           "algorithm": "DraftKings -280 → @ 1.36; prob. mercado sin margen 70.5%; San Siro como fortín; Milan promedia 2.3 goles a favor como local en fases de grupos europeas; prob. modelo 72%; EV +1.2%.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "under",
+              "line": 2.5
             }
           ],
           "espnEventId": "401915534",
@@ -190,8 +191,9 @@
           "algorithm": "Confianza modelo 72%. Calidad diferencial en San Siro.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "under",
+              "line": 2.5
             }
           ],
           "espnEventId": "401915534",
@@ -303,13 +305,9 @@
           "algorithm": "Milan en San Siro con línea 1X + O1.5 absorbe triunfo local o empate con 2+ anotaciones.",
           "markets": [
             {
-              "type": "DC",
-              "side": "1X"
-            },
-            {
               "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
+              "side": "under",
+              "line": 3.5
             }
           ],
           "espnEventId": "401915534",
