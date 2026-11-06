@@ -38979,7 +38979,7 @@
     "2026-11-05": {
       "date": "2026-11-05",
       "saved_at": "2026-11-05 14:52:27",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -39097,7 +39097,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $476.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (5 NOVIEMBRE)\n1. ⚽ Palmeiras vs. Remo: Palmeiras Ganador Directo (1) @ 1.22\n2. ⚽ Cruzeiro vs. Bahia: Cruzeiro Ganador Directo (1) @ 1.77\n3. ⚽ Gimnasia La Plata vs. Belgrano (Córdoba): Menos de 2.5 Goles Totales (Under 2.5) @ 1.77"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -39231,7 +39232,8 @@
               "payout_example": "Con $100 cobras hasta $281.75 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (5 NOVIEMBRE)\n• Pick A: ⚽ Palmeiras vs. Remo (Palmeiras Ganador Directo (1)) @ 1.22\n• Pick B: ⚽ Cruzeiro vs. Bahia (Cruzeiro Ganador Directo (1)) @ 1.77\n• Pick C: ⚽ Gimnasia La Plata vs. Belgrano (Córdoba) (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.77"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -39330,15 +39332,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $183.00 (+$83.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (5 NOVIEMBRE)\n1. ⚽ Palmeiras vs. Remo (Palmeiras Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.23\n2. ⚽ Cruzeiro vs. Bahia (Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.49"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": 36.25,
+        "roiPct": "+7.3%",
+        "wonModes": 1,
+        "simulatedTotalReturn": 536.25,
+        "winRate": "80.0% de selecciones (4/5) | Modo A $299.00 (2/3) + Modo B $53.98 + Modo C $183.27",
+        "evaluatedAt": "2026-11-06 14:08:21",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -39556,7 +39564,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $456.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (5 NOVIEMBRE)\n1. Palmeiras vs. Remo: Palmeiras Ganador Directo (1) @ 1.22\n2. Golden State Warriors vs. Miami Heat: Golden State Warriors Ganador Directo (Moneyline) @ 1.38\n3. Phoenix Suns vs. Orlando Magic: Phoenix Suns (-1.5 Spread / Hándicap) @ 1.96"
-            }
+            },
+            "status": "WON"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -39685,7 +39694,8 @@
                 "payout_example": "Con $100 cobras hasta $251.75 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (5 NOVIEMBRE)\n• Pick A: Palmeiras vs. Remo (Palmeiras Ganador Directo (1)) @ 1.22\n• Pick B: Golden State Warriors vs. Miami Heat (Golden State Warriors Ganador Directo (Moneyline)) @ 1.38\n• Pick C: Phoenix Suns vs. Orlando Magic (Phoenix Suns (-1.5 Spread / Hándicap)) @ 1.96"
-            }
+            },
+            "status": "WON"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -39774,6 +39784,827 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $168.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (5 NOVIEMBRE)\n1. Palmeiras vs. Remo (Palmeiras Ganador Directo (1)) @ 1.22\n2. Golden State Warriors vs. Miami Heat (Golden State Warriors Ganador Directo (Moneyline)) @ 1.38"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 3,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 876.35,
+          "netPnL": 376.35,
+          "roiPct": "+75.3%",
+          "winRate": "100.0% de selecciones (3/3) | Modo A $456.00 (3/3) + Modo B $251.99 + Modo C $168.36",
+          "evaluated": true,
+          "evaluatedAt": "2026-11-06 14:08:21",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Palmeiras vs. Remo": "6-1 — Palmeiras Ganador Directo (1) ✅ | Palmeiras Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "Cruzeiro vs. Bahia": "3-2 — Cruzeiro Ganador Directo (1) ✅ | Cruzeiro Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "Gimnasia La Plata vs. Belgrano (Córdoba)": "2-1 — Menos de 2.5 Goles Totales (Under 2.5) ❌",
+        "Golden State Warriors vs. Miami Heat": "120-100 — Golden State Warriors Ganador Directo (Moneyline) ✅",
+        "Phoenix Suns vs. Orlando Magic": "117-104 — Phoenix Suns (-1.5 Spread / Hándicap) ✅"
+      },
+      "evaluatedAt": "2026-11-06 14:08:21"
+    },
+    "2026-11-06": {
+      "date": "2026-11-06",
+      "saved_at": "2026-11-06 14:08:22",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (59.9% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Viernes 6 de Noviembre (Liga MX, Liga Profesional Argentina). Cada acierto cobra por separado.",
+          "avgOdds": 1.58,
+          "expectedWinRate": "59.9%",
+          "combinedEv": "-5.4%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "San Lorenzo vs. Platense",
+              "tournament": "Liga Profesional Argentina (16:15 CST)",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.53,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 62%; EV -6.0%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841662",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-11-06 16:15",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Pedro Bidegain",
+              "singleReturn": 153.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético de San Luis vs. FC Juárez",
+              "tournament": "Liga MX (19:00 CST)",
+              "selection": "Atlético de San Luis Ganador Directo (1)",
+              "odds": 1.62,
+              "confidencePct": 59,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -160 → @ 1.62; prob. de mercado sin margen 58%; forma últimos 5 Atlético de San Luis LWWDL vs FC Juárez WDLLD; goles esperados (Poisson) 2.90; Últimos 5: Atlético de San Luis (5 anotados / 5 recibidos goles) vs FC Juárez (5 anotados / 9 recibidos); prob. modelo 59%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401876910",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-11-06 19:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Libertad Financiera",
+              "singleReturn": 162.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Atlante vs. Santos",
+              "tournament": "Liga MX (21:00 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.59,
+              "confidencePct": 59,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Atlante LLWLL vs Santos WLWWW; goles esperados (Poisson) 3.07; Últimos 5: Atlante (4 anotados / 9 recibidos goles) vs Santos (11 anotados / 5 recibidos); prob. modelo 59%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401876908",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-11-06 21:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Banorte",
+              "singleReturn": 159.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "San Lorenzo vs. Platense",
+                  "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                  "explanation": "Si se cumple cobras $153.00 (+$53.00 neto)."
+                },
+                {
+                  "match": "Atlético de San Luis vs. FC Juárez",
+                  "min_result": "Atlético de San Luis Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $162.00 (+$62.00 neto)."
+                },
+                {
+                  "match": "Atlante vs. Santos",
+                  "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+                  "explanation": "Si se cumple cobras $159.00 (+$59.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $474.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (6 NOVIEMBRE)\n1. ⚽ San Lorenzo vs. Platense: Más de 1.5 Goles Totales (Over 1.5) @ 1.53\n2. ⚽ Atlético de San Luis vs. FC Juárez: Atlético de San Luis Ganador Directo (1) @ 1.62\n3. ⚽ Atlante vs. Santos: Más de 2.5 Goles Totales (Over 2.5) @ 1.59"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "64.6%",
+          "combinedEv": "-11.7%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "San Lorenzo vs. Platense",
+              "tournament": "Liga Profesional Argentina (16:15 CST)",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.53,
+              "confidencePct": 62,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 62%; EV -6.0%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841662",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-11-06 16:15",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético de San Luis vs. FC Juárez",
+              "tournament": "Liga MX (19:00 CST)",
+              "selection": "Atlético de San Luis Ganador Directo (1)",
+              "odds": 1.62,
+              "confidencePct": 59,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -160 → @ 1.62; prob. de mercado sin margen 58%; forma últimos 5 Atlético de San Luis LWWDL vs FC Juárez WDLLD; goles esperados (Poisson) 2.90; Últimos 5: Atlético de San Luis (5 anotados / 5 recibidos goles) vs FC Juárez (5 anotados / 9 recibidos); prob. modelo 59%; EV -4.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401876910",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-11-06 19:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Atlante vs. Santos",
+              "tournament": "Liga MX (21:00 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.59,
+              "confidencePct": 59,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Atlante LLWLL vs Santos WLWWW; goles esperados (Poisson) 3.07; Últimos 5: Atlante (4 anotados / 9 recibidos goles) vs Santos (11 anotados / 5 recibidos); prob. modelo 59%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401876908",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-11-06 21:00",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ San Lorenzo + ⚽ Atlético de San Luis)",
+              "odds": 2.48,
+              "formula": "1.53 × 1.62"
+            },
+            {
+              "name": "Doble 2 (⚽ San Lorenzo + ⚽ Atlante)",
+              "odds": 2.43,
+              "formula": "1.53 × 1.59"
+            },
+            {
+              "name": "Doble 3 (⚽ Atlético de San Luis + ⚽ Atlante)",
+              "odds": 2.58,
+              "formula": "1.62 × 1.59"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 3.94,
+              "formula": "1.53 × 1.62 × 1.59"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (San Lorenzo + Atlético de San Luis)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $62.00."
+                },
+                {
+                  "match": "Escenario 2 de 3 (San Lorenzo + Atlante)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $60.75."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $285.75."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $285.75 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (6 NOVIEMBRE)\n• Pick A: ⚽ San Lorenzo vs. Platense (Más de 1.5 Goles Totales (Over 1.5)) @ 1.53\n• Pick B: ⚽ Atlético de San Luis vs. FC Juárez (Atlético de San Luis Ganador Directo (1)) @ 1.62\n• Pick C: ⚽ Atlante vs. Santos (Más de 2.5 Goles Totales (Over 2.5)) @ 1.59"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.99x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (San Lorenzo vs. Platense y Atlético de San Luis vs. FC Juárez).",
+          "totalOdds": 1.99,
+          "fairOdds": 2.27,
+          "expectedWinRate": "44.1%",
+          "combinedEv": "-12.3%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "San Lorenzo vs. Platense",
+              "tournament": "Liga Profesional Argentina (16:15 CST)",
+              "selection": "San Lorenzo Doble Oportunidad (1X)",
+              "odds": 1.36,
+              "confidencePct": 68,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.36; prob. de mercado sin margen 69%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 68%; EV -7.0%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                }
+              ],
+              "espnEventId": "401841662",
+              "espnLeague": "arg.1",
+              "kickoffLocal": "2026-11-06 16:15",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio Pedro Bidegain",
+              "singleReturn": 136.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético de San Luis vs. FC Juárez",
+              "tournament": "Liga MX (19:00 CST)",
+              "selection": "Atlético de San Luis Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.46,
+              "confidencePct": 65,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Atlético de San Luis LWWDL vs FC Juárez WDLLD; goles esperados (Poisson) 2.90; Últimos 5: Atlético de San Luis (5 anotados / 5 recibidos goles) vs FC Juárez (5 anotados / 9 recibidos); prob. modelo 65%; EV -5.8%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401876910",
+              "espnLeague": "mex.1",
+              "kickoffLocal": "2026-11-06 19:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio Libertad Financiera",
+              "singleReturn": 146.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: San Lorenzo vs. Platense (San Lorenzo Doble Oportunidad (1X)) y Atlético de San Luis vs. FC Juárez (Atlético de San Luis Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.99x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "San Lorenzo vs. Platense",
+                  "min_result": "San Lorenzo Doble Oportunidad (1X)",
+                  "explanation": "Probabilidad modelo 68%."
+                },
+                {
+                  "match": "Atlético de San Luis vs. FC Juárez",
+                  "min_result": "Atlético de San Luis Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 65%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $199.00 (+$99.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (6 NOVIEMBRE)\n1. ⚽ San Lorenzo vs. Platense (San Lorenzo Doble Oportunidad (1X)) @ 1.36\n2. ⚽ Atlético de San Luis vs. FC Juárez (Atlético de San Luis Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.46"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando San Lorenzo vs. Platense con Charlotte Hornets vs. Boston Celtics y Atlanta Hawks vs. Washington Wizards.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "69.9%",
+        "avgOdds": 1.37,
+        "combinedEv": "-4.6%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "San Lorenzo vs. Platense",
+            "tournament": "Liga Profesional Argentina (16:15 CST)",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.53,
+            "confidencePct": 62,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 62%; EV -6.0%.",
+            "markets": [
+              {
+                "type": "TOTAL",
+                "side": "over",
+                "line": 1.5
+              }
+            ],
+            "espnEventId": "401841662",
+            "espnLeague": "arg.1",
+            "kickoffLocal": "2026-11-06 16:15",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Estadio Pedro Bidegain",
+            "singleReturn": 153.0,
+            "safeSelection": "San Lorenzo Doble Oportunidad (1X)",
+            "safeOdds": 1.36
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Charlotte Hornets vs. Boston Celtics",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Boston Celtics Ganador Directo (Moneyline)",
+            "odds": 1.26,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Charlotte Hornets — vs Boston Celtics —; Predictor Oficial ESPN: Charlotte Hornets 22.7% vs Boston Celtics 77.3%; Últimos 5: Charlotte Hornets (467 anotados / 539 recibidos pts) vs Boston Celtics (435 anotados / 419 recibidos); prob. modelo 76%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401909288",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-06 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Spectrum Center",
+            "singleReturn": 126.0,
+            "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+            "safeOdds": 1.26
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Atlanta Hawks vs. Washington Wizards",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Atlanta Hawks Ganador Directo (Moneyline)",
+            "odds": 1.33,
+            "confidencePct": 72,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -299 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Atlanta Hawks — vs Washington Wizards —; Predictor Oficial ESPN: Atlanta Hawks 71.3% vs Washington Wizards 28.7%; Últimos 5: Atlanta Hawks (558 anotados / 570 recibidos pts) vs Washington Wizards (517 anotados / 524 recibidos); prob. modelo 72%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909287",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-06 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "State Farm Arena",
+            "singleReturn": 133.0,
+            "safeSelection": "Atlanta Hawks Ganador Directo (Moneyline)",
+            "safeOdds": 1.33
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (69.9% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Viernes 6 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.37,
+            "expectedWinRate": "69.9%",
+            "combinedEv": "-4.6%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "San Lorenzo vs. Platense",
+                "tournament": "Liga Profesional Argentina (16:15 CST)",
+                "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+                "odds": 1.53,
+                "confidencePct": 62,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 62%; EV -6.0%.",
+                "markets": [
+                  {
+                    "type": "TOTAL",
+                    "side": "over",
+                    "line": 1.5
+                  }
+                ],
+                "espnEventId": "401841662",
+                "espnLeague": "arg.1",
+                "kickoffLocal": "2026-11-06 16:15",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Estadio Pedro Bidegain",
+                "singleReturn": 153.0,
+                "safeSelection": "San Lorenzo Doble Oportunidad (1X)",
+                "safeOdds": 1.36
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Charlotte Hornets vs. Boston Celtics",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.26,
+                "confidencePct": 76,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Charlotte Hornets — vs Boston Celtics —; Predictor Oficial ESPN: Charlotte Hornets 22.7% vs Boston Celtics 77.3%; Últimos 5: Charlotte Hornets (467 anotados / 539 recibidos pts) vs Boston Celtics (435 anotados / 419 recibidos); prob. modelo 76%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909288",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-06 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Spectrum Center",
+                "singleReturn": 126.0,
+                "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+                "safeOdds": 1.26
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Atlanta Hawks vs. Washington Wizards",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Atlanta Hawks Ganador Directo (Moneyline)",
+                "odds": 1.33,
+                "confidencePct": 72,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -299 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Atlanta Hawks — vs Washington Wizards —; Predictor Oficial ESPN: Atlanta Hawks 71.3% vs Washington Wizards 28.7%; Últimos 5: Atlanta Hawks (558 anotados / 570 recibidos pts) vs Washington Wizards (517 anotados / 524 recibidos); prob. modelo 72%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909287",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-06 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "State Farm Arena",
+                "singleReturn": 133.0,
+                "safeSelection": "Atlanta Hawks Ganador Directo (Moneyline)",
+                "safeOdds": 1.33
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: San Lorenzo vs. Platense, Charlotte Hornets vs. Boston Celtics y Atlanta Hawks vs. Washington Wizards.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "San Lorenzo vs. Platense",
+                    "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                    "explanation": "Cobras $153.00."
+                  },
+                  {
+                    "match": "Charlotte Hornets vs. Boston Celtics",
+                    "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $126.00."
+                  },
+                  {
+                    "match": "Atlanta Hawks vs. Washington Wizards",
+                    "min_result": "Atlanta Hawks Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $133.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $412.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (6 NOVIEMBRE)\n1. San Lorenzo vs. Platense: Más de 1.5 Goles Totales (Over 1.5) @ 1.53\n2. Charlotte Hornets vs. Boston Celtics: Boston Celtics Ganador Directo (Moneyline) @ 1.26\n3. Atlanta Hawks vs. Washington Wizards: Atlanta Hawks Ganador Directo (Moneyline) @ 1.33"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "78.5%",
+            "combinedEv": "-10.4%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "San Lorenzo vs. Platense",
+                "tournament": "Liga Profesional Argentina (16:15 CST)",
+                "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+                "odds": 1.53,
+                "confidencePct": 62,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 62%; EV -6.0%.",
+                "markets": [
+                  {
+                    "type": "TOTAL",
+                    "side": "over",
+                    "line": 1.5
+                  }
+                ],
+                "espnEventId": "401841662",
+                "espnLeague": "arg.1",
+                "kickoffLocal": "2026-11-06 16:15",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Charlotte Hornets vs. Boston Celtics",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.26,
+                "confidencePct": 76,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Charlotte Hornets — vs Boston Celtics —; Predictor Oficial ESPN: Charlotte Hornets 22.7% vs Boston Celtics 77.3%; Últimos 5: Charlotte Hornets (467 anotados / 539 recibidos pts) vs Boston Celtics (435 anotados / 419 recibidos); prob. modelo 76%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909288",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-06 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Atlanta Hawks vs. Washington Wizards",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Atlanta Hawks Ganador Directo (Moneyline)",
+                "odds": 1.33,
+                "confidencePct": 72,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -299 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Atlanta Hawks — vs Washington Wizards —; Predictor Oficial ESPN: Atlanta Hawks 71.3% vs Washington Wizards 28.7%; Últimos 5: Atlanta Hawks (558 anotados / 570 recibidos pts) vs Washington Wizards (517 anotados / 524 recibidos); prob. modelo 72%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909287",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-06 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (San Lorenzo + Charlotte Hornets)",
+                "odds": 1.93,
+                "formula": "1.53 × 1.26"
+              },
+              {
+                "name": "Doble 2 (San Lorenzo + Atlanta Hawks)",
+                "odds": 2.03,
+                "formula": "1.53 × 1.33"
+              },
+              {
+                "name": "Doble 3 (Charlotte Hornets + Atlanta Hawks)",
+                "odds": 1.68,
+                "formula": "1.26 × 1.33"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.56,
+                "formula": "1.53 × 1.26 × 1.33"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (San Lorenzo + Charlotte Hornets)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 1.93x): $48.25 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $205.00."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $205.00 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (6 NOVIEMBRE)\n• Pick A: San Lorenzo vs. Platense (Más de 1.5 Goles Totales (Over 1.5)) @ 1.53\n• Pick B: Charlotte Hornets vs. Boston Celtics (Boston Celtics Ganador Directo (Moneyline)) @ 1.26\n• Pick C: Atlanta Hawks vs. Washington Wizards (Atlanta Hawks Ganador Directo (Moneyline)) @ 1.33"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.71x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.71x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: San Lorenzo vs. Platense y Charlotte Hornets vs. Boston Celtics.",
+            "totalOdds": 1.71,
+            "fairOdds": 1.93,
+            "expectedWinRate": "51.9%",
+            "combinedEv": "-11.2%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "San Lorenzo vs. Platense",
+                "tournament": "Liga Profesional Argentina (16:15 CST)",
+                "selection": "San Lorenzo Doble Oportunidad (1X)",
+                "odds": 1.36,
+                "confidencePct": 68,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.36; prob. de mercado sin margen 69%; forma últimos 5 San Lorenzo DDWWL vs Platense WWWLD; goles esperados (Poisson) 2.08; Últimos 5: San Lorenzo (5 anotados / 6 recibidos goles) vs Platense (6 anotados / 4 recibidos); prob. modelo 68%; EV -7.0%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401841662",
+                "espnLeague": "arg.1",
+                "kickoffLocal": "2026-11-06 16:15",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Estadio Pedro Bidegain",
+                "singleReturn": 136.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Charlotte Hornets vs. Boston Celtics",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.26,
+                "confidencePct": 76,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Charlotte Hornets — vs Boston Celtics —; Predictor Oficial ESPN: Charlotte Hornets 22.7% vs Boston Celtics 77.3%; Últimos 5: Charlotte Hornets (467 anotados / 539 recibidos pts) vs Boston Celtics (435 anotados / 419 recibidos); prob. modelo 76%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401909288",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-06 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Spectrum Center",
+                "singleReturn": 126.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: San Lorenzo vs. Platense y Charlotte Hornets vs. Boston Celtics.",
+                "Coloca Parlay / Combinada @ 1.71x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "San Lorenzo vs. Platense",
+                    "min_result": "San Lorenzo Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 68%."
+                  },
+                  {
+                    "match": "Charlotte Hornets vs. Boston Celtics",
+                    "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 76%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $171.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (6 NOVIEMBRE)\n1. San Lorenzo vs. Platense (San Lorenzo Doble Oportunidad (1X)) @ 1.36\n2. Charlotte Hornets vs. Boston Celtics (Boston Celtics Ganador Directo (Moneyline)) @ 1.26"
             }
           }
         }
