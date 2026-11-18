@@ -42972,7 +42972,7 @@
     "2026-11-14": {
       "date": "2026-11-14",
       "saved_at": "2026-11-14 12:53:30",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -43089,7 +43089,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $418.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (14 NOVIEMBRE)\n1. ⚽ Chapecoense vs. Vasco da Gama: Vasco da Gama Ganador Directo (2) @ 1.40\n2. ⚽ Millonarios vs. Alianza FC: Millonarios Ganador Directo (1) @ 1.24\n3. ⚽ Atlético Bucaramanga vs. Fortaleza CEIF: Atlético Bucaramanga Ganador Directo (1) @ 1.54"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -43222,7 +43223,8 @@
               "payout_example": "Con $100 cobras hasta $212.00 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (14 NOVIEMBRE)\n• Pick A: ⚽ Chapecoense vs. Vasco da Gama (Vasco da Gama Ganador Directo (2)) @ 1.40\n• Pick B: ⚽ Millonarios vs. Alianza FC (Millonarios Ganador Directo (1)) @ 1.24\n• Pick C: ⚽ Atlético Bucaramanga vs. Fortaleza CEIF (Atlético Bucaramanga Ganador Directo (1)) @ 1.54"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -43321,15 +43323,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $171.00 (+$71.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (14 NOVIEMBRE)\n1. ⚽ Chapecoense vs. Vasco da Gama (Vasco da Gama Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.36\n2. ⚽ Millonarios vs. Alianza FC (Millonarios Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.26"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": 301.24,
+        "roiPct": "+60.2%",
+        "wonModes": 3,
+        "simulatedTotalReturn": 801.24,
+        "winRate": "100.0% de selecciones (5/5) | Modo A $418.00 (3/3) + Modo B $211.88 + Modo C $171.36",
+        "evaluatedAt": "2026-11-18 15:39:20",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -43545,7 +43553,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $449.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (14 NOVIEMBRE)\n1. Chapecoense vs. Vasco da Gama: Vasco da Gama Ganador Directo (2) @ 1.40\n2. Cleveland Cavaliers vs. Dallas Mavericks: Dallas Mavericks Ganador Directo (Moneyline) @ 1.51\n3. Miami Heat vs. Detroit Pistons: Detroit Pistons Ganador Directo (Moneyline) @ 1.58"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -43673,7 +43682,8 @@
                 "payout_example": "Con $100 cobras hasta $251.25 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (14 NOVIEMBRE)\n• Pick A: Chapecoense vs. Vasco da Gama (Vasco da Gama Ganador Directo (2)) @ 1.40\n• Pick B: Cleveland Cavaliers vs. Dallas Mavericks (Dallas Mavericks Ganador Directo (Moneyline)) @ 1.51\n• Pick C: Miami Heat vs. Detroit Pistons (Detroit Pistons Ganador Directo (Moneyline)) @ 1.58"
-            }
+            },
+            "status": "LOST"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -43763,6 +43773,827 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $180.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (14 NOVIEMBRE)\n1. Chapecoense vs. Vasco da Gama (Más de 1.5 Goles Totales (Over 1.5)) @ 1.19\n2. Cleveland Cavaliers vs. Dallas Mavericks (Dallas Mavericks Ganador Directo (Moneyline)) @ 1.51"
+            },
+            "status": "LOST"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 0,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 140.0,
+          "netPnL": -360.0,
+          "roiPct": "-72.0%",
+          "winRate": "50.0% de selecciones (2/4) | Modo A $140.00 (1/3) + Modo B $0.00 + Modo C $0.00",
+          "evaluated": true,
+          "evaluatedAt": "2026-11-18 15:39:20",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Chapecoense vs. Vasco da Gama": "0-2 — Vasco da Gama Ganador Directo (2) ✅ | Vasco da Gama Doble Oportunidad (X2) + Más 1.5 Goles Totales ✅",
+        "Millonarios vs. Alianza FC": "2-0 — Millonarios Ganador Directo (1) ✅ | Millonarios Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "Atlético Bucaramanga vs. Fortaleza CEIF": "1-0 — Atlético Bucaramanga Ganador Directo (1) ✅",
+        "Cleveland Cavaliers vs. Dallas Mavericks": "127-117 — Dallas Mavericks Ganador Directo (Moneyline) ❌",
+        "Miami Heat vs. Detroit Pistons": "137-117 — Detroit Pistons Ganador Directo (Moneyline) ❌"
+      },
+      "evaluatedAt": "2026-11-18 15:39:20"
+    },
+    "2026-11-18": {
+      "date": "2026-11-18",
+      "saved_at": "2026-11-18 15:39:22",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (68.6% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Miércoles 18 de Noviembre (Brasileirão Série A). Cada acierto cobra por separado.",
+          "avgOdds": 1.42,
+          "expectedWinRate": "68.6%",
+          "combinedEv": "-4.2%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Flamengo vs. Athletico-PR",
+              "tournament": "Brasileirão Série A (17:30 CST)",
+              "selection": "Flamengo Ganador Directo (1)",
+              "odds": 1.19,
+              "confidencePct": 83,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -525 → @ 1.19; prob. de mercado sin margen 79%; forma últimos 5 Flamengo WWWDW vs Athletico-PR LLDLW; goles esperados (Poisson) 3.38; prob. modelo 83%; EV -1.4%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841313",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 17:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio do Maracana",
+              "singleReturn": 119.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Remo vs. Chapecoense",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Remo Ganador Directo (1)",
+              "odds": 1.46,
+              "confidencePct": 65,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -220 → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 65%; EV -4.8%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841310",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 17:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Mangueirão",
+              "singleReturn": 146.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Grêmio vs. Bahia",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.62,
+              "confidencePct": 58,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -160 → @ 1.62; prob. de mercado sin margen 58%; forma últimos 5 Grêmio DLWWW vs Bahia LWDLW; goles esperados (Poisson) 2.99; Últimos 5: Grêmio (7 anotados / 4 recibidos goles) vs Bahia (7 anotados / 9 recibidos); prob. modelo 58%; EV -6.5%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401841312",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 18:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Arena do Grêmio",
+              "singleReturn": 162.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Flamengo vs. Athletico-PR",
+                  "min_result": "Flamengo Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $119.00 (+$19.00 neto)."
+                },
+                {
+                  "match": "Remo vs. Chapecoense",
+                  "min_result": "Remo Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $146.00 (+$46.00 neto)."
+                },
+                {
+                  "match": "Grêmio vs. Bahia",
+                  "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+                  "explanation": "Si se cumple cobras $162.00 (+$62.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $427.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (18 NOVIEMBRE)\n1. ⚽ Flamengo vs. Athletico-PR: Flamengo Ganador Directo (1) @ 1.19\n2. ⚽ Remo vs. Chapecoense: Remo Ganador Directo (1) @ 1.46\n3. ⚽ Grêmio vs. Bahia: Más de 2.5 Goles Totales (Over 2.5) @ 1.62"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "77.1%",
+          "combinedEv": "-9.2%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Flamengo vs. Athletico-PR",
+              "tournament": "Brasileirão Série A (17:30 CST)",
+              "selection": "Flamengo Ganador Directo (1)",
+              "odds": 1.19,
+              "confidencePct": 83,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -525 → @ 1.19; prob. de mercado sin margen 79%; forma últimos 5 Flamengo WWWDW vs Athletico-PR LLDLW; goles esperados (Poisson) 3.38; prob. modelo 83%; EV -1.4%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841313",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 17:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Remo vs. Chapecoense",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Remo Ganador Directo (1)",
+              "odds": 1.46,
+              "confidencePct": 65,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -220 → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 65%; EV -4.8%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841310",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 17:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Grêmio vs. Bahia",
+              "tournament": "Brasileirão Série A (18:30 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.62,
+              "confidencePct": 58,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -160 → @ 1.62; prob. de mercado sin margen 58%; forma últimos 5 Grêmio DLWWW vs Bahia LWDLW; goles esperados (Poisson) 2.99; Últimos 5: Grêmio (7 anotados / 4 recibidos goles) vs Bahia (7 anotados / 9 recibidos); prob. modelo 58%; EV -6.5%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401841312",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 18:30",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Flamengo + ⚽ Remo)",
+              "odds": 1.74,
+              "formula": "1.19 × 1.46"
+            },
+            {
+              "name": "Doble 2 (⚽ Flamengo + ⚽ Grêmio)",
+              "odds": 1.93,
+              "formula": "1.19 × 1.62"
+            },
+            {
+              "name": "Doble 3 (⚽ Remo + ⚽ Grêmio)",
+              "odds": 2.37,
+              "formula": "1.46 × 1.62"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 2.81,
+              "formula": "1.19 × 1.46 × 1.62"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Flamengo + Remo)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $43.50."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Flamengo + Grêmio)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $48.25."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $221.25."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $221.25 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (18 NOVIEMBRE)\n• Pick A: ⚽ Flamengo vs. Athletico-PR (Flamengo Ganador Directo (1)) @ 1.19\n• Pick B: ⚽ Remo vs. Chapecoense (Remo Ganador Directo (1)) @ 1.46\n• Pick C: ⚽ Grêmio vs. Bahia (Más de 2.5 Goles Totales (Over 2.5)) @ 1.62"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.68x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Flamengo vs. Athletico-PR y Remo vs. Chapecoense).",
+          "totalOdds": 1.68,
+          "fairOdds": 1.88,
+          "expectedWinRate": "53.1%",
+          "combinedEv": "-10.7%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Flamengo vs. Athletico-PR",
+              "tournament": "Brasileirão Série A (17:30 CST)",
+              "selection": "Flamengo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.19,
+              "confidencePct": 79,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.19; prob. de mercado sin margen 79%; forma últimos 5 Flamengo WWWDW vs Athletico-PR LLDLW; goles esperados (Poisson) 3.38; prob. modelo 79%; EV -5.5%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841313",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 17:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio do Maracana",
+              "singleReturn": 119.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Remo vs. Chapecoense",
+              "tournament": "Brasileirão Série A (17:00 CST)",
+              "selection": "Remo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.41,
+              "confidencePct": 67,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.41; prob. de mercado sin margen 67%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 67%; EV -5.7%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841310",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-18 17:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Mangueirão",
+              "singleReturn": 141.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Flamengo vs. Athletico-PR (Flamengo Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Remo vs. Chapecoense (Remo Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.68x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Flamengo vs. Athletico-PR",
+                  "min_result": "Flamengo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 79%."
+                },
+                {
+                  "match": "Remo vs. Chapecoense",
+                  "min_result": "Remo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 67%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $168.00 (+$68.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (18 NOVIEMBRE)\n1. ⚽ Flamengo vs. Athletico-PR (Flamengo Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.19\n2. ⚽ Remo vs. Chapecoense (Remo Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.41"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Remo vs. Chapecoense con Indiana Pacers vs. Houston Rockets y Sacramento Kings vs. Phoenix Suns.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "69.3%",
+        "avgOdds": 1.39,
+        "combinedEv": "-4.2%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Remo vs. Chapecoense",
+            "tournament": "Brasileirão Série A (17:00 CST)",
+            "selection": "Remo Ganador Directo (1)",
+            "odds": 1.46,
+            "confidencePct": 65,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -220 → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 65%; EV -4.8%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401841310",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-18 17:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Mangueirão",
+            "singleReturn": 146.0,
+            "safeSelection": "Remo Doble Oportunidad (1X)",
+            "safeOdds": 1.1
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Indiana Pacers vs. Houston Rockets",
+            "tournament": "NBA 2026-27 (18:00 CST)",
+            "selection": "Houston Rockets Ganador Directo (Moneyline)",
+            "odds": 1.33,
+            "confidencePct": 72,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -304 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Indiana Pacers — vs Houston Rockets —; Predictor Oficial ESPN: Indiana Pacers 26.6% vs Houston Rockets 73.4%; Últimos 5: Indiana Pacers (568 anotados / 575 recibidos pts) vs Houston Rockets (607 anotados / 573 recibidos); prob. modelo 72%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401910008",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-18 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Gainbridge Fieldhouse",
+            "singleReturn": 133.0,
+            "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+            "safeOdds": 1.33
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Sacramento Kings vs. Phoenix Suns",
+            "tournament": "NBA 2026-27 (21:00 CST)",
+            "selection": "Phoenix Suns Ganador Directo (Moneyline)",
+            "odds": 1.37,
+            "confidencePct": 70,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -269 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Sacramento Kings — vs Phoenix Suns —; Predictor Oficial ESPN: Sacramento Kings 27.9% vs Phoenix Suns 72.1%; Últimos 5: Sacramento Kings (527 anotados / 590 recibidos pts) vs Phoenix Suns (570 anotados / 564 recibidos); prob. modelo 70%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401910018",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-18 21:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Golden 1 Center",
+            "singleReturn": 137.0,
+            "safeSelection": "Phoenix Suns Ganador Directo (Moneyline)",
+            "safeOdds": 1.37
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (69.3% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Miércoles 18 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.39,
+            "expectedWinRate": "69.3%",
+            "combinedEv": "-4.2%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Remo vs. Chapecoense",
+                "tournament": "Brasileirão Série A (17:00 CST)",
+                "selection": "Remo Ganador Directo (1)",
+                "odds": 1.46,
+                "confidencePct": 65,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -220 → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 65%; EV -4.8%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841310",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-18 17:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Mangueirão",
+                "singleReturn": 146.0,
+                "safeSelection": "Remo Doble Oportunidad (1X)",
+                "safeOdds": 1.1
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Indiana Pacers vs. Houston Rockets",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.33,
+                "confidencePct": 72,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -304 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Indiana Pacers — vs Houston Rockets —; Predictor Oficial ESPN: Indiana Pacers 26.6% vs Houston Rockets 73.4%; Últimos 5: Indiana Pacers (568 anotados / 575 recibidos pts) vs Houston Rockets (607 anotados / 573 recibidos); prob. modelo 72%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910008",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-18 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Gainbridge Fieldhouse",
+                "singleReturn": 133.0,
+                "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+                "safeOdds": 1.33
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Sacramento Kings vs. Phoenix Suns",
+                "tournament": "NBA 2026-27 (21:00 CST)",
+                "selection": "Phoenix Suns Ganador Directo (Moneyline)",
+                "odds": 1.37,
+                "confidencePct": 70,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -269 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Sacramento Kings — vs Phoenix Suns —; Predictor Oficial ESPN: Sacramento Kings 27.9% vs Phoenix Suns 72.1%; Últimos 5: Sacramento Kings (527 anotados / 590 recibidos pts) vs Phoenix Suns (570 anotados / 564 recibidos); prob. modelo 70%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910018",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-18 21:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Golden 1 Center",
+                "singleReturn": 137.0,
+                "safeSelection": "Phoenix Suns Ganador Directo (Moneyline)",
+                "safeOdds": 1.37
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Remo vs. Chapecoense, Indiana Pacers vs. Houston Rockets y Sacramento Kings vs. Phoenix Suns.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Remo vs. Chapecoense",
+                    "min_result": "Remo Ganador Directo (1)",
+                    "explanation": "Cobras $146.00."
+                  },
+                  {
+                    "match": "Indiana Pacers vs. Houston Rockets",
+                    "min_result": "Houston Rockets Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $133.00."
+                  },
+                  {
+                    "match": "Sacramento Kings vs. Phoenix Suns",
+                    "min_result": "Phoenix Suns Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $137.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $416.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (18 NOVIEMBRE)\n1. Remo vs. Chapecoense: Remo Ganador Directo (1) @ 1.46\n2. Indiana Pacers vs. Houston Rockets: Houston Rockets Ganador Directo (Moneyline) @ 1.33\n3. Sacramento Kings vs. Phoenix Suns: Phoenix Suns Ganador Directo (Moneyline) @ 1.37"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "77.5%",
+            "combinedEv": "-9.0%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Remo vs. Chapecoense",
+                "tournament": "Brasileirão Série A (17:00 CST)",
+                "selection": "Remo Ganador Directo (1)",
+                "odds": 1.46,
+                "confidencePct": 65,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -220 → @ 1.46; prob. de mercado sin margen 65%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 65%; EV -4.8%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841310",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-18 17:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Indiana Pacers vs. Houston Rockets",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.33,
+                "confidencePct": 72,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -304 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Indiana Pacers — vs Houston Rockets —; Predictor Oficial ESPN: Indiana Pacers 26.6% vs Houston Rockets 73.4%; Últimos 5: Indiana Pacers (568 anotados / 575 recibidos pts) vs Houston Rockets (607 anotados / 573 recibidos); prob. modelo 72%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910008",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-18 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Sacramento Kings vs. Phoenix Suns",
+                "tournament": "NBA 2026-27 (21:00 CST)",
+                "selection": "Phoenix Suns Ganador Directo (Moneyline)",
+                "odds": 1.37,
+                "confidencePct": 70,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -269 → @ 1.37; prob. de mercado sin margen 70%; forma últimos 5 Sacramento Kings — vs Phoenix Suns —; Predictor Oficial ESPN: Sacramento Kings 27.9% vs Phoenix Suns 72.1%; Últimos 5: Sacramento Kings (527 anotados / 590 recibidos pts) vs Phoenix Suns (570 anotados / 564 recibidos); prob. modelo 70%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910018",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-18 21:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Remo + Indiana Pacers)",
+                "odds": 1.94,
+                "formula": "1.46 × 1.33"
+              },
+              {
+                "name": "Doble 2 (Remo + Sacramento Kings)",
+                "odds": 2.0,
+                "formula": "1.46 × 1.37"
+              },
+              {
+                "name": "Doble 3 (Indiana Pacers + Sacramento Kings)",
+                "odds": 1.82,
+                "formula": "1.33 × 1.37"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.66,
+                "formula": "1.46 × 1.33 × 1.37"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Remo + Indiana Pacers)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 1.94x): $48.50 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $210.50."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $210.50 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (18 NOVIEMBRE)\n• Pick A: Remo vs. Chapecoense (Remo Ganador Directo (1)) @ 1.46\n• Pick B: Indiana Pacers vs. Houston Rockets (Houston Rockets Ganador Directo (Moneyline)) @ 1.33\n• Pick C: Sacramento Kings vs. Phoenix Suns (Phoenix Suns Ganador Directo (Moneyline)) @ 1.37"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.46x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.46x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Remo vs. Chapecoense y Indiana Pacers vs. Houston Rockets.",
+            "totalOdds": 1.46,
+            "fairOdds": 1.6,
+            "expectedWinRate": "62.4%",
+            "combinedEv": "-8.9%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Remo vs. Chapecoense",
+                "tournament": "Brasileirão Série A (17:00 CST)",
+                "selection": "Remo Doble Oportunidad (1X)",
+                "odds": 1.1,
+                "confidencePct": 86,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.10; prob. de mercado sin margen 86%; forma últimos 5 Remo LWLDD vs Chapecoense LLLWL; goles esperados (Poisson) 2.82; Últimos 5: Remo (4 anotados / 9 recibidos goles) vs Chapecoense (3 anotados / 9 recibidos); prob. modelo 86%; EV -5.1%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401841310",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-18 17:00",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Mangueirão",
+                "singleReturn": 110.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Indiana Pacers vs. Houston Rockets",
+                "tournament": "NBA 2026-27 (18:00 CST)",
+                "selection": "Houston Rockets Ganador Directo (Moneyline)",
+                "odds": 1.33,
+                "confidencePct": 72,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -304 → @ 1.33; prob. de mercado sin margen 72%; forma últimos 5 Indiana Pacers — vs Houston Rockets —; Predictor Oficial ESPN: Indiana Pacers 26.6% vs Houston Rockets 73.4%; Últimos 5: Indiana Pacers (568 anotados / 575 recibidos pts) vs Houston Rockets (607 anotados / 573 recibidos); prob. modelo 72%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910008",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-18 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Gainbridge Fieldhouse",
+                "singleReturn": 133.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Remo vs. Chapecoense y Indiana Pacers vs. Houston Rockets.",
+                "Coloca Parlay / Combinada @ 1.46x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Remo vs. Chapecoense",
+                    "min_result": "Remo Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 86%."
+                  },
+                  {
+                    "match": "Indiana Pacers vs. Houston Rockets",
+                    "min_result": "Houston Rockets Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 72%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $146.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (18 NOVIEMBRE)\n1. Remo vs. Chapecoense (Remo Doble Oportunidad (1X)) @ 1.10\n2. Indiana Pacers vs. Houston Rockets (Houston Rockets Ganador Directo (Moneyline)) @ 1.33"
             }
           }
         }
