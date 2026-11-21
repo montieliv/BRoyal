@@ -45465,7 +45465,7 @@
     "2026-11-20": {
       "date": "2026-11-20",
       "saved_at": "2026-11-20 15:36:38",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -45584,7 +45584,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $470.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (20 NOVIEMBRE)\n1. ⚽ Tijuana vs. Atlante: Tijuana Ganador Directo (1) @ 1.56\n2. ⚽ Deportivo Cali vs. Millonarios: Menos de 2.5 Goles Totales (Under 2.5) @ 1.53\n3. ⚽ Atlético Bucaramanga vs. América de Cali: Menos de 2.5 Goles Totales (Under 2.5) @ 1.61"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -45719,7 +45720,8 @@
               "payout_example": "Con $100 cobras hasta $280.00 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (20 NOVIEMBRE)\n• Pick A: ⚽ Tijuana vs. Atlante (Tijuana Ganador Directo (1)) @ 1.56\n• Pick B: ⚽ Deportivo Cali vs. Millonarios (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.53\n• Pick C: ⚽ Atlético Bucaramanga vs. América de Cali (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.61"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -45814,15 +45816,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $166.00 (+$66.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (20 NOVIEMBRE)\n1. ⚽ Tijuana vs. Atlante (Tijuana Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.44\n2. ⚽ Deportivo Cali vs. Millonarios (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.15"
-          }
+          },
+          "status": "LOST"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": -131.33,
+        "roiPct": "-26.3%",
+        "wonModes": 1,
+        "simulatedTotalReturn": 368.67,
+        "winRate": "60.0% de selecciones (3/5) | Modo A $309.00 (2/3) + Modo B $59.67 + Modo C $0.00",
+        "evaluatedAt": "2026-11-21 14:17:14",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -46038,7 +46046,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $432.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (20 NOVIEMBRE)\n1. Tijuana vs. Atlante: Tijuana Ganador Directo (1) @ 1.56\n2. Brooklyn Nets vs. Orlando Magic: Orlando Magic Ganador Directo (Moneyline) @ 1.38\n3. Detroit Pistons vs. Toronto Raptors: Detroit Pistons Ganador Directo (Moneyline) @ 1.38"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -46166,7 +46175,8 @@
                 "payout_example": "Con $100 cobras hasta $229.25 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (20 NOVIEMBRE)\n• Pick A: Tijuana vs. Atlante (Tijuana Ganador Directo (1)) @ 1.56\n• Pick B: Brooklyn Nets vs. Orlando Magic (Orlando Magic Ganador Directo (Moneyline)) @ 1.38\n• Pick C: Detroit Pistons vs. Toronto Raptors (Detroit Pistons Ganador Directo (Moneyline)) @ 1.38"
-            }
+            },
+            "status": "PARTIAL"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -46255,6 +46265,822 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $157.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (20 NOVIEMBRE)\n1. Tijuana vs. Atlante (Tijuana Doble Oportunidad (1X)) @ 1.14\n2. Brooklyn Nets vs. Orlando Magic (Orlando Magic Ganador Directo (Moneyline)) @ 1.38"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 1,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 505.14,
+          "netPnL": 5.14,
+          "roiPct": "+1.0%",
+          "winRate": "75.0% de selecciones (3/4) | Modo A $294.00 (2/3) + Modo B $53.82 + Modo C $157.32",
+          "evaluated": true,
+          "evaluatedAt": "2026-11-21 14:17:14",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Tijuana vs. Atlante": "1-0 — Tijuana Ganador Directo (1) ✅ | Tijuana Doble Oportunidad (1X) + Más 1.5 Goles Totales ❌",
+        "Deportivo Cali vs. Millonarios": "0-0 — Menos de 2.5 Goles Totales (Under 2.5) ✅ | Menos de 3.5 Goles Totales (Under 3.5) ✅",
+        "Atlético Bucaramanga vs. América de Cali": "2-2 — Menos de 2.5 Goles Totales (Under 2.5) ❌",
+        "Brooklyn Nets vs. Orlando Magic": "111-113 — Orlando Magic Ganador Directo (Moneyline) ✅",
+        "Detroit Pistons vs. Toronto Raptors": "102-105 — Detroit Pistons Ganador Directo (Moneyline) ❌"
+      },
+      "evaluatedAt": "2026-11-21 14:17:14"
+    },
+    "2026-11-21": {
+      "date": "2026-11-21",
+      "saved_at": "2026-11-21 14:17:15",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (57.9% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Sábado 21 de Noviembre (Brasileirão Série A, CONMEBOL Sudamericana, MLS). Cada acierto cobra por separado.",
+          "avgOdds": 1.77,
+          "expectedWinRate": "57.9%",
+          "combinedEv": "-0.1%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Chapecoense vs. Cruzeiro",
+              "tournament": "Brasileirão Série A (18:00 CST)",
+              "selection": "Cruzeiro Ganador Directo (2)",
+              "odds": 1.48,
+              "confidencePct": 69,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 64%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 69%; EV +1.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401841325",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-21 18:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Arena Condá",
+              "singleReturn": 148.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético-MG vs. Boca Juniors",
+              "tournament": "CONMEBOL Sudamericana (16:30 CST)",
+              "selection": "Boca Juniors Ganador Directo (2)",
+              "odds": 2.15,
+              "confidencePct": 48,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings +115 → @ 2.15; prob. de mercado sin margen 44%; forma últimos 5 Atlético-MG DDLLL vs Boca Juniors DWWWW; goles esperados (Poisson) 2.07; Últimos 5: Atlético-MG (1 anotados / 5 recibidos goles) vs Boca Juniors (9 anotados / 1 recibidos); prob. modelo 48%; EV +3.5%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401913961",
+              "espnLeague": "conmebol.sudamericana",
+              "kickoffLocal": "2026-11-21 16:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Metropolitano Roberto Meléndez",
+              "singleReturn": 215.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "FC Dallas vs. Portland Timbers",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "odds": 1.67,
+              "confidencePct": 57,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -150 → @ 1.67; prob. de mercado sin margen 57%; forma últimos 5 FC Dallas WDLWD vs Portland Timbers WWWWD; goles esperados (Poisson) 3.35; Últimos 5: FC Dallas (9 anotados / 6 recibidos goles) vs Portland Timbers (11 anotados / 5 recibidos); prob. modelo 57%; EV -5.2%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 3.5
+                }
+              ],
+              "espnEventId": "401933732",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-21 15:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Toyota Stadium",
+              "singleReturn": 167.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Chapecoense vs. Cruzeiro",
+                  "min_result": "Cruzeiro Ganador Directo (2)",
+                  "explanation": "Si se cumple cobras $148.00 (+$48.00 neto)."
+                },
+                {
+                  "match": "Atlético-MG vs. Boca Juniors",
+                  "min_result": "Boca Juniors Ganador Directo (2)",
+                  "explanation": "Si se cumple cobras $215.00 (+$115.00 neto)."
+                },
+                {
+                  "match": "FC Dallas vs. Portland Timbers",
+                  "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
+                  "explanation": "Si se cumple cobras $167.00 (+$67.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $530.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (21 NOVIEMBRE)\n1. ⚽ Chapecoense vs. Cruzeiro: Cruzeiro Ganador Directo (2) @ 1.48\n2. ⚽ Atlético-MG vs. Boca Juniors: Boca Juniors Ganador Directo (2) @ 2.15\n3. ⚽ FC Dallas vs. Portland Timbers: Menos de 3.5 Goles Totales (Under 3.5) @ 1.67"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "61.9%",
+          "combinedEv": "-0.1%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Chapecoense vs. Cruzeiro",
+              "tournament": "Brasileirão Série A (18:00 CST)",
+              "selection": "Cruzeiro Ganador Directo (2)",
+              "odds": 1.48,
+              "confidencePct": 69,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 64%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 69%; EV +1.3%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401841325",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-21 18:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético-MG vs. Boca Juniors",
+              "tournament": "CONMEBOL Sudamericana (16:30 CST)",
+              "selection": "Boca Juniors Ganador Directo (2)",
+              "odds": 2.15,
+              "confidencePct": 48,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings +115 → @ 2.15; prob. de mercado sin margen 44%; forma últimos 5 Atlético-MG DDLLL vs Boca Juniors DWWWW; goles esperados (Poisson) 2.07; Últimos 5: Atlético-MG (1 anotados / 5 recibidos goles) vs Boca Juniors (9 anotados / 1 recibidos); prob. modelo 48%; EV +3.5%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "away"
+                }
+              ],
+              "espnEventId": "401913961",
+              "espnLeague": "conmebol.sudamericana",
+              "kickoffLocal": "2026-11-21 16:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "FC Dallas vs. Portland Timbers",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "odds": 1.67,
+              "confidencePct": 57,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -150 → @ 1.67; prob. de mercado sin margen 57%; forma últimos 5 FC Dallas WDLWD vs Portland Timbers WWWWD; goles esperados (Poisson) 3.35; Últimos 5: FC Dallas (9 anotados / 6 recibidos goles) vs Portland Timbers (11 anotados / 5 recibidos); prob. modelo 57%; EV -5.2%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 3.5
+                }
+              ],
+              "espnEventId": "401933732",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-21 15:00",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Cruzeiro + ⚽ Boca Juniors)",
+              "odds": 3.18,
+              "formula": "1.48 × 2.15"
+            },
+            {
+              "name": "Doble 2 (⚽ Cruzeiro + ⚽ FC Dallas)",
+              "odds": 2.47,
+              "formula": "1.48 × 1.67"
+            },
+            {
+              "name": "Doble 3 (⚽ Boca Juniors + ⚽ FC Dallas)",
+              "odds": 3.59,
+              "formula": "2.15 × 1.67"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 5.31,
+              "formula": "1.48 × 2.15 × 1.67"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Cruzeiro + Boca Juniors)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $79.50."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Cruzeiro + FC Dallas)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $61.75."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $363.75."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $363.75 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (21 NOVIEMBRE)\n• Pick A: ⚽ Chapecoense vs. Cruzeiro (Cruzeiro Ganador Directo (2)) @ 1.48\n• Pick B: ⚽ Atlético-MG vs. Boca Juniors (Boca Juniors Ganador Directo (2)) @ 2.15\n• Pick C: ⚽ FC Dallas vs. Portland Timbers (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.67"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.69x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Chapecoense vs. Cruzeiro y Atlético-MG vs. Boca Juniors).",
+          "totalOdds": 1.69,
+          "fairOdds": 1.81,
+          "expectedWinRate": "55.2%",
+          "combinedEv": "-6.6%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Chapecoense vs. Cruzeiro",
+              "tournament": "Brasileirão Série A (18:00 CST)",
+              "selection": "Cruzeiro Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+              "odds": 1.36,
+              "confidencePct": 69,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.36; prob. de mercado sin margen 69%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 69%; EV -6.1%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "X2"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841325",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-21 18:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Arena Condá",
+              "singleReturn": 136.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Atlético-MG vs. Boca Juniors",
+              "tournament": "CONMEBOL Sudamericana (16:30 CST)",
+              "selection": "Boca Juniors Doble Oportunidad (X2)",
+              "odds": 1.24,
+              "confidencePct": 80,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.24; prob. de mercado sin margen 76%; forma últimos 5 Atlético-MG DDLLL vs Boca Juniors DWWWW; goles esperados (Poisson) 2.07; Últimos 5: Atlético-MG (1 anotados / 5 recibidos goles) vs Boca Juniors (9 anotados / 1 recibidos); prob. modelo 80%; EV -0.5%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "X2"
+                }
+              ],
+              "espnEventId": "401913961",
+              "espnLeague": "conmebol.sudamericana",
+              "kickoffLocal": "2026-11-21 16:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Metropolitano Roberto Meléndez",
+              "singleReturn": 124.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Chapecoense vs. Cruzeiro (Cruzeiro Doble Oportunidad (X2) + Más 1.5 Goles Totales) y Atlético-MG vs. Boca Juniors (Boca Juniors Doble Oportunidad (X2)).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.69x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Chapecoense vs. Cruzeiro",
+                  "min_result": "Cruzeiro Doble Oportunidad (X2) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 69%."
+                },
+                {
+                  "match": "Atlético-MG vs. Boca Juniors",
+                  "min_result": "Boca Juniors Doble Oportunidad (X2)",
+                  "explanation": "Probabilidad modelo 80%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $169.00 (+$69.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (21 NOVIEMBRE)\n1. ⚽ Chapecoense vs. Cruzeiro (Cruzeiro Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.36\n2. ⚽ Atlético-MG vs. Boca Juniors (Boca Juniors Doble Oportunidad (X2)) @ 1.24"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Chapecoense vs. Cruzeiro con Minnesota Timberwolves vs. Memphis Grizzlies y Dallas Mavericks vs. LA Clippers.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "66.6%",
+        "avgOdds": 1.47,
+        "combinedEv": "-2.2%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Chapecoense vs. Cruzeiro",
+            "tournament": "Brasileirão Série A (18:00 CST)",
+            "selection": "Cruzeiro Ganador Directo (2)",
+            "odds": 1.48,
+            "confidencePct": 69,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 64%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 69%; EV +1.3%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401841325",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-21 18:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Arena Condá",
+            "singleReturn": 148.0,
+            "safeSelection": "Cruzeiro Doble Oportunidad (X2)",
+            "safeOdds": 1.12
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Minnesota Timberwolves vs. Memphis Grizzlies",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+            "odds": 1.42,
+            "confidencePct": 68,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Minnesota Timberwolves — vs Memphis Grizzlies —; Predictor Oficial ESPN: Minnesota Timberwolves 68.0% vs Memphis Grizzlies 32.0%; Últimos 5: Minnesota Timberwolves (550 anotados / 516 recibidos pts) vs Memphis Grizzlies (657 anotados / 560 recibidos); prob. modelo 68%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401910026",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-21 19:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Target Center",
+            "singleReturn": 142.0,
+            "safeSelection": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+            "safeOdds": 1.42
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Dallas Mavericks vs. LA Clippers",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
+            "odds": 1.51,
+            "confidencePct": 64,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -196 → @ 1.51; prob. de mercado sin margen 64%; forma últimos 5 Dallas Mavericks — vs LA Clippers —; Predictor Oficial ESPN: Dallas Mavericks 71.9% vs LA Clippers 28.1%; Últimos 5: Dallas Mavericks (546 anotados / 607 recibidos pts) vs LA Clippers (555 anotados / 606 recibidos); prob. modelo 64%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401910025",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-21 19:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "American Airlines Center",
+            "singleReturn": 151.0,
+            "safeSelection": "Dallas Mavericks Ganador Directo (Moneyline)",
+            "safeOdds": 1.51
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (66.6% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Sábado 21 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.47,
+            "expectedWinRate": "66.6%",
+            "combinedEv": "-2.2%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Chapecoense vs. Cruzeiro",
+                "tournament": "Brasileirão Série A (18:00 CST)",
+                "selection": "Cruzeiro Ganador Directo (2)",
+                "odds": 1.48,
+                "confidencePct": 69,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 64%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 69%; EV +1.3%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401841325",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-21 18:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Arena Condá",
+                "singleReturn": 148.0,
+                "safeSelection": "Cruzeiro Doble Oportunidad (X2)",
+                "safeOdds": 1.12
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Minnesota Timberwolves vs. Memphis Grizzlies",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Minnesota Timberwolves — vs Memphis Grizzlies —; Predictor Oficial ESPN: Minnesota Timberwolves 68.0% vs Memphis Grizzlies 32.0%; Últimos 5: Minnesota Timberwolves (550 anotados / 516 recibidos pts) vs Memphis Grizzlies (657 anotados / 560 recibidos); prob. modelo 68%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910026",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-21 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Target Center",
+                "singleReturn": 142.0,
+                "safeSelection": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+                "safeOdds": 1.42
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Dallas Mavericks vs. LA Clippers",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
+                "odds": 1.51,
+                "confidencePct": 64,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -196 → @ 1.51; prob. de mercado sin margen 64%; forma últimos 5 Dallas Mavericks — vs LA Clippers —; Predictor Oficial ESPN: Dallas Mavericks 71.9% vs LA Clippers 28.1%; Últimos 5: Dallas Mavericks (546 anotados / 607 recibidos pts) vs LA Clippers (555 anotados / 606 recibidos); prob. modelo 64%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910025",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-21 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "American Airlines Center",
+                "singleReturn": 151.0,
+                "safeSelection": "Dallas Mavericks Ganador Directo (Moneyline)",
+                "safeOdds": 1.51
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Chapecoense vs. Cruzeiro, Minnesota Timberwolves vs. Memphis Grizzlies y Dallas Mavericks vs. LA Clippers.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Chapecoense vs. Cruzeiro",
+                    "min_result": "Cruzeiro Ganador Directo (2)",
+                    "explanation": "Cobras $148.00."
+                  },
+                  {
+                    "match": "Minnesota Timberwolves vs. Memphis Grizzlies",
+                    "min_result": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $142.00."
+                  },
+                  {
+                    "match": "Dallas Mavericks vs. LA Clippers",
+                    "min_result": "Dallas Mavericks Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $151.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $441.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (21 NOVIEMBRE)\n1. Chapecoense vs. Cruzeiro: Cruzeiro Ganador Directo (2) @ 1.48\n2. Minnesota Timberwolves vs. Memphis Grizzlies: Minnesota Timberwolves Ganador Directo (Moneyline) @ 1.42\n3. Dallas Mavericks vs. LA Clippers: Dallas Mavericks Ganador Directo (Moneyline) @ 1.51"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "74.0%",
+            "combinedEv": "-5.0%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Chapecoense vs. Cruzeiro",
+                "tournament": "Brasileirão Série A (18:00 CST)",
+                "selection": "Cruzeiro Ganador Directo (2)",
+                "odds": 1.48,
+                "confidencePct": 69,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 64%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 69%; EV +1.3%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401841325",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-21 18:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Minnesota Timberwolves vs. Memphis Grizzlies",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Minnesota Timberwolves — vs Memphis Grizzlies —; Predictor Oficial ESPN: Minnesota Timberwolves 68.0% vs Memphis Grizzlies 32.0%; Últimos 5: Minnesota Timberwolves (550 anotados / 516 recibidos pts) vs Memphis Grizzlies (657 anotados / 560 recibidos); prob. modelo 68%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910026",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-21 19:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Dallas Mavericks vs. LA Clippers",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Dallas Mavericks Ganador Directo (Moneyline)",
+                "odds": 1.51,
+                "confidencePct": 64,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -196 → @ 1.51; prob. de mercado sin margen 64%; forma últimos 5 Dallas Mavericks — vs LA Clippers —; Predictor Oficial ESPN: Dallas Mavericks 71.9% vs LA Clippers 28.1%; Últimos 5: Dallas Mavericks (546 anotados / 607 recibidos pts) vs LA Clippers (555 anotados / 606 recibidos); prob. modelo 64%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910025",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-21 19:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Chapecoense + Minnesota Timberwolves)",
+                "odds": 2.1,
+                "formula": "1.48 × 1.42"
+              },
+              {
+                "name": "Doble 2 (Chapecoense + Dallas Mavericks)",
+                "odds": 2.23,
+                "formula": "1.48 × 1.51"
+              },
+              {
+                "name": "Doble 3 (Minnesota Timberwolves + Dallas Mavericks)",
+                "odds": 2.14,
+                "formula": "1.42 × 1.51"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 3.17,
+                "formula": "1.48 × 1.42 × 1.51"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Chapecoense + Minnesota Timberwolves)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 2.1x): $52.50 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $241.00."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $241.00 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (21 NOVIEMBRE)\n• Pick A: Chapecoense vs. Cruzeiro (Cruzeiro Ganador Directo (2)) @ 1.48\n• Pick B: Minnesota Timberwolves vs. Memphis Grizzlies (Minnesota Timberwolves Ganador Directo (Moneyline)) @ 1.42\n• Pick C: Dallas Mavericks vs. LA Clippers (Dallas Mavericks Ganador Directo (Moneyline)) @ 1.51"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.59x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.59x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Chapecoense vs. Cruzeiro y Minnesota Timberwolves vs. Memphis Grizzlies.",
+            "totalOdds": 1.59,
+            "fairOdds": 1.66,
+            "expectedWinRate": "60.2%",
+            "combinedEv": "-4.3%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Chapecoense vs. Cruzeiro",
+                "tournament": "Brasileirão Série A (18:00 CST)",
+                "selection": "Cruzeiro Doble Oportunidad (X2)",
+                "odds": 1.12,
+                "confidencePct": 89,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.12; prob. de mercado sin margen 84%; forma últimos 5 Chapecoense LLLLW vs Cruzeiro WWWWW; goles esperados (Poisson) 3.07; Últimos 5: Chapecoense (3 anotados / 10 recibidos goles) vs Cruzeiro (11 anotados / 5 recibidos); prob. modelo 89%; EV -0.4%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "X2"
+                  }
+                ],
+                "espnEventId": "401841325",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-21 18:00",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Arena Condá",
+                "singleReturn": 112.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Minnesota Timberwolves vs. Memphis Grizzlies",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+                "odds": 1.42,
+                "confidencePct": 68,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -237 → @ 1.42; prob. de mercado sin margen 68%; forma últimos 5 Minnesota Timberwolves — vs Memphis Grizzlies —; Predictor Oficial ESPN: Minnesota Timberwolves 68.0% vs Memphis Grizzlies 32.0%; Últimos 5: Minnesota Timberwolves (550 anotados / 516 recibidos pts) vs Memphis Grizzlies (657 anotados / 560 recibidos); prob. modelo 68%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910026",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-21 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Target Center",
+                "singleReturn": 142.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Chapecoense vs. Cruzeiro y Minnesota Timberwolves vs. Memphis Grizzlies.",
+                "Coloca Parlay / Combinada @ 1.59x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Chapecoense vs. Cruzeiro",
+                    "min_result": "Cruzeiro Doble Oportunidad (X2)",
+                    "explanation": "Probabilidad modelo 89%."
+                  },
+                  {
+                    "match": "Minnesota Timberwolves vs. Memphis Grizzlies",
+                    "min_result": "Minnesota Timberwolves Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 68%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $159.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (21 NOVIEMBRE)\n1. Chapecoense vs. Cruzeiro (Cruzeiro Doble Oportunidad (X2)) @ 1.12\n2. Minnesota Timberwolves vs. Memphis Grizzlies (Minnesota Timberwolves Ganador Directo (Moneyline)) @ 1.42"
             }
           }
         }
