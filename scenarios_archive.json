@@ -46294,7 +46294,7 @@
     "2026-11-21": {
       "date": "2026-11-21",
       "saved_at": "2026-11-21 14:17:15",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -46412,7 +46412,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $530.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (21 NOVIEMBRE)\n1. ⚽ Chapecoense vs. Cruzeiro: Cruzeiro Ganador Directo (2) @ 1.48\n2. ⚽ Atlético-MG vs. Boca Juniors: Boca Juniors Ganador Directo (2) @ 2.15\n3. ⚽ FC Dallas vs. Portland Timbers: Menos de 3.5 Goles Totales (Under 3.5) @ 1.67"
-          }
+          },
+          "status": "WON"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -46546,7 +46547,8 @@
               "payout_example": "Con $100 cobras hasta $363.75 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (21 NOVIEMBRE)\n• Pick A: ⚽ Chapecoense vs. Cruzeiro (Cruzeiro Ganador Directo (2)) @ 1.48\n• Pick B: ⚽ Atlético-MG vs. Boca Juniors (Boca Juniors Ganador Directo (2)) @ 2.15\n• Pick C: ⚽ FC Dallas vs. Portland Timbers (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.67"
-          }
+          },
+          "status": "WON"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -46640,15 +46642,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $169.00 (+$69.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (21 NOVIEMBRE)\n1. ⚽ Chapecoense vs. Cruzeiro (Cruzeiro Doble Oportunidad (X2) + Más 1.5 Goles Totales) @ 1.36\n2. ⚽ Atlético-MG vs. Boca Juniors (Boca Juniors Doble Oportunidad (X2)) @ 1.24"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": 562.59,
+        "roiPct": "+112.5%",
+        "wonModes": 3,
+        "simulatedTotalReturn": 1062.59,
+        "winRate": "100.0% de selecciones (5/5) | Modo A $530.00 (3/3) + Modo B $363.95 + Modo C $168.64",
+        "evaluatedAt": "2026-11-22 14:30:16",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -46864,7 +46872,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $441.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (21 NOVIEMBRE)\n1. Chapecoense vs. Cruzeiro: Cruzeiro Ganador Directo (2) @ 1.48\n2. Minnesota Timberwolves vs. Memphis Grizzlies: Minnesota Timberwolves Ganador Directo (Moneyline) @ 1.42\n3. Dallas Mavericks vs. LA Clippers: Dallas Mavericks Ganador Directo (Moneyline) @ 1.51"
-            }
+            },
+            "status": "WON"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -46992,7 +47001,8 @@
                 "payout_example": "Con $100 cobras hasta $241.00 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (21 NOVIEMBRE)\n• Pick A: Chapecoense vs. Cruzeiro (Cruzeiro Ganador Directo (2)) @ 1.48\n• Pick B: Minnesota Timberwolves vs. Memphis Grizzlies (Minnesota Timberwolves Ganador Directo (Moneyline)) @ 1.42\n• Pick C: Dallas Mavericks vs. LA Clippers (Dallas Mavericks Ganador Directo (Moneyline)) @ 1.51"
-            }
+            },
+            "status": "WON"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -47081,6 +47091,825 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $159.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (21 NOVIEMBRE)\n1. Chapecoense vs. Cruzeiro (Cruzeiro Doble Oportunidad (X2)) @ 1.12\n2. Minnesota Timberwolves vs. Memphis Grizzlies (Minnesota Timberwolves Ganador Directo (Moneyline)) @ 1.42"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 3,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 841.39,
+          "netPnL": 341.39,
+          "roiPct": "+68.3%",
+          "winRate": "100.0% de selecciones (4/4) | Modo A $441.00 (3/3) + Modo B $241.35 + Modo C $159.04",
+          "evaluated": true,
+          "evaluatedAt": "2026-11-22 14:30:16",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "Chapecoense vs. Cruzeiro": "1-2 — Cruzeiro Ganador Directo (2) ✅ | Cruzeiro Doble Oportunidad (X2) + Más 1.5 Goles Totales ✅",
+        "Atlético-MG vs. Boca Juniors": "0-2 — Boca Juniors Ganador Directo (2) ✅ | Boca Juniors Doble Oportunidad (X2) ✅",
+        "FC Dallas vs. Portland Timbers": "3-0 — Menos de 3.5 Goles Totales (Under 3.5) ✅",
+        "Minnesota Timberwolves vs. Memphis Grizzlies": "104-95 — Minnesota Timberwolves Ganador Directo (Moneyline) ✅",
+        "Dallas Mavericks vs. LA Clippers": "110-100 — Dallas Mavericks Ganador Directo (Moneyline) ✅"
+      },
+      "evaluatedAt": "2026-11-22 14:30:16"
+    },
+    "2026-11-22": {
+      "date": "2026-11-22",
+      "saved_at": "2026-11-22 14:30:17",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (62.4% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Domingo 22 de Noviembre (Brasileirão Série A, MLS). Cada acierto cobra por separado.",
+          "avgOdds": 1.5,
+          "expectedWinRate": "62.4%",
+          "combinedEv": "-6.6%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Fluminense vs. Mirassol",
+              "tournament": "Brasileirão Série A (15:30 CST)",
+              "selection": "Fluminense Ganador Directo (1)",
+              "odds": 1.59,
+              "confidencePct": 60,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 60%; EV -4.8%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841324",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-22 15:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio do Maracana",
+              "singleReturn": 159.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Nashville SC vs. FC Cincinnati",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "Nashville SC Ganador Directo (1)",
+              "odds": 1.48,
+              "confidencePct": 63,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 63%; forma últimos 5 Nashville SC WWDWD vs FC Cincinnati WLWDW; goles esperados (Poisson) 3.44; Últimos 5: Nashville SC (8 anotados / 3 recibidos goles) vs FC Cincinnati (8 anotados / 5 recibidos); prob. modelo 63%; EV -6.9%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401933731",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-22 15:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "GEODIS Park",
+              "singleReturn": 148.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vancouver Whitecaps vs. Real Salt Lake",
+              "tournament": "MLS (19:30 CST)",
+              "selection": "Vancouver Whitecaps Ganador Directo (1)",
+              "odds": 1.44,
+              "confidencePct": 64,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 64%; forma últimos 5 Vancouver Whitecaps WWWLW vs Real Salt Lake WWLWW; goles esperados (Poisson) 3.62; Últimos 5: Vancouver Whitecaps (13 anotados / 4 recibidos goles) vs Real Salt Lake (9 anotados / 5 recibidos); prob. modelo 64%; EV -8.0%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401933729",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-22 19:30",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "BC Place",
+              "singleReturn": 144.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Fluminense vs. Mirassol",
+                  "min_result": "Fluminense Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $159.00 (+$59.00 neto)."
+                },
+                {
+                  "match": "Nashville SC vs. FC Cincinnati",
+                  "min_result": "Nashville SC Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $148.00 (+$48.00 neto)."
+                },
+                {
+                  "match": "Vancouver Whitecaps vs. Real Salt Lake",
+                  "min_result": "Vancouver Whitecaps Ganador Directo (1)",
+                  "explanation": "Si se cumple cobras $144.00 (+$44.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $451.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (22 NOVIEMBRE)\n1. ⚽ Fluminense vs. Mirassol: Fluminense Ganador Directo (1) @ 1.59\n2. ⚽ Nashville SC vs. FC Cincinnati: Nashville SC Ganador Directo (1) @ 1.48\n3. ⚽ Vancouver Whitecaps vs. Real Salt Lake: Vancouver Whitecaps Ganador Directo (1) @ 1.44"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "68.2%",
+          "combinedEv": "-13.7%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Fluminense vs. Mirassol",
+              "tournament": "Brasileirão Série A (15:30 CST)",
+              "selection": "Fluminense Ganador Directo (1)",
+              "odds": 1.59,
+              "confidencePct": 60,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 60%; EV -4.8%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401841324",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-22 15:30",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Nashville SC vs. FC Cincinnati",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "Nashville SC Ganador Directo (1)",
+              "odds": 1.48,
+              "confidencePct": 63,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -210 → @ 1.48; prob. de mercado sin margen 63%; forma últimos 5 Nashville SC WWDWD vs FC Cincinnati WLWDW; goles esperados (Poisson) 3.44; Últimos 5: Nashville SC (8 anotados / 3 recibidos goles) vs FC Cincinnati (8 anotados / 5 recibidos); prob. modelo 63%; EV -6.9%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401933731",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-22 15:00",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Vancouver Whitecaps vs. Real Salt Lake",
+              "tournament": "MLS (19:30 CST)",
+              "selection": "Vancouver Whitecaps Ganador Directo (1)",
+              "odds": 1.44,
+              "confidencePct": 64,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 64%; forma últimos 5 Vancouver Whitecaps WWWLW vs Real Salt Lake WWLWW; goles esperados (Poisson) 3.62; Últimos 5: Vancouver Whitecaps (13 anotados / 4 recibidos goles) vs Real Salt Lake (9 anotados / 5 recibidos); prob. modelo 64%; EV -8.0%.",
+              "markets": [
+                {
+                  "type": "ML",
+                  "side": "home"
+                }
+              ],
+              "espnEventId": "401933729",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-22 19:30",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Fluminense + ⚽ Nashville SC)",
+              "odds": 2.35,
+              "formula": "1.59 × 1.48"
+            },
+            {
+              "name": "Doble 2 (⚽ Fluminense + ⚽ Vancouver Whitecaps)",
+              "odds": 2.29,
+              "formula": "1.59 × 1.44"
+            },
+            {
+              "name": "Doble 3 (⚽ Nashville SC + ⚽ Vancouver Whitecaps)",
+              "odds": 2.13,
+              "formula": "1.48 × 1.44"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 3.39,
+              "formula": "1.59 × 1.48 × 1.44"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Fluminense + Nashville SC)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $58.75."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Fluminense + Vancouver Whitecaps)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $57.25."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $254.00."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $254.00 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (22 NOVIEMBRE)\n• Pick A: ⚽ Fluminense vs. Mirassol (Fluminense Ganador Directo (1)) @ 1.59\n• Pick B: ⚽ Nashville SC vs. FC Cincinnati (Nashville SC Ganador Directo (1)) @ 1.48\n• Pick C: ⚽ Vancouver Whitecaps vs. Real Salt Lake (Vancouver Whitecaps Ganador Directo (1)) @ 1.44"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.91x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Fluminense vs. Mirassol y Nashville SC vs. FC Cincinnati).",
+          "totalOdds": 1.91,
+          "fairOdds": 2.19,
+          "expectedWinRate": "45.6%",
+          "combinedEv": "-12.9%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Fluminense vs. Mirassol",
+              "tournament": "Brasileirão Série A (15:30 CST)",
+              "selection": "Fluminense Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.48,
+              "confidencePct": 63,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.48; prob. de mercado sin margen 63%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 63%; EV -6.2%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401841324",
+              "espnLeague": "bra.1",
+              "kickoffLocal": "2026-11-22 15:30",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio do Maracana",
+              "singleReturn": 148.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Nashville SC vs. FC Cincinnati",
+              "tournament": "MLS (15:00 CST)",
+              "selection": "Nashville SC Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "odds": 1.29,
+              "confidencePct": 72,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.29; prob. de mercado sin margen 72%; forma últimos 5 Nashville SC WWDWD vs FC Cincinnati WLWDW; goles esperados (Poisson) 3.44; Últimos 5: Nashville SC (8 anotados / 3 recibidos goles) vs FC Cincinnati (8 anotados / 5 recibidos); prob. modelo 72%; EV -7.2%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                },
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401933731",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-22 15:00",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "GEODIS Park",
+              "singleReturn": 129.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Fluminense vs. Mirassol (Fluminense Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Nashville SC vs. FC Cincinnati (Nashville SC Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.91x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Fluminense vs. Mirassol",
+                  "min_result": "Fluminense Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 63%."
+                },
+                {
+                  "match": "Nashville SC vs. FC Cincinnati",
+                  "min_result": "Nashville SC Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+                  "explanation": "Probabilidad modelo 72%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $191.00 (+$91.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (22 NOVIEMBRE)\n1. ⚽ Fluminense vs. Mirassol (Fluminense Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.48\n2. ⚽ Nashville SC vs. FC Cincinnati (Nashville SC Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.29"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Fluminense vs. Mirassol con Golden State Warriors vs. Boston Celtics y New York Knicks vs. Indiana Pacers.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "68.7%",
+        "avgOdds": 1.41,
+        "combinedEv": "-4.2%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Fluminense vs. Mirassol",
+            "tournament": "Brasileirão Série A (15:30 CST)",
+            "selection": "Fluminense Ganador Directo (1)",
+            "odds": 1.59,
+            "confidencePct": 60,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 60%; EV -4.8%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401841324",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-22 15:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Estadio do Maracana",
+            "singleReturn": 159.0,
+            "safeSelection": "Fluminense Doble Oportunidad (1X)",
+            "safeOdds": 1.14
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Golden State Warriors vs. Boston Celtics",
+            "tournament": "NBA 2026-27 (19:30 CST)",
+            "selection": "Boston Celtics Ganador Directo (Moneyline)",
+            "odds": 1.29,
+            "confidencePct": 74,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Golden State Warriors — vs Boston Celtics —; Predictor Oficial ESPN: Golden State Warriors 23.8% vs Boston Celtics 76.2%; Últimos 5: Golden State Warriors (479 anotados / 595 recibidos pts) vs Boston Celtics (531 anotados / 504 recibidos); prob. modelo 74%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "away"
+              }
+            ],
+            "espnEventId": "401910035",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-22 19:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Chase Center",
+            "singleReturn": 129.0,
+            "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+            "safeOdds": 1.29
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "New York Knicks vs. Indiana Pacers",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "New York Knicks Ganador Directo (Moneyline)",
+            "odds": 1.34,
+            "confidencePct": 72,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -296 → @ 1.34; prob. de mercado sin margen 72%; forma últimos 5 New York Knicks — vs Indiana Pacers —; Predictor Oficial ESPN: New York Knicks 81.8% vs Indiana Pacers 18.2%; Últimos 5: New York Knicks (414 anotados / 403 recibidos pts) vs Indiana Pacers (567 anotados / 583 recibidos); prob. modelo 72%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401910034",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-22 19:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Madison Square Garden",
+            "singleReturn": 134.0,
+            "safeSelection": "New York Knicks Ganador Directo (Moneyline)",
+            "safeOdds": 1.34
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (68.7% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Domingo 22 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.41,
+            "expectedWinRate": "68.7%",
+            "combinedEv": "-4.2%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Fluminense vs. Mirassol",
+                "tournament": "Brasileirão Série A (15:30 CST)",
+                "selection": "Fluminense Ganador Directo (1)",
+                "odds": 1.59,
+                "confidencePct": 60,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 60%; EV -4.8%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841324",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-22 15:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Estadio do Maracana",
+                "singleReturn": 159.0,
+                "safeSelection": "Fluminense Doble Oportunidad (1X)",
+                "safeOdds": 1.14
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Golden State Warriors vs. Boston Celtics",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Golden State Warriors — vs Boston Celtics —; Predictor Oficial ESPN: Golden State Warriors 23.8% vs Boston Celtics 76.2%; Últimos 5: Golden State Warriors (479 anotados / 595 recibidos pts) vs Boston Celtics (531 anotados / 504 recibidos); prob. modelo 74%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910035",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-22 19:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Chase Center",
+                "singleReturn": 129.0,
+                "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+                "safeOdds": 1.29
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "New York Knicks vs. Indiana Pacers",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "New York Knicks Ganador Directo (Moneyline)",
+                "odds": 1.34,
+                "confidencePct": 72,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -296 → @ 1.34; prob. de mercado sin margen 72%; forma últimos 5 New York Knicks — vs Indiana Pacers —; Predictor Oficial ESPN: New York Knicks 81.8% vs Indiana Pacers 18.2%; Últimos 5: New York Knicks (414 anotados / 403 recibidos pts) vs Indiana Pacers (567 anotados / 583 recibidos); prob. modelo 72%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910034",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-22 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Madison Square Garden",
+                "singleReturn": 134.0,
+                "safeSelection": "New York Knicks Ganador Directo (Moneyline)",
+                "safeOdds": 1.34
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Fluminense vs. Mirassol, Golden State Warriors vs. Boston Celtics y New York Knicks vs. Indiana Pacers.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Fluminense vs. Mirassol",
+                    "min_result": "Fluminense Ganador Directo (1)",
+                    "explanation": "Cobras $159.00."
+                  },
+                  {
+                    "match": "Golden State Warriors vs. Boston Celtics",
+                    "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $129.00."
+                  },
+                  {
+                    "match": "New York Knicks vs. Indiana Pacers",
+                    "min_result": "New York Knicks Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $134.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $422.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (22 NOVIEMBRE)\n1. Fluminense vs. Mirassol: Fluminense Ganador Directo (1) @ 1.59\n2. Golden State Warriors vs. Boston Celtics: Boston Celtics Ganador Directo (Moneyline) @ 1.29\n3. New York Knicks vs. Indiana Pacers: New York Knicks Ganador Directo (Moneyline) @ 1.34"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "77.0%",
+            "combinedEv": "-9.1%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Fluminense vs. Mirassol",
+                "tournament": "Brasileirão Série A (15:30 CST)",
+                "selection": "Fluminense Ganador Directo (1)",
+                "odds": 1.59,
+                "confidencePct": 60,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -170 → @ 1.59; prob. de mercado sin margen 59%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 60%; EV -4.8%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401841324",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-22 15:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Golden State Warriors vs. Boston Celtics",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Golden State Warriors — vs Boston Celtics —; Predictor Oficial ESPN: Golden State Warriors 23.8% vs Boston Celtics 76.2%; Últimos 5: Golden State Warriors (479 anotados / 595 recibidos pts) vs Boston Celtics (531 anotados / 504 recibidos); prob. modelo 74%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910035",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-22 19:30",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "New York Knicks vs. Indiana Pacers",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "New York Knicks Ganador Directo (Moneyline)",
+                "odds": 1.34,
+                "confidencePct": 72,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -296 → @ 1.34; prob. de mercado sin margen 72%; forma últimos 5 New York Knicks — vs Indiana Pacers —; Predictor Oficial ESPN: New York Knicks 81.8% vs Indiana Pacers 18.2%; Últimos 5: New York Knicks (414 anotados / 403 recibidos pts) vs Indiana Pacers (567 anotados / 583 recibidos); prob. modelo 72%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401910034",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-22 19:00",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Fluminense + Golden State Warriors)",
+                "odds": 2.05,
+                "formula": "1.59 × 1.29"
+              },
+              {
+                "name": "Doble 2 (Fluminense + New York Knicks)",
+                "odds": 2.13,
+                "formula": "1.59 × 1.34"
+              },
+              {
+                "name": "Doble 3 (Golden State Warriors + New York Knicks)",
+                "odds": 1.73,
+                "formula": "1.29 × 1.34"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.75,
+                "formula": "1.59 × 1.29 × 1.34"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Fluminense + Golden State Warriors)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 2.05x): $51.25 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $216.50."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $216.50 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (22 NOVIEMBRE)\n• Pick A: Fluminense vs. Mirassol (Fluminense Ganador Directo (1)) @ 1.59\n• Pick B: Golden State Warriors vs. Boston Celtics (Boston Celtics Ganador Directo (Moneyline)) @ 1.29\n• Pick C: New York Knicks vs. Indiana Pacers (New York Knicks Ganador Directo (Moneyline)) @ 1.34"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.47x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.47x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Fluminense vs. Mirassol y Golden State Warriors vs. Boston Celtics.",
+            "totalOdds": 1.47,
+            "fairOdds": 1.62,
+            "expectedWinRate": "61.7%",
+            "combinedEv": "-9.3%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Fluminense vs. Mirassol",
+                "tournament": "Brasileirão Série A (15:30 CST)",
+                "selection": "Fluminense Doble Oportunidad (1X)",
+                "odds": 1.14,
+                "confidencePct": 83,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.14; prob. de mercado sin margen 82%; forma últimos 5 Fluminense DWWLW vs Mirassol DWLDW; goles esperados (Poisson) 2.76; Últimos 5: Fluminense (8 anotados / 3 recibidos goles) vs Mirassol (5 anotados / 4 recibidos); prob. modelo 83%; EV -5.1%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401841324",
+                "espnLeague": "bra.1",
+                "kickoffLocal": "2026-11-22 15:30",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Estadio do Maracana",
+                "singleReturn": 114.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Golden State Warriors vs. Boston Celtics",
+                "tournament": "NBA 2026-27 (19:30 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.29,
+                "confidencePct": 74,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -344 → @ 1.29; prob. de mercado sin margen 74%; forma últimos 5 Golden State Warriors — vs Boston Celtics —; Predictor Oficial ESPN: Golden State Warriors 23.8% vs Boston Celtics 76.2%; Últimos 5: Golden State Warriors (479 anotados / 595 recibidos pts) vs Boston Celtics (531 anotados / 504 recibidos); prob. modelo 74%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "away"
+                  }
+                ],
+                "espnEventId": "401910035",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-22 19:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Chase Center",
+                "singleReturn": 129.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Fluminense vs. Mirassol y Golden State Warriors vs. Boston Celtics.",
+                "Coloca Parlay / Combinada @ 1.47x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Fluminense vs. Mirassol",
+                    "min_result": "Fluminense Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 83%."
+                  },
+                  {
+                    "match": "Golden State Warriors vs. Boston Celtics",
+                    "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 74%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $147.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (22 NOVIEMBRE)\n1. Fluminense vs. Mirassol (Fluminense Doble Oportunidad (1X)) @ 1.14\n2. Golden State Warriors vs. Boston Celtics (Boston Celtics Ganador Directo (Moneyline)) @ 1.29"
             }
           }
         }
