@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25 16:51:22",
+  "generated_at": "2026-11-26 16:40:33",
   "hybrid_mode": true,
-  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, Basketball)",
+  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, NFL)",
   "active_sports": [
     "Football"
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-11-25",
-    "verified_at": "2026-11-25 16:51:22",
+    "verified_date": "2026-11-26",
+    "verified_at": "2026-11-26 16:40:33",
     "verification_status": "PARTIDOS Y CUOTAS REALES (ESPN API / DraftKings)",
     "auditor": "Black Royal — pronostico_diario.py",
     "total_matches_verified": 3
@@ -17,89 +17,90 @@
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
       "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-      "modeShort": "Modo A: Simples Fútbol (66.1% prob. media)",
+      "modeShort": "Modo A: Simples Fútbol (58.1% prob. media)",
       "badge": "MAYOR PROBABILIDAD",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 selecciones con cuotas reales DraftKings para el Miércoles 25 de Noviembre (Liga BetPlay (Colombia), Liga MX, Liga Profesional Argentina). Cada acierto cobra por separado.",
-      "avgOdds": 1.46,
-      "expectedWinRate": "66.1%",
-      "combinedEv": "-3.8%",
+      "description": "3 selecciones con cuotas reales DraftKings para el Jueves 26 de Noviembre (Brasileirão Série A, Liga MX). Cada acierto cobra por separado.",
+      "avgOdds": 1.63,
+      "expectedWinRate": "58.1%",
+      "combinedEv": "-6.6%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
-      "riskLevel": "BAJO",
+      "riskLevel": "MEDIO",
       "picks": [
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Boca Juniors vs. Independiente Rivadavia",
-          "tournament": "Liga Profesional Argentina (18:00 CST)",
-          "selection": "Boca Juniors Ganador Directo (1)",
-          "odds": 1.44,
-          "confidencePct": 70,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 70%; EV +0.3%.",
+          "match": "São Paulo vs. Remo",
+          "tournament": "Brasileirão Série A (17:00 CST)",
+          "selection": "São Paulo Ganador Directo (1)",
+          "odds": 1.37,
+          "confidencePct": 68,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401933757",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-25 18:00",
+          "espnEventId": "401841329",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-26 17:00",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Alberto José Armando (La Bombonera)",
-          "singleReturn": 144.0
+          "stadium": "Estádio Cícero Pompeu de Toledo",
+          "singleReturn": 137.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Toluca vs. Atlas",
-          "tournament": "Liga MX (19:00 CST)",
-          "selection": "Toluca Ganador Directo (1)",
-          "odds": 1.44,
-          "confidencePct": 66,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Toluca LWDDD vs Atlas DLWWL; goles esperados (Poisson) 3.27; Últimos 5: Toluca (9 anotados / 7 recibidos goles) vs Atlas (11 anotados / 15 recibidos); prob. modelo 66%; EV -5.4%.",
+          "match": "León vs. Cruz Azul",
+          "tournament": "Liga MX (21:10 CST)",
+          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+          "odds": 1.71,
+          "confidencePct": 54,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "over",
+              "line": 2.5
             }
           ],
-          "espnEventId": "401931986",
+          "espnEventId": "401931995",
           "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-25 19:00",
+          "kickoffLocal": "2026-11-26 21:10",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Estadio Nemesio Díez Riega",
-          "singleReturn": 144.0
+          "stadium": "Estadio León",
+          "singleReturn": 171.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Independiente Santa Fe vs. Once Caldas",
-          "tournament": "Liga BetPlay (Colombia) (17:20 CST)",
-          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
-          "odds": 1.5,
-          "confidencePct": 62,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -200 → @ 1.50; prob. de mercado sin margen 62%; forma últimos 5 Independiente Santa Fe LWWLL vs Once Caldas DDDDW; goles esperados (Poisson) 2.12; Últimos 5: Independiente Santa Fe (7 anotados / 4 recibidos goles) vs Once Caldas (5 anotados / 4 recibidos); prob. modelo 62%; EV -6.2%.",
+          "match": "Pachuca vs. Guadalajara",
+          "tournament": "Liga MX (19:00 CST)",
+          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+          "odds": 1.8,
+          "confidencePct": 52,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -125 → @ 1.80; prob. de mercado sin margen 52%; forma últimos 5 Pachuca WWWWL vs Guadalajara WDWWW; goles esperados (Poisson) 2.59; Últimos 5: Pachuca (12 anotados / 4 recibidos goles) vs Guadalajara (8 anotados / 3 recibidos); prob. modelo 52%; EV -6.4%.",
           "markets": [
             {
               "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
+              "side": "under",
+              "line": 2.5
             }
           ],
-          "espnEventId": "401934687",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-11-25 17:20",
+          "espnEventId": "401931982",
+          "espnLeague": "mex.1",
+          "kickoffLocal": "2026-11-26 19:00",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Estadio Nemesio Camacho El Campín",
-          "singleReturn": 150.0
+          "stadium": "Estadio Hidalgo",
+          "singleReturn": 180.0
         }
       ],
       "real_life_example": {
@@ -112,24 +113,24 @@
           "title": "¿Cómo se cobra con las Simples?",
           "match_examples": [
             {
-              "match": "Boca Juniors vs. Independiente Rivadavia",
-              "min_result": "Boca Juniors Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $144.00 (+$44.00 neto)."
+              "match": "São Paulo vs. Remo",
+              "min_result": "São Paulo Ganador Directo (1)",
+              "explanation": "Si se cumple cobras $137.00 (+$37.00 neto)."
             },
             {
-              "match": "Toluca vs. Atlas",
-              "min_result": "Toluca Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $144.00 (+$44.00 neto)."
+              "match": "León vs. Cruz Azul",
+              "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+              "explanation": "Si se cumple cobras $171.00 (+$71.00 neto)."
             },
             {
-              "match": "Independiente Santa Fe vs. Once Caldas",
-              "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
-              "explanation": "Si se cumple cobras $150.00 (+$50.00 neto)."
+              "match": "Pachuca vs. Guadalajara",
+              "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "explanation": "Si se cumple cobras $180.00 (+$80.00 neto)."
             }
           ],
-          "payout_example": "Con $100 por selección: los 3 aciertos pagan $438.00."
+          "payout_example": "Con $100 por selección: los 3 aciertos pagan $488.00."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (25 NOVIEMBRE)\n1. ⚽ Boca Juniors vs. Independiente Rivadavia: Boca Juniors Ganador Directo (1) @ 1.44\n2. ⚽ Toluca vs. Atlas: Toluca Ganador Directo (1) @ 1.44\n3. ⚽ Independiente Santa Fe vs. Once Caldas: Más de 1.5 Goles Totales (Over 1.5) @ 1.50"
+        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (26 NOVIEMBRE)\n1. ⚽ São Paulo vs. Remo: São Paulo Ganador Directo (1) @ 1.37\n2. ⚽ León vs. Cruz Azul: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. ⚽ Pachuca vs. Guadalajara: Menos de 2.5 Goles Totales (Under 2.5) @ 1.80"
       }
     },
     "modo_b_sistema": {
@@ -141,8 +142,8 @@
       "tagColor": "cyan",
       "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "73.4%",
-      "combinedEv": "-7.9%",
+      "expectedWinRate": "62.2%",
+      "combinedEv": "-14.4%",
       "recommendedStake": "$25 por combinación ($100 total)",
       "riskLevel": "MEDIO",
       "picks": [
@@ -150,21 +151,21 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Boca Juniors vs. Independiente Rivadavia",
-          "tournament": "Liga Profesional Argentina (18:00 CST)",
-          "selection": "Boca Juniors Ganador Directo (1)",
-          "odds": 1.44,
-          "confidencePct": 70,
-          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 70%; EV +0.3%.",
+          "match": "São Paulo vs. Remo",
+          "tournament": "Brasileirão Série A (17:00 CST)",
+          "selection": "São Paulo Ganador Directo (1)",
+          "odds": 1.37,
+          "confidencePct": 68,
+          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
           "markets": [
             {
               "type": "ML",
               "side": "home"
             }
           ],
-          "espnEventId": "401933757",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-25 18:00",
+          "espnEventId": "401841329",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-26 17:00",
           "oddsEstimated": false,
           "verified": true
         },
@@ -172,21 +173,22 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Toluca vs. Atlas",
-          "tournament": "Liga MX (19:00 CST)",
-          "selection": "Toluca Ganador Directo (1)",
-          "odds": 1.44,
-          "confidencePct": 66,
-          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Toluca LWDDD vs Atlas DLWWL; goles esperados (Poisson) 3.27; Últimos 5: Toluca (9 anotados / 7 recibidos goles) vs Atlas (11 anotados / 15 recibidos); prob. modelo 66%; EV -5.4%.",
+          "match": "León vs. Cruz Azul",
+          "tournament": "Liga MX (21:10 CST)",
+          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+          "odds": 1.71,
+          "confidencePct": 54,
+          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "over",
+              "line": 2.5
             }
           ],
-          "espnEventId": "401931986",
+          "espnEventId": "401931995",
           "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-25 19:00",
+          "kickoffLocal": "2026-11-26 21:10",
           "oddsEstimated": false,
           "verified": true
         },
@@ -194,46 +196,46 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Independiente Santa Fe vs. Once Caldas",
-          "tournament": "Liga BetPlay (Colombia) (17:20 CST)",
-          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
-          "odds": 1.5,
-          "confidencePct": 62,
-          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -200 → @ 1.50; prob. de mercado sin margen 62%; forma últimos 5 Independiente Santa Fe LWWLL vs Once Caldas DDDDW; goles esperados (Poisson) 2.12; Últimos 5: Independiente Santa Fe (7 anotados / 4 recibidos goles) vs Once Caldas (5 anotados / 4 recibidos); prob. modelo 62%; EV -6.2%.",
+          "match": "Pachuca vs. Guadalajara",
+          "tournament": "Liga MX (19:00 CST)",
+          "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+          "odds": 1.8,
+          "confidencePct": 52,
+          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -125 → @ 1.80; prob. de mercado sin margen 52%; forma últimos 5 Pachuca WWWWL vs Guadalajara WDWWW; goles esperados (Poisson) 2.59; Últimos 5: Pachuca (12 anotados / 4 recibidos goles) vs Guadalajara (8 anotados / 3 recibidos); prob. modelo 52%; EV -6.4%.",
           "markets": [
             {
               "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
+              "side": "under",
+              "line": 2.5
             }
           ],
-          "espnEventId": "401934687",
-          "espnLeague": "col.1",
-          "kickoffLocal": "2026-11-25 17:20",
+          "espnEventId": "401931982",
+          "espnLeague": "mex.1",
+          "kickoffLocal": "2026-11-26 19:00",
           "oddsEstimated": false,
           "verified": true
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ Boca Juniors + ⚽ Toluca)",
-          "odds": 2.07,
-          "formula": "1.44 × 1.44"
+          "name": "Doble 1 (⚽ São Paulo + ⚽ León)",
+          "odds": 2.34,
+          "formula": "1.37 × 1.71"
         },
         {
-          "name": "Doble 2 (⚽ Boca Juniors + ⚽ Independiente Santa Fe)",
-          "odds": 2.16,
-          "formula": "1.44 × 1.5"
+          "name": "Doble 2 (⚽ São Paulo + ⚽ Pachuca)",
+          "odds": 2.47,
+          "formula": "1.37 × 1.8"
         },
         {
-          "name": "Doble 3 (⚽ Toluca + ⚽ Independiente Santa Fe)",
-          "odds": 2.16,
-          "formula": "1.44 × 1.5"
+          "name": "Doble 3 (⚽ León + ⚽ Pachuca)",
+          "odds": 3.08,
+          "formula": "1.71 × 1.8"
         },
         {
           "name": "Triple (Pleno 3/3)",
-          "odds": 3.11,
-          "formula": "1.44 × 1.44 × 1.5"
+          "odds": 4.22,
+          "formula": "1.37 × 1.71 × 1.8"
         }
       ],
       "real_life_example": {
@@ -246,38 +248,38 @@
           "title": "¿Cómo se cobra con el Sistema 2/3?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (Boca Juniors + Toluca)",
+              "match": "Escenario 2 de 3 (São Paulo + León)",
               "min_result": "Fallan solo el tercero",
-              "explanation": "Cobras la Doble 1: $51.75."
+              "explanation": "Cobras la Doble 1: $58.50."
             },
             {
-              "match": "Escenario 2 de 3 (Boca Juniors + Independiente Santa Fe)",
+              "match": "Escenario 2 de 3 (São Paulo + Pachuca)",
               "min_result": "Falla solo el segundo",
-              "explanation": "Cobras la Doble 2: $54.00."
+              "explanation": "Cobras la Doble 2: $61.75."
             },
             {
               "match": "Escenario Pleno 3 de 3",
               "min_result": "Aciertan los 3",
-              "explanation": "Cobras $237.50."
+              "explanation": "Cobras $302.75."
             }
           ],
-          "payout_example": "Con $100 cobras hasta $237.50 si aciertan los 3."
+          "payout_example": "Con $100 cobras hasta $302.75 si aciertan los 3."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (25 NOVIEMBRE)\n• Pick A: ⚽ Boca Juniors vs. Independiente Rivadavia (Boca Juniors Ganador Directo (1)) @ 1.44\n• Pick B: ⚽ Toluca vs. Atlas (Toluca Ganador Directo (1)) @ 1.44\n• Pick C: ⚽ Independiente Santa Fe vs. Once Caldas (Más de 1.5 Goles Totales (Over 1.5)) @ 1.50"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (26 NOVIEMBRE)\n• Pick A: ⚽ São Paulo vs. Remo (São Paulo Ganador Directo (1)) @ 1.37\n• Pick B: ⚽ León vs. Cruz Azul (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: ⚽ Pachuca vs. Guadalajara (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.80"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (@ 1.94x)",
+      "modeShort": "Modo C: Doble Banker (@ 1.70x)",
       "badge": "BAJA VOLATILIDAD",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada de 2 piernas de alta probabilidad (Boca Juniors vs. Independiente Rivadavia y Toluca vs. Atlas).",
-      "totalOdds": 1.94,
-      "fairOdds": 2.15,
-      "expectedWinRate": "46.4%",
-      "combinedEv": "-9.9%",
+      "description": "Combinada de 2 piernas de alta probabilidad (São Paulo vs. Remo y León vs. Cruz Azul).",
+      "totalOdds": 1.7,
+      "fairOdds": 1.88,
+      "expectedWinRate": "53.2%",
+      "combinedEv": "-9.5%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
       "picks": [
@@ -285,12 +287,12 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "Boca Juniors vs. Independiente Rivadavia",
-          "tournament": "Liga Profesional Argentina (18:00 CST)",
-          "selection": "Boca Juniors Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.47,
-          "confidencePct": 64,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.47; prob. de mercado sin margen 64%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 64%; EV -5.4%.",
+          "match": "São Paulo vs. Remo",
+          "tournament": "Brasileirão Série A (17:00 CST)",
+          "selection": "São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+          "odds": 1.39,
+          "confidencePct": 68,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.39; prob. de mercado sin margen 68%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -5.0%.",
           "markets": [
             {
               "type": "DC",
@@ -302,174 +304,171 @@
               "line": 1.5
             }
           ],
-          "espnEventId": "401933757",
-          "espnLeague": "arg.1",
-          "kickoffLocal": "2026-11-25 18:00",
+          "espnEventId": "401841329",
+          "espnLeague": "bra.1",
+          "kickoffLocal": "2026-11-26 17:00",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Alberto José Armando (La Bombonera)",
-          "singleReturn": 147.0
+          "stadium": "Estádio Cícero Pompeu de Toledo",
+          "singleReturn": 139.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "Toluca vs. Atlas",
-          "tournament": "Liga MX (19:00 CST)",
-          "selection": "Toluca Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.32,
-          "confidencePct": 72,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.32; prob. de mercado sin margen 72%; forma últimos 5 Toluca LWDDD vs Atlas DLWWL; goles esperados (Poisson) 3.27; Últimos 5: Toluca (9 anotados / 7 recibidos goles) vs Atlas (11 anotados / 15 recibidos); prob. modelo 72%; EV -4.7%.",
+          "match": "León vs. Cruz Azul",
+          "tournament": "Liga MX (21:10 CST)",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.22,
+          "confidencePct": 78,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 78%; EV -5.2%.",
           "markets": [
-            {
-              "type": "DC",
-              "side": "1X"
-            },
             {
               "type": "TOTAL",
               "side": "over",
               "line": 1.5
             }
           ],
-          "espnEventId": "401931986",
+          "espnEventId": "401931995",
           "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-25 19:00",
+          "kickoffLocal": "2026-11-26 21:10",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Estadio Nemesio Díez Riega",
-          "singleReturn": 132.0
+          "stadium": "Estadio León",
+          "singleReturn": 122.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona: Boca Juniors vs. Independiente Rivadavia (Boca Juniors Doble Oportunidad (1X) + Más 1.5 Goles Totales) y Toluca vs. Atlas (Toluca Doble Oportunidad (1X) + Más 1.5 Goles Totales).",
-          "Coloca una Combinada / Parlay. Cuota aprox.: 1.94x (verifica la cuota real en tu casa)."
+          "Selecciona: São Paulo vs. Remo (São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales) y León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)).",
+          "Coloca una Combinada / Parlay. Cuota aprox.: 1.70x (verifica la cuota real en tu casa)."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana con la Doble Banker?",
           "match_examples": [
             {
-              "match": "Boca Juniors vs. Independiente Rivadavia",
-              "min_result": "Boca Juniors Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 64%."
+              "match": "São Paulo vs. Remo",
+              "min_result": "São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
+              "explanation": "Probabilidad modelo 68%."
             },
             {
-              "match": "Toluca vs. Atlas",
-              "min_result": "Toluca Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 72%."
+              "match": "León vs. Cruz Azul",
+              "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+              "explanation": "Probabilidad modelo 78%."
             }
           ],
-          "payout_example": "Si ambas se cumplen, con $100 cobras $194.00 (+$94.00 neto)."
+          "payout_example": "Si ambas se cumplen, con $100 cobras $170.00 (+$70.00 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (25 NOVIEMBRE)\n1. ⚽ Boca Juniors vs. Independiente Rivadavia (Boca Juniors Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.47\n2. ⚽ Toluca vs. Atlas (Toluca Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.32"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (26 NOVIEMBRE)\n1. ⚽ São Paulo vs. Remo (São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.39\n2. ⚽ León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
       }
     }
   },
   "has_hybrid_edition": true,
   "hybrid_edition": {
-    "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
-    "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
-    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Boca Juniors vs. Independiente Rivadavia con Houston Rockets vs. Phoenix Suns y Golden State Warriors vs. Sacramento Kings.",
+    "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + NFL)",
+    "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de NFL.",
+    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando São Paulo vs. Remo con León vs. Cruz Azul y Buffalo Bills vs. Kansas City Chiefs.",
     "active_sports": [
       "Football",
-      "Basketball"
+      "NFL"
     ],
-    "expectedWinRate": "73.3%",
-    "avgOdds": 1.33,
-    "combinedEv": "-2.5%",
+    "expectedWinRate": "60.2%",
+    "avgOdds": 1.58,
+    "combinedEv": "-5.8%",
     "picks": [
       {
         "sourceName": "ESPN / DraftKings",
         "sport": "Football",
         "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "match": "Boca Juniors vs. Independiente Rivadavia",
-        "tournament": "Liga Profesional Argentina (18:00 CST)",
-        "selection": "Boca Juniors Ganador Directo (1)",
-        "odds": 1.44,
-        "confidencePct": 70,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 70%; EV +0.3%.",
+        "match": "São Paulo vs. Remo",
+        "tournament": "Brasileirão Série A (17:00 CST)",
+        "selection": "São Paulo Ganador Directo (1)",
+        "odds": 1.37,
+        "confidencePct": 68,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
         "markets": [
           {
             "type": "ML",
             "side": "home"
           }
         ],
-        "espnEventId": "401933757",
-        "espnLeague": "arg.1",
-        "kickoffLocal": "2026-11-25 18:00",
+        "espnEventId": "401841329",
+        "espnLeague": "bra.1",
+        "kickoffLocal": "2026-11-26 17:00",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Alberto José Armando (La Bombonera)",
-        "singleReturn": 144.0,
-        "safeSelection": "Menos de 3.5 Goles Totales (Under 3.5)",
-        "safeOdds": 1.27
-      },
-      {
-        "sourceName": "NBA Second Spectrum",
-        "sport": "Basketball",
-        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Houston Rockets vs. Phoenix Suns",
-        "tournament": "NBA 2026-27 (19:30 CST)",
-        "selection": "Houston Rockets Ganador Directo (Moneyline)",
-        "odds": 1.25,
-        "confidencePct": 77,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Houston Rockets — vs Phoenix Suns —; Predictor Oficial ESPN: Houston Rockets 73.4% vs Phoenix Suns 26.6%; Últimos 5: Houston Rockets (616 anotados / 588 recibidos pts) vs Phoenix Suns (479 anotados / 444 recibidos); prob. modelo 77%; EV -3.9%.",
-        "markets": [
-          {
-            "type": "ML",
-            "side": "home"
-          }
-        ],
-        "espnEventId": "401909323",
-        "espnLeague": "basketball/nba",
-        "kickoffLocal": "2026-11-25 19:30",
-        "oddsEstimated": false,
-        "verified": true,
-        "stadium": "Toyota Center (Houston)",
-        "singleReturn": 125.0,
-        "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+        "stadium": "Estádio Cícero Pompeu de Toledo",
+        "singleReturn": 137.0,
+        "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
         "safeOdds": 1.25
       },
       {
-        "sourceName": "NBA Second Spectrum",
-        "sport": "Basketball",
-        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-        "match": "Golden State Warriors vs. Sacramento Kings",
-        "tournament": "NBA 2026-27 (21:00 CST)",
-        "selection": "Golden State Warriors Ganador Directo (Moneyline)",
-        "odds": 1.31,
-        "confidencePct": 73,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -324 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Golden State Warriors — vs Sacramento Kings —; Predictor Oficial ESPN: Golden State Warriors 72.6% vs Sacramento Kings 27.4%; Últimos 5: Golden State Warriors (459 anotados / 567 recibidos pts) vs Sacramento Kings (518 anotados / 578 recibidos); prob. modelo 73%; EV -3.9%.",
+        "sourceName": "ESPN / DraftKings",
+        "sport": "Football",
+        "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+        "match": "León vs. Cruz Azul",
+        "tournament": "Liga MX (21:10 CST)",
+        "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+        "odds": 1.71,
+        "confidencePct": 54,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
+        "markets": [
+          {
+            "type": "TOTAL",
+            "side": "over",
+            "line": 2.5
+          }
+        ],
+        "espnEventId": "401931995",
+        "espnLeague": "mex.1",
+        "kickoffLocal": "2026-11-26 21:10",
+        "oddsEstimated": false,
+        "verified": true,
+        "stadium": "Estadio León",
+        "singleReturn": 171.0,
+        "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
+        "safeOdds": 1.22
+      },
+      {
+        "sourceName": "Next Gen Stats NFL",
+        "sport": "NFL",
+        "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
+        "match": "Buffalo Bills vs. Kansas City Chiefs",
+        "tournament": "NFL 2026 (19:20 CST)",
+        "selection": "Buffalo Bills Ganador Directo (Moneyline)",
+        "odds": 1.65,
+        "confidencePct": 58,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -153 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Buffalo Bills — vs Kansas City Chiefs —; Predictor Oficial ESPN: Buffalo Bills 52.6% vs Kansas City Chiefs 47.1%; Últimos 5: Buffalo Bills (149 anotados / 67 recibidos pts) vs Kansas City Chiefs (131 anotados / 80 recibidos); prob. modelo 58%; EV -3.8%.",
         "markets": [
           {
             "type": "ML",
             "side": "home"
           }
         ],
-        "espnEventId": "401909324",
-        "espnLeague": "basketball/nba",
-        "kickoffLocal": "2026-11-25 21:00",
+        "espnEventId": "401873082",
+        "espnLeague": "football/nfl",
+        "kickoffLocal": "2026-11-26 19:20",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Chase Center",
-        "singleReturn": 131.0,
-        "safeSelection": "Golden State Warriors Ganador Directo (Moneyline)",
-        "safeOdds": 1.31
+        "stadium": "Highmark Stadium",
+        "singleReturn": 165.0,
+        "safeSelection": "Buffalo Bills Ganador Directo (Moneyline)",
+        "safeOdds": 1.65
       }
     ],
     "strategies": {
       "modo_a_simples": {
         "id": "STRATEGY-HYBRID-A",
-        "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
-        "modeShort": "Modo A: Simples Híbridas (73.3% Win Rate)",
+        "modeName": "Modo A: Simples Híbridas (Fútbol + NFL)",
+        "modeShort": "Modo A: Simples Híbridas (60.2% Win Rate)",
         "badge": "MÁXIMO WIN RATE HÍBRIDO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
-        "description": "3 Selecciones multideporte de élite para el Miércoles 25 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
-        "avgOdds": 1.33,
-        "expectedWinRate": "73.3%",
-        "combinedEv": "-2.5%",
+        "description": "3 Selecciones multideporte de élite para el Jueves 26 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+        "avgOdds": 1.58,
+        "expectedWinRate": "60.2%",
+        "combinedEv": "-5.8%",
         "recommendedStake": "1.0% por selección (Flat Staking)",
         "riskLevel": "MÍNIMO",
         "picks": [
@@ -477,109 +476,110 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Boca Juniors vs. Independiente Rivadavia",
-            "tournament": "Liga Profesional Argentina (18:00 CST)",
-            "selection": "Boca Juniors Ganador Directo (1)",
-            "odds": 1.44,
-            "confidencePct": 70,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 70%; EV +0.3%.",
+            "match": "São Paulo vs. Remo",
+            "tournament": "Brasileirão Série A (17:00 CST)",
+            "selection": "São Paulo Ganador Directo (1)",
+            "odds": 1.37,
+            "confidencePct": 68,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401933757",
-            "espnLeague": "arg.1",
-            "kickoffLocal": "2026-11-25 18:00",
+            "espnEventId": "401841329",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-26 17:00",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Alberto José Armando (La Bombonera)",
-            "singleReturn": 144.0,
-            "safeSelection": "Menos de 3.5 Goles Totales (Under 3.5)",
-            "safeOdds": 1.27
-          },
-          {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Houston Rockets vs. Phoenix Suns",
-            "tournament": "NBA 2026-27 (19:30 CST)",
-            "selection": "Houston Rockets Ganador Directo (Moneyline)",
-            "odds": 1.25,
-            "confidencePct": 77,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Houston Rockets — vs Phoenix Suns —; Predictor Oficial ESPN: Houston Rockets 73.4% vs Phoenix Suns 26.6%; Últimos 5: Houston Rockets (616 anotados / 588 recibidos pts) vs Phoenix Suns (479 anotados / 444 recibidos); prob. modelo 77%; EV -3.9%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "home"
-              }
-            ],
-            "espnEventId": "401909323",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-25 19:30",
-            "oddsEstimated": false,
-            "verified": true,
-            "stadium": "Toyota Center (Houston)",
-            "singleReturn": 125.0,
-            "safeSelection": "Houston Rockets Ganador Directo (Moneyline)",
+            "stadium": "Estádio Cícero Pompeu de Toledo",
+            "singleReturn": 137.0,
+            "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
             "safeOdds": 1.25
           },
           {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Golden State Warriors vs. Sacramento Kings",
-            "tournament": "NBA 2026-27 (21:00 CST)",
-            "selection": "Golden State Warriors Ganador Directo (Moneyline)",
-            "odds": 1.31,
-            "confidencePct": 73,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -324 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Golden State Warriors — vs Sacramento Kings —; Predictor Oficial ESPN: Golden State Warriors 72.6% vs Sacramento Kings 27.4%; Últimos 5: Golden State Warriors (459 anotados / 567 recibidos pts) vs Sacramento Kings (518 anotados / 578 recibidos); prob. modelo 73%; EV -3.9%.",
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "León vs. Cruz Azul",
+            "tournament": "Liga MX (21:10 CST)",
+            "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+            "odds": 1.71,
+            "confidencePct": 54,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
+            "markets": [
+              {
+                "type": "TOTAL",
+                "side": "over",
+                "line": 2.5
+              }
+            ],
+            "espnEventId": "401931995",
+            "espnLeague": "mex.1",
+            "kickoffLocal": "2026-11-26 21:10",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Estadio León",
+            "singleReturn": 171.0,
+            "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "safeOdds": 1.22
+          },
+          {
+            "sourceName": "Next Gen Stats NFL",
+            "sport": "NFL",
+            "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
+            "match": "Buffalo Bills vs. Kansas City Chiefs",
+            "tournament": "NFL 2026 (19:20 CST)",
+            "selection": "Buffalo Bills Ganador Directo (Moneyline)",
+            "odds": 1.65,
+            "confidencePct": 58,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -153 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Buffalo Bills — vs Kansas City Chiefs —; Predictor Oficial ESPN: Buffalo Bills 52.6% vs Kansas City Chiefs 47.1%; Últimos 5: Buffalo Bills (149 anotados / 67 recibidos pts) vs Kansas City Chiefs (131 anotados / 80 recibidos); prob. modelo 58%; EV -3.8%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401909324",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-25 21:00",
+            "espnEventId": "401873082",
+            "espnLeague": "football/nfl",
+            "kickoffLocal": "2026-11-26 19:20",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Chase Center",
-            "singleReturn": 131.0,
-            "safeSelection": "Golden State Warriors Ganador Directo (Moneyline)",
-            "safeOdds": 1.31
+            "stadium": "Highmark Stadium",
+            "singleReturn": 165.0,
+            "safeSelection": "Buffalo Bills Ganador Directo (Moneyline)",
+            "safeOdds": 1.65
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
-            "Coloca 3 apuestas SIMPLES independientes: Boca Juniors vs. Independiente Rivadavia, Houston Rockets vs. Phoenix Suns y Golden State Warriors vs. Sacramento Kings.",
+            "Coloca 3 apuestas SIMPLES independientes: São Paulo vs. Remo, León vs. Cruz Azul y Buffalo Bills vs. Kansas City Chiefs.",
             "Apuesta el mismo monto en cada una (ej. $100)."
           ],
           "winning_scenario": {
             "title": "¿Cómo se cobra con las Simples Híbridas?",
             "match_examples": [
               {
-                "match": "Boca Juniors vs. Independiente Rivadavia",
-                "min_result": "Boca Juniors Ganador Directo (1)",
-                "explanation": "Cobras $144.00."
+                "match": "São Paulo vs. Remo",
+                "min_result": "São Paulo Ganador Directo (1)",
+                "explanation": "Cobras $137.00."
               },
               {
-                "match": "Houston Rockets vs. Phoenix Suns",
-                "min_result": "Houston Rockets Ganador Directo (Moneyline)",
-                "explanation": "Cobras $125.00."
+                "match": "León vs. Cruz Azul",
+                "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+                "explanation": "Cobras $171.00."
               },
               {
-                "match": "Golden State Warriors vs. Sacramento Kings",
-                "min_result": "Golden State Warriors Ganador Directo (Moneyline)",
-                "explanation": "Cobras $131.00."
+                "match": "Buffalo Bills vs. Kansas City Chiefs",
+                "min_result": "Buffalo Bills Ganador Directo (Moneyline)",
+                "explanation": "Cobras $165.00."
               }
             ],
-            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $400.00."
+            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $473.00."
           },
-          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (25 NOVIEMBRE)\n1. Boca Juniors vs. Independiente Rivadavia: Boca Juniors Ganador Directo (1) @ 1.44\n2. Houston Rockets vs. Phoenix Suns: Houston Rockets Ganador Directo (Moneyline) @ 1.25\n3. Golden State Warriors vs. Sacramento Kings: Golden State Warriors Ganador Directo (Moneyline) @ 1.31"
+          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (26 NOVIEMBRE)\n1. São Paulo vs. Remo: São Paulo Ganador Directo (1) @ 1.37\n2. León vs. Cruz Azul: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. Buffalo Bills vs. Kansas City Chiefs: Buffalo Bills Ganador Directo (Moneyline) @ 1.65"
         }
       },
       "modo_b_sistema": {
@@ -591,8 +591,8 @@
         "tagColor": "cyan",
         "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
         "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-        "expectedWinRate": "82.5%",
-        "combinedEv": "-5.4%",
+        "expectedWinRate": "65.1%",
+        "combinedEv": "-12.9%",
         "recommendedStake": "$25 por combinación ($100 total)",
         "riskLevel": "BAJO",
         "picks": [
@@ -600,89 +600,90 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Boca Juniors vs. Independiente Rivadavia",
-            "tournament": "Liga Profesional Argentina (18:00 CST)",
-            "selection": "Boca Juniors Ganador Directo (1)",
-            "odds": 1.44,
-            "confidencePct": 70,
-            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -230 → @ 1.44; prob. de mercado sin margen 66%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 70%; EV +0.3%.",
+            "match": "São Paulo vs. Remo",
+            "tournament": "Brasileirão Série A (17:00 CST)",
+            "selection": "São Paulo Ganador Directo (1)",
+            "odds": 1.37,
+            "confidencePct": 68,
+            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401933757",
-            "espnLeague": "arg.1",
-            "kickoffLocal": "2026-11-25 18:00",
+            "espnEventId": "401841329",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-26 17:00",
             "oddsEstimated": false,
             "verified": true
           },
           {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Houston Rockets vs. Phoenix Suns",
-            "tournament": "NBA 2026-27 (19:30 CST)",
-            "selection": "Houston Rockets Ganador Directo (Moneyline)",
-            "odds": 1.25,
-            "confidencePct": 77,
-            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Houston Rockets — vs Phoenix Suns —; Predictor Oficial ESPN: Houston Rockets 73.4% vs Phoenix Suns 26.6%; Últimos 5: Houston Rockets (616 anotados / 588 recibidos pts) vs Phoenix Suns (479 anotados / 444 recibidos); prob. modelo 77%; EV -3.9%.",
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "León vs. Cruz Azul",
+            "tournament": "Liga MX (21:10 CST)",
+            "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+            "odds": 1.71,
+            "confidencePct": 54,
+            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
             "markets": [
               {
-                "type": "ML",
-                "side": "home"
+                "type": "TOTAL",
+                "side": "over",
+                "line": 2.5
               }
             ],
-            "espnEventId": "401909323",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-25 19:30",
+            "espnEventId": "401931995",
+            "espnLeague": "mex.1",
+            "kickoffLocal": "2026-11-26 21:10",
             "oddsEstimated": false,
             "verified": true
           },
           {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Golden State Warriors vs. Sacramento Kings",
-            "tournament": "NBA 2026-27 (21:00 CST)",
-            "selection": "Golden State Warriors Ganador Directo (Moneyline)",
-            "odds": 1.31,
-            "confidencePct": 73,
-            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -324 → @ 1.31; prob. de mercado sin margen 73%; forma últimos 5 Golden State Warriors — vs Sacramento Kings —; Predictor Oficial ESPN: Golden State Warriors 72.6% vs Sacramento Kings 27.4%; Últimos 5: Golden State Warriors (459 anotados / 567 recibidos pts) vs Sacramento Kings (518 anotados / 578 recibidos); prob. modelo 73%; EV -3.9%.",
+            "sourceName": "Next Gen Stats NFL",
+            "sport": "NFL",
+            "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
+            "match": "Buffalo Bills vs. Kansas City Chiefs",
+            "tournament": "NFL 2026 (19:20 CST)",
+            "selection": "Buffalo Bills Ganador Directo (Moneyline)",
+            "odds": 1.65,
+            "confidencePct": 58,
+            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -153 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Buffalo Bills — vs Kansas City Chiefs —; Predictor Oficial ESPN: Buffalo Bills 52.6% vs Kansas City Chiefs 47.1%; Últimos 5: Buffalo Bills (149 anotados / 67 recibidos pts) vs Kansas City Chiefs (131 anotados / 80 recibidos); prob. modelo 58%; EV -3.8%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401909324",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-25 21:00",
+            "espnEventId": "401873082",
+            "espnLeague": "football/nfl",
+            "kickoffLocal": "2026-11-26 19:20",
             "oddsEstimated": false,
             "verified": true
           }
         ],
         "combinations": [
           {
-            "name": "Doble 1 (Boca Juniors + Houston Rockets)",
-            "odds": 1.8,
-            "formula": "1.44 × 1.25"
+            "name": "Doble 1 (São Paulo + León)",
+            "odds": 2.34,
+            "formula": "1.37 × 1.71"
           },
           {
-            "name": "Doble 2 (Boca Juniors + Golden State Warriors)",
-            "odds": 1.89,
-            "formula": "1.44 × 1.31"
+            "name": "Doble 2 (São Paulo + Buffalo Bills)",
+            "odds": 2.26,
+            "formula": "1.37 × 1.65"
           },
           {
-            "name": "Doble 3 (Houston Rockets + Golden State Warriors)",
-            "odds": 1.64,
-            "formula": "1.25 × 1.31"
+            "name": "Doble 3 (León + Buffalo Bills)",
+            "odds": 2.82,
+            "formula": "1.71 × 1.65"
           },
           {
             "name": "Triple (Pleno Multideporte)",
-            "odds": 2.36,
-            "formula": "1.44 × 1.25 × 1.31"
+            "odds": 3.87,
+            "formula": "1.37 × 1.71 × 1.65"
           }
         ],
         "real_life_example": {
@@ -695,33 +696,33 @@
             "title": "¿Cómo se cobra con el Sistema Híbrido?",
             "match_examples": [
               {
-                "match": "Escenario 2 de 3 (Boca Juniors + Houston Rockets)",
+                "match": "Escenario 2 de 3 (São Paulo + León)",
                 "min_result": "Ganan los 2 primeros",
-                "explanation": "Cobras Doble 1 (@ 1.8x): $45.00 amortizando."
+                "explanation": "Cobras Doble 1 (@ 2.34x): $58.50 amortizando."
               },
               {
                 "match": "Escenario Pleno 3 de 3",
                 "min_result": "Cumplen los 3",
-                "explanation": "Cobras las 3 Dobles + Triple: $192.25."
+                "explanation": "Cobras las 3 Dobles + Triple: $282.25."
               }
             ],
-            "payout_example": "Con $100 cobras hasta $192.25 si aciertan los 3, o amortizas si 1 falla."
+            "payout_example": "Con $100 cobras hasta $282.25 si aciertan los 3, o amortizas si 1 falla."
           },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (25 NOVIEMBRE)\n• Pick A: Boca Juniors vs. Independiente Rivadavia (Boca Juniors Ganador Directo (1)) @ 1.44\n• Pick B: Houston Rockets vs. Phoenix Suns (Houston Rockets Ganador Directo (Moneyline)) @ 1.25\n• Pick C: Golden State Warriors vs. Sacramento Kings (Golden State Warriors Ganador Directo (Moneyline)) @ 1.31"
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (26 NOVIEMBRE)\n• Pick A: São Paulo vs. Remo (São Paulo Ganador Directo (1)) @ 1.37\n• Pick B: León vs. Cruz Azul (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: Buffalo Bills vs. Kansas City Chiefs (Buffalo Bills Ganador Directo (Moneyline)) @ 1.65"
         }
       },
       "modo_c_banker": {
         "id": "STRATEGY-HYBRID-C",
-        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.59x)",
-        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.59x)",
+        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.52x)",
+        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.52x)",
         "badge": "DUPLICADOR HÍBRIDO",
         "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
         "tagColor": "amber",
-        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Boca Juniors vs. Independiente Rivadavia y Houston Rockets vs. Phoenix Suns.",
-        "totalOdds": 1.59,
-        "fairOdds": 1.75,
-        "expectedWinRate": "57.2%",
-        "combinedEv": "-9.0%",
+        "description": "Combinada estricta de solo 2 eventos de altísima certeza: São Paulo vs. Remo y León vs. Cruz Azul.",
+        "totalOdds": 1.52,
+        "fairOdds": 1.69,
+        "expectedWinRate": "59.0%",
+        "combinedEv": "-10.3%",
         "recommendedStake": "2.5% – 3.0% Bankroll",
         "riskLevel": "BAJO",
         "picks": [
@@ -729,75 +730,76 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "Boca Juniors vs. Independiente Rivadavia",
-            "tournament": "Liga Profesional Argentina (18:00 CST)",
-            "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
-            "odds": 1.27,
-            "confidencePct": 75,
-            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.27; prob. de mercado sin margen 75%; forma últimos 5 Boca Juniors WWWWW vs Independiente Rivadavia LDWLD; goles esperados (Poisson) 2.55; Últimos 5: Boca Juniors (8 anotados / 0 recibidos goles) vs Independiente Rivadavia (8 anotados / 8 recibidos); prob. modelo 75%; EV -5.4%.",
+            "match": "São Paulo vs. Remo",
+            "tournament": "Brasileirão Série A (17:00 CST)",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.25,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.25; prob. de mercado sin margen 76%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 76%; EV -5.3%.",
             "markets": [
               {
                 "type": "TOTAL",
-                "side": "under",
-                "line": 3.5
+                "side": "over",
+                "line": 1.5
               }
             ],
-            "espnEventId": "401933757",
-            "espnLeague": "arg.1",
-            "kickoffLocal": "2026-11-25 18:00",
+            "espnEventId": "401841329",
+            "espnLeague": "bra.1",
+            "kickoffLocal": "2026-11-26 17:00",
             "oddsEstimated": true,
             "verified": true,
-            "stadium": "Alberto José Armando (La Bombonera)",
-            "singleReturn": 127.0
+            "stadium": "Estádio Cícero Pompeu de Toledo",
+            "singleReturn": 125.0
           },
           {
-            "sourceName": "NBA Second Spectrum",
-            "sport": "Basketball",
-            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
-            "match": "Houston Rockets vs. Phoenix Suns",
-            "tournament": "NBA 2026-27 (19:30 CST)",
-            "selection": "Houston Rockets Ganador Directo (Moneyline)",
-            "odds": 1.25,
-            "confidencePct": 77,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -395 → @ 1.25; prob. de mercado sin margen 77%; forma últimos 5 Houston Rockets — vs Phoenix Suns —; Predictor Oficial ESPN: Houston Rockets 73.4% vs Phoenix Suns 26.6%; Últimos 5: Houston Rockets (616 anotados / 588 recibidos pts) vs Phoenix Suns (479 anotados / 444 recibidos); prob. modelo 77%; EV -3.9%.",
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+            "match": "León vs. Cruz Azul",
+            "tournament": "Liga MX (21:10 CST)",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.22,
+            "confidencePct": 78,
+            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 78%; EV -5.2%.",
             "markets": [
               {
-                "type": "ML",
-                "side": "home"
+                "type": "TOTAL",
+                "side": "over",
+                "line": 1.5
               }
             ],
-            "espnEventId": "401909323",
-            "espnLeague": "basketball/nba",
-            "kickoffLocal": "2026-11-25 19:30",
-            "oddsEstimated": false,
+            "espnEventId": "401931995",
+            "espnLeague": "mex.1",
+            "kickoffLocal": "2026-11-26 21:10",
+            "oddsEstimated": true,
             "verified": true,
-            "stadium": "Toyota Center (Houston)",
-            "singleReturn": 125.0
+            "stadium": "Estadio León",
+            "singleReturn": 122.0
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas.",
-            "Selecciona: Boca Juniors vs. Independiente Rivadavia y Houston Rockets vs. Phoenix Suns.",
-            "Coloca Parlay / Combinada @ 1.59x."
+            "Selecciona: São Paulo vs. Remo y León vs. Cruz Azul.",
+            "Coloca Parlay / Combinada @ 1.52x."
           ],
           "winning_scenario": {
             "title": "¿Cómo se gana con la Doble Banker Híbrida?",
             "match_examples": [
               {
-                "match": "Boca Juniors vs. Independiente Rivadavia",
-                "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
-                "explanation": "Probabilidad modelo 75%."
+                "match": "São Paulo vs. Remo",
+                "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                "explanation": "Probabilidad modelo 76%."
               },
               {
-                "match": "Houston Rockets vs. Phoenix Suns",
-                "min_result": "Houston Rockets Ganador Directo (Moneyline)",
-                "explanation": "Probabilidad modelo 77%."
+                "match": "León vs. Cruz Azul",
+                "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                "explanation": "Probabilidad modelo 78%."
               }
             ],
-            "payout_example": "Si ambos cumplen, con $100 cobras $159.00."
+            "payout_example": "Si ambos cumplen, con $100 cobras $152.00."
           },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (25 NOVIEMBRE)\n1. Boca Juniors vs. Independiente Rivadavia (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.27\n2. Houston Rockets vs. Phoenix Suns (Houston Rockets Ganador Directo (Moneyline)) @ 1.25"
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (26 NOVIEMBRE)\n1. São Paulo vs. Remo (Más de 1.5 Goles Totales (Over 1.5)) @ 1.25\n2. León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
         }
       }
     }
