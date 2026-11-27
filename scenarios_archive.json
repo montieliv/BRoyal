@@ -49442,7 +49442,7 @@
     "2026-11-26": {
       "date": "2026-11-26",
       "saved_at": "2026-11-26 16:40:33",
-      "status": "PENDING_EVALUATION",
+      "status": "EVALUATED",
       "strategies": {
         "modo_a_simples": {
           "id": "STRATEGY-MODO-A",
@@ -49561,7 +49561,8 @@
               "payout_example": "Con $100 por selección: los 3 aciertos pagan $488.00."
             },
             "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (26 NOVIEMBRE)\n1. ⚽ São Paulo vs. Remo: São Paulo Ganador Directo (1) @ 1.37\n2. ⚽ León vs. Cruz Azul: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. ⚽ Pachuca vs. Guadalajara: Menos de 2.5 Goles Totales (Under 2.5) @ 1.80"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_b_sistema": {
           "id": "STRATEGY-MODO-B",
@@ -49696,7 +49697,8 @@
               "payout_example": "Con $100 cobras hasta $302.75 si aciertan los 3."
             },
             "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (26 NOVIEMBRE)\n• Pick A: ⚽ São Paulo vs. Remo (São Paulo Ganador Directo (1)) @ 1.37\n• Pick B: ⚽ León vs. Cruz Azul (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: ⚽ Pachuca vs. Guadalajara (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.80"
-          }
+          },
+          "status": "PARTIAL"
         },
         "modo_c_banker": {
           "id": "STRATEGY-MODO-C",
@@ -49791,15 +49793,21 @@
               "payout_example": "Si ambas se cumplen, con $100 cobras $170.00 (+$70.00 neto)."
             },
             "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (26 NOVIEMBRE)\n1. ⚽ São Paulo vs. Remo (São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.39\n2. ⚽ León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
-          }
+          },
+          "status": "WON"
         }
       },
       "metrics": {
         "totalModes": 3,
         "simulatedTotalStake": 500.0,
-        "evaluated": false,
-        "netPnL": 0.0,
-        "roiPct": "0.0%"
+        "evaluated": true,
+        "netPnL": 36.15,
+        "roiPct": "+7.2%",
+        "wonModes": 2,
+        "simulatedTotalReturn": 536.15,
+        "winRate": "80.0% de selecciones (4/5) | Modo A $308.00 (2/3) + Modo B $58.57 + Modo C $169.58",
+        "evaluatedAt": "2026-11-27 16:24:26",
+        "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
       },
       "has_hybrid_edition": true,
       "hybrid_edition": {
@@ -50017,7 +50025,8 @@
                 "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $473.00."
               },
               "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (26 NOVIEMBRE)\n1. São Paulo vs. Remo: São Paulo Ganador Directo (1) @ 1.37\n2. León vs. Cruz Azul: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. Buffalo Bills vs. Kansas City Chiefs: Buffalo Bills Ganador Directo (Moneyline) @ 1.65"
-            }
+            },
+            "status": "WON"
           },
           "modo_b_sistema": {
             "id": "STRATEGY-HYBRID-B",
@@ -50146,7 +50155,8 @@
                 "payout_example": "Con $100 cobras hasta $282.25 si aciertan los 3, o amortizas si 1 falla."
               },
               "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (26 NOVIEMBRE)\n• Pick A: São Paulo vs. Remo (São Paulo Ganador Directo (1)) @ 1.37\n• Pick B: León vs. Cruz Azul (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: Buffalo Bills vs. Kansas City Chiefs (Buffalo Bills Ganador Directo (Moneyline)) @ 1.65"
-            }
+            },
+            "status": "WON"
           },
           "modo_c_banker": {
             "id": "STRATEGY-HYBRID-C",
@@ -50237,6 +50247,824 @@
                 "payout_example": "Si ambos cumplen, con $100 cobras $152.00."
               },
               "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (26 NOVIEMBRE)\n1. São Paulo vs. Remo (Más de 1.5 Goles Totales (Over 1.5)) @ 1.25\n2. León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
+            },
+            "status": "WON"
+          }
+        },
+        "metrics": {
+          "totalModes": 3,
+          "wonModes": 3,
+          "simulatedTotalStake": 500.0,
+          "simulatedTotalReturn": 907.75,
+          "netPnL": 407.75,
+          "roiPct": "+81.6%",
+          "winRate": "100.0% de selecciones (5/5) | Modo A $473.00 (3/3) + Modo B $282.25 + Modo C $152.50",
+          "evaluated": true,
+          "evaluatedAt": "2026-11-27 16:24:26",
+          "auditSource": "ESPN API (marcadores oficiales) — liquidación automática pronostico_diario.py"
+        }
+      },
+      "match_results": {
+        "São Paulo vs. Remo": "3-1 — São Paulo Ganador Directo (1) ✅ | São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales ✅",
+        "León vs. Cruz Azul": "0-4 — Más de 2.5 Goles Totales (Over 2.5) ✅ | Más de 1.5 Goles Totales (Over 1.5) ✅",
+        "Pachuca vs. Guadalajara": "2-1 — Menos de 2.5 Goles Totales (Under 2.5) ❌",
+        "Buffalo Bills vs. Kansas City Chiefs": "13-10 — Buffalo Bills Ganador Directo (Moneyline) ✅"
+      },
+      "evaluatedAt": "2026-11-27 16:24:26"
+    },
+    "2026-11-27": {
+      "date": "2026-11-27",
+      "saved_at": "2026-11-27 16:24:27",
+      "status": "PENDING_EVALUATION",
+      "strategies": {
+        "modo_a_simples": {
+          "id": "STRATEGY-MODO-A",
+          "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
+          "modeShort": "Modo A: Simples Fútbol (60.4% prob. media)",
+          "badge": "MAYOR PROBABILIDAD",
+          "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+          "tagColor": "emerald",
+          "description": "3 selecciones con cuotas reales DraftKings para el Viernes 27 de Noviembre (Liga BetPlay (Colombia), MLS). Cada acierto cobra por separado.",
+          "avgOdds": 1.56,
+          "expectedWinRate": "60.4%",
+          "combinedEv": "-5.8%",
+          "recommendedStake": "1.0% por selección (Flat Staking)",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Millonarios vs. América de Cali",
+              "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.53,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401936054",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-27 19:40",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Estadio Nemesio Camacho El Campín",
+              "singleReturn": 153.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Deportivo Cali vs. Atlético Bucaramanga",
+              "tournament": "Liga BetPlay (Colombia) (17:35 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.51,
+              "confidencePct": 62,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Deportivo Cali LDDDW vs Atlético Bucaramanga LDWWD; goles esperados (Poisson) 2.22; Últimos 5: Deportivo Cali (5 anotados / 4 recibidos goles) vs Atlético Bucaramanga (9 anotados / 7 recibidos); prob. modelo 62%; EV -6.5%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401936055",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-27 17:35",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "Deportivo Cali",
+              "singleReturn": 151.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Real Salt Lake vs. Vancouver Whitecaps",
+              "tournament": "MLS (21:00 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.65,
+              "confidencePct": 58,
+              "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Real Salt Lake LWWLW vs Vancouver Whitecaps WWWWL; goles esperados (Poisson) 3.00; Últimos 5: Real Salt Lake (6 anotados / 7 recibidos goles) vs Vancouver Whitecaps (13 anotados / 3 recibidos); prob. modelo 58%; EV -5.0%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401933725",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-27 21:00",
+              "oddsEstimated": false,
+              "verified": true,
+              "stadium": "America First Field",
+              "singleReturn": 165.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+              "Busca cada partido y coloca una apuesta SIMPLE independiente en cada selección.",
+              "Apuesta el mismo monto en cada una (ej. $100)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con las Simples?",
+              "match_examples": [
+                {
+                  "match": "Millonarios vs. América de Cali",
+                  "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                  "explanation": "Si se cumple cobras $153.00 (+$53.00 neto)."
+                },
+                {
+                  "match": "Deportivo Cali vs. Atlético Bucaramanga",
+                  "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
+                  "explanation": "Si se cumple cobras $151.00 (+$51.00 neto)."
+                },
+                {
+                  "match": "Real Salt Lake vs. Vancouver Whitecaps",
+                  "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+                  "explanation": "Si se cumple cobras $165.00 (+$65.00 neto)."
+                }
+              ],
+              "payout_example": "Con $100 por selección: los 3 aciertos pagan $469.00."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (27 NOVIEMBRE)\n1. ⚽ Millonarios vs. América de Cali: Más de 1.5 Goles Totales (Over 1.5) @ 1.53\n2. ⚽ Deportivo Cali vs. Atlético Bucaramanga: Menos de 2.5 Goles Totales (Under 2.5) @ 1.51\n3. ⚽ Real Salt Lake vs. Vancouver Whitecaps: Más de 2.5 Goles Totales (Over 2.5) @ 1.65"
+          }
+        },
+        "modo_b_sistema": {
+          "id": "STRATEGY-MODO-B",
+          "modeName": "Modo B: Sistema 2 de 3 (Trixie / Round Robin 100% Fútbol)",
+          "modeShort": "Modo B: Sistema 2/3 (Seguro contra 1 Fallo)",
+          "badge": "SEGURO CONTRA 1 FALLO",
+          "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+          "tagColor": "cyan",
+          "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
+          "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+          "expectedWinRate": "65.4%",
+          "combinedEv": "-12.4%",
+          "recommendedStake": "$25 por combinación ($100 total)",
+          "riskLevel": "MEDIO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Millonarios vs. América de Cali",
+              "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+              "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+              "odds": 1.53,
+              "confidencePct": 62,
+              "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 1.5
+                }
+              ],
+              "espnEventId": "401936054",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-27 19:40",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Deportivo Cali vs. Atlético Bucaramanga",
+              "tournament": "Liga BetPlay (Colombia) (17:35 CST)",
+              "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
+              "odds": 1.51,
+              "confidencePct": 62,
+              "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Deportivo Cali LDDDW vs Atlético Bucaramanga LDWWD; goles esperados (Poisson) 2.22; Últimos 5: Deportivo Cali (5 anotados / 4 recibidos goles) vs Atlético Bucaramanga (9 anotados / 7 recibidos); prob. modelo 62%; EV -6.5%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401936055",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-27 17:35",
+              "oddsEstimated": false,
+              "verified": true
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+              "match": "Real Salt Lake vs. Vancouver Whitecaps",
+              "tournament": "MLS (21:00 CST)",
+              "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+              "odds": 1.65,
+              "confidencePct": 58,
+              "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Real Salt Lake LWWLW vs Vancouver Whitecaps WWWWL; goles esperados (Poisson) 3.00; Últimos 5: Real Salt Lake (6 anotados / 7 recibidos goles) vs Vancouver Whitecaps (13 anotados / 3 recibidos); prob. modelo 58%; EV -5.0%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "over",
+                  "line": 2.5
+                }
+              ],
+              "espnEventId": "401933725",
+              "espnLeague": "usa.1",
+              "kickoffLocal": "2026-11-27 21:00",
+              "oddsEstimated": false,
+              "verified": true
+            }
+          ],
+          "combinations": [
+            {
+              "name": "Doble 1 (⚽ Millonarios + ⚽ Deportivo Cali)",
+              "odds": 2.31,
+              "formula": "1.53 × 1.51"
+            },
+            {
+              "name": "Doble 2 (⚽ Millonarios + ⚽ Real Salt Lake)",
+              "odds": 2.52,
+              "formula": "1.53 × 1.65"
+            },
+            {
+              "name": "Doble 3 (⚽ Deportivo Cali + ⚽ Real Salt Lake)",
+              "odds": 2.49,
+              "formula": "1.51 × 1.65"
+            },
+            {
+              "name": "Triple (Pleno 3/3)",
+              "odds": 3.81,
+              "formula": "1.53 × 1.51 × 1.65"
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Agrega las 3 selecciones al cupón.",
+              "Elige 'Sistema' → 'Trixie' (3 dobles + 1 triple).",
+              "Apuesta $25 por línea ($100 total)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se cobra con el Sistema 2/3?",
+              "match_examples": [
+                {
+                  "match": "Escenario 2 de 3 (Millonarios + Deportivo Cali)",
+                  "min_result": "Fallan solo el tercero",
+                  "explanation": "Cobras la Doble 1: $57.75."
+                },
+                {
+                  "match": "Escenario 2 de 3 (Millonarios + Real Salt Lake)",
+                  "min_result": "Falla solo el segundo",
+                  "explanation": "Cobras la Doble 2: $63.00."
+                },
+                {
+                  "match": "Escenario Pleno 3 de 3",
+                  "min_result": "Aciertan los 3",
+                  "explanation": "Cobras $278.25."
+                }
+              ],
+              "payout_example": "Con $100 cobras hasta $278.25 si aciertan los 3."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (27 NOVIEMBRE)\n• Pick A: ⚽ Millonarios vs. América de Cali (Más de 1.5 Goles Totales (Over 1.5)) @ 1.53\n• Pick B: ⚽ Deportivo Cali vs. Atlético Bucaramanga (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.51\n• Pick C: ⚽ Real Salt Lake vs. Vancouver Whitecaps (Más de 2.5 Goles Totales (Over 2.5)) @ 1.65"
+          }
+        },
+        "modo_c_banker": {
+          "id": "STRATEGY-MODO-C",
+          "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
+          "modeShort": "Modo C: Doble Banker (@ 1.33x)",
+          "badge": "BAJA VOLATILIDAD",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "tagColor": "amber",
+          "description": "Combinada de 2 piernas de alta probabilidad (Millonarios vs. América de Cali y Deportivo Cali vs. Atlético Bucaramanga).",
+          "totalOdds": 1.33,
+          "fairOdds": 1.59,
+          "expectedWinRate": "62.7%",
+          "combinedEv": "-16.6%",
+          "recommendedStake": "2.0% – 3.0% Bankroll",
+          "riskLevel": "BAJO",
+          "picks": [
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+              "match": "Millonarios vs. América de Cali",
+              "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+              "selection": "Millonarios Doble Oportunidad (1X)",
+              "odds": 1.18,
+              "confidencePct": 77,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.18; prob. de mercado sin margen 78%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 77%; EV -9.2%.",
+              "markets": [
+                {
+                  "type": "DC",
+                  "side": "1X"
+                }
+              ],
+              "espnEventId": "401936054",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-27 19:40",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Estadio Nemesio Camacho El Campín",
+              "singleReturn": 118.0
+            },
+            {
+              "sourceName": "ESPN / DraftKings",
+              "sport": "Football",
+              "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+              "match": "Deportivo Cali vs. Atlético Bucaramanga",
+              "tournament": "Liga BetPlay (Colombia) (17:35 CST)",
+              "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "odds": 1.13,
+              "confidencePct": 82,
+              "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.13; prob. de mercado sin margen 82%; forma últimos 5 Deportivo Cali LDDDW vs Atlético Bucaramanga LDWWD; goles esperados (Poisson) 2.22; Últimos 5: Deportivo Cali (5 anotados / 4 recibidos goles) vs Atlético Bucaramanga (9 anotados / 7 recibidos); prob. modelo 82%; EV -7.7%.",
+              "markets": [
+                {
+                  "type": "TOTAL",
+                  "side": "under",
+                  "line": 3.5
+                }
+              ],
+              "espnEventId": "401936055",
+              "espnLeague": "col.1",
+              "kickoffLocal": "2026-11-27 17:35",
+              "oddsEstimated": true,
+              "verified": true,
+              "stadium": "Deportivo Cali",
+              "singleReturn": 113.0
+            }
+          ],
+          "real_life_example": {
+            "bookie_steps": [
+              "Abre tu casa de apuestas.",
+              "Selecciona: Millonarios vs. América de Cali (Millonarios Doble Oportunidad (1X)) y Deportivo Cali vs. Atlético Bucaramanga (Menos de 3.5 Goles Totales (Under 3.5)).",
+              "Coloca una Combinada / Parlay. Cuota aprox.: 1.33x (verifica la cuota real en tu casa)."
+            ],
+            "winning_scenario": {
+              "title": "¿Cómo se gana con la Doble Banker?",
+              "match_examples": [
+                {
+                  "match": "Millonarios vs. América de Cali",
+                  "min_result": "Millonarios Doble Oportunidad (1X)",
+                  "explanation": "Probabilidad modelo 77%."
+                },
+                {
+                  "match": "Deportivo Cali vs. Atlético Bucaramanga",
+                  "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
+                  "explanation": "Probabilidad modelo 82%."
+                }
+              ],
+              "payout_example": "Si ambas se cumplen, con $100 cobras $133.00 (+$33.00 neto)."
+            },
+            "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (27 NOVIEMBRE)\n1. ⚽ Millonarios vs. América de Cali (Millonarios Doble Oportunidad (1X)) @ 1.18\n2. ⚽ Deportivo Cali vs. Atlético Bucaramanga (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.13"
+          }
+        }
+      },
+      "metrics": {
+        "totalModes": 3,
+        "simulatedTotalStake": 500.0,
+        "evaluated": false,
+        "netPnL": 0.0,
+        "roiPct": "0.0%"
+      },
+      "has_hybrid_edition": true,
+      "hybrid_edition": {
+        "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+        "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+        "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Millonarios vs. América de Cali con Boston Celtics vs. Atlanta Hawks y Toronto Raptors vs. Brooklyn Nets.",
+        "active_sports": [
+          "Football",
+          "Basketball"
+        ],
+        "expectedWinRate": "71.1%",
+        "avgOdds": 1.35,
+        "combinedEv": "-4.6%",
+        "picks": [
+          {
+            "sourceName": "ESPN / DraftKings",
+            "sport": "Football",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "match": "Millonarios vs. América de Cali",
+            "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.53,
+            "confidencePct": 62,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
+            "markets": [
+              {
+                "type": "TOTAL",
+                "side": "over",
+                "line": 1.5
+              }
+            ],
+            "espnEventId": "401936054",
+            "espnLeague": "col.1",
+            "kickoffLocal": "2026-11-27 19:40",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Estadio Nemesio Camacho El Campín",
+            "singleReturn": 153.0,
+            "safeSelection": "Millonarios Doble Oportunidad (1X)",
+            "safeOdds": 1.18
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Boston Celtics vs. Atlanta Hawks",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Boston Celtics Ganador Directo (Moneyline)",
+            "odds": 1.26,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909330",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 19:00",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "TD Garden",
+            "singleReturn": 126.0,
+            "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+            "safeOdds": 1.26
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Toronto Raptors vs. Brooklyn Nets",
+            "tournament": "NBA 2026-27 (18:30 CST)",
+            "selection": "Toronto Raptors Ganador Directo (Moneyline)",
+            "odds": 1.27,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -374 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Toronto Raptors — vs Brooklyn Nets —; Predictor Oficial ESPN: Toronto Raptors 74.5% vs Brooklyn Nets 25.5%; Últimos 5: Toronto Raptors (417 anotados / 432 recibidos pts) vs Brooklyn Nets (561 anotados / 624 recibidos); prob. modelo 76%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909329",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 18:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Scotiabank Arena",
+            "singleReturn": 127.0,
+            "safeSelection": "Toronto Raptors Ganador Directo (Moneyline)",
+            "safeOdds": 1.27
+          }
+        ],
+        "strategies": {
+          "modo_a_simples": {
+            "id": "STRATEGY-HYBRID-A",
+            "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+            "modeShort": "Modo A: Simples Híbridas (71.1% Win Rate)",
+            "badge": "MÁXIMO WIN RATE HÍBRIDO",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "tagColor": "purple",
+            "description": "3 Selecciones multideporte de élite para el Viernes 27 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+            "avgOdds": 1.35,
+            "expectedWinRate": "71.1%",
+            "combinedEv": "-4.6%",
+            "recommendedStake": "1.0% por selección (Flat Staking)",
+            "riskLevel": "MÍNIMO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Millonarios vs. América de Cali",
+                "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+                "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+                "odds": 1.53,
+                "confidencePct": 62,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
+                "markets": [
+                  {
+                    "type": "TOTAL",
+                    "side": "over",
+                    "line": 1.5
+                  }
+                ],
+                "espnEventId": "401936054",
+                "espnLeague": "col.1",
+                "kickoffLocal": "2026-11-27 19:40",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Estadio Nemesio Camacho El Campín",
+                "singleReturn": 153.0,
+                "safeSelection": "Millonarios Doble Oportunidad (1X)",
+                "safeOdds": 1.18
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Boston Celtics vs. Atlanta Hawks",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.26,
+                "confidencePct": 76,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909330",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-27 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "TD Garden",
+                "singleReturn": 126.0,
+                "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+                "safeOdds": 1.26
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Toronto Raptors vs. Brooklyn Nets",
+                "tournament": "NBA 2026-27 (18:30 CST)",
+                "selection": "Toronto Raptors Ganador Directo (Moneyline)",
+                "odds": 1.27,
+                "confidencePct": 76,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -374 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Toronto Raptors — vs Brooklyn Nets —; Predictor Oficial ESPN: Toronto Raptors 74.5% vs Brooklyn Nets 25.5%; Últimos 5: Toronto Raptors (417 anotados / 432 recibidos pts) vs Brooklyn Nets (561 anotados / 624 recibidos); prob. modelo 76%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909329",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-27 18:30",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "Scotiabank Arena",
+                "singleReturn": 127.0,
+                "safeSelection": "Toronto Raptors Ganador Directo (Moneyline)",
+                "safeOdds": 1.27
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
+                "Coloca 3 apuestas SIMPLES independientes: Millonarios vs. América de Cali, Boston Celtics vs. Atlanta Hawks y Toronto Raptors vs. Brooklyn Nets.",
+                "Apuesta el mismo monto en cada una (ej. $100)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con las Simples Híbridas?",
+                "match_examples": [
+                  {
+                    "match": "Millonarios vs. América de Cali",
+                    "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                    "explanation": "Cobras $153.00."
+                  },
+                  {
+                    "match": "Boston Celtics vs. Atlanta Hawks",
+                    "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $126.00."
+                  },
+                  {
+                    "match": "Toronto Raptors vs. Brooklyn Nets",
+                    "min_result": "Toronto Raptors Ganador Directo (Moneyline)",
+                    "explanation": "Cobras $127.00."
+                  }
+                ],
+                "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $406.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (27 NOVIEMBRE)\n1. Millonarios vs. América de Cali: Más de 1.5 Goles Totales (Over 1.5) @ 1.53\n2. Boston Celtics vs. Atlanta Hawks: Boston Celtics Ganador Directo (Moneyline) @ 1.26\n3. Toronto Raptors vs. Brooklyn Nets: Toronto Raptors Ganador Directo (Moneyline) @ 1.27"
+            }
+          },
+          "modo_b_sistema": {
+            "id": "STRATEGY-HYBRID-B",
+            "modeName": "Modo B: Sistema 2 de 3 Híbrido (Trixie / Round Robin)",
+            "modeShort": "Modo B: Sistema 2/3 Híbrido (Seguro contra 1 Fallo)",
+            "badge": "SEGURO MULTIDEPORTE",
+            "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+            "tagColor": "cyan",
+            "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
+            "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
+            "expectedWinRate": "80.1%",
+            "combinedEv": "-10.0%",
+            "recommendedStake": "$25 por combinación ($100 total)",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Millonarios vs. América de Cali",
+                "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+                "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+                "odds": 1.53,
+                "confidencePct": 62,
+                "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
+                "markets": [
+                  {
+                    "type": "TOTAL",
+                    "side": "over",
+                    "line": 1.5
+                  }
+                ],
+                "espnEventId": "401936054",
+                "espnLeague": "col.1",
+                "kickoffLocal": "2026-11-27 19:40",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Boston Celtics vs. Atlanta Hawks",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.26,
+                "confidencePct": 76,
+                "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909330",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-27 19:00",
+                "oddsEstimated": false,
+                "verified": true
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Toronto Raptors vs. Brooklyn Nets",
+                "tournament": "NBA 2026-27 (18:30 CST)",
+                "selection": "Toronto Raptors Ganador Directo (Moneyline)",
+                "odds": 1.27,
+                "confidencePct": 76,
+                "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -374 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Toronto Raptors — vs Brooklyn Nets —; Predictor Oficial ESPN: Toronto Raptors 74.5% vs Brooklyn Nets 25.5%; Últimos 5: Toronto Raptors (417 anotados / 432 recibidos pts) vs Brooklyn Nets (561 anotados / 624 recibidos); prob. modelo 76%; EV -4.0%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909329",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-27 18:30",
+                "oddsEstimated": false,
+                "verified": true
+              }
+            ],
+            "combinations": [
+              {
+                "name": "Doble 1 (Millonarios + Boston Celtics)",
+                "odds": 1.93,
+                "formula": "1.53 × 1.26"
+              },
+              {
+                "name": "Doble 2 (Millonarios + Toronto Raptors)",
+                "odds": 1.94,
+                "formula": "1.53 × 1.27"
+              },
+              {
+                "name": "Doble 3 (Boston Celtics + Toronto Raptors)",
+                "odds": 1.6,
+                "formula": "1.26 × 1.27"
+              },
+              {
+                "name": "Triple (Pleno Multideporte)",
+                "odds": 2.45,
+                "formula": "1.53 × 1.26 × 1.27"
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Selecciona los 3 eventos en el cupón.",
+                "Elige pestaña Sistema → Trixie.",
+                "Apuesta $25 por línea ($100 total)."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se cobra con el Sistema Híbrido?",
+                "match_examples": [
+                  {
+                    "match": "Escenario 2 de 3 (Millonarios + Boston Celtics)",
+                    "min_result": "Ganan los 2 primeros",
+                    "explanation": "Cobras Doble 1 (@ 1.93x): $48.25 amortizando."
+                  },
+                  {
+                    "match": "Escenario Pleno 3 de 3",
+                    "min_result": "Cumplen los 3",
+                    "explanation": "Cobras las 3 Dobles + Triple: $198.00."
+                  }
+                ],
+                "payout_example": "Con $100 cobras hasta $198.00 si aciertan los 3, o amortizas si 1 falla."
+              },
+              "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (27 NOVIEMBRE)\n• Pick A: Millonarios vs. América de Cali (Más de 1.5 Goles Totales (Over 1.5)) @ 1.53\n• Pick B: Boston Celtics vs. Atlanta Hawks (Boston Celtics Ganador Directo (Moneyline)) @ 1.26\n• Pick C: Toronto Raptors vs. Brooklyn Nets (Toronto Raptors Ganador Directo (Moneyline)) @ 1.27"
+            }
+          },
+          "modo_c_banker": {
+            "id": "STRATEGY-HYBRID-C",
+            "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.49x)",
+            "modeShort": "Modo C: Doble Banker Híbrida (@ 1.49x)",
+            "badge": "DUPLICADOR HÍBRIDO",
+            "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+            "tagColor": "amber",
+            "description": "Combinada estricta de solo 2 eventos de altísima certeza: Millonarios vs. América de Cali y Boston Celtics vs. Atlanta Hawks.",
+            "totalOdds": 1.49,
+            "fairOdds": 1.71,
+            "expectedWinRate": "58.4%",
+            "combinedEv": "-13.0%",
+            "recommendedStake": "2.5% – 3.0% Bankroll",
+            "riskLevel": "BAJO",
+            "picks": [
+              {
+                "sourceName": "ESPN / DraftKings",
+                "sport": "Football",
+                "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+                "match": "Millonarios vs. América de Cali",
+                "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+                "selection": "Millonarios Doble Oportunidad (1X)",
+                "odds": 1.18,
+                "confidencePct": 77,
+                "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.18; prob. de mercado sin margen 78%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 77%; EV -9.2%.",
+                "markets": [
+                  {
+                    "type": "DC",
+                    "side": "1X"
+                  }
+                ],
+                "espnEventId": "401936054",
+                "espnLeague": "col.1",
+                "kickoffLocal": "2026-11-27 19:40",
+                "oddsEstimated": true,
+                "verified": true,
+                "stadium": "Estadio Nemesio Camacho El Campín",
+                "singleReturn": 118.0
+              },
+              {
+                "sourceName": "NBA Second Spectrum",
+                "sport": "Basketball",
+                "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+                "match": "Boston Celtics vs. Atlanta Hawks",
+                "tournament": "NBA 2026-27 (19:00 CST)",
+                "selection": "Boston Celtics Ganador Directo (Moneyline)",
+                "odds": 1.26,
+                "confidencePct": 76,
+                "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
+                "markets": [
+                  {
+                    "type": "ML",
+                    "side": "home"
+                  }
+                ],
+                "espnEventId": "401909330",
+                "espnLeague": "basketball/nba",
+                "kickoffLocal": "2026-11-27 19:00",
+                "oddsEstimated": false,
+                "verified": true,
+                "stadium": "TD Garden",
+                "singleReturn": 126.0
+              }
+            ],
+            "real_life_example": {
+              "bookie_steps": [
+                "Abre tu casa de apuestas.",
+                "Selecciona: Millonarios vs. América de Cali y Boston Celtics vs. Atlanta Hawks.",
+                "Coloca Parlay / Combinada @ 1.49x."
+              ],
+              "winning_scenario": {
+                "title": "¿Cómo se gana con la Doble Banker Híbrida?",
+                "match_examples": [
+                  {
+                    "match": "Millonarios vs. América de Cali",
+                    "min_result": "Millonarios Doble Oportunidad (1X)",
+                    "explanation": "Probabilidad modelo 77%."
+                  },
+                  {
+                    "match": "Boston Celtics vs. Atlanta Hawks",
+                    "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                    "explanation": "Probabilidad modelo 76%."
+                  }
+                ],
+                "payout_example": "Si ambos cumplen, con $100 cobras $149.00."
+              },
+              "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (27 NOVIEMBRE)\n1. Millonarios vs. América de Cali (Millonarios Doble Oportunidad (1X)) @ 1.18\n2. Boston Celtics vs. Atlanta Hawks (Boston Celtics Ganador Directo (Moneyline)) @ 1.26"
             }
           }
         }

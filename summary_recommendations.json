@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26 16:40:33",
+  "generated_at": "2026-11-27 16:24:27",
   "hybrid_mode": true,
-  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, NFL)",
+  "hybrid_trigger_reason": "EDICIÓN DUAL: 100% Fútbol (3 partidos) + Modo Híbrido (Football, Basketball)",
   "active_sports": [
     "Football"
   ],
   "verification_meta": {
     "verified": true,
-    "verified_date": "2026-11-26",
-    "verified_at": "2026-11-26 16:40:33",
+    "verified_date": "2026-11-27",
+    "verified_at": "2026-11-27 16:24:27",
     "verification_status": "PARTIDOS Y CUOTAS REALES (ESPN API / DraftKings)",
     "auditor": "Black Royal — pronostico_diario.py",
     "total_matches_verified": 3
@@ -17,76 +17,52 @@
     "modo_a_simples": {
       "id": "STRATEGY-MODO-A",
       "modeName": "Modo A: Apuestas Simples de Valor (100% Fútbol)",
-      "modeShort": "Modo A: Simples Fútbol (58.1% prob. media)",
+      "modeShort": "Modo A: Simples Fútbol (60.4% prob. media)",
       "badge": "MAYOR PROBABILIDAD",
       "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
       "tagColor": "emerald",
-      "description": "3 selecciones con cuotas reales DraftKings para el Jueves 26 de Noviembre (Brasileirão Série A, Liga MX). Cada acierto cobra por separado.",
-      "avgOdds": 1.63,
-      "expectedWinRate": "58.1%",
-      "combinedEv": "-6.6%",
+      "description": "3 selecciones con cuotas reales DraftKings para el Viernes 27 de Noviembre (Liga BetPlay (Colombia), MLS). Cada acierto cobra por separado.",
+      "avgOdds": 1.56,
+      "expectedWinRate": "60.4%",
+      "combinedEv": "-5.8%",
       "recommendedStake": "1.0% por selección (Flat Staking)",
-      "riskLevel": "MEDIO",
+      "riskLevel": "BAJO",
       "picks": [
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "São Paulo vs. Remo",
-          "tournament": "Brasileirão Série A (17:00 CST)",
-          "selection": "São Paulo Ganador Directo (1)",
-          "odds": 1.37,
-          "confidencePct": 68,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
+          "match": "Millonarios vs. América de Cali",
+          "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.53,
+          "confidencePct": 62,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "over",
+              "line": 1.5
             }
           ],
-          "espnEventId": "401841329",
-          "espnLeague": "bra.1",
-          "kickoffLocal": "2026-11-26 17:00",
+          "espnEventId": "401936054",
+          "espnLeague": "col.1",
+          "kickoffLocal": "2026-11-27 19:40",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Estádio Cícero Pompeu de Toledo",
-          "singleReturn": 137.0
+          "stadium": "Estadio Nemesio Camacho El Campín",
+          "singleReturn": 153.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "León vs. Cruz Azul",
-          "tournament": "Liga MX (21:10 CST)",
-          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-          "odds": 1.71,
-          "confidencePct": 54,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
-          "markets": [
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 2.5
-            }
-          ],
-          "espnEventId": "401931995",
-          "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-26 21:10",
-          "oddsEstimated": false,
-          "verified": true,
-          "stadium": "Estadio León",
-          "singleReturn": 171.0
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Pachuca vs. Guadalajara",
-          "tournament": "Liga MX (19:00 CST)",
+          "match": "Deportivo Cali vs. Atlético Bucaramanga",
+          "tournament": "Liga BetPlay (Colombia) (17:35 CST)",
           "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.8,
-          "confidencePct": 52,
-          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -125 → @ 1.80; prob. de mercado sin margen 52%; forma últimos 5 Pachuca WWWWL vs Guadalajara WDWWW; goles esperados (Poisson) 2.59; Últimos 5: Pachuca (12 anotados / 4 recibidos goles) vs Guadalajara (8 anotados / 3 recibidos); prob. modelo 52%; EV -6.4%.",
+          "odds": 1.51,
+          "confidencePct": 62,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Deportivo Cali LDDDW vs Atlético Bucaramanga LDWWD; goles esperados (Poisson) 2.22; Últimos 5: Deportivo Cali (5 anotados / 4 recibidos goles) vs Atlético Bucaramanga (9 anotados / 7 recibidos); prob. modelo 62%; EV -6.5%.",
           "markets": [
             {
               "type": "TOTAL",
@@ -94,13 +70,38 @@
               "line": 2.5
             }
           ],
-          "espnEventId": "401931982",
-          "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-26 19:00",
+          "espnEventId": "401936055",
+          "espnLeague": "col.1",
+          "kickoffLocal": "2026-11-27 17:35",
           "oddsEstimated": false,
           "verified": true,
-          "stadium": "Estadio Hidalgo",
-          "singleReturn": 180.0
+          "stadium": "Deportivo Cali",
+          "singleReturn": 151.0
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Real Salt Lake vs. Vancouver Whitecaps",
+          "tournament": "MLS (21:00 CST)",
+          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+          "odds": 1.65,
+          "confidencePct": 58,
+          "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Real Salt Lake LWWLW vs Vancouver Whitecaps WWWWL; goles esperados (Poisson) 3.00; Últimos 5: Real Salt Lake (6 anotados / 7 recibidos goles) vs Vancouver Whitecaps (13 anotados / 3 recibidos); prob. modelo 58%; EV -5.0%.",
+          "markets": [
+            {
+              "type": "TOTAL",
+              "side": "over",
+              "line": 2.5
+            }
+          ],
+          "espnEventId": "401933725",
+          "espnLeague": "usa.1",
+          "kickoffLocal": "2026-11-27 21:00",
+          "oddsEstimated": false,
+          "verified": true,
+          "stadium": "America First Field",
+          "singleReturn": 165.0
         }
       ],
       "real_life_example": {
@@ -113,24 +114,24 @@
           "title": "¿Cómo se cobra con las Simples?",
           "match_examples": [
             {
-              "match": "São Paulo vs. Remo",
-              "min_result": "São Paulo Ganador Directo (1)",
-              "explanation": "Si se cumple cobras $137.00 (+$37.00 neto)."
+              "match": "Millonarios vs. América de Cali",
+              "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+              "explanation": "Si se cumple cobras $153.00 (+$53.00 neto)."
             },
             {
-              "match": "León vs. Cruz Azul",
-              "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
-              "explanation": "Si se cumple cobras $171.00 (+$71.00 neto)."
-            },
-            {
-              "match": "Pachuca vs. Guadalajara",
+              "match": "Deportivo Cali vs. Atlético Bucaramanga",
               "min_result": "Menos de 2.5 Goles Totales (Under 2.5)",
-              "explanation": "Si se cumple cobras $180.00 (+$80.00 neto)."
+              "explanation": "Si se cumple cobras $151.00 (+$51.00 neto)."
+            },
+            {
+              "match": "Real Salt Lake vs. Vancouver Whitecaps",
+              "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
+              "explanation": "Si se cumple cobras $165.00 (+$65.00 neto)."
             }
           ],
-          "payout_example": "Con $100 por selección: los 3 aciertos pagan $488.00."
+          "payout_example": "Con $100 por selección: los 3 aciertos pagan $469.00."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (26 NOVIEMBRE)\n1. ⚽ São Paulo vs. Remo: São Paulo Ganador Directo (1) @ 1.37\n2. ⚽ León vs. Cruz Azul: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. ⚽ Pachuca vs. Guadalajara: Menos de 2.5 Goles Totales (Under 2.5) @ 1.80"
+        "copy_text": "👑 BLACK ROYAL — MODO A: SIMPLES (27 NOVIEMBRE)\n1. ⚽ Millonarios vs. América de Cali: Más de 1.5 Goles Totales (Over 1.5) @ 1.53\n2. ⚽ Deportivo Cali vs. Atlético Bucaramanga: Menos de 2.5 Goles Totales (Under 2.5) @ 1.51\n3. ⚽ Real Salt Lake vs. Vancouver Whitecaps: Más de 2.5 Goles Totales (Over 2.5) @ 1.65"
       }
     },
     "modo_b_sistema": {
@@ -142,8 +143,8 @@
       "tagColor": "cyan",
       "description": "4 combinadas automáticas (3 Dobles + 1 Triple) con las mismas 3 selecciones del Modo A.",
       "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-      "expectedWinRate": "62.2%",
-      "combinedEv": "-14.4%",
+      "expectedWinRate": "65.4%",
+      "combinedEv": "-12.4%",
       "recommendedStake": "$25 por combinación ($100 total)",
       "riskLevel": "MEDIO",
       "picks": [
@@ -151,21 +152,22 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "São Paulo vs. Remo",
-          "tournament": "Brasileirão Série A (17:00 CST)",
-          "selection": "São Paulo Ganador Directo (1)",
-          "odds": 1.37,
-          "confidencePct": 68,
-          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
+          "match": "Millonarios vs. América de Cali",
+          "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+          "odds": 1.53,
+          "confidencePct": 62,
+          "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
           "markets": [
             {
-              "type": "ML",
-              "side": "home"
+              "type": "TOTAL",
+              "side": "over",
+              "line": 1.5
             }
           ],
-          "espnEventId": "401841329",
-          "espnLeague": "bra.1",
-          "kickoffLocal": "2026-11-26 17:00",
+          "espnEventId": "401936054",
+          "espnLeague": "col.1",
+          "kickoffLocal": "2026-11-27 19:40",
           "oddsEstimated": false,
           "verified": true
         },
@@ -173,35 +175,12 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "León vs. Cruz Azul",
-          "tournament": "Liga MX (21:10 CST)",
-          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-          "odds": 1.71,
-          "confidencePct": 54,
-          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
-          "markets": [
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 2.5
-            }
-          ],
-          "espnEventId": "401931995",
-          "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-26 21:10",
-          "oddsEstimated": false,
-          "verified": true
-        },
-        {
-          "sourceName": "ESPN / DraftKings",
-          "sport": "Football",
-          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
-          "match": "Pachuca vs. Guadalajara",
-          "tournament": "Liga MX (19:00 CST)",
+          "match": "Deportivo Cali vs. Atlético Bucaramanga",
+          "tournament": "Liga BetPlay (Colombia) (17:35 CST)",
           "selection": "Menos de 2.5 Goles Totales (Under 2.5)",
-          "odds": 1.8,
-          "confidencePct": 52,
-          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -125 → @ 1.80; prob. de mercado sin margen 52%; forma últimos 5 Pachuca WWWWL vs Guadalajara WDWWW; goles esperados (Poisson) 2.59; Últimos 5: Pachuca (12 anotados / 4 recibidos goles) vs Guadalajara (8 anotados / 3 recibidos); prob. modelo 52%; EV -6.4%.",
+          "odds": 1.51,
+          "confidencePct": 62,
+          "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -195 → @ 1.51; prob. de mercado sin margen 62%; forma últimos 5 Deportivo Cali LDDDW vs Atlético Bucaramanga LDWWD; goles esperados (Poisson) 2.22; Últimos 5: Deportivo Cali (5 anotados / 4 recibidos goles) vs Atlético Bucaramanga (9 anotados / 7 recibidos); prob. modelo 62%; EV -6.5%.",
           "markets": [
             {
               "type": "TOTAL",
@@ -209,33 +188,56 @@
               "line": 2.5
             }
           ],
-          "espnEventId": "401931982",
-          "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-26 19:00",
+          "espnEventId": "401936055",
+          "espnLeague": "col.1",
+          "kickoffLocal": "2026-11-27 17:35",
+          "oddsEstimated": false,
+          "verified": true
+        },
+        {
+          "sourceName": "ESPN / DraftKings",
+          "sport": "Football",
+          "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
+          "match": "Real Salt Lake vs. Vancouver Whitecaps",
+          "tournament": "MLS (21:00 CST)",
+          "selection": "Más de 2.5 Goles Totales (Over 2.5)",
+          "odds": 1.65,
+          "confidencePct": 58,
+          "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -155 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Real Salt Lake LWWLW vs Vancouver Whitecaps WWWWL; goles esperados (Poisson) 3.00; Últimos 5: Real Salt Lake (6 anotados / 7 recibidos goles) vs Vancouver Whitecaps (13 anotados / 3 recibidos); prob. modelo 58%; EV -5.0%.",
+          "markets": [
+            {
+              "type": "TOTAL",
+              "side": "over",
+              "line": 2.5
+            }
+          ],
+          "espnEventId": "401933725",
+          "espnLeague": "usa.1",
+          "kickoffLocal": "2026-11-27 21:00",
           "oddsEstimated": false,
           "verified": true
         }
       ],
       "combinations": [
         {
-          "name": "Doble 1 (⚽ São Paulo + ⚽ León)",
-          "odds": 2.34,
-          "formula": "1.37 × 1.71"
+          "name": "Doble 1 (⚽ Millonarios + ⚽ Deportivo Cali)",
+          "odds": 2.31,
+          "formula": "1.53 × 1.51"
         },
         {
-          "name": "Doble 2 (⚽ São Paulo + ⚽ Pachuca)",
-          "odds": 2.47,
-          "formula": "1.37 × 1.8"
+          "name": "Doble 2 (⚽ Millonarios + ⚽ Real Salt Lake)",
+          "odds": 2.52,
+          "formula": "1.53 × 1.65"
         },
         {
-          "name": "Doble 3 (⚽ León + ⚽ Pachuca)",
-          "odds": 3.08,
-          "formula": "1.71 × 1.8"
+          "name": "Doble 3 (⚽ Deportivo Cali + ⚽ Real Salt Lake)",
+          "odds": 2.49,
+          "formula": "1.51 × 1.65"
         },
         {
           "name": "Triple (Pleno 3/3)",
-          "odds": 4.22,
-          "formula": "1.37 × 1.71 × 1.8"
+          "odds": 3.81,
+          "formula": "1.53 × 1.51 × 1.65"
         }
       ],
       "real_life_example": {
@@ -248,38 +250,38 @@
           "title": "¿Cómo se cobra con el Sistema 2/3?",
           "match_examples": [
             {
-              "match": "Escenario 2 de 3 (São Paulo + León)",
+              "match": "Escenario 2 de 3 (Millonarios + Deportivo Cali)",
               "min_result": "Fallan solo el tercero",
-              "explanation": "Cobras la Doble 1: $58.50."
+              "explanation": "Cobras la Doble 1: $57.75."
             },
             {
-              "match": "Escenario 2 de 3 (São Paulo + Pachuca)",
+              "match": "Escenario 2 de 3 (Millonarios + Real Salt Lake)",
               "min_result": "Falla solo el segundo",
-              "explanation": "Cobras la Doble 2: $61.75."
+              "explanation": "Cobras la Doble 2: $63.00."
             },
             {
               "match": "Escenario Pleno 3 de 3",
               "min_result": "Aciertan los 3",
-              "explanation": "Cobras $302.75."
+              "explanation": "Cobras $278.25."
             }
           ],
-          "payout_example": "Con $100 cobras hasta $302.75 si aciertan los 3."
+          "payout_example": "Con $100 cobras hasta $278.25 si aciertan los 3."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (26 NOVIEMBRE)\n• Pick A: ⚽ São Paulo vs. Remo (São Paulo Ganador Directo (1)) @ 1.37\n• Pick B: ⚽ León vs. Cruz Azul (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: ⚽ Pachuca vs. Guadalajara (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.80"
+        "copy_text": "👑 BLACK ROYAL — MODO B: SISTEMA 2/3 (27 NOVIEMBRE)\n• Pick A: ⚽ Millonarios vs. América de Cali (Más de 1.5 Goles Totales (Over 1.5)) @ 1.53\n• Pick B: ⚽ Deportivo Cali vs. Atlético Bucaramanga (Menos de 2.5 Goles Totales (Under 2.5)) @ 1.51\n• Pick C: ⚽ Real Salt Lake vs. Vancouver Whitecaps (Más de 2.5 Goles Totales (Over 2.5)) @ 1.65"
       }
     },
     "modo_c_banker": {
       "id": "STRATEGY-MODO-C",
       "modeName": "Modo C: Doble Banker 100% Fútbol (2 Legs)",
-      "modeShort": "Modo C: Doble Banker (@ 1.70x)",
+      "modeShort": "Modo C: Doble Banker (@ 1.33x)",
       "badge": "BAJA VOLATILIDAD",
       "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
       "tagColor": "amber",
-      "description": "Combinada de 2 piernas de alta probabilidad (São Paulo vs. Remo y León vs. Cruz Azul).",
-      "totalOdds": 1.7,
-      "fairOdds": 1.88,
-      "expectedWinRate": "53.2%",
-      "combinedEv": "-9.5%",
+      "description": "Combinada de 2 piernas de alta probabilidad (Millonarios vs. América de Cali y Deportivo Cali vs. Atlético Bucaramanga).",
+      "totalOdds": 1.33,
+      "fairOdds": 1.59,
+      "expectedWinRate": "62.7%",
+      "combinedEv": "-16.6%",
       "recommendedStake": "2.0% – 3.0% Bankroll",
       "riskLevel": "BAJO",
       "picks": [
@@ -287,188 +289,183 @@
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-          "match": "São Paulo vs. Remo",
-          "tournament": "Brasileirão Série A (17:00 CST)",
-          "selection": "São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-          "odds": 1.39,
-          "confidencePct": 68,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.39; prob. de mercado sin margen 68%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -5.0%.",
+          "match": "Millonarios vs. América de Cali",
+          "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+          "selection": "Millonarios Doble Oportunidad (1X)",
+          "odds": 1.18,
+          "confidencePct": 77,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.18; prob. de mercado sin margen 78%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 77%; EV -9.2%.",
           "markets": [
             {
               "type": "DC",
               "side": "1X"
-            },
-            {
-              "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
             }
           ],
-          "espnEventId": "401841329",
-          "espnLeague": "bra.1",
-          "kickoffLocal": "2026-11-26 17:00",
+          "espnEventId": "401936054",
+          "espnLeague": "col.1",
+          "kickoffLocal": "2026-11-27 19:40",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Estádio Cícero Pompeu de Toledo",
-          "singleReturn": 139.0
+          "stadium": "Estadio Nemesio Camacho El Campín",
+          "singleReturn": 118.0
         },
         {
           "sourceName": "ESPN / DraftKings",
           "sport": "Football",
           "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-          "match": "León vs. Cruz Azul",
-          "tournament": "Liga MX (21:10 CST)",
-          "selection": "Más de 1.5 Goles Totales (Over 1.5)",
-          "odds": 1.22,
-          "confidencePct": 78,
-          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 78%; EV -5.2%.",
+          "match": "Deportivo Cali vs. Atlético Bucaramanga",
+          "tournament": "Liga BetPlay (Colombia) (17:35 CST)",
+          "selection": "Menos de 3.5 Goles Totales (Under 3.5)",
+          "odds": 1.13,
+          "confidencePct": 82,
+          "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.13; prob. de mercado sin margen 82%; forma últimos 5 Deportivo Cali LDDDW vs Atlético Bucaramanga LDWWD; goles esperados (Poisson) 2.22; Últimos 5: Deportivo Cali (5 anotados / 4 recibidos goles) vs Atlético Bucaramanga (9 anotados / 7 recibidos); prob. modelo 82%; EV -7.7%.",
           "markets": [
             {
               "type": "TOTAL",
-              "side": "over",
-              "line": 1.5
+              "side": "under",
+              "line": 3.5
             }
           ],
-          "espnEventId": "401931995",
-          "espnLeague": "mex.1",
-          "kickoffLocal": "2026-11-26 21:10",
+          "espnEventId": "401936055",
+          "espnLeague": "col.1",
+          "kickoffLocal": "2026-11-27 17:35",
           "oddsEstimated": true,
           "verified": true,
-          "stadium": "Estadio León",
-          "singleReturn": 122.0
+          "stadium": "Deportivo Cali",
+          "singleReturn": 113.0
         }
       ],
       "real_life_example": {
         "bookie_steps": [
           "Abre tu casa de apuestas.",
-          "Selecciona: São Paulo vs. Remo (São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales) y León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)).",
-          "Coloca una Combinada / Parlay. Cuota aprox.: 1.70x (verifica la cuota real en tu casa)."
+          "Selecciona: Millonarios vs. América de Cali (Millonarios Doble Oportunidad (1X)) y Deportivo Cali vs. Atlético Bucaramanga (Menos de 3.5 Goles Totales (Under 3.5)).",
+          "Coloca una Combinada / Parlay. Cuota aprox.: 1.33x (verifica la cuota real en tu casa)."
         ],
         "winning_scenario": {
           "title": "¿Cómo se gana con la Doble Banker?",
           "match_examples": [
             {
-              "match": "São Paulo vs. Remo",
-              "min_result": "São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales",
-              "explanation": "Probabilidad modelo 68%."
+              "match": "Millonarios vs. América de Cali",
+              "min_result": "Millonarios Doble Oportunidad (1X)",
+              "explanation": "Probabilidad modelo 77%."
             },
             {
-              "match": "León vs. Cruz Azul",
-              "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
-              "explanation": "Probabilidad modelo 78%."
+              "match": "Deportivo Cali vs. Atlético Bucaramanga",
+              "min_result": "Menos de 3.5 Goles Totales (Under 3.5)",
+              "explanation": "Probabilidad modelo 82%."
             }
           ],
-          "payout_example": "Si ambas se cumplen, con $100 cobras $170.00 (+$70.00 neto)."
+          "payout_example": "Si ambas se cumplen, con $100 cobras $133.00 (+$33.00 neto)."
         },
-        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (26 NOVIEMBRE)\n1. ⚽ São Paulo vs. Remo (São Paulo Doble Oportunidad (1X) + Más 1.5 Goles Totales) @ 1.39\n2. ⚽ León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
+        "copy_text": "👑 BLACK ROYAL — MODO C: DOBLE BANKER (27 NOVIEMBRE)\n1. ⚽ Millonarios vs. América de Cali (Millonarios Doble Oportunidad (1X)) @ 1.18\n2. ⚽ Deportivo Cali vs. Atlético Bucaramanga (Menos de 3.5 Goles Totales (Under 3.5)) @ 1.13"
       }
     }
   },
   "has_hybrid_edition": true,
   "hybrid_edition": {
-    "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + NFL)",
-    "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de NFL.",
-    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando São Paulo vs. Remo con León vs. Cruz Azul y Buffalo Bills vs. Kansas City Chiefs.",
+    "title": "Módulo de Arbitraje Híbrido Multideporte (Fútbol + Basketball)",
+    "subtitle": "Fusión cuantitativa del fútbol con las mejores asimetrías de Basketball.",
+    "trigger_reason": "ACTIVADO: Arbitraje multideporte combinando Millonarios vs. América de Cali con Boston Celtics vs. Atlanta Hawks y Toronto Raptors vs. Brooklyn Nets.",
     "active_sports": [
       "Football",
-      "NFL"
+      "Basketball"
     ],
-    "expectedWinRate": "60.2%",
-    "avgOdds": 1.58,
-    "combinedEv": "-5.8%",
+    "expectedWinRate": "71.1%",
+    "avgOdds": 1.35,
+    "combinedEv": "-4.6%",
     "picks": [
       {
         "sourceName": "ESPN / DraftKings",
         "sport": "Football",
         "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-        "match": "São Paulo vs. Remo",
-        "tournament": "Brasileirão Série A (17:00 CST)",
-        "selection": "São Paulo Ganador Directo (1)",
-        "odds": 1.37,
-        "confidencePct": 68,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
-        "markets": [
-          {
-            "type": "ML",
-            "side": "home"
-          }
-        ],
-        "espnEventId": "401841329",
-        "espnLeague": "bra.1",
-        "kickoffLocal": "2026-11-26 17:00",
-        "oddsEstimated": false,
-        "verified": true,
-        "stadium": "Estádio Cícero Pompeu de Toledo",
-        "singleReturn": 137.0,
-        "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
-        "safeOdds": 1.25
-      },
-      {
-        "sourceName": "ESPN / DraftKings",
-        "sport": "Football",
-        "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-        "match": "León vs. Cruz Azul",
-        "tournament": "Liga MX (21:10 CST)",
-        "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-        "odds": 1.71,
-        "confidencePct": 54,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
+        "match": "Millonarios vs. América de Cali",
+        "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+        "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+        "odds": 1.53,
+        "confidencePct": 62,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
         "markets": [
           {
             "type": "TOTAL",
             "side": "over",
-            "line": 2.5
+            "line": 1.5
           }
         ],
-        "espnEventId": "401931995",
-        "espnLeague": "mex.1",
-        "kickoffLocal": "2026-11-26 21:10",
+        "espnEventId": "401936054",
+        "espnLeague": "col.1",
+        "kickoffLocal": "2026-11-27 19:40",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Estadio León",
-        "singleReturn": 171.0,
-        "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
-        "safeOdds": 1.22
+        "stadium": "Estadio Nemesio Camacho El Campín",
+        "singleReturn": 153.0,
+        "safeSelection": "Millonarios Doble Oportunidad (1X)",
+        "safeOdds": 1.18
       },
       {
-        "sourceName": "Next Gen Stats NFL",
-        "sport": "NFL",
-        "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
-        "match": "Buffalo Bills vs. Kansas City Chiefs",
-        "tournament": "NFL 2026 (19:20 CST)",
-        "selection": "Buffalo Bills Ganador Directo (Moneyline)",
-        "odds": 1.65,
-        "confidencePct": 58,
-        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -153 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Buffalo Bills — vs Kansas City Chiefs —; Predictor Oficial ESPN: Buffalo Bills 52.6% vs Kansas City Chiefs 47.1%; Últimos 5: Buffalo Bills (149 anotados / 67 recibidos pts) vs Kansas City Chiefs (131 anotados / 80 recibidos); prob. modelo 58%; EV -3.8%.",
+        "sourceName": "NBA Second Spectrum",
+        "sport": "Basketball",
+        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+        "match": "Boston Celtics vs. Atlanta Hawks",
+        "tournament": "NBA 2026-27 (19:00 CST)",
+        "selection": "Boston Celtics Ganador Directo (Moneyline)",
+        "odds": 1.26,
+        "confidencePct": 76,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
         "markets": [
           {
             "type": "ML",
             "side": "home"
           }
         ],
-        "espnEventId": "401873082",
-        "espnLeague": "football/nfl",
-        "kickoffLocal": "2026-11-26 19:20",
+        "espnEventId": "401909330",
+        "espnLeague": "basketball/nba",
+        "kickoffLocal": "2026-11-27 19:00",
         "oddsEstimated": false,
         "verified": true,
-        "stadium": "Highmark Stadium",
-        "singleReturn": 165.0,
-        "safeSelection": "Buffalo Bills Ganador Directo (Moneyline)",
-        "safeOdds": 1.65
+        "stadium": "TD Garden",
+        "singleReturn": 126.0,
+        "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+        "safeOdds": 1.26
+      },
+      {
+        "sourceName": "NBA Second Spectrum",
+        "sport": "Basketball",
+        "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+        "match": "Toronto Raptors vs. Brooklyn Nets",
+        "tournament": "NBA 2026-27 (18:30 CST)",
+        "selection": "Toronto Raptors Ganador Directo (Moneyline)",
+        "odds": 1.27,
+        "confidencePct": 76,
+        "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -374 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Toronto Raptors — vs Brooklyn Nets —; Predictor Oficial ESPN: Toronto Raptors 74.5% vs Brooklyn Nets 25.5%; Últimos 5: Toronto Raptors (417 anotados / 432 recibidos pts) vs Brooklyn Nets (561 anotados / 624 recibidos); prob. modelo 76%; EV -4.0%.",
+        "markets": [
+          {
+            "type": "ML",
+            "side": "home"
+          }
+        ],
+        "espnEventId": "401909329",
+        "espnLeague": "basketball/nba",
+        "kickoffLocal": "2026-11-27 18:30",
+        "oddsEstimated": false,
+        "verified": true,
+        "stadium": "Scotiabank Arena",
+        "singleReturn": 127.0,
+        "safeSelection": "Toronto Raptors Ganador Directo (Moneyline)",
+        "safeOdds": 1.27
       }
     ],
     "strategies": {
       "modo_a_simples": {
         "id": "STRATEGY-HYBRID-A",
-        "modeName": "Modo A: Simples Híbridas (Fútbol + NFL)",
-        "modeShort": "Modo A: Simples Híbridas (60.2% Win Rate)",
+        "modeName": "Modo A: Simples Híbridas (Fútbol + Basketball)",
+        "modeShort": "Modo A: Simples Híbridas (71.1% Win Rate)",
         "badge": "MÁXIMO WIN RATE HÍBRIDO",
         "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
         "tagColor": "purple",
-        "description": "3 Selecciones multideporte de élite para el Jueves 26 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
-        "avgOdds": 1.58,
-        "expectedWinRate": "60.2%",
-        "combinedEv": "-5.8%",
+        "description": "3 Selecciones multideporte de élite para el Viernes 27 de Noviembre. Cada acierto cobra por separado amortizando el riesgo.",
+        "avgOdds": 1.35,
+        "expectedWinRate": "71.1%",
+        "combinedEv": "-4.6%",
         "recommendedStake": "1.0% por selección (Flat Staking)",
         "riskLevel": "MÍNIMO",
         "picks": [
@@ -476,110 +473,110 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "São Paulo vs. Remo",
-            "tournament": "Brasileirão Série A (17:00 CST)",
-            "selection": "São Paulo Ganador Directo (1)",
-            "odds": 1.37,
-            "confidencePct": 68,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "home"
-              }
-            ],
-            "espnEventId": "401841329",
-            "espnLeague": "bra.1",
-            "kickoffLocal": "2026-11-26 17:00",
-            "oddsEstimated": false,
-            "verified": true,
-            "stadium": "Estádio Cícero Pompeu de Toledo",
-            "singleReturn": 137.0,
-            "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
-            "safeOdds": 1.25
-          },
-          {
-            "sourceName": "ESPN / DraftKings",
-            "sport": "Football",
-            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-            "match": "León vs. Cruz Azul",
-            "tournament": "Liga MX (21:10 CST)",
-            "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-            "odds": 1.71,
-            "confidencePct": 54,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
+            "match": "Millonarios vs. América de Cali",
+            "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.53,
+            "confidencePct": 62,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
             "markets": [
               {
                 "type": "TOTAL",
                 "side": "over",
-                "line": 2.5
+                "line": 1.5
               }
             ],
-            "espnEventId": "401931995",
-            "espnLeague": "mex.1",
-            "kickoffLocal": "2026-11-26 21:10",
+            "espnEventId": "401936054",
+            "espnLeague": "col.1",
+            "kickoffLocal": "2026-11-27 19:40",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Estadio León",
-            "singleReturn": 171.0,
-            "safeSelection": "Más de 1.5 Goles Totales (Over 1.5)",
-            "safeOdds": 1.22
+            "stadium": "Estadio Nemesio Camacho El Campín",
+            "singleReturn": 153.0,
+            "safeSelection": "Millonarios Doble Oportunidad (1X)",
+            "safeOdds": 1.18
           },
           {
-            "sourceName": "Next Gen Stats NFL",
-            "sport": "NFL",
-            "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
-            "match": "Buffalo Bills vs. Kansas City Chiefs",
-            "tournament": "NFL 2026 (19:20 CST)",
-            "selection": "Buffalo Bills Ganador Directo (Moneyline)",
-            "odds": 1.65,
-            "confidencePct": 58,
-            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -153 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Buffalo Bills — vs Kansas City Chiefs —; Predictor Oficial ESPN: Buffalo Bills 52.6% vs Kansas City Chiefs 47.1%; Últimos 5: Buffalo Bills (149 anotados / 67 recibidos pts) vs Kansas City Chiefs (131 anotados / 80 recibidos); prob. modelo 58%; EV -3.8%.",
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Boston Celtics vs. Atlanta Hawks",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Boston Celtics Ganador Directo (Moneyline)",
+            "odds": 1.26,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401873082",
-            "espnLeague": "football/nfl",
-            "kickoffLocal": "2026-11-26 19:20",
+            "espnEventId": "401909330",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 19:00",
             "oddsEstimated": false,
             "verified": true,
-            "stadium": "Highmark Stadium",
-            "singleReturn": 165.0,
-            "safeSelection": "Buffalo Bills Ganador Directo (Moneyline)",
-            "safeOdds": 1.65
+            "stadium": "TD Garden",
+            "singleReturn": 126.0,
+            "safeSelection": "Boston Celtics Ganador Directo (Moneyline)",
+            "safeOdds": 1.26
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Toronto Raptors vs. Brooklyn Nets",
+            "tournament": "NBA 2026-27 (18:30 CST)",
+            "selection": "Toronto Raptors Ganador Directo (Moneyline)",
+            "odds": 1.27,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -374 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Toronto Raptors — vs Brooklyn Nets —; Predictor Oficial ESPN: Toronto Raptors 74.5% vs Brooklyn Nets 25.5%; Últimos 5: Toronto Raptors (417 anotados / 432 recibidos pts) vs Brooklyn Nets (561 anotados / 624 recibidos); prob. modelo 76%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909329",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 18:30",
+            "oddsEstimated": false,
+            "verified": true,
+            "stadium": "Scotiabank Arena",
+            "singleReturn": 127.0,
+            "safeSelection": "Toronto Raptors Ganador Directo (Moneyline)",
+            "safeOdds": 1.27
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas (Caliente, Bet365, Betano, DraftKings, etc.).",
-            "Coloca 3 apuestas SIMPLES independientes: São Paulo vs. Remo, León vs. Cruz Azul y Buffalo Bills vs. Kansas City Chiefs.",
+            "Coloca 3 apuestas SIMPLES independientes: Millonarios vs. América de Cali, Boston Celtics vs. Atlanta Hawks y Toronto Raptors vs. Brooklyn Nets.",
             "Apuesta el mismo monto en cada una (ej. $100)."
           ],
           "winning_scenario": {
             "title": "¿Cómo se cobra con las Simples Híbridas?",
             "match_examples": [
               {
-                "match": "São Paulo vs. Remo",
-                "min_result": "São Paulo Ganador Directo (1)",
-                "explanation": "Cobras $137.00."
+                "match": "Millonarios vs. América de Cali",
+                "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
+                "explanation": "Cobras $153.00."
               },
               {
-                "match": "León vs. Cruz Azul",
-                "min_result": "Más de 2.5 Goles Totales (Over 2.5)",
-                "explanation": "Cobras $171.00."
+                "match": "Boston Celtics vs. Atlanta Hawks",
+                "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                "explanation": "Cobras $126.00."
               },
               {
-                "match": "Buffalo Bills vs. Kansas City Chiefs",
-                "min_result": "Buffalo Bills Ganador Directo (Moneyline)",
-                "explanation": "Cobras $165.00."
+                "match": "Toronto Raptors vs. Brooklyn Nets",
+                "min_result": "Toronto Raptors Ganador Directo (Moneyline)",
+                "explanation": "Cobras $127.00."
               }
             ],
-            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $473.00."
+            "payout_example": "Con 2 aciertos de 3 aseguras ganancia neta. Con pleno cobras $406.00."
           },
-          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (26 NOVIEMBRE)\n1. São Paulo vs. Remo: São Paulo Ganador Directo (1) @ 1.37\n2. León vs. Cruz Azul: Más de 2.5 Goles Totales (Over 2.5) @ 1.71\n3. Buffalo Bills vs. Kansas City Chiefs: Buffalo Bills Ganador Directo (Moneyline) @ 1.65"
+          "copy_text": "👑 BLACK ROYAL — SIMPLES HÍBRIDAS (27 NOVIEMBRE)\n1. Millonarios vs. América de Cali: Más de 1.5 Goles Totales (Over 1.5) @ 1.53\n2. Boston Celtics vs. Atlanta Hawks: Boston Celtics Ganador Directo (Moneyline) @ 1.26\n3. Toronto Raptors vs. Brooklyn Nets: Toronto Raptors Ganador Directo (Moneyline) @ 1.27"
         }
       },
       "modo_b_sistema": {
@@ -591,8 +588,8 @@
         "tagColor": "cyan",
         "description": "4 combinadas automáticas (3 Dobles + 1 Triple) combinando Fútbol y deportes americanos. Si 1 falla, ¡cobras la doble correspondiente!",
         "totalCombinations": "4 Apuestas (3 Dobles + 1 Triple)",
-        "expectedWinRate": "65.1%",
-        "combinedEv": "-12.9%",
+        "expectedWinRate": "80.1%",
+        "combinedEv": "-10.0%",
         "recommendedStake": "$25 por combinación ($100 total)",
         "riskLevel": "BAJO",
         "picks": [
@@ -600,90 +597,90 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "São Paulo vs. Remo",
-            "tournament": "Brasileirão Série A (17:00 CST)",
-            "selection": "São Paulo Ganador Directo (1)",
-            "odds": 1.37,
-            "confidencePct": 68,
-            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -270 → @ 1.37; prob. de mercado sin margen 69%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 68%; EV -6.9%.",
-            "markets": [
-              {
-                "type": "ML",
-                "side": "home"
-              }
-            ],
-            "espnEventId": "401841329",
-            "espnLeague": "bra.1",
-            "kickoffLocal": "2026-11-26 17:00",
-            "oddsEstimated": false,
-            "verified": true
-          },
-          {
-            "sourceName": "ESPN / DraftKings",
-            "sport": "Football",
-            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-            "match": "León vs. Cruz Azul",
-            "tournament": "Liga MX (21:10 CST)",
-            "selection": "Más de 2.5 Goles Totales (Over 2.5)",
-            "odds": 1.71,
-            "confidencePct": 54,
-            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -140 → @ 1.71; prob. de mercado sin margen 54%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 54%; EV -6.6%.",
+            "match": "Millonarios vs. América de Cali",
+            "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
+            "odds": 1.53,
+            "confidencePct": 62,
+            "algorithm": "Pick A: Modelo Cuantitativo Multifuente: DraftKings -190 → @ 1.53; prob. de mercado sin margen 62%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 62%; EV -6.0%.",
             "markets": [
               {
                 "type": "TOTAL",
                 "side": "over",
-                "line": 2.5
+                "line": 1.5
               }
             ],
-            "espnEventId": "401931995",
-            "espnLeague": "mex.1",
-            "kickoffLocal": "2026-11-26 21:10",
+            "espnEventId": "401936054",
+            "espnLeague": "col.1",
+            "kickoffLocal": "2026-11-27 19:40",
             "oddsEstimated": false,
             "verified": true
           },
           {
-            "sourceName": "Next Gen Stats NFL",
-            "sport": "NFL",
-            "badgeClass": "bg-orange-500/15 text-orange-400 border-orange-500/30",
-            "match": "Buffalo Bills vs. Kansas City Chiefs",
-            "tournament": "NFL 2026 (19:20 CST)",
-            "selection": "Buffalo Bills Ganador Directo (Moneyline)",
-            "odds": 1.65,
-            "confidencePct": 58,
-            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -153 → @ 1.65; prob. de mercado sin margen 58%; forma últimos 5 Buffalo Bills — vs Kansas City Chiefs —; Predictor Oficial ESPN: Buffalo Bills 52.6% vs Kansas City Chiefs 47.1%; Últimos 5: Buffalo Bills (149 anotados / 67 recibidos pts) vs Kansas City Chiefs (131 anotados / 80 recibidos); prob. modelo 58%; EV -3.8%.",
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Boston Celtics vs. Atlanta Hawks",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Boston Celtics Ganador Directo (Moneyline)",
+            "odds": 1.26,
+            "confidencePct": 76,
+            "algorithm": "Pick B: Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
             "markets": [
               {
                 "type": "ML",
                 "side": "home"
               }
             ],
-            "espnEventId": "401873082",
-            "espnLeague": "football/nfl",
-            "kickoffLocal": "2026-11-26 19:20",
+            "espnEventId": "401909330",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 19:00",
+            "oddsEstimated": false,
+            "verified": true
+          },
+          {
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Toronto Raptors vs. Brooklyn Nets",
+            "tournament": "NBA 2026-27 (18:30 CST)",
+            "selection": "Toronto Raptors Ganador Directo (Moneyline)",
+            "odds": 1.27,
+            "confidencePct": 76,
+            "algorithm": "Pick C: Modelo Cuantitativo Multifuente: DraftKings -374 → @ 1.27; prob. de mercado sin margen 76%; forma últimos 5 Toronto Raptors — vs Brooklyn Nets —; Predictor Oficial ESPN: Toronto Raptors 74.5% vs Brooklyn Nets 25.5%; Últimos 5: Toronto Raptors (417 anotados / 432 recibidos pts) vs Brooklyn Nets (561 anotados / 624 recibidos); prob. modelo 76%; EV -4.0%.",
+            "markets": [
+              {
+                "type": "ML",
+                "side": "home"
+              }
+            ],
+            "espnEventId": "401909329",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 18:30",
             "oddsEstimated": false,
             "verified": true
           }
         ],
         "combinations": [
           {
-            "name": "Doble 1 (São Paulo + León)",
-            "odds": 2.34,
-            "formula": "1.37 × 1.71"
+            "name": "Doble 1 (Millonarios + Boston Celtics)",
+            "odds": 1.93,
+            "formula": "1.53 × 1.26"
           },
           {
-            "name": "Doble 2 (São Paulo + Buffalo Bills)",
-            "odds": 2.26,
-            "formula": "1.37 × 1.65"
+            "name": "Doble 2 (Millonarios + Toronto Raptors)",
+            "odds": 1.94,
+            "formula": "1.53 × 1.27"
           },
           {
-            "name": "Doble 3 (León + Buffalo Bills)",
-            "odds": 2.82,
-            "formula": "1.71 × 1.65"
+            "name": "Doble 3 (Boston Celtics + Toronto Raptors)",
+            "odds": 1.6,
+            "formula": "1.26 × 1.27"
           },
           {
             "name": "Triple (Pleno Multideporte)",
-            "odds": 3.87,
-            "formula": "1.37 × 1.71 × 1.65"
+            "odds": 2.45,
+            "formula": "1.53 × 1.26 × 1.27"
           }
         ],
         "real_life_example": {
@@ -696,33 +693,33 @@
             "title": "¿Cómo se cobra con el Sistema Híbrido?",
             "match_examples": [
               {
-                "match": "Escenario 2 de 3 (São Paulo + León)",
+                "match": "Escenario 2 de 3 (Millonarios + Boston Celtics)",
                 "min_result": "Ganan los 2 primeros",
-                "explanation": "Cobras Doble 1 (@ 2.34x): $58.50 amortizando."
+                "explanation": "Cobras Doble 1 (@ 1.93x): $48.25 amortizando."
               },
               {
                 "match": "Escenario Pleno 3 de 3",
                 "min_result": "Cumplen los 3",
-                "explanation": "Cobras las 3 Dobles + Triple: $282.25."
+                "explanation": "Cobras las 3 Dobles + Triple: $198.00."
               }
             ],
-            "payout_example": "Con $100 cobras hasta $282.25 si aciertan los 3, o amortizas si 1 falla."
+            "payout_example": "Con $100 cobras hasta $198.00 si aciertan los 3, o amortizas si 1 falla."
           },
-          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (26 NOVIEMBRE)\n• Pick A: São Paulo vs. Remo (São Paulo Ganador Directo (1)) @ 1.37\n• Pick B: León vs. Cruz Azul (Más de 2.5 Goles Totales (Over 2.5)) @ 1.71\n• Pick C: Buffalo Bills vs. Kansas City Chiefs (Buffalo Bills Ganador Directo (Moneyline)) @ 1.65"
+          "copy_text": "👑 BLACK ROYAL — SISTEMA 2/3 HÍBRIDO (27 NOVIEMBRE)\n• Pick A: Millonarios vs. América de Cali (Más de 1.5 Goles Totales (Over 1.5)) @ 1.53\n• Pick B: Boston Celtics vs. Atlanta Hawks (Boston Celtics Ganador Directo (Moneyline)) @ 1.26\n• Pick C: Toronto Raptors vs. Brooklyn Nets (Toronto Raptors Ganador Directo (Moneyline)) @ 1.27"
         }
       },
       "modo_c_banker": {
         "id": "STRATEGY-HYBRID-C",
-        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.52x)",
-        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.52x)",
+        "modeName": "Modo C: Doble Banker Híbrida (Duplicador @ 1.49x)",
+        "modeShort": "Modo C: Doble Banker Híbrida (@ 1.49x)",
         "badge": "DUPLICADOR HÍBRIDO",
         "badgeClass": "bg-amber-500/15 text-amber-400 border-amber-500/30",
         "tagColor": "amber",
-        "description": "Combinada estricta de solo 2 eventos de altísima certeza: São Paulo vs. Remo y León vs. Cruz Azul.",
-        "totalOdds": 1.52,
-        "fairOdds": 1.69,
-        "expectedWinRate": "59.0%",
-        "combinedEv": "-10.3%",
+        "description": "Combinada estricta de solo 2 eventos de altísima certeza: Millonarios vs. América de Cali y Boston Celtics vs. Atlanta Hawks.",
+        "totalOdds": 1.49,
+        "fairOdds": 1.71,
+        "expectedWinRate": "58.4%",
+        "combinedEv": "-13.0%",
         "recommendedStake": "2.5% – 3.0% Bankroll",
         "riskLevel": "BAJO",
         "picks": [
@@ -730,76 +727,74 @@
             "sourceName": "ESPN / DraftKings",
             "sport": "Football",
             "badgeClass": "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-            "match": "São Paulo vs. Remo",
-            "tournament": "Brasileirão Série A (17:00 CST)",
-            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
-            "odds": 1.25,
-            "confidencePct": 76,
-            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.25; prob. de mercado sin margen 76%; forma últimos 5 São Paulo DLDLD vs Remo LWLWL; goles esperados (Poisson) 2.73; Últimos 5: São Paulo (4 anotados / 6 recibidos goles) vs Remo (7 anotados / 12 recibidos); prob. modelo 76%; EV -5.3%.",
+            "match": "Millonarios vs. América de Cali",
+            "tournament": "Liga BetPlay (Colombia) (19:40 CST)",
+            "selection": "Millonarios Doble Oportunidad (1X)",
+            "odds": 1.18,
+            "confidencePct": 77,
+            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.18; prob. de mercado sin margen 78%; forma últimos 5 Millonarios WDWLD vs América de Cali WDDWW; goles esperados (Poisson) 2.08; Últimos 5: Millonarios (7 anotados / 3 recibidos goles) vs América de Cali (9 anotados / 5 recibidos); prob. modelo 77%; EV -9.2%.",
             "markets": [
               {
-                "type": "TOTAL",
-                "side": "over",
-                "line": 1.5
+                "type": "DC",
+                "side": "1X"
               }
             ],
-            "espnEventId": "401841329",
-            "espnLeague": "bra.1",
-            "kickoffLocal": "2026-11-26 17:00",
+            "espnEventId": "401936054",
+            "espnLeague": "col.1",
+            "kickoffLocal": "2026-11-27 19:40",
             "oddsEstimated": true,
             "verified": true,
-            "stadium": "Estádio Cícero Pompeu de Toledo",
-            "singleReturn": 125.0
+            "stadium": "Estadio Nemesio Camacho El Campín",
+            "singleReturn": 118.0
           },
           {
-            "sourceName": "ESPN / DraftKings",
-            "sport": "Football",
-            "badgeClass": "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-            "match": "León vs. Cruz Azul",
-            "tournament": "Liga MX (21:10 CST)",
-            "selection": "Más de 1.5 Goles Totales (Over 1.5)",
-            "odds": 1.22,
-            "confidencePct": 78,
-            "algorithm": "Modelo Cuantitativo Multifuente: cuota estimada → @ 1.22; prob. de mercado sin margen 78%; forma últimos 5 León WDLDW vs Cruz Azul LWWWW; goles esperados (Poisson) 2.86; Últimos 5: León (7 anotados / 5 recibidos goles) vs Cruz Azul (10 anotados / 6 recibidos); prob. modelo 78%; EV -5.2%.",
+            "sourceName": "NBA Second Spectrum",
+            "sport": "Basketball",
+            "badgeClass": "bg-purple-500/15 text-purple-400 border-purple-500/30",
+            "match": "Boston Celtics vs. Atlanta Hawks",
+            "tournament": "NBA 2026-27 (19:00 CST)",
+            "selection": "Boston Celtics Ganador Directo (Moneyline)",
+            "odds": 1.26,
+            "confidencePct": 76,
+            "algorithm": "Modelo Cuantitativo Multifuente: DraftKings -378 → @ 1.26; prob. de mercado sin margen 76%; forma últimos 5 Boston Celtics — vs Atlanta Hawks —; Predictor Oficial ESPN: Boston Celtics 70.5% vs Atlanta Hawks 29.5%; Últimos 5: Boston Celtics (520 anotados / 521 recibidos pts) vs Atlanta Hawks (448 anotados / 412 recibidos); prob. modelo 76%; EV -3.9%.",
             "markets": [
               {
-                "type": "TOTAL",
-                "side": "over",
-                "line": 1.5
+                "type": "ML",
+                "side": "home"
               }
             ],
-            "espnEventId": "401931995",
-            "espnLeague": "mex.1",
-            "kickoffLocal": "2026-11-26 21:10",
-            "oddsEstimated": true,
+            "espnEventId": "401909330",
+            "espnLeague": "basketball/nba",
+            "kickoffLocal": "2026-11-27 19:00",
+            "oddsEstimated": false,
             "verified": true,
-            "stadium": "Estadio León",
-            "singleReturn": 122.0
+            "stadium": "TD Garden",
+            "singleReturn": 126.0
           }
         ],
         "real_life_example": {
           "bookie_steps": [
             "Abre tu casa de apuestas.",
-            "Selecciona: São Paulo vs. Remo y León vs. Cruz Azul.",
-            "Coloca Parlay / Combinada @ 1.52x."
+            "Selecciona: Millonarios vs. América de Cali y Boston Celtics vs. Atlanta Hawks.",
+            "Coloca Parlay / Combinada @ 1.49x."
           ],
           "winning_scenario": {
             "title": "¿Cómo se gana con la Doble Banker Híbrida?",
             "match_examples": [
               {
-                "match": "São Paulo vs. Remo",
-                "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
-                "explanation": "Probabilidad modelo 76%."
+                "match": "Millonarios vs. América de Cali",
+                "min_result": "Millonarios Doble Oportunidad (1X)",
+                "explanation": "Probabilidad modelo 77%."
               },
               {
-                "match": "León vs. Cruz Azul",
-                "min_result": "Más de 1.5 Goles Totales (Over 1.5)",
-                "explanation": "Probabilidad modelo 78%."
+                "match": "Boston Celtics vs. Atlanta Hawks",
+                "min_result": "Boston Celtics Ganador Directo (Moneyline)",
+                "explanation": "Probabilidad modelo 76%."
               }
             ],
-            "payout_example": "Si ambos cumplen, con $100 cobras $152.00."
+            "payout_example": "Si ambos cumplen, con $100 cobras $149.00."
           },
-          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (26 NOVIEMBRE)\n1. São Paulo vs. Remo (Más de 1.5 Goles Totales (Over 1.5)) @ 1.25\n2. León vs. Cruz Azul (Más de 1.5 Goles Totales (Over 1.5)) @ 1.22"
+          "copy_text": "👑 BLACK ROYAL — DOBLE BANKER HÍBRIDA (27 NOVIEMBRE)\n1. Millonarios vs. América de Cali (Millonarios Doble Oportunidad (1X)) @ 1.18\n2. Boston Celtics vs. Atlanta Hawks (Boston Celtics Ganador Directo (Moneyline)) @ 1.26"
         }
       }
     }
